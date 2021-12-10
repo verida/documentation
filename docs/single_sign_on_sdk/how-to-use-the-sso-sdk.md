@@ -1,3 +1,8 @@
+---
+description: A short description of this page
+image: https://uploads-ssl.webflow.com/60e8365cd5794f8db04151ed/6107868980521e0acf27b2d9_favicon.svg
+keywords: [keywords, describing, the main topics]
+---
 # How to use the SSO SDK
 
 Initialize a connection to the Verida network using a private key stored on the user’s mobile device using the Verida Vault.

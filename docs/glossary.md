@@ -1,3 +1,8 @@
+---
+description: A short description of this page
+image: https://uploads-ssl.webflow.com/60e8365cd5794f8db04151ed/6107868980521e0acf27b2d9_favicon.svg
+keywords: [keywords, describing, the main topics]
+---
 # Glossary
 
 To better understand the Verida protocol and its documentation, we recommend reviewing the following terms:
