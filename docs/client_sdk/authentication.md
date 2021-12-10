@@ -30,7 +30,7 @@ Designed *for NodeJs and Mobile Apps*
 
 An existing Verida account seed phrase is used to authenticate a user to your application.
 
-This approach is ideal for integrating the Verida protocol into a server side NodeJs application or embedding Verida into an existing mobile application using the [React Native client](react_native.md)
+This approach is ideal for integrating the Verida protocol into a server side NodeJs application or embedding Verida into an existing mobile application using the [React Native client](react-native.md)
 
 ## Example
 

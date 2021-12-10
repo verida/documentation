@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: 'Verida',
-    tagline: 'Personal data experiences everyone can love',
+    title: 'Verida Developers',
+    tagline: 'Welcome to your Web3 toolkit!',
     url: 'https://www.verida.io/',
     baseUrl: '/',
     onBrokenLinks: 'throw',
@@ -15,7 +15,7 @@ const config = {
     favicon: 'img/new_favicon.ico',
     organizationName: 'facebook', // Usually your GitHub org/user name.
     projectName: 'docusaurus', // Usually your repo name.
-
+    themes: ['@docusaurus/theme-live-codeblock'],
     presets: [
         [
             '@docusaurus/preset-classic',
@@ -24,7 +24,12 @@ const config = {
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
                     // Please change this to your repo.
-                    editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
+                    // editUrl: null,
+                },
+                sitemap: {
+                    changefreq: 'weekly',
+                    priority: 0.5,
+                    trailingSlash: false,
                 },
                 // blog: {
                 //   showReadingTime: true,
@@ -56,9 +61,14 @@ const config = {
                         position: 'left',
                         label: 'Documentation',
                     },
+                    {
+                        href: 'https://verida.io',
+                        label: 'Main',
+                        position: 'left',
+                    },
                     // {to: '/blog', label: 'Blog', position: 'left'},
                     {
-                        href: 'https://github.com/facebook/docusaurus',
+                        href: 'https://github.com/verida',
                         label: 'GitHub',
                         position: 'right',
                     },
@@ -71,8 +81,12 @@ const config = {
                         title: 'Docs',
                         items: [
                             {
-                                label: 'Documentation',
+                                label: 'Verida Developers',
                                 to: '/docs/intro',
+                            },
+                            {
+                                label: 'Verida Client SDK',
+                                href: 'https://apidocs.verida.io/index.html',
                             },
                         ],
                     },
@@ -80,16 +94,8 @@ const config = {
                         title: 'Community',
                         items: [
                             {
-                                label: 'Stack Overflow',
-                                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-                            },
-                            {
                                 label: 'Discord',
-                                href: 'https://discordapp.com/invite/docusaurus',
-                            },
-                            {
-                                label: 'Twitter',
-                                href: 'https://twitter.com/docusaurus',
+                                href: 'https://discord.com/invite/gBzTSzMCNA',
                             },
                         ],
                     },
@@ -102,7 +108,7 @@ const config = {
                             // },
                             {
                                 label: 'GitHub',
-                                href: 'https://github.com/facebook/docusaurus',
+                                href: 'https://github.com/verida',
                             },
                         ],
                     },
