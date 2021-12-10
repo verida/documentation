@@ -14,7 +14,7 @@ An application `context` has a unique name (ie: `Verida: Markdown Editor`) and p
 - Block storage
 - Notifications
 
-These application `contexts` are accessed by applications via the [Client SDK](../client_sdk/client_sdk.md).
+These application `contexts` are accessed by applications via the [Client SDK](../client_sdk/client-sdk.md).
 
 Application contexts are siloed from each other. A Verida account connected to one application context has no access to data in a different application context. This ensures a web application can only access data for it’s own application and not be provided with an account’s private key.
 

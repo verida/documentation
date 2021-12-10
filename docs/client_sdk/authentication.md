@@ -17,9 +17,9 @@ There are two ways to authenticate a user to your application:
 
 Designed *for secure web applications*
 
-Your web application integrates the [Verida Single Sign On SDK](../single_sign_on_sdk/single_sign_on_sdk) which displays a QR code to a user. A user scans the QR code and is walked through an onboarding process of installing the Verida Vault, creating a blockchain account and then authenticating with your application.
+Your web application integrates the [Verida Single Sign On SDK](../single_sign_on_sdk/single-sign-on-sdk.md) which displays a QR code to a user. A user scans the QR code and is walked through an onboarding process of installing the Verida Vault, creating a blockchain account and then authenticating with your application.
 
-See the [Single Sign On SDK](../single_sign_on_sdk/single_sign_on_sdk.md) for more details.
+See the [Single Sign On SDK](../single_sign_on_sdk/single-sign-on-sdk.md) for more details.
 
 # 2. Private Key
 

@@ -10,7 +10,7 @@ protocol support into an application. There are two implementations for
 the Client SDK:
 
 - [NodeJs Client](https://github.com/verida/verida-js/tree/main/packages/client-ts) — A package that can be used in a web browser or NodeJs environment.
-- [React Native client](https://github.com/verida/client-rn) — A package that can be used in React Native mobile applications ([Learn more](client_sdk/react_native.md)).
+- [React Native client](https://github.com/verida/client-rn) — A package that can be used in React Native mobile applications ([Learn more](client_sdk/react-native.md)).
 
 The Client SDK provides the following core capabilities:
 
@@ -18,13 +18,13 @@ The Client SDK provides the following core capabilities:
 - Access encrypted database storage for your application for the authenticated user
 - Send / receive messages between different users and applications
 
-A user can have multiple [Application Contexts](concepts/application_contexts.md) that provide completely separate databases, messaging and storage.
+A user can have multiple [Application Contexts](concepts/application-contexts.md) that provide completely separate databases, messaging and storage.
 
 ## More about the Client SDK
 
-[Getting Started](client_sdk/getting_started.md)
+[Getting Started](client_sdk/getting-started.md)
 
-[How it Works](client_sdk/how_it_works.md)
+[How it Works](client_sdk/how-it-works.md)
 
 [Authentication](client_sdk/authentication.md)
 
@@ -42,6 +42,6 @@ A user can have multiple [Application Contexts](concepts/application_contexts.md
 
 [Configuration](client_sdk/configuration.md)
 
-[React Native](client_sdk/react_native.md)
+[React Native](client_sdk/react-native.md)
 
 [Advanced](client_sdk/advanced.md)

@@ -11,9 +11,9 @@ Here’s is the basic flow of the Vault single sign on and what is happening beh
 
 # 1. Users authorize access
 
-Users authorize access to your application by signing a consent message with their Verida account to unlock an [Application Context](../concepts/application_contexts.md).
+Users authorize access to your application by signing a consent message with their Verida account to unlock an [Application Context](../concepts/application-contexts.md).
 
-If this is the first time the account has authorized your application, a new DID document is created (see [identity](../concepts/accounts_and_identity.md)).
+If this is the first time the account has authorized your application, a new DID document is created (see [identity](../concepts/accounts-and-identity.md)).
 
 This DID document includes the URI of the CouchDB database hosting the account’s encrypted data along with public keys. The DID document is public, allowing other users and applications to discover user’s database endpoints and public keys for securely sending data.
 
@@ -26,7 +26,7 @@ Application contexts store data stored in two locations:
 
 When a database is created (via `context.openDatabase(...)`) a local unencrypted database is created in the browser and remote encrypted database is created on the remote CouchDB server.
 
-Remote user databases are created by sending an API request to the [Storage Node](../storage_node.md) API server. This server manages the underlying database permissions of the CouchDB database server.
+Remote user databases are created by sending an API request to the [Storage Node](../storage-node.md) API server. This server manages the underlying database permissions of the CouchDB database server.
 
 All requests to the Storage Node API must include a signed consent message by the user. This ensures only the user holding the private key of the public blockchain account can set their database permissions.
 

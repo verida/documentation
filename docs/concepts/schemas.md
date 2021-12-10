@@ -14,7 +14,7 @@ This enables:
 - Data can be queried in a consistent way
 - Data can be grouped together by type, enabling permissioned sharing between apps
 
-The Verida [Client SDK](../client_sdk/client_sdk.md) uses valid [JSON Schema](https://json-schema.org/) files that specify the structure and validation constraints of your data.
+The Verida [Client SDK](../client_sdk/client-sdk.md) uses valid [JSON Schema](https://json-schema.org/) files that specify the structure and validation constraints of your data.
 
 At the very least, each schema defines the following elements:
 

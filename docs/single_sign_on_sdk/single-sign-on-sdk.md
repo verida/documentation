@@ -20,6 +20,6 @@ A user downloads the Verida Vault onto their mobile device which generates a pri
 
 ## Further Information
 
-[How to use the SSO SDK](how_to_use_the_sso_sdk.md)
+[How to use the SSO SDK](how-to-use-the-sso-sdk.md)
 
-[The SSO Authentication Server](the_sso_authentication_server.md)
+[The SSO Authentication Server](the-sso-authentication-server.md)
