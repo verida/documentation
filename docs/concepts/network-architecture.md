@@ -76,7 +76,7 @@ Verida has developed a PouchDB/CouchDB database implementation with open source 
 
 The current landscape of decentralized database storage technologies is rapidly evolving. As such, it’s possible other decentralized database storage options will soon reach maturity where they meet the security expectations, access controls and features to a level they can be supported by the Verida network.
 
-User data is stored in isolated [application contexts](./04-contexts), where the data from one application can not be accessed by another application without the explicit consent of a user. This ensures users can selectively disclose their personal data to different applications on an as-needs basis, providing enhanced privacy and data security.
+User data is stored in isolated [application contexts](./application-contexts.md), where the data from one application can not be accessed by another application without the explicit consent of a user. This ensures users can selectively disclose their personal data to different applications on an as-needs basis, providing enhanced privacy and data security.
 
 [Learn more](../storage-node.md)
 
