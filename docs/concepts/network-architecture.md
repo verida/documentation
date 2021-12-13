@@ -56,7 +56,7 @@ An open source implementation of a Verida network client enabling developers to 
 
 It is an easy-to-use library that abstracts the complexities behind these capabilities, thereby allowing developers to build self-sovereign applications.
 
-[Learn more](../client_sdk/client-sdk.md)
+[Learn more](../client-sdk/client-sdk.md)
 
 ## Single Sign On (SSO) SDK
 
@@ -66,7 +66,7 @@ It provides a seamless user experience to onboard new users to the Verida networ
 
 Signed in users are provided with a private encrypted collection of databases for the application, secure messaging and ability to perform blockchain transactions.
 
-[Learn more](../single_sign_on_sdk/single-sign-on-sdk.md)
+[Learn more](../single-sign-on-sdk/single-sign-on-sdk.md)
 
 ## Storage Nodes
 

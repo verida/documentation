@@ -13,7 +13,7 @@ protocol support into an application. There are two implementations for
 the Client SDK:
 
 - [NodeJs Client](https://github.com/verida/verida-js/tree/main/packages/client-ts) — A package that can be used in a web browser or NodeJs environment.
-- [React Native client](https://github.com/verida/client-rn) — A package that can be used in React Native mobile applications ([Learn more](client_sdk/react-native.md)).
+- [React Native client](https://github.com/verida/client-rn) — A package that can be used in React Native mobile applications ([Learn more](client-sdk/react-native.md)).
 
 The Client SDK provides the following core capabilities:
 
@@ -25,26 +25,26 @@ A user can have multiple [Application Contexts](concepts/application-contexts.md
 
 ## More about the Client SDK
 
-[Getting Started](client_sdk/getting-started.md)
+[Getting Started](client-sdk/getting-started.md)
 
-[How it Works](client_sdk/how-it-works.md)
+[How it Works](client-sdk/how-it-works.md)
 
-[Authentication](client_sdk/authentication.md)
+[Authentication](client-sdk/authentication.md)
 
-[Data](client_sdk/data.md)
+[Data](client-sdk/data.md)
 
-[Queries](client_sdk/queries.md)
+[Queries](client-sdk/queries.md)
 
-[Permissions](client_sdk/permissions.md)
+[Permissions](client-sdk/permissions.md)
 
-[Messaging](client_sdk/messaging.md)
+[Messaging](client-sdk/messaging.md)
 
-[Profiles](client_sdk/profiles.md)
+[Profiles](client-sdk/profiles.md)
 
-[Events](client_sdk/events.md)
+[Events](client-sdk/events.md)
 
-[Configuration](client_sdk/configuration.md)
+[Configuration](client-sdk/configuration.md)
 
-[React Native](client_sdk/react-native.md)
+[React Native](client-sdk/react-native.md)
 
-[Advanced](client_sdk/advanced.md)
+[Advanced](client-sdk/advanced.md)
