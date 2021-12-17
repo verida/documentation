@@ -28,7 +28,9 @@ Here are some real world examples:
 - For private health data, set `read=owner`, `write=owner` so the data is completely private.
 - For a public comment thread, set `read=public`, `write=public` so anyone can read and write comments.
 - For a public blog post, set `read=public`, `write=owner` so the blog owner can publish new posts and the public can read them.
-- For a private group chate, set `read=users`, `write=users` so only a pre-determined set of users can read from and write to the group chat.
+- For a private group chat, set `read=users`, `write=users` so only a pre-determined set of users can read from and write to the group chat.
+
+By default, if no permissions are specified, the default permissions are set as `read=owner`, `write=owner`.
 
 # Setting permissions
 
