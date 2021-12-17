@@ -43,7 +43,7 @@ const did = 'did:vda:0x6B2a1bE81ee770cbB4648801e343E135e8D2Aa6F';
 const externalProfile = await context.openProfile('public', did);
 ```
 
-# Open an external profile without authentication
+### Open an external profile without authentication
 
 Open an external profile for using an instance of the `client` object directly from the `@verida/client-ts` package
 
