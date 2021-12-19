@@ -79,10 +79,10 @@ Open a user database and fetch some rows:
 
 ```tsx
 const db = await context.openDatabase('test_db')
-constitem = await db.save({
+const item = await db.save({
   hello: 'world'
 })
-const items = await db.getMany(
+const items = await db.getMany()
 console.log(items)
 ```
 
@@ -110,7 +110,7 @@ const contact = {
   lastName: 'Smith',
   email: 'john@smith.com'
 }
-let success = const contacts.save(contact)
+let success = contacts.save(contact)
 
 if (!success) {
   console.error(contacts.errors);
@@ -119,7 +119,7 @@ if (!success) {
 }
 
 contact.firstName = 'John'
-let success = const contacts.save(contact)
+success = contacts.save(contact)
 
 const contactList = await contacts.getMany()
 console.log(contactList)
