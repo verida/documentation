@@ -102,7 +102,7 @@ See [schemas](../concepts/schemas.md) to learn about the existing schemas or how
 
 ### User owned datastore
 
-Lets demonstrate by opening a datastore using the `[https://schemas.verida.io/social/contact/schema.json](https://common.schemas.verida.io/social/contact/v0.1.0/schema.json)` schema, saving a row and fetching the results:
+Lets demonstrate by opening a datastore using the [https://schemas.verida.io/social/contact/schema.json](https://common.schemas.verida.io/social/contact/v0.1.0/schema.json) schema, saving a row and fetching the results:
 
 ```tsx
 const contacts = await context.openDatastore('https://common.schemas.verida.io/social/contact/v0.1.0/schema.json')
