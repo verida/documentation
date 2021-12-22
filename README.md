@@ -24,10 +24,16 @@ $ yarn build
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
+### Search 
+
+Search is implemented using [Offline / Local Search for Docusaurus](https://github.com/cmfcmf/docusaurus-search-local). This is find for our site at the moment but may need to change as it grows. The search is only available from a complete build of the site so to test do this:
+
+```
+$ yarn build
+$ yarn serve
+```
+
+
 ### Deployment
 
-```
-$ GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Deployment is autimatically done via [AWS Amplify](https://us-east-2.console.aws.amazon.com/amplify/home?region=us-east-2#/) when changes are merged to the `main` branch.

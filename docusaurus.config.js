@@ -119,27 +119,35 @@ const config = {
                 theme: lightCodeTheme,
                 darkTheme: darkCodeTheme,
             },
-            algolia: {
-                // If Algolia did not provide you any appId, use 'BH4D9OD16A'
-                appId: 'VB805V0J53',
+            // algolia: {
+            //     // If Algolia did not provide you any appId, use 'BH4D9OD16A'
+            //     appId: 'VB805V0J53',
 
-                // Public API key: it is safe to commit it
-                apiKey: '5a2f5f472eb6491ccc3a3f5576d2625b',
+            //     // Public API key: it is safe to commit it
+            //     apiKey: '5a2f5f472eb6491ccc3a3f5576d2625b',
 
-                indexName: 'dev_verida',
+            //     indexName: 'dev_verida',
 
-                // Optional: see doc section below
-                contextualSearch: true,
+            //     // Optional: see doc section below
+            //     contextualSearch: true,
 
-                // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-                externalUrlRegex: 'external\\.com|domain\\.com',
+            //     // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+            //     externalUrlRegex: 'external\\.com|domain\\.com',
 
-                // Optional: Algolia search parameters
-                searchParameters: {},
+            //     // Optional: Algolia search parameters
+            //     searchParameters: {},
 
-                //... other Algolia params
-            },
+            //     //... other Algolia params
+            // },
         }),
+    plugins: [
+        [
+            require.resolve("@cmfcmf/docusaurus-search-local"),
+            {
+              // Options here
+            },
+          ],
+    ]
 };
 
 module.exports = config;
