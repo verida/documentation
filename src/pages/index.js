@@ -25,7 +25,7 @@ export default function Home() {
 
   return (
       <Layout
-          title={`Hello from ${siteConfig.title}`}
+          title={siteConfig.title}
           description="Description will go into a meta tag in <head />"
       >
           <img src="img/header.svg" style={{ width: '100%' }} />
