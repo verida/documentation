@@ -63,7 +63,7 @@ const config = {
                     },
                     {
                         href: 'https://verida.io',
-                        label: 'Main',
+                        label: 'Verida Homepage',
                         position: 'left',
                     },
                     // {to: '/blog', label: 'Blog', position: 'left'},
