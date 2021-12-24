@@ -1,8 +1,8 @@
 ---
 sidebar_position: 0
-description: A short description of this page
+description: Verida is a network of personal data owned and controlled by users.
 image: https://uploads-ssl.webflow.com/60e8365cd5794f8db04151ed/6107868980521e0acf27b2d9_favicon.svg
-keywords: [keywords, describing, the main topics]
+keywords: [Verida, Web3, Developers]
 ---
 
 # Welcome to your Web3 toolkit!
