@@ -13,8 +13,8 @@ const config = {
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/new_favicon.ico',
-    organizationName: 'facebook', // Usually your GitHub org/user name.
-    projectName: 'docusaurus', // Usually your repo name.
+    organizationName: 'verida', // Usually your GitHub org/user name.
+    projectName: 'verida', // Usually your repo name.
     themes: ['@docusaurus/theme-live-codeblock'],
     presets: [
         [
