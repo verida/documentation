@@ -26,7 +26,7 @@ export default function Home() {
   return (
       <Layout
           title={siteConfig.title}
-          description="Description will go into a meta tag in <head />"
+          description="Verida enables the development of secure, decentralized applications that allow users to own and control how their data is used and shared."
       >
           <img src="img/header.svg" style={{ width: '100%' }} />
           <HomepageHeader />
