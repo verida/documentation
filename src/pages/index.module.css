@@ -3,6 +3,23 @@
  * and scoped locally.
  */
 
+
+.mainSection {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+}
+
+
+.cardSection {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
 .heroBanner {
   margin-top: 30px;
   text-align: center;
@@ -19,4 +36,72 @@
   .heroBanner {
     padding: 2rem;
   }
+}
+
+
+.heroSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  margin: 5rem 0 4rem 0;
+}
+
+.heroSection h1 {
+  font-weight: 600;
+  font-size: 2.1rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+  color: #111111;
+}
+
+.heroSection p {
+  font-size: 18px;
+  line-height: 140%;
+}
+
+
+
+.contentCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.githubCardSection {
+  margin-bottom: 6.5rem;
+}
+
+.githubCardSection h2 {
+  margin: 0 1rem;
+}
+
+
+.githubCardSectionSpan {
+  text-align: right;
+  display: block;
+  color: #5354D1;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+
+
+.githubCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width:768px) {
+  .githubCard {
+    grid-template-columns: 1fr;
+  }
+
+  .mainSection {
+    margin: 0 0.2rem;
+  }
+
+  .contentCard {
+    grid-template-columns: 1fr;
+  }
+
 }

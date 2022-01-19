@@ -1,64 +1,108 @@
 import React from 'react';
-import clsx from 'clsx';
 import Layout from '@theme/Layout';
+import ExternalLink from '@site/static/img/external-link.svg';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
-import HomepageFeatures from '../components/HomepageFeatures';
-import HeaderImage from '../../static/img/header.svg';
+import ContentCard from '../components/cards/ContentCard';
+import DiscordCard from '../components/cards/DiscordCard';
+import GithubCard from '../components/cards/GithubCard';
+import Footer from '../components/Footer';
+import ImgIcon from '@site/static/img/file-text.svg';
 
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={styles.heroBanner}>
-      <div>
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-      </div>
-    </header>
-  );
-}
+const contentCards = [
+	{
+		title: 'Read the Documentation',
+		description: 'Start here to learn the basic documentation',
+		icon: <ImgIcon title='icon' />,
+	},
+	{
+		title: 'See API Documentation',
+		description:
+			'Explore these docs to learn more about Verida API documentation',
+		icon: <ImgIcon title='icon' />,
+	},
+	{
+		title: 'Interactive Tutorial',
+		description: `Check out the interactive tutorials for an introduction to Verida's Web3 APIs`,
+		icon: <ImgIcon title='icon' />,
+	},
+	{
+		title: 'Demos',
+		description: 'Explore Verida technologies with demo applications',
+		icon: <ImgIcon title='icon' />,
+	},
+];
 
+const githubLinks = [
+	{
+		title: 'Verida-Js',
+		link: 'https://github.com/verida/verida-js',
+	},
+	{
+		title: 'Schemas-common',
+		link: 'https://github.com/verida/schemas-common',
+	},
+	{
+		title: 'Documentation',
+		link: 'https://github.com/verida/documentation',
+	},
+	{
+		title: 'Schemas-core',
+		link: 'https://github.com/verida/schemas-core',
+	},
+	{
+		title: 'Account Explorer',
+		link: 'https://github.com/verida/account-explorer',
+	},
+	{
+		title: 'Generic-demo',
+		link: 'https://github.com/verida/generic-demo',
+	},
+];
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
-    const HeaderImage = require('../../static/img/header.svg').default;
+	const { siteConfig } = useDocusaurusContext();
+	const HeaderImage = require('../../static/img/header.svg').default;
 
-  return (
-      <Layout
-          title={siteConfig.title}
-          description="Verida enables the development of secure, decentralized applications that allow users to own and control how their data is used and shared."
-      >
-          <img src="img/header.svg" style={{ width: '100%' }} />
-          <HomepageHeader />
-          <main>
-              <p style={{ margin: '0px 300px 50px 300px', textAlign: 'left' }}>
-                  Verida is a network of personal data owned and controlled by users. Users are
-                  incentivized to unlock their data stored on centralized platforms. Builders access
-                  this data for new exciting use cases such as trusted storage, decentralized
-                  messaging and single sign on. User's private data can be used as inputs into smart
-                  contracts, enabling connectivity to multiple blockchains.
-                  <br />
-                  <br /> We believe it’s a fundamental human right that individuals have ownership
-                  and control over their personal data. We believe everyone has a right to control
-                  their identity through decentralisation, giving citizens control over how they
-                  interact with the digital world.
-                  <br />
-                  <br /> Explore the Verida Developer's Portal to get started with our developer
-                  documentation, explore our demos, try out our interactive tutorials and connect
-                  with the Web3 developer community.
-                  <br />
-                  <br />
-                  <a href="https://learn.verida.io/">Try Verida now with an interactive tutorial</a>
-                  <br />
-                  <a href="./docs/intro">Explore the docs</a>
-                  <br />
-                  <a href="https://apidocs.verida.io/index.html">See the API Docs</a>
-                  <br />
-                  <a href="https://discord.com/invite/gBzTSzMCNA">
-                      Join our Developer Community on Discord
-                  </a>
-              </p>
-          </main>
-      </Layout>
-  );
+	const path = window.location.pathname;
+	const isHomePage = path === '/' ? true : false;
+
+	return (
+		<Layout
+			noFooter={isHomePage}
+			title={siteConfig.title}
+			description='Verida enables the development of secure, decentralized applications that allow users to own and control how their data is used and shared.'
+		>
+			<main className={styles.mainSection}>
+				<section className={styles.heroSection}>
+					<h1>Welcome to your Web3 toolkit!</h1>
+					<p>
+						Explore the Verida Developer's Portal to get started with our
+						developer documentation, <br /> explore our demos, try out our
+						interactive tutorials and connect with the Web3 developer community.
+					</p>
+				</section>
+				<section className={styles.cardSection}>
+					<div className={styles.contentCard}>
+						{contentCards.map((item) => (
+							<ContentCard key={item.title} {...item} />
+						))}
+					</div>
+					<DiscordCard />
+					<div className={styles.githubCardSection}>
+						<h2>GitHub Repositories</h2>
+						<div className={styles.githubCard}>
+							{githubLinks.map((item) => (
+								<GithubCard key={item.title} {...item} />
+							))}
+						</div>
+						<span className={styles.githubCardSectionSpan}>
+							View all on GitHub <ExternalLink title='link' />
+						</span>
+					</div>
+				</section>
+			</main>
+			{isHomePage && <Footer />}
+		</Layout>
+	);
 }
