@@ -10,8 +10,7 @@
 }
 
 .footerLine {
-    /* width: 80%;
-    margin: 0 auto; */
+
 }
 
 .footerBottom {
@@ -35,7 +34,7 @@
 
     letter-spacing: -0.204545px;
 
-    color: #111111;
+  color: var(--ifm-text-color);
 
 }
 
@@ -52,12 +51,12 @@
     font-size: 13px;
     line-height: 19px;
     padding: 0;
-    color: #111111;
+  color: var(--ifm-text-color);
 }
 
 
 .footerSection ul li>* {
-    color: #111111;
+  color: var(--ifm-text-color);
     margin: 1rem 0;
 }
 
@@ -66,7 +65,7 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 21px;
-    color: #111111;
+  color: var(--ifm-text-color);
     opacity: 0.4;
 }
 

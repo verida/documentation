@@ -1,36 +1,38 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import ExternalLink from '@site/static/img/external-link.svg';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import ContentCard from '../components/cards/ContentCard';
 import DiscordCard from '../components/cards/DiscordCard';
 import GithubCard from '../components/cards/GithubCard';
 import Footer from '../components/Footer';
-import ImgIcon from '@site/static/img/file-text.svg';
+import ReadDocsIcon from '@site/static/img/read_docs.svg';
+import ExploreAPiICon from '@site/static/img/explore_api.svg';
+import IntTutorialIcon from '@site/static/img/interactive_tutorial.svg';
+import DemosIcon from '@site/static/img/demos.svg';
 
 const contentCards = [
 	{
 		title: 'Read the Documentation',
 		description: 'Start here to learn the basic documentation',
-		icon: <ImgIcon title='icon' />,
+		icon: <ReadDocsIcon title='icon' />,
 	},
 	{
 		title: 'See API Documentation',
 		description:
 			'Explore these docs to learn more about Verida API documentation',
-		icon: <ImgIcon title='icon' />,
+		icon: <ExploreAPiICon title='icon' />,
 	},
 	{
 		title: 'Interactive Tutorial',
 		description: `Check out the interactive tutorials for an introduction to Verida's Web3 APIs`,
-		icon: <ImgIcon title='icon' />,
+		icon: <IntTutorialIcon title='icon' />,
 	},
 	{
 		title: 'Demos',
 		description: 'Explore Verida technologies with demo applications',
-		icon: <ImgIcon title='icon' />,
+		icon: <DemosIcon title='icon' />,
 	},
 ];
 
@@ -62,7 +64,6 @@ const githubLinks = [
 ];
 export default function Home() {
 	const { siteConfig } = useDocusaurusContext();
-	const HeaderImage = require('../../static/img/header.svg').default;
 
 	const path = window.location.pathname;
 	const isHomePage = path === '/' ? true : false;
