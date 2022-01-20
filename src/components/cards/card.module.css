@@ -1,0 +1,99 @@
+.contentCard {
+    margin: 0.6rem 1rem;
+}
+
+
+.contentCard:hover {
+    cursor: pointer;
+    box-shadow: 0px 12px 25px rgba(34, 35, 140, 0.07);
+    border-radius: 12px;
+}
+
+
+.contentCardSection h4 {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.contentCardSection p {
+    font-size: 1rem;
+    line-height: 140%;
+    color: #545A6C;
+}
+
+
+.discordBanner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 21px 20px;
+    margin: 6.5rem 0;
+    background: var(--ifm-bg-gradient);
+    border: 1px solid #E6E8EB;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.discordBanner:hover {
+    cursor: pointer;
+    background: #FFFFFF;
+    box-shadow: 0px 12px 25px rgba(34, 35, 140, 0.07);
+}
+
+.discordBannerContent {
+    margin: 1.5rem 2.5rem;
+}
+
+.discordBannerContent h4 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 30px;
+    margin: 1.5rem 0 0 0;
+    color: var(--ifm-text-color);
+}
+
+.discordBannerContent p {
+    font-size: 1rem;
+    color: #545A6C;
+}
+
+
+.discordBannerLink{
+  text-decoration: none !important;
+}
+
+.GithubLink {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    width: 384px;
+    height: 56px;
+    background: var(--ifm-bg-gradient);
+    border: 1px solid #E6E8EB;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 1rem 1rem;
+}
+
+.GithubLink:hover {
+    cursor: pointer;
+    box-shadow: 0px 12px 25px rgba(34, 35, 140, 0.07);
+}
+
+.GithubLinkImg {
+    margin: 0 0.7rem -0.3rem 0;
+}
+
+.GithubLinkText {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    color: var(--ifm-text-color);
+}
+
+
+.GithubLinkText a {
+    text-decoration: none;
+    color: var(--ifm-text-color);
+}

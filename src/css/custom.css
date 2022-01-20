@@ -14,7 +14,10 @@
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 95%;
+  --ifm-text-color: #111111;
+ --ifm-bg-gradient:linear-gradient(279.5deg, rgba(231, 222, 255, 0.4) 2.09%, rgba(233, 247, 255, 0.4) 100%);
 }
+
 
 .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.1);
