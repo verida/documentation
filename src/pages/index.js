@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '@theme/Layout';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 import ExternalLink from '@site/static/img/external-link.svg';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
@@ -65,45 +66,45 @@ const githubLinks = [
 export default function Home() {
 	const { siteConfig } = useDocusaurusContext();
 
-	const path = window.location.pathname;
-	const isHomePage = path === '/' ? true : false;
-
 	return (
-		<Layout
-			noFooter={isHomePage}
-			title={siteConfig.title}
-			description='Verida enables the development of secure, decentralized applications that allow users to own and control how their data is used and shared.'
-		>
-			<main className={styles.mainSection}>
-				<section className={styles.heroSection}>
-					<h1>Welcome to your Web3 toolkit!</h1>
-					<p>
-						Explore the Verida Developer's Portal to get started with our
-						developer documentation, <br /> explore our demos, try out our
-						interactive tutorials and connect with the Web3 developer community.
-					</p>
-				</section>
-				<section className={styles.cardSection}>
-					<div className={styles.contentCard}>
-						{contentCards.map((item) => (
-							<ContentCard key={item.title} {...item} />
-						))}
-					</div>
-					<DiscordCard />
-					<div className={styles.githubCardSection}>
-						<h2>GitHub Repositories</h2>
-						<div className={styles.githubCard}>
-							{githubLinks.map((item) => (
-								<GithubCard key={item.title} {...item} />
+		<BrowserOnly>
+			{() => <Layout
+				noFooter={window.location.pathname === '/'}
+				title={siteConfig.title}
+				description='Verida enables the development of secure, decentralized applications that allow users to own and control how their data is used and shared.'
+			>
+				<main className={styles.mainSection}>
+					<section className={styles.heroSection}>
+						<h1>Welcome to your Web3 toolkit!</h1>
+						<p>
+							Explore the Verida Developer's Portal to get started with our
+							developer documentation, <br /> explore our demos, try out our
+							interactive tutorials and connect with the Web3 developer community.
+						</p>
+					</section>
+					<section className={styles.cardSection}>
+						<div className={styles.contentCard}>
+							{contentCards.map((item) => (
+								<ContentCard key={item.title} {...item} />
 							))}
 						</div>
-						<span className={styles.githubCardSectionSpan}>
-							View all on GitHub <ExternalLink title='link' />
-						</span>
-					</div>
-				</section>
-			</main>
-			{isHomePage && <Footer />}
-		</Layout>
+						<DiscordCard />
+						<div className={styles.githubCardSection}>
+							<h2>GitHub Repositories</h2>
+							<div className={styles.githubCard}>
+								{githubLinks.map((item) => (
+									<GithubCard key={item.title} {...item} />
+								))}
+							</div>
+							<span className={styles.githubCardSectionSpan}>
+								View all on GitHub <ExternalLink title='link' />
+							</span>
+						</div>
+					</section>
+				</main>
+				{window.location.pathname === '/' && <Footer />}
+			</Layout>}
+		</BrowserOnly>
+
 	);
 }
