@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Link from '@docusaurus/Link';
 import AppLogo from '@site/static/img/verida_logo_full.svg';
 import NewsLetter from './NewsLetter';
 import styles from './footer.module.css';
@@ -61,7 +62,7 @@ const Footer = () => {
             <NewsLetter />
             <div className={styles.footerSection}>
                 <div class="footer-links-img">
-                    <a href="https://verida.io" target="_blanck">
+                    <a href="https://verida.io" >
                         <AppLogo title="verida" />
                     </a>
                 </div>
@@ -71,7 +72,7 @@ const Footer = () => {
                     <ul >
                         {state.products.list.map(item => (
                             <li key={item.title}>
-                                <a href={item.link} target="_blanck">{item.title}</a>
+                                <Link href={item.link} >{item.title}</Link>
                             </li>
                         ))}
                     </ul>
@@ -81,7 +82,7 @@ const Footer = () => {
                     <ul >
                         {state.products.list.map(item => (
                             <li key={item.title}>
-                                <a href={item.link} target="_blanck">{item.title}</a>
+                                <Link href={item.link} >{item.title}</Link>
                             </li>
                         ))}
                     </ul>
@@ -91,7 +92,7 @@ const Footer = () => {
                     <ul >
                         {state.developers.list.map(item => (
                             <li key={item.title}>
-                                <a href={item.link} target="_blanck">{item.title}</a>
+                                <Link href={item.link} >{item.title}</Link>
                             </li>
                         ))}
                     </ul>
@@ -101,7 +102,7 @@ const Footer = () => {
                     <ul >
                         {state.company.list.map(item => (
                             <li key={item.title}>
-                                <a href={item.link} target="_blanck">{item.title}</a>
+                                <Link href={item.link} >{item.title}</Link>
                             </li>
                         ))}
                     </ul>

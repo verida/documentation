@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './card.module.css';
+import Link from '@docusaurus/Link';
 import GithubLogo from '@site/static/img/github.svg';
 
 const GithubCard = ({ link, title }) => {
@@ -11,9 +12,9 @@ const GithubCard = ({ link, title }) => {
 			<div>
 				<span className={styles.GithubLinkText}>
 					{' '}
-					<a href={link} target='_blanck'>
+					<Link href={link}>
 						{title}
-					</a>{' '}
+					</Link>{' '}
 				</span>
 			</div>
 		</div>

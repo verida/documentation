@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '@theme/Layout';
+import Link from '@docusaurus/Link';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 import ExternalLink from '@site/static/img/external-link.svg';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -16,24 +17,29 @@ import DemosIcon from '@site/static/img/demos.svg';
 const contentCards = [
 	{
 		title: 'Read the Documentation',
-		description: 'Start here to learn the basic documentation',
 		icon: <ReadDocsIcon title='icon' />,
+		link: "/docs/intro",
+		externalLink: false
 	},
 	{
 		title: 'See API Documentation',
-		description:
-			'Explore these docs to learn more about Verida API documentation',
 		icon: <ExploreAPiICon title='icon' />,
+		link: 'https://apidocs.verida.io/',
+		externalLink: true
 	},
 	{
 		title: 'Interactive Tutorial',
 		description: `Check out the interactive tutorials for an introduction to Verida's Web3 APIs`,
 		icon: <IntTutorialIcon title='icon' />,
+		link: 'https://learn.verida.io/',
+		externalLink: true
 	},
 	{
 		title: 'Demos',
 		description: 'Explore Verida technologies with demo applications',
 		icon: <DemosIcon title='icon' />,
+		link: '/docs/demos',
+		externalLink: false
 	},
 ];
 
@@ -97,7 +103,7 @@ export default function Home() {
 								))}
 							</div>
 							<span className={styles.githubCardSectionSpan}>
-								View all on GitHub <ExternalLink title='link' />
+								<Link href="https://github.com/orgs/verida/repositories" target="_blank">	View all on GitHub <ExternalLink title='link' /></Link>
 							</span>
 						</div>
 					</section>

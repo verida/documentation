@@ -58,6 +58,10 @@
 }
 
 
+.discordBannerLink{
+  text-decoration: none !important;
+}
+
 .GithubLink {
     display: flex;
     flex-direction: row;
