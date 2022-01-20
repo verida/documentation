@@ -49,16 +49,16 @@ const githubLinks = [
 		link: 'https://github.com/verida/verida-js',
 	},
 	{
-		title: 'Schemas-common',
-		link: 'https://github.com/verida/schemas-common',
+		title: 'Markdown Notes Demo',
+		link: 'https://github.com/verida/markdown-notes-demo',
 	},
 	{
 		title: 'Documentation',
 		link: 'https://github.com/verida/documentation',
 	},
 	{
-		title: 'Schemas-core',
-		link: 'https://github.com/verida/schemas-core',
+		title: 'Storage-Node',
+		link: 'https://github.com/verida/storage-node',
 	},
 	{
 		title: 'Account Explorer',
