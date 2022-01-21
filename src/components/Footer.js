@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Link from '@docusaurus/Link';
 import AppLogo from '@site/static/img/verida_logo_full.svg';
-import NewsLetter from './NewsLetter';
 import styles from './footer.module.css';
 
 export const products = [
@@ -59,7 +58,6 @@ const Footer = () => {
     const [state] = useState(footerNav)
     return (
         <footer className={styles.footer} >
-            <NewsLetter />
             <div className={styles.footerSection}>
                 <div class="footer-links-img">
                     <a href="https://verida.io" >

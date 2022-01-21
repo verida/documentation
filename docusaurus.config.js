@@ -1,4 +1,4 @@
-// @ts-check
+// @ts-nocheck
 // Note: type annotations allow type checking and IDEs autocompletion
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
@@ -43,10 +43,22 @@ const config = {
             }),
         ],
     ],
-
+    scripts: [
+        {
+            src: 'https://plausible.io/js/plausible.js',
+        },
+    ],
     themeConfig:
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
+            colorMode: {
+                defaultMode: 'light',
+                disableSwitch: true,
+                respectPrefersColorScheme: false,
+                switchConfig: {
+
+                },
+            },
             metadata: [{ name: 'keywords', content: 'verida, personal data' }],
             navbar: {
                 //title: 'Verida',

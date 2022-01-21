@@ -7,7 +7,7 @@ const DiscordCard = () => {
     return (
         <Link className={styles.discordBannerLink} href="https://discord.com/invite/qb6vS43">
             <div className={styles.discordBanner}>
-                <div><DiscordLogo title="DiscordLogo" /></div>
+                <div><DiscordLogo className={styles.discordBannerSvg} title="DiscordLogo" /></div>
                 <div className={styles.discordBannerContent}>
                     <h3>Join our Discord Community</h3>
                     <p>
