@@ -4,6 +4,7 @@ description: Verida Developer Documentation
 image: https://uploads-ssl.webflow.com/60e8365cd5794f8db04151ed/6107868980521e0acf27b2d9_favicon.svg
 keywords: [Verida, Web3, Developers]
 ---
+
 # Getting Started
 
 In this article, we walk you through the process setting up the Verida Client SDK and guide you through the process of initializing and using the library in your applications.
@@ -14,13 +15,13 @@ You can interactively use the Verida client library in your browser using the [V
 
 Start by installing the Verida client protocol library and Verida Vault authentication method:
 
-```bash
+```bash npm2yarn
 yarn add @verida/client-ts @verida/account-web-vault
 ```
 
 You may receive compilation warnings when using typescript regarding `pouchdb`. If that happens, add the `pouchdb-core` type definitions:
 
-```bash
+```bash npm2yarn
 yarn add --dev @types/pouchdb-core
 ```
 
@@ -29,34 +30,33 @@ yarn add --dev @types/pouchdb-core
 Initialize a connection to the Verida network using a private key stored on the user’s mobile device using the Verida Vault:
 
 ```tsx
-import { Network, EnvironmentType } from '@verida/client-ts'
-import { VaultAccount } from '@verida/account-web-vault'
+import { Network, EnvironmentType } from '@verida/client-ts';
+import { VaultAccount } from '@verida/account-web-vault';
 
-const VERIDA_ENVIRONMENT = EnvironmentType.TESTNET
-const CONTEXT_NAME = 'My Application Context Name'
-const VERIDA_TESTNET_DEFAULT_SERVER = 'https://db.testnet.verida.io:5002/'
+const VERIDA_ENVIRONMENT = EnvironmentType.TESTNET;
+const CONTEXT_NAME = 'My Application Context Name';
+const VERIDA_TESTNET_DEFAULT_SERVER = 'https://db.testnet.verida.io:5002/';
 
 const account = new VaultAccount({
-    defaultDatabaseServer: {
-        type: 'VeridaDatabase',
-        endpointUri: VERIDA_TESTNET_DEFAULT_SERVER
-    },
-    defaultMessageServer: {
-        type: 'VeridaMessage',
-        endpointUri: VERIDA_TESTNET_DEFAULT_SERVER
-    },
-})
+	defaultDatabaseServer: {
+		type: 'VeridaDatabase',
+		endpointUri: VERIDA_TESTNET_DEFAULT_SERVER,
+	},
+	defaultMessageServer: {
+		type: 'VeridaMessage',
+		endpointUri: VERIDA_TESTNET_DEFAULT_SERVER,
+	},
+});
 
 const context = Network.connect({
-    client: {
-        environment: VERIDA_ENVIRONMENT
-    },
-    account: account,
-    context: {
-        name: CONTEXT_NAME
-    }
-})
-
+	client: {
+		environment: VERIDA_ENVIRONMENT,
+	},
+	account: account,
+	context: {
+		name: CONTEXT_NAME,
+	},
+});
 ```
 
 **Note:** The default settings will connect to the Verida testnet.
@@ -71,19 +71,19 @@ const context = Network.connect({
 You can now verify the user has connected succesfully to your application:
 
 ```tsx
-const did = await account.did()
-console.log("User is connected with Verida Account DID: " + did)
+const did = await account.did();
+console.log('User is connected with Verida Account DID: ' + did);
 ```
 
 You can open a database, save a record and then fetch it:
 
 ```jsx
-const db = await context.openDatabase('test_db')
+const db = await context.openDatabase('test_db');
 const item = await db.save({
-  hello: 'world'
-})
-const items = await db.getMany()
-console.log(items)
+	hello: 'world',
+});
+const items = await db.getMany();
+console.log(items);
 ```
 
 Learn more about building applications with decentralized [databases](data.md), [datastores](data.md) and [messaging](messaging.md).

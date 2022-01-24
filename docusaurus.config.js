@@ -23,20 +23,21 @@ const config = {
             ({
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
-                    // Please change this to your repo.
-                    // editUrl: null,
+                    remarkPlugins: [
+                        [require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }],
+                    ],
                 },
                 sitemap: {
                     changefreq: 'weekly',
                     priority: 0.5,
                     trailingSlash: false,
                 },
-                // blog: {
-                //   showReadingTime: true,
-                //   // Please change this to your repo.
-                //   editUrl:
-                //     'https://github.com/facebook/docusaurus/edit/main/website/blog/',
-                // },
+                pages: {
+                    remarkPlugins: [require('@docusaurus/remark-plugin-npm2yarn')],
+                },
+                blog: {
+                    showReadingTime: false,
+                },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
                 },
