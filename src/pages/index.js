@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from '@docusaurus/Head';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import BrowserOnly from '@docusaurus/BrowserOnly';
@@ -69,6 +70,13 @@ const githubLinks = [
 		link: 'https://github.com/verida/generic-demo',
 	},
 ];
+
+const description = `
+	Explore the Verida Developer's Portal to get 
+	started with our developer documentation,
+	explore our demos, 
+	try out our interactive tutorials and connect with the Web3 developer community.
+`
 export default function Home() {
 	const { siteConfig } = useDocusaurusContext();
 
@@ -79,6 +87,19 @@ export default function Home() {
 				title={siteConfig.title}
 				description='Verida enables the development of secure, decentralized applications that allow users to own and control how their data is used and shared.'
 			>
+				<Head>
+					<title>Verida Web3 Toolkit</title>
+					<meta name="title" content="Verida Web3 Toolkit" />
+					<meta name="description" content={description} />
+					<meta property="og:type" content="website" />
+					<meta property="og:url" content="https://developers.verida.io/" />
+					<meta property="og:title" content="Verida Web3 Toolkit" />
+					<meta property="og:description" content={description} />
+					<meta property="twitter:card" content="summary_large_image" />
+					<meta property="twitter:url" content="https://developers.verida.io/" />
+					<meta property="twitter:title" content="Verida Web3 Toolkit" />
+					<meta property="twitter:description" content={description} />
+				</Head>
 				<main className={styles.mainSection}>
 					<section className={styles.heroSection}>
 						<h1>Welcome to your Web3 toolkit!</h1>
