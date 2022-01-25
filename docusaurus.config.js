@@ -23,13 +23,17 @@ const config = {
             ({
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
-                    // Please change this to your repo.
-                    // editUrl: null,
+                    remarkPlugins: [
+                        [require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }],
+                    ],
                 },
                 sitemap: {
                     changefreq: 'weekly',
                     priority: 0.5,
                     trailingSlash: false,
+                },
+                pages: {
+                    remarkPlugins: [require('@docusaurus/remark-plugin-npm2yarn')],
                 },
                 blog: false,
                 theme: {
@@ -54,7 +58,10 @@ const config = {
 
                 },
             },
-            metadata: [{ name: 'keywords', content: 'verida, personal data' }],
+            metadata: [
+                        { name: 'keywords', content: 'verida, personal data'},
+                        {name: 'robots', content: 'max-image-preview:large'},
+                    ],
             navbar: {
                 //title: 'Verida',
                 logo: {
@@ -129,7 +136,7 @@ const config = {
             {
                 // Options here
                 indexBlog: false,
-                indexPages: true
+                indexPages: false,
             },
         ],
         './webpack_plugin',

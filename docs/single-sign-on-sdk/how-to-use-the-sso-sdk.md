@@ -3,6 +3,7 @@ description: Verida Developer Documentation
 image: https://uploads-ssl.webflow.com/60e8365cd5794f8db04151ed/6107868980521e0acf27b2d9_favicon.svg
 keywords: [Verida, Web3, Developers]
 ---
+
 # How to use the SSO SDK
 
 Initialize a connection to the Verida network using a private key stored on the user’s mobile device using the Verida Vault.
@@ -13,8 +14,8 @@ This easy to use integration method allows a user to scan a QR code to sign into
 
 This requires installing the `@verida/account-web-vault` dependency:
 
-```bash
-yarn add @verida/account-web-vault
+```bash npm2yarn
+npm install  @verida/account-web-vault
 ```
 
 # Usage
@@ -22,37 +23,39 @@ yarn add @verida/account-web-vault
 Here’s how you initialize an application context:
 
 ```jsx
-import { Network, EnvironmentType } from '@verida/client-ts'
-import { VaultAccount } from '@verida/account-web-vault'
+import { Network, EnvironmentType } from '@verida/client-ts';
+import { VaultAccount } from '@verida/account-web-vault';
 
-const VERIDA_ENVIRONMENT = EnvironmentType.TESTNET
-const CONTEXT_NAME = 'My Application Context Name'
-const VERIDA_TESTNET_DEFAULT_SERVER = 'https://db.testnet.verida.io:5002/'
-const SSO_CONFIG = {}
+const VERIDA_ENVIRONMENT = EnvironmentType.TESTNET;
+const CONTEXT_NAME = 'My Application Context Name';
+const VERIDA_TESTNET_DEFAULT_SERVER = 'https://db.testnet.verida.io:5002/';
+const SSO_CONFIG = {};
 
 const account = new VaultAccount({
-    defaultDatabaseServer: {
-        type: 'VeridaDatabase',
-        endpointUri: VERIDA_TESTNET_DEFAULT_SERVER
-    },
-    defaultMessageServer: {
-        type: 'VeridaMessage',
-        endpointUri: VERIDA_TESTNET_DEFAULT_SERVER
-    },
-        vaultConfig: SSO_CONFIG
-})
+	defaultDatabaseServer: {
+		type: 'VeridaDatabase',
+		endpointUri: VERIDA_TESTNET_DEFAULT_SERVER,
+	},
+	defaultMessageServer: {
+		type: 'VeridaMessage',
+		endpointUri: VERIDA_TESTNET_DEFAULT_SERVER,
+	},
+	vaultConfig: SSO_CONFIG,
+});
 
 const context = Network.connect({
-    client: {
-        environment: VERIDA_ENVIRONMENT
-    },
-    account: account,
-    context: {
-        name: CONTEXT_NAME
-    }
-})
+	client: {
+		environment: VERIDA_ENVIRONMENT,
+	},
+	account: account,
+	context: {
+		name: CONTEXT_NAME,
+	},
+});
 if (!context) {
-    console.log("User cancelled login attempt by closing the QR code modal or an unexpected error occurred")
+	console.log(
+		'User cancelled login attempt by closing the QR code modal or an unexpected error occurred'
+	);
 }
 ```
 
