@@ -16,13 +16,13 @@ You can interactively use the Verida client library in your browser using the [V
 Start by installing the Verida client protocol library and Verida Vault authentication method:
 
 ```bash npm2yarn
-yarn add @verida/client-ts @verida/account-web-vault
+npm install @verida/client-ts @verida/account-web-vault
 ```
 
 You may receive compilation warnings when using typescript regarding `pouchdb`. If that happens, add the `pouchdb-core` type definitions:
 
 ```bash npm2yarn
-yarn add --dev @types/pouchdb-core
+npm install --dev @types/pouchdb-core
 ```
 
 # Authentication
