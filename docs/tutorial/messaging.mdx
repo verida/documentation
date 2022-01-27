@@ -1,0 +1,95 @@
+---
+sidebar_position: 3
+title: Messaging
+description: Verida Developer Tutorial - Messaging
+image: https://uploads-ssl.webflow.com/60e8365cd5794f8db04151ed/6107868980521e0acf27b2d9_favicon.svg
+keywords: [Verida, Web3, Developers, Tutorial, Messaging]
+---
+
+
+# Messaging
+
+Every application has a built-in inbox for receiving messages and outbox for sending messages. 
+This allows users and applications to send data between each other knowing nothing than the other user's DID and application name.
+
+This example sends a contact record to a user's Verida Vault mobile application. 
+
+
+```jsx live
+VeridaMessagingExample = () => {
+    const [DID, setDID] = useGlobalState("globalDID");
+    const [veridaContext, setVeridaContext] = useGlobalState("globalVeridaContext")
+
+    const [status, setStatus] = useState(null)
+
+    sendMessage = async function() {
+        setStatus(null)
+
+        // The data message we are sending
+        const data = {
+            data: [
+                {
+                name: 'Verida Example',  // try editing these values and resend the message
+                firstName: 'Verida',
+                lastName: 'Example',
+                email: 'verida.example@example.com',
+                schema: 'https://common.schemas.verida.io/social/contact/v0.1.0/schema.json'
+                }
+            ]
+        }
+
+        const subject = 'New contact details for ' + data.data[0].name;
+        // we need to set it to the correct message type
+        const messageType = 'inbox/type/dataSend'
+
+        const config = {
+            recipientContextName: 'Verida: Vault'
+        }
+
+        const messaging = await veridaContext.getMessaging()
+
+        // Now send the message
+        // DID is set to whatever DID you logged in with
+        await messaging.send(DID, messageType, data, subject, config)
+        console.log("message sent")
+
+        setStatus("Message Sent. Please check the inbox in the Verida Vault")
+    }
+
+    let statusMessage = <div></div>
+    if (status !== null) {
+        statusMessage = <div className="admonition admonition-info alert alert--info">{status}</div>
+    }
+        
+
+    const isLoggedIn = (DID !== null);
+    if (isLoggedIn) {
+        return (
+            <div>
+                <div>
+                    <button onClick={this.sendMessage}>Send Message</button>
+                </div>
+                
+                {statusMessage}
+            </div>
+        )
+
+    } else {
+        return (
+            <div className="admonition admonition-danger alert alert--danger">
+                <h2>Please login <a href="/docs/tutorial/SSO#runcode">here</a></h2>
+            </div>
+        );
+    }
+
+
+}
+```
+<!-- this is a target so we can link to the end of the code block -->
+<a name="runcode">&nbsp;</a>
+
+## Messaging documentation
+
+See the [Verida Messaging documentation](/client-sdk/messaging.md) for complete documentation. 
+
+

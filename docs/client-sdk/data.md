@@ -183,7 +183,7 @@ row.firstName = 'Jane'
 await contacts.save(row)
 ```
 
-It’s critical that you fetch the existing record and update it’s values before saving. The underlying database expects data updates to have two properties set:
+It’s critical that you fetch the existing record and update its values before saving. The underlying database expects data updates to have two properties set:
 
 - `_id`: The unique record identifier (string)
 - `_rev`: A unique revision identifier for the current row (string)
@@ -192,7 +192,7 @@ The `_id` field is used to detect we are expecting to update an existing record.
 
 ## Deleting data
 
-You can delete a record using the full record or just it’s `_id`:
+You can delete a record using the full record or just its `_id`:
 
 ```tsx
 const recordId = 'abc123'

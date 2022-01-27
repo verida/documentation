@@ -15,6 +15,7 @@ const config = {
     favicon: 'img/new_favicon.ico',
     organizationName: 'verida', // Usually your GitHub org/user name.
     projectName: 'verida', // Usually your repo name.
+    trailingSlash: false,
     themes: ['@docusaurus/theme-live-codeblock'],
     presets: [
         [
@@ -30,7 +31,6 @@ const config = {
                 sitemap: {
                     changefreq: 'weekly',
                     priority: 0.5,
-                    trailingSlash: false,
                 },
                 pages: {
                     remarkPlugins: [require('@docusaurus/remark-plugin-npm2yarn')],

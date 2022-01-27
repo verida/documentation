@@ -131,8 +131,6 @@ VeridaMessagingExample = () => {
     sendMessage = async function() {
         setStatus(null)
 
-
-
         // The data message we are sending
         const data = {
             data: [
@@ -159,6 +157,7 @@ VeridaMessagingExample = () => {
         // Now send the message
         // DID is set to whatever DID you logged in with
         await messaging.send(DID, messageType, data, subject, config)
+        console.log("message sent")
 
         setStatus("Message Sent. Please check the inbox in the Verida Vault")
     }
@@ -195,7 +194,7 @@ VeridaMessagingExample = () => {
 
 ## Databases
 
-This example shows opening a database (in the `useEffect` function), saving data (the `addItem` function) and finally how to delete all data (the `deleteAll` function).
+This example shows opening a database (in the `openDatabase` function), saving data (the `addItem` function) and finally how to delete all data (the `deleteAll` function).
 
 ```jsx live
 VeridaDatabaseExample = () => {
@@ -222,6 +221,10 @@ VeridaDatabaseExample = () => {
     } 
 
     addItem = async function() {
+        if (Window.db === undefined) {
+            await openDatabase()
+        }
+
         // save a record with key "hello", value "world"
         //
         // Try editing the value saved here
@@ -233,25 +236,38 @@ VeridaDatabaseExample = () => {
         const items = await Window.db.getMany()
         generateTableRows(items)
     }
+
+    openDatabase = async function() {
+        // veridaContext will be null if the user isn't logged in
+        if (veridaContext !== null) {
+            // Open / create a test database
+            Window.db = await veridaContext.openDatabase('test_db')
+
+            const items = await Window.db.getMany();
+            generateTableRows(items)
+
+            return true
+        } else {
+            console.log("veridaContext is null. This means no one has logged in")
+            return false
+        }
+    }
     
     deleteAll = async function() {
+        if (Window.db === undefined) {
+            await openDatabase()
+        }
+
         // delete all items from this database
         await Window.db.deleteAll()
         generateTableRows([])
     }
 
     useEffect( () => {
-        // veridaContext will be null if the user isn't logged in
-        if (veridaContext !== null) {
-            // Open / create a test database
-            veridaContext.openDatabase('test_db').then((database) => {
-                Window.db = database
-
-                database.getMany().then((items) => {
-                    generateTableRows(items)
-                });
-            });   
+        if (Window.db === undefined) {
+            openDatabase()
         }
+
     }, [veridaContext]);
 
 
@@ -370,3 +386,12 @@ VeridaEncryptionExample = () => {
 }
 
 ```
+
+<!-- this is a target so we can link to the end of the code block -->
+<a name="runcode">&nbsp;</a>
+
+## Messaging documentation
+
+See the [Verida Messaging documentation](/client-sdk/messaging.md) for complete documentation. 
+
+

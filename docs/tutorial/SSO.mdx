@@ -1,0 +1,105 @@
+---
+sidebar_position: 2
+title: Single Sign On
+description: Verida Developer Tutorial - Single Sign On
+image: https://uploads-ssl.webflow.com/60e8365cd5794f8db04151ed/6107868980521e0acf27b2d9_favicon.svg
+keywords: [Verida, Web3, Developers, Tutorial, SSO, Single Sign On]
+---
+
+
+# Login using Verida Single Sign On
+
+The code below shows how to login to the Verida network. It is live - you can press the "Login" button to login, and edit the code to see how it works. 
+
+
+<!--
+Implementation Notes
+
+Because of the way Docusaurus and MDX live code is implemented, it is tricky passing state between live code elements.
+Each is a separate React component, and we can't modify parent components to share state, or to be a React Context.Provider.
+
+Instead we use a React state-pool. See https://dev.to/yezyilomo/you-can-definitely-use-global-variables-to-manage-global-state-in-react-17l3
+-->
+```jsx live
+VeridaLoginExample = () => {
+
+    // We use a React state-pool to manage global state and pass between live code blocks
+    const [DID, setDID] = useGlobalState("globalDID");
+    const [veridaContext, setVeridaContext] = useGlobalState("globalVeridaContext")
+
+    this.CONTEXT_NAME = 'Verida: Tutorial'
+    this.VERIDA_TESTNET_DEFAULT_SERVER = 'https://db.testnet.verida.io:5002/'
+
+    login = async function() {
+
+
+        const account = new VaultAccount({
+            defaultDatabaseServer: {
+                type: 'VeridaDatabase',
+                endpointUri: this.VERIDA_TESTNET_DEFAULT_SERVER
+            },
+            defaultMessageServer: {
+                type: 'VeridaMessage',
+                endpointUri: this.VERIDA_TESTNET_DEFAULT_SERVER
+            },
+        })
+
+        const context = await Network.connect({
+            client: {
+                environment: 'testnet'
+            },
+            account: account,
+            context: {
+                name: this.CONTEXT_NAME
+            }
+        })
+        setVeridaContext(context)
+
+        const did = await account.did()
+        setDID(did)
+
+    }
+
+
+    logout = () => {
+        veridaContext.
+            getAccount().
+            disconnect(
+                    this.CONTEXT_NAME
+                ).then(() => {
+                    setDID(null)
+                    setVeridaContext(null)
+                }
+        );
+    }
+
+    this.login = this.login.bind(this);  
+    this.logout = this.logout.bind(this);
+
+    const isLoggedIn = (DID !== null);
+
+    if (isLoggedIn) {
+        // user is logged in
+        return (
+            <div>
+                <h3>Logged in as DID: {DID}</h3>
+                <button onClick={this.logout}>Logout</button>
+            </div>
+        );
+    } else {
+        return (
+            <div>
+                <button onClick={this.login}>Login</button>
+            </div>
+        );
+    }
+
+}
+
+```
+<!-- this is a target so we can link to the end of the code block -->
+<a name="runcode">&nbsp;</a>
+
+## SSO documentation
+
+See the [Verida Single Sign On (SSO) documentation](/single-sign-on-sdk/single-sign-on-sdk.md) for complete documentation. 
