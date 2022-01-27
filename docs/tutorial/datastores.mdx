@@ -1,0 +1,124 @@
+---
+sidebar_position: 5
+title: Datastores and Data Validiation
+description: Verida Developer Tutorial - Messaging
+image: https://uploads-ssl.webflow.com/60e8365cd5794f8db04151ed/6107868980521e0acf27b2d9_favicon.svg
+keywords: [Verida, Web3, Developers, Tutorial, Datastores, Data Validation]
+---
+
+# Datastores 
+
+Verida Datastores are databases with a defined schema. By sharing a schema applications can share data more easily. 
+Datastores ensure all data saved in them is valid by enforcing data validation. [Read more about datastores here](/client-sdk/data.md#opening-datastores).
+
+In this demo we show three things:
+ * how attempting to save a record with invalid data (in this case an email address) will fail (the `saveBadContact` function)
+ * how saving valid data is successful (the `saveGoodContact` function) 
+ * how to retrieve all data (the `showContacts` function)
+
+```jsx live
+VeridaDatastoreExample = () => {
+    const contactSchema = 'https://common.schemas.verida.io/social/contact/v0.1.0/schema.json';
+    const [DID, setDID] = useGlobalState("globalDID");
+    const [veridaContext, setVeridaContext] = useGlobalState("globalVeridaContext")
+
+    const [currentMessage, setCurrentMessage] = useState(null)
+
+    let contact = {
+        firstName: 'John',
+        lastName: 'Smith',
+        email: ''
+    }
+
+    processSaveResult = function(result, errors) {
+        if (result){
+            setCurrentMessage("Successfully saved")
+        } else {
+            
+            let errorMessage = []
+            
+            errorMessage.push(<div>Failed to save!</div>)
+            
+            errorMessage.push(
+                    errors.map((error, idx) => (
+                        <div key={idx}>Error is: {error.message}</div>
+                    ))
+            )
+            setCurrentMessage(errorMessage)
+        }
+    }
+
+    saveBadContact = async function() {
+        let contactsDS = await veridaContext.openDatastore(contactSchema)
+
+        contact.email = 'john_smith.example.com'  // notice the BAD email address
+
+        setCurrentMessage("saving with email address " + contact.email )
+
+        let result = await contactsDS.save(contact);
+        processSaveResult(result, contactsDS.errors)
+    }
+
+    saveGoodContact = async function() {
+        let contactsDS = await veridaContext.openDatastore(contactSchema)
+
+        contact.email = 'john_smith@example.com'  // notice the GOOD email address
+
+        setCurrentMessage("saving with email address " + contact.email )
+
+        let result = await contactsDS.save(contact);
+        processSaveResult(result, contactsDS.errors)
+    }
+
+    showContacts = async function() {
+        let contactsDS = await veridaContext.openDatastore(contactSchema)
+
+        contacts = await contactsDS.getMany();
+        
+        msg = []
+        msg.push(
+            contacts.map((contact, index) => (
+                <div key={index}>{contact.firstName} {contact.lastName}: {contact.email}</div>
+            ))
+        )
+        setCurrentMessage(msg)
+    }
+
+
+    const isLoggedIn = (DID !== null);
+
+    if (isLoggedIn) {
+        // user is logged in
+        return (
+            <div>
+                <button onClick={this.saveBadContact}>Attempt to save an invalid contact</button>
+                <br />
+                <button onClick={this.saveGoodContact}>Attempt to save an valid contact</button>
+                <br />
+                <button onClick={this.showContacts}>Show contacts</button>
+                <div>
+                {currentMessage}
+                </div>
+            </div>
+        );
+    } else {
+        return (
+            <div className="admonition admonition-danger alert alert--danger">
+                <h2>Please login <a href="/docs/tutorial/SSO#runcode">here</a></h2>
+            </div>
+        );
+    }
+}
+
+```
+<!-- this is a target so we can link to the end of the code block -->
+<a name="runcode">&nbsp;</a>
+
+## Database documentation
+
+See the [Verida Datastore documentation](/client-sdk/data.md) for complete documentation. 
+
+
+
+
+

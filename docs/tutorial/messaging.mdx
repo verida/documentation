@@ -23,7 +23,7 @@ VeridaMessagingExample = () => {
     const [status, setStatus] = useState(null)
 
     sendMessage = async function() {
-        setStatus(null)
+        setStatus("Sending message... please wait.")
 
         // The data message we are sending
         const data = {
