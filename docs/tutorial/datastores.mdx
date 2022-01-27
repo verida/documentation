@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 title: Datastores and Data Validiation
 description: Verida Developer Tutorial - Messaging
 image: https://uploads-ssl.webflow.com/60e8365cd5794f8db04151ed/6107868980521e0acf27b2d9_favicon.svg
@@ -74,7 +74,7 @@ VeridaDatastoreExample = () => {
         let contactsDS = await veridaContext.openDatastore(contactSchema)
 
         contacts = await contactsDS.getMany();
-        
+
         msg = []
         msg.push(
             contacts.map((contact, index) => (
