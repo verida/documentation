@@ -53,10 +53,11 @@ VeridaLoginExample = () => {
                 name: this.CONTEXT_NAME
             }
         })
+       if(context){
         setVeridaContext(context)
-
         const did = await account.did()
         setDID(did)
+	   }
 
     }
 
