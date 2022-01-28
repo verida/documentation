@@ -1,0 +1,133 @@
+---
+sidebar_position: 4
+title: Databases
+description: Verida Developer Tutorial - Messaging
+image: https://uploads-ssl.webflow.com/60e8365cd5794f8db04151ed/6107868980521e0acf27b2d9_favicon.svg
+keywords: [Verida, Web3, Developers, Tutorial, Databases]
+---
+
+# Databases
+
+This example shows opening a database (in the `openDatabase` function), saving data (the `addItem` function) and finally how to delete all data (the `deleteAll` function).
+
+```jsx live
+VeridaDatabaseExample = () => {
+    const [DID, setDID] = useGlobalState("globalDID");
+    const [veridaContext, setVeridaContext] = useGlobalState("globalVeridaContext")
+    
+    // tableRows the the records shown from the database
+    const [tableRows, setTableRows] = useState([])
+
+    generateTableRows = (items) => {
+        // We render all available fields here
+        // the "myvalue" column is the one we set in the addItem function below
+
+        let rows = items.map((item) => (
+            <tr key={item._id}>
+                <td>{item._id}</td>
+                <td>{item.myvalue}</td> 
+                <td>{item.insertedAt}</td>
+                <td>{item.modifiedAt}</td>
+                <td>{item._rev}</td>
+            </tr>
+        ))
+        setTableRows(rows)
+    } 
+
+    addItem = async function() {
+        if (Window.db === undefined) {
+            await openDatabase()
+        }
+
+        // save a record with key "hello", value "world"
+        //
+        // Try editing the value saved here
+        const item = await Window.db.save({
+            myvalue: 'hello world' // change this, and press the "Add Item" button
+        });
+
+        // retrieve the items
+        const items = await Window.db.getMany()
+        generateTableRows(items)
+    }
+
+    openDatabase = async function() {
+        // veridaContext will be null if the user isn't logged in
+        if (veridaContext !== null) {
+            // Open / create a test database
+            Window.db = await veridaContext.openDatabase('test_db')
+
+            const items = await Window.db.getMany();
+            generateTableRows(items)
+
+            return true
+        } else {
+            console.log("veridaContext is null. This means no one has logged in")
+            return false
+        }
+    }
+    
+    deleteAll = async function() {
+        if (Window.db === undefined) {
+            await openDatabase()
+        }
+
+        // delete all items from this database
+        await Window.db.deleteAll()
+        generateTableRows([])
+    }
+
+    useEffect( () => {
+        if (Window.db === undefined) {
+            openDatabase()
+        }
+
+    }, [veridaContext]);
+
+
+    const isLoggedIn = (DID !== null);
+    
+    if (isLoggedIn) {
+        // user is logged in
+        return (
+            <div>
+                <h3>Logged in as DID: {DID}</h3>
+                <h4>Current data in database</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>_id</td>  
+                            <td>myvalue</td>  
+                            <td>insertedAt</td>  
+                            <td>modifiedAt</td>  
+                            <td>_rev</td>  
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {tableRows}
+                    </tbody>
+                </table>
+
+                <h4>Actions</h4>
+                <button onClick={this.addItem}>Add Item</button>
+                <br />
+                <button onClick={this.deleteAll}>Delete All Items</button>
+            </div>
+        );
+    } else {
+        return (
+            <div className="admonition admonition-danger alert alert--danger">
+                <h2>Please login <a href="/docs/tutorial/SSO#runcode">here</a></h2>
+            </div>
+        );
+    }
+}
+
+```
+<!-- this is a target so we can link to the end of the code block -->
+<a name="runcode">&nbsp;</a>
+
+## Database documentation
+
+See the [Verida Database documentation](/client-sdk/data.md) for complete documentation. 
+

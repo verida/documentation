@@ -15,6 +15,7 @@ const config = {
     favicon: 'img/new_favicon.ico',
     organizationName: 'verida', // Usually your GitHub org/user name.
     projectName: 'verida', // Usually your repo name.
+    trailingSlash: false,
     themes: ['@docusaurus/theme-live-codeblock'],
     presets: [
         [
@@ -30,14 +31,11 @@ const config = {
                 sitemap: {
                     changefreq: 'weekly',
                     priority: 0.5,
-                    trailingSlash: false,
                 },
                 pages: {
                     remarkPlugins: [require('@docusaurus/remark-plugin-npm2yarn')],
                 },
-                blog: {
-                    showReadingTime: false,
-                },
+                blog: false,
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
                 },
@@ -60,7 +58,10 @@ const config = {
 
                 },
             },
-            metadata: [{ name: 'keywords', content: 'verida, personal data' }],
+            metadata: [
+                        { name: 'keywords', content: 'verida, personal data'},
+                        {name: 'robots', content: 'max-image-preview:large'},
+                    ],
             navbar: {
                 //title: 'Verida',
                 logo: {
@@ -115,10 +116,6 @@ const config = {
                     {
                         title: 'More',
                         items: [
-                            // {
-                            //   label: 'Blog',
-                            //   to: '/blog',
-                            // },
                             {
                                 label: 'GitHub',
                                 href: 'https://github.com/verida',
@@ -132,35 +129,18 @@ const config = {
                 theme: lightCodeTheme,
                 darkTheme: darkCodeTheme,
             },
-            // algolia: {
-            //     // If Algolia did not provide you any appId, use 'BH4D9OD16A'
-            //     appId: 'VB805V0J53',
-
-            //     // Public API key: it is safe to commit it
-            //     apiKey: '5a2f5f472eb6491ccc3a3f5576d2625b',
-
-            //     indexName: 'dev_verida',
-
-            //     // Optional: see doc section below
-            //     contextualSearch: true,
-
-            //     // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-            //     externalUrlRegex: 'external\\.com|domain\\.com',
-
-            //     // Optional: Algolia search parameters
-            //     searchParameters: {},
-
-            //     //... other Algolia params
-            // },
         }),
     plugins: [
         [
             require.resolve("@cmfcmf/docusaurus-search-local"),
             {
                 // Options here
+                indexBlog: false,
+                indexPages: false,
             },
         ],
-    ]
+        './webpack_plugin',
+    ],
 };
 
 module.exports = config;

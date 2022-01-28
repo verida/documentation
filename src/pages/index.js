@@ -81,7 +81,7 @@ export default function Home() {
 	const { siteConfig } = useDocusaurusContext();
 
 	return (
-		<BrowserOnly>
+		<BrowserOnly fallback={<div><main className={styles.mainSection}>Loading...</main></div>}>
 			{() => <Layout
 				noFooter={window.location.pathname === '/'}
 				title={siteConfig.title}
