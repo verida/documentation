@@ -32,7 +32,7 @@ const contentCards = [
 		title: 'Interactive Tutorial',
 		description: `Check out the interactive tutorials for an introduction to Verida's Web3 APIs`,
 		icon: <IntTutorialIcon title='icon' />,
-		link: 'https://learn.verida.io/',
+		link: '/docs/tutorial/introduction',
 		externalLink: true
 	},
 	{

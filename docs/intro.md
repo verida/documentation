@@ -12,7 +12,7 @@ We believe it’s a fundamental human right that individuals have ownership and 
 
 Explore the Verida Developer's Portal to get started with our developer documentation, explore our demos, try out our interactive tutorials and connect with the Web3 developer community.
 
-[Try Verida now with an interactive tutorial](https://learn.verida.io/)
+[Try Verida now with an interactive tutorial](tutorial/introduction.mdx)
 
 [See the API Docs](https://apidocs.verida.io/index.html)
 
