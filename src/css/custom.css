@@ -29,3 +29,21 @@
 html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }
+
+
+*[id^='mermaid-svg'] .titleText {
+  font-size: 30pt !important; 
+}
+
+
+*[id^='mermaid-svg'] .grid .tick text {
+  font-size: 20pt !important; 
+} 
+
+/* #mermaid-svg-0 .milestoneText {
+  font-size: 20pt !important; 
+}
+
+#mermaid-svg-0 .sectionTitle {
+  font-size: 20pt !important; 
+}*/
