@@ -25,7 +25,8 @@ const config = {
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
                     remarkPlugins: [
-                        [require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }],
+                        (require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }),
+                        (require('mdx-mermaid')),
                     ],
                 },
                 sitemap: {
