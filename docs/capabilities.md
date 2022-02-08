@@ -131,8 +131,8 @@ gantt
 
     section Developer APIs
         Alpha API                   :milestone, done, iOSDev, 2021-11-30, 1d
-        Beta API on Testnet         :milestone, testnet, 2022-03-01, 1d
-        Mainnet API                 :milestone, mainnet, 2022-07-01, 1d
+        Beta API on Testnet         :testnet, 2022-03-01, 30d
+        Mainnet API                 :mainnet, 2022-06-01, 30d
         Unique Device Credential    :udc, 2022-03-01, 30d
         Personal Data Oracle        :pdo, 2022-02-01, 200d
 
