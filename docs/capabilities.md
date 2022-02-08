@@ -80,7 +80,7 @@ The major capabilities of the Verida developer platform are as follows:
 </tr>
 
 <tr>
-    <td align="left">Blockchain Transactions</td>
+    <td align="left">Vault Token Transfers</td>
     <td align="center">✅ </td>
     <td align="left">
         <ul>
@@ -134,7 +134,7 @@ gantt
         Beta API on Testnet         :milestone, testnet, 2022-03-01, 1d
         Mainnet API                 :milestone, mainnet, 2022-07-01, 1d
         Unique Device Credential    :udc, 2022-03-01, 30d
-        Personal Data Oracle        :pdo, 2022-01-01, 120d
+        Personal Data Oracle        :pdo, 2022-02-01, 200d
 
 
 ```

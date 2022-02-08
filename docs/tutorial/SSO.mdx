@@ -28,20 +28,11 @@ VeridaLoginExample = () => {
     const [veridaContext, setVeridaContext] = useGlobalState("globalVeridaContext")
 
     this.CONTEXT_NAME = 'Verida Tutorial'
-    this.VERIDA_TESTNET_DEFAULT_SERVER = 'https://db.testnet.verida.io:5002/'
 
     login = async function() {
 
-
         const account = new VaultAccount({
-            defaultDatabaseServer: {
-                type: 'VeridaDatabase',
-                endpointUri: this.VERIDA_TESTNET_DEFAULT_SERVER
-            },
-            defaultMessageServer: {
-                type: 'VeridaMessage',
-                endpointUri: this.VERIDA_TESTNET_DEFAULT_SERVER
-            },
+            logoUrl: "https://assets.verida.io/verida_login_request_logo_170x170.png"
         })
 
         const context = await Network.connect({
@@ -60,7 +51,6 @@ VeridaLoginExample = () => {
 	   }
 
     }
-
 
     logout = () => {
         veridaContext.

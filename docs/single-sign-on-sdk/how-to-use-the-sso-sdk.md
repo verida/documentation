@@ -28,19 +28,13 @@ import { VaultAccount } from '@verida/account-web-vault';
 
 const VERIDA_ENVIRONMENT = EnvironmentType.TESTNET;
 const CONTEXT_NAME = 'My Application Context Name';
-const VERIDA_TESTNET_DEFAULT_SERVER = 'https://db.testnet.verida.io:5002/';
-const SSO_CONFIG = {};
+
+# The LOGO_URL should be a 170x170 PNG file
+const LOGO_URL = "https://assets.verida.io/verida_login_request_logo_170x170.png";
+
 
 const account = new VaultAccount({
-	defaultDatabaseServer: {
-		type: 'VeridaDatabase',
-		endpointUri: VERIDA_TESTNET_DEFAULT_SERVER,
-	},
-	defaultMessageServer: {
-		type: 'VeridaMessage',
-		endpointUri: VERIDA_TESTNET_DEFAULT_SERVER,
-	},
-	vaultConfig: SSO_CONFIG,
+	logoUrl: LOGO_URL
 });
 
 const context = Network.connect({
@@ -61,7 +55,7 @@ if (!context) {
 
 # Configuration
 
-Various configuration options can be set (via `vaultConfig` parameter in `VaultAccount`) for the single sign-on SDK.
+Various configuration options can be set (as parameters in `VaultAccount`) for the single sign-on SDK.
 
 These (all optional) config options include:
 
@@ -70,5 +64,5 @@ These (all optional) config options include:
 - `canvasId?` — A string representing the DOM id where the QR code canvas will be injected
 - `request?` — An object representing an authorization request that matches https://schemas.verida.io/auth/request/schema.json
 - `callback?` — A callback function when the auth response is received.
-- `logoUrl?` — The URL of a logo to display in the vault
+- `logoUrl?` — The URL of a 170x170 PNG logo to display in the vault
 - `deeplinkId?` — The HTML element ID of a link that should have the deeplink URI attached to the `href` property
