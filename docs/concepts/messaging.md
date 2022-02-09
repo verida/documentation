@@ -12,11 +12,13 @@ The Verida Protocol facilitates decentralized messaging between Verida accounts.
 
 Messages on the Verida protocol operate on two dimensions; the Verida Account and the Application Context. As such, a Verida Account has an `inbox` and `outbox` for every Application Context.
 
--- insert diagram coming from excited --
+![concepts_identity.png](messaging/overview.png)
 
 In the example above we have the account `Steve - Personal` from the application context `Easy Insurance Software` sending a message to account `Jane - Laywer` in the `Lovely Legal Software` application context.
 
 This architecture allows applications to develop their own message types for domain specific data sharing and messaging.
+
+In this case the message is being sent to a Verida account (`did:vda:0x6B2a1bE81...). In the future will support Verida accounts being linked to onchain addresses, providing a decentralized messaging system that works across multiple addresses and multiple chains.
 
 ## How it works
 
