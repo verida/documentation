@@ -6,7 +6,7 @@ keywords: [Verida, Web3, Developers]
 ---
 # Data Storage
 
-# Self-sovereign storage
+## Self-sovereign storage
 
 Verida accounts control where their personal encrypted data is stored. Applications can provide a default storage hosting option or users can specify their own.
 
@@ -18,7 +18,9 @@ This diagram shows a single user with data spread across four applications, but 
 
 In this way, a simple onboarding exists for new users, while more advanced users can host their own data.
 
-# How data is stored
+## How data is stored
+
+![Verida Storage Architecture](data_storage/storage-architecture.png)
 
 Under the hood a combination of [CouchDB](https://en.wikipedia.org/wiki/Apache_CouchDB) and [PouchDB](https://pouchdb.com/) is used to store user data. Here’s why that combination was chosen over other options:
 
@@ -29,7 +31,7 @@ Under the hood a combination of [CouchDB](https://en.wikipedia.org/wiki/Apache_C
 
 At the end of the day, data must be physically stored somewhere. Verida Client SDK is designed to empower user’s to control where their data is stored. This meets the principle: `Put the user first`.
 
-# Data synchronisation
+## Data synchronisation
 
 Applications built with Verida Client SDK can syncronize data between other users and other applications, using the CouchDB syncronization protocol.
 
