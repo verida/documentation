@@ -12,6 +12,9 @@ We believe it’s a fundamental human right that individuals have ownership and 
 
 Explore the Verida Developer's Portal to get started with our developer documentation, explore our demos, try out our interactive tutorials and connect with the Web3 developer community.
 
+
+Understand how the Verida network works by reading the [Verida White Paper](https://www.verida.io/whitepaper?utm=devportal)
+
 [Try Verida now with an interactive tutorial](tutorial/introduction.mdx)
 
 [See the API Docs](https://apidocs.verida.io/index.html)

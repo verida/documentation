@@ -6,6 +6,13 @@ keywords: [Verida, Web3, Developers]
 ---
 # Concepts
 
+## Verida White Paper
+
+Many of these concepts have comprehensive coverage in the [Verida White Paper](https://www.verida.io/whitepaper?utm=devportal)
+
+
+## Developer Guides
+
 [Design Principles](design-principles.md)
 
 [Network Architecture](network-architecture.md)
