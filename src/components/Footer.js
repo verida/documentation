@@ -59,13 +59,13 @@ const Footer = () => {
     return (
         <footer className={styles.footer} >
             <div className={styles.footerSection}>
-                <div class="footer-links-img">
+                <div className="footer-links-img">
                     <a href="https://verida.io" >
                         <AppLogo title="verida" />
                     </a>
                 </div>
 
-                <div class="footer-links-nav">
+                <div className="footer-links-nav">
                     <h5>{state.products.title}</h5>
                     <ul >
                         {state.products.list.map(item => (
@@ -75,7 +75,7 @@ const Footer = () => {
                         ))}
                     </ul>
                 </div >
-                <div class="footer-links-nav">
+                <div className="footer-links-nav">
                     <h5>{state.company.title}</h5>
                     <ul >
                         {state.products.list.map(item => (
@@ -85,7 +85,7 @@ const Footer = () => {
                         ))}
                     </ul>
                 </div >
-                <div class="footer-links-nav">
+                <div className="footer-links-nav">
                     <h5>{state.developers.title}</h5>
                     <ul >
                         {state.developers.list.map(item => (
@@ -95,7 +95,7 @@ const Footer = () => {
                         ))}
                     </ul>
                 </div >
-                <div class="footer-links-nav">
+                <div className="footer-links-nav">
                     <h5>{state.company.title}</h5>
                     <ul >
                         {state.company.list.map(item => (
@@ -111,8 +111,8 @@ const Footer = () => {
             <div className={styles.footerBottom}>
                 <hr className={styles.footerLine} />
                 <div className={styles.footerBottomContent}>
-                    <a class="text-white" href="##">@Verida{new Date().getFullYear()}</a>
-                    <a class="text-white" href="##">Terms&Conditions</a>
+                    <a className="text-white" href="##">@Verida{new Date().getFullYear()}</a>
+                    <a className="text-white" href="##">Terms&Conditions</a>
                 </div>
             </div>
         </footer>

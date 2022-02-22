@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
     title: 'Verida Developers',
     tagline: 'Welcome to your Web3 toolkit!',
-    url: 'https://www.verida.io/',
+    url: 'https://developers.verida.io',
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
@@ -89,6 +89,7 @@ const config = {
                     },
                 ],
             },
+            image: 'img/verida_social_preview1.png',
             footer: {
                 style: 'dark',
                 links: [
