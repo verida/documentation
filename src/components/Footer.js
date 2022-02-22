@@ -11,7 +11,7 @@ export const products = [
 export const company = [
     { title: "About", link: "https://www.verida.io/about-us" },
     { title: "Careers", link: "https://www.verida.io/careers" },
-    { title: "Blog", link: "https://medium.com/verida" },
+    { title: "Blog", link: "https://news.verida.io" },
 ];
 
 export const developers = [
@@ -19,8 +19,12 @@ export const developers = [
         title: "Develop with verida",
         link: "https://www.verida.io/verida-developers",
     },
-    { title: "Documentation", link: "https://docs.datastore.verida.io/#/" },
-    { title: "Github", link: "https://github.com/verida/datastore-server" },
+    {
+        title: "Whitepaper",
+        link: "https://www.verida.io/whitepaper?utm=devfooter",
+    },
+    { title: "Documentation", link: "https://developers.verida.io/" },
+    { title: "Github", link: "https://github.com/verida/" },
 ];
 
 export const community = [
