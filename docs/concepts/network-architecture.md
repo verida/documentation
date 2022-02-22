@@ -1,10 +1,10 @@
 ---
+title: Network Architecture
 sidebar_position: 2
 description: Verida Developer Documentation
 image: https://uploads-ssl.webflow.com/60e8365cd5794f8db04151ed/6107868980521e0acf27b2d9_favicon.svg
 keywords: [Verida, Web3, Developers]
 ---
-# Network Architecture
 
 ![concepts_architecture.png](network_architecture/concepts_architecture.png)
 

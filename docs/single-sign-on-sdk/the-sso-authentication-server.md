@@ -1,19 +1,19 @@
 ---
+title: The SSO Authentication Server
 description: Verida Developer Documentation
 image: https://uploads-ssl.webflow.com/60e8365cd5794f8db04151ed/6107868980521e0acf27b2d9_favicon.svg
 keywords: [Verida, Web3, Developers]
 ---
-# The SSO Authentication Server
 
-# What is the authentication server?
+## What is the authentication server?
 
 The [vault auth server](https://github.com/verida/vault-auth-server/) is a web socket server that bridges connections between a mobile device and a web page to enable secure, single sign on using private blockchain keys stored on the mobile device.
 
-## Usage
+### Usage
 
 To start your application, use `npm run start`
 
-## Configuration
+### Configuration
 
 Update `.env` / `AUTH_URI` to match the domain name / IP address of this server. You will also need to configure the Auth Client library to use this value as the `serverUri`.
 
@@ -21,7 +21,7 @@ You must configure each application this server will support by editing the `con
 
 The object key corresponds to the application name and the object properties correspond to the private key being used ot sign authentication requests and the domain name initiating the sign on request.
 
-# Security
+## Security
 
 The configuration file allows you to provide the private key of a valid blockchain account that can sign messages relating to the login process.
 
@@ -29,7 +29,7 @@ There is a `loginOrigin` property that, if specified, will check the `origin` HT
 
 Malicious third parties could obtain a token by spoofing the `origin` HTTP header and then presenting that to the user. However, this `loginOrigin` property is passed inside the encrypted payload to the Verida Vault and is displayed to the user. This allows the user to visually verify the domain name they are currently on matches the domain name displayed on the Verida Vault login screen. In the future, the Verida Trust Framework will add an additional layer of security by matching on chain metadata against the public key and domain name used to sign the payload.
 
-# Production
+# #Production
 
 We recommend using [PM2](https://www.npmjs.com/package/pm2) package to manage running the server.
 

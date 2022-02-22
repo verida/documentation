@@ -1,12 +1,12 @@
 ---
+title: Advanced
 sidebar_position: 12
 description: Verida Developer Documentation
 image: https://uploads-ssl.webflow.com/60e8365cd5794f8db04151ed/6107868980521e0acf27b2d9_favicon.svg
 keywords: [Verida, Web3, Developers]
 ---
-# Advanced
 
-# Closing a database
+## Closing a database
 
 Databases should be closed when you have finished using them. This closes socket connections associated with syncing and cleans up other internal resources such as caching.
 
@@ -14,7 +14,7 @@ Databases should be closed when you have finished using them. This closes socket
 await database.close()
 ```
 
-# Datastore v Database
+## Datastore v Database
 
 You can access the underlying `database` object from a `datastore` object:
 
@@ -28,7 +28,7 @@ The Verida database object is a wrapper around a native [PouchDb instance](https
 const pouchDb = await db.getDb()
 ```
 
-# Database info
+## Database info
 
 Additional information about a database can be retrieved:
 

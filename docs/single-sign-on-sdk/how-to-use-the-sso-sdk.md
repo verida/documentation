@@ -1,16 +1,15 @@
 ---
+title: How to use the SSO SDK
 description: Verida Developer Documentation
 image: https://uploads-ssl.webflow.com/60e8365cd5794f8db04151ed/6107868980521e0acf27b2d9_favicon.svg
 keywords: [Verida, Web3, Developers]
 ---
 
-# How to use the SSO SDK
-
 Initialize a connection to the Verida network using a private key stored on the user’s mobile device using the Verida Vault.
 
 This easy to use integration method allows a user to scan a QR code to sign into your application. If the user doesn’t have the Verida Vault installed, they will be prompted to install it. Existing users will be prompted to authorize your application to access encrypted storage for that application.
 
-# Installation
+## Installation
 
 This requires installing the `@verida/account-web-vault` dependency:
 
@@ -18,7 +17,7 @@ This requires installing the `@verida/account-web-vault` dependency:
 npm install  @verida/account-web-vault
 ```
 
-# Usage
+## Usage
 
 Here’s how you initialize an application context:
 
@@ -53,7 +52,7 @@ if (!context) {
 }
 ```
 
-# Configuration
+## Configuration
 
 Various configuration options can be set (as parameters in `VaultAccount`) for the single sign-on SDK.
 

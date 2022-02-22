@@ -1,13 +1,12 @@
 ---
+title: Profiles
 sidebar_position: 8
 description: Verida Developer Documentation
 image: https://uploads-ssl.webflow.com/60e8365cd5794f8db04151ed/6107868980521e0acf27b2d9_favicon.svg
 keywords: [Verida, Web3, Developers]
 ---
 
-# Profiles
-
-# Open my profile
+## Open my profile
 
 Open your own profile for the current context:
 
@@ -25,7 +24,7 @@ const listener = await myProfile.listen(function (row) {
 listener.cancel();
 ```
 
-# Open an external profile
+## Open an external profile
 
 Open an external profile for any context using an instance of the `client` object.
 

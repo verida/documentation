@@ -1,10 +1,10 @@
 ---
+title: Queries
 sidebar_position: 5
 description: Verida Developer Documentation
 image: https://uploads-ssl.webflow.com/60e8365cd5794f8db04151ed/6107868980521e0acf27b2d9_favicon.svg
 keywords: [Verida, Web3, Developers]
 ---
-# Queries
 
 The majority of decentralised data solutions in the Web3 space provide simple `key` / `value` storage options as querying distributed and / or encrypted databases is a significantly *hard* problem.
 
@@ -27,7 +27,7 @@ const employmentData = database.getMany("https://common.schemas.verida.io/health
 });
 ```
 
-# Query data
+## Query data
 
 Databases and datastores support a full range of query functionality. This includes; filters, limit, offset and sort:
 
@@ -64,7 +64,7 @@ const results = contacts.getMany(filter, options)
 
 </aside>
 
-# Pagination
+## Pagination
 
 The following strategies allows you to paginate data for a user based on a `name` field:
 
@@ -82,7 +82,7 @@ const currentPageResults = await datastore.getMany({
 
 We receive the first 10 documents sorted by name. We can continue paginating by using the last value as our next starting point. At any given point in time, we will only have 10 documents stored in the memory, which is great for performance.
 
-# Indexes
+## Indexes
 
 You can manually create **database indexes** by utilising the underlying [PouchDB index API methods](https://pouchdb.com/api.html#create_index):
 

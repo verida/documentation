@@ -1,10 +1,11 @@
 ---
+title: Client SDK
 sidebar_position: 0
 description: Verida Developer Documentation
 image: https://uploads-ssl.webflow.com/60e8365cd5794f8db04151ed/6107868980521e0acf27b2d9_favicon.svg
 keywords: [Verida, Web3, Developers]
 ---
-# What is the Verida Client SDK?
+## What is the Verida Client SDK?
 
 The Verida Client SDK is an open source implementation of a Verida network client providing encrypted storage, identity, messaging, and schemas capabilities. It is an easy-to-use library that abstracts the complexities behind these capabilities, thereby allowing developers to build self-sovereign applications.
 

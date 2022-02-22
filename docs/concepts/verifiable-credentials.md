@@ -1,10 +1,10 @@
 ---
+title: Verifiable Credentials
 sidebar_position: 7
 description: Verida Developer Documentation
 image: https://uploads-ssl.webflow.com/60e8365cd5794f8db04151ed/6107868980521e0acf27b2d9_favicon.svg
 keywords: [Verida, Web3, Developers]
 ---
-# Verifiable Credentials
 
 Verifiable Credentials are are [W3C standard](https://www.w3.org/TR/vc-data-model/) used extensively within the Verida network. This page summarises the Verida developer APIs and how they operate within the platform. 
 

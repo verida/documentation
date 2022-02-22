@@ -1,10 +1,10 @@
 ---
+title: Permissions
 sidebar_position: 6
 description: Verida Developer Documentation
 image: https://uploads-ssl.webflow.com/60e8365cd5794f8db04151ed/6107868980521e0acf27b2d9_favicon.svg
 keywords: [Verida, Web3, Developers]
 ---
-# Permissions
 
 Advanced data permissions is built into the core of the Verida storage architecture, providing for many different ways data can be secured:
 
@@ -15,7 +15,7 @@ Advanced data permissions is built into the core of the Verida storage architect
 
 All non-public data is encrypted using keys only accessible by the user(s) who have access to that particular data.
 
-# Types of permissions
+## Types of permissions
 
 When a database / datastore is created, you specify the `read` and `write` permissions, out of a possible 3 options:
 
@@ -32,7 +32,7 @@ Here are some real world examples:
 
 By default, if no permissions are specified, the default permissions are set as `read=owner`, `write=owner`.
 
-# Setting permissions
+## Setting permissions
 
 Permissions are specified when opening a `database` or `datastore`:
 
@@ -71,7 +71,7 @@ const publicDatastore = await context.openExternalDatastore('https://common.sche
 })
 ```
 
-## Restrict access to specific users
+### Restrict access to specific users
 
 When specifying the `users` permission type, you must also specify the list of valid user DID’s with `userList`:
 
