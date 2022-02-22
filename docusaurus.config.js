@@ -89,7 +89,7 @@ const config = {
                     },
                 ],
             },
-            image: 'img/verida_social_preview1.png',
+            image: 'img/verida_social_preview2.png',
             footer: {
                 style: 'dark',
                 links: [
