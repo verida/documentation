@@ -1,16 +1,15 @@
 ---
+title: Messaging
 sidebar_position: 7
 description: Verida Developer Documentation
 image: https://uploads-ssl.webflow.com/60e8365cd5794f8db04151ed/6107868980521e0acf27b2d9_favicon.svg
 keywords: [Verida, Web3, Developers]
 ---
-# Messaging
-
 Every application has a built-in inbox for receiving messages and an outbox for sending messages. This allows users and applications to send data between each other knowing nothing than the other user’s DID and application name.
 
 Learn more about the messaging architecture.
 
-# Open messaging
+## Open messaging
 
 You can simply open the messaging capabilities for the currently connected application `context` as follows:
 
@@ -18,9 +17,9 @@ You can simply open the messaging capabilities for the currently connected appli
 const messaging = await context.getMessaging()
 ```
 
-# Inbox
+## Inbox
 
-## Get messages
+### Get messages
 
 You can retreive the 20 most recent messages:
 
@@ -42,7 +41,7 @@ const options = {
 const messages = await messaging.getMessages(filter, options)
 ```
 
-## Listen for messages
+### Listen for messages
 
 Your application can register a callback function to listen for new inbox messages:
 
@@ -63,7 +62,7 @@ You can stop listening:
 listener.cancel()
 ```
 
-# Outbox
+## Outbox
 
 Your application can send messages to other accounts on the Verida network.
 
@@ -110,13 +109,13 @@ See [core schemas repository](https://github.com/verida/schemas-core) for detail
 - [dataRequest](https://github.com/verida/schemas-core/tree/develop/inbox/type/dataRequest) — Request data from a user, supports optional filters and conditions around user’s selecting data
 - [message](https://github.com/verida/schemas-core/tree/develop/inbox/type/message) — Send a generic message / notification to a user
 
-# Examples
+## Examples
 
-## Sending data
+### Sending data
 
 Data can be sent to an account (see Outbox example above)
 
-## Requesting data
+### Requesting data
 
 Data can be requested from an account:
 

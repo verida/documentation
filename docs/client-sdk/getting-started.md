@@ -1,17 +1,16 @@
 ---
+title: Getting Started
 sidebar_position: 1
 description: Verida Developer Documentation
 image: https://uploads-ssl.webflow.com/60e8365cd5794f8db04151ed/6107868980521e0acf27b2d9_favicon.svg
 keywords: [Verida, Web3, Developers]
 ---
 
-# Getting Started
-
 In this article, we walk you through the process setting up the Verida Client SDK and guide you through the process of initializing and using the library in your applications.
 
 You can interactively use the Verida client library in your browser using the [Verida Web Sandbox](https://web-sandbox.demos.testnet.verida.io/) or [learn with our interactive tutorial](https://learn.verida.io/).
 
-# Installation
+## Installation
 
 Start by installing the Verida client protocol library and Verida Vault authentication method:
 
@@ -25,7 +24,7 @@ You may receive compilation warnings when using typescript regarding `pouchdb`. 
 npm install --dev @types/pouchdb-core
 ```
 
-# Authentication
+## Authentication
 
 Initialize a connection to the Verida network using a private key stored on the user’s mobile device using the Verida Vault:
 
@@ -66,7 +65,7 @@ const context = Network.connect({
 
 [Learn more](authentication.md) about different authentication methods.
 
-# How to Use
+## How to Use
 
 You can now verify the user has connected succesfully to your application:
 

@@ -1,12 +1,11 @@
 ---
+title: Data
 sidebar_position: 4
 description: Verida Developer Documentation
 image: https://uploads-ssl.webflow.com/60e8365cd5794f8db04151ed/6107868980521e0acf27b2d9_favicon.svg
 keywords: [Verida, Web3, Developers]
 ---
-# Data
-
-# Introduction
+## Introduction
 
 The Verida Client SDK supports two types of data constructs:
 
@@ -15,7 +14,7 @@ The Verida Client SDK supports two types of data constructs:
 
 It’s recommended to use `datastores` wherever possible to ensure your application creates validated data that can easily be shared between applications. You can read more about creating or using existing datastore [schemas](../concepts/schemas.md).
 
-# Databases
+## Databases
 
 All databases in the Verida protocol are ***User Databases***. They are owned by a specific Verida account that controls the database permissions. These databases can be private (encrypted using private keys only known by the user) or public (not encrypted).
 
@@ -38,9 +37,9 @@ We have some early thoughts on how to provide privacy preserving aggregated data
 
 </aside>
 
-## Opening Databases
+### Opening Databases
 
-### User owned database
+#### User owned database
 
 You can open a new database owned by the currently connected account:
 
@@ -54,7 +53,7 @@ There are many options you can provide when opening a database. These include:
 - Database permissions ([see below](about:blank#permissions))
 - Encryption key (`options.encryptionKey` as a string)
 
-### External database
+#### External database
 
 You can open an `external` database which is owned by different Verida account or is owned by the same Verida account in a different application context.
 
@@ -73,7 +72,7 @@ const options = {
 const db = await context.openExternalDatabase('test_external_db', otherAccountDid, options)
 ```
 
-## Using Databases
+### Using Databases
 
 Open a user database and fetch some rows:
 
@@ -88,7 +87,7 @@ console.log(items)
 
 The database will be created if it doesn’t exist.
 
-# Datastores
+## Datastores
 
 In a world where users own their own data, it’s important their data is portable between applications. Otherwise we end up with the current situation of data silos, where user data is scatterred across lots of different applications.
 
@@ -98,9 +97,9 @@ Using schemas also ensures data is validated before saving. This ensures data is
 
 See [schemas](../concepts/schemas.md) to learn about the existing schemas or how to build your own.
 
-## Opening Datastores
+### Opening Datastores
 
-### User owned datastore
+#### User owned datastore
 
 Lets demonstrate by opening a datastore using the [https://schemas.verida.io/social/contact/schema.json](https://common.schemas.verida.io/social/contact/v0.1.0/schema.json) schema, saving a row and fetching the results:
 
@@ -129,7 +128,7 @@ In the above example, the `firstName` field is required in the `social/contact` 
 
 The record can be saved succesfully after the record has the required `firstName` field added.
 
-### External datastore
+#### External datastore
 
 Just like databases, it’s also possible to open an external datastore:
 
@@ -146,9 +145,9 @@ const options = {
 const datastore = await context.openExternalDatastore('https://common.schemas.verida.io/social/contact/v0.1.0/schema.json', otherAccountDid, options)
 ```
 
-# CRUD operations
+## CRUD operations
 
-## Creating data
+### Creating data
 
 Data is created by calling the `save()` method. If the `save()` fails, you can find an array of errors in the `.errors` property.
 
@@ -171,7 +170,7 @@ There is an optional second `save()` parameter called `options` that produces a 
 
 There are also two advanced options available (`forceInsert` and `forceUpdate`). See the API docs for details.
 
-## Updating data
+### Updating data
 
 Data is updated by also updating an existing record and calling the `save()` method:
 
@@ -190,7 +189,7 @@ It’s critical that you fetch the existing record and update its values before 
 
 The `_id` field is used to detect we are expecting to update an existing record. The `_rev` field is used to match against the currently known latest revision in the database to ensure we don’t override with a stale version of the data. This is critical in a decentralized environment and also allows for some fancy merging techniques in the future.
 
-## Deleting data
+### Deleting data
 
 You can delete a record using the full record or just its `_id`:
 

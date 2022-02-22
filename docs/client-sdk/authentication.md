@@ -1,10 +1,10 @@
 ---
+title: Authentication
 sidebar_position: 3
 description: Verida Developer Documentation
 image: https://uploads-ssl.webflow.com/60e8365cd5794f8db04151ed/6107868980521e0acf27b2d9_favicon.svg
 keywords: [Verida, Web3, Developers]
 ---
-# Authentication
 
 There are multiple ways to connect a user’s account to the Verida protocol with different packages provided for different use cases.
 
@@ -16,7 +16,7 @@ Your application must install the appropriate account package and connect it to 
 
 There are two ways to authenticate a user to your application:
 
-# 1. Verida Vault
+## 1. Verida Vault
 
 Designed *for secure web applications*
 
@@ -24,7 +24,7 @@ Your web application integrates the [Verida Single Sign On SDK](../single-sign-o
 
 See the [Single Sign On SDK](../single-sign-on-sdk/single-sign-on-sdk.md) for more details.
 
-# 2. Private Key
+## 2. Private Key
 
 Designed *for NodeJs and Mobile Apps*
 
@@ -32,7 +32,7 @@ An existing Verida account seed phrase is used to authenticate a user to your ap
 
 This approach is ideal for integrating the Verida protocol into a server side NodeJs application or embedding Verida into an existing mobile application using the [React Native client](react-native.md)
 
-## Example
+### Example
 
 ```tsx
 import { Network, EnvironmentType } from '@verida/client-ts'
@@ -71,7 +71,7 @@ See the [@verida/account-node package](https://github.com/verida/verida-js/tree/
 
 </aside>
 
-# Advanced
+## Advanced
 
 The above examples initialize a connection to the Verida network and a single context. Sometimes it’s useful to connect to the network and then connect to multiple application contexts for the connected user. The code sample below generates a re-usable client instance, then uses that to open a specific application context.
 
