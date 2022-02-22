@@ -2,7 +2,6 @@
 sidebar_position: 2
 title: Verida Capabilities
 description: Capabilities of the Verida developer platform
-image: https://uploads-ssl.webflow.com/60e8365cd5794f8db04151ed/6107868980521e0acf27b2d9_favicon.svg
 keywords: [Verida, Web3, Developers]
 ---
 
