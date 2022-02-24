@@ -30,7 +30,6 @@ const CONTEXT_NAME = 'My Application Context Name';
 # The LOGO_URL should be a 170x170 PNG file
 const LOGO_URL = "https://assets.verida.io/verida_login_request_logo_170x170.png";
 
-
 const account = new VaultAccount({
 	logoUrl: LOGO_URL
 });
