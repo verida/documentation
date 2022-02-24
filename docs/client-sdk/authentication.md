@@ -39,7 +39,7 @@ import { AutoAccount } from '@verida/account-node'
 
 const VERIDA_ENVIRONMENT = EnvironmentType.TESTNET
 const CONTEXT_NAME = 'My Application Context Name'
-const VERIDA_TESTNET_DEFAULT_SERVER = 'https://db.testnet.verida.io:5002/'
+const LOGO_URL = "https://assets.verida.io/verida_login_request_logo_170x170.png";
 
 const context = Network.connect({
     context: {
@@ -49,14 +49,7 @@ const context = Network.connect({
         environment: VERIDA_ENVIRONMENT
     },
     account: new AutoAccount({
-        defaultDatabaseServer: {
-            type: 'VeridaDatabase',
-            endpointUri: VERIDA_TESTNET_DEFAULT_SERVER
-        },
-        defaultMessageServer: {
-            type: 'VeridaMessage',
-            endpointUri: VERIDA_TESTNET_DEFAULT_SERVER
-        }
+	    logoUrl: LOGO_URL
     }, {
         privateKey: '0x...' // or Verida mnemonic seed phrase
     })
@@ -65,10 +58,11 @@ const context = Network.connect({
 
 See the [@verida/account-node package](https://github.com/verida/verida-js/tree/main/packages/account-node) for more details.
 
-<aside>
-💡 Verida accounts use the same standard the same as Ethereum accounts, so Ethers.js can be used to generate a new seed phrase or private key.
+:::tip
 
-</aside>
+Verida accounts use the same standard the same as Ethereum accounts, so Ethers.js can be used to generate a new seed phrase or private key.
+
+:::
 
 ## Advanced
 
@@ -82,7 +76,7 @@ import { AutoAccount } from '@verida/account-node'
 
 const VERIDA_ENVIRONMENT = EnvironmentType.TESTNET
 const CONTEXT_NAME = 'My Application Context Name'
-const VERIDA_TESTNET_DEFAULT_SERVER = 'https://db.testnet.verida.io:5002/'
+const LOGO_URL = "https://assets.verida.io/verida_login_request_logo_170x170.png";
 
 // establish a network connection
 const client = new Client({
@@ -92,14 +86,7 @@ const client = new Client({
 // create a Verida account instance that wraps the authorized Verida DID server connection
 // The `AutoAccount` instance will automatically sign any consent messages
 const account = new AutoAccount({
-    defaultDatabaseServer: {
-        type: 'VeridaDatabase',
-        endpointUri: VERIDA_TESTNET_DEFAULT_SERVER
-    },
-    defaultMessageServer: {
-        type: 'VeridaMessage',
-        endpointUri: VERIDA_TESTNET_DEFAULT_SERVER
-    }
+	    logoUrl: LOGO_URL
 }, {
     privateKey: '0x...'
 })
