@@ -33,17 +33,12 @@ import { VaultAccount } from '@verida/account-web-vault';
 
 const VERIDA_ENVIRONMENT = EnvironmentType.TESTNET;
 const CONTEXT_NAME = 'My Application Context Name';
-const VERIDA_TESTNET_DEFAULT_SERVER = 'https://db.testnet.verida.io:5002/';
+
+# The LOGO_URL should be a 170x170 PNG file
+const LOGO_URL = "https://assets.verida.io/verida_login_request_logo_170x170.png";
 
 const account = new VaultAccount({
-	defaultDatabaseServer: {
-		type: 'VeridaDatabase',
-		endpointUri: VERIDA_TESTNET_DEFAULT_SERVER,
-	},
-	defaultMessageServer: {
-		type: 'VeridaMessage',
-		endpointUri: VERIDA_TESTNET_DEFAULT_SERVER,
-	},
+	logoUrl: LOGO_URL
 });
 
 const context = Network.connect({
