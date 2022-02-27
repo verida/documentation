@@ -39,7 +39,7 @@ import { AutoAccount } from '@verida/account-node'
 
 const VERIDA_ENVIRONMENT = EnvironmentType.TESTNET
 const CONTEXT_NAME = 'My Application Context Name'
-const LOGO_URL = "https://assets.verida.io/verida_login_request_logo_170x170.png";
+const VERIDA_TESTNET_DEFAULT_SERVER = 'https://db.testnet.verida.io:5002/'
 
 const context = Network.connect({
     context: {
@@ -49,7 +49,14 @@ const context = Network.connect({
         environment: VERIDA_ENVIRONMENT
     },
     account: new AutoAccount({
-	    logoUrl: LOGO_URL
+        defaultDatabaseServer: {
+            type: 'VeridaDatabase',
+            endpointUri: VERIDA_TESTNET_DEFAULT_SERVER
+        },
+        defaultMessageServer: {
+            type: 'VeridaMessage',
+            endpointUri: VERIDA_TESTNET_DEFAULT_SERVER
+        }
     }, {
         privateKey: '0x...' // or Verida mnemonic seed phrase
     })
@@ -76,7 +83,7 @@ import { AutoAccount } from '@verida/account-node'
 
 const VERIDA_ENVIRONMENT = EnvironmentType.TESTNET
 const CONTEXT_NAME = 'My Application Context Name'
-const LOGO_URL = "https://assets.verida.io/verida_login_request_logo_170x170.png";
+const VERIDA_TESTNET_DEFAULT_SERVER = 'https://db.testnet.verida.io:5002/'
 
 // establish a network connection
 const client = new Client({
@@ -86,7 +93,14 @@ const client = new Client({
 // create a Verida account instance that wraps the authorized Verida DID server connection
 // The `AutoAccount` instance will automatically sign any consent messages
 const account = new AutoAccount({
-	    logoUrl: LOGO_URL
+    defaultDatabaseServer: {
+        type: 'VeridaDatabase',
+        endpointUri: VERIDA_TESTNET_DEFAULT_SERVER
+    },
+    defaultMessageServer: {
+        type: 'VeridaMessage',
+        endpointUri: VERIDA_TESTNET_DEFAULT_SERVER
+    }
 }, {
     privateKey: '0x...'
 })
