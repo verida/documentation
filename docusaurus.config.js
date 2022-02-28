@@ -99,11 +99,7 @@ const config = {
                             {
                                 label: 'Verida Developers',
                                 to: '/docs/intro',
-                            },
-                            {
-                                label: 'Verida Client SDK',
-                                href: 'https://apidocs.verida.io/index.html',
-                            },
+                            }
                         ],
                     },
                     {
