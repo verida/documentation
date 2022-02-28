@@ -25,7 +25,7 @@ const contentCards = [
 	{
 		title: 'See API Documentation',
 		icon: <ExploreAPiICon title='icon' />,
-		link: 'https://apidocs.verida.io/',
+		link: '/docs/api/verida-js/',
 		externalLink: true
 	},
 	{
