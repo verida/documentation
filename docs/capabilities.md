@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 9
 title: Verida Capabilities
 description: Capabilities of the Verida developer platform
 keywords: [Verida, Web3, Developers]
