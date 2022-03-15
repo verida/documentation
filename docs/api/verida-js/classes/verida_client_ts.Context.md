@@ -60,7 +60,7 @@ Instantiate a new context.
 
 #### Defined in
 
-[client-ts/src/context/context.ts:71](https://github.com/verida/verida-js/blob/7bffc4e/packages/client-ts/src/context/context.ts#L71)
+[client-ts/src/context/context.ts:71](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/context/context.ts#L71)
 
 ## Properties
 
@@ -70,7 +70,7 @@ Instantiate a new context.
 
 #### Defined in
 
-[client-ts/src/context/context.ts:52](https://github.com/verida/verida-js/blob/7bffc4e/packages/client-ts/src/context/context.ts#L52)
+[client-ts/src/context/context.ts:52](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/context/context.ts#L52)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[client-ts/src/context/context.ts:51](https://github.com/verida/verida-js/blob/7bffc4e/packages/client-ts/src/context/context.ts#L51)
+[client-ts/src/context/context.ts:51](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/context/context.ts#L51)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[client-ts/src/context/context.ts:56](https://github.com/verida/verida-js/blob/7bffc4e/packages/client-ts/src/context/context.ts#L56)
+[client-ts/src/context/context.ts:56](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/context/context.ts#L56)
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 #### Defined in
 
-[client-ts/src/context/context.ts:58](https://github.com/verida/verida-js/blob/7bffc4e/packages/client-ts/src/context/context.ts#L58)
+[client-ts/src/context/context.ts:58](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/context/context.ts#L58)
 
 ___
 
@@ -110,7 +110,7 @@ ___
 
 #### Defined in
 
-[client-ts/src/context/context.ts:59](https://github.com/verida/verida-js/blob/7bffc4e/packages/client-ts/src/context/context.ts#L59)
+[client-ts/src/context/context.ts:59](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/context/context.ts#L59)
 
 ___
 
@@ -120,7 +120,7 @@ ___
 
 #### Defined in
 
-[client-ts/src/context/context.ts:57](https://github.com/verida/verida-js/blob/7bffc4e/packages/client-ts/src/context/context.ts#L57)
+[client-ts/src/context/context.ts:57](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/context/context.ts#L57)
 
 ___
 
@@ -130,7 +130,7 @@ ___
 
 #### Defined in
 
-[client-ts/src/context/context.ts:53](https://github.com/verida/verida-js/blob/7bffc4e/packages/client-ts/src/context/context.ts#L53)
+[client-ts/src/context/context.ts:53](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/context/context.ts#L53)
 
 ___
 
@@ -140,7 +140,7 @@ ___
 
 #### Defined in
 
-[client-ts/src/context/context.ts:54](https://github.com/verida/verida-js/blob/7bffc4e/packages/client-ts/src/context/context.ts#L54)
+[client-ts/src/context/context.ts:54](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/context/context.ts#L54)
 
 ## Methods
 
@@ -154,7 +154,7 @@ ___
 
 #### Defined in
 
-[client-ts/src/context/context.ts:120](https://github.com/verida/verida-js/blob/7bffc4e/packages/client-ts/src/context/context.ts#L120)
+[client-ts/src/context/context.ts:120](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/context/context.ts#L120)
 
 ___
 
@@ -168,7 +168,7 @@ ___
 
 #### Defined in
 
-[client-ts/src/context/context.ts:108](https://github.com/verida/verida-js/blob/7bffc4e/packages/client-ts/src/context/context.ts#L108)
+[client-ts/src/context/context.ts:108](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/context/context.ts#L108)
 
 ___
 
@@ -182,7 +182,7 @@ ___
 
 #### Defined in
 
-[client-ts/src/context/context.ts:116](https://github.com/verida/verida-js/blob/7bffc4e/packages/client-ts/src/context/context.ts#L116)
+[client-ts/src/context/context.ts:116](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/context/context.ts#L116)
 
 ___
 
@@ -204,7 +204,7 @@ ___
 
 #### Defined in
 
-[client-ts/src/context/context.ts:84](https://github.com/verida/verida-js/blob/7bffc4e/packages/client-ts/src/context/context.ts#L84)
+[client-ts/src/context/context.ts:84](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/context/context.ts#L84)
 
 ___
 
@@ -218,7 +218,7 @@ ___
 
 #### Defined in
 
-[client-ts/src/context/context.ts:104](https://github.com/verida/verida-js/blob/7bffc4e/packages/client-ts/src/context/context.ts#L104)
+[client-ts/src/context/context.ts:104](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/context/context.ts#L104)
 
 ___
 
@@ -241,7 +241,7 @@ Get a storage engine for a given DID and this contextName
 
 #### Defined in
 
-[client-ts/src/context/context.ts:136](https://github.com/verida/verida-js/blob/7bffc4e/packages/client-ts/src/context/context.ts#L136)
+[client-ts/src/context/context.ts:136](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/context/context.ts#L136)
 
 ___
 
@@ -255,7 +255,7 @@ ___
 
 #### Defined in
 
-[client-ts/src/context/context.ts:412](https://github.com/verida/verida-js/blob/7bffc4e/packages/client-ts/src/context/context.ts#L412)
+[client-ts/src/context/context.ts:412](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/context/context.ts#L412)
 
 ___
 
@@ -269,7 +269,7 @@ ___
 
 #### Defined in
 
-[client-ts/src/context/context.ts:112](https://github.com/verida/verida-js/blob/7bffc4e/packages/client-ts/src/context/context.ts#L112)
+[client-ts/src/context/context.ts:112](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/context/context.ts#L112)
 
 ___
 
@@ -295,7 +295,7 @@ Messaging instance
 
 #### Defined in
 
-[client-ts/src/context/context.ts:178](https://github.com/verida/verida-js/blob/7bffc4e/packages/client-ts/src/context/context.ts#L178)
+[client-ts/src/context/context.ts:178](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/context/context.ts#L178)
 
 ___
 
@@ -309,7 +309,7 @@ ___
 
 #### Defined in
 
-[client-ts/src/context/context.ts:211](https://github.com/verida/verida-js/blob/7bffc4e/packages/client-ts/src/context/context.ts#L211)
+[client-ts/src/context/context.ts:211](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/context/context.ts#L211)
 
 ___
 
@@ -332,7 +332,7 @@ Open a database owned by this account.
 
 #### Defined in
 
-[client-ts/src/context/context.ts:280](https://github.com/verida/verida-js/blob/7bffc4e/packages/client-ts/src/context/context.ts#L280)
+[client-ts/src/context/context.ts:280](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/context/context.ts#L280)
 
 ___
 
@@ -355,7 +355,7 @@ Open a dataastore owned by this account.
 
 #### Defined in
 
-[client-ts/src/context/context.ts:372](https://github.com/verida/verida-js/blob/7bffc4e/packages/client-ts/src/context/context.ts#L372)
+[client-ts/src/context/context.ts:372](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/context/context.ts#L372)
 
 ___
 
@@ -379,7 +379,7 @@ Open an external database owned by an account that isn't the currently connected
 
 #### Defined in
 
-[client-ts/src/context/context.ts:318](https://github.com/verida/verida-js/blob/7bffc4e/packages/client-ts/src/context/context.ts#L318)
+[client-ts/src/context/context.ts:318](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/context/context.ts#L318)
 
 ___
 
@@ -403,7 +403,7 @@ Open an external datastore owned by an account that isn't the currently connecte
 
 #### Defined in
 
-[client-ts/src/context/context.ts:392](https://github.com/verida/verida-js/blob/7bffc4e/packages/client-ts/src/context/context.ts#L392)
+[client-ts/src/context/context.ts:392](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/context/context.ts#L392)
 
 ___
 
@@ -427,4 +427,4 @@ Get a user's profile.
 
 #### Defined in
 
-[client-ts/src/context/context.ts:252](https://github.com/verida/verida-js/blob/7bffc4e/packages/client-ts/src/context/context.ts#L252)
+[client-ts/src/context/context.ts:252](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/context/context.ts#L252)

@@ -59,7 +59,7 @@ Account.constructor
 
 #### Defined in
 
-[account-node/src/auto.ts:21](https://github.com/verida/verida-js/blob/7bffc4e/packages/account-node/src/auto.ts#L21)
+[account-node/src/auto.ts:21](https://github.com/verida/verida-js/blob/a39619b/packages/account-node/src/auto.ts#L21)
 
 ## Properties
 
@@ -69,7 +69,7 @@ Account.constructor
 
 #### Defined in
 
-[account-node/src/auto.ts:19](https://github.com/verida/verida-js/blob/7bffc4e/packages/account-node/src/auto.ts#L19)
+[account-node/src/auto.ts:19](https://github.com/verida/verida-js/blob/a39619b/packages/account-node/src/auto.ts#L19)
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 #### Defined in
 
-[account-node/src/auto.ts:16](https://github.com/verida/verida-js/blob/7bffc4e/packages/account-node/src/auto.ts#L16)
+[account-node/src/auto.ts:16](https://github.com/verida/verida-js/blob/a39619b/packages/account-node/src/auto.ts#L16)
 
 ___
 
@@ -89,7 +89,7 @@ ___
 
 #### Defined in
 
-[account-node/src/auto.ts:15](https://github.com/verida/verida-js/blob/7bffc4e/packages/account-node/src/auto.ts#L15)
+[account-node/src/auto.ts:15](https://github.com/verida/verida-js/blob/a39619b/packages/account-node/src/auto.ts#L15)
 
 ___
 
@@ -99,7 +99,7 @@ ___
 
 #### Defined in
 
-[account-node/src/auto.ts:18](https://github.com/verida/verida-js/blob/7bffc4e/packages/account-node/src/auto.ts#L18)
+[account-node/src/auto.ts:18](https://github.com/verida/verida-js/blob/a39619b/packages/account-node/src/auto.ts#L18)
 
 ## Methods
 
@@ -145,7 +145,7 @@ Account.did
 
 #### Defined in
 
-[account-node/src/auto.ts:46](https://github.com/verida/verida-js/blob/7bffc4e/packages/account-node/src/auto.ts#L46)
+[account-node/src/auto.ts:46](https://github.com/verida/verida-js/blob/a39619b/packages/account-node/src/auto.ts#L46)
 
 ___
 
@@ -191,7 +191,7 @@ Account.getDidClient
 
 #### Defined in
 
-[account-node/src/auto.ts:101](https://github.com/verida/verida-js/blob/7bffc4e/packages/account-node/src/auto.ts#L101)
+[account-node/src/auto.ts:101](https://github.com/verida/verida-js/blob/a39619b/packages/account-node/src/auto.ts#L101)
 
 ___
 
@@ -215,7 +215,7 @@ Account.keyring
 
 #### Defined in
 
-[account-node/src/auto.ts:33](https://github.com/verida/verida-js/blob/7bffc4e/packages/account-node/src/auto.ts#L33)
+[account-node/src/auto.ts:33](https://github.com/verida/verida-js/blob/a39619b/packages/account-node/src/auto.ts#L33)
 
 ___
 
@@ -241,7 +241,7 @@ Account.linkStorage
 
 #### Defined in
 
-[account-node/src/auto.ts:80](https://github.com/verida/verida-js/blob/7bffc4e/packages/account-node/src/auto.ts#L80)
+[account-node/src/auto.ts:80](https://github.com/verida/verida-js/blob/a39619b/packages/account-node/src/auto.ts#L80)
 
 ___
 
@@ -270,7 +270,7 @@ Account.linkStorageContextService
 
 #### Defined in
 
-[account-node/src/auto.ts:97](https://github.com/verida/verida-js/blob/7bffc4e/packages/account-node/src/auto.ts#L97)
+[account-node/src/auto.ts:97](https://github.com/verida/verida-js/blob/a39619b/packages/account-node/src/auto.ts#L97)
 
 ___
 
@@ -294,7 +294,7 @@ Account.sign
 
 #### Defined in
 
-[account-node/src/auto.ts:42](https://github.com/verida/verida-js/blob/7bffc4e/packages/account-node/src/auto.ts#L42)
+[account-node/src/auto.ts:42](https://github.com/verida/verida-js/blob/a39619b/packages/account-node/src/auto.ts#L42)
 
 ___
 
@@ -319,7 +319,7 @@ Account.storageConfig
 
 #### Defined in
 
-[account-node/src/auto.ts:50](https://github.com/verida/verida-js/blob/7bffc4e/packages/account-node/src/auto.ts#L50)
+[account-node/src/auto.ts:50](https://github.com/verida/verida-js/blob/a39619b/packages/account-node/src/auto.ts#L50)
 
 ___
 
@@ -345,4 +345,4 @@ Account.unlinkStorage
 
 #### Defined in
 
-[account-node/src/auto.ts:89](https://github.com/verida/verida-js/blob/7bffc4e/packages/account-node/src/auto.ts#L89)
+[account-node/src/auto.ts:89](https://github.com/verida/verida-js/blob/a39619b/packages/account-node/src/auto.ts#L89)

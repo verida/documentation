@@ -28,4 +28,4 @@
 
 #### Defined in
 
-[account/src/config.ts:3](https://github.com/verida/verida-js/blob/7bffc4e/packages/account/src/config.ts#L3)
+[account/src/config.ts:3](https://github.com/verida/verida-js/blob/a39619b/packages/account/src/config.ts#L3)

@@ -20,4 +20,4 @@ Interface for any MessagesConfig
 
 #### Defined in
 
-[client-ts/src/context/interfaces.ts:86](https://github.com/verida/verida-js/blob/7bffc4e/packages/client-ts/src/context/interfaces.ts#L86)
+[client-ts/src/context/interfaces.ts:86](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/context/interfaces.ts#L86)

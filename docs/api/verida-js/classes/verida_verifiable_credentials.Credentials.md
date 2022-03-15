@@ -42,7 +42,7 @@ Initialize a new credential issuer and verifier instance
 
 #### Defined in
 
-[verifiable-credentials/src/credentials.ts:33](https://github.com/verida/verida-js/blob/7bffc4e/packages/verifiable-credentials/src/credentials.ts#L33)
+[verifiable-credentials/src/credentials.ts:37](https://github.com/verida/verida-js/blob/a39619b/packages/verifiable-credentials/src/credentials.ts#L37)
 
 ## Properties
 
@@ -52,7 +52,7 @@ Initialize a new credential issuer and verifier instance
 
 #### Defined in
 
-[verifiable-credentials/src/credentials.ts:25](https://github.com/verida/verida-js/blob/7bffc4e/packages/verifiable-credentials/src/credentials.ts#L25)
+[verifiable-credentials/src/credentials.ts:29](https://github.com/verida/verida-js/blob/a39619b/packages/verifiable-credentials/src/credentials.ts#L29)
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 #### Defined in
 
-[verifiable-credentials/src/credentials.ts:26](https://github.com/verida/verida-js/blob/7bffc4e/packages/verifiable-credentials/src/credentials.ts#L26)
+[verifiable-credentials/src/credentials.ts:30](https://github.com/verida/verida-js/blob/a39619b/packages/verifiable-credentials/src/credentials.ts#L30)
 
 ## Methods
 
@@ -88,7 +88,7 @@ A new property `didJwtVc` is added to the data and included in the response
 
 #### Defined in
 
-[verifiable-credentials/src/credentials.ts:163](https://github.com/verida/verida-js/blob/7bffc4e/packages/verifiable-credentials/src/credentials.ts#L163)
+[verifiable-credentials/src/credentials.ts:168](https://github.com/verida/verida-js/blob/a39619b/packages/verifiable-credentials/src/credentials.ts#L168)
 
 ___
 
@@ -106,7 +106,7 @@ Verifiable Credential Issuer
 
 #### Defined in
 
-[verifiable-credentials/src/credentials.ts:135](https://github.com/verida/verida-js/blob/7bffc4e/packages/verifiable-credentials/src/credentials.ts#L135)
+[verifiable-credentials/src/credentials.ts:140](https://github.com/verida/verida-js/blob/a39619b/packages/verifiable-credentials/src/credentials.ts#L140)
 
 ___
 
@@ -131,7 +131,7 @@ DID-JWT representation of the Verifiable Credential
 
 #### Defined in
 
-[verifiable-credentials/src/credentials.ts:43](https://github.com/verida/verida-js/blob/7bffc4e/packages/verifiable-credentials/src/credentials.ts#L43)
+[verifiable-credentials/src/credentials.ts:47](https://github.com/verida/verida-js/blob/a39619b/packages/verifiable-credentials/src/credentials.ts#L47)
 
 ___
 
@@ -155,7 +155,7 @@ Credential DID-JWT's
 
 #### Defined in
 
-[verifiable-credentials/src/credentials.ts:62](https://github.com/verida/verida-js/blob/7bffc4e/packages/verifiable-credentials/src/credentials.ts#L62)
+[verifiable-credentials/src/credentials.ts:66](https://github.com/verida/verida-js/blob/a39619b/packages/verifiable-credentials/src/credentials.ts#L66)
 
 ___
 
@@ -169,7 +169,7 @@ ___
 
 #### Defined in
 
-[verifiable-credentials/src/credentials.ts:224](https://github.com/verida/verida-js/blob/7bffc4e/packages/verifiable-credentials/src/credentials.ts#L224)
+[verifiable-credentials/src/credentials.ts:253](https://github.com/verida/verida-js/blob/a39619b/packages/verifiable-credentials/src/credentials.ts#L253)
 
 ___
 
@@ -183,7 +183,7 @@ ___
 
 #### Defined in
 
-[verifiable-credentials/src/credentials.ts:219](https://github.com/verida/verida-js/blob/7bffc4e/packages/verifiable-credentials/src/credentials.ts#L219)
+[verifiable-credentials/src/credentials.ts:248](https://github.com/verida/verida-js/blob/a39619b/packages/verifiable-credentials/src/credentials.ts#L248)
 
 ___
 
@@ -206,7 +206,7 @@ Verify a Verifiable Credential DID-JWT
 
 #### Defined in
 
-[verifiable-credentials/src/credentials.ts:97](https://github.com/verida/verida-js/blob/7bffc4e/packages/verifiable-credentials/src/credentials.ts#L97)
+[verifiable-credentials/src/credentials.ts:101](https://github.com/verida/verida-js/blob/a39619b/packages/verifiable-credentials/src/credentials.ts#L101)
 
 ___
 
@@ -228,4 +228,4 @@ Verify a Verifiable Presentation DID-JWT
 
 #### Defined in
 
-[verifiable-credentials/src/credentials.ts:86](https://github.com/verida/verida-js/blob/7bffc4e/packages/verifiable-credentials/src/credentials.ts#L86)
+[verifiable-credentials/src/credentials.ts:90](https://github.com/verida/verida-js/blob/a39619b/packages/verifiable-credentials/src/credentials.ts#L90)
