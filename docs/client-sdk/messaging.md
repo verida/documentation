@@ -16,7 +16,7 @@ You can simply open the messaging capabilities for the currently connected appli
 const messaging = await context.getMessaging()
 ```
 
-## Inbox
+## Fetching messages (Inbox)
 
 ### Get messages
 
@@ -61,7 +61,7 @@ You can stop listening:
 listener.cancel()
 ```
 
-## Outbox
+## Sending messages (Outbox)
 
 Your application can send messages to other accounts on the Verida network.
 
@@ -100,7 +100,13 @@ This could be used in two scenarios:
 
 </aside>
 
-# Built-in Message Types
+### Setting avatar and name
+
+When sending an inbox message, the sender avatar and name are automatically loaded from the public profile of the sending Verida Account. You will need to set these for your account so they can be loaded by applications across the network (including the Verida Vault).
+
+You could add your Verida Account to the Verida Vault and use the mobile app to set a profile avatar and name. This will then be the default for every application used by the sending Verida Account. Alternatively, you could manually set the profile information for the application context sending the inbox message. See [Account Profiles](../client-sdk/profiles) for more information on how to achieve this.
+
+## Built-in Message Types
 
 See [core schemas repository](https://github.com/verida/schemas-core) for details on each supported inbox message type.
 

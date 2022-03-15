@@ -24,6 +24,12 @@ Verifiable Credentials can be issued by an account on the Verida Network. The cr
 - Screenshots of the Vault credentials in action
 - Explain how they can display a QR code to verify in real life
 
+### Icon Display
+
+The Verida Vault will automatically show the public profile icon of the Verida Account that signed the credential. You will need to set this icon for your Verida account so the icon displys correclty.
+
+You could add the signing Verida Account to the Verida Vault and use the mobile app to set a profile avatar and name. This will then be the default for every inbox message and credential issued across the Verida network. Alternatively, you could manually set the profile information for the application context generating the credential. See [Account Profiles](../client-sdk/profiles) for more information on how to achieve this.
+
 ## Credentials Management Platform
 
 @todo

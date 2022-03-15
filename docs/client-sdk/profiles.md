@@ -5,7 +5,7 @@ description: Verida Developer Documentation
 keywords: [Verida, Web3, Developers]
 ---
 
-# Profiles
+# Account Profiles
 
 A Verida Account maintains a public profile for every application context. The default `basicProfile` currently contains:
 
