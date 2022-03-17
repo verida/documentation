@@ -28,7 +28,7 @@ Application contexts store data stored in two locations:
 
 When a database is created (via `context.openDatabase(...)`) a local unencrypted database is created in the browser and remote encrypted database is created on the remote CouchDB server.
 
-Remote user databases are created by sending an API request to the [Storage Node](../storage-node.md) API server. This server manages the underlying database permissions of the CouchDB database server.
+Remote user databases are created by sending an API request to the [Storage Node](../network/storage-node.md) API server. This server manages the underlying database permissions of the CouchDB database server.
 
 All requests to the Storage Node API must include a signed consent message by the user. This ensures only the user holding the private key of the public blockchain account can set their database permissions.
 

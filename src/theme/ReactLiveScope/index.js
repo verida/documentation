@@ -14,15 +14,23 @@
  store.setState("globalDID", null);
  store.setState("globalVeridaContext", null);
  
- let Network = null
- let VaultAccount = null
+ // We do this weird importing thing because Docusaurus attempts to do ServerSide Rendering and
+ // Verida components generalyl don't support that.
+ let Network = null;
+ let VaultAccount = null;
+ let Credentials = null;
+ let hasSession = null;
  
  if (ExecutionEnvironment.canUseDOM) {
-     const veridaClient = require("@verida/client-ts") 
-     Network = veridaClient.Network
+     const veridaClient = require("@verida/client-ts");
+     Network = veridaClient.Network;
  
-     const veridaWebVault = require("@verida/account-web-vault")
-     VaultAccount = veridaWebVault.VaultAccount
+     const veridaWebVault = require("@verida/account-web-vault");
+     VaultAccount = veridaWebVault.VaultAccount;
+     hasSession = veridaWebVault.hasSession;
+
+     const veridaVerifiableCredentials = require("@verida/verifiable-credentials")
+     Credentials = veridaVerifiableCredentials.Credentials
  }
  
  const  ReactLiveScope = {
@@ -30,11 +38,12 @@
      ...React,
      useState,
      useEffect,
+     store,
+     useGlobalState,
      Network,
      VaultAccount,
- 
-     store,
-     useGlobalState
+     Credentials,
+     hasSession,     
  };
  
  

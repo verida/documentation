@@ -15,6 +15,7 @@ Verifiable Credentials can be issued by an account on the Verida Network. The cr
 
 [Learn more about Verifiable Credentials on Wikipedia](https://en.wikipedia.org/wiki/Verifiable_credentials)
 
+<!-- 
 ## Credentials in the Verida Vault
 
 @todo
@@ -23,13 +24,15 @@ Verifiable Credentials can be issued by an account on the Verida Network. The cr
 - Explain how users share credentials with apps (inbox request)
 - Screenshots of the Vault credentials in action
 - Explain how they can display a QR code to verify in real life
+-->
 
-### Icon Display
+### Credential Display within the Verida Vault
 
-The Verida Vault will automatically show the public profile icon of the Verida Account that signed the credential. You will need to set this icon for your Verida account so the icon displys correclty.
+The Verida Vault will automatically show the public profile icon of the Verida Account that signed the credential. You will need to set this icon for your Verida account so the icon displayes correctly.
 
 You could add the signing Verida Account to the Verida Vault and use the mobile app to set a profile avatar and name. This will then be the default for every inbox message and credential issued across the Verida network. Alternatively, you could manually set the profile information for the application context generating the credential. See [Account Profiles](../client-sdk/profiles) for more information on how to achieve this.
 
+<!-- 
 ## Credentials Management Platform
 
 @todo
@@ -38,11 +41,13 @@ You could add the signing Verida Account to the Verida Vault and use the mobile 
 - Describe why it exists (UI + API)
 - Reach out via Discord if you want to use it / fork it
 
+
 ## Requesting a Credential from the Vault
 
 @todo
 
 - Document how to request a credential from Verida Account via the Vault
+-->
 
 ## Verifiable Credentials Developer SDK
 
@@ -64,7 +69,7 @@ const credentialSDK = new Credentials(context);
 const subjectDid = 'did:vda:0x....';
 
 // Data for the credential that matches the credential schema
-const credentialData {
+const credentialData = {
     fullName: "Jane Doe",
     dateOfBirth: "1992-07-03",
     patientId: "ABC123",
@@ -238,7 +243,9 @@ Returned `shareData` object:
 
 The `credential` object created by an issuer can be sent to a Verida Account via their Vault.
 
+<!--
 @todo Add code example from the Vault Examples demo app
+
 
 #### Make the Credential public
 
@@ -246,14 +253,17 @@ The `credential` object created by an issuer can be sent to a Verida Account via
 
 - Describe how to copy a credential into a Verida Account's public credential database
 - Update Verida Network explorer to show a user's public credentials
+-->
 
 ## Credential Schemas
 
-Each credential is a data object (represented as JSON) that matches a particular credential schema.
+Within the Verida Network each credential is a data object (represented as JSON) that matches a particular credential schema. 
+These schemas should inherit from https://common.schemas.verida.io/credential/base/v0.1.0/schema.json. An example of a working credential schema is https://common.schemas.verida.io/health/pathology/tests/covid19/pcr/v0.1.0/schema.json
 
+
+<!--
 @todo
 
 - Link to existing credential schemas
 - Link to schema creation process
-- Highlight that a credential schema must inherit from `"https://common.schemas.verida.io/credential/base/v0.1.0/schema.json`
-- See example (https://common.schemas.verida.io/health/pathology/tests/covid19/pcr/v0.1.0/schema.json)
+-->

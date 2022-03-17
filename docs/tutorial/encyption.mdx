@@ -61,7 +61,7 @@ VeridaEncryptionExample = () => {
     localDataDisplay = displayData(localData)
     remoteDataDisplay = displayData(remoteData)
 
-    const isLoggedIn = (DID !== null);
+    const isLoggedIn = hasSession(this.CONTEXT_NAME);
     if (isLoggedIn) {
         return (
             <div>

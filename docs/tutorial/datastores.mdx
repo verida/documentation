@@ -84,8 +84,7 @@ VeridaDatastoreExample = () => {
     }
 
 
-    const isLoggedIn = (DID !== null);
-
+    const isLoggedIn = hasSession(this.CONTEXT_NAME);
     if (isLoggedIn) {
         // user is logged in
         return (

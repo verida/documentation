@@ -77,7 +77,7 @@ The current landscape of decentralized database storage technologies is rapidly 
 
 User data is stored in isolated [application contexts](./application-contexts.md), where the data from one application can not be accessed by another application without the explicit consent of a user. This ensures users can selectively disclose their personal data to different applications on an as-needs basis, providing enhanced privacy and data security.
 
-[Learn more](../storage-node.md)
+[Learn more](../network/storage-node.md)
 
 ## Blockchain
 

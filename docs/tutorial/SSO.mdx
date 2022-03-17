@@ -66,7 +66,9 @@ VeridaLoginExample = () => {
     this.login = this.login.bind(this);  
     this.logout = this.logout.bind(this);
 
-    const isLoggedIn = (DID !== null);
+    // hasSession checks if we are logged in. 
+    // See https://developers.verida.io/docs/api/verida-js/modules/verida_account_web_vault#hassession
+    const isLoggedIn = hasSession(this.CONTEXT_NAME);
 
     if (isLoggedIn) {
         // user is logged in
