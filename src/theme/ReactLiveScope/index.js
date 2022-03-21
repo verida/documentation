@@ -49,8 +49,9 @@ if (ExecutionEnvironment.canUseDOM) {
     } else {
       // we can't just store the context or the account because of circular references
       // Instead we store enough to Reconstruct the account and the Network
+      console.log(context);
       const dataToStore = {
-        LOGO_URL: context.account.logoUrl,
+        LOGO_URL: context.account.config.logoUrl,
         ENVIRONMENT: context.client.environment,
         CONTEXT_NAME: context.contextName
 
@@ -80,6 +81,8 @@ if (ExecutionEnvironment.canUseDOM) {
       } else {
         // we have a context stored for this name
         const storedData = storedClientConfigs[contextName];
+        console.log("retrieved data")
+        console.log(storedData)
 
         // first reconstruct the account from the config
         const account = new VaultAccount({
