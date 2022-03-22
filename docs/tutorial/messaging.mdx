@@ -35,7 +35,11 @@ VeridaMessagingExample = () => {
   }, [])
 
   sendMessage = async function () {
-    setStatus("Sending message... please wait.")
+    setStatus("Initalizing messaging... please wait.")
+    const messaging = await veridaContext.getMessaging()
+
+    setStatus("Sending message...")
+
 
     // The data message we are sending
     const data = {
@@ -58,8 +62,6 @@ VeridaMessagingExample = () => {
     const config = {
       recipientContextName: "Verida: Vault",
     }
-
-    const messaging = await veridaContext.getMessaging()
 
     // Now send the message
     // DID is set to whatever DID you logged in with

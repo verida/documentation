@@ -22,7 +22,6 @@ store.setState("globalVeridaContext", null);
 let Network = null;
 let VaultAccount = null;
 let Credentials = null;
-let hasSession = null;
 let getSession = null;
 let setSession = null;
 
@@ -32,7 +31,7 @@ if (ExecutionEnvironment.canUseDOM) {
 
   const veridaWebVault = require("@verida/account-web-vault");
   VaultAccount = veridaWebVault.VaultAccount;
-  hasSession = veridaWebVault.hasSession;
+
 
   const veridaVerifiableCredentials = require("@verida/verifiable-credentials");
   Credentials = veridaVerifiableCredentials.Credentials;
@@ -48,13 +47,11 @@ if (ExecutionEnvironment.canUseDOM) {
       delete storedSessions[contextName];
     } else {
       // we can't just store the context or the account because of circular references
-      // Instead we store enough to Reconstruct the account and the Network
-      console.log(context);
+      // Instead we store enough to reconstruct the account and the Network
       const dataToStore = {
-        LOGO_URL: context.account.config.logoUrl,
+        ACCOUNT_CONFIG: context.account.config,
         ENVIRONMENT: context.client.environment,
         CONTEXT_NAME: context.contextName
-
       }
       storedSessions[contextName] = dataToStore;
     }
@@ -81,13 +78,9 @@ if (ExecutionEnvironment.canUseDOM) {
       } else {
         // we have a context stored for this name
         const storedData = storedClientConfigs[contextName];
-        console.log("retrieved data")
-        console.log(storedData)
 
         // first reconstruct the account from the config
-        const account = new VaultAccount({
-          logoUrl: storedData.LOGO_URL
-        });
+        const account = new VaultAccount(storedData.ACCOUNT_CONFIG);
 
         // now reconstruct and connect the Network
         const context = await Network.connect({
@@ -120,7 +113,6 @@ const ReactLiveScope = {
   Network,
   VaultAccount,
   Credentials,
-  hasSession,
   getSession,
   setSession,
 };
