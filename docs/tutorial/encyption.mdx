@@ -5,86 +5,100 @@ description: Verida Developer Tutorial - Messaging
 keywords: [Verida, Web3, Developers, Tutorial, Database, Data Validation]
 ---
 
+# Database Encryption
 
-# Database Encryption 
-
-Data in Verida is encrypted when it is sent to remote servers. 
-You can inspect the local and remote database and see the unencrypted local data and the remote encrypted payload. 
+Data in Verida is encrypted when it is sent to remote servers.
+You can inspect the local and remote database and see the unencrypted local data and the remote encrypted payload.
 
 ```jsx live
 VeridaEncryptionExample = () => {
-    const [DID, setDID] = useGlobalState("globalDID");
-    const [veridaContext, setVeridaContext] = useGlobalState("globalVeridaContext")
+  const [veridaContext, setVeridaContext] = useState(undefined)
+  const [localData, setLocalData] = useState("")
+  const [remoteData, setRemoteData] = useState("")
+  this.CONTEXT_NAME = "Verida Tutorial"
 
+  React.useEffect(async () => {
+    // Runs after the first render() lifecycle
+    // We use this to check if we are logged in
+    if (!veridaContext) {
+      // we don't have veridaContext in local state
 
-    const [localData, setLocalData] = useState("")
-    const [remoteData, setRemoteData] = useState("")
-
-
-    showLocal = async function() {
-        const items = await Window.db.getMany() // get the database items
-        const last_item = items.slice(-1)[0] // find the last item in the list
-        
-
-        data = await Window.db._localDb.get(last_item._id) // get the record
-        console.log("Local data", data);
-
-        setLocalData(data)
+      // see if we have a session
+      ctx = await getSession(this.CONTEXT_NAME)
+      console.log(ctx);
+      if (ctx) {
+        // we do, so set the state variable we expect
+        setVeridaContext(ctx)
+      }
     }
+  }, [])
 
-    showRemote = async function() {
-        const items = await Window.db.getMany() // get the database items
-        const last_item = items.slice(-1)[0] // find the last item in the list
-        
+  showLocal = async function () {
+    const items = await Window.db.getMany() // get the database items
+    const last_item = items.slice(-1)[0] // find the last item in the list
 
-        data = await Window.db._remoteDbEncrypted.get(last_item._id) // get the record 
-        console.log("Remote data", data);
+    data = await Window.db._localDb.get(last_item._id) // get the record
+    console.log("Local data", data)
 
-        setRemoteData(data)
+    setLocalData(data)
+  }
+
+  showRemote = async function () {
+    const items = await Window.db.getMany() // get the database items
+    const last_item = items.slice(-1)[0] // find the last item in the list
+
+    data = await Window.db._remoteDbEncrypted.get(last_item._id) // get the record
+    console.log("Remote data", data)
+
+    setRemoteData(data)
+  }
+
+  displayData = function (data) {
+    if (data === "") {
+      return <div></div>
     }
+    return (
+      <div>
+        <textarea
+          rows="7"
+          cols="80"
+          defaultValue={JSON.stringify(data)}
+        ></textarea>
+      </div>
+    )
+  }
 
-    displayData = function(data) {
-        if (data === "") {
-            return (
-                <div></div>
-            )
-        }
-        return (
-            <div>
-                <textarea rows="7" cols="80" defaultValue={JSON.stringify(data)}>
-                    
-                </textarea>
-            </div>
-        )
-    }
+  localDataDisplay = displayData(localData)
+  remoteDataDisplay = displayData(remoteData)
 
-    localDataDisplay = displayData(localData)
-    remoteDataDisplay = displayData(remoteData)
-
-    const isLoggedIn = (DID !== null);
-    if (isLoggedIn) {
-        return (
-            <div>
-                <button onClick={this.showLocal}>Show Local Data</button>
-                {localDataDisplay}
-                <button onClick={this.showRemote}>Show Remote Data</button>
-                {remoteDataDisplay}
-            </div>    
-        )
-    } else {
-        return (
-            <div className="admonition admonition-danger alert alert--danger">
-                <h2>Please login <a href="/docs/tutorial/SSO#runcode">here</a></h2>
-            </div>
-        );
-    }
-
+  // if we have a veridaContext we are logged in
+  if (veridaContext) {
+    return (
+      <div>
+        <button onClick={this.showLocal}>Show Local Data</button>
+        {localDataDisplay}
+        <div>Note the fields <b>myvalue, insertedAt, modifiedAt</b> are unencrypted</div>
+        <button onClick={this.showRemote}>Show Remote Data</button>
+        {remoteDataDisplay}
+        <div>Note the fields all data fields are encrypted</div>
+      </div>
+    )
+  } else {
+    return (
+      <div className="admonition admonition-danger alert alert--danger">
+        <h2>
+          Please login <a href="/docs/tutorial/SSO#runcode">here</a>
+        </h2>
+      </div>
+    )
+  }
 }
-
 ```
+
 <!-- this is a target so we can link to the end of the code block -->
+
 <a name="runcode">&nbsp;</a>
 
 ## Database documentation
 
-See the [Verida Database documentation](/client-sdk/data.md) for complete documentation. 
+See the [Verida Database documentation](/client-sdk/data.md) for complete documentation.
