@@ -109,8 +109,10 @@ VeridaEventsExample = () => {
     )
   } else {
     return (
-      <div>
-        <button onClick={this.login}>Login</button>
+      <div className="admonition admonition-danger alert alert--danger">
+        <h2>
+          Please login <a href="/docs/tutorial/SSO#runcode">here</a>
+        </h2>
       </div>
     )
   }
