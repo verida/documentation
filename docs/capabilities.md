@@ -52,7 +52,7 @@ The major capabilities of the Verida developer platform are as follows:
             <li><a href="/docs/client-sdk/data">Documentation: Data</a></li>
             <li><a href="/docs/client-sdk/data">Documentation: Queries</a></li>
             <li><a href="/docs/tutorial/databases">Interactive Example: Databases</a></li>
-            <li><a href="/docs/tutorial/encyption">Interactive Example: Data Encryption</a></li>
+            <li><a href="/docs/tutorial/encryption">Interactive Example: Data Encryption</a></li>
         </ul>
     </td>
 </tr>
