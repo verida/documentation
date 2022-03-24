@@ -30,7 +30,8 @@ For example, open a user’s public profile created in the `Verida: Vault` mobil
 
 ```ts
 const did = 'did:vda:0x6B2a1bE81ee770cbB4648801e343E135e8D2Aa6F';
-const publicProfile = await client.openPublicProfile(did, 'Verida: Vault');
+const profileConnection = await client.openPublicProfile(did, 'Verida: Vault', 'basicProfile');
+const publicProfile = await profileConnection.getMany()
 
 console.log('Account name', publicProfile.name)
 console.log('Account country', publicProfile.country)
@@ -39,6 +40,8 @@ console.log('Account country', publicProfile.country)
 const elm = document.getElementById("#avatar-img")
 elm.src = publicProfile.avatar.uri
 ```
+This can be tried out in your browser [here](../tutorial/public_profile.mdx). 
+
 
 It’s also possible to open an external profile for the current context:
 

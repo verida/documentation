@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 7
 title: Datastores and Data Validation
 description: Verida Developer Tutorial - Messaging
 keywords: [Verida, Web3, Developers, Tutorial, Datastores, Data Validation]
@@ -32,7 +32,6 @@ VeridaDatastoreExample = () => {
 
       // see if we have a session
       ctx = await getSession(this.CONTEXT_NAME)
-      console.log(ctx)
       if (ctx) {
         // we do, so set the state variable we expect
         setVeridaContext(ctx)
