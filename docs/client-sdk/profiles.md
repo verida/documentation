@@ -40,6 +40,8 @@ console.log('Account country', publicProfile.country)
 const elm = document.getElementById("#avatar-img")
 elm.src = publicProfile.avatar.uri
 ```
+This can be tried out in your browser [here](../tutorial/public_profile.mdx). 
+
 
 It’s also possible to open an external profile for the current context:
 
