@@ -19,6 +19,8 @@ const listener = await database.changes(function(row) {
 }, filter)
 ```
 
+Try this out with your own profile data in the browser in our [tutorial](../tutorial/events.mdx).
+
 Options:
 
 - `filter`: An optional JSON object. The listener will only raise events if the data in the object matches the supplied filter.
