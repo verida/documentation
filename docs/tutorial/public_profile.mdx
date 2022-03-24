@@ -10,10 +10,10 @@ keywords: [Verida, Web3, Developers, Tutorial, Profile]
 Every Verida account has a [public profile](/client-sdk/profiles.md).
 
 ```jsx live
-VeridaMessagingExample = () => {
-  const [status, setStatus] = useState(null);
-  const [veridaContext, setVeridaContext] = useState(undefined);
-  const [publicProfile, setPublicProfile] = useState(undefined);
+VeridaProfileExample = () => {
+  const [status, setStatus] = useState(null)
+  const [veridaContext, setVeridaContext] = useState(undefined)
+  const [publicProfile, setPublicProfile] = useState(undefined)
   this.CONTEXT_NAME = "Verida Tutorial"
 
   React.useEffect(async () => {
@@ -31,62 +31,73 @@ VeridaMessagingExample = () => {
     }
   }, [])
 
-
-  connectPublicProfile = async function() {
-    // we want to get our own public profile
-
-    // we can get our own DID like this
-    const did = veridaContext.account.accountDid
-
-    // we want a client object
-    const client = await veridaContext.getClient();
-
-    // get a connection to the profile
-    const profileConnection = await client.openPublicProfile(did, 'Verida: Vault', 'basicProfile');
-
+  dataUpdated = async function () {
     // and grab the profile data
-    profileData = await profileConnection.getMany()
+    profileData = await this.profileConnection.getMany()
 
     // All public profiles have the fields: name, country, description, avatar.uri
     // see the schema here: https://common.schemas.verida.io/profile/basicProfile/latest/schema.json
     setPublicProfile(profileData)
   }
 
-  this.connectPublicProfile = this.connectPublicProfile.bind(this);
+  connectPublicProfile = async function () {
+    // we want to get our own public profile
 
+    // we can get our own DID like this
+    const did = veridaContext.account.accountDid
+
+    // we want a client object
+    const client = await veridaContext.getClient()
+
+    // get a connection to the profile
+    this.profileConnection = await client.openPublicProfile(
+      did,
+      "Verida: Vault",
+      "basicProfile"
+    )
+
+    // call dataUpdated to grab the data
+    dataUpdated()
+  }
+
+  this.dataUpdated = this.dataUpdated.bind(this)
+  this.connectPublicProfile = this.connectPublicProfile.bind(this)
 
   // if we have a veridaContext we are logged in
   if (veridaContext) {
     // user is logged in
 
-
-    profileDisplay = <button onClick={this.connectPublicProfile} >Get the Public Profile</button>
+    profileDisplay = (
+      <button onClick={this.connectPublicProfile}>
+        Get the Public Profile
+      </button>
+    )
     if (publicProfile) {
-        profileDisplay = 
+      profileDisplay = (
         <div>
           <div>Name: {publicProfile.name}</div>
           <div>Description: {publicProfile.description}</div>
           <div>Country: {publicProfile.country}</div>
-          <img width="150px" src={publicProfile.avatar.uri} />
+          {publicProfile.avatar && 
+            <img width="150px" src={publicProfile.avatar.uri} />
+          }
         </div>
+      )
     }
-
 
     return (
       <div>
         <h3>Logged in as DID: {veridaContext.account.accountDid}</h3>
         {profileDisplay}
-
       </div>
-    );
+    )
   } else {
     return (
       <div>
         <button onClick={this.login}>Login</button>
       </div>
-    );
+    )
   }
-
 }
 ```
 
