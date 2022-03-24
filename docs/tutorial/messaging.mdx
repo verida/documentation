@@ -33,12 +33,37 @@ VeridaMessagingExample = () => {
     }
   }, [])
 
-  sendMessage = async function () {
+  sendTextMessage = async function () {
     setStatus("Initalizing messaging... please wait.")
     const messaging = await veridaContext.getMessaging()
 
     setStatus("Sending message...")
+    // The data message we are sending
+    const data = {
+      data: ["this is a plain text message from the tutorial. You can edit this message in the browser."]
+    }
+    // set the subject
+    const subject = "A new message from the tutorial!"
+    // we need to set it to the correct message type
+    const messageType = "inbox/type/message"
 
+    const config = {
+      recipientContextName: "Verida: Vault"
+    }
+
+    // Now send the message
+    // DID is set to whatever DID you logged in with
+    let did = veridaContext.account.accountDid
+    await messaging.send(did, messageType, data, subject, config)
+
+    setStatus("Text message sent. Please check the inbox in the Verida Vault")
+  }
+
+  sendDataMessage = async function () {
+    setStatus("Initalizing messaging... please wait.")
+    const messaging = await veridaContext.getMessaging()
+
+    setStatus("Sending message...")
 
     // The data message we are sending
     const data = {
@@ -67,7 +92,7 @@ VeridaMessagingExample = () => {
     let did = veridaContext.account.accountDid
     await messaging.send(did, messageType, data, subject, config)
 
-    setStatus("Message Sent. Please check the inbox in the Verida Vault")
+    setStatus("Data message sent. Please check the inbox in the Verida Vault")
   }
 
   let statusMessage = <div></div>
@@ -84,10 +109,14 @@ VeridaMessagingExample = () => {
     return (
       <div>
         <div>
-          <button onClick={this.sendMessage}>Send Message</button>
+          <button onClick={this.sendTextMessage}>Send a plain text message</button>
         </div>
-
-        {statusMessage}
+        <div>
+          <button onClick={this.sendDataMessage}>Send Data Message</button>
+        </div>
+        <div>
+          {statusMessage}
+        </div>
       </div>
     )
   } else {
