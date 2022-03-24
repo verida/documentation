@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 title: Messaging
 description: Verida Developer Tutorial - Messaging
 keywords: [Verida, Web3, Developers, Tutorial, Messaging]
@@ -14,8 +14,8 @@ This example sends a contact record to a user's Verida Vault mobile application.
 
 ```jsx live
 VeridaMessagingExample = () => {
-  const [veridaContext, setVeridaContext] = useState(undefined)
   const [status, setStatus] = useState(null)
+  const [veridaContext, setVeridaContext] = useState(undefined)
   this.CONTEXT_NAME = "Verida Tutorial"
 
   React.useEffect(async () => {
@@ -26,7 +26,6 @@ VeridaMessagingExample = () => {
 
       // see if we have a session
       ctx = await getSession(this.CONTEXT_NAME)
-      console.log(ctx);
       if (ctx) {
         // we do, so set the state variable we expect
         setVeridaContext(ctx)
@@ -67,7 +66,6 @@ VeridaMessagingExample = () => {
     // DID is set to whatever DID you logged in with
     let did = veridaContext.account.accountDid
     await messaging.send(did, messageType, data, subject, config)
-    console.log("message sent")
 
     setStatus("Message Sent. Please check the inbox in the Verida Vault")
   }

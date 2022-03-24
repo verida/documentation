@@ -1,0 +1,95 @@
+---
+sidebar_position: 3
+title: Public Profiles
+description: Verida Developer Tutorial - Public Profiles
+keywords: [Verida, Web3, Developers, Tutorial, Profile]
+---
+
+# Public Profiles
+
+Every Verida account has a [public profile](/client-sdk/profiles.md).
+
+```jsx live
+VeridaMessagingExample = () => {
+  const [status, setStatus] = useState(null);
+  const [veridaContext, setVeridaContext] = useState(undefined);
+  const [publicProfile, setPublicProfile] = useState(undefined);
+  this.CONTEXT_NAME = "Verida Tutorial"
+
+  React.useEffect(async () => {
+    // Runs after the first render() lifecycle
+    // We use this to check if we are logged in
+    if (!veridaContext) {
+      // we don't have veridaContext in local state
+
+      // see if we have a session
+      ctx = await getSession(this.CONTEXT_NAME)
+      if (ctx) {
+        // we do, so set the state variable we expect
+        setVeridaContext(ctx)
+      }
+    }
+  }, [])
+
+
+  connectPublicProfile = async function() {
+    // we want to get our own public profile
+
+    // we can get our own DID like this
+    const did = veridaContext.account.accountDid
+
+    // we want a client object
+    const client = await veridaContext.getClient();
+
+    // get a connection to the profile
+    const profileConnection = await client.openPublicProfile(did, 'Verida: Vault', 'basicProfile');
+
+    // and grab the profile data
+    profileData = await profileConnection.getMany()
+
+    // All public profiles have the fields: name, country, description, avatar.uri
+    // see the schema here: https://common.schemas.verida.io/profile/basicProfile/latest/schema.json
+    setPublicProfile(profileData)
+  }
+
+  this.connectPublicProfile = this.connectPublicProfile.bind(this);
+
+
+  // if we have a veridaContext we are logged in
+  if (veridaContext) {
+    // user is logged in
+
+
+    profileDisplay = <button onClick={this.connectPublicProfile} >Get the Public Profile</button>
+    if (publicProfile) {
+        profileDisplay = 
+        <div>
+          <div>Name: {publicProfile.name}</div>
+          <div>Description: {publicProfile.description}</div>
+          <div>Country: {publicProfile.country}</div>
+          <img width="150px" src={publicProfile.avatar.uri} />
+        </div>
+    }
+
+
+    return (
+      <div>
+        <h3>Logged in as DID: {veridaContext.account.accountDid}</h3>
+        {profileDisplay}
+
+      </div>
+    );
+  } else {
+    return (
+      <div>
+        <button onClick={this.login}>Login</button>
+      </div>
+    );
+  }
+
+}
+```
+
+<!-- this is a target so we can link to the end of the code block -->
+
+<a name="runcode">&nbsp;</a>
