@@ -31,7 +31,9 @@ const CONTEXT_NAME = 'My Application Context Name';
 const LOGO_URL = "https://assets.verida.io/verida_login_request_logo_170x170.png";
 
 const account = new VaultAccount({
-	logoUrl: LOGO_URL
+  request: {
+    logoUrl: "https://assets.verida.io/verida_login_request_logo_170x170.png",
+  }
 });
 
 const context = Network.connect({
@@ -59,7 +61,7 @@ These (all optional) config options include:
 - `serverUri?` — A string representing the WSS URI
 - `loginUri?` — The login URI or page where the user will be sent to login using the app; ie: vault.verida.io.
 - `canvasId?` — A string representing the DOM id where the QR code canvas will be injected
-- `request?` — An object representing an authorization request that matches https://schemas.verida.io/auth/request/schema.json
+- `request?` — An object representing an authorization request that matches https://vault.schemas.verida.io/auth/loginRequest/latest/schema.json
+- `request?.logoUrl?` — The URL of a 170x170 PNG logo to display in the vault
 - `callback?` — A callback function when the auth response is received.
-- `logoUrl?` — The URL of a 170x170 PNG logo to display in the vault
 - `deeplinkId?` — The HTML element ID of a link that should have the deeplink URI attached to the `href` property

@@ -15,36 +15,38 @@ Implementation Notes
 Because of the way Docusaurus and MDX live code is implemented, it is tricky passing state between live code elements.
 Each is a separate React component, and we can't modify parent components to share state, or to be a React Context.Provider.
 
-Instead we rely on local storage implemented in /src/theme/ReactLiveScope/index.js. Look for something similar to 
-appear in the verida-js libraries soon. 
+Instead we rely on local storage implemented in /src/theme/ReactLiveScope/index.js. Look for something similar to
+appear in the verida-js libraries soon.
 
 -->
 
 ```jsx live
 VeridaLoginExample = () => {
+  const [veridaContext, setVeridaContext] = useState(undefined)
+  this.CONTEXT_NAME = "Verida Tutorial"
 
-  const [veridaContext, setVeridaContext] = useState(undefined);
-  this.CONTEXT_NAME = "Verida Tutorial";
-
-  React.useEffect( async() => {
+  React.useEffect(async () => {
     // Runs after the first render() lifecycle
     // We use this to check if we are logged in
     if (!veridaContext) {
-        // we don't have veridaContext in local state
+      // we don't have veridaContext in local state
 
-        // see if we have a session
-        ctx = await getSession(this.CONTEXT_NAME)
-        if (ctx) {
-            // we do, so set the state variable we expect
-            setVeridaContext(ctx);
-        }
+      // see if we have a session
+      ctx = await getSession(this.CONTEXT_NAME)
+      if (ctx) {
+        // we do, so set the state variable we expect
+        setVeridaContext(ctx)
+      }
     }
-  }, []);
+  }, [])
 
   login = async function () {
     const account = new VaultAccount({
-      logoUrl: "https://assets.verida.io/verida_login_request_logo_170x170.png",
-    });
+      request: {
+        logoUrl:
+          "https://developers.verida.io/img/tutorial_login_request_logo_170x170.png",
+      },
+    })
 
     const context = await Network.connect({
       client: {
@@ -54,27 +56,27 @@ VeridaLoginExample = () => {
       context: {
         name: this.CONTEXT_NAME,
       },
-    });
+    })
 
     if (context) {
-      // save this in the session  
-      await setSession(this.CONTEXT_NAME, context);
-      setVeridaContext(context);
+      // save this in the session
+      await setSession(this.CONTEXT_NAME, context)
+      setVeridaContext(context)
     }
-  };
+  }
 
   logout = () => {
     veridaContext
       .getAccount()
       .disconnect(this.CONTEXT_NAME)
       .then(() => {
-        setVeridaContext(undefined);
-        setSession(this.CONTEXT_NAME, undefined);
-      });
-  };
+        setVeridaContext(undefined)
+        setSession(this.CONTEXT_NAME, undefined)
+      })
+  }
 
-  this.login = this.login.bind(this);
-  this.logout = this.logout.bind(this);
+  this.login = this.login.bind(this)
+  this.logout = this.logout.bind(this)
 
   // if we have a veridaContext we are logged in
   if (veridaContext) {
@@ -84,13 +86,13 @@ VeridaLoginExample = () => {
         <h3>Logged in as DID: {veridaContext.account.accountDid}</h3>
         <button onClick={this.logout}>Logout</button>
       </div>
-    );
+    )
   } else {
     return (
       <div>
         <button onClick={this.login}>Login</button>
       </div>
-    );
+    )
   }
 }
 ```
