@@ -36,7 +36,7 @@ if (ExecutionEnvironment.canUseDOM) {
   const veridaVerifiableCredentials = require("@verida/verifiable-credentials");
   Credentials = veridaVerifiableCredentials.Credentials;
 
-  // Locally store the clientConfig which is enough to reconnect. Pass falsey to delete it
+  // Locally store the Verida context which is enough to reconnect. Pass falsey to delete it
   setSession = async function(contextName, context) {
     let storedSessions = localStorage.get(VERIDA_SESSION_STORE_KEY);
     if (!storedSessions) {
