@@ -23,7 +23,7 @@ Interface for any PermissionsConfig
 
 #### Defined in
 
-[client-ts/src/context/interfaces.ts:100](https://github.com/verida/verida-js/blob/7bffc4e/packages/client-ts/src/context/interfaces.ts#L100)
+[client-ts/src/context/interfaces.ts:100](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/context/interfaces.ts#L100)
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 #### Defined in
 
-[client-ts/src/context/interfaces.ts:102](https://github.com/verida/verida-js/blob/7bffc4e/packages/client-ts/src/context/interfaces.ts#L102)
+[client-ts/src/context/interfaces.ts:102](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/context/interfaces.ts#L102)
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 #### Defined in
 
-[client-ts/src/context/interfaces.ts:101](https://github.com/verida/verida-js/blob/7bffc4e/packages/client-ts/src/context/interfaces.ts#L101)
+[client-ts/src/context/interfaces.ts:101](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/context/interfaces.ts#L101)
 
 ___
 
@@ -53,4 +53,4 @@ ___
 
 #### Defined in
 
-[client-ts/src/context/interfaces.ts:103](https://github.com/verida/verida-js/blob/7bffc4e/packages/client-ts/src/context/interfaces.ts#L103)
+[client-ts/src/context/interfaces.ts:103](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/context/interfaces.ts#L103)

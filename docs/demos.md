@@ -1,4 +1,5 @@
 ---
+sidebar_position: 8
 description: Verida Developer Documentation
 keywords: [Verida, Web3, Developers]
 ---

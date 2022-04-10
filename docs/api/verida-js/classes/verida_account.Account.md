@@ -53,7 +53,7 @@ Create a DID-JWT from a data object
 
 #### Defined in
 
-[account/src/account.ts:72](https://github.com/verida/verida-js/blob/7bffc4e/packages/account/src/account.ts#L72)
+[account/src/account.ts:72](https://github.com/verida/verida-js/blob/a39619b/packages/account/src/account.ts#L72)
 
 ___
 
@@ -69,7 +69,7 @@ Get the DID of the current user
 
 #### Defined in
 
-[account/src/account.ts:34](https://github.com/verida/verida-js/blob/7bffc4e/packages/account/src/account.ts#L34)
+[account/src/account.ts:34](https://github.com/verida/verida-js/blob/a39619b/packages/account/src/account.ts#L34)
 
 ___
 
@@ -93,7 +93,7 @@ For example, in a web browser context, it would remove any stored signatures fro
 
 #### Defined in
 
-[account/src/account.ts:104](https://github.com/verida/verida-js/blob/7bffc4e/packages/account/src/account.ts#L104)
+[account/src/account.ts:104](https://github.com/verida/verida-js/blob/a39619b/packages/account/src/account.ts#L104)
 
 ___
 
@@ -107,7 +107,7 @@ ___
 
 #### Defined in
 
-[account/src/account.ts:64](https://github.com/verida/verida-js/blob/7bffc4e/packages/account/src/account.ts#L64)
+[account/src/account.ts:64](https://github.com/verida/verida-js/blob/a39619b/packages/account/src/account.ts#L64)
 
 ___
 
@@ -129,7 +129,7 @@ Generate a keyring for this user for a given storage context.
 
 #### Defined in
 
-[account/src/account.ts:18](https://github.com/verida/verida-js/blob/7bffc4e/packages/account/src/account.ts#L18)
+[account/src/account.ts:18](https://github.com/verida/verida-js/blob/a39619b/packages/account/src/account.ts#L18)
 
 ___
 
@@ -151,7 +151,7 @@ Link storage to this user
 
 #### Defined in
 
-[account/src/account.ts:43](https://github.com/verida/verida-js/blob/7bffc4e/packages/account/src/account.ts#L43)
+[account/src/account.ts:43](https://github.com/verida/verida-js/blob/a39619b/packages/account/src/account.ts#L43)
 
 ___
 
@@ -174,7 +174,7 @@ ___
 
 #### Defined in
 
-[account/src/account.ts:60](https://github.com/verida/verida-js/blob/7bffc4e/packages/account/src/account.ts#L60)
+[account/src/account.ts:60](https://github.com/verida/verida-js/blob/a39619b/packages/account/src/account.ts#L60)
 
 ___
 
@@ -196,7 +196,7 @@ Sign a string as the current user
 
 #### Defined in
 
-[account/src/account.ts:27](https://github.com/verida/verida-js/blob/7bffc4e/packages/account/src/account.ts#L27)
+[account/src/account.ts:27](https://github.com/verida/verida-js/blob/a39619b/packages/account/src/account.ts#L27)
 
 ___
 
@@ -217,7 +217,7 @@ ___
 
 #### Defined in
 
-[account/src/account.ts:56](https://github.com/verida/verida-js/blob/7bffc4e/packages/account/src/account.ts#L56)
+[account/src/account.ts:56](https://github.com/verida/verida-js/blob/a39619b/packages/account/src/account.ts#L56)
 
 ___
 
@@ -239,4 +239,4 @@ Unlink storage for this user
 
 #### Defined in
 
-[account/src/account.ts:52](https://github.com/verida/verida-js/blob/7bffc4e/packages/account/src/account.ts#L52)
+[account/src/account.ts:52](https://github.com/verida/verida-js/blob/a39619b/packages/account/src/account.ts#L52)

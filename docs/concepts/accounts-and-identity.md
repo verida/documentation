@@ -34,7 +34,7 @@ The database endpoints for this application data is published as part of the acc
 
 For simplicity, Verida provides a free testnet database that can be used by any application, however both application developers and users can take control of this data:
 
-1. Application developers can host their own Verida Storage node(s) and configure that to be used for their application. See [storage nodes](../storage-node.md).
+1. Application developers can host their own Verida Storage node(s) and configure that to be used for their application. See [storage nodes](../network/storage-node.md).
 2. Users can host their own Verida Storage node(s) and force an application to use that server by updating their DID document with the new server endpoint
 
 <aside>

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 9
 title: Verida Capabilities
 description: Capabilities of the Verida developer platform
 keywords: [Verida, Web3, Developers]
@@ -52,7 +52,7 @@ The major capabilities of the Verida developer platform are as follows:
             <li><a href="/docs/client-sdk/data">Documentation: Data</a></li>
             <li><a href="/docs/client-sdk/data">Documentation: Queries</a></li>
             <li><a href="/docs/tutorial/databases">Interactive Example: Databases</a></li>
-            <li><a href="/docs/tutorial/encyption">Interactive Example: Data Encryption</a></li>
+            <li><a href="/docs/tutorial/encryption">Interactive Example: Data Encryption</a></li>
         </ul>
     </td>
 </tr>
@@ -72,7 +72,7 @@ The major capabilities of the Verida developer platform are as follows:
     <td align="center">✅ </td>
     <td align="left">
         <ul>
-            <li><a href="/docs/concepts/verifiable-credentials">Documentation: Verifiable Credentials</a></li>
+            <li><a href="/docs/extensions/verifiable-credentials">Documentation: Verifiable Credentials</a></li>
             <li><a href="https://vault-examples.demos.verida.io/">Demo: Vault Example</a></li>
         </ul>
     </td>
@@ -134,7 +134,6 @@ gantt
         Mainnet API                 :mainnet, 2022-06-01, 30d
         Unique Device Credential    :udc, 2022-03-01, 30d
         Personal Data Oracle        :pdo, 2022-02-01, 200d
-
 
 ```
 

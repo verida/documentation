@@ -22,6 +22,6 @@ Many of these concepts have comprehensive coverage in the [Verida White Paper](h
 
 [Schemas](schemas.md)
 
-[Verifiable Credentials](verifiable-credentials.md)
+[Verifiable Credentials](../extensions/verifiable-credentials.md)
 
 [Data Storage](data-storage.md)

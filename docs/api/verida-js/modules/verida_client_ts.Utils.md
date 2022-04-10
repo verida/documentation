@@ -37,7 +37,7 @@ Build a URI that represents a specific record in a database
 
 #### Defined in
 
-[client-ts/src/utils.ts:18](https://github.com/verida/verida-js/blob/7bffc4e/packages/client-ts/src/utils.ts#L18)
+[client-ts/src/utils.ts:18](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/utils.ts#L18)
 
 ___
 
@@ -59,7 +59,7 @@ Explode a Verida URI into it's individual pieces
 
 #### Defined in
 
-[client-ts/src/utils.ts:51](https://github.com/verida/verida-js/blob/7bffc4e/packages/client-ts/src/utils.ts#L51)
+[client-ts/src/utils.ts:51](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/utils.ts#L51)
 
 ___
 
@@ -82,4 +82,4 @@ Fetch the data accessible from a Verida URI
 
 #### Defined in
 
-[client-ts/src/utils.ts:83](https://github.com/verida/verida-js/blob/7bffc4e/packages/client-ts/src/utils.ts#L83)
+[client-ts/src/utils.ts:83](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/utils.ts#L83)

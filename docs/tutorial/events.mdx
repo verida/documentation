@@ -1,0 +1,128 @@
+---
+sidebar_position: 4
+title: Events
+description: Verida Developer Tutorial - Events
+keywords: [Verida, Web3, Developers, Tutorial, Events]
+---
+
+# Events
+
+We can listen for changed for data that is stored in the Verida [database](./databases) or [datastore](./datastores).
+
+This includes things like your [profile](./public_profile) which we showed loading in the previous tutorial step. 
+
+```jsx live
+VeridaEventsExample = () => {
+  const [status, setStatus] = useState(null)
+  const [veridaContext, setVeridaContext] = useState(undefined)
+  const [publicProfile, setPublicProfile] = useState(undefined)
+  this.CONTEXT_NAME = "Verida Tutorial"
+
+  React.useEffect(async () => {
+    // Runs after the first render() lifecycle
+    // We use this to check if we are logged in
+    if (!veridaContext) {
+      // we don't have veridaContext in local state
+
+      // see if we have a session
+      ctx = await getSession(this.CONTEXT_NAME)
+      if (ctx) {
+        // we do, so set the state variable we expect
+        setVeridaContext(ctx)
+      }
+    }
+  }, [])
+
+  dataUpdated = async function () {
+    // and grab the profile data
+    profileData = await this.profileConnection.getMany()
+
+    // All public profiles have the fields: name, country, description, avatar.uri
+    // see the schema here: https://common.schemas.verida.io/profile/basicProfile/latest/schema.json
+    setPublicProfile(profileData)
+  }
+
+  connectPublicProfile = async function () {
+    // we want to get our own public profile
+
+    // we can get our own DID like this
+    const did = veridaContext.account.accountDid
+
+    // we want a client object
+    const client = await veridaContext.getClient()
+
+    // get a connection to the profile
+    this.profileConnection = await client.openPublicProfile(
+      did,
+      "Verida: Vault",
+      "basicProfile"
+    )
+
+    // call dataUpdated to grab the data
+    dataUpdated()
+  }
+
+  // This is how we connect a data listener
+  // In this case we are listening for changes to the profile
+  // but it can be any database or datastore
+  connectListener = async function () {
+    // display the public profile as we have done previously
+    await connectPublicProfile()
+
+    // connect the listener to this.profileConnection to call dataUpdated whenever
+    // the data changes
+    this.profileConnection.listen(dataUpdated)
+  }
+
+  this.dataUpdated = this.dataUpdated.bind(this)
+  this.connectPublicProfile = this.connectPublicProfile.bind(this)
+  this.connectListener = this.connectListener.bind(this)
+
+  // if we have a veridaContext we are logged in
+  if (veridaContext) {
+    // user is logged in
+
+    profileDisplay = (
+      <button onClick={this.connectListener}>Connect a Listener</button>
+    )    
+    if (publicProfile) {
+      profileDisplay = (
+        <div>
+          <h3>
+            Now inside your Vault go and change your name, description or
+            avatar.
+          </h3>
+          <div>Name: {publicProfile.name}</div>
+          <div>Description: {publicProfile.description}</div>
+          <div>Country: {publicProfile.country}</div>
+          {publicProfile.avatar && 
+            <img width="150px" src={publicProfile.avatar.uri} />
+          }
+        </div>
+      )
+    }
+
+    return (
+      <div>
+        {profileDisplay}
+      </div>
+    )
+  } else {
+    return (
+      <div className="admonition admonition-danger alert alert--danger">
+        <h2>
+          Please login <a href="/docs/tutorial/SSO#runcode">here</a>
+        </h2>
+      </div>
+    )
+  }
+}
+```
+
+<!-- this is a target so we can link to the end of the code block -->
+
+<a name="runcode">&nbsp;</a>
+
+## Events documentation
+
+See the [Verida Events documentation](/client-sdk/events.md) for complete documentation.
