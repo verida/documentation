@@ -48,7 +48,7 @@ Class representing the link between a DID and Storage context
 
 #### Defined in
 
-[storage-link/src/storage-link.ts:130](https://github.com/verida/verida-js/blob/a39619b/packages/storage-link/src/storage-link.ts#L130)
+[storage-link/src/storage-link.ts:130](https://github.com/verida/verida-js/blob/039856c/packages/storage-link/src/storage-link.ts#L130)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[storage-link/src/storage-link.ts:138](https://github.com/verida/verida-js/blob/a39619b/packages/storage-link/src/storage-link.ts#L138)
+[storage-link/src/storage-link.ts:138](https://github.com/verida/verida-js/blob/039856c/packages/storage-link/src/storage-link.ts#L138)
 
 ___
 
@@ -93,7 +93,7 @@ SecureStorageContextConfig | undefined (if not found)
 
 #### Defined in
 
-[storage-link/src/storage-link.ts:32](https://github.com/verida/verida-js/blob/a39619b/packages/storage-link/src/storage-link.ts#L32)
+[storage-link/src/storage-link.ts:32](https://github.com/verida/verida-js/blob/039856c/packages/storage-link/src/storage-link.ts#L32)
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[storage-link/src/storage-link.ts:12](https://github.com/verida/verida-js/blob/a39619b/packages/storage-link/src/storage-link.ts#L12)
+[storage-link/src/storage-link.ts:12](https://github.com/verida/verida-js/blob/039856c/packages/storage-link/src/storage-link.ts#L12)
 
 ___
 
@@ -138,7 +138,7 @@ ___
 
 #### Defined in
 
-[storage-link/src/storage-link.ts:90](https://github.com/verida/verida-js/blob/a39619b/packages/storage-link/src/storage-link.ts#L90)
+[storage-link/src/storage-link.ts:90](https://github.com/verida/verida-js/blob/039856c/packages/storage-link/src/storage-link.ts#L90)
 
 ___
 
@@ -159,7 +159,7 @@ ___
 
 #### Defined in
 
-[storage-link/src/storage-link.ts:49](https://github.com/verida/verida-js/blob/a39619b/packages/storage-link/src/storage-link.ts#L49)
+[storage-link/src/storage-link.ts:49](https://github.com/verida/verida-js/blob/039856c/packages/storage-link/src/storage-link.ts#L49)
 
 ___
 
@@ -181,7 +181,7 @@ Ensure the URL has a trailing slash
 
 #### Defined in
 
-[storage-link/src/storage-link.ts:231](https://github.com/verida/verida-js/blob/a39619b/packages/storage-link/src/storage-link.ts#L231)
+[storage-link/src/storage-link.ts:231](https://github.com/verida/verida-js/blob/039856c/packages/storage-link/src/storage-link.ts#L231)
 
 ___
 
@@ -202,4 +202,4 @@ ___
 
 #### Defined in
 
-[storage-link/src/storage-link.ts:111](https://github.com/verida/verida-js/blob/a39619b/packages/storage-link/src/storage-link.ts#L111)
+[storage-link/src/storage-link.ts:111](https://github.com/verida/verida-js/blob/039856c/packages/storage-link/src/storage-link.ts#L111)

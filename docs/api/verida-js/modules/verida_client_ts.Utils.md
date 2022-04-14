@@ -37,7 +37,7 @@ Build a URI that represents a specific record in a database
 
 #### Defined in
 
-[client-ts/src/utils.ts:18](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/utils.ts#L18)
+[client-ts/src/utils.ts:17](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/utils.ts#L17)
 
 ___
 
@@ -59,13 +59,13 @@ Explode a Verida URI into it's individual pieces
 
 #### Defined in
 
-[client-ts/src/utils.ts:51](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/utils.ts#L51)
+[client-ts/src/utils.ts:50](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/utils.ts#L50)
 
 ___
 
 ### fetchVeridaUri
 
-▸ **fetchVeridaUri**(`uri`, `context`): `Promise`<`string`\>
+▸ **fetchVeridaUri**(`uri`, `context`): `Promise`<`object`\>
 
 Fetch the data accessible from a Verida URI
 
@@ -74,12 +74,12 @@ Fetch the data accessible from a Verida URI
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `uri` | `string` | Verida URI of the record to access |
-| `context` | [`Context`](../classes/verida_client_ts.Context.md) | An existing context used to open the external database |
+| `context` | `any` | An existing context used to open the external database |
 
 #### Returns
 
-`Promise`<`string`\>
+`Promise`<`object`\>
 
 #### Defined in
 
-[client-ts/src/utils.ts:83](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/utils.ts#L83)
+[client-ts/src/utils.ts:82](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/utils.ts#L82)

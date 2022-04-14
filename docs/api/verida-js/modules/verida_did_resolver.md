@@ -18,4 +18,4 @@
 
 | Name | Type |
 | :------ | :------ |
-| `getResolver` | (`didServerEndpoint`: `string`) => `DIDResolutionOptions` |
+| `getResolver` | (`environment`: `EnvironmentType`) => `DIDResolutionOptions` |

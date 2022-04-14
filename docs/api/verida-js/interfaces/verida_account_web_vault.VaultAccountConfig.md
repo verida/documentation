@@ -11,7 +11,6 @@
 - [canvasId](verida_account_web_vault.VaultAccountConfig.md#canvasid)
 - [deeplinkId](verida_account_web_vault.VaultAccountConfig.md#deeplinkid)
 - [loginUri](verida_account_web_vault.VaultAccountConfig.md#loginuri)
-- [logoUrl](verida_account_web_vault.VaultAccountConfig.md#logourl)
 - [request](verida_account_web_vault.VaultAccountConfig.md#request)
 - [schemeUri](verida_account_web_vault.VaultAccountConfig.md#schemeuri)
 - [serverUri](verida_account_web_vault.VaultAccountConfig.md#serveruri)
@@ -29,7 +28,7 @@
 
 #### Defined in
 
-[account-web-vault/src/interfaces.ts:6](https://github.com/verida/verida-js/blob/a39619b/packages/account-web-vault/src/interfaces.ts#L6)
+[account-web-vault/src/interfaces.ts:10](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/interfaces.ts#L10)
 
 ___
 
@@ -39,7 +38,7 @@ ___
 
 #### Defined in
 
-[account-web-vault/src/interfaces.ts:9](https://github.com/verida/verida-js/blob/a39619b/packages/account-web-vault/src/interfaces.ts#L9)
+[account-web-vault/src/interfaces.ts:12](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/interfaces.ts#L12)
 
 ___
 
@@ -49,27 +48,17 @@ ___
 
 #### Defined in
 
-[account-web-vault/src/interfaces.ts:5](https://github.com/verida/verida-js/blob/a39619b/packages/account-web-vault/src/interfaces.ts#L5)
-
-___
-
-### logoUrl
-
-• `Optional` **logoUrl**: `string`
-
-#### Defined in
-
-[account-web-vault/src/interfaces.ts:8](https://github.com/verida/verida-js/blob/a39619b/packages/account-web-vault/src/interfaces.ts#L8)
+[account-web-vault/src/interfaces.ts:9](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/interfaces.ts#L9)
 
 ___
 
 ### request
 
-• `Optional` **request**: `object`
+• `Optional` **request**: `VaultAccountRequest`
 
 #### Defined in
 
-[account-web-vault/src/interfaces.ts:10](https://github.com/verida/verida-js/blob/a39619b/packages/account-web-vault/src/interfaces.ts#L10)
+[account-web-vault/src/interfaces.ts:13](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/interfaces.ts#L13)
 
 ___
 
@@ -79,7 +68,7 @@ ___
 
 #### Defined in
 
-[account-web-vault/src/interfaces.ts:7](https://github.com/verida/verida-js/blob/a39619b/packages/account-web-vault/src/interfaces.ts#L7)
+[account-web-vault/src/interfaces.ts:11](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/interfaces.ts#L11)
 
 ___
 
@@ -89,7 +78,7 @@ ___
 
 #### Defined in
 
-[account-web-vault/src/interfaces.ts:4](https://github.com/verida/verida-js/blob/a39619b/packages/account-web-vault/src/interfaces.ts#L4)
+[account-web-vault/src/interfaces.ts:8](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/interfaces.ts#L8)
 
 ## Methods
 
@@ -109,7 +98,7 @@ ___
 
 #### Defined in
 
-[account-web-vault/src/interfaces.ts:11](https://github.com/verida/verida-js/blob/a39619b/packages/account-web-vault/src/interfaces.ts#L11)
+[account-web-vault/src/interfaces.ts:14](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/interfaces.ts#L14)
 
 ___
 
@@ -123,4 +112,4 @@ ___
 
 #### Defined in
 
-[account-web-vault/src/interfaces.ts:12](https://github.com/verida/verida-js/blob/a39619b/packages/account-web-vault/src/interfaces.ts#L12)
+[account-web-vault/src/interfaces.ts:15](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/interfaces.ts#L15)

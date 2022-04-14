@@ -44,4 +44,4 @@ Generate a storage link for an existing DID
 
 #### Defined in
 
-[storage-link/src/did-storage-config.ts:13](https://github.com/verida/verida-js/blob/a39619b/packages/storage-link/src/did-storage-config.ts#L13)
+[storage-link/src/did-storage-config.ts:13](https://github.com/verida/verida-js/blob/039856c/packages/storage-link/src/did-storage-config.ts#L13)
