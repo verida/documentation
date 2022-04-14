@@ -40,7 +40,7 @@ Used internally.
 
 #### Defined in
 
-[client-ts/src/context/messaging.ts:78](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/context/messaging.ts#L78)
+[client-ts/src/context/messaging.ts:78](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/messaging.ts#L78)
 
 ___
 
@@ -58,7 +58,7 @@ any Currently returns a `Datastore` instance.
 
 #### Defined in
 
-[client-ts/src/context/messaging.ts:69](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/context/messaging.ts#L69)
+[client-ts/src/context/messaging.ts:69](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/messaging.ts#L69)
 
 ___
 
@@ -81,7 +81,7 @@ Get messages from this inbox.
 
 #### Defined in
 
-[client-ts/src/context/messaging.ts:62](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/context/messaging.ts#L62)
+[client-ts/src/context/messaging.ts:62](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/messaging.ts#L62)
 
 ___
 
@@ -99,7 +99,7 @@ Initialize messaging for the connected user
 
 #### Defined in
 
-[client-ts/src/context/messaging.ts:13](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/context/messaging.ts#L13)
+[client-ts/src/context/messaging.ts:13](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/messaging.ts#L13)
 
 ___
 
@@ -121,7 +121,7 @@ Unregister a callback to fire when a new message is received
 
 #### Defined in
 
-[client-ts/src/context/messaging.ts:54](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/context/messaging.ts#L54)
+[client-ts/src/context/messaging.ts:54](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/messaging.ts#L54)
 
 ___
 
@@ -153,7 +153,7 @@ Returns an event emitter
 
 #### Defined in
 
-[client-ts/src/context/messaging.ts:47](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/context/messaging.ts#L47)
+[client-ts/src/context/messaging.ts:47](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/messaging.ts#L47)
 
 ___
 
@@ -181,4 +181,4 @@ Send a message to another DID on the network.
 
 #### Defined in
 
-[client-ts/src/context/messaging.ts:26](https://github.com/verida/verida-js/blob/a39619b/packages/client-ts/src/context/messaging.ts#L26)
+[client-ts/src/context/messaging.ts:26](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/messaging.ts#L26)

@@ -62,7 +62,7 @@ Utilizes `keccak256` algorithm to hash signed data and `secp256k1` signature alg
 
 #### Defined in
 
-[encryption-utils/src/index.ts:79](https://github.com/verida/verida-js/blob/a39619b/packages/encryption-utils/src/index.ts#L79)
+[encryption-utils/src/index.ts:79](https://github.com/verida/verida-js/blob/039856c/packages/encryption-utils/src/index.ts#L79)
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 #### Defined in
 
-[encryption-utils/src/index.ts:66](https://github.com/verida/verida-js/blob/a39619b/packages/encryption-utils/src/index.ts#L66)
+[encryption-utils/src/index.ts:66](https://github.com/verida/verida-js/blob/039856c/packages/encryption-utils/src/index.ts#L66)
 
 ___
 
@@ -103,7 +103,7 @@ ___
 
 #### Defined in
 
-[encryption-utils/src/index.ts:152](https://github.com/verida/verida-js/blob/a39619b/packages/encryption-utils/src/index.ts#L152)
+[encryption-utils/src/index.ts:152](https://github.com/verida/verida-js/blob/039856c/packages/encryption-utils/src/index.ts#L152)
 
 ___
 
@@ -123,7 +123,7 @@ ___
 
 #### Defined in
 
-[encryption-utils/src/index.ts:164](https://github.com/verida/verida-js/blob/a39619b/packages/encryption-utils/src/index.ts#L164)
+[encryption-utils/src/index.ts:164](https://github.com/verida/verida-js/blob/039856c/packages/encryption-utils/src/index.ts#L164)
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-[encryption-utils/src/index.ts:131](https://github.com/verida/verida-js/blob/a39619b/packages/encryption-utils/src/index.ts#L131)
+[encryption-utils/src/index.ts:131](https://github.com/verida/verida-js/blob/039856c/packages/encryption-utils/src/index.ts#L131)
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-[encryption-utils/src/index.ts:135](https://github.com/verida/verida-js/blob/a39619b/packages/encryption-utils/src/index.ts#L135)
+[encryption-utils/src/index.ts:135](https://github.com/verida/verida-js/blob/039856c/packages/encryption-utils/src/index.ts#L135)
 
 ___
 
@@ -183,7 +183,7 @@ ___
 
 #### Defined in
 
-[encryption-utils/src/index.ts:139](https://github.com/verida/verida-js/blob/a39619b/packages/encryption-utils/src/index.ts#L139)
+[encryption-utils/src/index.ts:139](https://github.com/verida/verida-js/blob/039856c/packages/encryption-utils/src/index.ts#L139)
 
 ___
 
@@ -203,7 +203,7 @@ ___
 
 #### Defined in
 
-[encryption-utils/src/index.ts:147](https://github.com/verida/verida-js/blob/a39619b/packages/encryption-utils/src/index.ts#L147)
+[encryption-utils/src/index.ts:147](https://github.com/verida/verida-js/blob/039856c/packages/encryption-utils/src/index.ts#L147)
 
 ___
 
@@ -223,7 +223,7 @@ ___
 
 #### Defined in
 
-[encryption-utils/src/index.ts:156](https://github.com/verida/verida-js/blob/a39619b/packages/encryption-utils/src/index.ts#L156)
+[encryption-utils/src/index.ts:156](https://github.com/verida/verida-js/blob/039856c/packages/encryption-utils/src/index.ts#L156)
 
 ___
 
@@ -243,7 +243,7 @@ ___
 
 #### Defined in
 
-[encryption-utils/src/index.ts:160](https://github.com/verida/verida-js/blob/a39619b/packages/encryption-utils/src/index.ts#L160)
+[encryption-utils/src/index.ts:160](https://github.com/verida/verida-js/blob/039856c/packages/encryption-utils/src/index.ts#L160)
 
 ___
 
@@ -263,7 +263,7 @@ ___
 
 #### Defined in
 
-[encryption-utils/src/index.ts:168](https://github.com/verida/verida-js/blob/a39619b/packages/encryption-utils/src/index.ts#L168)
+[encryption-utils/src/index.ts:168](https://github.com/verida/verida-js/blob/039856c/packages/encryption-utils/src/index.ts#L168)
 
 ___
 
@@ -283,7 +283,7 @@ ___
 
 #### Defined in
 
-[encryption-utils/src/index.ts:101](https://github.com/verida/verida-js/blob/a39619b/packages/encryption-utils/src/index.ts#L101)
+[encryption-utils/src/index.ts:101](https://github.com/verida/verida-js/blob/039856c/packages/encryption-utils/src/index.ts#L101)
 
 ___
 
@@ -297,7 +297,7 @@ ___
 
 #### Defined in
 
-[encryption-utils/src/index.ts:105](https://github.com/verida/verida-js/blob/a39619b/packages/encryption-utils/src/index.ts#L105)
+[encryption-utils/src/index.ts:105](https://github.com/verida/verida-js/blob/039856c/packages/encryption-utils/src/index.ts#L105)
 
 ___
 
@@ -318,7 +318,7 @@ ___
 
 #### Defined in
 
-[encryption-utils/src/index.ts:97](https://github.com/verida/verida-js/blob/a39619b/packages/encryption-utils/src/index.ts#L97)
+[encryption-utils/src/index.ts:97](https://github.com/verida/verida-js/blob/039856c/packages/encryption-utils/src/index.ts#L97)
 
 ___
 
@@ -339,7 +339,7 @@ ___
 
 #### Defined in
 
-[encryption-utils/src/index.ts:109](https://github.com/verida/verida-js/blob/a39619b/packages/encryption-utils/src/index.ts#L109)
+[encryption-utils/src/index.ts:109](https://github.com/verida/verida-js/blob/039856c/packages/encryption-utils/src/index.ts#L109)
 
 ___
 
@@ -360,7 +360,7 @@ ___
 
 #### Defined in
 
-[encryption-utils/src/index.ts:60](https://github.com/verida/verida-js/blob/a39619b/packages/encryption-utils/src/index.ts#L60)
+[encryption-utils/src/index.ts:60](https://github.com/verida/verida-js/blob/039856c/packages/encryption-utils/src/index.ts#L60)
 
 ___
 
@@ -381,7 +381,7 @@ ___
 
 #### Defined in
 
-[encryption-utils/src/index.ts:35](https://github.com/verida/verida-js/blob/a39619b/packages/encryption-utils/src/index.ts#L35)
+[encryption-utils/src/index.ts:35](https://github.com/verida/verida-js/blob/039856c/packages/encryption-utils/src/index.ts#L35)
 
 ___
 
@@ -402,7 +402,7 @@ ___
 
 #### Defined in
 
-[encryption-utils/src/index.ts:51](https://github.com/verida/verida-js/blob/a39619b/packages/encryption-utils/src/index.ts#L51)
+[encryption-utils/src/index.ts:51](https://github.com/verida/verida-js/blob/039856c/packages/encryption-utils/src/index.ts#L51)
 
 ___
 
@@ -423,7 +423,7 @@ ___
 
 #### Defined in
 
-[encryption-utils/src/index.ts:22](https://github.com/verida/verida-js/blob/a39619b/packages/encryption-utils/src/index.ts#L22)
+[encryption-utils/src/index.ts:22](https://github.com/verida/verida-js/blob/039856c/packages/encryption-utils/src/index.ts#L22)
 
 ___
 
@@ -445,4 +445,4 @@ ___
 
 #### Defined in
 
-[encryption-utils/src/index.ts:123](https://github.com/verida/verida-js/blob/a39619b/packages/encryption-utils/src/index.ts#L123)
+[encryption-utils/src/index.ts:123](https://github.com/verida/verida-js/blob/039856c/packages/encryption-utils/src/index.ts#L123)

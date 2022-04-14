@@ -59,7 +59,7 @@ Account.constructor
 
 #### Defined in
 
-[account-web-vault/src/vault-account.ts:35](https://github.com/verida/verida-js/blob/a39619b/packages/account-web-vault/src/vault-account.ts#L35)
+[account-web-vault/src/vault-account.ts:35](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L35)
 
 ## Properties
 
@@ -69,7 +69,7 @@ Account.constructor
 
 #### Defined in
 
-[account-web-vault/src/vault-account.ts:32](https://github.com/verida/verida-js/blob/a39619b/packages/account-web-vault/src/vault-account.ts#L32)
+[account-web-vault/src/vault-account.ts:32](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L32)
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 #### Defined in
 
-[account-web-vault/src/vault-account.ts:30](https://github.com/verida/verida-js/blob/a39619b/packages/account-web-vault/src/vault-account.ts#L30)
+[account-web-vault/src/vault-account.ts:30](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L30)
 
 ___
 
@@ -89,7 +89,7 @@ ___
 
 #### Defined in
 
-[account-web-vault/src/vault-account.ts:33](https://github.com/verida/verida-js/blob/a39619b/packages/account-web-vault/src/vault-account.ts#L33)
+[account-web-vault/src/vault-account.ts:33](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L33)
 
 ## Methods
 
@@ -111,7 +111,7 @@ ___
 
 #### Defined in
 
-[account-web-vault/src/vault-account.ts:105](https://github.com/verida/verida-js/blob/a39619b/packages/account-web-vault/src/vault-account.ts#L105)
+[account-web-vault/src/vault-account.ts:105](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L105)
 
 ___
 
@@ -131,7 +131,7 @@ ___
 
 #### Defined in
 
-[account-web-vault/src/vault-account.ts:40](https://github.com/verida/verida-js/blob/a39619b/packages/account-web-vault/src/vault-account.ts#L40)
+[account-web-vault/src/vault-account.ts:40](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L40)
 
 ___
 
@@ -177,7 +177,7 @@ Account.did
 
 #### Defined in
 
-[account-web-vault/src/vault-account.ts:130](https://github.com/verida/verida-js/blob/a39619b/packages/account-web-vault/src/vault-account.ts#L130)
+[account-web-vault/src/vault-account.ts:130](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L130)
 
 ___
 
@@ -201,7 +201,7 @@ Account.disconnect
 
 #### Defined in
 
-[account-web-vault/src/vault-account.ts:156](https://github.com/verida/verida-js/blob/a39619b/packages/account-web-vault/src/vault-account.ts#L156)
+[account-web-vault/src/vault-account.ts:156](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L156)
 
 ___
 
@@ -243,7 +243,7 @@ Account.keyring
 
 #### Defined in
 
-[account-web-vault/src/vault-account.ts:97](https://github.com/verida/verida-js/blob/a39619b/packages/account-web-vault/src/vault-account.ts#L97)
+[account-web-vault/src/vault-account.ts:97](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L97)
 
 ___
 
@@ -269,7 +269,7 @@ Account.linkStorage
 
 #### Defined in
 
-[account-web-vault/src/vault-account.ts:143](https://github.com/verida/verida-js/blob/a39619b/packages/account-web-vault/src/vault-account.ts#L143)
+[account-web-vault/src/vault-account.ts:143](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L143)
 
 ___
 
@@ -316,7 +316,7 @@ ___
 
 #### Defined in
 
-[account-web-vault/src/vault-account.ts:78](https://github.com/verida/verida-js/blob/a39619b/packages/account-web-vault/src/vault-account.ts#L78)
+[account-web-vault/src/vault-account.ts:78](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L78)
 
 ___
 
@@ -336,7 +336,7 @@ ___
 
 #### Defined in
 
-[account-web-vault/src/vault-account.ts:134](https://github.com/verida/verida-js/blob/a39619b/packages/account-web-vault/src/vault-account.ts#L134)
+[account-web-vault/src/vault-account.ts:134](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L134)
 
 ___
 
@@ -360,7 +360,7 @@ Account.sign
 
 #### Defined in
 
-[account-web-vault/src/vault-account.ts:126](https://github.com/verida/verida-js/blob/a39619b/packages/account-web-vault/src/vault-account.ts#L126)
+[account-web-vault/src/vault-account.ts:126](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L126)
 
 ___
 
@@ -385,7 +385,7 @@ Account.storageConfig
 
 #### Defined in
 
-[account-web-vault/src/vault-account.ts:112](https://github.com/verida/verida-js/blob/a39619b/packages/account-web-vault/src/vault-account.ts#L112)
+[account-web-vault/src/vault-account.ts:112](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L112)
 
 ___
 
@@ -411,4 +411,4 @@ Account.unlinkStorage
 
 #### Defined in
 
-[account-web-vault/src/vault-account.ts:152](https://github.com/verida/verida-js/blob/a39619b/packages/account-web-vault/src/vault-account.ts#L152)
+[account-web-vault/src/vault-account.ts:152](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L152)
