@@ -40,10 +40,6 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   font-size: 20pt !important; 
 } 
 
-/* #mermaid-svg-0 .milestoneText {
-  font-size: 20pt !important; 
+.tutorial-status {
+  margin-top: 10px;
 }
-
-#mermaid-svg-0 .sectionTitle {
-  font-size: 20pt !important; 
-}*/

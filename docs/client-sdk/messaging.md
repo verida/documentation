@@ -75,9 +75,9 @@ const type = 'inbox/type/dataSend'
 const data = {
     data: [
         {
-            firstName: 'Vitalik',
-            lastName: 'Buterin',
-            email: 'me@vitalik.eth',
+            firstName: 'Verida',
+            lastName: 'Example',
+            email: 'verida.example@example.com',
             schema: 'https://common.schemas.verida.io/social/contact/v0.1.0/schema.json'
         }
     ]
