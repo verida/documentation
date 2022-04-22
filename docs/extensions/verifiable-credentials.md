@@ -63,7 +63,7 @@ The code below creates a credential that matches a predefined credential schema 
 import Credentials from "@verida/verifiable-credentials";
 
 // Note: `context` should already be obtained by connecting to the Verida Network
-const credentialSDK = new Credentials(context);
+const credentialSDK = new Credentials();
 
 // The Verida DID that is the subject of this credential (who is being verified with this credential?)
 const subjectDid = 'did:vda:0x....';
@@ -78,7 +78,7 @@ const credentialData = {
     schema: "https://common.schemas.verida.io/health/pathology/tests/covid19/pcr/v0.1.0/schema.json"
 };
 
-const credential = await credentialSDK.createCredentialJWT(subjectDid, credentialData);
+const credential = await credentialSDK.createCredentialJWT(subjectDid, credentialData, context);
 ```
 
 This generated `credential` object that can be saved to the holder's private Verida Datastore that holds their credentials:
