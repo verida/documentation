@@ -5,6 +5,6 @@
 git checkout develop
 git pull
 git checkout main
-git pull main
+git pull
 git merge develop --ff-only 
 git push
