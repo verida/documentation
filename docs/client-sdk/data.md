@@ -134,7 +134,7 @@ Just like databases, it’s also possible to open an external datastore:
 ```tsx
 import { ContextInterfaces } from @verida/client-ts
 
-const otherAccountDid = 'did:3:kjzl6cwe1jt148u1wjwyd532ho7r59n02jwn26y1z86cshwjq1j5dkvnil0zspr'
+const otherAccountDid = 'did:vda:kjzl6cwe1jt148u1wjwyd532ho7r59n02jwn26y1z86cshwjq1j5dkvnil0zspr'
 const options = {
   permissions: {
     read: ContextInterfaces.PermissionOptionsEnum.PUBLIC,
