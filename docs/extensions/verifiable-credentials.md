@@ -2,14 +2,23 @@
 title: Verifiable Credentials
 sidebar_position: 1
 description: Verida Developer Documentation
-keywords: [Verida, Web3, Developers]
+keywords: [Verida, Web3, Developers, Verifiable Credentials]
 ---
 
 # Verifiable Credentials
 
+:::caution
+
+The Verida implementation of Verifiable Credentials is incomplete and subject to change. 
+
+:::
+
+
 ## Introduction
 
 Verifiable Credentials are are [W3C standard](https://www.w3.org/TR/vc-data-model/) that is supported within the Verida network with the [@verida/verifiable-credential](https://npmjs.com/@verida/verifiable-credentials) npm package.
+
+Verida has a demonstration implementation of verifiable credentials. We expect the implementation of this may change at some point in the future. 
 
 Verifiable Credentials can be issued by an account on the Verida Network. The credentials can be privately or publicly stored by a Verida Account on the Verida Network. They can be verified by anyone, using the Verida Verifiable Credentials library (`@verida/verifiable-credential`).
 

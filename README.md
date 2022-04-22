@@ -1,5 +1,7 @@
 # Website
 
+Please see this documentation at [developers.verida.io](https://developers.verida.io).
+
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
 ### Installation
