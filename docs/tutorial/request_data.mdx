@@ -10,11 +10,14 @@ keywords: [Verida, Web3, Developers, Tutorial, Requesting Data]
 
 You can request data stored by any user on the Verida Network. 
 
+In this example we request the verifiable credential [previously issued to ourselves](/docs/tutorial/verifiable_credentials#runcode). 
+
 ```jsx live
 
 VeridaRequestDataExample = () => {
     const [status, setStatus] = useState(null)
     const [veridaContext, setVeridaContext] = useState(undefined)
+    const [credentialResponse, setCredentialResponse] = useState(undefined)
     this.CONTEXT_NAME = "Verida Tutorial"
   
     React.useEffect(async () => {
@@ -34,15 +37,65 @@ VeridaRequestDataExample = () => {
 
 
   requestVC = async function () {
+      setCredentialResponse(undefined)
       setStatus("Initalizing messaging... please wait.")
       const messaging = await veridaContext.getMessaging()  
+
+      // setup a listener to show the response
+      messaging.onMessage(function(message) { 
+        console.log('New message:')
+        console.log(message)
+        setStatus('New message')
+        setCredentialResponse(message)
+      })
+
+      setStatus("Creating request")
+
+      const message = 'Please share your Verifiable Credential'
+      const messageType = 'inbox/type/dataRequest'
+
+      // note that requestSchema is the same schema we used when we issued the VC
+      // userSelect: true lets the user select which VC to respond with
+      const data = {
+        requestSchema: 
+          'https://common.schemas.verida.io/health/pathology/tests/covid19/pcr/v0.1.0/schema.json', 
+        filter: {},
+        userSelect: true
+      }
+
+      const config = {
+        recipientContextName: 'Verida: Vault'
+      }
+
+      // This is the DID the message will go to
+      // In this case it is the DID you are logged on here as
+      const requestFromDID = veridaContext.account.accountDid
+
+      await messaging.send(requestFromDID, messageType, data, message, config)
+      setStatus("Request sent. Please check the Vault and share your VC")
+
   }    
+
+  let credentialMessage = <span></span>
+  if (credentialResponse !== undefined) {
+    // Note that this can have more than one credential in the response
+    // We are only displaying the first here. 
+    credentialMessage = (
+      <div>
+        <div>Summary: {credentialResponse.data.data[0].summary}</div>
+        <div>Credential Type: {credentialResponse.data.data[0].name}</div>
+        <div>Issued To: {credentialResponse.data.data[0].fullName}</div>
+      </div>
+    )
+  }
+
 
   let statusMessage = <div></div>
   if (status !== null) {
     statusMessage = (
       <div className="tutorial-status tutorial-status admonition admonition-info alert alert--info">
         {status}
+        {credentialMessage}
       </div>
     )
   }    

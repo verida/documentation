@@ -60,21 +60,6 @@ if (ExecutionEnvironment.canUseDOM) {
     localStorage.set(VERIDA_SESSION_STORE_KEY, storedSessions);
   }
 
-  tutorialOutput = function(props) {
-    const e = React.createElement;
-
-    if (props.status !== null) {    
-      statusMessage = e("div", 
-                        {className: "tutorial-status tutorial-status admonition admonition-info alert alert--info"}, 
-                        props.status);
-    } else {
-      statusMessage = e("div", null);
-    }
-
-  }
-
-  
-
   getSession = async function(contextName) {
 
     const isLoggedIn = veridaWebVault.hasSession(contextName);
