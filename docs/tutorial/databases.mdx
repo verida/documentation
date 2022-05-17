@@ -20,19 +20,17 @@ VeridaDatabaseExample = () => {
   this.CONTEXT_NAME = "Verida Tutorial"
 
   React.useEffect(async () => {
-    // Runs after the first render() lifecycle
-    // We use this to check if we are logged in
+    // See the login example for an explaination of this
     if (!veridaContext) {
-      // we don't have veridaContext in local state
-
-      // see if we have a session
-      ctx = await getSession(this.CONTEXT_NAME)
-      if (ctx) {
-        // we do, so set the state variable we expect
-        setVeridaContext(ctx)
+      if (hasSession(this.CONTEXT_NAME)) {
+        // we know we have a session already
+        // globalLoginFunction is a globally defined version of the login function 
+        // See https://developers.verida.io/docs/tutorial/SSO
+        let ctx = await globalLoginFunction(this.CONTEXT_NAME);
+        setVeridaContext(ctx);
       }
     }
-  }, [])
+  }, []);
 
   generateTableRows = (items) => {
     // We render all available fields here
@@ -68,8 +66,8 @@ VeridaDatabaseExample = () => {
   }
 
   openDatabase = async function () {
-    // veridaContext will be null if the user isn't logged in
-    if (veridaContext !== null) {
+    // veridaContext will be undefined if the user isn't logged in
+    if (veridaContext !== undefined) {
       // Open / create a test database
       Window.db = await veridaContext.openDatabase("test_db")
 

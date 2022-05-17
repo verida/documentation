@@ -9,21 +9,18 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { store, useGlobalState } from "state-pool";
 import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
-import * as localStorage from "store";
 
-
-const VERIDA_SESSION_STORE_KEY = "_verida_sessions"
-
-store.setState("globalDID", null);
-store.setState("globalVeridaContext", null);
 
 // We do this weird importing thing because Docusaurus attempts to do ServerSide Rendering and
 // Verida components generalyl don't support that.
 let Network = null;
 let VaultAccount = null;
 let Credentials = null;
-let getSession = null;
-let setSession = null;
+let hasSession = null;
+let globalAccount = null;
+let globalLoginFunction = null;
+let getCircularReplacer = null;
+
 
 if (ExecutionEnvironment.canUseDOM) {
   const veridaClient = require("@verida/client-ts");
@@ -31,76 +28,47 @@ if (ExecutionEnvironment.canUseDOM) {
 
   const veridaWebVault = require("@verida/account-web-vault");
   VaultAccount = veridaWebVault.VaultAccount;
-
+  hasSession = veridaWebVault.hasSession;
+  
 
   const veridaVerifiableCredentials = require("@verida/verifiable-credentials");
   Credentials = veridaVerifiableCredentials.Credentials;
 
-  // Locally store the Verida context which is enough to reconnect. Pass falsey to delete it
-  setSession = async function(contextName, context) {
-    let storedSessions = localStorage.get(VERIDA_SESSION_STORE_KEY);
-    if (!storedSessions) {
-      storedSessions = {}
-    }
+  globalAccount = new VaultAccount({
+    request: {
+      logoUrl:
+        "https://developers.verida.io/img/tutorial_login_request_logo_170x170.png",
+    },
+  });
 
-    if (!context) {
-      delete storedSessions[contextName];
-    } else {
-      // we can't just store the context or the account because of circular references
-      // Instead we store enough to reconstruct the account and the Network
-      const dataToStore = {
-        ACCOUNT_CONFIG: context.account.config,
-        ENVIRONMENT: context.client.environment,
-        CONTEXT_NAME: context.contextName
-      }
-      storedSessions[contextName] = dataToStore;
-    }
+  globalLoginFunction = async function (contextName) {
+    const context = await Network.connect({
+      client: {
+        environment: "testnet",
+      },
+      account: globalAccount,
+      context: {
+        name: contextName,
+      },
+    })
 
-    // write to local storage
-    localStorage.set(VERIDA_SESSION_STORE_KEY, storedSessions);
+    return context;
   }
 
-  getSession = async function(contextName) {
+  // getCircularReplacer = () => {
+  //   const seen = new WeakSet();
+  //   return (key, value) => {
+  //     if (typeof value === "object" && value !== null) {
+  //       if (seen.has(value)) {
+  //         return;
+  //       }
+  //       seen.add(value);
+  //     }
+  //     return value;
+  //   };
+  // };
 
-    const isLoggedIn = veridaWebVault.hasSession(contextName);
-    if (isLoggedIn) {
-      // we are logged in.
 
-      // get the array of contexts stored 
-      let storedClientConfigs = localStorage.get(VERIDA_SESSION_STORE_KEY);
-      if (!storedClientConfigs) {
-        // apparently not correctly logged in! Try again
-        return undefined;
-      } else if (!storedClientConfigs.hasOwnProperty(contextName)) {
-        // there are some contexts stored, but not this one
-        // Apparently we aren't logged in properly. Try again
-        return undefined;
-      } else {
-        // we have a context stored for this name
-        const storedData = storedClientConfigs[contextName];
-
-        // first reconstruct the account from the config
-        const account = new VaultAccount(storedData.ACCOUNT_CONFIG);
-
-        // now reconstruct and connect the Network
-        const context = await Network.connect({
-          client: {
-            environment: storedData.ENVIRONMENT
-          },
-          account: account,
-          context: {
-            name: storedData.CONTEXT_NAME
-          },
-        });
-
-        return context;
-      }
-
-    } else {
-      // we aren't logged in
-      return undefined;
-    }
-  };
 }
 
 const ReactLiveScope = {
@@ -113,8 +81,10 @@ const ReactLiveScope = {
   Network,
   VaultAccount,
   Credentials,
-  getSession,
-  setSession,
+  hasSession,
+  globalAccount,
+  globalLoginFunction,
+  getCircularReplacer
 };
 
 export default ReactLiveScope;
