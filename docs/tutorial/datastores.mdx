@@ -25,19 +25,17 @@ VeridaDatastoreExample = () => {
   this.CONTEXT_NAME = "Verida Tutorial"
 
   React.useEffect(async () => {
-    // Runs after the first render() lifecycle
-    // We use this to check if we are logged in
+    // See the login example for an explaination of this
     if (!veridaContext) {
-      // we don't have veridaContext in local state
-
-      // see if we have a session
-      ctx = await getSession(this.CONTEXT_NAME)
-      if (ctx) {
-        // we do, so set the state variable we expect
-        setVeridaContext(ctx)
+      if (hasSession(this.CONTEXT_NAME)) {
+        // we know we have a session already
+        // globalLoginFunction is a globally defined version of the login function 
+        // See https://developers.verida.io/docs/tutorial/SSO
+        let ctx = await globalLoginFunction(this.CONTEXT_NAME);
+        setVeridaContext(ctx);
       }
     }
-  }, [])
+  }, []);
 
   let contact = {
     firstName: "John",
