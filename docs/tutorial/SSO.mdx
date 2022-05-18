@@ -17,6 +17,8 @@ VeridaLoginExample = () => {
   React.useEffect(async () => {
     // Runs after the first render() lifecycle
     // We use this to check if we are logged in
+    
+    // veridaContext is a Context object (See links below)
     if (!veridaContext) {
       // we don't have veridaContext in local state
 
@@ -30,7 +32,9 @@ VeridaLoginExample = () => {
     }
   }, []);
 
-  login = async function () {
+  login = async function() {
+    // Create a VaultAccount. This takes a VaultAccountConfig parameter. 
+    // See links below to docs on these
     const account = new VaultAccount({
       request: {
         logoUrl:
@@ -54,13 +58,11 @@ VeridaLoginExample = () => {
     }
   }
 
-  logout = () => {
-    veridaContext
-      .getAccount()
-      .disconnect(this.CONTEXT_NAME)
-      .then(() => {
-        setVeridaContext(undefined)
-      })
+  logout = async function() {
+      // disconnect the Verida session
+      await veridaContext.account.disconnect(this.CONTEXT_NAME);
+      // reset the internal state
+      setVeridaContext(undefined);
   }
 
   this.login = this.login.bind(this)
@@ -71,7 +73,8 @@ VeridaLoginExample = () => {
     // user is logged in
     return (
       <div>
-        <h3>Logged in as DID: {veridaContext.account.accountDid}</h3>
+        <h3>Logged in! Your <a href="/docs/concepts/accounts-and-identity">DID</a> 
+        is: <pre>{veridaContext.account.accountDid}</pre></h3>
         <button onClick={this.logout}>Logout</button>
       </div>
     )
@@ -92,3 +95,9 @@ VeridaLoginExample = () => {
 ## SSO documentation
 
 See the [Verida Single Sign On (SSO) documentation](/single-sign-on-sdk/single-sign-on-sdk.md) for complete documentation.
+
+### APIs used in example
+
+* [Context](/docs/api/verida-js/classes/verida_client_ts.Context)
+* [VaultAccount](https://developers.verida.io/docs/api/verida-js/classes/verida_account_web_vault.VaultAccount)
+* [VaultAccountConfig](https://developers.verida.io/docs/api/verida-js/interfaces/verida_account_web_vault.VaultAccountConfig)
