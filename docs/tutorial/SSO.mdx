@@ -22,9 +22,9 @@ VeridaLoginExample = () => {
     if (!veridaContext) {
       // we don't have veridaContext in local state
 
-      // see if we have a session
-      //   hasSession is from the package "@verida/account-web-vault"
-      //   see https://developers.verida.io/docs/api/verida-js/modules/verida_account_web_vault#hassession
+      // Check if we have a stored session
+      //  hasSession is from the package "@verida/account-web-vault"
+      //  see below fod links to documentation
       if (hasSession(this.CONTEXT_NAME)) {
         // we know we have a session already
         login(); // when logged in this will just setup a Verida Context
@@ -99,5 +99,6 @@ See the [Verida Single Sign On (SSO) documentation](/single-sign-on-sdk/single-s
 ### APIs used in example
 
 * [Context](/docs/api/verida-js/classes/verida_client_ts.Context)
-* [VaultAccount](https://developers.verida.io/docs/api/verida-js/classes/verida_account_web_vault.VaultAccount)
-* [VaultAccountConfig](https://developers.verida.io/docs/api/verida-js/interfaces/verida_account_web_vault.VaultAccountConfig)
+* [hasSession](/docs/api/verida-js/modules/verida_account_web_vault#hassession)
+* [VaultAccount](/docs/api/verida-js/classes/verida_account_web_vault.VaultAccount)
+* [VaultAccountConfig](/docs/api/verida-js/interfaces/verida_account_web_vault.VaultAccountConfig)
