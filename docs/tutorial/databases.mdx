@@ -11,11 +11,10 @@ This example shows opening a database (in the `openDatabase` function), saving d
 
 ```jsx live
 VeridaDatabaseExample = () => {
-  const [veridaContext, setVeridaContext] = useState(undefined)
-  const [status, setStatus] = useState(null)
+  const [veridaContext, setVeridaContext] = useState(undefined);
 
   // tableRows the the records shown from the database
-  const [tableRows, setTableRows] = useState([])
+  const [tableRows, setTableRows] = useState([]);
 
   this.CONTEXT_NAME = "Verida Tutorial"
 
@@ -50,7 +49,7 @@ VeridaDatabaseExample = () => {
 
   addItem = async function () {
     if (Window.db === undefined) {
-      await openDatabase()
+      await openDatabase();
     }
 
     // save a record with key "hello", value "world"
@@ -69,31 +68,34 @@ VeridaDatabaseExample = () => {
     // veridaContext will be undefined if the user isn't logged in
     if (veridaContext !== undefined) {
       // Open / create a test database
-      Window.db = await veridaContext.openDatabase("test_db")
+      Window.db = await veridaContext.openDatabase("test_db");
 
-      const items = await Window.db.getMany()
-      generateTableRows(items)
+      const items = await Window.db.getMany();
+      generateTableRows(items);
 
       return true
     } else {
+      // This method shouldn't be called if no one is logged in
       console.log("veridaContext is null. This means no one has logged in")
-      return false
+      return false;
     }
   }
 
   deleteAll = async function () {
     if (Window.db === undefined) {
-      await openDatabase()
+      await openDatabase();
     }
 
     // delete all items from this database
-    await Window.db.deleteAll()
-    generateTableRows([])
+    await Window.db.deleteAll();
+
+    // display the empty table
+    generateTableRows([]);
   }
 
   useEffect(() => {
     if (Window.db === undefined) {
-      openDatabase()
+      openDatabase();
     }
   }, [veridaContext])
 
@@ -106,13 +108,7 @@ VeridaDatabaseExample = () => {
         <h4>Current data in database</h4>
         <table>
           <thead>
-            <tr>
-              <td>_id</td>
-              <td>myvalue</td>
-              <td>insertedAt</td>
-              <td>modifiedAt</td>
-              <td>_rev</td>
-            </tr>
+            <tr><td>_id</td><td>myvalue</td><td>insertedAt</td><td>modifiedAt</td><td>_rev</td></tr>
           </thead>
           <tbody>{tableRows}</tbody>
         </table>
@@ -142,3 +138,8 @@ VeridaDatabaseExample = () => {
 ## Database documentation
 
 See the [Verida Database documentation](/client-sdk/data.md) for complete documentation.
+
+### APIs used in example
+
+* [Context.openDatabase()](/docs/api/verida-js/classes/verida_client_ts.Context/#opendatabase)
+
