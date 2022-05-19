@@ -97,8 +97,20 @@ This could be used in two scenarios:
 
 <aside>
 💡 The Verida account must have already logged in and created the application context before you can send it an inbox message. For example, assume you are sending an inbox message to an application context called “Verida: Documents”. If the recipient account has never logged into that context the inbox message will fail because that account has no inbox available.
-
 </aside>
+
+### Opening your app
+
+It can be helpful if the Vault opens your application in a web browser after the user accepts a message. You can enable this by providing an optional parameter to the `config`.
+
+ie:
+
+```
+const config = {
+    recipientContextName: 'Verida: Vault',
+    openUrl: 'https://www.myapp.com/custom-page'
+}
+```
 
 ### Setting avatar and name
 
