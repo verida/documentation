@@ -63,5 +63,6 @@ These (all optional) config options include:
 - `canvasId?` — A string representing the DOM id where the QR code canvas will be injected
 - `request?` — An object representing an authorization request that matches https://vault.schemas.verida.io/auth/loginRequest/latest/schema.json
 - `request?.logoUrl?` — The URL of a 170x170 PNG logo to display in the vault
+- `request?.openUrl?` — An optional URL for the Vault to open in the default browser, after login is accepted
 - `callback?` — A callback function when the auth response is received.
 - `deeplinkId?` — The HTML element ID of a link that should have the deeplink URI attached to the `href` property
