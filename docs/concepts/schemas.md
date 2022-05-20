@@ -53,10 +53,10 @@ Verida defines some common schemas that can be used by applications on the Verid
 
 You can find these schemas in the [Verida Common Schemas repo](https://github.com/verida/schemas-common).
 
-<aside>
-💡 We actively encourage developers to [create an issue](https://github.com/verida/schemas-common/issues/new) if you would like to propose additional common schemas that can be used by many applications.
+:::tip
+We actively encourage developers to [create an issue](https://github.com/verida/schemas-common/issues/new) if you would like to propose additional common schemas that can be used by many applications.
 
-</aside>
+:::
 
 Verida is responsible for maintaining the `core` and `common schemas`, merging appropriate PR's from third parties and handling any data migration between schema versions with users running the Verida Vault.
 

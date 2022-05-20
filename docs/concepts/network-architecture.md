@@ -44,10 +44,6 @@ The Vault provides users with the following core capabilities:
 
 [Learn more](https://www.verida.io/user-vault)
 
-<aside>
-💡 Phase 1 launch of the Vault supports the “Data Wallet” capabilities, with the crypto wallet capabilities coming in phase 2.
-
-</aside>
 
 ## Client SDK
 

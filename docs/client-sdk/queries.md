@@ -58,10 +58,10 @@ const filter = {
 const results = contacts.getMany(filter, options)
 ```
 
-<aside>
-💡 Sorting only works if an index has been defined for the field being sorted. Indexes are defined in the datastore schema. See [schemas](../concepts/schemas.md) and [queries / indexes](queries.md) for more details.
+:::tip
+Sorting only works if an index has been defined for the field being sorted. Indexes are defined in the datastore schema. See [schemas](../concepts/schemas.md) and [queries / indexes](queries.md) for more details.
 
-</aside>
+:::
 
 ## Pagination
 
@@ -95,7 +95,7 @@ await pouchDb.createIndex({
 })
 ```
 
-<aside>
-💡 Datastore indexes are defined in the underlying JSON schema document for the datastore. These indexes are automatically managed by Verida Datastore. See [schemas](../concepts/schemas.md) and [queries / indexes](queries.md) for more details.
+:::tip
+Datastore indexes are defined in the underlying JSON schema document for the datastore. These indexes are automatically managed by Verida Datastore. See [schemas](../concepts/schemas.md) and [queries / indexes](queries.md) for more details.
 
-</aside>
+:::
