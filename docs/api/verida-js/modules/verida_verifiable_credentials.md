@@ -4,6 +4,10 @@
 
 ## Table of contents
 
+### Namespaces
+
+- [&lt;internal\&gt;](verida_verifiable_credentials._internal_.md)
+
 ### Classes
 
 - [Credentials](../classes/verida_verifiable_credentials.Credentials.md)

@@ -48,7 +48,7 @@ Class representing the link between a DID and Storage context
 
 #### Defined in
 
-[storage-link/src/storage-link.ts:130](https://github.com/verida/verida-js/blob/039856c/packages/storage-link/src/storage-link.ts#L130)
+[packages/storage-link/src/storage-link.ts:130](https://github.com/verida/verida-js/blob/039856c/packages/storage-link/src/storage-link.ts#L130)
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `didDocument` | `default` |
+| `didDocument` | [`default`](verida_storage_link._internal_.default-1.md) |
 
 #### Returns
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[storage-link/src/storage-link.ts:138](https://github.com/verida/verida-js/blob/039856c/packages/storage-link/src/storage-link.ts#L138)
+[packages/storage-link/src/storage-link.ts:138](https://github.com/verida/verida-js/blob/039856c/packages/storage-link/src/storage-link.ts#L138)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 | Name | Type | Default value |
 | :------ | :------ | :------ |
-| `didClient` | `default` | `undefined` |
+| `didClient` | [`default`](verida_storage_link._internal_.default.md) | `undefined` |
 | `did` | `string` | `undefined` |
 | `context` | `string` | `undefined` |
 | `contextIsName` | `boolean` | `true` |
@@ -93,7 +93,7 @@ SecureStorageContextConfig | undefined (if not found)
 
 #### Defined in
 
-[storage-link/src/storage-link.ts:32](https://github.com/verida/verida-js/blob/039856c/packages/storage-link/src/storage-link.ts#L32)
+[packages/storage-link/src/storage-link.ts:32](https://github.com/verida/verida-js/blob/039856c/packages/storage-link/src/storage-link.ts#L32)
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `didClient` | `default` |
+| `didClient` | [`default`](verida_storage_link._internal_.default.md) |
 | `did` | `string` |
 
 #### Returns
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[storage-link/src/storage-link.ts:12](https://github.com/verida/verida-js/blob/039856c/packages/storage-link/src/storage-link.ts#L12)
+[packages/storage-link/src/storage-link.ts:12](https://github.com/verida/verida-js/blob/039856c/packages/storage-link/src/storage-link.ts#L12)
 
 ___
 
@@ -126,9 +126,9 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `didClient` | `default` |
+| `didClient` | [`default`](verida_storage_link._internal_.default.md) |
 | `contextName` | `string` |
-| `endpointType` | `EndpointType` |
+| `endpointType` | [`EndpointType`](../enums/verida_storage_link._internal_.EndpointType.md) |
 | `serverType` | `string` |
 | `endpointUri` | `string` |
 
@@ -138,7 +138,7 @@ ___
 
 #### Defined in
 
-[storage-link/src/storage-link.ts:90](https://github.com/verida/verida-js/blob/039856c/packages/storage-link/src/storage-link.ts#L90)
+[packages/storage-link/src/storage-link.ts:90](https://github.com/verida/verida-js/blob/039856c/packages/storage-link/src/storage-link.ts#L90)
 
 ___
 
@@ -150,7 +150,7 @@ ___
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `didClient` | `default` |  |
+| `didClient` | [`default`](verida_storage_link._internal_.default.md) |  |
 | `storageConfig` | [`SecureContextConfig`](../interfaces/verida_storage_link.Interfaces.SecureContextConfig.md) | (Must have .id as the contextName) |
 
 #### Returns
@@ -159,7 +159,7 @@ ___
 
 #### Defined in
 
-[storage-link/src/storage-link.ts:49](https://github.com/verida/verida-js/blob/039856c/packages/storage-link/src/storage-link.ts#L49)
+[packages/storage-link/src/storage-link.ts:49](https://github.com/verida/verida-js/blob/039856c/packages/storage-link/src/storage-link.ts#L49)
 
 ___
 
@@ -181,7 +181,7 @@ Ensure the URL has a trailing slash
 
 #### Defined in
 
-[storage-link/src/storage-link.ts:231](https://github.com/verida/verida-js/blob/039856c/packages/storage-link/src/storage-link.ts#L231)
+[packages/storage-link/src/storage-link.ts:231](https://github.com/verida/verida-js/blob/039856c/packages/storage-link/src/storage-link.ts#L231)
 
 ___
 
@@ -193,7 +193,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `didClient` | `default` |
+| `didClient` | [`default`](verida_storage_link._internal_.default.md) |
 | `contextName` | `string` |
 
 #### Returns
@@ -202,4 +202,4 @@ ___
 
 #### Defined in
 
-[storage-link/src/storage-link.ts:111](https://github.com/verida/verida-js/blob/039856c/packages/storage-link/src/storage-link.ts#L111)
+[packages/storage-link/src/storage-link.ts:111](https://github.com/verida/verida-js/blob/039856c/packages/storage-link/src/storage-link.ts#L111)

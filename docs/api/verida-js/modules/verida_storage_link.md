@@ -4,11 +4,22 @@
 
 ## Table of contents
 
+### References
+
+- [SecureContextEndpoint](verida_storage_link.md#securecontextendpoint)
+
 ### Namespaces
 
+- [&lt;internal\&gt;](verida_storage_link._internal_.md)
 - [Interfaces](verida_storage_link.Interfaces.md)
 
 ### Classes
 
 - [DIDStorageConfig](../classes/verida_storage_link.DIDStorageConfig.md)
 - [StorageLink](../classes/verida_storage_link.StorageLink.md)
+
+## References
+
+### SecureContextEndpoint
+
+Re-exports [SecureContextEndpoint](../interfaces/verida_storage_link.Interfaces.SecureContextEndpoint.md)

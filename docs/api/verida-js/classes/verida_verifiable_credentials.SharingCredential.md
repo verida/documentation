@@ -29,21 +29,21 @@
 
 | Name | Type |
 | :------ | :------ |
-| `context` | `Context` |
+| `context` | [`Context`](verida_verifiable_credentials._internal_.Context.md) |
 
 #### Defined in
 
-[verifiable-credentials/src/sharing-credential.ts:20](https://github.com/verida/verida-js/blob/039856c/packages/verifiable-credentials/src/sharing-credential.ts#L20)
+[packages/verifiable-credentials/src/sharing-credential.ts:20](https://github.com/verida/verida-js/blob/039856c/packages/verifiable-credentials/src/sharing-credential.ts#L20)
 
 ## Properties
 
 ### context
 
-• **context**: `Context`
+• **context**: [`Context`](verida_verifiable_credentials._internal_.Context.md)
 
 #### Defined in
 
-[verifiable-credentials/src/sharing-credential.ts:18](https://github.com/verida/verida-js/blob/039856c/packages/verifiable-credentials/src/sharing-credential.ts#L18)
+[packages/verifiable-credentials/src/sharing-credential.ts:18](https://github.com/verida/verida-js/blob/039856c/packages/verifiable-credentials/src/sharing-credential.ts#L18)
 
 ## Methods
 
@@ -65,7 +65,7 @@ Method to encrypt and issue credential
 
 #### Defined in
 
-[verifiable-credentials/src/sharing-credential.ts:29](https://github.com/verida/verida-js/blob/039856c/packages/verifiable-credentials/src/sharing-credential.ts#L29)
+[packages/verifiable-credentials/src/sharing-credential.ts:29](https://github.com/verida/verida-js/blob/039856c/packages/verifiable-credentials/src/sharing-credential.ts#L29)
 
 ___
 
@@ -90,4 +90,4 @@ ___
 
 #### Defined in
 
-[verifiable-credentials/src/sharing-credential.ts:51](https://github.com/verida/verida-js/blob/039856c/packages/verifiable-credentials/src/sharing-credential.ts#L51)
+[packages/verifiable-credentials/src/sharing-credential.ts:51](https://github.com/verida/verida-js/blob/039856c/packages/verifiable-credentials/src/sharing-credential.ts#L51)

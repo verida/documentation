@@ -6,7 +6,7 @@
 
 ## Hierarchy
 
-- `DIDDocument`
+- [`DIDDocument`](../modules/verida_did_document._internal_.md#diddocument)
 
   ↳ **`DIDDocumentStruct`**
 
@@ -40,7 +40,7 @@ DD.@context
 
 #### Defined in
 
-did-document/node_modules/did-resolver/lib/resolver.d.ts:26
+packages/did-document/node_modules/did-resolver/lib/resolver.d.ts:26
 
 ___
 
@@ -54,13 +54,13 @@ DD.alsoKnownAs
 
 #### Defined in
 
-did-document/node_modules/did-resolver/lib/resolver.d.ts:28
+packages/did-document/node_modules/did-resolver/lib/resolver.d.ts:28
 
 ___
 
 ### assertionMethod
 
-• **assertionMethod**: `undefined` \| (`string` \| `VerificationMethod`)[]
+• **assertionMethod**: `undefined` \| (`string` \| [`VerificationMethod`](verida_did_document._internal_.VerificationMethod.md))[]
 
 #### Inherited from
 
@@ -70,7 +70,7 @@ ___
 
 ### authentication
 
-• **authentication**: `undefined` \| (`string` \| `VerificationMethod`)[]
+• **authentication**: `undefined` \| (`string` \| [`VerificationMethod`](verida_did_document._internal_.VerificationMethod.md))[]
 
 #### Inherited from
 
@@ -80,7 +80,7 @@ ___
 
 ### capabilityDelegation
 
-• **capabilityDelegation**: `undefined` \| (`string` \| `VerificationMethod`)[]
+• **capabilityDelegation**: `undefined` \| (`string` \| [`VerificationMethod`](verida_did_document._internal_.VerificationMethod.md))[]
 
 #### Inherited from
 
@@ -90,7 +90,7 @@ ___
 
 ### capabilityInvocation
 
-• **capabilityInvocation**: `undefined` \| (`string` \| `VerificationMethod`)[]
+• **capabilityInvocation**: `undefined` \| (`string` \| [`VerificationMethod`](verida_did_document._internal_.VerificationMethod.md))[]
 
 #### Inherited from
 
@@ -108,7 +108,7 @@ DD.controller
 
 #### Defined in
 
-did-document/node_modules/did-resolver/lib/resolver.d.ts:29
+packages/did-document/node_modules/did-resolver/lib/resolver.d.ts:29
 
 ___
 
@@ -122,13 +122,13 @@ DD.id
 
 #### Defined in
 
-did-document/node_modules/did-resolver/lib/resolver.d.ts:27
+packages/did-document/node_modules/did-resolver/lib/resolver.d.ts:27
 
 ___
 
 ### keyAgreement
 
-• **keyAgreement**: `undefined` \| (`string` \| `VerificationMethod`)[]
+• **keyAgreement**: `undefined` \| (`string` \| [`VerificationMethod`](verida_did_document._internal_.VerificationMethod.md))[]
 
 #### Inherited from
 
@@ -142,13 +142,13 @@ ___
 
 #### Defined in
 
-[did-document/src/interfaces.ts:17](https://github.com/verida/verida-js/blob/039856c/packages/did-document/src/interfaces.ts#L17)
+[packages/did-document/src/interfaces.ts:17](https://github.com/verida/verida-js/blob/039856c/packages/did-document/src/interfaces.ts#L17)
 
 ___
 
 ### publicKey
 
-• `Optional` **publicKey**: `VerificationMethod`[]
+• `Optional` **publicKey**: [`VerificationMethod`](verida_did_document._internal_.VerificationMethod.md)[]
 
 **`deprecated`**
 
@@ -158,13 +158,13 @@ DD.publicKey
 
 #### Defined in
 
-did-document/node_modules/did-resolver/lib/resolver.d.ts:35
+packages/did-document/node_modules/did-resolver/lib/resolver.d.ts:35
 
 ___
 
 ### service
 
-• `Optional` **service**: `ServiceEndpoint`[]
+• `Optional` **service**: [`ServiceEndpoint`](verida_did_document._internal_.ServiceEndpoint.md)[]
 
 #### Inherited from
 
@@ -172,13 +172,13 @@ DD.service
 
 #### Defined in
 
-did-document/node_modules/did-resolver/lib/resolver.d.ts:31
+packages/did-document/node_modules/did-resolver/lib/resolver.d.ts:31
 
 ___
 
 ### verificationMethod
 
-• `Optional` **verificationMethod**: `VerificationMethod`[]
+• `Optional` **verificationMethod**: [`VerificationMethod`](verida_did_document._internal_.VerificationMethod.md)[]
 
 #### Inherited from
 
@@ -186,4 +186,4 @@ DD.verificationMethod
 
 #### Defined in
 
-did-document/node_modules/did-resolver/lib/resolver.d.ts:30
+packages/did-document/node_modules/did-resolver/lib/resolver.d.ts:30

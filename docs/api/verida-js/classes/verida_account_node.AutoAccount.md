@@ -8,7 +8,7 @@ An Authenticator that automatically signs everything
 
 ## Hierarchy
 
-- `default`
+- [`default`](verida_account_node._internal_.default.md)
 
   ↳ **`AutoAccount`**
 
@@ -50,36 +50,36 @@ An Authenticator that automatically signs everything
 
 | Name | Type |
 | :------ | :------ |
-| `accountConfig` | `AccountConfig` |
-| `autoConfig` | `NodeAccountConfig` |
+| `accountConfig` | [`AccountConfig`](../interfaces/verida_account_node._internal_.AccountConfig.md) |
+| `autoConfig` | [`NodeAccountConfig`](../interfaces/verida_account_node._internal_.NodeAccountConfig.md) |
 
 #### Overrides
 
-Account.constructor
+[default](verida_account_node._internal_.default.md).[constructor](verida_account_node._internal_.default.md#constructor)
 
 #### Defined in
 
-[account-node/src/auto.ts:21](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L21)
+[packages/account-node/src/auto.ts:21](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L21)
 
 ## Properties
 
 ### accountConfig
 
-• `Protected` **accountConfig**: `AccountConfig`
+• `Protected` **accountConfig**: [`AccountConfig`](../interfaces/verida_account_node._internal_.AccountConfig.md)
 
 #### Defined in
 
-[account-node/src/auto.ts:19](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L19)
+[packages/account-node/src/auto.ts:19](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L19)
 
 ___
 
 ### didClient
 
-• `Private` **didClient**: `default`
+• `Private` **didClient**: [`default`](verida_account_node._internal_.default-1.md)
 
 #### Defined in
 
-[account-node/src/auto.ts:16](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L16)
+[packages/account-node/src/auto.ts:16](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L16)
 
 ___
 
@@ -89,17 +89,17 @@ ___
 
 #### Defined in
 
-[account-node/src/auto.ts:15](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L15)
+[packages/account-node/src/auto.ts:15](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L15)
 
 ___
 
 ### wallet
 
-• `Private` **wallet**: `default`
+• `Private` **wallet**: [`default`](verida_account_node._internal_.default-2.md)
 
 #### Defined in
 
-[account-node/src/auto.ts:18](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L18)
+[packages/account-node/src/auto.ts:18](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L18)
 
 ## Methods
 
@@ -123,11 +123,11 @@ Create a DID-JWT from a data object
 
 #### Inherited from
 
-Account.createDidJwt
+[default](verida_account_node._internal_.default.md).[createDidJwt](verida_account_node._internal_.default.md#createdidjwt)
 
 #### Defined in
 
-account/dist/account.d.ts:42
+packages/account/dist/account.d.ts:42
 
 ___
 
@@ -135,17 +135,19 @@ ___
 
 ▸ **did**(): `Promise`<`string`\>
 
+Get the DID of the current user
+
 #### Returns
 
 `Promise`<`string`\>
 
 #### Overrides
 
-Account.did
+[default](verida_account_node._internal_.default.md).[did](verida_account_node._internal_.default.md#did)
 
 #### Defined in
 
-[account-node/src/auto.ts:46](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L46)
+[packages/account-node/src/auto.ts:46](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L46)
 
 ___
 
@@ -169,35 +171,37 @@ For example, in a web browser context, it would remove any stored signatures fro
 
 #### Inherited from
 
-Account.disconnect
+[default](verida_account_node._internal_.default.md).[disconnect](verida_account_node._internal_.default.md#disconnect)
 
 #### Defined in
 
-account/dist/account.d.ts:48
+packages/account/dist/account.d.ts:48
 
 ___
 
 ### getDidClient
 
-▸ **getDidClient**(): `default`
+▸ **getDidClient**(): [`default`](verida_account_node._internal_.default-1.md)
 
 #### Returns
 
-`default`
+[`default`](verida_account_node._internal_.default-1.md)
 
 #### Overrides
 
-Account.getDidClient
+[default](verida_account_node._internal_.default.md).[getDidClient](verida_account_node._internal_.default.md#getdidclient)
 
 #### Defined in
 
-[account-node/src/auto.ts:101](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L101)
+[packages/account-node/src/auto.ts:101](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L101)
 
 ___
 
 ### keyring
 
-▸ **keyring**(`contextName`): `Promise`<`default`\>
+▸ **keyring**(`contextName`): `Promise`<[`default`](verida_account_node._internal_.default-3.md)\>
+
+Generate a keyring for this user for a given storage context.
 
 #### Parameters
 
@@ -207,15 +211,15 @@ ___
 
 #### Returns
 
-`Promise`<`default`\>
+`Promise`<[`default`](verida_account_node._internal_.default-3.md)\>
 
 #### Overrides
 
-Account.keyring
+[default](verida_account_node._internal_.default.md).[keyring](verida_account_node._internal_.default.md#keyring)
 
 #### Defined in
 
-[account-node/src/auto.ts:33](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L33)
+[packages/account-node/src/auto.ts:33](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L33)
 
 ___
 
@@ -229,7 +233,7 @@ Link storage to this user
 
 | Name | Type |
 | :------ | :------ |
-| `storageConfig` | `SecureContextConfig` |
+| `storageConfig` | [`SecureContextConfig`](../interfaces/verida_account_node._internal_.SecureContextConfig.md) |
 
 #### Returns
 
@@ -237,11 +241,11 @@ Link storage to this user
 
 #### Overrides
 
-Account.linkStorage
+[default](verida_account_node._internal_.default.md).[linkStorage](verida_account_node._internal_.default.md#linkstorage)
 
 #### Defined in
 
-[account-node/src/auto.ts:80](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L80)
+[packages/account-node/src/auto.ts:80](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L80)
 
 ___
 
@@ -256,7 +260,7 @@ Link storage context service endpoint
 | Name | Type |
 | :------ | :------ |
 | `contextName` | `string` |
-| `endpointType` | `EndpointType` |
+| `endpointType` | [`EndpointType`](../enums/verida_account_node._internal_.EndpointType.md) |
 | `serverType` | `string` |
 | `endpointUri` | `string` |
 
@@ -266,17 +270,19 @@ Link storage context service endpoint
 
 #### Overrides
 
-Account.linkStorageContextService
+[default](verida_account_node._internal_.default.md).[linkStorageContextService](verida_account_node._internal_.default.md#linkstoragecontextservice)
 
 #### Defined in
 
-[account-node/src/auto.ts:97](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L97)
+[packages/account-node/src/auto.ts:97](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L97)
 
 ___
 
 ### sign
 
 ▸ **sign**(`message`): `Promise`<`string`\>
+
+Sign a string as the current user
 
 #### Parameters
 
@@ -290,17 +296,17 @@ ___
 
 #### Overrides
 
-Account.sign
+[default](verida_account_node._internal_.default.md).[sign](verida_account_node._internal_.default.md#sign)
 
 #### Defined in
 
-[account-node/src/auto.ts:42](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L42)
+[packages/account-node/src/auto.ts:42](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L42)
 
 ___
 
 ### storageConfig
 
-▸ **storageConfig**(`contextName`, `forceCreate?`): `Promise`<`undefined` \| `SecureContextConfig`\>
+▸ **storageConfig**(`contextName`, `forceCreate?`): `Promise`<`undefined` \| [`SecureContextConfig`](../interfaces/verida_account_node._internal_.SecureContextConfig.md)\>
 
 #### Parameters
 
@@ -311,15 +317,15 @@ ___
 
 #### Returns
 
-`Promise`<`undefined` \| `SecureContextConfig`\>
+`Promise`<`undefined` \| [`SecureContextConfig`](../interfaces/verida_account_node._internal_.SecureContextConfig.md)\>
 
 #### Overrides
 
-Account.storageConfig
+[default](verida_account_node._internal_.default.md).[storageConfig](verida_account_node._internal_.default.md#storageconfig)
 
 #### Defined in
 
-[account-node/src/auto.ts:50](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L50)
+[packages/account-node/src/auto.ts:50](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L50)
 
 ___
 
@@ -341,8 +347,8 @@ Unlink storage for this user
 
 #### Overrides
 
-Account.unlinkStorage
+[default](verida_account_node._internal_.default.md).[unlinkStorage](verida_account_node._internal_.default.md#unlinkstorage)
 
 #### Defined in
 
-[account-node/src/auto.ts:89](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L89)
+[packages/account-node/src/auto.ts:89](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L89)

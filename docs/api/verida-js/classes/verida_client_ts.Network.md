@@ -35,7 +35,7 @@ and then opening a context.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `config` | `NetworkConnectionConfig` | NetworkConnectionConfig Configuration |
+| `config` | [`NetworkConnectionConfig`](../interfaces/verida_client_ts._internal_.NetworkConnectionConfig.md) | NetworkConnectionConfig Configuration |
 
 #### Returns
 
@@ -45,4 +45,4 @@ If the user logs in a valid `Context` object is returned. If an unexpected error
 
 #### Defined in
 
-[client-ts/src/network.ts:19](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/network.ts#L19)
+[packages/client-ts/src/network.ts:19](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/network.ts#L19)

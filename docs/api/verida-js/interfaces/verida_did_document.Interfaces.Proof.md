@@ -21,7 +21,7 @@
 
 #### Defined in
 
-[did-document/src/interfaces.ts:12](https://github.com/verida/verida-js/blob/039856c/packages/did-document/src/interfaces.ts#L12)
+[packages/did-document/src/interfaces.ts:12](https://github.com/verida/verida-js/blob/039856c/packages/did-document/src/interfaces.ts#L12)
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 #### Defined in
 
-[did-document/src/interfaces.ts:13](https://github.com/verida/verida-js/blob/039856c/packages/did-document/src/interfaces.ts#L13)
+[packages/did-document/src/interfaces.ts:13](https://github.com/verida/verida-js/blob/039856c/packages/did-document/src/interfaces.ts#L13)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[did-document/src/interfaces.ts:10](https://github.com/verida/verida-js/blob/039856c/packages/did-document/src/interfaces.ts#L10)
+[packages/did-document/src/interfaces.ts:10](https://github.com/verida/verida-js/blob/039856c/packages/did-document/src/interfaces.ts#L10)
 
 ___
 
@@ -51,4 +51,4 @@ ___
 
 #### Defined in
 
-[did-document/src/interfaces.ts:11](https://github.com/verida/verida-js/blob/039856c/packages/did-document/src/interfaces.ts#L11)
+[packages/did-document/src/interfaces.ts:11](https://github.com/verida/verida-js/blob/039856c/packages/did-document/src/interfaces.ts#L11)

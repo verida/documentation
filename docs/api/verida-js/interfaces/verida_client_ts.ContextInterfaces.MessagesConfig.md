@@ -16,8 +16,8 @@ Interface for any MessagesConfig
 
 ### maxItems
 
-• `Optional` **maxItems**: `Number`
+• `Optional` **maxItems**: [`Number`](../modules/verida_client_ts._internal_.md#number)
 
 #### Defined in
 
-[client-ts/src/context/interfaces.ts:86](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/interfaces.ts#L86)
+[packages/client-ts/src/context/interfaces.ts:86](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/interfaces.ts#L86)

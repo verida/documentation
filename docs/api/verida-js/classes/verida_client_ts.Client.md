@@ -43,35 +43,35 @@ Create a client connection to the Verida network
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `userConfig` | `ClientConfig` | ClientConfig Configuration for establishing a connection to the Verida network |
+| `userConfig` | [`ClientConfig`](../interfaces/verida_client_ts._internal_.ClientConfig.md) | ClientConfig Configuration for establishing a connection to the Verida network |
 
 #### Defined in
 
-[client-ts/src/client.ts:56](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/client.ts#L56)
+[packages/client-ts/src/client.ts:56](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/client.ts#L56)
 
 ## Properties
 
 ### account
 
-• `Private` `Optional` **account**: `default`
+• `Private` `Optional` **account**: [`default`](verida_client_ts._internal_.default-1.md)
 
 Connected account instance
 
 #### Defined in
 
-[client-ts/src/client.ts:34](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/client.ts#L34)
+[packages/client-ts/src/client.ts:34](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/client.ts#L34)
 
 ___
 
 ### config
 
-• `Private` **config**: `DefaultClientConfig`
+• `Private` **config**: [`DefaultClientConfig`](../interfaces/verida_client_ts._internal_.DefaultClientConfig.md)
 
 Current configuration for this client
 
 #### Defined in
 
-[client-ts/src/client.ts:49](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/client.ts#L49)
+[packages/client-ts/src/client.ts:49](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/client.ts#L49)
 
 ___
 
@@ -83,31 +83,31 @@ DID of connected account
 
 #### Defined in
 
-[client-ts/src/client.ts:39](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/client.ts#L39)
+[packages/client-ts/src/client.ts:39](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/client.ts#L39)
 
 ___
 
 ### didClient
 
-• **didClient**: `default`
+• **didClient**: [`default`](verida_client_ts._internal_.default.md)
 
 Connection to the Verida DID Registry
 
 #### Defined in
 
-[client-ts/src/client.ts:24](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/client.ts#L24)
+[packages/client-ts/src/client.ts:24](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/client.ts#L24)
 
 ___
 
 ### didContextManager
 
-• `Private` **didContextManager**: `DIDContextManager`
+• `Private` **didContextManager**: [`DIDContextManager`](verida_client_ts._internal_.DIDContextManager.md)
 
 Helper instance to manage DID contexts
 
 #### Defined in
 
-[client-ts/src/client.ts:29](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/client.ts#L29)
+[packages/client-ts/src/client.ts:29](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/client.ts#L29)
 
 ___
 
@@ -119,7 +119,7 @@ Currently selected environment
 
 #### Defined in
 
-[client-ts/src/client.ts:44](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/client.ts#L44)
+[packages/client-ts/src/client.ts:44](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/client.ts#L44)
 
 ## Methods
 
@@ -136,7 +136,7 @@ authenticate with databases, send messages etc.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `account` | `default` | AccountInterface |
+| `account` | [`default`](verida_client_ts._internal_.default-1.md) | AccountInterface |
 
 #### Returns
 
@@ -144,27 +144,27 @@ authenticate with databases, send messages etc.
 
 #### Defined in
 
-[client-ts/src/client.ts:79](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/client.ts#L79)
+[packages/client-ts/src/client.ts:79](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/client.ts#L79)
 
 ___
 
 ### getConfig
 
-▸ **getConfig**(): `DefaultClientConfig`
+▸ **getConfig**(): [`DefaultClientConfig`](../interfaces/verida_client_ts._internal_.DefaultClientConfig.md)
 
 #### Returns
 
-`DefaultClientConfig`
+[`DefaultClientConfig`](../interfaces/verida_client_ts._internal_.DefaultClientConfig.md)
 
 #### Defined in
 
-[client-ts/src/client.ts:188](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/client.ts#L188)
+[packages/client-ts/src/client.ts:188](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/client.ts#L188)
 
 ___
 
 ### getContextConfig
 
-▸ **getContextConfig**(`did`, `contextName`): `Promise`<`undefined` \| `SecureContextConfig`\>
+▸ **getContextConfig**(`did`, `contextName`): `Promise`<`undefined` \| [`SecureContextConfig`](../interfaces/verida_client_ts._internal_.SecureContextConfig.md)\>
 
 Get the storage configuration of an application context for a given DID.
 
@@ -179,19 +179,19 @@ This provides the public details about the database, storage and messaging endpo
 
 #### Returns
 
-`Promise`<`undefined` \| `SecureContextConfig`\>
+`Promise`<`undefined` \| [`SecureContextConfig`](../interfaces/verida_client_ts._internal_.SecureContextConfig.md)\>
 
 SecureContextConfig | undefined
 
 #### Defined in
 
-[client-ts/src/client.ts:181](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/client.ts#L181)
+[packages/client-ts/src/client.ts:181](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/client.ts#L181)
 
 ___
 
 ### getSchema
 
-▸ **getSchema**(`schemaUri`): `Promise`<`Schema`\>
+▸ **getSchema**(`schemaUri`): `Promise`<[`Schema`](verida_client_ts._internal_.Schema.md)\>
 
 Get a Schama instance by URL.
 
@@ -203,13 +203,13 @@ Get a Schama instance by URL.
 
 #### Returns
 
-`Promise`<`Schema`\>
+`Promise`<[`Schema`](verida_client_ts._internal_.Schema.md)\>
 
 Schema A schema object
 
 #### Defined in
 
-[client-ts/src/client.ts:281](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/client.ts#L281)
+[packages/client-ts/src/client.ts:281](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/client.ts#L281)
 
 ___
 
@@ -238,7 +238,7 @@ string[] Array of DIDs that have validly signed the data
 
 #### Defined in
 
-[client-ts/src/client.ts:229](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/client.ts#L229)
+[packages/client-ts/src/client.ts:229](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/client.ts#L229)
 
 ___
 
@@ -256,7 +256,7 @@ boolean True of an account is connected
 
 #### Defined in
 
-[client-ts/src/client.ts:94](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/client.ts#L94)
+[packages/client-ts/src/client.ts:94](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/client.ts#L94)
 
 ___
 
@@ -281,7 +281,7 @@ Context | undefined
 
 #### Defined in
 
-[client-ts/src/client.ts:105](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/client.ts#L105)
+[packages/client-ts/src/client.ts:105](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/client.ts#L105)
 
 ___
 
@@ -302,13 +302,13 @@ ___
 
 #### Defined in
 
-[client-ts/src/client.ts:156](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/client.ts#L156)
+[packages/client-ts/src/client.ts:156](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/client.ts#L156)
 
 ___
 
 ### openPublicProfile
 
-▸ **openPublicProfile**(`did`, `contextName`, `profileName?`): `Promise`<`undefined` \| `Profile`\>
+▸ **openPublicProfile**(`did`, `contextName`, `profileName?`): `Promise`<`undefined` \| [`Profile`](verida_client_ts._internal_.Profile.md)\>
 
 Open the public profile of any user in read only mode.
 
@@ -326,10 +326,10 @@ You most likely want to request the `Verida: Vault` context.
 
 #### Returns
 
-`Promise`<`undefined` \| `Profile`\>
+`Promise`<`undefined` \| [`Profile`](verida_client_ts._internal_.Profile.md)\>
 
 `<Profile | undefined>`
 
 #### Defined in
 
-[client-ts/src/client.ts:203](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/client.ts#L203)
+[packages/client-ts/src/client.ts:203](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/client.ts#L203)

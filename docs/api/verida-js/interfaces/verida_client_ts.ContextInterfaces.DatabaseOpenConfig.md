@@ -31,7 +31,7 @@ Optionally specify an external context to open
 
 #### Defined in
 
-[client-ts/src/context/interfaces.ts:56](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/interfaces.ts#L56)
+[packages/client-ts/src/context/interfaces.ts:56](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/interfaces.ts#L56)
 
 ___
 
@@ -43,7 +43,7 @@ Create an application context if it doesn't already exist for the connected acco
 
 #### Defined in
 
-[client-ts/src/context/interfaces.ts:51](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/interfaces.ts#L51)
+[packages/client-ts/src/context/interfaces.ts:51](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/interfaces.ts#L51)
 
 ___
 
@@ -57,7 +57,7 @@ This ensures the Verida client connects to the correct database server hosting t
 
 #### Defined in
 
-[client-ts/src/context/interfaces.ts:17](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/interfaces.ts#L17)
+[packages/client-ts/src/context/interfaces.ts:17](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/interfaces.ts#L17)
 
 ___
 
@@ -69,7 +69,7 @@ Specify a specific database connection string to use when opening the database.
 
 #### Defined in
 
-[client-ts/src/context/interfaces.ts:22](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/interfaces.ts#L22)
+[packages/client-ts/src/context/interfaces.ts:22](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/interfaces.ts#L22)
 
 ___
 
@@ -83,7 +83,7 @@ This encryption key will not apply if the database is marked as `public`.
 
 #### Defined in
 
-[client-ts/src/context/interfaces.ts:46](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/interfaces.ts#L46)
+[packages/client-ts/src/context/interfaces.ts:46](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/interfaces.ts#L46)
 
 ___
 
@@ -95,7 +95,7 @@ Boolean indicating if it's expected the current connected account is the owner o
 
 #### Defined in
 
-[client-ts/src/context/interfaces.ts:39](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/interfaces.ts#L39)
+[packages/client-ts/src/context/interfaces.ts:39](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/interfaces.ts#L39)
 
 ___
 
@@ -107,7 +107,7 @@ Specify the permissions to use when opening this database.
 
 #### Defined in
 
-[client-ts/src/context/interfaces.ts:10](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/interfaces.ts#L10)
+[packages/client-ts/src/context/interfaces.ts:10](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/interfaces.ts#L10)
 
 ___
 
@@ -121,7 +121,7 @@ This is useful when opening a database owned by an external `did` where the curr
 
 #### Defined in
 
-[client-ts/src/context/interfaces.ts:34](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/interfaces.ts#L34)
+[packages/client-ts/src/context/interfaces.ts:34](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/interfaces.ts#L34)
 
 ___
 
@@ -133,7 +133,7 @@ Save this database into the user's master list of opened databases.
 
 #### Defined in
 
-[client-ts/src/context/interfaces.ts:27](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/interfaces.ts#L27)
+[packages/client-ts/src/context/interfaces.ts:27](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/interfaces.ts#L27)
 
 ___
 
@@ -145,4 +145,4 @@ Optionally specify the context used to sign data
 
 #### Defined in
 
-[client-ts/src/context/interfaces.ts:61](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/interfaces.ts#L61)
+[packages/client-ts/src/context/interfaces.ts:61](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/interfaces.ts#L61)

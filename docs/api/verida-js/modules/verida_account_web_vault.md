@@ -4,6 +4,10 @@
 
 ## Table of contents
 
+### Namespaces
+
+- [&lt;internal\&gt;](verida_account_web_vault._internal_.md)
+
 ### Classes
 
 - [VaultAccount](../classes/verida_account_web_vault.VaultAccount.md)
@@ -34,4 +38,4 @@
 
 #### Defined in
 
-[account-web-vault/src/vault-account.ts:16](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L16)
+[packages/account-web-vault/src/vault-account.ts:16](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L16)

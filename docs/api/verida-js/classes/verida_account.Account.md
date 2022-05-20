@@ -53,7 +53,7 @@ Create a DID-JWT from a data object
 
 #### Defined in
 
-[account/src/account.ts:72](https://github.com/verida/verida-js/blob/039856c/packages/account/src/account.ts#L72)
+[packages/account/src/account.ts:72](https://github.com/verida/verida-js/blob/039856c/packages/account/src/account.ts#L72)
 
 ___
 
@@ -69,7 +69,7 @@ Get the DID of the current user
 
 #### Defined in
 
-[account/src/account.ts:34](https://github.com/verida/verida-js/blob/039856c/packages/account/src/account.ts#L34)
+[packages/account/src/account.ts:34](https://github.com/verida/verida-js/blob/039856c/packages/account/src/account.ts#L34)
 
 ___
 
@@ -93,7 +93,7 @@ For example, in a web browser context, it would remove any stored signatures fro
 
 #### Defined in
 
-[account/src/account.ts:104](https://github.com/verida/verida-js/blob/039856c/packages/account/src/account.ts#L104)
+[packages/account/src/account.ts:104](https://github.com/verida/verida-js/blob/039856c/packages/account/src/account.ts#L104)
 
 ___
 
@@ -107,13 +107,13 @@ ___
 
 #### Defined in
 
-[account/src/account.ts:64](https://github.com/verida/verida-js/blob/039856c/packages/account/src/account.ts#L64)
+[packages/account/src/account.ts:64](https://github.com/verida/verida-js/blob/039856c/packages/account/src/account.ts#L64)
 
 ___
 
 ### keyring
 
-▸ **keyring**(`contextName`): `Promise`<`default`\>
+▸ **keyring**(`contextName`): `Promise`<[`default`](verida_account._internal_.default.md)\>
 
 Generate a keyring for this user for a given storage context.
 
@@ -125,11 +125,11 @@ Generate a keyring for this user for a given storage context.
 
 #### Returns
 
-`Promise`<`default`\>
+`Promise`<[`default`](verida_account._internal_.default.md)\>
 
 #### Defined in
 
-[account/src/account.ts:18](https://github.com/verida/verida-js/blob/039856c/packages/account/src/account.ts#L18)
+[packages/account/src/account.ts:18](https://github.com/verida/verida-js/blob/039856c/packages/account/src/account.ts#L18)
 
 ___
 
@@ -143,7 +143,7 @@ Link storage to this user
 
 | Name | Type |
 | :------ | :------ |
-| `storageConfig` | `SecureContextConfig` |
+| `storageConfig` | [`SecureContextConfig`](../interfaces/verida_account._internal_.SecureContextConfig.md) |
 
 #### Returns
 
@@ -151,7 +151,7 @@ Link storage to this user
 
 #### Defined in
 
-[account/src/account.ts:43](https://github.com/verida/verida-js/blob/039856c/packages/account/src/account.ts#L43)
+[packages/account/src/account.ts:43](https://github.com/verida/verida-js/blob/039856c/packages/account/src/account.ts#L43)
 
 ___
 
@@ -174,7 +174,7 @@ ___
 
 #### Defined in
 
-[account/src/account.ts:60](https://github.com/verida/verida-js/blob/039856c/packages/account/src/account.ts#L60)
+[packages/account/src/account.ts:60](https://github.com/verida/verida-js/blob/039856c/packages/account/src/account.ts#L60)
 
 ___
 
@@ -196,13 +196,13 @@ Sign a string as the current user
 
 #### Defined in
 
-[account/src/account.ts:27](https://github.com/verida/verida-js/blob/039856c/packages/account/src/account.ts#L27)
+[packages/account/src/account.ts:27](https://github.com/verida/verida-js/blob/039856c/packages/account/src/account.ts#L27)
 
 ___
 
 ### storageConfig
 
-▸ **storageConfig**(`contextName`, `forceCreate?`): `Promise`<`undefined` \| `SecureContextConfig`\>
+▸ **storageConfig**(`contextName`, `forceCreate?`): `Promise`<`undefined` \| [`SecureContextConfig`](../interfaces/verida_account._internal_.SecureContextConfig.md)\>
 
 #### Parameters
 
@@ -213,11 +213,11 @@ ___
 
 #### Returns
 
-`Promise`<`undefined` \| `SecureContextConfig`\>
+`Promise`<`undefined` \| [`SecureContextConfig`](../interfaces/verida_account._internal_.SecureContextConfig.md)\>
 
 #### Defined in
 
-[account/src/account.ts:56](https://github.com/verida/verida-js/blob/039856c/packages/account/src/account.ts#L56)
+[packages/account/src/account.ts:56](https://github.com/verida/verida-js/blob/039856c/packages/account/src/account.ts#L56)
 
 ___
 
@@ -239,4 +239,4 @@ Unlink storage for this user
 
 #### Defined in
 
-[account/src/account.ts:52](https://github.com/verida/verida-js/blob/039856c/packages/account/src/account.ts#L52)
+[packages/account/src/account.ts:52](https://github.com/verida/verida-js/blob/039856c/packages/account/src/account.ts#L52)

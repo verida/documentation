@@ -43,7 +43,7 @@ DID-JWT's
 
 #### Defined in
 
-[verifiable-credentials/src/credentials.ts:28](https://github.com/verida/verida-js/blob/039856c/packages/verifiable-credentials/src/credentials.ts#L28)
+[packages/verifiable-credentials/src/credentials.ts:28](https://github.com/verida/verida-js/blob/039856c/packages/verifiable-credentials/src/credentials.ts#L28)
 
 ## Methods
 
@@ -61,8 +61,8 @@ A new property `didJwtVc` is added to the data and included in the response
 | :------ | :------ |
 | `subjectId` | `string` |
 | `data` | `any` |
-| `context` | `Context` |
-| `options?` | `credentialDateOptions` |
+| `context` | [`Context`](verida_verifiable_credentials._internal_.Context.md) |
+| `options?` | [`credentialDateOptions`](../interfaces/verida_verifiable_credentials._internal_.credentialDateOptions.md) |
 
 #### Returns
 
@@ -70,13 +70,13 @@ A new property `didJwtVc` is added to the data and included in the response
 
 #### Defined in
 
-[verifiable-credentials/src/credentials.ts:167](https://github.com/verida/verida-js/blob/039856c/packages/verifiable-credentials/src/credentials.ts#L167)
+[packages/verifiable-credentials/src/credentials.ts:167](https://github.com/verida/verida-js/blob/039856c/packages/verifiable-credentials/src/credentials.ts#L167)
 
 ___
 
 ### createIssuer
 
-▸ **createIssuer**(`context`): `Promise`<`Issuer`\>
+▸ **createIssuer**(`context`): `Promise`<[`Issuer`](../interfaces/verida_verifiable_credentials._internal_.Issuer.md)\>
 
 Create an Issuer object that can issue Verifiable Credentials
 
@@ -84,17 +84,17 @@ Create an Issuer object that can issue Verifiable Credentials
 
 | Name | Type |
 | :------ | :------ |
-| `context` | `Context` |
+| `context` | [`Context`](verida_verifiable_credentials._internal_.Context.md) |
 
 #### Returns
 
-`Promise`<`Issuer`\>
+`Promise`<[`Issuer`](../interfaces/verida_verifiable_credentials._internal_.Issuer.md)\>
 
 Verifiable Credential Issuer
 
 #### Defined in
 
-[verifiable-credentials/src/credentials.ts:139](https://github.com/verida/verida-js/blob/039856c/packages/verifiable-credentials/src/credentials.ts#L139)
+[packages/verifiable-credentials/src/credentials.ts:139](https://github.com/verida/verida-js/blob/039856c/packages/verifiable-credentials/src/credentials.ts#L139)
 
 ___
 
@@ -119,7 +119,7 @@ DID-JWT representation of the Verifiable Credential
 
 #### Defined in
 
-[verifiable-credentials/src/credentials.ts:43](https://github.com/verida/verida-js/blob/039856c/packages/verifiable-credentials/src/credentials.ts#L43)
+[packages/verifiable-credentials/src/credentials.ts:43](https://github.com/verida/verida-js/blob/039856c/packages/verifiable-credentials/src/credentials.ts#L43)
 
 ___
 
@@ -135,7 +135,7 @@ Credential DID-JWT's
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `vcJwts` | `string`[] | Array of Verifiable Credential DID-JWT's |
-| `context` | `Context` | - |
+| `context` | [`Context`](verida_verifiable_credentials._internal_.Context.md) | - |
 | `issuer?` | `any` | A credential issuer object obtained by calling `createIssuer(user)` |
 
 #### Returns
@@ -144,7 +144,7 @@ Credential DID-JWT's
 
 #### Defined in
 
-[verifiable-credentials/src/credentials.ts:62](https://github.com/verida/verida-js/blob/039856c/packages/verifiable-credentials/src/credentials.ts#L62)
+[packages/verifiable-credentials/src/credentials.ts:62](https://github.com/verida/verida-js/blob/039856c/packages/verifiable-credentials/src/credentials.ts#L62)
 
 ___
 
@@ -158,7 +158,7 @@ ___
 
 #### Defined in
 
-[verifiable-credentials/src/credentials.ts:248](https://github.com/verida/verida-js/blob/039856c/packages/verifiable-credentials/src/credentials.ts#L248)
+[packages/verifiable-credentials/src/credentials.ts:248](https://github.com/verida/verida-js/blob/039856c/packages/verifiable-credentials/src/credentials.ts#L248)
 
 ___
 
@@ -173,7 +173,7 @@ Verify a Verifiable Credential DID-JWT
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `vcJwt` | `string` |  |
-| `environment` | `EnvironmentType` | - |
+| `environment` | [`EnvironmentType`](../enums/verida_verifiable_credentials._internal_.EnvironmentType.md) | - |
 | `currentDateTime?` | `string` | to allow the client to migrate cases where the datetime is incorrect on the local computer |
 
 #### Returns
@@ -182,7 +182,7 @@ Verify a Verifiable Credential DID-JWT
 
 #### Defined in
 
-[verifiable-credentials/src/credentials.ts:100](https://github.com/verida/verida-js/blob/039856c/packages/verifiable-credentials/src/credentials.ts#L100)
+[packages/verifiable-credentials/src/credentials.ts:100](https://github.com/verida/verida-js/blob/039856c/packages/verifiable-credentials/src/credentials.ts#L100)
 
 ___
 
@@ -194,7 +194,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `environment` | `EnvironmentType` |
+| `environment` | [`EnvironmentType`](../enums/verida_verifiable_credentials._internal_.EnvironmentType.md) |
 
 #### Returns
 
@@ -202,7 +202,7 @@ ___
 
 #### Defined in
 
-[verifiable-credentials/src/credentials.ts:243](https://github.com/verida/verida-js/blob/039856c/packages/verifiable-credentials/src/credentials.ts#L243)
+[packages/verifiable-credentials/src/credentials.ts:243](https://github.com/verida/verida-js/blob/039856c/packages/verifiable-credentials/src/credentials.ts#L243)
 
 ___
 
@@ -217,7 +217,7 @@ Verify a Verifiable Presentation DID-JWT
 | Name | Type |
 | :------ | :------ |
 | `vpJwt` | `string` |
-| `environment` | `EnvironmentType` |
+| `environment` | [`EnvironmentType`](../enums/verida_verifiable_credentials._internal_.EnvironmentType.md) |
 
 #### Returns
 
@@ -225,4 +225,4 @@ Verify a Verifiable Presentation DID-JWT
 
 #### Defined in
 
-[verifiable-credentials/src/credentials.ts:88](https://github.com/verida/verida-js/blob/039856c/packages/verifiable-credentials/src/credentials.ts#L88)
+[packages/verifiable-credentials/src/credentials.ts:88](https://github.com/verida/verida-js/blob/039856c/packages/verifiable-credentials/src/credentials.ts#L88)
