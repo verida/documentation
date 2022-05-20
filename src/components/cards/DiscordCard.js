@@ -5,7 +5,7 @@ import Link from '@docusaurus/Link';
 
 const DiscordCard = () => {
     return (
-        <Link className={styles.discordBannerLink} href="https://discord.com/invite/qb6vS43">
+        <Link className={styles.discordBannerLink} href="https://discord.verida.io">
             <div className={styles.discordBanner}>
                 <div><DiscordLogo className={styles.discordBannerSvg} title="DiscordLogo" /></div>
                 <div className={styles.discordBannerContent}>
