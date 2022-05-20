@@ -43,3 +43,12 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 .tutorial-status {
   margin-top: 10px;
 }
+
+.appstorebutton {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #a6a6a6;
+  border-radius: 8px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}

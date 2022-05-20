@@ -103,11 +103,6 @@ export default function Home() {
 				<main className={styles.mainSection}>
 					<section className={styles.heroSection}>
 						<h1>Welcome to your Web3 toolkit!</h1>
-						<p>
-							Explore the Verida Developer's Portal to get started with our
-							developer documentation, <br /> explore our demos, try out our
-							interactive tutorials and connect with the Web3 developer community.
-						</p>
 					</section>
 					<section className={styles.cardSection}>
 						<div className={styles.contentCard}>
@@ -115,6 +110,13 @@ export default function Home() {
 								<ContentCard key={item.title} {...item} />
 							))}
 						</div>
+						<div className={styles.vaultDL}>
+							<h1>Download the Verida Vault (Developer Preview)</h1>
+						</div>
+						<div className={styles.storeButtons}>
+							<a href="https://apps.apple.com/us/app/verida-vault/id1546599632"><img className={styles.appstorebutton} src="/img/AppStore_button.svg" /></a>		
+							<a href="#"><img className={styles.appstorebutton}  src="/img/GooglePlayCOMINGSOON.svg" /></a>						
+						</div>						
 						<DiscordCard />
 						<div className={styles.githubCardSection}>
 							<h2>GitHub Repositories</h2>
