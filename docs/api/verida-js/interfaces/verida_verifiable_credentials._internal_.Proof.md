@@ -1,0 +1,54 @@
+[root](../README.md) / [Modules](../modules.md) / [@verida/verifiable-credentials](../modules/verida_verifiable_credentials.md) / [<internal\>](../modules/verida_verifiable_credentials._internal_.md) / Proof
+
+# Interface: Proof
+
+[@verida/verifiable-credentials](../modules/verida_verifiable_credentials.md).[<internal\>](../modules/verida_verifiable_credentials._internal_.md).Proof
+
+## Table of contents
+
+### Properties
+
+- [proofPurpose](verida_verifiable_credentials._internal_.Proof.md#proofpurpose)
+- [proofValue](verida_verifiable_credentials._internal_.Proof.md#proofvalue)
+- [type](verida_verifiable_credentials._internal_.Proof.md#type)
+- [verificationMethod](verida_verifiable_credentials._internal_.Proof.md#verificationmethod)
+
+## Properties
+
+### proofPurpose
+
+• **proofPurpose**: ``"assertionMethod"``
+
+#### Defined in
+
+packages/did-document/dist/interfaces.d.ts:10
+
+___
+
+### proofValue
+
+• **proofValue**: `string`
+
+#### Defined in
+
+packages/did-document/dist/interfaces.d.ts:11
+
+___
+
+### type
+
+• **type**: ``"EcdsaSecp256k1VerificationKey2019"``
+
+#### Defined in
+
+packages/did-document/dist/interfaces.d.ts:8
+
+___
+
+### verificationMethod
+
+• **verificationMethod**: `string`
+
+#### Defined in
+
+packages/did-document/dist/interfaces.d.ts:9

@@ -8,7 +8,7 @@ An Authenticator that requests for authorization from the Vault
 
 ## Hierarchy
 
-- `default`
+- [`default`](verida_account_web_vault._internal_.default.md)
 
   ↳ **`VaultAccount`**
 
@@ -55,11 +55,11 @@ An Authenticator that requests for authorization from the Vault
 
 #### Overrides
 
-Account.constructor
+[default](verida_account_web_vault._internal_.default.md).[constructor](verida_account_web_vault._internal_.default.md#constructor)
 
 #### Defined in
 
-[account-web-vault/src/vault-account.ts:35](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L35)
+[packages/account-web-vault/src/vault-account.ts:35](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L35)
 
 ## Properties
 
@@ -69,7 +69,7 @@ Account.constructor
 
 #### Defined in
 
-[account-web-vault/src/vault-account.ts:32](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L32)
+[packages/account-web-vault/src/vault-account.ts:32](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L32)
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 #### Defined in
 
-[account-web-vault/src/vault-account.ts:30](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L30)
+[packages/account-web-vault/src/vault-account.ts:30](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L30)
 
 ___
 
@@ -89,7 +89,7 @@ ___
 
 #### Defined in
 
-[account-web-vault/src/vault-account.ts:33](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L33)
+[packages/account-web-vault/src/vault-account.ts:33](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L33)
 
 ## Methods
 
@@ -102,8 +102,8 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `contextName` | `string` |
-| `contextConfig` | `SecureContextConfig` |
-| `keyring` | `default` |
+| `contextConfig` | [`SecureContextConfig`](../interfaces/verida_account_web_vault._internal_.SecureContextConfig.md) |
+| `keyring` | [`default`](verida_account_web_vault._internal_.default-1.md) |
 
 #### Returns
 
@@ -111,13 +111,13 @@ ___
 
 #### Defined in
 
-[account-web-vault/src/vault-account.ts:105](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L105)
+[packages/account-web-vault/src/vault-account.ts:105](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L105)
 
 ___
 
 ### connectContext
 
-▸ **connectContext**(`contextName`): `Promise`<`boolean` \| `SecureContextConfig`\>
+▸ **connectContext**(`contextName`): `Promise`<`boolean` \| [`SecureContextConfig`](../interfaces/verida_account_web_vault._internal_.SecureContextConfig.md)\>
 
 #### Parameters
 
@@ -127,11 +127,11 @@ ___
 
 #### Returns
 
-`Promise`<`boolean` \| `SecureContextConfig`\>
+`Promise`<`boolean` \| [`SecureContextConfig`](../interfaces/verida_account_web_vault._internal_.SecureContextConfig.md)\>
 
 #### Defined in
 
-[account-web-vault/src/vault-account.ts:40](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L40)
+[packages/account-web-vault/src/vault-account.ts:40](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L40)
 
 ___
 
@@ -155,11 +155,11 @@ Create a DID-JWT from a data object
 
 #### Inherited from
 
-Account.createDidJwt
+[default](verida_account_web_vault._internal_.default.md).[createDidJwt](verida_account_web_vault._internal_.default.md#createdidjwt)
 
 #### Defined in
 
-account/dist/account.d.ts:42
+packages/account/dist/account.d.ts:42
 
 ___
 
@@ -167,23 +167,29 @@ ___
 
 ▸ **did**(): `Promise`<`string`\>
 
+Get the DID of the current user
+
 #### Returns
 
 `Promise`<`string`\>
 
 #### Overrides
 
-Account.did
+[default](verida_account_web_vault._internal_.default.md).[did](verida_account_web_vault._internal_.default.md#did)
 
 #### Defined in
 
-[account-web-vault/src/vault-account.ts:130](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L130)
+[packages/account-web-vault/src/vault-account.ts:130](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L130)
 
 ___
 
 ### disconnect
 
 ▸ **disconnect**(`contextName?`): `Promise`<`void`\>
+
+An optional method that can be used to disconnect the current user.
+
+For example, in a web browser context, it would remove any stored signatures from local storage.
 
 #### Parameters
 
@@ -197,11 +203,11 @@ ___
 
 #### Overrides
 
-Account.disconnect
+[default](verida_account_web_vault._internal_.default.md).[disconnect](verida_account_web_vault._internal_.default.md#disconnect)
 
 #### Defined in
 
-[account-web-vault/src/vault-account.ts:156](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L156)
+[packages/account-web-vault/src/vault-account.ts:156](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L156)
 
 ___
 
@@ -215,17 +221,19 @@ ___
 
 #### Inherited from
 
-Account.getDidClient
+[default](verida_account_web_vault._internal_.default.md).[getDidClient](verida_account_web_vault._internal_.default.md#getdidclient)
 
 #### Defined in
 
-account/dist/account.d.ts:37
+packages/account/dist/account.d.ts:37
 
 ___
 
 ### keyring
 
-▸ **keyring**(`contextName`): `Promise`<`default`\>
+▸ **keyring**(`contextName`): `Promise`<[`default`](verida_account_web_vault._internal_.default-1.md)\>
+
+Generate a keyring for this user for a given storage context.
 
 #### Parameters
 
@@ -235,15 +243,15 @@ ___
 
 #### Returns
 
-`Promise`<`default`\>
+`Promise`<[`default`](verida_account_web_vault._internal_.default-1.md)\>
 
 #### Overrides
 
-Account.keyring
+[default](verida_account_web_vault._internal_.default.md).[keyring](verida_account_web_vault._internal_.default.md#keyring)
 
 #### Defined in
 
-[account-web-vault/src/vault-account.ts:97](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L97)
+[packages/account-web-vault/src/vault-account.ts:97](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L97)
 
 ___
 
@@ -257,7 +265,7 @@ Link storage to this user
 
 | Name | Type |
 | :------ | :------ |
-| `storageConfig` | `SecureContextConfig` |
+| `storageConfig` | [`SecureContextConfig`](../interfaces/verida_account_web_vault._internal_.SecureContextConfig.md) |
 
 #### Returns
 
@@ -265,11 +273,11 @@ Link storage to this user
 
 #### Overrides
 
-Account.linkStorage
+[default](verida_account_web_vault._internal_.default.md).[linkStorage](verida_account_web_vault._internal_.default.md#linkstorage)
 
 #### Defined in
 
-[account-web-vault/src/vault-account.ts:143](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L143)
+[packages/account-web-vault/src/vault-account.ts:143](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L143)
 
 ___
 
@@ -292,17 +300,17 @@ ___
 
 #### Inherited from
 
-Account.linkStorageContextService
+[default](verida_account_web_vault._internal_.default.md).[linkStorageContextService](verida_account_web_vault._internal_.default.md#linkstoragecontextservice)
 
 #### Defined in
 
-account/dist/account.d.ts:36
+packages/account/dist/account.d.ts:36
 
 ___
 
 ### loadFromSession
 
-▸ **loadFromSession**(`contextName`): `Promise`<`undefined` \| `SecureContextConfig`\>
+▸ **loadFromSession**(`contextName`): `Promise`<`undefined` \| [`SecureContextConfig`](../interfaces/verida_account_web_vault._internal_.SecureContextConfig.md)\>
 
 #### Parameters
 
@@ -312,11 +320,11 @@ ___
 
 #### Returns
 
-`Promise`<`undefined` \| `SecureContextConfig`\>
+`Promise`<`undefined` \| [`SecureContextConfig`](../interfaces/verida_account_web_vault._internal_.SecureContextConfig.md)\>
 
 #### Defined in
 
-[account-web-vault/src/vault-account.ts:78](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L78)
+[packages/account-web-vault/src/vault-account.ts:78](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L78)
 
 ___
 
@@ -336,13 +344,15 @@ ___
 
 #### Defined in
 
-[account-web-vault/src/vault-account.ts:134](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L134)
+[packages/account-web-vault/src/vault-account.ts:134](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L134)
 
 ___
 
 ### sign
 
 ▸ **sign**(`message`): `Promise`<`string`\>
+
+Sign a string as the current user
 
 #### Parameters
 
@@ -356,17 +366,17 @@ ___
 
 #### Overrides
 
-Account.sign
+[default](verida_account_web_vault._internal_.default.md).[sign](verida_account_web_vault._internal_.default.md#sign)
 
 #### Defined in
 
-[account-web-vault/src/vault-account.ts:126](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L126)
+[packages/account-web-vault/src/vault-account.ts:126](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L126)
 
 ___
 
 ### storageConfig
 
-▸ **storageConfig**(`contextName`, `forceCreate?`): `Promise`<`undefined` \| `SecureContextConfig`\>
+▸ **storageConfig**(`contextName`, `forceCreate?`): `Promise`<`undefined` \| [`SecureContextConfig`](../interfaces/verida_account_web_vault._internal_.SecureContextConfig.md)\>
 
 #### Parameters
 
@@ -377,15 +387,15 @@ ___
 
 #### Returns
 
-`Promise`<`undefined` \| `SecureContextConfig`\>
+`Promise`<`undefined` \| [`SecureContextConfig`](../interfaces/verida_account_web_vault._internal_.SecureContextConfig.md)\>
 
 #### Overrides
 
-Account.storageConfig
+[default](verida_account_web_vault._internal_.default.md).[storageConfig](verida_account_web_vault._internal_.default.md#storageconfig)
 
 #### Defined in
 
-[account-web-vault/src/vault-account.ts:112](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L112)
+[packages/account-web-vault/src/vault-account.ts:112](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L112)
 
 ___
 
@@ -407,8 +417,8 @@ Unlink storage for this user
 
 #### Overrides
 
-Account.unlinkStorage
+[default](verida_account_web_vault._internal_.default.md).[unlinkStorage](verida_account_web_vault._internal_.default.md#unlinkstorage)
 
 #### Defined in
 
-[account-web-vault/src/vault-account.ts:152](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L152)
+[packages/account-web-vault/src/vault-account.ts:152](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L152)

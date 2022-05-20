@@ -17,38 +17,38 @@
 
 ### defaultDatabaseServer
 
-• **defaultDatabaseServer**: `SecureContextEndpoint`
+• **defaultDatabaseServer**: [`SecureContextEndpoint`](verida_account._internal_.SecureContextEndpoint.md)
 
 #### Defined in
 
-[account/src/interfaces.ts:4](https://github.com/verida/verida-js/blob/039856c/packages/account/src/interfaces.ts#L4)
+[packages/account/src/interfaces.ts:4](https://github.com/verida/verida-js/blob/039856c/packages/account/src/interfaces.ts#L4)
 
 ___
 
 ### defaultMessageServer
 
-• **defaultMessageServer**: `SecureContextEndpoint`
+• **defaultMessageServer**: [`SecureContextEndpoint`](verida_account._internal_.SecureContextEndpoint.md)
 
 #### Defined in
 
-[account/src/interfaces.ts:5](https://github.com/verida/verida-js/blob/039856c/packages/account/src/interfaces.ts#L5)
+[packages/account/src/interfaces.ts:5](https://github.com/verida/verida-js/blob/039856c/packages/account/src/interfaces.ts#L5)
 
 ___
 
 ### defaultNotificationServer
 
-• `Optional` **defaultNotificationServer**: `SecureContextEndpoint`
+• `Optional` **defaultNotificationServer**: [`SecureContextEndpoint`](verida_account._internal_.SecureContextEndpoint.md)
 
 #### Defined in
 
-[account/src/interfaces.ts:7](https://github.com/verida/verida-js/blob/039856c/packages/account/src/interfaces.ts#L7)
+[packages/account/src/interfaces.ts:7](https://github.com/verida/verida-js/blob/039856c/packages/account/src/interfaces.ts#L7)
 
 ___
 
 ### defaultStorageServer
 
-• `Optional` **defaultStorageServer**: `SecureContextEndpoint`
+• `Optional` **defaultStorageServer**: [`SecureContextEndpoint`](verida_account._internal_.SecureContextEndpoint.md)
 
 #### Defined in
 
-[account/src/interfaces.ts:6](https://github.com/verida/verida-js/blob/039856c/packages/account/src/interfaces.ts#L6)
+[packages/account/src/interfaces.ts:6](https://github.com/verida/verida-js/blob/039856c/packages/account/src/interfaces.ts#L6)

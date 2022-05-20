@@ -45,7 +45,7 @@
 
 #### Defined in
 
-[did-client/src/wallet.ts:12](https://github.com/verida/verida-js/blob/039856c/packages/did-client/src/wallet.ts#L12)
+[packages/did-client/src/wallet.ts:12](https://github.com/verida/verida-js/blob/039856c/packages/did-client/src/wallet.ts#L12)
 
 ## Properties
 
@@ -55,7 +55,7 @@
 
 #### Defined in
 
-[did-client/src/wallet.ts:6](https://github.com/verida/verida-js/blob/039856c/packages/did-client/src/wallet.ts#L6)
+[packages/did-client/src/wallet.ts:6](https://github.com/verida/verida-js/blob/039856c/packages/did-client/src/wallet.ts#L6)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[did-client/src/wallet.ts:10](https://github.com/verida/verida-js/blob/039856c/packages/did-client/src/wallet.ts#L10)
+[packages/did-client/src/wallet.ts:10](https://github.com/verida/verida-js/blob/039856c/packages/did-client/src/wallet.ts#L10)
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 #### Defined in
 
-[did-client/src/wallet.ts:8](https://github.com/verida/verida-js/blob/039856c/packages/did-client/src/wallet.ts#L8)
+[packages/did-client/src/wallet.ts:8](https://github.com/verida/verida-js/blob/039856c/packages/did-client/src/wallet.ts#L8)
 
 ## Accessors
 
@@ -89,7 +89,7 @@ ___
 
 #### Defined in
 
-[did-client/src/wallet.ts:34](https://github.com/verida/verida-js/blob/039856c/packages/did-client/src/wallet.ts#L34)
+[packages/did-client/src/wallet.ts:34](https://github.com/verida/verida-js/blob/039856c/packages/did-client/src/wallet.ts#L34)
 
 ___
 
@@ -103,7 +103,7 @@ ___
 
 #### Defined in
 
-[did-client/src/wallet.ts:38](https://github.com/verida/verida-js/blob/039856c/packages/did-client/src/wallet.ts#L38)
+[packages/did-client/src/wallet.ts:38](https://github.com/verida/verida-js/blob/039856c/packages/did-client/src/wallet.ts#L38)
 
 ___
 
@@ -117,7 +117,7 @@ ___
 
 #### Defined in
 
-[did-client/src/wallet.ts:54](https://github.com/verida/verida-js/blob/039856c/packages/did-client/src/wallet.ts#L54)
+[packages/did-client/src/wallet.ts:54](https://github.com/verida/verida-js/blob/039856c/packages/did-client/src/wallet.ts#L54)
 
 ___
 
@@ -131,7 +131,7 @@ ___
 
 #### Defined in
 
-[did-client/src/wallet.ts:46](https://github.com/verida/verida-js/blob/039856c/packages/did-client/src/wallet.ts#L46)
+[packages/did-client/src/wallet.ts:46](https://github.com/verida/verida-js/blob/039856c/packages/did-client/src/wallet.ts#L46)
 
 ___
 
@@ -145,7 +145,7 @@ ___
 
 #### Defined in
 
-[did-client/src/wallet.ts:42](https://github.com/verida/verida-js/blob/039856c/packages/did-client/src/wallet.ts#L42)
+[packages/did-client/src/wallet.ts:42](https://github.com/verida/verida-js/blob/039856c/packages/did-client/src/wallet.ts#L42)
 
 ___
 
@@ -159,7 +159,7 @@ ___
 
 #### Defined in
 
-[did-client/src/wallet.ts:58](https://github.com/verida/verida-js/blob/039856c/packages/did-client/src/wallet.ts#L58)
+[packages/did-client/src/wallet.ts:58](https://github.com/verida/verida-js/blob/039856c/packages/did-client/src/wallet.ts#L58)
 
 ___
 
@@ -173,7 +173,7 @@ ___
 
 #### Defined in
 
-[did-client/src/wallet.ts:50](https://github.com/verida/verida-js/blob/039856c/packages/did-client/src/wallet.ts#L50)
+[packages/did-client/src/wallet.ts:50](https://github.com/verida/verida-js/blob/039856c/packages/did-client/src/wallet.ts#L50)
 
 ## Methods
 
@@ -193,7 +193,7 @@ ___
 
 #### Defined in
 
-[did-client/src/wallet.ts:21](https://github.com/verida/verida-js/blob/039856c/packages/did-client/src/wallet.ts#L21)
+[packages/did-client/src/wallet.ts:21](https://github.com/verida/verida-js/blob/039856c/packages/did-client/src/wallet.ts#L21)
 
 ___
 
@@ -207,4 +207,4 @@ ___
 
 #### Defined in
 
-[did-client/src/wallet.ts:16](https://github.com/verida/verida-js/blob/039856c/packages/did-client/src/wallet.ts#L16)
+[packages/did-client/src/wallet.ts:16](https://github.com/verida/verida-js/blob/039856c/packages/did-client/src/wallet.ts#L16)

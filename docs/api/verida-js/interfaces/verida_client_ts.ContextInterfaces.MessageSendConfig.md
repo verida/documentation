@@ -22,17 +22,17 @@ Interface for any MessageSendConfig
 
 #### Defined in
 
-[client-ts/src/context/interfaces.ts:116](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/interfaces.ts#L116)
+[packages/client-ts/src/context/interfaces.ts:116](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/interfaces.ts#L116)
 
 ___
 
 ### expiry
 
-• `Optional` **expiry**: `Number`
+• `Optional` **expiry**: [`Number`](../modules/verida_client_ts._internal_.md#number)
 
 #### Defined in
 
-[client-ts/src/context/interfaces.ts:117](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/interfaces.ts#L117)
+[packages/client-ts/src/context/interfaces.ts:117](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/interfaces.ts#L117)
 
 ___
 
@@ -42,4 +42,4 @@ ___
 
 #### Defined in
 
-[client-ts/src/context/interfaces.ts:118](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/interfaces.ts#L118)
+[packages/client-ts/src/context/interfaces.ts:118](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/interfaces.ts#L118)

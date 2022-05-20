@@ -28,7 +28,7 @@
 
 #### Defined in
 
-[account-web-vault/src/interfaces.ts:10](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/interfaces.ts#L10)
+[packages/account-web-vault/src/interfaces.ts:10](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/interfaces.ts#L10)
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 #### Defined in
 
-[account-web-vault/src/interfaces.ts:12](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/interfaces.ts#L12)
+[packages/account-web-vault/src/interfaces.ts:12](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/interfaces.ts#L12)
 
 ___
 
@@ -48,17 +48,17 @@ ___
 
 #### Defined in
 
-[account-web-vault/src/interfaces.ts:9](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/interfaces.ts#L9)
+[packages/account-web-vault/src/interfaces.ts:9](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/interfaces.ts#L9)
 
 ___
 
 ### request
 
-• `Optional` **request**: `VaultAccountRequest`
+• `Optional` **request**: [`VaultAccountRequest`](verida_account_web_vault._internal_.VaultAccountRequest.md)
 
 #### Defined in
 
-[account-web-vault/src/interfaces.ts:13](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/interfaces.ts#L13)
+[packages/account-web-vault/src/interfaces.ts:13](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/interfaces.ts#L13)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[account-web-vault/src/interfaces.ts:11](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/interfaces.ts#L11)
+[packages/account-web-vault/src/interfaces.ts:11](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/interfaces.ts#L11)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-[account-web-vault/src/interfaces.ts:8](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/interfaces.ts#L8)
+[packages/account-web-vault/src/interfaces.ts:8](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/interfaces.ts#L8)
 
 ## Methods
 
@@ -90,7 +90,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `response` | `AuthResponse` |
+| `response` | [`AuthResponse`](verida_account_web_vault._internal_.AuthResponse.md) |
 
 #### Returns
 
@@ -98,7 +98,7 @@ ___
 
 #### Defined in
 
-[account-web-vault/src/interfaces.ts:14](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/interfaces.ts#L14)
+[packages/account-web-vault/src/interfaces.ts:14](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/interfaces.ts#L14)
 
 ___
 
@@ -112,4 +112,4 @@ ___
 
 #### Defined in
 
-[account-web-vault/src/interfaces.ts:15](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/interfaces.ts#L15)
+[packages/account-web-vault/src/interfaces.ts:15](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/interfaces.ts#L15)

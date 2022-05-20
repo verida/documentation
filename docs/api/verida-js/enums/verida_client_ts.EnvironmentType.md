@@ -20,7 +20,7 @@
 
 #### Defined in
 
-account/dist/interfaces.d.ts:9
+packages/account/dist/interfaces.d.ts:9
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-account/dist/interfaces.d.ts:11
+packages/account/dist/interfaces.d.ts:11
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 #### Defined in
 
-account/dist/interfaces.d.ts:10
+packages/account/dist/interfaces.d.ts:10

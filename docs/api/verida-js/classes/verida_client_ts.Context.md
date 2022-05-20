@@ -55,22 +55,22 @@ Instantiate a new context.
 | :------ | :------ |
 | `client` | [`Client`](verida_client_ts.Client.md) |
 | `contextName` | `string` |
-| `didContextManager` | `DIDContextManager` |
-| `account?` | `default` |
+| `didContextManager` | [`DIDContextManager`](verida_client_ts._internal_.DIDContextManager.md) |
+| `account?` | [`default`](verida_client_ts._internal_.default-1.md) |
 
 #### Defined in
 
-[client-ts/src/context/context.ts:71](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L71)
+[packages/client-ts/src/context/context.ts:71](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L71)
 
 ## Properties
 
 ### account
 
-• `Private` `Optional` **account**: `default`
+• `Private` `Optional` **account**: [`default`](verida_client_ts._internal_.default-1.md)
 
 #### Defined in
 
-[client-ts/src/context/context.ts:52](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L52)
+[packages/client-ts/src/context/context.ts:52](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L52)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[client-ts/src/context/context.ts:51](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L51)
+[packages/client-ts/src/context/context.ts:51](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L51)
 
 ___
 
@@ -90,37 +90,37 @@ ___
 
 #### Defined in
 
-[client-ts/src/context/context.ts:56](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L56)
+[packages/client-ts/src/context/context.ts:56](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L56)
 
 ___
 
 ### databaseEngines
 
-• `Private` **databaseEngines**: `DatabaseEngines` = `{}`
+• `Private` **databaseEngines**: [`DatabaseEngines`](../interfaces/verida_client_ts._internal_.DatabaseEngines.md) = `{}`
 
 #### Defined in
 
-[client-ts/src/context/context.ts:58](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L58)
+[packages/client-ts/src/context/context.ts:58](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L58)
 
 ___
 
 ### dbRegistry
 
-• `Private` **dbRegistry**: `DbRegistry`
+• `Private` **dbRegistry**: [`DbRegistry`](verida_client_ts._internal_.DbRegistry.md)
 
 #### Defined in
 
-[client-ts/src/context/context.ts:59](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L59)
+[packages/client-ts/src/context/context.ts:59](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L59)
 
 ___
 
 ### didContextManager
 
-• `Private` **didContextManager**: `DIDContextManager`
+• `Private` **didContextManager**: [`DIDContextManager`](verida_client_ts._internal_.DIDContextManager.md)
 
 #### Defined in
 
-[client-ts/src/context/context.ts:57](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L57)
+[packages/client-ts/src/context/context.ts:57](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L57)
 
 ___
 
@@ -130,17 +130,17 @@ ___
 
 #### Defined in
 
-[client-ts/src/context/context.ts:53](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L53)
+[packages/client-ts/src/context/context.ts:53](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L53)
 
 ___
 
 ### notificationEngine
 
-• `Private` `Optional` **notificationEngine**: `default`
+• `Private` `Optional` **notificationEngine**: [`Notification`](../interfaces/verida_client_ts.Notification.md)
 
 #### Defined in
 
-[client-ts/src/context/context.ts:54](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L54)
+[packages/client-ts/src/context/context.ts:54](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L54)
 
 ## Methods
 
@@ -154,21 +154,21 @@ ___
 
 #### Defined in
 
-[client-ts/src/context/context.ts:120](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L120)
+[packages/client-ts/src/context/context.ts:120](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L120)
 
 ___
 
 ### getAccount
 
-▸ **getAccount**(): `default`
+▸ **getAccount**(): [`default`](verida_client_ts._internal_.default-1.md)
 
 #### Returns
 
-`default`
+[`default`](verida_client_ts._internal_.default-1.md)
 
 #### Defined in
 
-[client-ts/src/context/context.ts:108](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L108)
+[packages/client-ts/src/context/context.ts:108](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L108)
 
 ___
 
@@ -182,13 +182,13 @@ ___
 
 #### Defined in
 
-[client-ts/src/context/context.ts:116](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L116)
+[packages/client-ts/src/context/context.ts:116](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L116)
 
 ___
 
 ### getContextConfig
 
-▸ **getContextConfig**(`did?`, `forceCreate?`, `customContextName?`): `Promise`<`SecureContextConfig`\>
+▸ **getContextConfig**(`did?`, `forceCreate?`, `customContextName?`): `Promise`<[`SecureContextConfig`](../interfaces/verida_client_ts._internal_.SecureContextConfig.md)\>
 
 #### Parameters
 
@@ -200,11 +200,11 @@ ___
 
 #### Returns
 
-`Promise`<`SecureContextConfig`\>
+`Promise`<[`SecureContextConfig`](../interfaces/verida_client_ts._internal_.SecureContextConfig.md)\>
 
 #### Defined in
 
-[client-ts/src/context/context.ts:84](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L84)
+[packages/client-ts/src/context/context.ts:84](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L84)
 
 ___
 
@@ -218,13 +218,13 @@ ___
 
 #### Defined in
 
-[client-ts/src/context/context.ts:104](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L104)
+[packages/client-ts/src/context/context.ts:104](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L104)
 
 ___
 
 ### getDatabaseEngine
 
-▸ `Private` **getDatabaseEngine**(`did`, `createContext?`): `Promise`<`BaseStorageEngine`\>
+▸ `Private` **getDatabaseEngine**(`did`, `createContext?`): `Promise`<[`BaseStorageEngine`](verida_client_ts._internal_.BaseStorageEngine.md)\>
 
 Get a storage engine for a given DID and this contextName
 
@@ -237,39 +237,39 @@ Get a storage engine for a given DID and this contextName
 
 #### Returns
 
-`Promise`<`BaseStorageEngine`\>
+`Promise`<[`BaseStorageEngine`](verida_client_ts._internal_.BaseStorageEngine.md)\>
 
 #### Defined in
 
-[client-ts/src/context/context.ts:136](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L136)
+[packages/client-ts/src/context/context.ts:136](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L136)
 
 ___
 
 ### getDbRegistry
 
-▸ **getDbRegistry**(): `DbRegistry`
+▸ **getDbRegistry**(): [`DbRegistry`](verida_client_ts._internal_.DbRegistry.md)
 
 #### Returns
 
-`DbRegistry`
+[`DbRegistry`](verida_client_ts._internal_.DbRegistry.md)
 
 #### Defined in
 
-[client-ts/src/context/context.ts:412](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L412)
+[packages/client-ts/src/context/context.ts:412](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L412)
 
 ___
 
 ### getDidContextManager
 
-▸ **getDidContextManager**(): `DIDContextManager`
+▸ **getDidContextManager**(): [`DIDContextManager`](verida_client_ts._internal_.DIDContextManager.md)
 
 #### Returns
 
-`DIDContextManager`
+[`DIDContextManager`](verida_client_ts._internal_.DIDContextManager.md)
 
 #### Defined in
 
-[client-ts/src/context/context.ts:112](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L112)
+[packages/client-ts/src/context/context.ts:112](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L112)
 
 ___
 
@@ -295,27 +295,27 @@ Messaging instance
 
 #### Defined in
 
-[client-ts/src/context/context.ts:178](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L178)
+[packages/client-ts/src/context/context.ts:178](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L178)
 
 ___
 
 ### getNotification
 
-▸ **getNotification**(): `Promise`<`undefined` \| `default`\>
+▸ **getNotification**(): `Promise`<`undefined` \| [`Notification`](../interfaces/verida_client_ts.Notification.md)\>
 
 #### Returns
 
-`Promise`<`undefined` \| `default`\>
+`Promise`<`undefined` \| [`Notification`](../interfaces/verida_client_ts.Notification.md)\>
 
 #### Defined in
 
-[client-ts/src/context/context.ts:211](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L211)
+[packages/client-ts/src/context/context.ts:211](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L211)
 
 ___
 
 ### openDatabase
 
-▸ **openDatabase**(`databaseName`, `config?`): `Promise`<`default`\>
+▸ **openDatabase**(`databaseName`, `config?`): `Promise`<[`Database`](../interfaces/verida_client_ts.Database.md)\>
 
 Open a database owned by this account.
 
@@ -328,17 +328,17 @@ Open a database owned by this account.
 
 #### Returns
 
-`Promise`<`default`\>
+`Promise`<[`Database`](../interfaces/verida_client_ts.Database.md)\>
 
 #### Defined in
 
-[client-ts/src/context/context.ts:280](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L280)
+[packages/client-ts/src/context/context.ts:280](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L280)
 
 ___
 
 ### openDatastore
 
-▸ **openDatastore**(`schemaUri`, `config?`): `Promise`<`Datastore`\>
+▸ **openDatastore**(`schemaUri`, `config?`): `Promise`<[`Datastore`](verida_client_ts.Datastore.md)\>
 
 Open a dataastore owned by this account.
 
@@ -351,17 +351,17 @@ Open a dataastore owned by this account.
 
 #### Returns
 
-`Promise`<`Datastore`\>
+`Promise`<[`Datastore`](verida_client_ts.Datastore.md)\>
 
 #### Defined in
 
-[client-ts/src/context/context.ts:372](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L372)
+[packages/client-ts/src/context/context.ts:372](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L372)
 
 ___
 
 ### openExternalDatabase
 
-▸ **openExternalDatabase**(`databaseName`, `did`, `config?`): `Promise`<`default`\>
+▸ **openExternalDatabase**(`databaseName`, `did`, `config?`): `Promise`<[`Database`](../interfaces/verida_client_ts.Database.md)\>
 
 Open an external database owned by an account that isn't the currently connected account.
 
@@ -375,17 +375,17 @@ Open an external database owned by an account that isn't the currently connected
 
 #### Returns
 
-`Promise`<`default`\>
+`Promise`<[`Database`](../interfaces/verida_client_ts.Database.md)\>
 
 #### Defined in
 
-[client-ts/src/context/context.ts:318](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L318)
+[packages/client-ts/src/context/context.ts:318](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L318)
 
 ___
 
 ### openExternalDatastore
 
-▸ **openExternalDatastore**(`schemaUri`, `did`, `options?`): `Promise`<`Datastore`\>
+▸ **openExternalDatastore**(`schemaUri`, `did`, `options?`): `Promise`<[`Datastore`](verida_client_ts.Datastore.md)\>
 
 Open an external datastore owned by an account that isn't the currently connected account.
 
@@ -399,17 +399,17 @@ Open an external datastore owned by an account that isn't the currently connecte
 
 #### Returns
 
-`Promise`<`Datastore`\>
+`Promise`<[`Datastore`](verida_client_ts.Datastore.md)\>
 
 #### Defined in
 
-[client-ts/src/context/context.ts:392](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L392)
+[packages/client-ts/src/context/context.ts:392](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L392)
 
 ___
 
 ### openProfile
 
-▸ **openProfile**(`profileName?`, `did?`, `writeAccess?`): `Promise`<`undefined` \| `Profile`\>
+▸ **openProfile**(`profileName?`, `did?`, `writeAccess?`): `Promise`<`undefined` \| [`Profile`](verida_client_ts._internal_.Profile.md)\>
 
 Get a user's profile.
 
@@ -423,8 +423,8 @@ Get a user's profile.
 
 #### Returns
 
-`Promise`<`undefined` \| `Profile`\>
+`Promise`<`undefined` \| [`Profile`](verida_client_ts._internal_.Profile.md)\>
 
 #### Defined in
 
-[client-ts/src/context/context.ts:252](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L252)
+[packages/client-ts/src/context/context.ts:252](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/context.ts#L252)
