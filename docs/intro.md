@@ -22,21 +22,21 @@ First you will need to download the developer preview edition Verida Vault.
 
 Understand how the Verida network works by reading the [Verida White Paper](https://www.verida.io/whitepaper?utm=devportal)
 
-Read more about the [concepts](/concepts) behind Verida:
+Read more about the [concepts](/docs/concepts) behind Verida:
 
-* [Decentralized Identity (DIDs)](/concepts/accounts-and-identity)
-* Self-soverign [data storage](/concepts/data-storage)
-* [Messaging](/concepts/messaging)
+* [Decentralized Identity (DIDs)](/docs/concepts/accounts-and-identity)
+* Self-soverign [data storage](/docs/concepts/data-storage)
+* [Messaging](/docs/concepts/messaging)
 
 
 ### Develop with Verida
 
-* Use Verida with our [demo applications](/demo)
-* Try Verida now with an [interactive tutorial](tutorial/introduction.mdx)
-* Implement [Verida Single Sign On](/single-sign-on-sdk) in your application.
-* Add additional capabilities including data storage and messaging using the [Client SDK](/client-sdk)
+* Use Verida with our [demo applications](/docs/demos)
+* Try Verida now with an [interactive tutorial](/docs/tutorial/introduction)
+* Implement [Verida Single Sign On](/docs/single-sign-on-sdk) in your application.
+* Add additional capabilities including data storage and messaging using the [Client SDK](/docs/client-sdk)
 
-* See the [API Docs](https://apidocs.verida.io/index.html)
+* See the [API Docs](/docs/api/verida-js)
 
 
 ### Join Verida
