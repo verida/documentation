@@ -85,7 +85,7 @@ VeridaDatastoreExample = () => {
   showContacts = async function () {
     let contactsDS = await veridaContext.openDatastore(contactSchema)
 
-    contacts = await contactsDS.getMany()
+    contacts = await contactsDS.getMany(null, null)
 
     msg = []
     msg.push(

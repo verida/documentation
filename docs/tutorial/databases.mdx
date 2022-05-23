@@ -59,8 +59,8 @@ VeridaDatabaseExample = () => {
       myvalue: "hello world", // change this, and press the "Add Item" button
     })
 
-    // retrieve the items
-    const items = await Window.db.getMany()
+    // retrieve the items with no filter and no options
+    const items = await Window.db.getMany(null, null);
     generateTableRows(items)
   }
 
@@ -70,7 +70,8 @@ VeridaDatabaseExample = () => {
       // Open / create a test database
       Window.db = await veridaContext.openDatabase("test_db");
 
-      const items = await Window.db.getMany();
+      // call getMany with no filter and no options
+      const items = await Window.db.getMany(null, null);
       generateTableRows(items);
 
       return true

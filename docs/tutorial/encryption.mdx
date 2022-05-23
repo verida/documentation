@@ -31,7 +31,7 @@ VeridaEncryptionExample = () => {
   }, []);
 
   showLocal = async function () {
-    const items = await Window.db.getMany() // get the database items
+    const items = await Window.db.getMany(null, null) // get the database items
     const last_item = items.slice(-1)[0] // find the last item in the list
 
     data = await Window.db._localDb.get(last_item._id) // get the record
@@ -41,7 +41,7 @@ VeridaEncryptionExample = () => {
   }
 
   showRemote = async function () {
-    const items = await Window.db.getMany() // get the database items
+    const items = await Window.db.getMany(null, null) // get the database items
     const last_item = items.slice(-1)[0] // find the last item in the list
 
     data = await Window.db._remoteDbEncrypted.get(last_item._id) // get the record

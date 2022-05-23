@@ -33,7 +33,7 @@ VeridaEventsExample = () => {
 
   dataUpdated = async function () {
     // and grab the profile data
-    profileData = await this.profileConnection.getMany()
+    profileData = await this.profileConnection.getMany(null, null)
 
     // All public profiles have the fields: name, country, description, avatar.uri
     // see the schema here: https://common.schemas.verida.io/profile/basicProfile/latest/schema.json
