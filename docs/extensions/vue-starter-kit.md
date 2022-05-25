@@ -29,6 +29,7 @@ yarn add  @verida/vue-account
 
 The `@verida/vue-account` component library registration  enables the `vda-account` and vda-login` component to be accessed across your application.
 
+
 main.js
 
 ```js
@@ -45,7 +46,7 @@ app.mount('#app');
 
 ```
 
-- NOTE : You can retrieve the user application `context` from the parameter of the `onSuccess` function passed as a prop .
+- NOTE : You can retrieve the user application `context` from the parameter of the `onConnected` event emitter pass to the component .
 
 This works for both the `vda-login` and `vda-account`
 
@@ -92,9 +93,8 @@ export default defineComponent({
 
 ### Using the `vda-account` component
 
-This component is used to display a logged-in user profile details such as `name` , `did`and  `avatar` this happens after the `vda-login` component has been used for performing and SSO (Single Sign on) Login.
+This component is used to display a logged-in user profile details such as `name` , `did`and  `avatar` this happens after the `vda-login` component can also be used  for SSO (Single Sign on) Login just as the `vda-login` component.
 
-- You can listen for an event `connected` after a successful SSO Login , see example code below  
 
 - Example code :
 
