@@ -12,6 +12,7 @@ Interface for any MessageSendConfig
 
 - [did](verida_client_ts.ContextInterfaces.MessageSendConfig.md#did)
 - [expiry](verida_client_ts.ContextInterfaces.MessageSendConfig.md#expiry)
+- [openUrl](verida_client_ts.ContextInterfaces.MessageSendConfig.md#openurl)
 - [recipientContextName](verida_client_ts.ContextInterfaces.MessageSendConfig.md#recipientcontextname)
 
 ## Properties
@@ -22,7 +23,7 @@ Interface for any MessageSendConfig
 
 #### Defined in
 
-[packages/client-ts/src/context/interfaces.ts:116](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/interfaces.ts#L116)
+[packages/client-ts/src/context/interfaces.ts:116](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/interfaces.ts#L116)
 
 ___
 
@@ -32,7 +33,17 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/interfaces.ts:117](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/interfaces.ts#L117)
+[packages/client-ts/src/context/interfaces.ts:117](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/interfaces.ts#L117)
+
+___
+
+### openUrl
+
+• `Optional` **openUrl**: `string`
+
+#### Defined in
+
+[packages/client-ts/src/context/interfaces.ts:119](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/interfaces.ts#L119)
 
 ___
 
@@ -42,4 +53,4 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/interfaces.ts:118](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/interfaces.ts#L118)
+[packages/client-ts/src/context/interfaces.ts:118](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/interfaces.ts#L118)

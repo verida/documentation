@@ -38,4 +38,4 @@
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:16](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/vault-account.ts#L16)
+[packages/account-web-vault/src/vault-account.ts:42](https://github.com/verida/verida-js/blob/c03b336/packages/account-web-vault/src/vault-account.ts#L42)

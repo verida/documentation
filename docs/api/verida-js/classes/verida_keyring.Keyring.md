@@ -56,7 +56,7 @@ The seed should be a hex signature obtained by 3ID signed consent message.
 
 #### Defined in
 
-[packages/keyring/src/keyring.ts:27](https://github.com/verida/verida-js/blob/039856c/packages/keyring/src/keyring.ts#L27)
+[packages/keyring/src/keyring.ts:27](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L27)
 
 ## Properties
 
@@ -66,7 +66,7 @@ The seed should be a hex signature obtained by 3ID signed consent message.
 
 #### Defined in
 
-[packages/keyring/src/keyring.ts:14](https://github.com/verida/verida-js/blob/039856c/packages/keyring/src/keyring.ts#L14)
+[packages/keyring/src/keyring.ts:14](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L14)
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-[packages/keyring/src/keyring.ts:18](https://github.com/verida/verida-js/blob/039856c/packages/keyring/src/keyring.ts#L18)
+[packages/keyring/src/keyring.ts:18](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L18)
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 #### Defined in
 
-[packages/keyring/src/keyring.ts:15](https://github.com/verida/verida-js/blob/039856c/packages/keyring/src/keyring.ts#L15)
+[packages/keyring/src/keyring.ts:15](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L15)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-[packages/keyring/src/keyring.ts:19](https://github.com/verida/verida-js/blob/039856c/packages/keyring/src/keyring.ts#L19)
+[packages/keyring/src/keyring.ts:19](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L19)
 
 ___
 
@@ -106,7 +106,7 @@ ___
 
 #### Defined in
 
-[packages/keyring/src/keyring.ts:16](https://github.com/verida/verida-js/blob/039856c/packages/keyring/src/keyring.ts#L16)
+[packages/keyring/src/keyring.ts:16](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L16)
 
 ## Methods
 
@@ -120,7 +120,7 @@ ___
 
 #### Defined in
 
-[packages/keyring/src/keyring.ts:50](https://github.com/verida/verida-js/blob/039856c/packages/keyring/src/keyring.ts#L50)
+[packages/keyring/src/keyring.ts:50](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L50)
 
 ___
 
@@ -141,7 +141,7 @@ ___
 
 #### Defined in
 
-[packages/keyring/src/keyring.ts:135](https://github.com/verida/verida-js/blob/039856c/packages/keyring/src/keyring.ts#L135)
+[packages/keyring/src/keyring.ts:135](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L135)
 
 ___
 
@@ -162,7 +162,7 @@ ___
 
 #### Defined in
 
-[packages/keyring/src/keyring.ts:130](https://github.com/verida/verida-js/blob/039856c/packages/keyring/src/keyring.ts#L130)
+[packages/keyring/src/keyring.ts:130](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L130)
 
 ___
 
@@ -185,7 +185,7 @@ Helper function that generates a key of the appropriate type
 
 #### Defined in
 
-[packages/keyring/src/keyring.ts:69](https://github.com/verida/verida-js/blob/039856c/packages/keyring/src/keyring.ts#L69)
+[packages/keyring/src/keyring.ts:69](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L69)
 
 ___
 
@@ -205,7 +205,7 @@ ___
 
 #### Defined in
 
-[packages/keyring/src/keyring.ts:145](https://github.com/verida/verida-js/blob/039856c/packages/keyring/src/keyring.ts#L145)
+[packages/keyring/src/keyring.ts:145](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L145)
 
 ___
 
@@ -225,7 +225,7 @@ ___
 
 #### Defined in
 
-[packages/keyring/src/keyring.ts:140](https://github.com/verida/verida-js/blob/039856c/packages/keyring/src/keyring.ts#L140)
+[packages/keyring/src/keyring.ts:140](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L140)
 
 ___
 
@@ -239,7 +239,7 @@ ___
 
 #### Defined in
 
-[packages/keyring/src/keyring.ts:31](https://github.com/verida/verida-js/blob/039856c/packages/keyring/src/keyring.ts#L31)
+[packages/keyring/src/keyring.ts:31](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L31)
 
 ___
 
@@ -253,7 +253,7 @@ ___
 
 #### Defined in
 
-[packages/keyring/src/keyring.ts:150](https://github.com/verida/verida-js/blob/039856c/packages/keyring/src/keyring.ts#L150)
+[packages/keyring/src/keyring.ts:150](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L150)
 
 ___
 
@@ -273,7 +273,7 @@ ___
 
 #### Defined in
 
-[packages/keyring/src/keyring.ts:154](https://github.com/verida/verida-js/blob/039856c/packages/keyring/src/keyring.ts#L154)
+[packages/keyring/src/keyring.ts:154](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L154)
 
 ___
 
@@ -289,7 +289,7 @@ Generate an object containing all the public keys for this Keyring
 
 #### Defined in
 
-[packages/keyring/src/keyring.ts:97](https://github.com/verida/verida-js/blob/039856c/packages/keyring/src/keyring.ts#L97)
+[packages/keyring/src/keyring.ts:97](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L97)
 
 ___
 
@@ -309,7 +309,7 @@ ___
 
 #### Defined in
 
-[packages/keyring/src/keyring.ts:110](https://github.com/verida/verida-js/blob/039856c/packages/keyring/src/keyring.ts#L110)
+[packages/keyring/src/keyring.ts:110](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L110)
 
 ___
 
@@ -329,7 +329,7 @@ ___
 
 #### Defined in
 
-[packages/keyring/src/keyring.ts:125](https://github.com/verida/verida-js/blob/039856c/packages/keyring/src/keyring.ts#L125)
+[packages/keyring/src/keyring.ts:125](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L125)
 
 ___
 
@@ -349,7 +349,7 @@ ___
 
 #### Defined in
 
-[packages/keyring/src/keyring.ts:120](https://github.com/verida/verida-js/blob/039856c/packages/keyring/src/keyring.ts#L120)
+[packages/keyring/src/keyring.ts:120](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L120)
 
 ___
 
@@ -370,4 +370,4 @@ ___
 
 #### Defined in
 
-[packages/keyring/src/keyring.ts:115](https://github.com/verida/verida-js/blob/039856c/packages/keyring/src/keyring.ts#L115)
+[packages/keyring/src/keyring.ts:115](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L115)

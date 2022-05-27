@@ -54,7 +54,7 @@ Force lower case DID as we can't guarantee the DID will always be provided with 
 
 #### Defined in
 
-[packages/did-document/src/did-document.ts:16](https://github.com/verida/verida-js/blob/039856c/packages/did-document/src/did-document.ts#L16)
+[packages/did-document/src/did-document.ts:16](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L16)
 
 ## Properties
 
@@ -64,7 +64,7 @@ Force lower case DID as we can't guarantee the DID will always be provided with 
 
 #### Defined in
 
-[packages/did-document/src/did-document.ts:8](https://github.com/verida/verida-js/blob/039856c/packages/did-document/src/did-document.ts#L8)
+[packages/did-document/src/did-document.ts:8](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L8)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[packages/did-document/src/did-document.ts:9](https://github.com/verida/verida-js/blob/039856c/packages/did-document/src/did-document.ts#L9)
+[packages/did-document/src/did-document.ts:9](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L9)
 
 ## Accessors
 
@@ -88,7 +88,7 @@ ___
 
 #### Defined in
 
-[packages/did-document/src/did-document.ts:44](https://github.com/verida/verida-js/blob/039856c/packages/did-document/src/did-document.ts#L44)
+[packages/did-document/src/did-document.ts:44](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L44)
 
 ## Methods
 
@@ -112,7 +112,7 @@ Not used directly, used for testing
 
 #### Defined in
 
-[packages/did-document/src/did-document.ts:59](https://github.com/verida/verida-js/blob/039856c/packages/did-document/src/did-document.ts#L59)
+[packages/did-document/src/did-document.ts:59](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L59)
 
 ___
 
@@ -133,7 +133,7 @@ ___
 
 #### Defined in
 
-[packages/did-document/src/did-document.ts:160](https://github.com/verida/verida-js/blob/039856c/packages/did-document/src/did-document.ts#L160)
+[packages/did-document/src/did-document.ts:160](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L160)
 
 ___
 
@@ -156,7 +156,7 @@ ___
 
 #### Defined in
 
-[packages/did-document/src/did-document.ts:127](https://github.com/verida/verida-js/blob/039856c/packages/did-document/src/did-document.ts#L127)
+[packages/did-document/src/did-document.ts:127](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L127)
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-[packages/did-document/src/did-document.ts:139](https://github.com/verida/verida-js/blob/039856c/packages/did-document/src/did-document.ts#L139)
+[packages/did-document/src/did-document.ts:139](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L139)
 
 ___
 
@@ -191,7 +191,7 @@ ___
 
 #### Defined in
 
-[packages/did-document/src/did-document.ts:123](https://github.com/verida/verida-js/blob/039856c/packages/did-document/src/did-document.ts#L123)
+[packages/did-document/src/did-document.ts:123](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L123)
 
 ___
 
@@ -205,7 +205,7 @@ ___
 
 #### Defined in
 
-[packages/did-document/src/did-document.ts:48](https://github.com/verida/verida-js/blob/039856c/packages/did-document/src/did-document.ts#L48)
+[packages/did-document/src/did-document.ts:48](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L48)
 
 ___
 
@@ -219,7 +219,7 @@ ___
 
 #### Defined in
 
-[packages/did-document/src/did-document.ts:236](https://github.com/verida/verida-js/blob/039856c/packages/did-document/src/did-document.ts#L236)
+[packages/did-document/src/did-document.ts:236](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L236)
 
 ___
 
@@ -239,7 +239,7 @@ ___
 
 #### Defined in
 
-[packages/did-document/src/did-document.ts:118](https://github.com/verida/verida-js/blob/039856c/packages/did-document/src/did-document.ts#L118)
+[packages/did-document/src/did-document.ts:118](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L118)
 
 ___
 
@@ -260,7 +260,7 @@ ___
 
 #### Defined in
 
-[packages/did-document/src/did-document.ts:247](https://github.com/verida/verida-js/blob/039856c/packages/did-document/src/did-document.ts#L247)
+[packages/did-document/src/did-document.ts:247](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L247)
 
 ___
 
@@ -280,7 +280,7 @@ ___
 
 #### Defined in
 
-[packages/did-document/src/did-document.ts:84](https://github.com/verida/verida-js/blob/039856c/packages/did-document/src/did-document.ts#L84)
+[packages/did-document/src/did-document.ts:84](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L84)
 
 ___
 
@@ -300,7 +300,7 @@ ___
 
 #### Defined in
 
-[packages/did-document/src/did-document.ts:181](https://github.com/verida/verida-js/blob/039856c/packages/did-document/src/did-document.ts#L181)
+[packages/did-document/src/did-document.ts:181](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L181)
 
 ___
 
@@ -323,7 +323,7 @@ ___
 
 #### Defined in
 
-[packages/did-document/src/did-document.ts:219](https://github.com/verida/verida-js/blob/039856c/packages/did-document/src/did-document.ts#L219)
+[packages/did-document/src/did-document.ts:219](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L219)
 
 ___
 
@@ -337,7 +337,7 @@ ___
 
 #### Defined in
 
-[packages/did-document/src/did-document.ts:197](https://github.com/verida/verida-js/blob/039856c/packages/did-document/src/did-document.ts#L197)
+[packages/did-document/src/did-document.ts:197](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L197)
 
 ___
 
@@ -358,7 +358,7 @@ ___
 
 #### Defined in
 
-[packages/did-document/src/did-document.ts:208](https://github.com/verida/verida-js/blob/039856c/packages/did-document/src/did-document.ts#L208)
+[packages/did-document/src/did-document.ts:208](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L208)
 
 ___
 
@@ -379,4 +379,4 @@ ___
 
 #### Defined in
 
-[packages/did-document/src/did-document.ts:242](https://github.com/verida/verida-js/blob/039856c/packages/did-document/src/did-document.ts#L242)
+[packages/did-document/src/did-document.ts:242](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L242)

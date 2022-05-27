@@ -17,8 +17,6 @@
 - [BaseStorageEngine](../classes/verida_client_ts._internal_.BaseStorageEngine.md)
 - [DIDContextManager](../classes/verida_client_ts._internal_.DIDContextManager.md)
 - [DbRegistry](../classes/verida_client_ts._internal_.DbRegistry.md)
-- [Profile](../classes/verida_client_ts._internal_.Profile.md)
-- [Schema](../classes/verida_client_ts._internal_.Schema.md)
 
 ### Other Classes
 
@@ -111,6 +109,7 @@
 - [VerificationMethod](../interfaces/verida_client_ts._internal_.VerificationMethod.md)
 - [\_KeywordDef](../interfaces/verida_client_ts._internal_._KeywordDef.md)
 - [\_SchemaObject](../interfaces/verida_client_ts._internal_._SchemaObject.md)
+- [default](../interfaces/verida_client_ts._internal_.default-7.md)
 
 ### Type aliases
 
@@ -1220,7 +1219,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/profiles/profile.ts:1](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/profiles/profile.ts#L1)
+[packages/client-ts/src/context/profiles/profile.ts:1](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/profiles/profile.ts#L1)
 
 ___
 

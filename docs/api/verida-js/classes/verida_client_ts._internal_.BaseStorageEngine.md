@@ -41,7 +41,7 @@
 
 #### Defined in
 
-[packages/client-ts/src/context/engines/base.ts:20](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/engines/base.ts#L20)
+[packages/client-ts/src/context/engines/base.ts:20](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/engines/base.ts#L20)
 
 ## Properties
 
@@ -51,7 +51,7 @@
 
 #### Defined in
 
-[packages/client-ts/src/context/engines/base.ts:17](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/engines/base.ts#L17)
+[packages/client-ts/src/context/engines/base.ts:17](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/engines/base.ts#L17)
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/engines/base.ts:14](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/engines/base.ts#L14)
+[packages/client-ts/src/context/engines/base.ts:14](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/engines/base.ts#L14)
 
 ___
 
@@ -71,17 +71,17 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/engines/base.ts:15](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/engines/base.ts#L15)
+[packages/client-ts/src/context/engines/base.ts:15](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/engines/base.ts#L15)
 
 ___
 
 ### keyring
 
-• `Protected` `Optional` **keyring**: [`default`](verida_client_ts._internal_.default-2.md)
+• `Protected` `Optional` **keyring**: [`default`](verida_client_ts._internal_.default-5.md)
 
 #### Defined in
 
-[packages/client-ts/src/context/engines/base.ts:18](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/engines/base.ts#L18)
+[packages/client-ts/src/context/engines/base.ts:18](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/engines/base.ts#L18)
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/engines/base.ts:13](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/engines/base.ts#L13)
+[packages/client-ts/src/context/engines/base.ts:13](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/engines/base.ts#L13)
 
 ## Methods
 
@@ -111,7 +111,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/engines/base.ts:30](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/engines/base.ts#L30)
+[packages/client-ts/src/context/engines/base.ts:30](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/engines/base.ts#L30)
 
 ___
 
@@ -125,7 +125,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/engines/base.ts:49](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/engines/base.ts#L49)
+[packages/client-ts/src/context/engines/base.ts:49](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/engines/base.ts#L49)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/engines/base.ts:35](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/engines/base.ts#L35)
+[packages/client-ts/src/context/engines/base.ts:35](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/engines/base.ts#L35)
 
 ___
 
@@ -167,4 +167,4 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/engines/base.ts:42](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/engines/base.ts#L42)
+[packages/client-ts/src/context/engines/base.ts:42](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/engines/base.ts#L42)

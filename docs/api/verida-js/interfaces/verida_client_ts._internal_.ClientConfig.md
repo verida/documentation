@@ -25,7 +25,7 @@ URL of Verida DID Server node to use.
 
 #### Defined in
 
-[packages/client-ts/src/interfaces.ts:23](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/interfaces.ts#L23)
+[packages/client-ts/src/interfaces.ts:23](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/interfaces.ts#L23)
 
 ___
 
@@ -39,7 +39,7 @@ Environment configuration can still be overriden by config items.
 
 #### Defined in
 
-[packages/client-ts/src/interfaces.ts:18](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/interfaces.ts#L18)
+[packages/client-ts/src/interfaces.ts:18](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/interfaces.ts#L18)
 
 ___
 
@@ -51,7 +51,7 @@ Specify custom schema paths (typicaly for local development).
 
 #### Defined in
 
-[packages/client-ts/src/interfaces.ts:28](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/interfaces.ts#L28)
+[packages/client-ts/src/interfaces.ts:28](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/interfaces.ts#L28)
 
 ___
 
@@ -63,4 +63,4 @@ Specify client's App name.
 
 #### Defined in
 
-[packages/client-ts/src/interfaces.ts:12](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/interfaces.ts#L12)
+[packages/client-ts/src/interfaces.ts:12](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/interfaces.ts#L12)

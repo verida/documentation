@@ -59,7 +59,7 @@ An Authenticator that automatically signs everything
 
 #### Defined in
 
-[packages/account-node/src/auto.ts:21](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L21)
+[packages/account-node/src/auto.ts:21](https://github.com/verida/verida-js/blob/c03b336/packages/account-node/src/auto.ts#L21)
 
 ## Properties
 
@@ -69,7 +69,7 @@ An Authenticator that automatically signs everything
 
 #### Defined in
 
-[packages/account-node/src/auto.ts:19](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L19)
+[packages/account-node/src/auto.ts:19](https://github.com/verida/verida-js/blob/c03b336/packages/account-node/src/auto.ts#L19)
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 #### Defined in
 
-[packages/account-node/src/auto.ts:16](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L16)
+[packages/account-node/src/auto.ts:16](https://github.com/verida/verida-js/blob/c03b336/packages/account-node/src/auto.ts#L16)
 
 ___
 
@@ -89,7 +89,7 @@ ___
 
 #### Defined in
 
-[packages/account-node/src/auto.ts:15](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L15)
+[packages/account-node/src/auto.ts:15](https://github.com/verida/verida-js/blob/c03b336/packages/account-node/src/auto.ts#L15)
 
 ___
 
@@ -99,7 +99,7 @@ ___
 
 #### Defined in
 
-[packages/account-node/src/auto.ts:18](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L18)
+[packages/account-node/src/auto.ts:18](https://github.com/verida/verida-js/blob/c03b336/packages/account-node/src/auto.ts#L18)
 
 ## Methods
 
@@ -147,7 +147,7 @@ Get the DID of the current user
 
 #### Defined in
 
-[packages/account-node/src/auto.ts:46](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L46)
+[packages/account-node/src/auto.ts:46](https://github.com/verida/verida-js/blob/c03b336/packages/account-node/src/auto.ts#L46)
 
 ___
 
@@ -193,7 +193,7 @@ ___
 
 #### Defined in
 
-[packages/account-node/src/auto.ts:101](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L101)
+[packages/account-node/src/auto.ts:101](https://github.com/verida/verida-js/blob/c03b336/packages/account-node/src/auto.ts#L101)
 
 ___
 
@@ -219,7 +219,7 @@ Generate a keyring for this user for a given storage context.
 
 #### Defined in
 
-[packages/account-node/src/auto.ts:33](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L33)
+[packages/account-node/src/auto.ts:33](https://github.com/verida/verida-js/blob/c03b336/packages/account-node/src/auto.ts#L33)
 
 ___
 
@@ -245,7 +245,7 @@ Link storage to this user
 
 #### Defined in
 
-[packages/account-node/src/auto.ts:80](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L80)
+[packages/account-node/src/auto.ts:80](https://github.com/verida/verida-js/blob/c03b336/packages/account-node/src/auto.ts#L80)
 
 ___
 
@@ -274,7 +274,7 @@ Link storage context service endpoint
 
 #### Defined in
 
-[packages/account-node/src/auto.ts:97](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L97)
+[packages/account-node/src/auto.ts:97](https://github.com/verida/verida-js/blob/c03b336/packages/account-node/src/auto.ts#L97)
 
 ___
 
@@ -300,7 +300,7 @@ Sign a string as the current user
 
 #### Defined in
 
-[packages/account-node/src/auto.ts:42](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L42)
+[packages/account-node/src/auto.ts:42](https://github.com/verida/verida-js/blob/c03b336/packages/account-node/src/auto.ts#L42)
 
 ___
 
@@ -325,7 +325,7 @@ ___
 
 #### Defined in
 
-[packages/account-node/src/auto.ts:50](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L50)
+[packages/account-node/src/auto.ts:50](https://github.com/verida/verida-js/blob/c03b336/packages/account-node/src/auto.ts#L50)
 
 ___
 
@@ -351,4 +351,4 @@ Unlink storage for this user
 
 #### Defined in
 
-[packages/account-node/src/auto.ts:89](https://github.com/verida/verida-js/blob/039856c/packages/account-node/src/auto.ts#L89)
+[packages/account-node/src/auto.ts:89](https://github.com/verida/verida-js/blob/c03b336/packages/account-node/src/auto.ts#L89)

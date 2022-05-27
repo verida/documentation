@@ -60,6 +60,8 @@ To build a specific package:
 
 ## Creating a release
 
+Update all the CHANGELOG.md files in each package to include entries for all the changes made since the last release.
+
 ```
 $ npx lerna run build
 $ npx lerna publish

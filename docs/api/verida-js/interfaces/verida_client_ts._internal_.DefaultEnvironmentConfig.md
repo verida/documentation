@@ -27,7 +27,7 @@
 
 #### Defined in
 
-[packages/client-ts/src/interfaces.ts:79](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/interfaces.ts#L79)
+[packages/client-ts/src/interfaces.ts:79](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/interfaces.ts#L79)
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/interfaces.ts:80](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/interfaces.ts#L80)
+[packages/client-ts/src/interfaces.ts:80](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/interfaces.ts#L80)
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/interfaces.ts:78](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/interfaces.ts#L78)
+[packages/client-ts/src/interfaces.ts:78](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/interfaces.ts#L78)
 
 ___
 
@@ -57,4 +57,4 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/interfaces.ts:81](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/interfaces.ts#L81)
+[packages/client-ts/src/interfaces.ts:81](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/interfaces.ts#L81)

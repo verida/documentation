@@ -319,7 +319,7 @@ ___
 
 ### self
 
-• `Readonly` **self**: [`default`](../classes/verida_client_ts._internal_.default-4.md)
+• `Readonly` **self**: [`default`](../classes/verida_client_ts._internal_.default-2.md)
 
 #### Defined in
 
