@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[packages/client-ts/src/context/interfaces.ts:107](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/interfaces.ts#L107)
+[packages/client-ts/src/context/interfaces.ts:107](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/interfaces.ts#L107)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/interfaces.ts:108](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/interfaces.ts#L108)
+[packages/client-ts/src/context/interfaces.ts:108](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/interfaces.ts#L108)
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/interfaces.ts:109](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/interfaces.ts#L109)
+[packages/client-ts/src/context/interfaces.ts:109](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/interfaces.ts#L109)

@@ -113,7 +113,7 @@ ___
 
 ### keyring
 
-▸ **keyring**(`contextName`): `Promise`<[`default`](verida_client_ts._internal_.default-2.md)\>
+▸ **keyring**(`contextName`): `Promise`<[`default`](verida_client_ts._internal_.default-5.md)\>
 
 Generate a keyring for this user for a given storage context.
 
@@ -125,7 +125,7 @@ Generate a keyring for this user for a given storage context.
 
 #### Returns
 
-`Promise`<[`default`](verida_client_ts._internal_.default-2.md)\>
+`Promise`<[`default`](verida_client_ts._internal_.default-5.md)\>
 
 #### Defined in
 

@@ -21,7 +21,7 @@
 
 #### Defined in
 
-[packages/account/src/interfaces.ts:4](https://github.com/verida/verida-js/blob/039856c/packages/account/src/interfaces.ts#L4)
+[packages/account/src/interfaces.ts:4](https://github.com/verida/verida-js/blob/c03b336/packages/account/src/interfaces.ts#L4)
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 #### Defined in
 
-[packages/account/src/interfaces.ts:5](https://github.com/verida/verida-js/blob/039856c/packages/account/src/interfaces.ts#L5)
+[packages/account/src/interfaces.ts:5](https://github.com/verida/verida-js/blob/c03b336/packages/account/src/interfaces.ts#L5)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[packages/account/src/interfaces.ts:7](https://github.com/verida/verida-js/blob/039856c/packages/account/src/interfaces.ts#L7)
+[packages/account/src/interfaces.ts:7](https://github.com/verida/verida-js/blob/c03b336/packages/account/src/interfaces.ts#L7)
 
 ___
 
@@ -51,4 +51,4 @@ ___
 
 #### Defined in
 
-[packages/account/src/interfaces.ts:6](https://github.com/verida/verida-js/blob/039856c/packages/account/src/interfaces.ts#L6)
+[packages/account/src/interfaces.ts:6](https://github.com/verida/verida-js/blob/c03b336/packages/account/src/interfaces.ts#L6)

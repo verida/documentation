@@ -142,7 +142,7 @@ ___
 
 #### Defined in
 
-[packages/did-document/src/interfaces.ts:17](https://github.com/verida/verida-js/blob/039856c/packages/did-document/src/interfaces.ts#L17)
+[packages/did-document/src/interfaces.ts:17](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/interfaces.ts#L17)
 
 ___
 
