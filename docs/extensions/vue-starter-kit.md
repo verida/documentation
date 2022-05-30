@@ -1,18 +1,21 @@
 ---
-title: Vue starter Kit Demo
-sidebar_position: 1
+title: Vue Components
+sidebar_position: 2
 description: Verida Developer Documentation
 keywords: [Verida, Web3, Developers, Verifiable Credentials]
 ---
 
 
-### A Guide on how to use @verida/vue-account
+### Using the @verida/vue-account Vue components
 
-Open Source Vue Components for Verida
+Verida supplies open source Vue components for easy app development. See the [Verida Vue Components repo](https://github.com/verida/verida-vue-components/tree/develop/components/account) for comprahensive documentation all options. 
 
-- This component can be customized to suite your application styles and themes .
 
-NB: This supports vue 3 only
+:::info
+This component can be customized to suite your application styles and themes. See [the available props](https://github.com/verida/verida-vue-components/tree/develop/components/account#props)
+:::
+
+NB: This supports Vue 3 only
 
 ## Usage
 
@@ -27,12 +30,9 @@ install our verida package.
 yarn add  @verida/vue-account
 ```
 
-The `@verida/vue-account` component library registration  enables the `vda-account` and vda-login` component to be accessed across your application.
+The `@verida/vue-account` component library registration  enables the `vda-account` and `vda-login` component to be accessed across your application.
 
-
-main.js
-
-```js
+```js title="main.js"
 import { createApp } from 'vue';
 import App from './App.vue';
 import Account from '@verida/vue-account';
@@ -54,7 +54,7 @@ This works for both the `vda-login` and `vda-account`
 
 This component is used to handle SSO (Single Sign on) login it leverages our `@verida/client-ts` and `@verida/account-web-vault` packages under the hood.
 
-```js
+```jsx title="Home.vue"
 <template>
   <div id="app">
     <vda-login
@@ -93,12 +93,12 @@ export default defineComponent({
 
 ### Using the `vda-account` component
 
-This component is used to display a logged-in user profile details such as `name` , `did`and  `avatar` this happens after the `vda-login` component can also be used  for SSO (Single Sign on) Login just as the `vda-login` component.
+This component is used to display a logged-in user profile details such as `name`, `did` and `avatar`. If the user is not logged in it will supply a login link and generate the SSO (Single Sign On) login form in the same way the the `vda-login` component.
 
 
-- Example code :
+- Example code:
 
-```js
+```jsx title="Login.vue"
 <template>
   <div id="app">
     <vda-account 
