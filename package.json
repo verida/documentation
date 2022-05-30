@@ -24,7 +24,7 @@
     "@mdx-js/react": "^1.6.21",
     "@svgr/webpack": "^5.5.0",
     "@verida/account-web-vault": "^1.1.11",
-    "@verida/client-ts": "^1.1.14",
+    "@verida/client-ts": "^1.1.15",
     "@verida/verifiable-credentials": "^0.1.5",
     "clsx": "^1.1.1",
     "file-loader": "^6.2.0",
