@@ -38,7 +38,10 @@ VeridaMessagingExample = () => {
     setStatus("Sending message...")
     // The data message we are sending
     const data = {
-      data: ["this is a plain text message from the tutorial. You can edit this message in the browser."]
+      data: [{
+        subject:"A new message from the tutorial!",
+        message:"this is a plain text message from the tutorial. You can edit this message in the browser."
+      }]
     }
     // set the subject
     const subject = "A new message from the tutorial!"
