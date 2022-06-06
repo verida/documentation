@@ -6,7 +6,7 @@
 
 ## Hierarchy
 
-- [`default`](verida_client_ts._internal_.default-4.md)
+- [`default`](verida_client_ts._internal_.default-2.md)
 
   ↳ **`Ajv2020`**
 
@@ -66,7 +66,7 @@
 
 #### Overrides
 
-[default](verida_client_ts._internal_.default-4.md).[constructor](verida_client_ts._internal_.default-4.md#constructor)
+[default](verida_client_ts._internal_.default-2.md).[constructor](verida_client_ts._internal_.default-2.md#constructor)
 
 #### Defined in
 
@@ -80,7 +80,7 @@ node_modules/ajv/dist/2020.d.ts:4
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[RULES](verida_client_ts._internal_.default-4.md#rules)
+[default](verida_client_ts._internal_.default-2.md).[RULES](verida_client_ts._internal_.default-2.md#rules)
 
 #### Defined in
 
@@ -94,7 +94,7 @@ ___
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[_compilations](verida_client_ts._internal_.default-4.md#_compilations)
+[default](verida_client_ts._internal_.default-2.md).[_compilations](verida_client_ts._internal_.default-2.md#_compilations)
 
 #### Defined in
 
@@ -108,7 +108,7 @@ ___
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[errors](verida_client_ts._internal_.default-4.md#errors)
+[default](verida_client_ts._internal_.default-2.md).[errors](verida_client_ts._internal_.default-2.md#errors)
 
 #### Defined in
 
@@ -122,7 +122,7 @@ ___
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[formats](verida_client_ts._internal_.default-4.md#formats)
+[default](verida_client_ts._internal_.default-2.md).[formats](verida_client_ts._internal_.default-2.md#formats)
 
 #### Defined in
 
@@ -136,7 +136,7 @@ ___
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[logger](verida_client_ts._internal_.default-4.md#logger)
+[default](verida_client_ts._internal_.default-2.md).[logger](verida_client_ts._internal_.default-2.md#logger)
 
 #### Defined in
 
@@ -150,7 +150,7 @@ ___
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[opts](verida_client_ts._internal_.default-4.md#opts)
+[default](verida_client_ts._internal_.default-2.md).[opts](verida_client_ts._internal_.default-2.md#opts)
 
 #### Defined in
 
@@ -164,7 +164,7 @@ ___
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[refs](verida_client_ts._internal_.default-4.md#refs)
+[default](verida_client_ts._internal_.default-2.md).[refs](verida_client_ts._internal_.default-2.md#refs)
 
 #### Defined in
 
@@ -178,7 +178,7 @@ ___
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[schemas](verida_client_ts._internal_.default-4.md#schemas)
+[default](verida_client_ts._internal_.default-2.md).[schemas](verida_client_ts._internal_.default-2.md#schemas)
 
 #### Defined in
 
@@ -192,7 +192,7 @@ ___
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[scope](verida_client_ts._internal_.default-4.md#scope)
+[default](verida_client_ts._internal_.default-2.md).[scope](verida_client_ts._internal_.default-2.md#scope)
 
 #### Defined in
 
@@ -202,11 +202,11 @@ ___
 
 ### MissingRefError
 
-▪ `Static` **MissingRefError**: typeof [`default`](verida_client_ts._internal_.default-6.md)
+▪ `Static` **MissingRefError**: typeof [`default`](verida_client_ts._internal_.default-4.md)
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[MissingRefError](verida_client_ts._internal_.default-4.md#missingreferror)
+[default](verida_client_ts._internal_.default-2.md).[MissingRefError](verida_client_ts._internal_.default-2.md#missingreferror)
 
 #### Defined in
 
@@ -216,11 +216,11 @@ ___
 
 ### ValidationError
 
-▪ `Static` **ValidationError**: typeof [`default`](verida_client_ts._internal_.default-5.md)
+▪ `Static` **ValidationError**: typeof [`default`](verida_client_ts._internal_.default-3.md)
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[ValidationError](verida_client_ts._internal_.default-4.md#validationerror)
+[default](verida_client_ts._internal_.default-2.md).[ValidationError](verida_client_ts._internal_.default-2.md#validationerror)
 
 #### Defined in
 
@@ -245,7 +245,7 @@ node_modules/ajv/dist/core.d.ts:121
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[$dataMetaSchema](verida_client_ts._internal_.default-4.md#$datametaschema)
+[default](verida_client_ts._internal_.default-2.md).[$dataMetaSchema](verida_client_ts._internal_.default-2.md#$datametaschema)
 
 #### Defined in
 
@@ -263,7 +263,7 @@ ___
 
 #### Overrides
 
-[default](verida_client_ts._internal_.default-4.md).[_addDefaultMetaSchema](verida_client_ts._internal_.default-4.md#_adddefaultmetaschema)
+[default](verida_client_ts._internal_.default-2.md).[_addDefaultMetaSchema](verida_client_ts._internal_.default-2.md#_adddefaultmetaschema)
 
 #### Defined in
 
@@ -291,7 +291,7 @@ ___
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[_addSchema](verida_client_ts._internal_.default-4.md#_addschema)
+[default](verida_client_ts._internal_.default-2.md).[_addSchema](verida_client_ts._internal_.default-2.md#_addschema)
 
 #### Defined in
 
@@ -309,7 +309,7 @@ ___
 
 #### Overrides
 
-[default](verida_client_ts._internal_.default-4.md).[_addVocabularies](verida_client_ts._internal_.default-4.md#_addvocabularies)
+[default](verida_client_ts._internal_.default-2.md).[_addVocabularies](verida_client_ts._internal_.default-2.md#_addvocabularies)
 
 #### Defined in
 
@@ -319,7 +319,7 @@ ___
 
 ### addFormat
 
-▸ **addFormat**(`name`, `format`): [`default`](verida_client_ts._internal_.default-4.md)
+▸ **addFormat**(`name`, `format`): [`default`](verida_client_ts._internal_.default-2.md)
 
 #### Parameters
 
@@ -330,11 +330,11 @@ ___
 
 #### Returns
 
-[`default`](verida_client_ts._internal_.default-4.md)
+[`default`](verida_client_ts._internal_.default-2.md)
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[addFormat](verida_client_ts._internal_.default-4.md#addformat)
+[default](verida_client_ts._internal_.default-2.md).[addFormat](verida_client_ts._internal_.default-2.md#addformat)
 
 #### Defined in
 
@@ -344,7 +344,7 @@ ___
 
 ### addKeyword
 
-▸ **addKeyword**(`kwdOrDef`, `def?`): [`default`](verida_client_ts._internal_.default-4.md)
+▸ **addKeyword**(`kwdOrDef`, `def?`): [`default`](verida_client_ts._internal_.default-2.md)
 
 #### Parameters
 
@@ -355,11 +355,11 @@ ___
 
 #### Returns
 
-[`default`](verida_client_ts._internal_.default-4.md)
+[`default`](verida_client_ts._internal_.default-2.md)
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[addKeyword](verida_client_ts._internal_.default-4.md#addkeyword)
+[default](verida_client_ts._internal_.default-2.md).[addKeyword](verida_client_ts._internal_.default-2.md#addkeyword)
 
 #### Defined in
 
@@ -369,7 +369,7 @@ ___
 
 ### addMetaSchema
 
-▸ **addMetaSchema**(`schema`, `key?`, `_validateSchema?`): [`default`](verida_client_ts._internal_.default-4.md)
+▸ **addMetaSchema**(`schema`, `key?`, `_validateSchema?`): [`default`](verida_client_ts._internal_.default-2.md)
 
 #### Parameters
 
@@ -381,11 +381,11 @@ ___
 
 #### Returns
 
-[`default`](verida_client_ts._internal_.default-4.md)
+[`default`](verida_client_ts._internal_.default-2.md)
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[addMetaSchema](verida_client_ts._internal_.default-4.md#addmetaschema)
+[default](verida_client_ts._internal_.default-2.md).[addMetaSchema](verida_client_ts._internal_.default-2.md#addmetaschema)
 
 #### Defined in
 
@@ -395,7 +395,7 @@ ___
 
 ### addSchema
 
-▸ **addSchema**(`schema`, `key?`, `_meta?`, `_validateSchema?`): [`default`](verida_client_ts._internal_.default-4.md)
+▸ **addSchema**(`schema`, `key?`, `_meta?`, `_validateSchema?`): [`default`](verida_client_ts._internal_.default-2.md)
 
 #### Parameters
 
@@ -408,11 +408,11 @@ ___
 
 #### Returns
 
-[`default`](verida_client_ts._internal_.default-4.md)
+[`default`](verida_client_ts._internal_.default-2.md)
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[addSchema](verida_client_ts._internal_.default-4.md#addschema)
+[default](verida_client_ts._internal_.default-2.md).[addSchema](verida_client_ts._internal_.default-2.md#addschema)
 
 #### Defined in
 
@@ -422,7 +422,7 @@ ___
 
 ### addVocabulary
 
-▸ **addVocabulary**(`definitions`): [`default`](verida_client_ts._internal_.default-4.md)
+▸ **addVocabulary**(`definitions`): [`default`](verida_client_ts._internal_.default-2.md)
 
 #### Parameters
 
@@ -432,11 +432,11 @@ ___
 
 #### Returns
 
-[`default`](verida_client_ts._internal_.default-4.md)
+[`default`](verida_client_ts._internal_.default-2.md)
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[addVocabulary](verida_client_ts._internal_.default-4.md#addvocabulary)
+[default](verida_client_ts._internal_.default-2.md).[addVocabulary](verida_client_ts._internal_.default-2.md#addvocabulary)
 
 #### Defined in
 
@@ -467,7 +467,7 @@ ___
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[compile](verida_client_ts._internal_.default-4.md#compile)
+[default](verida_client_ts._internal_.default-2.md).[compile](verida_client_ts._internal_.default-2.md#compile)
 
 #### Defined in
 
@@ -494,7 +494,7 @@ node_modules/ajv/dist/core.d.ts:134
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[compile](verida_client_ts._internal_.default-4.md#compile)
+[default](verida_client_ts._internal_.default-2.md).[compile](verida_client_ts._internal_.default-2.md#compile)
 
 #### Defined in
 
@@ -522,7 +522,7 @@ node_modules/ajv/dist/core.d.ts:135
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[compile](verida_client_ts._internal_.default-4.md#compile)
+[default](verida_client_ts._internal_.default-2.md).[compile](verida_client_ts._internal_.default-2.md#compile)
 
 #### Defined in
 
@@ -549,7 +549,7 @@ node_modules/ajv/dist/core.d.ts:136
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[compile](verida_client_ts._internal_.default-4.md#compile)
+[default](verida_client_ts._internal_.default-2.md).[compile](verida_client_ts._internal_.default-2.md#compile)
 
 #### Defined in
 
@@ -576,7 +576,7 @@ node_modules/ajv/dist/core.d.ts:137
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[compile](verida_client_ts._internal_.default-4.md#compile)
+[default](verida_client_ts._internal_.default-2.md).[compile](verida_client_ts._internal_.default-2.md#compile)
 
 #### Defined in
 
@@ -607,7 +607,7 @@ ___
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[compileAsync](verida_client_ts._internal_.default-4.md#compileasync)
+[default](verida_client_ts._internal_.default-2.md).[compileAsync](verida_client_ts._internal_.default-2.md#compileasync)
 
 #### Defined in
 
@@ -634,7 +634,7 @@ node_modules/ajv/dist/core.d.ts:139
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[compileAsync](verida_client_ts._internal_.default-4.md#compileasync)
+[default](verida_client_ts._internal_.default-2.md).[compileAsync](verida_client_ts._internal_.default-2.md#compileasync)
 
 #### Defined in
 
@@ -661,7 +661,7 @@ node_modules/ajv/dist/core.d.ts:140
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[compileAsync](verida_client_ts._internal_.default-4.md#compileasync)
+[default](verida_client_ts._internal_.default-2.md).[compileAsync](verida_client_ts._internal_.default-2.md#compileasync)
 
 #### Defined in
 
@@ -688,7 +688,7 @@ node_modules/ajv/dist/core.d.ts:141
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[compileAsync](verida_client_ts._internal_.default-4.md#compileasync)
+[default](verida_client_ts._internal_.default-2.md).[compileAsync](verida_client_ts._internal_.default-2.md#compileasync)
 
 #### Defined in
 
@@ -706,7 +706,7 @@ ___
 
 #### Overrides
 
-[default](verida_client_ts._internal_.default-4.md).[defaultMeta](verida_client_ts._internal_.default-4.md#defaultmeta)
+[default](verida_client_ts._internal_.default-2.md).[defaultMeta](verida_client_ts._internal_.default-2.md#defaultmeta)
 
 #### Defined in
 
@@ -731,7 +731,7 @@ ___
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[errorsText](verida_client_ts._internal_.default-4.md#errorstext)
+[default](verida_client_ts._internal_.default-2.md).[errorsText](verida_client_ts._internal_.default-2.md#errorstext)
 
 #### Defined in
 
@@ -755,7 +755,7 @@ ___
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[getKeyword](verida_client_ts._internal_.default-4.md#getkeyword)
+[default](verida_client_ts._internal_.default-2.md).[getKeyword](verida_client_ts._internal_.default-2.md#getkeyword)
 
 #### Defined in
 
@@ -785,7 +785,7 @@ ___
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[getSchema](verida_client_ts._internal_.default-4.md#getschema)
+[default](verida_client_ts._internal_.default-2.md).[getSchema](verida_client_ts._internal_.default-2.md#getschema)
 
 #### Defined in
 
@@ -795,7 +795,7 @@ ___
 
 ### removeKeyword
 
-▸ **removeKeyword**(`keyword`): [`default`](verida_client_ts._internal_.default-4.md)
+▸ **removeKeyword**(`keyword`): [`default`](verida_client_ts._internal_.default-2.md)
 
 #### Parameters
 
@@ -805,11 +805,11 @@ ___
 
 #### Returns
 
-[`default`](verida_client_ts._internal_.default-4.md)
+[`default`](verida_client_ts._internal_.default-2.md)
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[removeKeyword](verida_client_ts._internal_.default-4.md#removekeyword)
+[default](verida_client_ts._internal_.default-2.md).[removeKeyword](verida_client_ts._internal_.default-2.md#removekeyword)
 
 #### Defined in
 
@@ -819,7 +819,7 @@ ___
 
 ### removeSchema
 
-▸ **removeSchema**(`schemaKeyRef?`): [`default`](verida_client_ts._internal_.default-4.md)
+▸ **removeSchema**(`schemaKeyRef?`): [`default`](verida_client_ts._internal_.default-2.md)
 
 #### Parameters
 
@@ -829,11 +829,11 @@ ___
 
 #### Returns
 
-[`default`](verida_client_ts._internal_.default-4.md)
+[`default`](verida_client_ts._internal_.default-2.md)
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[removeSchema](verida_client_ts._internal_.default-4.md#removeschema)
+[default](verida_client_ts._internal_.default-2.md).[removeSchema](verida_client_ts._internal_.default-2.md#removeschema)
 
 #### Defined in
 
@@ -858,7 +858,7 @@ ___
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[validate](verida_client_ts._internal_.default-4.md#validate)
+[default](verida_client_ts._internal_.default-2.md).[validate](verida_client_ts._internal_.default-2.md#validate)
 
 #### Defined in
 
@@ -879,7 +879,7 @@ node_modules/ajv/dist/core.d.ts:127
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[validate](verida_client_ts._internal_.default-4.md#validate)
+[default](verida_client_ts._internal_.default-2.md).[validate](verida_client_ts._internal_.default-2.md#validate)
 
 #### Defined in
 
@@ -906,7 +906,7 @@ data is T
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[validate](verida_client_ts._internal_.default-4.md#validate)
+[default](verida_client_ts._internal_.default-2.md).[validate](verida_client_ts._internal_.default-2.md#validate)
 
 #### Defined in
 
@@ -933,7 +933,7 @@ data is T
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[validate](verida_client_ts._internal_.default-4.md#validate)
+[default](verida_client_ts._internal_.default-2.md).[validate](verida_client_ts._internal_.default-2.md#validate)
 
 #### Defined in
 
@@ -961,7 +961,7 @@ data is JTDDataType<T\>
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[validate](verida_client_ts._internal_.default-4.md#validate)
+[default](verida_client_ts._internal_.default-2.md).[validate](verida_client_ts._internal_.default-2.md#validate)
 
 #### Defined in
 
@@ -988,7 +988,7 @@ node_modules/ajv/dist/core.d.ts:131
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[validate](verida_client_ts._internal_.default-4.md#validate)
+[default](verida_client_ts._internal_.default-2.md).[validate](verida_client_ts._internal_.default-2.md#validate)
 
 #### Defined in
 
@@ -1015,7 +1015,7 @@ data is T \| Promise<T\>
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[validate](verida_client_ts._internal_.default-4.md#validate)
+[default](verida_client_ts._internal_.default-2.md).[validate](verida_client_ts._internal_.default-2.md#validate)
 
 #### Defined in
 
@@ -1040,7 +1040,7 @@ ___
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-4.md).[validateSchema](verida_client_ts._internal_.default-4.md#validateschema)
+[default](verida_client_ts._internal_.default-2.md).[validateSchema](verida_client_ts._internal_.default-2.md#validateschema)
 
 #### Defined in
 

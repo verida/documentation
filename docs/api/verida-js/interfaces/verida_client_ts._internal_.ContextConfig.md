@@ -21,7 +21,7 @@ Interface for ContextConfig
 
 #### Defined in
 
-[packages/client-ts/src/interfaces.ts:36](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/interfaces.ts#L36)
+[packages/client-ts/src/interfaces.ts:36](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/interfaces.ts#L36)
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/interfaces.ts:35](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/interfaces.ts#L35)
+[packages/client-ts/src/interfaces.ts:35](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/interfaces.ts#L35)

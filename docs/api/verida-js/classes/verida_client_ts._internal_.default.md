@@ -109,7 +109,7 @@ ___
 
 ### get
 
-▸ **get**(`did`): `Promise`<`undefined` \| [`default`](verida_client_ts._internal_.default-3.md)\>
+▸ **get**(`did`): `Promise`<`undefined` \| [`default`](verida_client_ts._internal_.default-6.md)\>
 
 #### Parameters
 
@@ -119,7 +119,7 @@ ___
 
 #### Returns
 
-`Promise`<`undefined` \| [`default`](verida_client_ts._internal_.default-3.md)\>
+`Promise`<`undefined` \| [`default`](verida_client_ts._internal_.default-6.md)\>
 
 #### Defined in
 
@@ -165,7 +165,7 @@ Save a DID document
 
 | Name | Type |
 | :------ | :------ |
-| `document` | [`default`](verida_client_ts._internal_.default-3.md) |
+| `document` | [`default`](verida_client_ts._internal_.default-6.md) |
 
 #### Returns
 

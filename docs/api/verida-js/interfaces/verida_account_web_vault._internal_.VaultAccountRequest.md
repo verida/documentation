@@ -9,6 +9,7 @@
 ### Properties
 
 - [logoUrl](verida_account_web_vault._internal_.VaultAccountRequest.md#logourl)
+- [openUrl](verida_account_web_vault._internal_.VaultAccountRequest.md#openurl)
 
 ## Properties
 
@@ -18,4 +19,14 @@
 
 #### Defined in
 
-[packages/account-web-vault/src/interfaces.ts:4](https://github.com/verida/verida-js/blob/039856c/packages/account-web-vault/src/interfaces.ts#L4)
+[packages/account-web-vault/src/interfaces.ts:4](https://github.com/verida/verida-js/blob/c03b336/packages/account-web-vault/src/interfaces.ts#L4)
+
+___
+
+### openUrl
+
+• `Optional` **openUrl**: `string`
+
+#### Defined in
+
+[packages/account-web-vault/src/interfaces.ts:5](https://github.com/verida/verida-js/blob/c03b336/packages/account-web-vault/src/interfaces.ts#L5)

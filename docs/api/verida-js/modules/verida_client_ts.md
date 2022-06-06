@@ -20,9 +20,10 @@
 - [Context](../classes/verida_client_ts.Context.md)
 - [Datastore](../classes/verida_client_ts.Datastore.md)
 - [Network](../classes/verida_client_ts.Network.md)
+- [Profile](../classes/verida_client_ts.Profile.md)
+- [Schema](../classes/verida_client_ts.Schema.md)
 
 ### Interfaces
 
 - [Database](../interfaces/verida_client_ts.Database.md)
 - [Messaging](../interfaces/verida_client_ts.Messaging.md)
-- [Notification](../interfaces/verida_client_ts.Notification.md)

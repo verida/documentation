@@ -41,7 +41,7 @@ Interface for any database returned from a storage engine
 
 #### Defined in
 
-[packages/client-ts/src/context/database.ts:13](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/database.ts#L13)
+[packages/client-ts/src/context/database.ts:13](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/database.ts#L13)
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/database.ts:11](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/database.ts#L11)
+[packages/client-ts/src/context/database.ts:11](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/database.ts#L11)
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/database.ts:12](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/database.ts#L12)
+[packages/client-ts/src/context/database.ts:12](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/database.ts#L12)
 
 ___
 
@@ -97,7 +97,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/database.ts:10](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/database.ts#L10)
+[packages/client-ts/src/context/database.ts:10](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/database.ts#L10)
 
 ___
 
@@ -111,7 +111,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/database.ts:15](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/database.ts#L15)
+[packages/client-ts/src/context/database.ts:15](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/database.ts#L15)
 
 ___
 
@@ -132,7 +132,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/database.ts:9](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/database.ts#L9)
+[packages/client-ts/src/context/database.ts:9](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/database.ts#L9)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/database.ts:17](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/database.ts#L17)
+[packages/client-ts/src/context/database.ts:17](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/database.ts#L17)
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/database.ts:16](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/database.ts#L16)
+[packages/client-ts/src/context/database.ts:16](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/database.ts#L16)
 
 ___
 
@@ -174,7 +174,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/database.ts:18](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/database.ts#L18)
+[packages/client-ts/src/context/database.ts:18](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/database.ts#L18)
 
 ___
 
@@ -195,7 +195,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/database.ts:8](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/database.ts#L8)
+[packages/client-ts/src/context/database.ts:8](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/database.ts#L8)
 
 ___
 
@@ -216,4 +216,4 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/database.ts:14](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/context/database.ts#L14)
+[packages/client-ts/src/context/database.ts:14](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/database.ts#L14)

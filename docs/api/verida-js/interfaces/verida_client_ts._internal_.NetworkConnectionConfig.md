@@ -22,7 +22,7 @@ Interface for NetworkConnectionConfig
 
 #### Defined in
 
-[packages/client-ts/src/interfaces.ts:45](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/interfaces.ts#L45)
+[packages/client-ts/src/interfaces.ts:45](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/interfaces.ts#L45)
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/interfaces.ts:43](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/interfaces.ts#L43)
+[packages/client-ts/src/interfaces.ts:43](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/interfaces.ts#L43)
 
 ___
 
@@ -42,4 +42,4 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/interfaces.ts:44](https://github.com/verida/verida-js/blob/039856c/packages/client-ts/src/interfaces.ts#L44)
+[packages/client-ts/src/interfaces.ts:44](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/interfaces.ts#L44)

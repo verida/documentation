@@ -55,6 +55,7 @@
 - [CodeGenOptions](../interfaces/verida_verifiable_credentials._internal_.CodeGenOptions.md)
 - [CodeKeywordDefinition](../interfaces/verida_verifiable_credentials._internal_.CodeKeywordDefinition.md)
 - [CodeOptions](../interfaces/verida_verifiable_credentials._internal_.CodeOptions.md)
+- [CreateCredentialJWT](../interfaces/verida_verifiable_credentials._internal_.CreateCredentialJWT.md)
 - [CurrentOptions](../interfaces/verida_verifiable_credentials._internal_.CurrentOptions.md)
 - [DIDDocumentStruct](../interfaces/verida_verifiable_credentials._internal_.DIDDocumentStruct.md)
 - [DataValidateFunction](../interfaces/verida_verifiable_credentials._internal_.DataValidateFunction.md)

@@ -27,12 +27,13 @@ import { VaultAccount } from '@verida/account-web-vault';
 const VERIDA_ENVIRONMENT = EnvironmentType.TESTNET;
 const CONTEXT_NAME = 'My Application Context Name';
 
-# The LOGO_URL should be a 170x170 PNG file
+// The LOGO_URL should be a 170x170 PNG file
 const LOGO_URL = "https://assets.verida.io/verida_login_request_logo_170x170.png";
 
 const account = new VaultAccount({
   request: {
     logoUrl: "https://assets.verida.io/verida_login_request_logo_170x170.png",
+    openURL: window.location.href, // will redirect the user to this same page after accepting the login request in the Vault app
   }
 });
 
@@ -66,3 +67,9 @@ These (all optional) config options include:
 - `request?.openUrl?` — An optional URL for the Vault to open in the default browser on the user's mobile device after login is accepted. This will automatically authorize the user in local storage so future page loads of your application will be authenticated.
 - `callback?` — A callback function when the auth response is received.
 - `deeplinkId?` — The HTML element ID of a link that should have the deeplink URI attached to the `href` property
+
+## Notes
+
+Due to limitations, the redirection of the user, enabled by the `request?.openUrl?` option, will open a new tab in the default browser.
+
+As a complement, it is recommended to use the [hasSession](../api/verida-js/modules/verida_account_web_vault.md#hassession) method and a conditional `connect()` to optimise the user experience. An example of this pattern is shown in the [Single Sign On tutorial](../tutorial/SSO.mdx).

@@ -4,12 +4,6 @@
 
 [@verida/client-ts](../modules/verida_client_ts.md).[<internal\>](../modules/verida_client_ts._internal_.md).default
 
-## Hierarchy
-
-- [`Error`](../modules/verida_client_ts._internal_.md#error)
-
-  ↳ **`default`**
-
 ## Table of contents
 
 ### Constructors
@@ -18,172 +12,367 @@
 
 ### Properties
 
-- [message](verida_client_ts._internal_.default-6.md#message)
-- [missingRef](verida_client_ts._internal_.default-6.md#missingref)
-- [missingSchema](verida_client_ts._internal_.default-6.md#missingschema)
-- [name](verida_client_ts._internal_.default-6.md#name)
-- [stack](verida_client_ts._internal_.default-6.md#stack)
-- [prepareStackTrace](verida_client_ts._internal_.default-6.md#preparestacktrace)
-- [stackTraceLimit](verida_client_ts._internal_.default-6.md#stacktracelimit)
+- [doc](verida_client_ts._internal_.default-6.md#doc)
+- [errors](verida_client_ts._internal_.default-6.md#errors)
+- [getProofData](verida_client_ts._internal_.default-6.md#getproofdata)
+
+### Accessors
+
+- [id](verida_client_ts._internal_.default-6.md#id)
 
 ### Methods
 
-- [captureStackTrace](verida_client_ts._internal_.default-6.md#capturestacktrace)
+- [addContext](verida_client_ts._internal_.default-6.md#addcontext)
+- [addContextAsymKey](verida_client_ts._internal_.default-6.md#addcontextasymkey)
+- [addContextService](verida_client_ts._internal_.default-6.md#addcontextservice)
+- [addContextSignKey](verida_client_ts._internal_.default-6.md#addcontextsignkey)
+- [export](verida_client_ts._internal_.default-6.md#export)
+- [getErrors](verida_client_ts._internal_.default-6.md#geterrors)
+- [import](verida_client_ts._internal_.default-6.md#import)
+- [locateServiceEndpoint](verida_client_ts._internal_.default-6.md#locateserviceendpoint)
+- [removeContext](verida_client_ts._internal_.default-6.md#removecontext)
+- [signProof](verida_client_ts._internal_.default-6.md#signproof)
+- [verifyContextSignature](verida_client_ts._internal_.default-6.md#verifycontextsignature)
+- [verifyProof](verida_client_ts._internal_.default-6.md#verifyproof)
+- [verifySig](verida_client_ts._internal_.default-6.md#verifysig)
+- [generateContextHash](verida_client_ts._internal_.default-6.md#generatecontexthash)
 
 ## Constructors
 
 ### constructor
 
-• **new default**(`baseId`, `ref`, `msg?`)
+• **new default**(`doc`, `publicKeyHex?`)
+
+Force lower case DID as we can't guarantee the DID will always be provided with checksum
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `baseId` | `string` |
-| `ref` | `string` |
-| `msg?` | `string` |
-
-#### Overrides
-
-Error.constructor
+| `doc` | `string` \| [`DIDDocumentStruct`](../interfaces/verida_client_ts._internal_.DIDDocumentStruct.md) |
+| `publicKeyHex?` | `string` |
 
 #### Defined in
 
-node_modules/ajv/dist/compile/ref_error.d.ts:4
+packages/did-document/dist/did-document.d.ts:12
 
 ## Properties
 
-### message
+### doc
 
-• **message**: `string`
-
-#### Inherited from
-
-Error.message
+• `Private` **doc**: `any`
 
 #### Defined in
 
-node_modules/typescript/lib/lib.es5.d.ts:974
+packages/did-document/dist/did-document.d.ts:5
 
 ___
 
-### missingRef
+### errors
 
-• `Readonly` **missingRef**: `string`
+• `Protected` **errors**: `string`[]
 
 #### Defined in
 
-node_modules/ajv/dist/compile/ref_error.d.ts:2
+packages/did-document/dist/did-document.d.ts:6
 
 ___
 
-### missingSchema
+### getProofData
 
-• `Readonly` **missingSchema**: `string`
-
-#### Defined in
-
-node_modules/ajv/dist/compile/ref_error.d.ts:3
-
-___
-
-### name
-
-• **name**: `string`
-
-#### Inherited from
-
-Error.name
+• `Private` **getProofData**: `any`
 
 #### Defined in
 
-node_modules/typescript/lib/lib.es5.d.ts:973
+packages/did-document/dist/did-document.d.ts:33
 
-___
+## Accessors
 
-### stack
+### id
 
-• `Optional` **stack**: `string`
+• `get` **id**(): `string`
 
-#### Inherited from
+#### Returns
 
-Error.stack
-
-#### Defined in
-
-node_modules/typescript/lib/lib.es5.d.ts:975
-
-___
-
-### prepareStackTrace
-
-▪ `Static` `Optional` **prepareStackTrace**: (`err`: [`Error`](../modules/verida_client_ts._internal_.md#error), `stackTraces`: [`CallSite`](../interfaces/verida_client_ts._internal_.CallSite.md)[]) => `any`
-
-#### Type declaration
-
-▸ (`err`, `stackTraces`): `any`
-
-Optional override for formatting stack traces
-
-**`see`** https://v8.dev/docs/stack-trace-api#customizing-stack-traces
-
-##### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `err` | [`Error`](../modules/verida_client_ts._internal_.md#error) |
-| `stackTraces` | [`CallSite`](../interfaces/verida_client_ts._internal_.CallSite.md)[] |
-
-##### Returns
-
-`any`
-
-#### Inherited from
-
-Error.prepareStackTrace
+`string`
 
 #### Defined in
 
-node_modules/@types/node/globals.d.ts:11
-
-___
-
-### stackTraceLimit
-
-▪ `Static` **stackTraceLimit**: `number`
-
-#### Inherited from
-
-Error.stackTraceLimit
-
-#### Defined in
-
-node_modules/@types/node/globals.d.ts:13
+packages/did-document/dist/did-document.d.ts:13
 
 ## Methods
 
-### captureStackTrace
+### addContext
 
-▸ `Static` **captureStackTrace**(`targetObject`, `constructorOpt?`): `void`
+▸ **addContext**(`contextName`, `keyring`, `endpoints`): `Promise`<`void`\>
 
-Create .stack property on a target object
+Not used directly, used for testing
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `targetObject` | `object` |
-| `constructorOpt?` | `Function` |
+| `contextName` | `string` |
+| `keyring` | [`default`](verida_client_ts._internal_.default-5.md) |
+| `endpoints` | [`Endpoints`](../interfaces/verida_client_ts._internal_.Endpoints.md) |
+
+#### Returns
+
+`Promise`<`void`\>
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:22
+
+___
+
+### addContextAsymKey
+
+▸ **addContextAsymKey**(`contextHash`, `publicKeyHex`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `contextHash` | `string` |
+| `publicKeyHex` | `string` |
 
 #### Returns
 
 `void`
 
-#### Inherited from
+#### Defined in
 
-Error.captureStackTrace
+packages/did-document/dist/did-document.d.ts:28
+
+___
+
+### addContextService
+
+▸ **addContextService**(`contextHash`, `endpointType`, `serviceType`, `endpointUri`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `contextHash` | `string` |
+| `endpointType` | [`EndpointType`](../enums/verida_client_ts._internal_.EndpointType.md) |
+| `serviceType` | `string` |
+| `endpointUri` | `string` |
+
+#### Returns
+
+`void`
 
 #### Defined in
 
-node_modules/@types/node/globals.d.ts:4
+packages/did-document/dist/did-document.d.ts:26
+
+___
+
+### addContextSignKey
+
+▸ **addContextSignKey**(`contextHash`, `publicKeyHex`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `contextHash` | `string` |
+| `publicKeyHex` | `string` |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:27
+
+___
+
+### export
+
+▸ **export**(): [`DIDDocumentStruct`](../interfaces/verida_client_ts._internal_.DIDDocumentStruct.md)
+
+#### Returns
+
+[`DIDDocumentStruct`](../interfaces/verida_client_ts._internal_.DIDDocumentStruct.md)
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:25
+
+___
+
+### getErrors
+
+▸ **getErrors**(): `string`[]
+
+#### Returns
+
+`string`[]
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:14
+
+___
+
+### import
+
+▸ **import**(`doc`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `doc` | [`DIDDocumentStruct`](../interfaces/verida_client_ts._internal_.DIDDocumentStruct.md) |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:24
+
+___
+
+### locateServiceEndpoint
+
+▸ **locateServiceEndpoint**(`contextName`, `endpointType`): `undefined` \| [`ServiceEndpoint`](../interfaces/verida_client_ts._internal_.ServiceEndpoint.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `contextName` | `string` |
+| `endpointType` | [`EndpointType`](../enums/verida_client_ts._internal_.EndpointType.md) |
+
+#### Returns
+
+`undefined` \| [`ServiceEndpoint`](../interfaces/verida_client_ts._internal_.ServiceEndpoint.md)
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:35
+
+___
+
+### removeContext
+
+▸ **removeContext**(`contextName`): `boolean`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `contextName` | `string` |
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:23
+
+___
+
+### signProof
+
+▸ **signProof**(`privateKey`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `privateKey` | `string` \| `Uint8Array` |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:29
+
+___
+
+### verifyContextSignature
+
+▸ **verifyContextSignature**(`data`, `contextName`, `signature`, `contextIsHash?`): `boolean`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `data` | `any` |
+| `contextName` | `string` |
+| `signature` | `string` |
+| `contextIsHash?` | `boolean` |
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:32
+
+___
+
+### verifyProof
+
+▸ **verifyProof**(): `boolean`
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:30
+
+___
+
+### verifySig
+
+▸ **verifySig**(`data`, `signature`): `boolean`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `data` | `any` |
+| `signature` | `string` |
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:31
+
+___
+
+### generateContextHash
+
+▸ `Static` **generateContextHash**(`did`, `contextName`): `string`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `did` | `string` |
+| `contextName` | `string` |
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:34
