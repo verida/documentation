@@ -2,7 +2,7 @@ root / [Modules](modules.md)
 
 # Verida Javascript Library
 
-This monorepo contains [Verida Client Library](https://github.com/verida/verida-js/tree/main/packages/verida-ts) and a variety of utility packages that support that library.
+This monorepo contains [Verida Client Library](https://github.com/verida/verida-js/tree/main/packages/client-ts) and a variety of utility packages that support that library.
 
 There is a React Native repository that maintains a slightly modified version of the `Verida Client Library` that is used to generate the [@verida/client-rn](https://github.com/verida/client-rn) package.
 
