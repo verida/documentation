@@ -68,7 +68,31 @@ const options = {
     write: ContextInterfaces.PermissionOptionsEnum.PUBLIC
   }
 }
+
 const db = await context.openExternalDatabase('test_external_db', otherAccountDid, options)
+```
+
+#### External database with external context
+
+You can also open an external database  using the  `Client` class in the `@verida/client-ts` package .
+
+```tsx
+
+import { Client } from '@verida/client-ts';
+
+const clientConfig = {
+  environment: 'testnet',
+  didServerUrl: 'https://dids.testnet.verida.io:5001'
+}
+
+const context = await new Client(clientConfig).openExternalContext(
+  'contextName',
+  'did:vda:0x4e8fdBaAA46E4Bfa914e206e9415Aa05d4CC6722'
+);
+
+const db = await context.openExternalDatabase('test_external_db')
+
+
 ```
 
 ### Using Databases
