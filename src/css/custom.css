@@ -15,9 +15,24 @@
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 95%;
   --ifm-text-color: #111111;
- --ifm-bg-gradient:linear-gradient(279.5deg, rgba(231, 222, 255, 0.4) 2.09%, rgba(233, 247, 255, 0.4) 100%);
+  --ifm-bg-gradient: linear-gradient(279.5deg, rgba(231, 222, 255, 0.4) 2.09%, rgba(233, 247, 255, 0.4) 100%);
 }
 
+
+@font-face {
+  font-family: 'Sora';
+  src:
+    url('/fonts/Sora-Medium.ttf') format('truetype'),
+    url('/fonts/Sora-SemiBold.ttf') format('truetype'),
+    url('/fonts/Sora-Thin.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Sora', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+
+}
 
 .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.1);
@@ -32,13 +47,13 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 
 
 *[id^='mermaid-svg'] .titleText {
-  font-size: 30pt !important; 
+  font-size: 30pt !important;
 }
 
 
 *[id^='mermaid-svg'] .grid .tick text {
-  font-size: 20pt !important; 
-} 
+  font-size: 20pt !important;
+}
 
 .tutorial-status {
   margin-top: 10px;
