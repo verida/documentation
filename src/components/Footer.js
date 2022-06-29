@@ -114,7 +114,7 @@ const Footer = () => {
 				<hr className={styles.footerLine} />
 				<div className={styles.footerBottomContent}>
 					<span className='text-white' href='##'>
-						@&nbsp;Verida&nbsp;{new Date().getFullYear()}
+						&copy;&nbsp;Verida&nbsp;{new Date().getFullYear()}
 					</span>
 					<a
 						className='text-white'
