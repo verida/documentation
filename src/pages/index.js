@@ -8,7 +8,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
 import ContentCard from "../components/cards/ContentCard";
 import DiscordCard from "../components/cards/DiscordCard";
-import PartnerShipCard from "../components/cards/PartnerShipCard";
+import PartnerShipCard from "../components/cards/PartnershipCard";
 import GithubCard from "../components/cards/GithubCard";
 import Footer from "../components/Footer";
 import ReadDocsIcon from "@site/static/img/read_docs.svg";
