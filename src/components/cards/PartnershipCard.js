@@ -9,6 +9,7 @@ const PartnerShipCard = () => {
 			href='https://www.verida.io/ecosystem#partner'
 		>
 			<div className={styles.discordBanner}>
+				<div></div>
 				<div className={styles.discordBannerContent}>
 					<h3>Verida Early Adopter Program</h3>
 					<p>

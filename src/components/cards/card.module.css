@@ -1,4 +1,4 @@
-.discordBannerSvg{
+.discordBannerSvg {
     width: 100%;
     height: 100%;
 }
@@ -37,6 +37,7 @@
     border: 1px solid #E6E8EB;
     box-sizing: border-box;
     border-radius: 8px;
+    width: 50rem;
 }
 
 .discordBanner:hover {
@@ -101,4 +102,12 @@
 .GithubLinkText a {
     text-decoration: none;
     color: var(--ifm-text-color);
+}
+
+
+@media screen and (max-width:768px) {
+    .discordBanner {
+        width:18rem;
+        padding: 0rem;
+    }
 }
