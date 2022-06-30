@@ -31,16 +31,18 @@
     font-size: 15px;
     line-height: 20px;
     letter-spacing: -0.204545px;
-    color: var(--ifm-text-color);
-
 }
 
 .footerBottomContent {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 2.1rem 0;
+    margin: 1rem 0;
 
+}
+
+.footerSection {
+    margin: 0.3rem 0 0 1rem ;
 }
 
 .footerSection ul {
@@ -50,7 +52,6 @@
     padding: 0;
     color: var(--ifm-text-color);
 }
-
 
 .footerSection ul li {
     margin: 1.3rem 0;
