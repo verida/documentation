@@ -96,24 +96,25 @@ export default function Home() {
 					description='Verida enables the development of secure, decentralized applications that allow users to own and control how their data is used and shared.'
 				>
 					<Head>
-						<title>Verida Web3 Toolkit</title>
-						<meta name='title' content='Verida Web3 Toolkit' />
+						<title>Verida Developer Portal</title>
+						<meta name='title' content='Verida Developer Portal' />
 						<meta name='description' content={description} />
 						<meta property='og:type' content='website' />
 						<meta property='og:url' content='https://developers.verida.io/' />
-						<meta property='og:title' content='Verida Web3 Toolkit' />
+						<meta property='og:title' content='Verida Developer Portal' />
 						<meta property='og:description' content={description} />
 						<meta property='twitter:card' content='summary_large_image' />
 						<meta
 							property='twitter:url'
 							content='https://developers.verida.io/'
 						/>
-						<meta property='twitter:title' content='Verida Web3 Toolkit' />
+						<meta property='twitter:title' content='Verida Developer Portal' />
 						<meta property='twitter:description' content={description} />
 					</Head>
 					<main className={styles.mainSection}>
 						<section className={styles.heroSection}>
-							<h1>Welcome to your Web3 toolkit!</h1>
+							<h1>Welcome to the Verida Developer Portal</h1>
+							<div>Verida is a multi-chain protocol for interoperable database storage and messaging built on decentralized identity.</div>
 						</section>
 						<section className={styles.cardSection}>
 							<div className={styles.contentCard}>
