@@ -30,9 +30,9 @@ Finally, do you need to update or delete data? Be careful here - some storage sy
 
 Blockchain storage is the first type of storage most web3 developers use. However, it doesn't take long to realize this is best suited for very specific types of data such as links to external data like NFTs. The nature of a blockchain makes it expensive and inefficient to store more than small amounts of data and the immutable, public nature of the data means it is unsuitable for many applications.
 
-Many developers discover these limitations and switch to using IPFS. IPFS is a globally accessible content addressable file storage network, where files are referenced by the hash of their content. This makes it very well suited to "flat file" type storage, and it has had great success as storage for NFT images. In broad terms IPFS is used in a similar way to how AWS S3 is used in Web2 development - to make files available to people and applications.
+Many developers discover these limitations and switch to using [IPFS](https://ipfs.io/). IPFS is a globally accessible content addressable file storage network, where files are referenced by the hash of their content. This makes it very well suited to "flat file" type storage, and it has had great success as storage for NFT images. In broad terms IPFS is used in a similar way to how AWS S3 is used in Web2 development - to make files available to people and applications.
 
-The next limitation Web3 developers find is around private data and managing access permissions to that data. Users want self-sovereignty over personal data so they can control their own information. How do you store things like a user's interests or even things like health information in a way that doesn't make it publically available to anyone for data mining or identity theft?
+The next limitation Web3 developers find is around private data and managing access permissions to that data. Users want self-sovereignty over personal data so they can control their own information. How do you store things like a user's interests or even things like health information in a way that doesn't make it publicaly available to anyone for data mining or identity theft?
 
 Many developers resort to trying to encrypt data and store it either on-chain or in encrypted files on IPFS. There are a number of serious problems with this:
 
@@ -42,11 +42,11 @@ Many developers resort to trying to encrypt data and store it either on-chain or
 *  Updates and deletes are implemented by copying all data to a new version of the file and resaving it. This is both expensive and slow.
 *  No control over the physical storage location of data which is often important for legal or policy reasons.
 
-Verida exists to solve these problems. The Verida DbStore is a decentralized, end-to-end (E2E) encrypted document database.
+Verida exists to solve these problems. The [Verida DbStore](https://github.com/verida/documentation/blob/feature/where-to-store-web3-data/docs/concepts/data-storage) is a decentralized, end-to-end (E2E) encrypted document database.
 
 Because it is a database, developers get strong query capabilities. Data updates are trivial and fast which means correcting any errors in the data is simple. Databases are both encrypted (so storage node operators can never see the data) and protected by an authentication system (so they are inaccessible to non-authorized users).
 
-Verida storage nodes are open source and can be self-hosted. Users can choose what node to store their data on, meaning that the legal and policy issues around data sovereignty are easily addressed. Data can be replicated to multiple non-related nodes for better availability and performance. 
+Verida [storage nodes](https://github.com/verida/documentation/blob/feature/where-to-store-web3-data/docs/network/storage-node) are open source and can be self-hosted. Users can choose what node to store their data on, meaning that the legal and policy issues around data sovereignty are easily addressed. Data can be replicated to multiple non-related nodes for better availability and performance. 
 
 The table below is an easy to use reference to look at when comparing the three methods:
 
