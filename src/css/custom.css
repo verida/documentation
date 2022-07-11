@@ -72,6 +72,6 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(233, 247, 255, 0.4)
 }
 
-.table-first-column {
+.web3-compare-table td:first-child {
   font-weight: bold;
 };
