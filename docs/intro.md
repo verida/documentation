@@ -7,8 +7,10 @@ import AppleAppStore from '/img/AppStore_button.svg';
 import GooglePlay from '/img/GooglePlayCOMINGSOON.svg';
 
 
-# Welcome to your Web3 toolkit!
-Verida is a network of personal data owned and controlled by users. Users are incentivized to unlock their data stored on centralized platforms. Builders access this data for new exciting use cases such as trusted storage, decentralized messaging and single sign on. Users' private data can be used as inputs into smart contracts, enabling connectivity to multiple blockchains.
+# Welcome to the Verida Developer Portal
+Verida is a multi-chain protocol for interoperable database storage and messaging built on decentralized identity where personal data is owned and controlled by users.
+
+Users are incentivized to unlock their data stored on centralized platforms. Builders access this data for new exciting use cases such as trusted storage, decentralized messaging and single sign on. Users' private data can be used as inputs into smart contracts, enabling connectivity to multiple blockchains.
 
 
 ## Getting Started

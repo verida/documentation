@@ -67,3 +67,11 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   margin-left: 1rem;
   margin-right: 1rem;
 }
+
+.web3-compare-table thead th {
+  background-color: rgba(233, 247, 255, 0.4)
+}
+
+.web3-compare-table td:first-child {
+  font-weight: bold;
+};
