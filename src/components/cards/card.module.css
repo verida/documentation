@@ -3,10 +3,9 @@
     height: 100%;
 }
 
-.contentCard {
-    margin: 0.6rem 1rem;
+.contentCardBox {
+  margin: 0 0.5rem;
 }
-
 
 .contentCard:hover {
     cursor: pointer;
@@ -25,6 +24,7 @@
     line-height: 140%;
     color: #545A6C;
 }
+
 
 
 .discordBanner {
@@ -107,7 +107,7 @@
 
 @media screen and (max-width:768px) {
     .discordBanner {
-        width:18rem;
+        width: 18rem;
         padding: 0rem;
     }
 }

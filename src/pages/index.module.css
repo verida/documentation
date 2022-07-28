@@ -4,6 +4,10 @@
  */
 
 
+.svgIcon {
+  width: 60%,
+}
+
 .mainSection {
   display: flex;
   flex-flow: column nowrap;
@@ -67,11 +71,18 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.githubCardSection {
-  margin-bottom: 6.5rem;
+.gettingStarted {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.githubCardSection h2 {
+.githubCardSection {
+  margin-bottom: 6.5rem;
+  text-align: center;
+}
+
+.githubCardSection h2,
+p {
   margin: 0 1rem;
 }
 
@@ -102,7 +113,7 @@
 .storeButtons {
   display: block;
   margin-left: auto;
-  margin-right: auto;  
+  margin-right: auto;
 }
 
 .appstorebutton {
@@ -134,11 +145,20 @@
   .contentCard {
     grid-template-columns: 1fr 1fr;
   }
+
+  .gettingStarted {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 
 @media screen and (max-width:768px) {
   .contentCard {
+    grid-template-columns: 1fr;
+  }
+
+
+  .gettingStarted {
     grid-template-columns: 1fr;
   }
 }

@@ -19,29 +19,59 @@ import DemosIcon from "@site/static/img/demos.svg";
 const contentCards = [
 	{
 		title: "Read the Documentation",
-		icon: <ReadDocsIcon title='icon' />,
+		icon: (
+			<ReadDocsIcon
+				title='icon'
+				style={{
+					width: "85%",
+				}}
+			/>
+		),
 		link: "/docs/intro",
-		externalLink: false,
+		subText:
+			"Learn about the core concepts of the Verida protocol, the network and more",
 	},
 	{
 		title: "See API Documentation",
-		icon: <ExploreAPiICon title='icon' />,
+		icon: (
+			<ExploreAPiICon
+				title='icon'
+				style={{
+					width: "85%",
+				}}
+			/>
+		),
 		link: "/docs/api/verida-js/",
-		externalLink: true,
+		subText: "Detailed documentation of the Verida JS library",
 	},
 	{
 		title: "Interactive Tutorial",
 		description: `Check out the interactive tutorials for an introduction to Verida's Web3 APIs`,
-		icon: <IntTutorialIcon title='icon' />,
+		icon: (
+			<IntTutorialIcon
+				title='icon'
+				style={{
+					width: "85%",
+				}}
+			/>
+		),
 		link: "/docs/tutorial/introduction",
-		externalLink: false,
+		subText:
+			"Try the interactive tutorial to get you coding with Verida as quickly as possible.",
 	},
 	{
 		title: "Demos",
 		description: "Explore Verida technologies with demo applications",
-		icon: <DemosIcon title='icon' />,
+		icon: (
+			<DemosIcon
+				title='icon'
+				style={{
+					width: "85%",
+				}}
+			/>
+		),
 		link: "/docs/demos",
-		externalLink: false,
+		subText: "Test our demo applications to interact with the Verida protocol",
 	},
 ];
 
@@ -54,10 +84,7 @@ const githubLinks = [
 		title: "Markdown Notes Demo",
 		link: "https://github.com/verida/markdown-notes-demo",
 	},
-	{
-		title: "Documentation",
-		link: "https://github.com/verida/documentation",
-	},
+
 	{
 		title: "Storage-Node",
 		link: "https://github.com/verida/storage-node",
@@ -67,11 +94,27 @@ const githubLinks = [
 		link: "https://github.com/verida/account-explorer",
 	},
 	{
-		title: "Generic-demo",
-		link: "https://github.com/verida/generic-demo",
+		title: "Vault Examples",
+		link: "https://github.com/verida/vault-showcase",
+	},
+	{
+		title: "Vue starter kit",
+		link: "https://github.com/verida/vue-starter-kit",
 	},
 ];
-
+const gettingStarted = [
+	{
+		title:
+			"Implement the Single Sign On and Client SDK Javascript SDKs in your application",
+		link: "/docs/single-sign-on-sdk",
+		icon: "/img/sso_icon.png",
+	},
+	{
+		title: "For Vue developers, try the Vue Starter Kit.",
+		link: "https://github.com/verida/vue-starter-kit",
+		icon: "/img/vue-starter-kit.png",
+	},
+];
 const description = `
 	Explore the Verida Developer's Portal to get 
 	started with our developer documentation,
@@ -114,7 +157,10 @@ export default function Home() {
 					<main className={styles.mainSection}>
 						<section className={styles.heroSection}>
 							<h1>Welcome to the Verida Developer Portal</h1>
-							<div>Verida is a multi-chain protocol for interoperable database storage and messaging built on decentralized identity.</div>
+							<div>
+								Verida is a multi-chain protocol for interoperable database
+								storage and messaging built on decentralized identity.
+							</div>
 						</section>
 						<section className={styles.cardSection}>
 							<div className={styles.contentCard}>
@@ -123,26 +169,50 @@ export default function Home() {
 								))}
 							</div>
 							<div className={styles.vaultDL}>
-								<h1>Download the Verida Vault (Developer Preview)</h1>
+								<h2>Getting Started</h2>
 							</div>
-							<div className={styles.storeButtons}>
-								<a href='https://apps.apple.com/us/app/verida-vault/id1546599632'>
-									<img
-										className={styles.appstorebutton}
-										src='/img/AppStore_button.svg'
-									/>
-								</a>
-								<a href='#'>
-									<img
-										className={styles.appstorebutton}
-										src='/img/GooglePlayCOMINGSOON.svg'
-									/>
-								</a>
+							<div className={styles.gettingStarted}>
+								<div className={styles.storeButtons}>
+									<div>
+										<a href='https://apps.apple.com/us/app/verida-vault/id1546599632'>
+											<img
+												className={styles.appstorebutton}
+												src='/img/AppStore_button.svg'
+											/>
+										</a>
+										<br />
+										<a href='#'>
+											<img
+												className={styles.appstorebutton}
+												src='/img/GooglePlayCOMINGSOON.svg'
+											/>
+										</a>
+									</div>
+									<div>
+										<p>Download the Verida Vault (Developer Preview) </p>
+									</div>
+								</div>
+								{gettingStarted.map((item) => (
+									<div className={styles.storeButtons}>
+										<div>
+											<a href={item.link}>
+												<img src={item.icon} height='100' />
+											</a>
+										</div>
+										<div>
+											<p>{item.title}</p>
+										</div>
+									</div>
+								))}
 							</div>
 							<DiscordCard />
 							<PartnerShipCard />
 							<div className={styles.githubCardSection}>
 								<h2>GitHub Repositories</h2>
+								<p>
+									The Verida protocol is comprised of an ecosystem of open
+									source components
+								</p>
 								<div className={styles.githubCard}>
 									{githubLinks.map((item) => (
 										<GithubCard key={item.title} {...item} />
