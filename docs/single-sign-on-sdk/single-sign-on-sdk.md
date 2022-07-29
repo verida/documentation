@@ -5,12 +5,6 @@ description: Verida Developer Documentation
 keywords: [Verida, Web3, Developers]
 ---
 
-:::caution
-
-The Verida Single Sign On APIs are subject to change during the developer preview phase. 
-
-:::
-
 
 ## What is the Single Sign On (SSO) SDK?
 
