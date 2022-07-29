@@ -5,6 +5,13 @@ description: Verida Developer Documentation
 keywords: [Verida, Web3, Developers]
 ---
 
+:::caution
+
+The Verida Single Sign On APIs are subject to change during the developer preview phase. 
+
+:::
+
+
 ## What is the Single Sign On (SSO) SDK?
 
 The Verida SSO SDK is a decentralized single sign on client library and server API that enables seamless QR code authentication via the Verida Vault mobile application.
