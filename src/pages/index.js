@@ -173,7 +173,7 @@ export default function Home() {
 							</div>
 							<div className={styles.gettingStarted}>
 								<div className={styles.storeButtons}>
-									<div>
+									<div className={styles.storeButtonsChild}>
 										<a href='https://apps.apple.com/us/app/verida-vault/id1546599632'>
 											<img
 												className={styles.appstorebutton}
@@ -194,7 +194,7 @@ export default function Home() {
 								</div>
 								{gettingStarted.map((item) => (
 									<div className={styles.storeButtons}>
-										<div>
+										<div className={styles.storeButtonsChild}>
 											<a href={item.link}>
 												<img src={item.icon} height='100' />
 											</a>
