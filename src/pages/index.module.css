@@ -116,9 +116,13 @@ p {
   margin-right: auto;
 }
 
-.storeButtonsChild{
- text-align: center;
-} 
+
+.storeButtons div {
+  text-align: center;
+}
+
+
+
 .appstorebutton {
   border-style: solid;
   border-width: 1px;

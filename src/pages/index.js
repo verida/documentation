@@ -46,7 +46,6 @@ const contentCards = [
 	},
 	{
 		title: "Interactive Tutorial",
-		description: `Check out the interactive tutorials for an introduction to Verida's Web3 APIs`,
 		icon: (
 			<IntTutorialIcon
 				title='icon'
@@ -61,7 +60,6 @@ const contentCards = [
 	},
 	{
 		title: "Demos",
-		description: "Explore Verida technologies with demo applications",
 		icon: (
 			<DemosIcon
 				title='icon'
@@ -115,10 +113,10 @@ const gettingStarted = [
 		icon: "/img/vue-starter-kit.png",
 	},
 ];
-const description = `
-	Explore the Verida Developer's Portal to get 
+const headerDescription = `
+	Explore the Verida Developer's Portal to get
 	started with our developer documentation,
-	explore our demos, 
+	explore our demos,
 	try out our interactive tutorials and connect with the Web3 developer community.
 `;
 export default function Home() {
@@ -141,18 +139,18 @@ export default function Home() {
 					<Head>
 						<title>Verida Developer Portal</title>
 						<meta name='title' content='Verida Developer Portal' />
-						<meta name='description' content={description} />
+						<meta name='description' content={headerDescription} />
 						<meta property='og:type' content='website' />
 						<meta property='og:url' content='https://developers.verida.io/' />
 						<meta property='og:title' content='Verida Developer Portal' />
-						<meta property='og:description' content={description} />
+						<meta property='og:description' content={headerDescription} />
 						<meta property='twitter:card' content='summary_large_image' />
 						<meta
 							property='twitter:url'
 							content='https://developers.verida.io/'
 						/>
 						<meta property='twitter:title' content='Verida Developer Portal' />
-						<meta property='twitter:description' content={description} />
+						<meta property='twitter:description' content={headerDescription} />
 					</Head>
 					<main className={styles.mainSection}>
 						<section className={styles.heroSection}>
@@ -173,7 +171,7 @@ export default function Home() {
 							</div>
 							<div className={styles.gettingStarted}>
 								<div className={styles.storeButtons}>
-									<div className={styles.storeButtonsChild}>
+									<div>
 										<a href='https://apps.apple.com/us/app/verida-vault/id1546599632'>
 											<img
 												className={styles.appstorebutton}
@@ -193,8 +191,8 @@ export default function Home() {
 									</div>
 								</div>
 								{gettingStarted.map((item) => (
-									<div className={styles.storeButtons}>
-										<div className={styles.storeButtonsChild}>
+									<div className={styles.storeButtons} key={item.title}>
+										<div>
 											<a href={item.link}>
 												<img src={item.icon} height='100' />
 											</a>
@@ -205,6 +203,7 @@ export default function Home() {
 									</div>
 								))}
 							</div>
+							
 							<DiscordCard />
 							<PartnerShipCard />
 							<div className={styles.githubCardSection}>

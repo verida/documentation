@@ -1,10 +1,10 @@
-.discordBannerSvg {
+.communityBannerSvg {
     width: 100%;
     height: 100%;
 }
 
 .contentCardBox {
-  margin: 0 0.5rem;
+    margin: 0 0.5rem;
 }
 
 .contentCard:hover {
@@ -12,7 +12,6 @@
     box-shadow: 0px 12px 25px rgba(34, 35, 140, 0.07);
     border-radius: 12px;
 }
-
 
 .contentCardSection h4 {
     font-weight: 600;
@@ -25,9 +24,7 @@
     color: #545A6C;
 }
 
-
-
-.discordBanner {
+.communityBanner {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -40,17 +37,17 @@
     width: 50rem;
 }
 
-.discordBanner:hover {
+.communityBanner:hover {
     cursor: pointer;
-    background: #FFFFFF;
+    cursor: pointer;
     box-shadow: 0px 12px 25px rgba(34, 35, 140, 0.07);
 }
 
-.discordBannerContent {
+.communityBannerContent {
     margin: 1.5rem 2.5rem;
 }
 
-.discordBannerContent h4 {
+.communityBannerContent h4 {
     font-weight: 600;
     font-size: 1.5rem;
     line-height: 30px;
@@ -58,17 +55,13 @@
     color: var(--ifm-text-color);
 }
 
-.discordBannerContent p {
+.communityBannerContent p {
     font-size: 1rem;
     color: #545A6C;
 }
 
 
-.discordBannerLink {
-    text-decoration: none !important;
-}
-
-.GithubLink {
+.githubLink {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -82,16 +75,16 @@
     margin: 1rem 1rem;
 }
 
-.GithubLink:hover {
+.githubLink:hover {
     cursor: pointer;
     box-shadow: 0px 12px 25px rgba(34, 35, 140, 0.07);
 }
 
-.GithubLinkImg {
+.githubLinkImg {
     margin: 0 0.7rem -0.3rem 0;
 }
 
-.GithubLinkText {
+.githubLinkText {
     font-weight: 600;
     font-size: 18px;
     line-height: 23px;
@@ -99,14 +92,14 @@
 }
 
 
-.GithubLinkText a {
+.githubLinkText a {
     text-decoration: none;
     color: var(--ifm-text-color);
 }
 
 
 @media screen and (max-width:768px) {
-    .discordBanner {
+    .communityBanner {
         width: 18rem;
         padding: 0rem;
     }
