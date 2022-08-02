@@ -27,6 +27,10 @@
     url('/fonts/Sora-Thin.ttf') format('truetype');
 }
 
+a {
+  text-decoration: none !important;
+}
+
 body {
   font-family: 'Sora', sans-serif;
   font-size: 1rem;
@@ -74,4 +78,6 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 
 .web3-compare-table td:first-child {
   font-weight: bold;
-};
+}
+
+;

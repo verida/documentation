@@ -1,25 +1,16 @@
-import React from 'react';
-import styles from './card.module.css';
-import Link from '@docusaurus/Link';
+import React from "react";
+import styles from "./card.module.css";
+import Link from "@docusaurus/Link";
 
-const ContentCard = ({ icon, isExternalLink, link }) => {
-
-
+const ContentCard = ({ icon, link, subText }) => {
 	return (
-		<>
-			{
-				isExternalLink ? <Link href={link}>
-					<div className={styles.contentCard}>
-						<div>{icon}</div>
-					</div>
-				</Link> :
-					<Link to={link}>
-						<div className={styles.contentCard}>
-							<div>{icon}</div>
-						</div>
-					</Link>
-			}
-		</>
+		<div className={styles.contentCardBox}>
+			<Link to={link} className={styles.contentCard}>
+				{icon}
+			</Link>
+			<br />
+			<span>{subText}</span>
+		</div>
 	);
 };
 
