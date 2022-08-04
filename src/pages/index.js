@@ -4,17 +4,17 @@ import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import ExternalLink from "@site/static/img/external-link.svg";
+import DiscordLogo from "@site/static/img/discord-logo.svg";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
 import ContentCard from "../components/cards/ContentCard";
-import DiscordCard from "../components/cards/DiscordCard";
-import PartnerShipCard from "../components/cards/PartnershipCard";
 import GithubCard from "../components/cards/GithubCard";
 import Footer from "../components/Footer";
 import ReadDocsIcon from "@site/static/img/read_docs.svg";
 import ExploreAPiICon from "@site/static/img/explore_api.svg";
 import IntTutorialIcon from "@site/static/img/interactive_tutorial.svg";
 import DemosIcon from "@site/static/img/demos.svg";
+import CommunityBannerCard from "../components/cards/CommunityBannerCard";
 
 const contentCards = [
 	{
@@ -203,9 +203,22 @@ export default function Home() {
 									</div>
 								))}
 							</div>
-							
-							<DiscordCard />
-							<PartnerShipCard />
+							<CommunityBannerCard
+								link='https://discord.verida.io'
+								headerTitle='Join our Discord Community'
+								icon={
+									<DiscordLogo
+										className={styles.communityBannerSvg}
+										title='DiscordLogo'
+									/>
+								}
+								bodyText={`We would love to hear from you! Let us know what you're building or if you need any assistance getting started.`}
+							/>
+							<CommunityBannerCard
+								link='https://www.verida.io/ecosystem#partner'
+								headerTitle='Verida Early Adopter Program'
+								bodyText={`Join the growing ecosystem of partners building the future of web3.`}
+							/>
 							<div className={styles.githubCardSection}>
 								<h2>GitHub Repositories</h2>
 								<p>
