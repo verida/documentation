@@ -59,16 +59,25 @@ const externalProfile = await context.openProfile('public', did);
 Open your own profile for the current context:
 
 ```jsx
+const avatarUri = 'data:image/png;base64,iVBOR...' // An  encoded as a URI
+
 const myProfile = await context.openProfile('public');
+
 await myProfile.set('name', 'Stevie');
+
+await myProfile.set('avatar', { uri: avatarUri, });
+
 const name = await myProfile.get('name', 'Stevie');
 
 const profileData = await myProfile.getMany();
+
 await myProfile.delete('name');
 
+// Listen for profile changes
 const listener = await myProfile.listen(function (row) {
 	console.log(`${row.key} = ${row.value}`);
 });
+
 listener.cancel();
 ```
 
