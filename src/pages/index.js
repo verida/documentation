@@ -108,13 +108,13 @@ export default function Home() {
 								<a href={APPLE_STORE_LINK}>
 									<img
 										className={styles.appstorebutton}
-										src='/img/AppStore_button.svg'
+										src='/img/app_store_apple.svg'
 									/>
 								</a>
 								<a href={GOOGLE_PLAY_STORE_LINK}>
 									<img
 										className={styles.appstorebutton}
-										src='/img/GooglePlayCOMINGSOON.svg'
+										src='/img/play_store_google.svg'
 									/>
 								</a>
 							</div>
