@@ -15,8 +15,14 @@ import ReadDocsIcon from "@site/static/img/read_docs.svg";
 import ExploreAPiICon from "@site/static/img/explore_api.svg";
 import IntTutorialIcon from "@site/static/img/interactive_tutorial.svg";
 import DemosIcon from "@site/static/img/demos.svg";
+import {
+	APPLE_STORE_LINK,
+	GITHUB_LINKS,
+	GOOGLE_PLAY_STORE_LINK,
+	HOME_HEAD_DESCRIPTION,
+} from "../constant";
 
-const contentCards = [
+const CONTENT_CARD_LIST = [
 	{
 		title: "Read the Documentation",
 		icon: <ReadDocsIcon title='icon' />,
@@ -45,39 +51,6 @@ const contentCards = [
 	},
 ];
 
-const githubLinks = [
-	{
-		title: "Verida-Js",
-		link: "https://github.com/verida/verida-js",
-	},
-	{
-		title: "Markdown Notes Demo",
-		link: "https://github.com/verida/markdown-notes-demo",
-	},
-	{
-		title: "Documentation",
-		link: "https://github.com/verida/documentation",
-	},
-	{
-		title: "Storage-Node",
-		link: "https://github.com/verida/storage-node",
-	},
-	{
-		title: "Account Explorer",
-		link: "https://github.com/verida/account-explorer",
-	},
-	{
-		title: "Generic-demo",
-		link: "https://github.com/verida/generic-demo",
-	},
-];
-
-const description = `
-	Explore the Verida Developer's Portal to get 
-	started with our developer documentation,
-	explore our demos, 
-	try out our interactive tutorials and connect with the Web3 developer community.
-`;
 export default function Home() {
 	const { siteConfig } = useDocusaurusContext();
 
@@ -98,27 +71,33 @@ export default function Home() {
 					<Head>
 						<title>Verida Developer Portal</title>
 						<meta name='title' content='Verida Developer Portal' />
-						<meta name='description' content={description} />
+						<meta name='description' content={HOME_HEAD_DESCRIPTION} />
 						<meta property='og:type' content='website' />
 						<meta property='og:url' content='https://developers.verida.io/' />
 						<meta property='og:title' content='Verida Developer Portal' />
-						<meta property='og:description' content={description} />
+						<meta property='og:description' content={HOME_HEAD_DESCRIPTION} />
 						<meta property='twitter:card' content='summary_large_image' />
 						<meta
 							property='twitter:url'
 							content='https://developers.verida.io/'
 						/>
 						<meta property='twitter:title' content='Verida Developer Portal' />
-						<meta property='twitter:description' content={description} />
+						<meta
+							property='twitter:description'
+							content={HOME_HEAD_DESCRIPTION}
+						/>
 					</Head>
 					<main className={styles.mainSection}>
 						<section className={styles.heroSection}>
 							<h1>Welcome to the Verida Developer Portal</h1>
-							<div>Verida is a multi-chain protocol for interoperable database storage and messaging built on decentralized identity.</div>
+							<div>
+								Verida is a multi-chain protocol for interoperable database
+								storage and messaging built on decentralized identity.
+							</div>
 						</section>
 						<section className={styles.cardSection}>
 							<div className={styles.contentCard}>
-								{contentCards.map((item) => (
+								{CONTENT_CARD_LIST.map((item) => (
 									<ContentCard key={item.title} {...item} />
 								))}
 							</div>
@@ -126,16 +105,16 @@ export default function Home() {
 								<h1>Download the Verida Vault (Developer Preview)</h1>
 							</div>
 							<div className={styles.storeButtons}>
-								<a href='https://apps.apple.com/us/app/verida-vault/id1546599632'>
+								<a href={APPLE_STORE_LINK}>
 									<img
 										className={styles.appstorebutton}
-										src='/img/AppStore_button.svg'
+										src='/img/app_store_apple.svg'
 									/>
 								</a>
-								<a href='#'>
+								<a href={GOOGLE_PLAY_STORE_LINK}>
 									<img
 										className={styles.appstorebutton}
-										src='/img/GooglePlayCOMINGSOON.svg'
+										src='/img/play_store_google.svg'
 									/>
 								</a>
 							</div>
@@ -144,7 +123,7 @@ export default function Home() {
 							<div className={styles.githubCardSection}>
 								<h2>GitHub Repositories</h2>
 								<div className={styles.githubCard}>
-									{githubLinks.map((item) => (
+									{GITHUB_LINKS.map((item) => (
 										<GithubCard key={item.title} {...item} />
 									))}
 								</div>

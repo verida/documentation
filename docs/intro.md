@@ -3,8 +3,8 @@ sidebar_position: 0
 description: Verida is a network of personal data owned and controlled by users.
 keywords: [Verida, Web3, Developers]
 ---
-import AppleAppStore from '/img/AppStore_button.svg';
-import GooglePlay from '/img/GooglePlayCOMINGSOON.svg';
+import AppleAppStore from '/img/app_store_apple.svg';
+import GooglePlay from '/img/play_store_google.svg';
 
 
 # Welcome to the Verida Developer Portal
