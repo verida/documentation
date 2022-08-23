@@ -14,7 +14,7 @@ A Verida Account maintains a public profile for every application context. The d
 - `description` - Text description / bio of the Verida account
 - `avatar.uri` - The URI of an avatar image. This is currently encoded as a URI that contains a base64 representation of the image. (In the future other ways of storing an image will be supported, beyond a `uri`)
 
-The schema can be found here: https://common.schemas.verida.io/profile/basicProfile/latest/schema.json
+The schema can be found here: <https://common.schemas.verida.io/profile/basicProfile/latest/schema.json>
 
 All properties are optional except for `name`.
 
@@ -40,8 +40,8 @@ console.log('Account country', publicProfile.country)
 const elm = document.getElementById("#avatar-img")
 elm.src = publicProfile.avatar.uri
 ```
-This can be tried out in your browser [here](../tutorial/public_profile.mdx). 
 
+This can be tried out in your browser [here](../tutorial/public_profile.mdx).
 
 It’s also possible to open an external profile for the current context:
 
@@ -56,11 +56,11 @@ Open your own profile for the current context:
 
 ```jsx
 
+const myProfile = await context.openProfile('public');
+
 const avatarUri = 'data:image/png;base64,iVBOR...'; //  Data URL of base64-encoded image
 
 await myProfile.set('avatar', { uri: avatarUri, });
-
-const myProfile = await context.openProfile('public');
 
 // Modify the profile properties
 await myProfile.set('name', 'Stevie');
@@ -81,6 +81,12 @@ const listener = await myProfile.listen(function (row) {
 
 listener.cancel();
 ```
+
+:::info
+
+Learn more about Data URL [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URLs).
+
+:::
 
 ## Advanced
 
