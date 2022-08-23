@@ -70,6 +70,8 @@ const name = await myProfile.get('name');
 
 const profileData = await myProfile.getMany();
 
+console.log(profileData); // -> { name: 'Stevie', avatar: { uri: 'data:image/png;base64,iVBOR...' }, ...}
+
 await myProfile.delete('name');
 
 // Listen for profile changes
