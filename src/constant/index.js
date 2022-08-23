@@ -1,5 +1,5 @@
 const APPLE_STORE_LINK = `https://apps.apple.com/us/app/verida-vault/id1546599632`;
-const GOOGLE_PLAY_STORE_LINK = `https://apps.apple.com/us/app/verida-vault/id1546599632`;
+const GOOGLE_PLAY_STORE_LINK = `https://play.google.com/store/apps/details?id=io.verida.vault`;
 
 const GITHUB_LINKS = [
 	{
