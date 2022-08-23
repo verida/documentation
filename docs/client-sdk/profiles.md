@@ -50,24 +50,23 @@ const did = 'did:vda:0x6B2a1bE81ee770cbB4648801e343E135e8D2Aa6F';
 const externalProfile = await context.openProfile('public', did);
 ```
 
-## Load profile avatar and name
-
-
-
-## Open my profile
+## Open and modify my profile
 
 Open your own profile for the current context:
 
 ```jsx
-const avatarUri = 'data:image/png;base64,iVBOR...' // An  encoded as a URI
 
-const myProfile = await context.openProfile('public');
-
-await myProfile.set('name', 'Stevie');
+const avatarUri = 'data:image/png;base64,iVBOR...'; //  Data URL of base64-encoded image
 
 await myProfile.set('avatar', { uri: avatarUri, });
 
-const name = await myProfile.get('name', 'Stevie');
+const myProfile = await context.openProfile('public');
+
+// Modify the profile properties
+await myProfile.set('name', 'Stevie');
+
+// Read my profile properties
+const name = await myProfile.get('name');
 
 const profileData = await myProfile.getMany();
 
@@ -75,7 +74,7 @@ await myProfile.delete('name');
 
 // Listen for profile changes
 const listener = await myProfile.listen(function (row) {
-	console.log(`${row.key} = ${row.value}`);
+ console.log(`${row.key} = ${row.value}`);
 });
 
 listener.cancel();
