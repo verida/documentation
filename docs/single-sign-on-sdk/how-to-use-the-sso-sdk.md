@@ -4,6 +4,12 @@ description: Verida Developer Documentation
 keywords: [Verida, Web3, Developers]
 ---
 
+:::caution
+
+The Verida Single Sign On APIs are subject to change during the developer preview phase. 
+
+:::
+
 Initialize a connection to the Verida network using a private key stored on the user’s mobile device using the Verida Vault.
 
 This easy to use integration method allows a user to scan a QR code to sign into your application. If the user doesn’t have the Verida Vault installed, they will be prompted to install it. Existing users will be prompted to authorize your application to access encrypted storage for that application.

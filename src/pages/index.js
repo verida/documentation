@@ -9,14 +9,20 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
 import ContentCard from "../components/cards/ContentCard";
 import GithubCard from "../components/cards/GithubCard";
+import CommunityBannerCard from "../components/cards/CommunityBannerCard";
 import Footer from "../components/Footer";
 import ReadDocsIcon from "@site/static/img/read_docs.svg";
 import ExploreAPiICon from "@site/static/img/explore_api.svg";
 import IntTutorialIcon from "@site/static/img/interactive_tutorial.svg";
 import DemosIcon from "@site/static/img/demos.svg";
-import CommunityBannerCard from "../components/cards/CommunityBannerCard";
+import {
+	APPLE_STORE_LINK,
+	GITHUB_LINKS,
+	GOOGLE_PLAY_STORE_LINK,
+	HOME_HEAD_DESCRIPTION,
+} from "../constant";
 
-const contentCards = [
+const CONTENT_CARD_LIST = [
 	{
 		title: "Read the Documentation",
 		icon: (
@@ -73,52 +79,6 @@ const contentCards = [
 	},
 ];
 
-const githubLinks = [
-	{
-		title: "Verida-Js",
-		link: "https://github.com/verida/verida-js",
-	},
-	{
-		title: "Markdown Notes Demo",
-		link: "https://github.com/verida/markdown-notes-demo",
-	},
-
-	{
-		title: "Storage-Node",
-		link: "https://github.com/verida/storage-node",
-	},
-	{
-		title: "Account Explorer",
-		link: "https://github.com/verida/account-explorer",
-	},
-	{
-		title: "Vault Examples",
-		link: "https://github.com/verida/vault-showcase",
-	},
-	{
-		title: "Vue starter kit",
-		link: "https://github.com/verida/vue-starter-kit",
-	},
-];
-const gettingStarted = [
-	{
-		title:
-			"Implement the Single Sign On and Client SDK Javascript SDKs in your application",
-		link: "/docs/single-sign-on-sdk",
-		icon: "/img/sso_icon.png",
-	},
-	{
-		title: "For Vue developers, try the Vue Starter Kit.",
-		link: "https://github.com/verida/vue-starter-kit",
-		icon: "/img/vue-starter-kit.png",
-	},
-];
-const headerDescription = `
-	Explore the Verida Developer's Portal to get
-	started with our developer documentation,
-	explore our demos,
-	try out our interactive tutorials and connect with the Web3 developer community.
-`;
 export default function Home() {
 	const { siteConfig } = useDocusaurusContext();
 
@@ -139,18 +99,21 @@ export default function Home() {
 					<Head>
 						<title>Verida Developer Portal</title>
 						<meta name='title' content='Verida Developer Portal' />
-						<meta name='description' content={headerDescription} />
+						<meta name='description' content={HOME_HEAD_DESCRIPTION} />
 						<meta property='og:type' content='website' />
 						<meta property='og:url' content='https://developers.verida.io/' />
 						<meta property='og:title' content='Verida Developer Portal' />
-						<meta property='og:description' content={headerDescription} />
+						<meta property='og:description' content={HOME_HEAD_DESCRIPTION} />
 						<meta property='twitter:card' content='summary_large_image' />
 						<meta
 							property='twitter:url'
 							content='https://developers.verida.io/'
 						/>
 						<meta property='twitter:title' content='Verida Developer Portal' />
-						<meta property='twitter:description' content={headerDescription} />
+						<meta
+							property='twitter:description'
+							content={HOME_HEAD_DESCRIPTION}
+						/>
 					</Head>
 					<main className={styles.mainSection}>
 						<section className={styles.heroSection}>
@@ -162,46 +125,20 @@ export default function Home() {
 						</section>
 						<section className={styles.cardSection}>
 							<div className={styles.contentCard}>
-								{contentCards.map((item) => (
+								{CONTENT_CARD_LIST.map((item) => (
 									<ContentCard key={item.title} {...item} />
 								))}
 							</div>
-							<div className={styles.vaultDL}>
+							<div className={styles.sectionTitle}>
 								<h2>Getting Started</h2>
 							</div>
-							<div className={styles.gettingStarted}>
-								<div className={styles.storeButtons}>
-									<div>
-										<a href='https://apps.apple.com/us/app/verida-vault/id1546599632'>
-											<img
-												className={styles.appstorebutton}
-												src='/img/AppStore_button.svg'
-											/>
-										</a>
-										<br />
-										<a href='#'>
-											<img
-												className={styles.appstorebutton}
-												src='/img/GooglePlayCOMINGSOON.svg'
-											/>
-										</a>
-									</div>
-									<div>
-										<p>Download the Verida Vault (Developer Preview) </p>
-									</div>
-								</div>
-								{gettingStarted.map((item) => (
-									<div className={styles.storeButtons} key={item.title}>
-										<div>
-											<a href={item.link}>
-												<img src={item.icon} height='100' />
-											</a>
-										</div>
-										<div>
-											<p>{item.title}</p>
-										</div>
-									</div>
-								))}
+							<div className={styles.gettingStartedCardContainer}>
+								<a href={APPLE_STORE_LINK}>
+									<img src='/img/app_store_apple.svg' />
+								</a>
+								<a href={GOOGLE_PLAY_STORE_LINK}>
+									<img src='/img/play_store_google.svg' />
+								</a>
 							</div>
 							<CommunityBannerCard
 								link='https://discord.verida.io'
@@ -220,13 +157,15 @@ export default function Home() {
 								bodyText={`Join the growing ecosystem of partners building the future of web3.`}
 							/>
 							<div className={styles.githubCardSection}>
-								<h2>GitHub Repositories</h2>
+								<div className={styles.sectionTitle}>
+									<h2>GitHub Repositories</h2>
+								</div>
 								<p>
 									The Verida protocol is comprised of an ecosystem of open
 									source components
 								</p>
 								<div className={styles.githubCard}>
-									{githubLinks.map((item) => (
+									{GITHUB_LINKS.map((item) => (
 										<GithubCard key={item.title} {...item} />
 									))}
 								</div>

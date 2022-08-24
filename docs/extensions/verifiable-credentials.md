@@ -68,6 +68,14 @@ A credential is issued by creating a JSON object (`credentialData`) containing d
 
 The code below creates a credential that matches a predefined credential schema (https://common.schemas.verida.io/health/pathology/tests/covid19/pcr/v0.1.0/schema.json).
 
+You can easily create your own schemas.
+
+:::info
+
+Schemas should be hosted on a publically available webhost that sets the `Access-Control-Allow-Origin` CORS header. [Read more here](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors/CORSMissingAllowOrigin).
+
+:::
+
 ```ts
 import Credentials from "@verida/verifiable-credentials";
 
