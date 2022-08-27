@@ -1,22 +1,24 @@
 ---
 sidebar_position: 2
-title: Single Sign On
-description: Verida Developer Tutorial - Single Sign On
-keywords: [Verida, Web3, Developers, Tutorial, SSO, Single Sign On]
+title: Verida Connect
+description: Verida Developer Tutorial - Verida Connect
+keywords: [Verida, Web3, Developers, Tutorial, Verida Connect]
 ---
-import ReactPlayer from 'react-player'
 
-# Login using Verida Single Sign On
+import ReactPlayer from "react-player";
+
+# Login using Verida Connect
 
 ## See a walk through of the code
 
-<ReactPlayer  
-          controls={true}
-          playing={false} loop={false} 
-          volume={1} muted={false}
-          url='https://www.youtube.com/watch?v=KekJ-X9UAD0' />
-
-
+<ReactPlayer
+	controls={true}
+	playing={false}
+	loop={false}
+	volume={1}
+	muted={false}
+	url='https://www.youtube.com/watch?v=KekJ-X9UAD0'
+/>
 
 ## Try it out
 
@@ -24,94 +26,96 @@ The code below shows how to login to the Verida network. It is live - you can pr
 
 ```jsx live
 VeridaLoginExample = () => {
-  const [veridaContext, setVeridaContext] = useState(undefined)
-  this.CONTEXT_NAME = "Verida Tutorial"
+	const [veridaContext, setVeridaContext] = useState(undefined);
+	this.CONTEXT_NAME = "Verida Tutorial";
 
-  React.useEffect(async () => {
-    // Runs after the first render() lifecycle
-    // We use this to check if we are logged in
-    
-    // veridaContext is a Context object (See links below)
-    if (!veridaContext) {
-      // we don't have veridaContext in local state
+	React.useEffect(async () => {
+		// Runs after the first render() lifecycle
+		// We use this to check if we are logged in
 
-      // Check if we have a stored session
-      //  hasSession is from the package "@verida/account-web-vault"
-      //  see below fod links to documentation
-      if (hasSession(this.CONTEXT_NAME)) {
-        // we know we have a session already
-        login(); // when logged in this will just setup a Verida Context
-      }
-    }
-  }, []);
+		// veridaContext is a Context object (See links below)
+		if (!veridaContext) {
+			// we don't have veridaContext in local state
 
-  login = async function() {
-    // Create a VaultAccount. This takes a VaultAccountConfig parameter. 
-    // See links below to docs on these
-    const account = new VaultAccount({
-      request: {
-        logoUrl:
-          "https://developers.verida.io/img/tutorial_login_request_logo_170x170.png",
-      },
-    });
+			// Check if we have a stored session
+			//  hasSession is from the package "@verida/account-web-vault"
+			//  see below fod links to documentation
+			if (hasSession(this.CONTEXT_NAME)) {
+				// we know we have a session already
+				login(); // when logged in this will just setup a Verida Context
+			}
+		}
+	}, []);
 
-    const context = await Network.connect({
-      client: {
-        environment: "testnet",
-      },
-      account: account,
-      context: {
-        name: this.CONTEXT_NAME,
-      },
-    })
+	login = async function () {
+		// Create a VaultAccount. This takes a VaultAccountConfig parameter.
+		// See links below to docs on these
+		const account = new VaultAccount({
+			request: {
+				logoUrl:
+					"https://developers.verida.io/img/tutorial_login_request_logo_170x170.png",
+			},
+		});
 
-    if (context) {
-      // set the local state variable
-      setVeridaContext(context)
-    }
-  }
+		const context = await Network.connect({
+			client: {
+				environment: "testnet",
+			},
+			account: account,
+			context: {
+				name: this.CONTEXT_NAME,
+			},
+		});
 
-  logout = async function() {
-      // disconnect the Verida session
-      await veridaContext.account.disconnect(this.CONTEXT_NAME);
-      // reset the internal state
-      setVeridaContext(undefined);
-  }
+		if (context) {
+			// set the local state variable
+			setVeridaContext(context);
+		}
+	};
 
-  this.login = this.login.bind(this)
-  this.logout = this.logout.bind(this)
+	logout = async function () {
+		// disconnect the Verida session
+		await veridaContext.account.disconnect(this.CONTEXT_NAME);
+		// reset the internal state
+		setVeridaContext(undefined);
+	};
 
-  // if we have a veridaContext we are logged in
-  if (veridaContext) {
-    // user is logged in
-    return (
-      <div>
-        <h3>Logged in! Your <a href="/docs/concepts/accounts-and-identity">DID</a> 
-        is: <pre>{veridaContext.account.accountDid}</pre></h3>
-        <button onClick={this.logout}>Logout</button>
-      </div>
-    )
-  } else {
-    return (
-      <div>
-        <button onClick={this.login}>Login</button>
-      </div>
-    )
-  }
-}
+	this.login = this.login.bind(this);
+	this.logout = this.logout.bind(this);
+
+	// if we have a veridaContext we are logged in
+	if (veridaContext) {
+		// user is logged in
+		return (
+			<div>
+				<h3>
+					Logged in! Your <a href='/docs/concepts/accounts-and-identity'>DID</a>
+					is: <pre>{veridaContext.account.accountDid}</pre>
+				</h3>
+				<button onClick={this.logout}>Logout</button>
+			</div>
+		);
+	} else {
+		return (
+			<div>
+				<button onClick={this.login}>Login</button>
+			</div>
+		);
+	}
+};
 ```
 
 <!-- this is a target so we can link to the end of the code block -->
 
-<a name="runcode">&nbsp;</a>
+<a name='runcode'>&nbsp;</a>
 
-## SSO documentation
+## Verida Connect documentation
 
-See the [Verida Single Sign On (SSO) documentation](/single-sign-on-sdk/single-sign-on-sdk.md) for complete documentation.
+See the [Verida Connect documentation](/single-sign-on-sdk/single-sign-on-sdk.md) for complete documentation.
 
 ### APIs used in example
 
-* [Context](/docs/api/verida-js/classes/verida_client_ts.Context)
-* [hasSession](/docs/api/verida-js/modules/verida_account_web_vault#hassession)
-* [VaultAccount](/docs/api/verida-js/classes/verida_account_web_vault.VaultAccount)
-* [VaultAccountConfig](/docs/api/verida-js/interfaces/verida_account_web_vault.VaultAccountConfig)
+- [Context](/docs/api/verida-js/classes/verida_client_ts.Context)
+- [hasSession](/docs/api/verida-js/modules/verida_account_web_vault#hassession)
+- [VaultAccount](/docs/api/verida-js/classes/verida_account_web_vault.VaultAccount)
+- [VaultAccountConfig](/docs/api/verida-js/interfaces/verida_account_web_vault.VaultAccountConfig)

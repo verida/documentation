@@ -52,7 +52,7 @@ This works for both the `vda-login` and `vda-account`
 
 ### Using the `vda-login` component
 
-This component is used to handle SSO (Single Sign on) login it leverages our `@verida/client-ts` and `@verida/account-web-vault` packages under the hood.
+This component is used to handle Verida Connect login it leverages our `@verida/client-ts` and `@verida/account-web-vault` packages under the hood.
 
 ```jsx title="Home.vue"
 <template>
@@ -93,7 +93,7 @@ export default defineComponent({
 
 ### Using the `vda-account` component
 
-This component is used to display a logged-in user profile details such as `name`, `did` and `avatar`. If the user is not logged in it will supply a login link and generate the SSO (Single Sign On) login form in the same way the the `vda-login` component.
+This component is used to display a logged-in user profile details such as `name`, `did` and `avatar`. If the user is not logged in it will supply a login link and generate the Verida Connect login form in the same way the the `vda-login` component.
 
 
 - Example code:

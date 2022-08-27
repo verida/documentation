@@ -1,12 +1,12 @@
 ---
-title: How to use the SSO SDK
+title: How to use the Verida Connect SDK
 description: Verida Developer Documentation
 keywords: [Verida, Web3, Developers]
 ---
 
 :::caution
 
-The Verida Single Sign On APIs are subject to change during the developer preview phase. 
+The Verida Connect APIs are subject to change during the developer preview phase. 
 
 :::
 
@@ -61,7 +61,7 @@ if (!context) {
 
 ## Configuration
 
-Various configuration options can be set (as parameters in `VaultAccount`) for the single sign-on SDK.
+Various configuration options can be set (as parameters in `VaultAccount`) for the verida connect SDK.
 
 These (all optional) config options include:
 
@@ -78,4 +78,4 @@ These (all optional) config options include:
 
 Due to limitations, the redirection of the user, enabled by the `request?.openUrl?` option, will open a new tab in the default browser.
 
-As a complement, it is recommended to use the [hasSession](../api/verida-js/modules/verida_account_web_vault.md#hassession) method and a conditional `connect()` to optimise the user experience. An example of this pattern is shown in the [Single Sign On tutorial](../tutorial/SSO.mdx).
+As a complement, it is recommended to use the [hasSession](../api/verida-js/modules/verida_account_web_vault.md#hassession) method and a conditional `connect()` to optimise the user experience. An example of this pattern is shown in the [Verida Connect tutorial](../tutorial/SSO.mdx).

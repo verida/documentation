@@ -1,12 +1,12 @@
 ---
-title: The SSO Authentication Server
+title: The Verida Connect Authentication Server
 description: Verida Developer Documentation
 keywords: [Verida, Web3, Developers]
 ---
 
 ## What is the authentication server?
 
-The [vault auth server](https://github.com/verida/vault-auth-server/) is a web socket server that bridges connections between a mobile device and a web page to enable secure, single sign on using private blockchain keys stored on the mobile device.
+The [vault auth server](https://github.com/verida/vault-auth-server/) is a web socket server that bridges connections between a mobile device and a web page to enable secure, verida connect using private blockchain keys stored on the mobile device.
 
 ### Usage
 

@@ -23,12 +23,12 @@ The major capabilities of the Verida developer platform are as follows:
 </tr>
 
 <tr>
-    <td align="left">Single Sign On</td>
+    <td align="left">Verida Connect</td>
     <td align="center">✅ </td>
     <td align="left">
         <ul>
-            <li><a href="/docs/tutorial/SSO">SSO Interactive Example</a></li>
-            <li><a href="/docs/single-sign-on-sdk">Documentation: How to use the SSO SDK</a></li>
+            <li><a href="/docs/tutorial/SSO">Verida Connect Interactive Example</a></li>
+            <li><a href="/docs/single-sign-on-sdk">Documentation: How to use the Verida Connect SDK</a></li>
         </ul>
     </td>
 </tr>

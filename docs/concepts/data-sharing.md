@@ -54,11 +54,11 @@ This guide provides a deeper insight on how these tools can be helpful to build 
 
 **Assumptions:** _The data is proprietary to the application and a user is unlikely to want that data to be shared / used by other applications._
 
-Access to this data is typically “unlocked” in real time by sending a “Single Sign In” request to the user’s Vault, but the data isn’t visible by default in the Verida Vault.
+Access to this data is typically “unlocked” in real time by sending a “Verida Connect” request to the user’s Vault, but the data isn’t visible by default in the Verida Vault.
 
 ### Developers
 
-- [Single Sign On tutorial](../tutorial/SSO)
+- [Verida Connect tutorial](../tutorial/SSO)
 - [Read / write application data tutorial](../tutorial/datastores)
 
 ## Sharing access to lots of private data (Data synchronization)

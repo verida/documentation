@@ -7,7 +7,7 @@ keywords: [Verida, Web3, Developers]
 
 The Verida Client SDK provides a toolkit of self-sovereign capabilities to your decentralized application.
 
-Here’s is the basic flow of the Vault single sign on and what is happening behind the scenes.
+Here’s is the basic flow of the Vault verida connect and what is happening behind the scenes.
 
 ![client-sdk_how-it-works.png](how_it_works/client_sdk_how_it_works.png)
 
