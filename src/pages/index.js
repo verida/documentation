@@ -143,12 +143,7 @@ export default function Home() {
 							<CommunityBannerCard
 								link='https://discord.verida.io'
 								headerTitle='Join our Discord Community'
-								icon={
-									<DiscordLogo
-										className={styles.communityBannerSvg}
-										title='DiscordLogo'
-									/>
-								}
+								icon={<DiscordLogo title='DiscordLogo' />}
 								bodyText={`We would love to hear from you! Let us know what you're building or if you need any assistance getting started.`}
 							/>
 							<CommunityBannerCard
