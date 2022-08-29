@@ -52,7 +52,7 @@ This works for both the `vda-login` and `vda-account`
 
 ### Using the `vda-login` component
 
-This component is used to handle Verida Connect login it leverages our `@verida/client-ts` and `@verida/account-web-vault` packages under the hood.
+This component is used to handle authentication via Verida Connect, it leverages our `@verida/client-ts` and `@verida/account-web-vault` packages under the hood.
 
 ```jsx title="Home.vue"
 <template>

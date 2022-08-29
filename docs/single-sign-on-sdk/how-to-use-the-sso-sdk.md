@@ -61,7 +61,7 @@ if (!context) {
 
 ## Configuration
 
-Various configuration options can be set (as parameters in `VaultAccount`) for the verida connect SDK.
+Various configuration options can be set (as parameters in `VaultAccount`) for the Verida Connect SDK.
 
 These (all optional) config options include:
 

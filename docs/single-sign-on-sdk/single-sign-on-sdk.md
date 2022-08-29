@@ -8,7 +8,7 @@ keywords: [Verida, Web3, Developers]
 
 ## What is the Verida Connect  SDK?
 
-The Verida Connect SDK is a decentralized verida connect client library and server API that enables seamless QR code authentication via the Verida Vault mobile application.
+The Verida Connect SDK is a decentralized single sign-on client library and server API that enables seamless QR code authentication via the Verida Vault mobile application.
 
 ![QR_modal.png](QR_modal.png)
 
