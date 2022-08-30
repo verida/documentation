@@ -25,4 +25,4 @@ A user downloads the Verida Vault onto their mobile device which generates a pri
 
 [How to use the Verida Connect SDK](how-to-use-the-sso-sdk.md)
 
-[The Verida Connect Authentication Server](the-sso-authentication-server.md)
+[Authentication Server](the-sso-authentication-server.md)

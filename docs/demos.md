@@ -29,13 +29,12 @@ The Markdown Editor a self-sovereign Markdown editor </summary>
 >
 </iframe>
 </div>
-
 </details>
 
 <details close style={{background:"white",border:"0.5px solid #a6a6a6"}}>
 <summary>
 Vault Examples 
-which demonstrates use cases, features and capabilities of the Verida Vault (eg single sign-on, send a credential, request some data) </summary>
+which demonstrates use cases, features and capabilities of the Verida Vault (eg singing in , send a credential, request some data) </summary>
 <br/>
 <a href="https://vault-examples.demos.verida.io/">Link to  Vault Examples</a>
 <div>
