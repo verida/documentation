@@ -93,7 +93,7 @@ export default defineComponent({
 
 ### Using the `vda-account` component
 
-This component is used to display a logged-in user profile details such as `name`, `did` and `avatar`. If the user is not logged-in it will supply a sign-in link and generate the single sign-on logged-in form in the same way just as the `vda-login` component.
+This component is used to display a logged in user's profile details such as name, did and avatar. If the user is not logged in, it will supply a login link and generate the single sign-on login form in the same way the vda-login component does.
 
 - Example code:  
 
