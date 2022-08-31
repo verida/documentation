@@ -71,6 +71,8 @@ These (all optional) config options include:
 - `request?` — An object representing an authorization request that matches https://vault.schemas.verida.io/auth/loginRequest/latest/schema.json
 - `request?.logoUrl?` — The URL of a 170x170 PNG logo to display in the vault
 - `request?.openUrl?` — An optional URL for the Vault to open in the default browser on the user's mobile device after login is accepted. This will automatically authorize the user in local storage so future page loads of your application will be authenticated.
+- `request?.walletConnect?` — (Coming soon) An optional configuration to automatically establish a wallet connection upon sign in. Required parameters; `version` (Wallet connect version; `1` or `2`), `uri` (WalletConnect bridging server), `chainId` (A CAIP chain ID such as `eip155:1` for ethereum mainnet)
+- `request?.deviceId?` - (Coming soon) An optional unique string that specifies the name of the device logging in. This is displayed to the user in the Vault so they can easilly logout your application. Note: Logging out of an application is not instant, it can take up to 5 minutes depending on the configuration settings of the storage node the application is connected to.
 - `callback?` — A callback function when the auth response is received.
 - `deeplinkId?` — The HTML element ID of a link that should have the deeplink URI attached to the `href` property
 
@@ -78,4 +80,6 @@ These (all optional) config options include:
 
 Due to limitations, the redirection of the user, enabled by the `request?.openUrl?` option, will open a new tab in the default browser.
 
-As a complement, it is recommended to use the [hasSession](../api/verida-js/modules/verida_account_web_vault.md#hassession) method and a conditional `connect()` to optimise the user experience. An example of this pattern is shown in the [Verida Connect tutorial](../tutorial/SSO.mdx).
+It is recommended to use the [hasSession](../api/verida-js/modules/verida_account_web_vault.md#hassession) method and a conditional `connect()` to optimise the user experience. An example of this pattern is shown in the [Single Sign On tutorial](../tutorial/SSO.mdx).
+
+Authorization uses an `accessToken` and a `refreshToken`. If an `accessToken` expires, the SDK will automatically attempt to fetch a new `accessToken` using the `refreshToken`. If the `refreshToken` has expired, the SDK will re-open the QR code SSO modal and ask the user to re-login before continuing. Any existing network connections will be restored once the user logs in again.
