@@ -1,5 +1,5 @@
 ---
-title: Authentication Server
+title: The Authentication Server
 description: Verida Developer Documentation
 keywords: [Verida, Web3, Developers]
 ---
