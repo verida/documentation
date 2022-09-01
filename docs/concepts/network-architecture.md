@@ -35,8 +35,8 @@ The Verida Vault is a mobile application that acts as both a “Data Wallet” a
 
 The Vault provides users with the following core capabilities:
 
-- **Identity:** Allows users to create new decentralized identities, blockchain wallets, manage their private keys and facilitate single sign-on across an ecosystem of decentralized apps.
-- **Single Sign On:** Simple, consensual authentication and authorization with decentralized applications developed on the Verida network.
+- **Identity:** Allows users to create new decentralized identities, blockchain wallets, manage their private keys and facilitate authentication across an ecosystem of decentralized apps.
+- **Single sign-on:** Simple, consensual authentication and authorization with decentralized applications developed on the Verida network.
 - **User Data:** Allows users to browse their decrypted data, consensually share their data, allow it to be queried without sharing or move their data to a different storage service.
 - **Inbox:** A secure data inbox allows messages, requests and data to be received by end users and then actioned.
 - **Profiles:** Users can create and manage both public and private profiles that can be shared with third parties.
@@ -53,9 +53,9 @@ It is an easy-to-use library that abstracts the complexities behind these capabi
 
 [Learn more](../client-sdk/client-sdk.md)
 
-## Single Sign On (SSO) SDK
+## Verida Connect SDK
 
-A decentralized single sign on SDK that enables seamless QR code authentication via the Verida Vault mobile application.
+An SDK providing a decentralized single sign-on enabling seamless QR code authentication via the Verida Vault mobile application.
 
 It provides a seamless user experience to onboard new users to the Verida network, new decentralized applications and the full range of supported blockchains.
 
