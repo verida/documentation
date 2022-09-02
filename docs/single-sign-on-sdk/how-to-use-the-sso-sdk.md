@@ -72,7 +72,6 @@ These (all optional) config options include:
 - `request?.logoUrl?` — The URL of a 170x170 PNG logo to display in the vault
 - `request?.openUrl?` — An optional URL for the Vault to open in the default browser on the user's mobile device after login is accepted. This will automatically authorize the user in local storage so future page loads of your application will be authenticated.
 - `request?.walletConnect?` — (Coming soon) An optional configuration to automatically establish a wallet connection upon sign in. Required parameters; `version` (Wallet connect version; `1` or `2`), `uri` (WalletConnect bridging server), `chainId` (A CAIP chain ID such as `eip155:1` for ethereum mainnet)
-- `request?.deviceId?` - (Coming soon) An optional unique string that specifies the name of the device logging in. This is displayed to the user in the Vault so they can easilly logout your application. Note: Logging out of an application is not instant, it can take up to 5 minutes depending on the configuration settings of the storage node the application is connected to.
 - `callback?` — A callback function when the auth response is received.
 - `deeplinkId?` — The HTML element ID of a link that should have the deeplink URI attached to the `href` property
 
