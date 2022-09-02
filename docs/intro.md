@@ -10,7 +10,7 @@ import GooglePlay from '/img/play_store_google.svg';
 # Welcome to the Verida Developer Portal
 Verida is a multi-chain protocol for interoperable database storage and messaging built on decentralized identity where personal data is owned and controlled by users.
 
-Users are incentivized to unlock their data stored on centralized platforms. Builders access this data for new exciting use cases such as trusted storage, decentralized messaging and single sign on. Users' private data can be used as inputs into smart contracts, enabling connectivity to multiple blockchains.
+Users are incentivized to unlock their data stored on centralized platforms. Builders access this data for new exciting use cases such as trusted storage, decentralized messaging and single sign-on. Users' private data can be used as inputs into smart contracts, enabling connectivity to multiple blockchains.
 
 
 ## Getting Started
@@ -18,7 +18,8 @@ Users are incentivized to unlock their data stored on centralized platforms. Bui
 First you will need to download the developer preview edition Verida Vault. 
 
 [<AppleAppStore className="appstorebutton" />](https://apps.apple.com/us/app/verida-vault/id1546599632)
-<GooglePlay className="appstorebutton" />
+[<GooglePlay className="appstorebutton" />](https://play.google.com/store/apps/details?id=io.verida.vault)
+
 
 ### Learn about Verida
 
@@ -35,7 +36,7 @@ Read more about the [concepts](/docs/concepts) behind Verida:
 
 * Use Verida with our [demo applications](/docs/demos)
 * Try Verida now with an [interactive tutorial](/docs/tutorial/introduction)
-* Implement [Verida Single Sign On](/docs/single-sign-on-sdk) in your application.
+* Implement [Verida Connect](/docs/single-sign-on-sdk) in your application.
 * Add additional capabilities including data storage and messaging using the [Client SDK](/docs/client-sdk)
 
 * See the [API Docs](/docs/api/verida-js)

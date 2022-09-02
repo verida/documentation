@@ -1,14 +1,14 @@
 ---
-title: Single Sign On SDK
+title: Verida Connect SDK
 sidebar_position: 0
 description: Verida Developer Documentation
 keywords: [Verida, Web3, Developers]
 ---
 
 
-## What is the Single Sign On (SSO) SDK?
+## What is the Verida Connect  SDK?
 
-The Verida SSO SDK is a decentralized single sign on client library and server API that enables seamless QR code authentication via the Verida Vault mobile application.
+The Verida Connect SDK is a decentralized single sign-on client library and server API that enables seamless QR code authentication via the Verida Vault mobile application.
 
 ![QR_modal.png](QR_modal.png)
 
@@ -23,6 +23,6 @@ A user downloads the Verida Vault onto their mobile device which generates a pri
 
 ### Further Information
 
-[How to use the SSO SDK](how-to-use-the-sso-sdk.md)
+[How to use the Verida Connect SDK](how-to-use-the-sso-sdk.md)
 
-[The SSO Authentication Server](the-sso-authentication-server.md)
+[Authentication Server](the-sso-authentication-server.md)

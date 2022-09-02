@@ -1,12 +1,12 @@
 ---
-title: How to use the SSO SDK
+title: How to use the Verida Connect SDK
 description: Verida Developer Documentation
 keywords: [Verida, Web3, Developers]
 ---
 
 :::caution
 
-The Verida Single Sign On APIs are subject to change during the developer preview phase. 
+The Verida Connect APIs are subject to change during the developer preview phase. 
 
 :::
 
@@ -61,7 +61,7 @@ if (!context) {
 
 ## Configuration
 
-Various configuration options can be set (as parameters in `VaultAccount`) for the single sign-on SDK.
+Various configuration options can be set (as parameters in `VaultAccount`) for the Verida Connect SDK.
 
 These (all optional) config options include:
 
