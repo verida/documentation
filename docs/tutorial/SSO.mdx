@@ -84,6 +84,7 @@ VeridaLoginExample = () => {
 	this.logout = this.logout.bind(this);
 
 	// if we have a veridaContext we are logged in
+
 	if (veridaContext) {
 		// user is logged in
 		return (
@@ -94,15 +95,15 @@ VeridaLoginExample = () => {
 				</h3>
 				<button onClick={this.logout}>Logout</button>
 			</div>
-		);
+		)
 	} else {
 		return (
 			<div>
 				<button onClick={this.login}>Login</button>
 			</div>
-		);
+		)
 	}
-};
+}
 ```
 
 <!-- this is a target so we can link to the end of the code block -->
