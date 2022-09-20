@@ -32,7 +32,7 @@ VeridaMessagingExample = () => {
   }, []);
 
   sendTextMessage = async function () {
-    setStatus("Initalizing messaging... please wait.")
+    setStatus("Initializing messaging... please wait.")
     const messaging = await veridaContext.getMessaging()
 
     setStatus("Sending message...")

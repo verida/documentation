@@ -41,7 +41,7 @@ const VERIDA_ENVIRONMENT = EnvironmentType.TESTNET
 const CONTEXT_NAME = 'My Application Context Name'
 const VERIDA_TESTNET_DEFAULT_SERVER = 'https://db.testnet.verida.io:5002/'
 
-const context = Network.connect({
+const context = await Network.connect({
     context: {
         name: CONTEXT_NAME
     },
