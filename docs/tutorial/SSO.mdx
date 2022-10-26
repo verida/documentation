@@ -1,13 +1,13 @@
 ---
 sidebar_position: 2
-title: Single Sign-On
-description: Verida Developer Tutorial - Single Sign-On
-keywords: [Verida, Web3, Developers, Tutorial, Single Sign-On, Verida Connect, SSO]
+title: Verida Connect and Wallet Connect
+description: Verida Developer Tutorial - verida connect and Wallet connect
+keywords: [Verida, Web3, Developers, Tutorial, Verida Connect, Wallet connect]
 ---
 
-import ReactPlayer from "react-player";
+import ReactPlayer from 'react-player';
 
-# Login using Verida Connect SDK
+# Sign-in with Verida Connect SDK 
 
 ## See a walk through of the code
 
@@ -22,12 +22,18 @@ import ReactPlayer from "react-player";
 
 ## Try it out
 
-The code below shows how to login to the Verida network. It is live - you can press the "Login" button to login, and edit the code to see how it works.
+The code below shows how to login to the Verida network using the verida connect which uses wallet connect an optional configuration to automatically establish a wallet connection upon sign in .
+ It is live
+ - You can press the "Login" button to login, and edit the code to see how it works
+ - After a successfully sign in you can sign a personal message using the "Sign Personal Message" button
 
 ```jsx live
 VeridaLoginExample = () => {
 	const [veridaContext, setVeridaContext] = useState(undefined);
-	this.CONTEXT_NAME = "Verida Tutorial";
+	const [walletAddress, setWalletAddress] = useState('');
+	const [message, setMessage] = useState('');
+	const [walletConnector, setWalletConnector] = useState(undefined);
+	this.CONTEXT_NAME = 'Verida Tutorial';
 
 	React.useEffect(async () => {
 		// Runs after the first render() lifecycle
@@ -50,21 +56,46 @@ VeridaLoginExample = () => {
 	login = async function () {
 		// Create a VaultAccount. This takes a VaultAccountConfig parameter.
 		// See links below to docs on these
+		const bridgeURL = 'https://bridge.walletconnect.org';
+		const DEFAULT_CHAIN_ID = 'eip155:1';
+
+		const connector = new WalletConnect.default({
+			bridge: bridgeURL
+		});
+
+	    connector.on("disconnect", (error, payload) => {
+          if (error) {
+          console.error(error);
+          return;
+        }
+        console.log("WalletConnect on disconnect payload:", payload);
+        });
+
+		connector.on("connect", (error, payload) => {
+	      console.log("WalletConnect on connect payload:", payload);
+        })
+
 		const account = new VaultAccount({
 			request: {
-				logoUrl:
-					"https://developers.verida.io/img/tutorial_login_request_logo_170x170.png",
+				logoUrl: 'https://developers.verida.io/img/tutorial_login_request_logo_170x170.png'
 			},
+			walletConnect: {
+				version: connector.version,
+				uri: connector.uri,
+				chainId: DEFAULT_CHAIN_ID
+			}
 		});
+
+		console.log(account)
 
 		const context = await Network.connect({
 			client: {
-				environment: "testnet",
+				environment: 'testnet'
 			},
 			account: account,
 			context: {
-				name: this.CONTEXT_NAME,
-			},
+				name: this.CONTEXT_NAME
+			}
 		});
 
 		if (context) {
@@ -80,8 +111,34 @@ VeridaLoginExample = () => {
 		setVeridaContext(undefined);
 	};
 
+	convertUtf8ToHex = function(str) {
+      return Array.from(str).map(c => 
+	  c.charCodeAt(0) < 128 ? c.charCodeAt(0).toString(16).padStart(2, '0') :
+	  encodeURIComponent(c).replace(/\%/g,'').toLowerCase()
+      ).join('');
+    }
+
+	hexToUtf8 = function(hex) {
+        return decodeURIComponent('%' + hex.match(/.{1,2}/g).join('%'));
+    }
+
+	signInPersonalMessage = async function(){	
+       // const message = "Signing a Personal message from " + this.CONTEXT_NAME;
+       // const msgParams = [
+       // this.convertUtf8ToHex(message),
+       // walletAddress
+	   //];
+	   //const result = await walletConnector.signPersonalMessage(msgParams)
+	   //setMessage(this.hexToUtf8)
+		//console.log(result)
+		console.log('hello');
+	}
+
 	this.login = this.login.bind(this);
 	this.logout = this.logout.bind(this);
+	this.convertUtf8ToHex = this.convertUtf8ToHex.bind(this);
+	this.hexToUtf8 = this.hexToUtf8.bind(this);
+	this.signInPersonalMessage = this.signInPersonalMessage.bind(this);
 
 	// if we have a veridaContext we are logged in
 
@@ -90,18 +147,23 @@ VeridaLoginExample = () => {
 		return (
 			<div>
 				<h3>
-					Logged in! Your <a href='/docs/concepts/accounts-and-identity'>DID</a> 
-				    	is: <pre>{veridaContext.account.accountDid}</pre>
+					Logged in! Your <a href='/docs/concepts/accounts-and-identity'>DID</a>
+					is: <pre>{veridaContext.account.accountDid}</pre>
+				</h3>
+				<h3>
+					Personal Message signed 
+					 <pre>{message}</pre>
 				</h3>
 				<button onClick={this.logout}>Logout</button>
+				<button onClick={this.signInPersonalMessage}>Sign Personal Message</button>
 			</div>
-		)
+		);
 	} else {
 		return (
 			<div>
 				<button onClick={this.login}>Login</button>
 			</div>
-		)
+		);
 	}
 }
 ```
