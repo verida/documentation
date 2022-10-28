@@ -37,7 +37,13 @@ if (ExecutionEnvironment.canUseDOM) {
   const veridaVerifiableCredentials = require("@verida/verifiable-credentials");
   Credentials = veridaVerifiableCredentials.Credentials;
 
-  const subscribeToWalletConnection = async (connector) => {
+  const initWalletConnection = async () => {
+    const bridgeURL = "https://bridge.walletconnect.org"
+
+    const connector = new WalletConnect.default({
+      bridge: bridgeURL,
+    });
+
     if (!connector.connected) {
       // create new session
       await connector.createSession();
@@ -61,26 +67,19 @@ if (ExecutionEnvironment.canUseDOM) {
   }
 
   globalLoginFunction = async function (contextName) {
-    const bridgeURL = "https://bridge.walletconnect.org"
     const DEFAULT_CHAIN_ID = "eip155:1"
-
-    const connector = new WalletConnect.default({
-      bridge: bridgeURL,
-    });
-
-    await subscribeToWalletConnection(connector)
+    const connector = await initWalletConnection()
 
     globalAccount = new VaultAccount({
       request: {
         logoUrl:
           "https://developers.verida.io/img/tutorial_login_request_logo_170x170.png",
+        walletConnect: {
+          version: connector.version,
+          uri: connector.uri,
+          chainId: DEFAULT_CHAIN_ID,
+        },
       },
-      walletConnect: {
-        version: connector.version,
-        uri: connector.uri,
-        chainId: DEFAULT_CHAIN_ID,
-      },
-
     });
 
     const context = await Network.connect({
