@@ -67,7 +67,7 @@ if (ExecutionEnvironment.canUseDOM) {
   }
 
   globalLoginFunction = async function (contextName) {
-    const DEFAULT_CHAIN_ID = "eip155:1"
+    const CHAIN_ID = "eip155:1"
     const connector = await initWalletConnection()
 
     globalAccount = new VaultAccount({
@@ -77,7 +77,7 @@ if (ExecutionEnvironment.canUseDOM) {
         walletConnect: {
           version: connector.version,
           uri: connector.uri,
-          chainId: DEFAULT_CHAIN_ID,
+          chainId: CHAIN_ID,
         },
       },
     });

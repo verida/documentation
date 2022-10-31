@@ -14,13 +14,25 @@ how to use the live code :
  - You can press the "Login" button to login, and edit the code to see how it works
  - After a successfully sign in you can sign a personal message using the "Sign Personal Message" button
 
+
 ## Try it out
+
+:::caution
+
+You may get an error that display : "Session is disconnected"  this means you're currently logged in without a Wallet connect session.
+Steps to fix this error 
+ - You have to ensure vault app is updated to the latest version
+ - Then click the on the logout button in this tutorial  
+ -  Login again to establish a wc session
+
+:::
 
 ```jsx live
 VeridaLoginExample = () => {
 	const [veridaContext, setVeridaContext] = useState(undefined);
 	const [walletAddress, setWalletAddress] = useState(null);
-	const [message, setMessage] = useState(null);
+	const [successMessage, setSuccessMessage] = useState(null);
+	const [errorMessage, setErrorMessage] = useState(null);
 	const [isLoading, setIsLoading] = useState(false);
 	const [processingWc, setProcessingWc] = useState(false);
 	const [profile, setProfile] = useState(null);
@@ -86,9 +98,9 @@ VeridaLoginExample = () => {
 	login =  async function  () {
 		// Create a VaultAccount. This takes a VaultAccountConfig parameter.
 		// See links below to docs on these
-        const DEFAULT_CHAIN_ID = 'eip155:1';
+        const CHAIN_ID = 'eip155:1';
         setIsLoading(true)
-	
+
         connector = await initWalletConnect()
 
 		setWalletConnector(connector)
@@ -99,7 +111,7 @@ VeridaLoginExample = () => {
 				walletConnect: {
 				version: connector.version,
 				uri: connector.uri,
-				chainId: DEFAULT_CHAIN_ID
+				chainId: CHAIN_ID
 			}
 		  },
 		});
@@ -132,19 +144,29 @@ VeridaLoginExample = () => {
 
 	signInPersonalMessage = async function(){	
 		setProcessingWc(true)
-        const message = "My name is  " + profile.name;
-        const msgParams = [
-         message,
-		 walletAddress
-	    ];
+		try{
+          const message = "My name is  " + profile.name;
+          const msgParams = [
+			message,
+			walletAddress
+		];
         // Learn more about walletconnect personal_sign here 
         // https://docs.walletconnect.com/1.0/quick-start/dapps/client#sign-personal-message-personal_sign
-
-	    const result = await walletConnector.signPersonalMessage(msgParams)
+	    const result = await walletConnector.signPersonalMessage(msgParams);
 	    if(result){
-		 setMessage(result)
+		 setSuccessMessage(result)
 	    }
-		setProcessingWc(false)
+		}catch(error){
+			console.log({error})
+			if(error.message && error.message === "Session currently disconnected"){
+				setErrorMessage(`
+				 Wallet Connect : ${error.message}
+				 Please click the on the logout button, then  update version of the version of vault app and login again to establish a wc session
+			   `)
+			}
+		}finally{
+		  setProcessingWc(false)
+		}
 	}
 	
 	this.logout = this.logout.bind(this);
@@ -158,16 +180,20 @@ VeridaLoginExample = () => {
 			<div>
             {isLoading ? 'Verida connect in progress please wait....' :
                <>
-             <h3>
+                <h3 style={{marginBottom:'0.4rem'}}>
 				Logged in! Your 
-                <a href='/docs/concepts/accounts-and-identity'>DID</a>
+                <a href='/docs/concepts/accounts-and-identity' style={{marginRight:"0.2rem"}}>DID</a>
 					is: 
-                <pre>{veridaContext.account.accountDid}</pre>
 				</h3>
-				{message && <h3>
+				<span style={{display:'block',marginTop:'0.7rem', marginBottom:'0.7rem'}}>
+				{veridaContext.account.accountDid}
+				</span>
+				{
+				   successMessage && <h3>
 				   Successfully	Signed Signature : 
-					 <pre>{message}</pre>
-				</h3>}
+					 <pre>{successMessage}</pre>
+				   </h3>
+				}
 				<button onClick={this.logout}>Logout</button>
 				{
 				  processingWc ? 'Processing....' : 
@@ -175,8 +201,14 @@ VeridaLoginExample = () => {
 				  Sign Personal Message
 				  </button>
 				}
-             </>
-             }		
+              </>
+             }
+			 {
+				errorMessage &&  
+				<span style={{color:"red",display:'block',fontStyle:'italic'}}>
+				{errorMessage}
+				</span>
+			 }		
 			</div>
 		);
 	} else { 
