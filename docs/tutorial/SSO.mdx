@@ -29,7 +29,6 @@ VeridaLoginExample = () => {
 	const [veridaContext, setVeridaContext] = useState(undefined);
 	const [walletAddress, setWalletAddress] = useState(null);
 	const [message, setMessage] = useState(null);
-	const [walletConnector, setWalletConnector] = useState(undefined);
 	this.CONTEXT_NAME = 'Verida Tutorial';
 
 	React.useEffect(async () => {
@@ -52,36 +51,11 @@ VeridaLoginExample = () => {
 
 	login =  async function  () {
 		// Create a VaultAccount. This takes a VaultAccountConfig parameter.
-		// See links below to docs on these
-		const bridgeURL = 'https://bridge.walletconnect.org';
-		const DEFAULT_CHAIN_ID = 'eip155:1';
-    
-		const connector = new WalletConnect.default({
-			bridge: bridgeURL
-		});
-
-	   // Check if connection is already established
-
-        if (!connector.connected) {
-        // create new session
-          await connector.createSession();
-        }
-
-	    connector.on("connect", (error, payload) => {
-	      console.log("WalletConnect on connect payload:", payload);
-          setWalletAddress(payload.params[0].accounts[0]);
-        })
-		setWalletConnector(connector)
 
 		const account = new VaultAccount({
 			request: {
 				logoUrl: 'https://developers.verida.io/img/tutorial_login_request_logo_170x170.png',
-				walletConnect: {
-				version: connector.version,
-				uri: connector.uri,
-				chainId: DEFAULT_CHAIN_ID
-			}
-		  },
+		    },
 		});
 
 		const context = await Network.connect({

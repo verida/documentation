@@ -9,7 +9,7 @@ import ReactPlayer from 'react-player';
 
 # WalletConnect + Verida Connect
 
-The code below shows how to login to the Verida network using the verida connect which uses wallet connect an optional configuration to automatically establish a wallet connection upon sign in .
+The code below shows how to connect with both the Verida Network and WalletConnect providing a unified connection experience for the user .
 how to use the live code :
  - You can press the "Login" button to login, and edit the code to see how it works
  - After a successfully sign in you can sign a personal message using the "Sign Personal Message" button
@@ -19,23 +19,20 @@ how to use the live code :
 
 :::caution
 
-You may get an error that display : "Session is disconnected"  this means you're currently logged in without a Wallet connect session.
+You may get an error that display : "Session is disconnected"  this means you're currently logged in without a WalletConnect session.
 Steps to fix this error 
- - You have to ensure vault app is updated to the latest version
- - Then click the on the logout button in this tutorial  
- -  Login again to establish a wc session
+ - Please ensure the Verida Vault is updated to the latest version
+ - Login again to establish a WalletConnect session
 
 :::
 
 ```jsx live
 VeridaLoginExample = () => {
 	const [veridaContext, setVeridaContext] = useState(undefined);
-	const [walletAddress, setWalletAddress] = useState(null);
 	const [successMessage, setSuccessMessage] = useState(null);
 	const [errorMessage, setErrorMessage] = useState(null);
 	const [isLoading, setIsLoading] = useState(false);
 	const [processingWc, setProcessingWc] = useState(false);
-	const [profile, setProfile] = useState(null);
 	const [walletConnector, setWalletConnector] = useState(undefined);
 	this.CONTEXT_NAME = 'Verida Tutorial';
 
@@ -53,21 +50,8 @@ VeridaLoginExample = () => {
 		}
 	}, []);
 
-    getProfile = async function (context) {
-     // we can get our own DID like this
-     const did = veridaContext.account.accountDid
-      const client = await context.getClient()
-      const profileConnection = await client.openPublicProfile(
-      did,
-      "Verida: Vault",
-       "basicProfile"
-      )
-      const  profileData = await profileConnection.getMany(null, null)
-      return profileData
-    }
-
     initWalletConnect = async function () {
-         // see link to learn more on how to initialize wallet connect
+        // see link to learn more on how to initialize wallet connect
         // https://docs.walletconnect.com/1.0/quick-start/dapps/client#initiate-connection
 
 	    const bridgeURL = 'https://bridge.walletconnect.org';
@@ -77,37 +61,31 @@ VeridaLoginExample = () => {
 
 	    // Check if connection is already established
         if (!connector.connected) {
-         // create new session
+          // create new session
           await connector.createSession();
         }
-
 	    connector.on("connect", (error, payload) => {
-          setWalletAddress(payload.params[0].accounts[0]);
           console.log("WalletConnect on disconnect payload:", payload);
         })
-
         connector.on("disconnect", (error, payload) => {
-         if (error) {
-         console.error(error);
-         return;
+          if (error) {
+          console.error(error);
+          return;
         }
-        });
+     });
         return connector
     }
 
-	login =  async function  () {
-		// Create a VaultAccount. This takes a VaultAccountConfig parameter.
-		// See links below to docs on these
+	login = async function  () {
         const CHAIN_ID = 'eip155:1';
         setIsLoading(true)
-
         connector = await initWalletConnect()
-
 		setWalletConnector(connector)
-
+		// Create a VaultAccount. This takes a VaultAccountConfig parameter.
 		const account = new VaultAccount({
 			request: {
 				logoUrl: 'https://developers.verida.io/img/tutorial_login_request_logo_170x170.png',
+			    // An optional WalletConnect object
 				walletConnect: {
 				version: connector.version,
 				uri: connector.uri,
@@ -115,7 +93,6 @@ VeridaLoginExample = () => {
 			}
 		  },
 		});
-
 		const context = await Network.connect({
 			client: {
 				environment: 'testnet'
@@ -125,12 +102,9 @@ VeridaLoginExample = () => {
 				name: this.CONTEXT_NAME
 			}
 		});
-
 		if (context) {
 		   // set the local state variable
 		   setVeridaContext(context);
-           const profileData =  await this.getProfile(context)
-           setProfile(profileData)
            setIsLoading(false)
 		} 
 	};
@@ -145,12 +119,14 @@ VeridaLoginExample = () => {
 	signInPersonalMessage = async function(){	
 		setProcessingWc(true)
 		try{
-          const message = "My name is  " + profile.name;
+		 const did = veridaContext.account.accountDid
+          const message = `This is my DID ${did}`;
+		  const address = walletConnector._accounts[0]
           const msgParams = [
 			message,
-			walletAddress
+			address
 		];
-        // Learn more about walletconnect personal_sign here 
+        // Learn more about WalletConnect personal_sign here 
         // https://docs.walletconnect.com/1.0/quick-start/dapps/client#sign-personal-message-personal_sign
 	    const result = await walletConnector.signPersonalMessage(msgParams);
 	    if(result){
@@ -160,18 +136,15 @@ VeridaLoginExample = () => {
 			console.log({error})
 			if(error.message && error.message === "Session currently disconnected"){
 				setErrorMessage(`
-				 Wallet Connect : ${error.message}
-				 Please click the on the logout button, then  update version of the version of vault app and login again to establish a wc session
+				Wallet Connect : ${error.message}
+				Please click the on the logout button and
+				login again to establish a wc session
 			   `)
 			}
 		}finally{
 		  setProcessingWc(false)
 		}
 	}
-	
-	this.logout = this.logout.bind(this);
-	this.getProfile = this.getProfile.bind(this);
-	this.signInPersonalMessage = this.signInPersonalMessage.bind(this);
 
 	// if we have a veridaContext we are logged in
 	if (veridaContext) {
@@ -182,10 +155,16 @@ VeridaLoginExample = () => {
                <>
                 <h3 style={{marginBottom:'0.4rem'}}>
 				Logged in! Your 
-                <a href='/docs/concepts/accounts-and-identity' style={{marginRight:"0.2rem"}}>DID</a>
-					is: 
+                <a href='/docs/concepts/accounts-and-identity' 
+				style={{marginRight:"0.2rem"}}>
+				DID
+				</a>
+				is: 
 				</h3>
-				<span style={{display:'block',marginTop:'0.7rem', marginBottom:'0.7rem'}}>
+				<span 
+				style={{display:'block',marginTop:'0.7rem', 
+				marginBottom:'0.7rem'}}
+				  >
 				{veridaContext.account.accountDid}
 				</span>
 				{
