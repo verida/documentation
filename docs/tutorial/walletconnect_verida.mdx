@@ -69,6 +69,7 @@ VeridaLoginExample = () => {
       await connector.createSession();
     }
     connector.on("connect", (error, payload) => {
+      setWalletConnector(connector);
       console.log("WalletConnect on disconnect payload:", payload);
     })
     connector.on("disconnect", (error, payload) => {
@@ -84,13 +85,7 @@ VeridaLoginExample = () => {
     const CHAIN_ID = 'eip155:1';
     setIsLoading(true)
     connector = await initWalletConnect()
-    
-    //Confirm WalletConnect is connected
-    if(connector._connected){
-     setWalletConnector(connector)
-    }
-    
-    console.log(connector)
+
     // Create a VaultAccount. This takes a VaultAccountConfig parameter.
     const account = new VaultAccount({
       request: {
@@ -115,11 +110,20 @@ VeridaLoginExample = () => {
     if(context) {
       // set the local state variable
       setVeridaContext(context);
-      setIsLoading(false)
     }
+    // check if WalletConnect is connected
+    if(connector.connected) {
+      setWalletConnector(connector);
+    }
+    setIsLoading(false)
   };
 
   logout = async function () {
+    // disconnect WalletConnect session
+    if (walletConnector) {
+      walletConnector.killSession();
+      setWalletConnector(undefined);
+    }
     // disconnect the Verida session
     await veridaContext.account.disconnect(this.CONTEXT_NAME);
     // reset the internal state
@@ -156,13 +160,6 @@ VeridaLoginExample = () => {
     }
   }
 
-  disconnectSession = function () {
-    if (walletConnector) {
-      walletConnector.killSession();
-      setWalletConnector(undefined);
-    }
-  }
-
   // if we have a veridaContext we are logged in
   if(veridaContext) {
     // user is logged in
@@ -193,14 +190,6 @@ VeridaLoginExample = () => {
               </h3>
             }
             <button onClick={this.logout} style={styles}>Logout</button>
-            {
-              walletConnector &&
-               <button 
-               onClick={this.disconnectSession}
-                style={styles}>
-                Disconnect WalletConnect
-                </button>
-            }
             {
             walletConnector 
             && (processingWc ? 'Processing....' : 
