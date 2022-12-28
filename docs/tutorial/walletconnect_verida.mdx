@@ -90,7 +90,8 @@ VeridaLoginExample = () => {
     const account = new VaultAccount({
       request: {
         logoUrl: 'https://developers.verida.io/img/tutorial_login_request_logo_170x170.png',
-        // Pass the WalletConnect details required for the connection
+        // Pass the WalletConnect details required for the connection. 
+        // Please not that the wallet connect object is optional.
         walletConnect: {
           version: connector.version,
           uri: connector.uri,
