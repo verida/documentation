@@ -20,28 +20,68 @@ let hasSession = null;
 let globalAccount = null;
 let globalLoginFunction = null;
 let getCircularReplacer = null;
+let WalletConnect = null
 
 
 if (ExecutionEnvironment.canUseDOM) {
+  const WalletConnectClient = require("@walletconnect/client")
+  WalletConnect = WalletConnectClient
+
   const veridaClient = require("@verida/client-ts");
   Network = veridaClient.Network;
 
   const veridaWebVault = require("@verida/account-web-vault");
   VaultAccount = veridaWebVault.VaultAccount;
   hasSession = veridaWebVault.hasSession;
-  
 
   const veridaVerifiableCredentials = require("@verida/verifiable-credentials");
   Credentials = veridaVerifiableCredentials.Credentials;
 
-  globalAccount = new VaultAccount({
-    request: {
-      logoUrl:
-        "https://developers.verida.io/img/tutorial_login_request_logo_170x170.png",
-    },
-  });
+  const initWalletConnection = async () => {
+    const bridgeURL = "https://bridge.walletconnect.org"
+
+    const connector = new WalletConnect.default({
+      bridge: bridgeURL,
+    });
+
+    if (!connector.connected) {
+      // create new session
+      await connector.createSession();
+    }
+
+    // Subscribe to connection events
+    connector.on("connect", (error, payload) => {
+      if (error) {
+        console.error(error);
+        return;
+      }
+      console.log("WalletConnect on connect payload:", payload);
+    });
+    connector.on("disconnect", (error, payload) => {
+      if (error) {
+        console.error(error);
+        return;
+      }
+      console.log("WalletConnect on disconnect payload:", payload);
+    });
+  }
 
   globalLoginFunction = async function (contextName) {
+    const CHAIN_ID = "eip155:1"
+    const connector = await initWalletConnection()
+
+    globalAccount = new VaultAccount({
+      request: {
+        logoUrl:
+          "https://developers.verida.io/img/tutorial_login_request_logo_170x170.png",
+        walletConnect: {
+          version: connector.version,
+          uri: connector.uri,
+          chainId: CHAIN_ID,
+        },
+      },
+    });
+
     const context = await Network.connect({
       client: {
         environment: "testnet",
@@ -54,21 +94,6 @@ if (ExecutionEnvironment.canUseDOM) {
 
     return context;
   }
-
-  // getCircularReplacer = () => {
-  //   const seen = new WeakSet();
-  //   return (key, value) => {
-  //     if (typeof value === "object" && value !== null) {
-  //       if (seen.has(value)) {
-  //         return;
-  //       }
-  //       seen.add(value);
-  //     }
-  //     return value;
-  //   };
-  // };
-
-
 }
 
 const ReactLiveScope = {
@@ -82,6 +107,7 @@ const ReactLiveScope = {
   VaultAccount,
   Credentials,
   hasSession,
+  WalletConnect,
   globalAccount,
   globalLoginFunction,
   getCircularReplacer

@@ -29,18 +29,35 @@ Here’s how you initialize an application context:
 ```jsx
 import { Network, EnvironmentType } from '@verida/client-ts';
 import { VaultAccount } from '@verida/account-web-vault';
+import WalletConnect from "@walletconnect/client";
+
+
 
 const VERIDA_ENVIRONMENT = EnvironmentType.TESTNET;
 const CONTEXT_NAME = 'My Application Context Name';
 
+const bridgeURL = "https://bridge.walletconnect.org"
+const DEFAULT_CHAIN_ID = "eip155:1"
+
 // The LOGO_URL should be a 170x170 PNG file
 const LOGO_URL = "https://assets.verida.io/verida_login_request_logo_170x170.png";
+
+
+connector = new WalletConnect({
+    bridge: bridgeURL,
+});
+
 
 const account = new VaultAccount({
   request: {
     logoUrl: "https://assets.verida.io/verida_login_request_logo_170x170.png",
     openURL: window.location.href, // will redirect the user to this same page after accepting the login request in the Vault app
-  }
+  },
+  walletConnect: {
+    version: connector.version,
+    uri: connector.uri,
+    chainId: DEFAULT_CHAIN_ID,
+  },
 });
 
 const context = Network.connect({

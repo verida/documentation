@@ -1,0 +1,219 @@
+---
+sidebar_position: 2
+title:  WalletConnect + Verida Connect
+description: Verida Developer Tutorial - verida connect and Wallet connect
+keywords: [Verida, Web3, Developers, Tutorial, Verida Connect, Wallet connect]
+---
+
+import ReactPlayer from 'react-player';
+
+# WalletConnect + Verida Connect
+
+The code below shows how to connect with both the Verida Network and WalletConnect providing a unified connection experience for the user .
+how to use the live code :
+ - You can press the "Login" button to login, and edit the code to see how it works
+ - After a successfully sign in you can sign a personal message using the "Sign Personal Message" button
+
+
+## Try it out
+
+:::caution
+
+You may get an error that display : "Session is disconnected"  this means you're currently logged in without a WalletConnect session.
+Steps to fix this error 
+ - Please ensure the Verida Vault is updated to the latest version
+ - Login again to establish a WalletConnect session
+
+:::
+
+```jsx live
+VeridaLoginExample = () => {
+  const [veridaContext, setVeridaContext] = useState(undefined);
+  const [successMessage, setSuccessMessage] = useState(null);
+  const [errorMessage, setErrorMessage] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
+  const [processingWc, setProcessingWc] = useState(false);
+  const [walletConnector, setWalletConnector] = useState(undefined);
+  this.CONTEXT_NAME = 'Verida Tutorial';
+
+  const styles ={
+    marginRight: '0.7rem'
+  }
+
+
+  React.useEffect(async () => {
+    // We use this to check if we are logged in
+    if (!veridaContext) {
+      // we don't have veridaContext in local state
+      // Check if we have a stored session
+      //  hasSession is from the package "@verida/account-web-vault"
+      if (hasSession(this.CONTEXT_NAME)) {
+        // we know we have a session already
+        login(); // when logged in this will just setup a Verida Context
+      }
+    }
+  }, []);
+
+  initWalletConnect = async function () {
+    // see link to learn more on how to initialize wallet connect
+    // https://docs.walletconnect.com/1.0/quick-start/dapps/client#initiate-connection
+
+    const bridgeURL = 'https://bridge.walletconnect.org';
+    const connector = new WalletConnect.default({
+      bridge: bridgeURL
+    });
+
+    // Check if connection is already established
+    if (!connector.connected) {
+      // create new session
+      await connector.createSession();
+    }
+    connector.on("connect", (error, payload) => {
+      setWalletConnector(connector);
+      console.log("WalletConnect on disconnect payload:", payload);
+    })
+    connector.on("disconnect", (error, payload) => {
+      if (error) {
+        console.error(error);
+        return;
+      }
+    });
+    return connector
+  }
+
+  login = async function () {
+    const CHAIN_ID = 'eip155:1';
+    setIsLoading(true)
+    connector = await initWalletConnect()
+
+    // Create a VaultAccount. This takes a VaultAccountConfig parameter.
+    const account = new VaultAccount({
+      request: {
+        logoUrl: 'https://developers.verida.io/img/tutorial_login_request_logo_170x170.png',
+        // Pass the WalletConnect details required for the connection. 
+        // Please not that the wallet connect object is optional.
+        walletConnect: {
+          version: connector.version,
+          uri: connector.uri,
+          chainId: CHAIN_ID
+        }
+      },
+    });
+    const context = await Network.connect({
+      client: {
+        environment: 'testnet'
+      },
+      account: account,
+      context: {
+        name: this.CONTEXT_NAME
+      }
+    });
+    if(context) {
+      // set the local state variable
+      setVeridaContext(context);
+    }
+    // check if WalletConnect is connected
+    if(connector.connected) {
+      setWalletConnector(connector);
+    }
+    setIsLoading(false)
+  };
+
+  logout = async function () {
+    // disconnect WalletConnect session
+    if (walletConnector) {
+      walletConnector.killSession();
+      setWalletConnector(undefined);
+    }
+    // disconnect the Verida session
+    await veridaContext.account.disconnect(this.CONTEXT_NAME);
+    // reset the internal state
+    setVeridaContext(undefined);
+  };
+
+  signInPersonalMessage = async function () {
+    setProcessingWc(true)
+    try {
+      const did = veridaContext.account.accountDid
+      const message = `This is my DID ${did}`;
+      const address = walletConnector._accounts[0]
+      const msgParams = [
+        message,
+        address
+      ];
+      // Learn more about WalletConnect personal_sign here 
+      // https://docs.walletconnect.com/1.0/quick-start/dapps/client#sign-personal-message-personal_sign
+      const result = await walletConnector.signPersonalMessage(msgParams);
+      if(result) {
+        setSuccessMessage(result)
+      }
+    } catch (error) {
+      console.log({ error })
+      if(error.message && error.message === "Session currently disconnected") {
+        setErrorMessage(`
+				WalletConnect : ${error.message}
+				Please click the on the logout button and
+				login again to establish a WalletConnect session
+			   `)
+      }
+    } finally {
+      setProcessingWc(false)
+    }
+  }
+
+  // if we have a veridaContext we are logged in
+  if(veridaContext) {
+    // user is logged in
+    return (
+      <div>
+        {isLoading ? 'Verida connect in progress please wait....' :
+          <>
+            <h3 style={styles}>
+              Logged in! Your
+              <a href='/docs/concepts/accounts-and-identity'
+                style={styles}>
+                DID
+              </a>
+              is:
+            </h3>
+            <span
+              style={{
+                display: 'block', marginTop: '0.7rem',
+                marginBottom: '0.7rem'
+              }}
+            >
+              {veridaContext.account.accountDid}
+            </span>
+            {
+              successMessage && <h3>
+                Successfully	Signed Signature :
+                <pre>{successMessage}</pre>
+              </h3>
+            }
+            <button onClick={this.logout} style={styles}>Logout</button>
+            {
+            walletConnector 
+            && (processingWc ? 'Processing....' : 
+              <button onClick={this.signInPersonalMessage}>
+                Sign Personal Message
+              </button>
+            )}
+          </>
+        }
+        {
+          errorMessage &&
+          <span style={{ color: "red", display: 'block', fontStyle: 'italic' }}>
+            {errorMessage}
+          </span>
+        }
+      </div>
+    );
+  } else {
+    return (
+      <div>
+        <button onClick={this.login}>Login</button>
+      </div>
+    );
+  }
+}
+```
