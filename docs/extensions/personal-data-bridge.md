@@ -202,11 +202,11 @@ const requestParamsWithNonce = ethers.utils.solidityPack(
     ['bytes', 'uint'],
     [requestParams, userDidNonce]
 )
-const signedRequest = await keyring.sign(requestParamsWithNonce)
+const signedRequest = await customerKeyring.sign(requestParamsWithNonce)
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // Finally, we submit the request to the smart contract
-await contract.submitCreditScore(getAddressFromDid(did), requestParams, signedRequest, customerContextProof)
+await contract.submitCreditScore(getAddressFromDid(customerDid), requestParams, signedRequest, customerContextProof)
 ```
 
 ### Verify and use the credit score data on-chain
@@ -259,7 +259,7 @@ contract TestContract is VDAVerificationContract {
 
 In the above example we hardcoded an array of addresses (`trustedCreditCompanies`) with a single trusted DID.
 
-`VDAVerificationContract.sol` provies an easier way to manage this from your smart contracts.
+`VDAVerificationContract.sol` provides an easier way to manage this from your smart contracts.
 
 There are methods that can be executed by the smart contract owner:
 
