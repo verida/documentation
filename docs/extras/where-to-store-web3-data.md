@@ -1,6 +1,6 @@
 ---
-sidebar_position: 1
-title: Storing Web3 data
+sidebar_position: 2
+title: Storing Web3 Data
 description: Where should Web3 data be stored
 keywords: [Verida, Web3, Data, Storage]
 ---

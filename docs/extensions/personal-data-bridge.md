@@ -9,7 +9,7 @@ keywords: [Verida, Web3, Developers, Data Bridge]
 
 This Verida extension allows private off-chain data to be securely used within smart contracts in a cryptographically trusted manner.
 
-# Use case examples
+## Use case examples
 
 This enables use cases such as:
 
@@ -17,18 +17,18 @@ This enables use cases such as:
 2. A trusted entity signing a proof that a DID controls a social media account (ie: Facebook). The end user submits this social media ownership proof to a smart contract to mint a Soulbound token to a blockchain wallet the identity controls.
 3. A trusted entity completes KYC verification of an end user and signs a message indicating the end user has passed KYC to generate a "KYC proof" associated with the user's DID. The end user submits this KYC proof to a smart contract in order to access a decentralized exchange that requires users to be KYC'd.
 
-# How it works
+## How it works
 
 1. A trusted DID (`trustedDid`) signs off-chain data and sends it to the user
 2. The user generates a smart contract request and signs it
 3. The smart contract verifies the smart contract request and verifies the signed off-chain data can be trusted
 4. The smart contract uses the trusted data within the smart contract
 
-# Usage: Submit a verified request to a smart contract
+## Usage: Submit a verified request to a smart contract
 
 We will walk through an end-to-end example of submitting a request to a smart contract that is verified to have originated from a Verida DID.
 
-## Signing data (client side)
+### Signing data (client side)
 
 When a record is saved into a Verida `datastore` or `database`, the full JSON record is automatically signed by the protocol. The record is signed by a "signing key" that is controlled by the Verida DID that is saving the data. It's possible for other DID's to also sign this data, producing multiple signatures.
 
@@ -42,11 +42,11 @@ const data = 'data to sign'
 const signature = keyring.sign(data)
 ```
 
-## Generate smart contract request (client side)
+### Generate smart contract request (client side)
 
 We will submit a message ("hello world") to a smart contract that originates from a Verida DID and is protected from replay attacks:
 
-```
+```jsx
 const CONTEXT_NAME = 'ACME: Test Application'
 const keyring = account.keyring(CONTEXT_NAME)
 // Fetch the DID of the account
@@ -85,13 +85,15 @@ We assume the smart contract supports `nonce(didAddress)` method for fetching th
 
 We assume there is a method `getAddressFromDid(did: string)` that converts `did:vda:testnet:0x...` to `0x...`.
 
-## Verify and use the smart contract request
+### Verify and use the smart contract request
+
+Your smart contract will require `@verida/vda-verification-contract`.
 
 Let's define the basic smart contract that will define the `verifyStringRequest()` method:
 
-```
+```jsx
 // Import the Verida Verification Base Contract
-import "./VDAVerificationContract.sol";
+import "@verida/vda-verification-contract/contracts/VDAVerificationContract.sol";
 
 contract TestContract is VDAVerificationContract {
     function initialize() public initializer {
@@ -120,15 +122,15 @@ contract TestContract is VDAVerificationContract {
 
 NOTE: `VDAVerificationContract.sol` supports `nonce()` method and the `verifyRequest()` always checks the signed nonce is the next value.
 
-# Usage:  Submit a verified request to a smart contract WITH trusted off-chain data
+## Usage:  Submit a verified request to a smart contract WITH trusted off-chain data
 
 Let's improve on the above example by also including signed data that can then be verified and used on-chain.
 
-## Signing credit score data
+### Signing credit score data
 
 In this example, let's assume a credit rating agency has a Verida DID and generates a signed proof that a user has a credit rating of 9:
 
-```
+```jsx
 const CONTEXT_NAME = 'Credit Rating Company: Credit Score Verifier'
 const creditCompanyKeyring = creditCompanyVeridaAccount.keyring(CONTEXT_NAME)   // account is a DID controlled by the credit rating company
 const creditCompanyDid = await account.did()
@@ -149,13 +151,13 @@ const customerCreditRatingProof = creditCompanyKeyring.sign(proofString)
 
 At this point, the `customerCreditRatingProof` and `creditScore` would be sent back to the customer for them to store off-chain, typically in their Verida Vault. The customer could privately send the proof to a third party (via the Verida network or any other communication channel) or submit it to a smart contract.
 
-## Generate smart contract request (client side)
+### Generate smart contract request (client side)
 
 We will now submit `customerCreditRatingProof` to a smart contract that trusts `creditCompanyDid` and will verify they can trust the credit rating data.
 
 Lets assume the customer is now logged into the `No Deposit Loans` dApp run by `Onchain Loan Company` that trusts `Credit Rating Company`. The customer will generate a verified request to the smart contract that includes the necessary data for the smart contract to verify their credit score on-chain.
 
-```
+```jsx
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // First, assume we have the data previously generated by `Credit Rating Company` (see above)
 const creditScore = 9 (see above)
@@ -207,11 +209,11 @@ const signedRequest = await keyring.sign(requestParamsWithNonce)
 await contract.submitCreditScore(getAddressFromDid(did), requestParams, signedRequest, customerContextProof)
 ```
 
-## Verify and use the credit score data on-chain
+### Verify and use the credit score data on-chain
 
 Let's update the basic smart contract with a new  `submitCreditScore()` method:
 
-```
+```jsx
 // Import the Verida Verification Base Contract
 import "./VDAVerificationContract.sol";
 
@@ -253,7 +255,7 @@ contract TestContract is VDAVerificationContract {
 }
 ```
 
-## Trusted signers
+### Trusted signers
 
 In the above example we hardcoded an array of addresses (`trustedCreditCompanies`) with a single trusted DID.
 
@@ -272,7 +274,7 @@ You can use this inbuilt list stored in the smart contract, by calling `verifyDa
 verifyData(bytes(creditScore), customerCreditRatingProof, creditCompanyContextProof);
 ```
 
-# Multi-chain
+## Multi-chain
 
 One of the huge benefits of the Verida DID's not being linked to any particular blockchain, means this implementation can be replicated across any chain that supports `keccak256` hashing and `ed25519` signatures (basically every blockchain).
 

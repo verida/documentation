@@ -46,7 +46,7 @@ const CONTENT_CARD_LIST = [
 		title: "Demos",
 		description: "Explore Verida technologies with demo applications",
 		icon: <DemosIcon title='icon' />,
-		link: "/docs/demos",
+		link: "/docs/extras/demos",
 		externalLink: false,
 	},
 ];

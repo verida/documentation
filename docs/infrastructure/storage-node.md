@@ -1,6 +1,6 @@
 ---
 title: Storage Node
-sidebar_position: 1
+sidebar_position: 2
 description: Verida Developer Documentation
 keywords: [Verida, Web3, Developers]
 ---
