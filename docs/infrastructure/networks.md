@@ -17,6 +17,7 @@ Verida currently operates all the storage nodes on the network while it measures
 | --- | --- |
 | Blockchain | Polygon Mumbai (Testnet) |
 | Storage Nodes | https://assets.verida.io/registry/storageNodes/testnet.json |
+| Auth Server | https://auth.testnet.verida.io/ |
 
 We will soon be opening up storage nodes for third parties to operate.
 
