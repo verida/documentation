@@ -58,7 +58,7 @@ We actively encourage developers to [create an issue](https://github.com/verida/
 
 :::
 
-Verida is responsible for maintaining the `core` and `common schemas`, merging appropriate PR's from third parties and handling any data migration between schema versions with users running the Verida Vault.
+Verida is responsible for maintaining the `core` and `common schemas`, merging appropriate PR's from third parties and handling any data migration between schema versions with users running the Verida Wallet.
 
 ## Application schemas
 

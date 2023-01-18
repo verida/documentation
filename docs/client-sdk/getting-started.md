@@ -11,7 +11,7 @@ You can interactively use the Verida client library in your browser using the [V
 
 ## Installation
 
-Start by installing the Verida client protocol library and Verida Vault authentication method:
+Start by installing the Verida client protocol library and Verida Wallet authentication method:
 
 ```bash npm2yarn
 npm install @verida/client-ts @verida/account-web-vault
@@ -25,7 +25,7 @@ npm install --dev @types/pouchdb-core
 
 ## Authentication
 
-Initialize a connection to the Verida network using a private key stored on the user’s mobile device using the Verida Vault:
+Initialize a connection to the Verida network using a private key stored on the user’s mobile device using the Verida Wallet:
 
 ```tsx
 import { Network, EnvironmentType } from '@verida/client-ts';

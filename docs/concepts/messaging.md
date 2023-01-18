@@ -43,11 +43,11 @@ The Verida SDK automatically monitors the public inbox to process any new inbox 
 
 It's helpful to display a profile icon and a name for the Verida account when displaying an inbox message.
 
-In the Verida Vault, this profile metadata is fetched from the public profile of the Verida account that sent the message. As described in the [Profiles](../client-sdk/profiles) section, a public profile is linked to a particular application context.
+In the Verida Wallet, this profile metadata is fetched from the public profile of the Verida account that sent the message. As described in the [Profiles](../client-sdk/profiles) section, a public profile is linked to a particular application context.
 
 A message is also sent from a particular application context, so it makes sense to load the profile information from the same context that sent the message. However, in reality many applications won't create their own profile and will use the profile from the `Verida: Vault` application context.
 
-As such, the Verida Vault loads profile metadata in the following order:
+As such, the Verida Wallet loads profile metadata in the following order:
 
 - From the application context that sent the inbox message
 - `Verida: Vault` application context as a fall back

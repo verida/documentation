@@ -83,7 +83,7 @@ The major capabilities of the Verida developer platform are as follows:
     <td align="center">✅ </td>
     <td align="left">
         <ul>
-            <li><a href="https://vault.verida.io">Available in the Verida Vault</a></li>
+            <li><a href="https://vault.verida.io">Available in the Verida Wallet</a></li>
         </ul>
     </td>
 </tr>

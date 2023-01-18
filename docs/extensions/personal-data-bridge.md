@@ -149,7 +149,7 @@ const proofString = `${customerDid}-${creditScore}`
 const customerCreditRatingProof = creditCompanyKeyring.sign(proofString)
 ```
 
-At this point, the `customerCreditRatingProof` and `creditScore` would be sent back to the customer for them to store off-chain, typically in their Verida Vault. The customer could privately send the proof to a third party (via the Verida network or any other communication channel) or submit it to a smart contract.
+At this point, the `customerCreditRatingProof` and `creditScore` would be sent back to the customer for them to store off-chain, typically in their Verida Wallet. The customer could privately send the proof to a third party (via the Verida network or any other communication channel) or submit it to a smart contract.
 
 ### Generate smart contract request (client side)
 

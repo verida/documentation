@@ -17,7 +17,7 @@ Users are incentivized to unlock their data stored on centralized platforms. Bui
 
 ## Getting Started
 
-First you will need to download the developer preview edition Verida Vault. 
+First you will need to download the developer preview edition Verida Wallet. 
 
 [<AppleAppStore className="appstorebutton" />](https://apps.apple.com/us/app/verida-vault/id1546599632)
 [<GooglePlay className="appstorebutton" />](https://play.google.com/store/apps/details?id=io.verida.vault)

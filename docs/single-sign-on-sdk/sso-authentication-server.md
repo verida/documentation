@@ -21,7 +21,7 @@ This is the login flow:
 
 When a Verida Account authenticates, it can designate an `authenticate` requst to be linked to a particular device by specifying the `deviceId` in the request.
 
-This allows a specific device to be linked to a refresh token. A call to `/auth/invalidateDeviceId` can be used to invalidate any refresh tokens linked to the specified `deviceId`. This allows the Verida Vault to remotely log out an application that previously logged in.
+This allows a specific device to be linked to a refresh token. A call to `/auth/invalidateDeviceId` can be used to invalidate any refresh tokens linked to the specified `deviceId`. This allows the Verida Wallet to remotely log out an application that previously logged in.
 
 Note: This only invalidates the refresh token. The access token will remain valid until it expires. It's for this reason that access tokens are configured to have a short expiry (5 minutes by default). CouchDB does not support manually invalidating access tokens, so we have to take this timeout approach to invalidation.
 
@@ -43,7 +43,7 @@ The configuration file allows you to provide the private key of a valid blockcha
 
 There is a `loginOrigin` property that, if specified, will check the `origin` HTTP header from each socket request to ensure it’s coming from the expected domain. This ensures third party websites can’t easily request valid authentication tokens. This also ensures third party websites can be prevented from using the resources of any auth server that is running.
 
-Malicious third parties could obtain a token by spoofing the `origin` HTTP header and then presenting that to the user. However, this `loginOrigin` property is passed inside the encrypted payload to the Verida Vault and is displayed to the user. This allows the user to visually verify the domain name they are currently on matches the domain name displayed on the Verida Vault login screen. In the future, the Verida Trust Framework will add an additional layer of security by matching on chain metadata against the public key and domain name used to sign the payload.
+Malicious third parties could obtain a token by spoofing the `origin` HTTP header and then presenting that to the user. However, this `loginOrigin` property is passed inside the encrypted payload to the Verida Wallet and is displayed to the user. This allows the user to visually verify the domain name they are currently on matches the domain name displayed on the Verida Wallet login screen. In the future, the Verida Trust Framework will add an additional layer of security by matching on chain metadata against the public key and domain name used to sign the payload.
 
 # #Production
 

@@ -20,6 +20,8 @@ Verida currently operates all the storage nodes on the network while it measures
 
 We will soon be opening up storage nodes for third parties to operate.
 
+[Register your interest in providing storage nodes for the network](https://www.verida.network/developers#build-with-us).
+
 ## Wattle (Mainnet)
 
 Coming soon

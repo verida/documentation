@@ -15,11 +15,11 @@ Your application must install the appropriate account package and connect it to 
 
 There are two ways to authenticate a user to your application:
 
-## 1. Verida Vault
+## 1. Verida Wallet
 
 Designed *for secure web applications*
 
-Your web application integrates the [Verida Connect SDK](../single-sign-on-sdk/single-sign-on-sdk.md) which displays a QR code to a user. A user scans the QR code and is walked through an onboarding process of installing the Verida Vault, creating a blockchain account and then authenticating with your application.
+Your web application integrates the [Verida Connect SDK](../single-sign-on-sdk/single-sign-on-sdk.md) which displays a QR code to a user. A user scans the QR code and is walked through an onboarding process of installing the Verida Wallet, creating a blockchain account and then authenticating with your application.
 
 See the [Verida Connect SDK](../single-sign-on-sdk/single-sign-on-sdk.md) for more details.
 
