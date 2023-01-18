@@ -1,6 +1,6 @@
 ---
 title: Application Contexts
-sidebar_position: 4
+sidebar_position: 5
 description: Verida Developer Documentation
 keywords: [Verida, Web3, Developers]
 ---

@@ -1,6 +1,6 @@
 ---
 title: Messaging
-sidebar_position: 5
+sidebar_position: 6
 description: Verida Developer Documentation
 keywords: [Verida, Web3, Developers]
 ---
