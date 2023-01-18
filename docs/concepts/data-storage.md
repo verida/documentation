@@ -23,9 +23,13 @@ We have written an overview of the types of Web3 data that provide helpful backg
 
 ## Where is data stored?
 
+![Verida Data Storage Network](data_storage/data-storage-network.png)
+
 User data is stored on Verida [Storage Nodes](../infrastructure/storage-node) connected to the Verida network. This offers a publicly available, decentralized, globally distributed collection of encrypted storage nodes.
 
 The Verida network architecture allows users to determine which nodes on the network store their data, or even self-host and use their own private nodes.
+
+Users grant access to authentications to access and decrypt portions of their data stored on nodes across the network.
 
 It is currently possible to manage this via our client SDK, but that is not a suitable user experience for the vast majority of users. In the future the Verida Wallet will provide a user interface allowing users to easily manage and control where their data is stored.
 
