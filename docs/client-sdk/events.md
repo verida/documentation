@@ -48,7 +48,7 @@ messaging.onMessage(function(message) { console.log('New message!', message)})
 
 ## Database sync changes
 
-Data is automatically syncronized from remote encrypted servers to the local client. It’s possible to listen to events related to this syncing behaviour:
+Data is automatically synchronized from remote encrypted servers to the local client. It’s possible to listen to events related to this syncing behavior:
 
 ```tsx
 const listener = database.onSync('error', (err) => { console.log(err) })

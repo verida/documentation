@@ -13,7 +13,7 @@ Messages on the Verida protocol operate on two dimensions; the Verida Account an
 
 ![concepts_identity.png](messaging/overview.png)
 
-In the example above we have the account `Steve - Personal` from the application context `Easy Insurance Software` sending a message to account `Jane - Laywer` in the `Lovely Legal Software` application context.
+In the example above we have the account `Steve - Personal` from the application context `Easy Insurance Software` sending a message to account `Jane - Lawyer` in the `Lovely Legal Software` application context.
 
 This architecture allows applications to develop their own message types for domain specific data sharing and messaging.
 

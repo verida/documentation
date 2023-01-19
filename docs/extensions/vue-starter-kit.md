@@ -8,7 +8,7 @@ keywords: [Verida, Web3, Developers, Verifiable Credentials]
 
 ### Using the @verida/vue-account Vue components
 
-Verida supplies open source Vue components for easy app development. See the [Verida Vue Components repo](https://github.com/verida/verida-vue-components/tree/develop/components/account) for comprahensive documentation all options. 
+Verida supplies open source Vue components for easy app development. See the [Verida Vue Components repo](https://github.com/verida/verida-vue-components/tree/develop/components/account) for comprehensive documentation all options. 
 
 
 :::info

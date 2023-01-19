@@ -13,7 +13,7 @@ Verida is a network of users with decentralized identities that can access decen
 
 Verida provides a reference implementation of a “Data Wallet” (Verida Wallet), a mobile application for end users to create decentralized identities, securely store their private keys, and interact with the Verida network.
 
-Verida has a roadmap of network extensions that expand its capabilities towards a global network of trusted, private, verifiable, self-sovereign data that can power a personalized Web3 future.
+Verida has a road map of network extensions that expand its capabilities towards a global network of trusted, private, verifiable, self-sovereign data that can power a personalized Web3 future.
 
 ## Decentralized Identity
 
@@ -83,4 +83,4 @@ Phase 2 of the Verida network will incorporate many new capabilities that can be
 - Trusted interactions with on-chain addresses and smart contracts
 - Token rewards for adding valuable data to the network
 
-Further details will be scoped and disucssed as part of the [Verida Improvement Proposals](https://github.com/verida/VIPs) process.
+Further details will be scoped and discussed as part of the [Verida Improvement Proposals](https://github.com/verida/VIPs) process.

@@ -112,7 +112,7 @@ The database will be created if it doesn’t exist.
 
 ## Datastores
 
-In a world where users own their own data, it’s important their data is portable between applications. Otherwise we end up with the current situation of data silos, where user data is scatterred across lots of different applications.
+In a world where users own their own data, it’s important their data is portable between applications. Otherwise we end up with the current situation of data silos, where user data is scattered across lots of different applications.
 
 Verida solves this problem by creating databases with a defined schema, called `datastores`. This ensures data interoperability between applications (and users).
 

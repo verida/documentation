@@ -20,7 +20,7 @@ const messaging = await context.getMessaging()
 
 ### Get messages
 
-You can retreive the 20 most recent messages:
+You can retrieve the 20 most recent messages:
 
 ```tsx
 const messages = await messaging.getMessages()
@@ -50,7 +50,7 @@ const listener = await messaging.onMessage(function(inboxEntry) {
 })
 ```
 
-The `inboxEntry` object utilises the [inbox/entry schema](https://core.schemas.verida.io/inbox/entry/latest/schema.json). The two most important properties are:
+The `inboxEntry` object utilizes the [inbox/entry schema](https://core.schemas.verida.io/inbox/entry/latest/schema.json). The two most important properties are:
 
 - `type` — The type of inbox entry. This references a full schema URL.
 - `data` — The data contained in the inbox entry. This will be an object adhering to the schema specified in `type`. [See a list of currently supported inbox types](https://github.com/verida/schemas/tree/master/schemas/inbox/type).

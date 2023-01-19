@@ -35,6 +35,6 @@ An account explorer to lookup and get detailed information about accounts on the
 
 ## Credential Issuer
 
-A demo application that allows users to sign in and self-issue a Veriable Credential to themselves.
+A demo application that allows users to sign in and self-issue a Verifiable Credential to themselves.
 
 - [Launch: Credential Issuer](https://credential-issuer.demos.verida.io/connect)

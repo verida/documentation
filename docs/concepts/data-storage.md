@@ -59,7 +59,7 @@ This diagram shows a single user with data spread across four applications, but 
 
 User data is replicated across multiple storage nodes on the Verida Network. By default the Verida Wallet selects three storage nodes to store user data; providing three replicas of all the data. The network architecture allows users to select an unlimited number of storage nodes to store their data (and which nodes).
 
-This ensures tht if one of the storage nodes becomes unavailable, there are two other nodes that still have copies of the data and the user can continue uninterupted.
+This ensures tht if one of the storage nodes becomes unavailable, there are two other nodes that still have copies of the data and the user can continue uninterrupted.
 
 The built-in replication and recovery of the network ensures that when a node comes back online, it will automatically "catch up" with data it missed and then come back online.
 
@@ -70,7 +70,7 @@ The built-in replication and recovery of the network ensures that when a node co
 Under the hood a combination of [CouchDB](https://en.wikipedia.org/wiki/Apache_CouchDB) and [PouchDB](https://pouchdb.com/) is used to store user data. Here’s why that combination was chosen over other options:
 
 - CouchDB was released in 2005. It is well supported and battle hardened over the years. This meets the principle: `Suitable for Enterprise use`.
-- CouchDB supports multi-master replication and multi-version concurrency control (MVCCC) making it ideally suited to synchronise data between applications. This meets the principle: `Write once, use everywhere`.
+- CouchDB supports multi-master replication and multi-version concurrency control (MVCCC) making it ideally suited to synchronize data between applications. This meets the principle: `Write once, use everywhere`.
 - CouchDB supports custom user permissions. This meets the principle: `Security must not be compromised`.
 - PouchDB is a Javascript implementation of CouchDB that can run within a web browser (or mobile app) enabling user data to be encrypted within the web browser before being sent to CouchDB, while still enabling full database query support of the encrypted data. This meets the principles: `Security must not be compromised` and helps on-board new developers by providing well known query capabilities.
 
@@ -78,11 +78,11 @@ At the end of the day, data must be physically stored somewhere. Verida Client S
 
 ## How is data synchronized between applications?
 
-Applications built with Verida Client SDK can syncronize data between other users and other applications, using the CouchDB syncronization protocol.
+Applications built with Verida Client SDK can syncronize data between other users and other applications, using the CouchDB synchronization protocol.
 
 Data from multiple applications using the same schemas can be synchronized automating conflict management. This works in a similar way to a `git merge`, but for database data.
 
-The Verida Wallet provides an interface for requesting access to sharing data and automatically handles creating these data syncronization rules between applications.
+The Verida Wallet provides an interface for requesting access to sharing data and automatically handles creating these data synhcronization rules between applications.
 
 [Learn more: Data Sharing](./data-sharing)
 
@@ -97,7 +97,7 @@ This is the authentication flow:
 5. When the access token expires, the Verida Account can use the refresh token to request a new access token (`/auth/connect`)
 6. If a refresh token is close to expiry, the Verida Account can use the active refresh token to obtain a new refresh token (`/auth/regenerateRefreshToken`)
 
-When a Verida Account authenticates, it can designate an `authenticate` requst to be linked to a particular device by specifying the `deviceId` in the request.
+When a Verida Account authenticates, it can designate an `authenticate` request to be linked to a particular device by specifying the `deviceId` in the request.
 
 This allows a specific device to be linked to a refresh token. A call to `/auth/invalidateDeviceId` can be used to invalidate any refresh tokens linked to the specified `deviceId`. This allows the Verida Wallet to remotely log out an application that previously logged in.
 

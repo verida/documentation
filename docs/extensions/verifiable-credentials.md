@@ -37,7 +37,7 @@ Verifiable Credentials can be issued by an account on the Verida Network. The cr
 
 ### Credential Display within the Verida Wallet
 
-The Verida Wallet will automatically show the public profile icon of the Verida Account that signed the credential. You will need to set this icon for your Verida account so the icon displayes correctly.
+The Verida Wallet will automatically show the public profile icon of the Verida Account that signed the credential. You will need to set this icon for your Verida account so the icon displays correctly.
 
 You could add the signing Verida Account to the Verida Wallet and use the mobile app to set a profile avatar and name. This will then be the default for every inbox message and credential issued across the Verida network. Alternatively, you could manually set the profile information for the application context generating the credential. See [Account Profiles](../client-sdk/profiles) for more information on how to achieve this.
 
@@ -72,7 +72,7 @@ You can easily create your own schemas.
 
 :::info
 
-Schemas should be hosted on a publically available webhost that sets the `Access-Control-Allow-Origin` CORS header. [Read more here](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors/CORSMissingAllowOrigin).
+Schemas should be hosted on a publicly available web host that sets the `Access-Control-Allow-Origin` CORS header. [Read more here](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors/CORSMissingAllowOrigin).
 
 :::
 

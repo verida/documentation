@@ -13,7 +13,7 @@ This Verida extension allows private off-chain data to be securely used within s
 
 This enables use cases such as:
 
-1. A credit rating agency signing a credit score linked to a Verida identity (DID). The identity controller (end user) submits this credit score to a smart contract to access an under collatoralized loan.
+1. A credit rating agency signing a credit score linked to a Verida identity (DID). The identity controller (end user) submits this credit score to a smart contract to access an under-collateralized loan.
 2. A trusted entity signing a proof that a DID controls a social media account (ie: Facebook). The end user submits this social media ownership proof to a smart contract to mint a Soulbound token to a blockchain wallet the identity controls.
 3. A trusted entity completes KYC verification of an end user and signs a message indicating the end user has passed KYC to generate a "KYC proof" associated with the user's DID. The end user submits this KYC proof to a smart contract in order to access a decentralized exchange that requires users to be KYC'd.
 
@@ -139,7 +139,7 @@ const creditScore = 9
 
 // The Verida DID of the customer. This will be sent by the customer when
 // requesting their proof of credit score, likely through a Verida inbox message
-// or by the user logging into a dApp managed b ythe credit rating company
+// or by the user logging into a dApp managed by the credit rating company
 const customerDid = 'did:vda:testnet:0x...'
 
 // Generate a proof string that specifies the credit score for the customer DID
@@ -266,7 +266,7 @@ There are methods that can be executed by the smart contract owner:
 - `addTrustedSigner(address didAddress)`
 - `removeTrustedSigner(address didAddress)`
 
-This maintains an internal lsit of trusted DID addresses. In the above example, this might be a list of 8 credit rating company DID's that are trusted by the smart contract.
+This maintains an internal list of trusted DID addresses. In the above example, this might be a list of 8 credit rating company DID's that are trusted by the smart contract.
 
 You can use this inbuilt list stored in the smart contract, by calling `verifyData()` instead of `verifyDataWithSigners()`:
 

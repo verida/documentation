@@ -43,10 +43,10 @@ When a database is opened, the Client SDK connects to the encrypted remote datab
 
 This allows your application to run queries within the browser on the decrypted data.
 
-Any changes to data are syncronized in real-time between the local and cloud databases. Data is automatically decrypted / encrypted between the local database and the remote encrypted database.
+Any changes to data are synchronized in real-time between the local and cloud databases. Data is automatically decrypted / encrypted between the local database and the remote encrypted database.
 
 ## 4. Sending messages
 
 Messages can be sent between two application contexts for a single Verida account or between different Verida accounts.
 
-At a high level, each message uses asymmetric encryption whereby the message is encrypted with the recipients public key and the sender’s private key. This is then encapsuated in a Decentralized Identity Javascript Web Token (DID-JWT) and sent to a public database controlled by the recipient. The recipient can then decrypt and process that message as appopriate.
+At a high level, each message uses asymmetric encryption whereby the message is encrypted with the recipients public key and the sender’s private key. This is then encapsulated in a Decentralized Identity Javascript Web Token (DID-JWT) and sent to a public database controlled by the recipient. The recipient can then decrypt and process that message as appropriate.

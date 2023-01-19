@@ -14,7 +14,7 @@ This enables:
 - Data of a particular type created in one application can be used in another application (ie: A user’s Contact list can be shared across multiple communication apps)
 - Data can be validated before storing in the user’s database
 - Data can be queried in a consistent way
-- Data can be grouped together by type, enabling permissioned sharing between apps
+- Data can be grouped together by type, enabling permissions to be shared between apps
 
 The Verida [Client SDK](../client-sdk/client-sdk.md) uses valid [JSON Schema](https://json-schema.org/) files that specify the structure and validation constraints of your data.
 
@@ -35,7 +35,7 @@ Well-defined schemas are a key enabler of interoperability when building decentr
 
 The Verida Client SDK provides a set of base / shared schemas for interoperability between applications.
 
-Application developers can submit push requests to contribute to the base schemas or develop their own schemas for their business or consortium of organisations.
+Application developers can submit push requests to contribute to the base schemas or develop their own schemas for their business or consortium of organizations.
 
 ## Types of schemas
 
@@ -64,7 +64,7 @@ Verida is responsible for maintaining the `core` and `common schemas`, merging a
 
 Applications are free to create their own schemas for use within their application. These schemas should be valid JSON schema files that are hosted by your application.
 
-Application developers will be responsible for any data migration required caused by upgrades from one schema version to another schema version. In the future, tools may be developed by Verida or the community to help simplify or standardise this data migration process.
+Application developers will be responsible for any data migration required caused by upgrades from one schema version to another schema version. In the future, tools may be developed by Verida or the community to help simplify or standardize this data migration process.
 
 ### Industry schemas
 

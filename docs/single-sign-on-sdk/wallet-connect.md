@@ -38,7 +38,7 @@ The `walletConnect` configuration options are:
 
 ### Chain ID
 
-The `chainId` must be a CAIP comptaible blockchain identifier (See [CAIP-2](https://github.com/ChainAgnostic/CAIPs/blob/master/CAIPs/caip-2.md)).
+The `chainId` must be a CAIP compatible blockchain identifier (See [CAIP-2](https://github.com/ChainAgnostic/CAIPs/blob/master/CAIPs/caip-2.md)).
 
 The Verida Wallet currently supports the following testnet networks:
 

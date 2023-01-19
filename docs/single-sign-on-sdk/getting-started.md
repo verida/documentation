@@ -92,6 +92,6 @@ When the user accepts the login request, an `accessToken` and a `refreshToken` a
 
 Due to limitations with how mobile devices work, the redirection of the user, enabled by the `request?.openUrl?` option, will open a new tab in the default browser.
 
-It is recommended to use the [hasSession](../api/verida-js/modules/verida_account_web_vault.md#hassession) method and a conditional `connect()` to optimise the user experience. An example of this pattern is shown in the [Single Sign On tutorial](../tutorial/SSO.mdx).
+It is recommended to use the [hasSession](../api/verida-js/modules/verida_account_web_vault.md#hassession) method and a conditional `connect()` to optimize the user experience. An example of this pattern is shown in the [Single Sign On tutorial](../tutorial/SSO.mdx).
 
 Authorization uses an `accessToken` and a `refreshToken`. If an `accessToken` expires, the SDK will automatically attempt to fetch a new `accessToken` using the `refreshToken`. If the `refreshToken` has expired, the SDK will re-open the QR code SSO modal and ask the user to re-login before continuing. Any existing network connections will be restored once the user logs in again.

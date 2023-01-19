@@ -73,7 +73,7 @@ Documentation examples will be coming shortly.
 
 ### Examples
 
-- A medical practioner can synchronize a patient’s last 6 months of health records
+- A medical practitioner can synchronize a patient’s last 6 months of health records
 - A decentralized advertising network can request read only access to a live stream of a user’s social media posts and personal preferences
 - A user can update their phone number and it will be automatically updated with all third party applications that have synchronized access to the user’s private profile
 
@@ -89,6 +89,6 @@ An example of this is coming soon in the [Verida Tutorial](../tutorial/introduct
 There is a lot of flexibility in how this data synchronization is configured. An application can request access to:
 
 - A read and / or write stream of all data of a particular type
-- Once off data syncronization
+- Once off data synchronization
 - Permanent sync (until the user disables)
 - A filtered stream of data based on a query
