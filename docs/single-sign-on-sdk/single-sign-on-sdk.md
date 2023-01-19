@@ -14,7 +14,7 @@ application.
 
 ### How it works
 
-A user downloads the Verida Wallet onto their mobile device which generates a private key on a supported blockchain. This private key is used to generated a Decentralized Identity (DID). The user then scans a QR code on their phone which prompts the user to sign a consent message using the Verida Wallet to unlock the secure enclave for that application.
+A user downloads the Verida Wallet onto their mobile device which generates a private key on a supported blockchain. This private key is used to generate a Decentralized Identity (DID). The user then scans a QR code on their phone which prompts the user to sign a consent message using the Verida Wallet to unlock the secure enclave for that application.
 
 ![sso_overview.png](sso_overview.png)
 
