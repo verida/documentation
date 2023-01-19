@@ -36,7 +36,7 @@ Read more about the [concepts](/docs/concepts) behind Verida:
 
 ### Develop with Verida
 
-* Use Verida with our [demo applications](/docs/demos)
+* Use Verida with our [demo applications](/docs/extras/demos)
 * Try Verida now with an [interactive tutorial](/docs/tutorial/introduction)
 * Implement [Verida Connect](/docs/single-sign-on-sdk) in your application.
 * Add additional capabilities including data storage and messaging using the [Client SDK](/docs/client-sdk)

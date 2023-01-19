@@ -38,7 +38,7 @@ The database endpoints for this application data is published in the DID Documen
 
 For simplicity, Verida provides a free testnet database that can be used by any application, however both application developers and users can take control of this data.
 
-Applications operating on a server can specify their own storage nodes. See [../client-sdk/authentication](Authentication).
+Applications operating on a server can specify their own storage nodes. See [Authentication](../client-sdk/authentication).
 
 Storage nodes for users are currently managed by the Verida Wallet
 

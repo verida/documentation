@@ -19,7 +19,7 @@ To start your application, use `npm run start`
 
 There is an example configuration file located in `src/config/index.example.js`. Copy this file to `src/config/index.js`.
 
-You must update `AUTH_URI` to match the domain name / IP address of the server. You will also need to configure the Auth Client library to use this value as the `serverUri`. See [Verida Connect SDK / Getting Started / Configuration](./single-sign-on-sdk/getting-started#configuration).
+You must update `AUTH_URI` to match the domain name / IP address of the server. You will also need to configure the Auth Client library to use this value as the `serverUri`. See [Verida Connect SDK / Getting Started / Configuration](../single-sign-on-sdk/getting-started#configuration).
 
 You must configure each application this server will support in the `CONTEXTS` section. You can specify a different private key per context. All data is encrypted and signed using the private key. This enables the data to be decrypted by the end user and in the future, will enable Application Contexts to be registered to specific keys, providing enhanced man-in-the-middle attack protection.
 

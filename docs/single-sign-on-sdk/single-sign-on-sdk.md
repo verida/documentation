@@ -21,4 +21,4 @@ A user downloads the Verida Wallet onto their mobile device which generates a pr
 ### Further Information
 
 - [How to use the Verida Connect SDK](getting-started.md)
-- [Authentication Server](the-sso-authentication-server.md)
+- [Authentication Server](sso-authentication-server.md)
