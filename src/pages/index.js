@@ -4,12 +4,12 @@ import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import ExternalLink from "@site/static/img/external-link.svg";
+import DiscordLogo from "@site/static/img/discord-logo.svg";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
 import ContentCard from "../components/cards/ContentCard";
-import DiscordCard from "../components/cards/DiscordCard";
-import PartnerShipCard from "../components/cards/PartnershipCard";
 import GithubCard from "../components/cards/GithubCard";
+import CommunityBannerCard from "../components/cards/CommunityBannerCard";
 import Footer from "../components/Footer";
 import ReadDocsIcon from "@site/static/img/read_docs.svg";
 import ExploreAPiICon from "@site/static/img/explore_api.svg";
@@ -25,29 +25,57 @@ import {
 const CONTENT_CARD_LIST = [
 	{
 		title: "Read the Documentation",
-		icon: <ReadDocsIcon title='icon' />,
+		icon: (
+			<ReadDocsIcon
+				title='icon'
+				style={{
+					width: "85%",
+				}}
+			/>
+		),
 		link: "/docs/intro",
-		externalLink: false,
+		subText:
+			"Learn about the core concepts of the Verida protocol, the network and more",
 	},
 	{
 		title: "See API Documentation",
-		icon: <ExploreAPiICon title='icon' />,
+		icon: (
+			<ExploreAPiICon
+				title='icon'
+				style={{
+					width: "85%",
+				}}
+			/>
+		),
 		link: "/docs/api/verida-js/",
-		externalLink: true,
+		subText: "Detailed documentation of the Verida JS library",
 	},
 	{
 		title: "Interactive Tutorial",
-		description: `Check out the interactive tutorials for an introduction to Verida's Web3 APIs`,
-		icon: <IntTutorialIcon title='icon' />,
+		icon: (
+			<IntTutorialIcon
+				title='icon'
+				style={{
+					width: "85%",
+				}}
+			/>
+		),
 		link: "/docs/tutorial/introduction",
-		externalLink: false,
+		subText:
+			"Try the interactive tutorial to get you coding with Verida as quickly as possible.",
 	},
 	{
 		title: "Demos",
-		description: "Explore Verida technologies with demo applications",
-		icon: <DemosIcon title='icon' />,
+		icon: (
+			<DemosIcon
+				title='icon'
+				style={{
+					width: "85%",
+				}}
+			/>
+		),
 		link: "/docs/demos",
-		externalLink: false,
+		subText: "Test our demo applications to interact with the Verida protocol",
 	},
 ];
 
@@ -101,27 +129,36 @@ export default function Home() {
 									<ContentCard key={item.title} {...item} />
 								))}
 							</div>
-							<div className={styles.vaultDL}>
-								<h1>Download the Verida Vault (Developer Preview)</h1>
+							<div className={styles.sectionTitle}>
+								<h2>Getting Started</h2>
 							</div>
-							<div className={styles.storeButtons}>
+							<div className={styles.gettingStartedCardContainer}>
 								<a href={APPLE_STORE_LINK}>
-									<img
-										className={styles.appstorebutton}
-										src='/img/app_store_apple.svg'
-									/>
+									<img src='/img/app_store_apple.svg' />
 								</a>
 								<a href={GOOGLE_PLAY_STORE_LINK}>
-									<img
-										className={styles.appstorebutton}
-										src='/img/play_store_google.svg'
-									/>
+									<img src='/img/play_store_google.svg' />
 								</a>
 							</div>
-							<DiscordCard />
-							<PartnerShipCard />
+							<CommunityBannerCard
+								link='https://discord.verida.io'
+								headerTitle='Join our Discord Community'
+								icon={<DiscordLogo title='DiscordLogo' />}
+								bodyText={`We would love to hear from you! Let us know what you're building or if you need any assistance getting started.`}
+							/>
+							<CommunityBannerCard
+								link='https://www.verida.io/ecosystem#partner'
+								headerTitle='Verida Early Adopter Program'
+								bodyText={`Join the growing ecosystem of partners building the future of web3.`}
+							/>
 							<div className={styles.githubCardSection}>
-								<h2>GitHub Repositories</h2>
+								<div className={styles.sectionTitle}>
+									<h2>GitHub Repositories</h2>
+								</div>
+								<p>
+									The Verida protocol is comprised of an ecosystem of open
+									source components
+								</p>
 								<div className={styles.githubCard}>
 									{GITHUB_LINKS.map((item) => (
 										<GithubCard key={item.title} {...item} />
