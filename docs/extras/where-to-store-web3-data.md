@@ -1,6 +1,6 @@
 ---
-sidebar_position: 1
-title: Storing Web3 data
+sidebar_position: 2
+title: Storing Web3 Data
 description: Where should Web3 data be stored
 keywords: [Verida, Web3, Data, Storage]
 ---
@@ -29,14 +29,14 @@ Blockchain storage is the first type of storage most web3 developers use. Howeve
 
 Many developers discover these limitations and switch to using [IPFS](https://ipfs.io/). IPFS is a globally accessible content addressable file storage network, where files are referenced by the hash of their content. This makes it very well suited to "flat file" type storage, and it has had great success as storage for NFT images. In broad terms IPFS is used in a similar way to how AWS S3 is used in Web2 development - to make files available to people and applications.
 
-The next limitation Web3 developers find is around private data and managing access permissions to that data. Users want self-sovereignty over personal data so they can control their own information. How do you store things like a user's interests or even things like health information in a way that doesn't make it publicaly available to anyone for data mining or identity theft?
+The next limitation Web3 developers find is around private data and managing access permissions to that data. Users want self-sovereignty over personal data so they can control their own information. How do you store things like a user's interests or even things like health information in a way that doesn't make it publicly available to anyone for data mining or identity theft?
 
 Many developers resort to trying to encrypt data and store it either on-chain or in encrypted files on IPFS. There are a number of serious problems with this:
 
 - Most developers are not cryptographers and often make mistakes in how they implement their encryption, putting user data at risk.
-- Both blockchains and IPFS are immutable storage systems, meaning that any mistake either in implementation or by a user accidently leaking an encryption key means their data is globally public forever with no way to fix it.
+- Both blockchains and IPFS are immutable storage systems, meaning that any mistake either in implementation or by a user accidentally leaking an encryption key means their data is globally public forever with no way to fix it.
 - The lack of a proper query mechanism leads to badly performing apps. Either applications load large files into memory and developers find data inside them or there are many small files each of which must be requested each time it is needed.
-- Updates and deletes are implemented by copying all data to a new version of the file and resaving it. This is both expensive and slow.
+- Updates and deletes are implemented by copying all data to a new version of the file and re-saving it. This is both expensive and slow.
 - No control over the physical storage location of data which is often important for legal or policy reasons.
 
 Verida exists to solve these problems. The [Verida DbStore](https://github.com/verida/documentation/blob/feature/where-to-store-web3-data/docs/concepts/data-storage) is a decentralized, end-to-end (E2E) encrypted document database.

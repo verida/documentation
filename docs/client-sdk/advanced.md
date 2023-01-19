@@ -46,7 +46,7 @@ Here’s example output for an encrypted database:
   dsn: 'https://<username>:<password>@db.testnet.verida.io:5984',
   storageContext: 'Verida Test: Test Application 1',
   databaseName: 'SyncTestDb',
-  databasehash: '<databasehash>',
+  databaseHash: '<databaseHash>',
   encryptionKey: Uint8Array(32) [
     ...
   ],

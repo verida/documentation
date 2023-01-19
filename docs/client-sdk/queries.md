@@ -5,11 +5,11 @@ description: Verida Developer Documentation
 keywords: [Verida, Web3, Developers]
 ---
 
-The majority of decentralised data solutions in the Web3 space provide simple `key` / `value` storage options as querying distributed and / or encrypted databases is a significantly *hard* problem.
+The majority of decentralized data solutions in the Web3 space provide simple `key` / `value` storage options as querying distributed and / or encrypted databases is a significantly *hard* problem.
 
 The Verida Client SDK architecture has the following features that facilitate querying of encrypted data in a consistent manner across many distributed databases:
 
-- Using `CouchDB`compatible database syncronisation and merging
+- Using `CouchDB`compatible database synchronization and merging
 - Using common JSON schemas to ensure data consistency between distributed applications
 - Encrypt / Decrypt data on the fly between multiple `CouchDB` compliant database backends, with different encryption keys for each
 
@@ -83,7 +83,7 @@ We receive the first 10 documents sorted by name. We can continue paginating by 
 
 ## Indexes
 
-You can manually create **database indexes** by utilising the underlying [PouchDB index API methods](https://pouchdb.com/api.html#create_index):
+You can manually create **database indexes** by utilizing the underlying [PouchDB index API methods](https://pouchdb.com/api.html#create_index):
 
 ```tsx
 const veridaDb = await context.openDatabase('test_db')

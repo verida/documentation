@@ -70,15 +70,20 @@ if (ExecutionEnvironment.canUseDOM) {
     const CHAIN_ID = "eip155:1"
     const connector = await initWalletConnection()
 
+    let walletConnect = {}
+    if (connector) {
+      walletConnect = {
+        version: connector.version,
+        uri: connector.uri,
+        chainId: CHAIN_ID,
+      }
+    }
+
     globalAccount = new VaultAccount({
       request: {
         logoUrl:
           "https://developers.verida.io/img/tutorial_login_request_logo_170x170.png",
-        walletConnect: {
-          version: connector.version,
-          uri: connector.uri,
-          chainId: CHAIN_ID,
-        },
+        walletConnect,
       },
     });
 

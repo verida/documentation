@@ -1,9 +1,10 @@
 ---
 title: Storage Node
-sidebar_position: 1
+sidebar_position: 2
 description: Verida Developer Documentation
 keywords: [Verida, Web3, Developers]
 ---
+
 # Storage Node
 
 The Verida protocol provides an open source [Storage Node](https://github.com/verida/storage-node) server that provides encrypted database storage for one or more Verida accounts.

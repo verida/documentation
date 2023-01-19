@@ -50,11 +50,11 @@ This guide provides a deeper insight on how these tools can be helpful to build 
 
 **Scenario:** _An application wants to create a secure collection of databases where the data is owned and controlled by the end user_
 
-**Example:** _A developer creates a decentralized game and wants to create a custom database of game metadata to store for the user. The game metadata can only be unlocked by the user via a consent sign in message in the Verida Vault_
+**Example:** _A developer creates a decentralized game and wants to create a custom database of game metadata to store for the user. The game metadata can only be unlocked by the user via a consent sign in message in the Verida Wallet_
 
 **Assumptions:** _The data is proprietary to the application and a user is unlikely to want that data to be shared / used by other applications._
 
-Access to this data is typically “unlocked” in real time by sending a Connection Request to the user's Vault request to the user’s Vault, but the data isn’t visible by default in the Verida Vault.
+Access to this data is typically “unlocked” in real time by sending a Connection Request to the user's Vault request to the user’s Vault, but the data isn’t visible by default in the Verida Wallet.
 
 ### Developers
 
@@ -63,7 +63,7 @@ Access to this data is typically “unlocked” in real time by sending a Connec
 
 ## Sharing access to lots of private data (Data synchronization)
 
-**Scenario:** _A user has a lot of personal data stored in their Verida Vault that your application wants consent to securely read and write._
+**Scenario:** _A user has a lot of personal data stored in their Verida Wallet that your application wants consent to securely read and write._
 
 **Example:** _You may operate a medical practice that stores a patient's medical records and you wish to regularly read and write the patient’s medical data._
 
@@ -73,7 +73,7 @@ Documentation examples will be coming shortly.
 
 ### Examples
 
-- A medical practioner can synchronize a patient’s last 6 months of health records
+- A medical practitioner can synchronize a patient’s last 6 months of health records
 - A decentralized advertising network can request read only access to a live stream of a user’s social media posts and personal preferences
 - A user can update their phone number and it will be automatically updated with all third party applications that have synchronized access to the user’s private profile
 
@@ -89,6 +89,6 @@ An example of this is coming soon in the [Verida Tutorial](../tutorial/introduct
 There is a lot of flexibility in how this data synchronization is configured. An application can request access to:
 
 - A read and / or write stream of all data of a particular type
-- Once off data syncronization
+- Once off data synchronization
 - Permanent sync (until the user disables)
 - A filtered stream of data based on a query

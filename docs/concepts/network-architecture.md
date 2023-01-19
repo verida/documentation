@@ -11,9 +11,9 @@ keywords: [Verida, Web3, Developers]
 
 Verida is a network of users with decentralized identities that can access decentralized services (Verida Network). These services include private database storage, messaging and notifications. In time, this will be expanded to include block storage, blockchain access, on/off chain data bridges and trust services.
 
-Verida provides a reference implementation of a “Data Wallet” (Verida Vault), a mobile application for end users to create decentralized identities, securely store their private keys, and interact with the Verida network.
+Verida provides a reference implementation of a “Data Wallet” (Verida Wallet), a mobile application for end users to create decentralized identities, securely store their private keys, and interact with the Verida network.
 
-Verida has a roadmap of network extensions that expand its capabilities towards a global network of trusted, private, verifiable, self-sovereign data that can power a personalized Web3 future.
+Verida has a road map of network extensions that expand its capabilities towards a global network of trusted, private, verifiable, self-sovereign data that can power a personalized Web3 future.
 
 ## Decentralized Identity
 
@@ -29,11 +29,11 @@ The user’s public keys are used to find and communicate with them. Users contr
 
 [Learn more](accounts-and-identity.md)
 
-## Vault
+## Verida Wallet
 
-The Verida Vault is a mobile application that acts as both a “Data Wallet” and a “Crypto Wallet” for end users. It provides private key management and a user-friendly interface for interacting with the Verida network and supported blockchains.
+The Verida Wallet is a mobile application that acts as both a “Data Wallet” and a “Crypto Wallet” for end users. It provides private key management and a user-friendly interface for interacting with the Verida network and supported blockchains.
 
-The Vault provides users with the following core capabilities:
+The Verida Wallet provides users with the following core capabilities:
 
 - **Identity:** Allows users to create new decentralized identities, blockchain wallets, manage their private keys and facilitate authentication across an ecosystem of decentralized apps.
 - **Single sign-on:** Simple, consensual authentication and authorization with decentralized applications developed on the Verida network.
@@ -55,7 +55,7 @@ It is an easy-to-use library that abstracts the complexities behind these capabi
 
 ## Verida Connect SDK
 
-An SDK providing a decentralized single sign-on enabling seamless QR code authentication via the Verida Vault mobile application.
+An SDK providing a decentralized single sign-on enabling seamless QR code authentication via the Verida Wallet mobile application.
 
 It provides a seamless user experience to onboard new users to the Verida network, new decentralized applications and the full range of supported blockchains.
 
@@ -73,7 +73,7 @@ The current landscape of decentralized database storage technologies is rapidly 
 
 User data is stored in isolated [application contexts](./application-contexts.md), where the data from one application can not be accessed by another application without the explicit consent of a user. This ensures users can selectively disclose their personal data to different applications on an as-needs basis, providing enhanced privacy and data security.
 
-[Learn more](../network/storage-node.md)
+[Learn more](../infrastructure/storage-node.md)
 
 ## Blockchain
 
@@ -83,4 +83,4 @@ Phase 2 of the Verida network will incorporate many new capabilities that can be
 - Trusted interactions with on-chain addresses and smart contracts
 - Token rewards for adding valuable data to the network
 
-Further details will be made available in our upcoming Whitepaper.
+Further details will be scoped and discussed as part of the [Verida Improvement Proposals](https://github.com/verida/VIPs) process.

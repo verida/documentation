@@ -1,6 +1,6 @@
 ---
 title: Messaging
-sidebar_position: 5
+sidebar_position: 6
 description: Verida Developer Documentation
 keywords: [Verida, Web3, Developers]
 ---
@@ -13,7 +13,7 @@ Messages on the Verida protocol operate on two dimensions; the Verida Account an
 
 ![concepts_identity.png](messaging/overview.png)
 
-In the example above we have the account `Steve - Personal` from the application context `Easy Insurance Software` sending a message to account `Jane - Laywer` in the `Lovely Legal Software` application context.
+In the example above we have the account `Steve - Personal` from the application context `Easy Insurance Software` sending a message to account `Jane - Lawyer` in the `Lovely Legal Software` application context.
 
 This architecture allows applications to develop their own message types for domain specific data sharing and messaging.
 
@@ -43,11 +43,11 @@ The Verida SDK automatically monitors the public inbox to process any new inbox 
 
 It's helpful to display a profile icon and a name for the Verida account when displaying an inbox message.
 
-In the Verida Vault, this profile metadata is fetched from the public profile of the Verida account that sent the message. As described in the [Profiles](../client-sdk/profiles) section, a public profile is linked to a particular application context.
+In the Verida Wallet, this profile metadata is fetched from the public profile of the Verida account that sent the message. As described in the [Profiles](../client-sdk/profiles) section, a public profile is linked to a particular application context.
 
 A message is also sent from a particular application context, so it makes sense to load the profile information from the same context that sent the message. However, in reality many applications won't create their own profile and will use the profile from the `Verida: Vault` application context.
 
-As such, the Verida Vault loads profile metadata in the following order:
+As such, the Verida Wallet loads profile metadata in the following order:
 
 - From the application context that sent the inbox message
 - `Verida: Vault` application context as a fall back

@@ -20,7 +20,7 @@ const messaging = await context.getMessaging()
 
 ### Get messages
 
-You can retreive the 20 most recent messages:
+You can retrieve the 20 most recent messages:
 
 ```tsx
 const messages = await messaging.getMessages()
@@ -50,7 +50,7 @@ const listener = await messaging.onMessage(function(inboxEntry) {
 })
 ```
 
-The `inboxEntry` object utilises the [inbox/entry schema](https://core.schemas.verida.io/inbox/entry/latest/schema.json). The two most important properties are:
+The `inboxEntry` object utilizes the [inbox/entry schema](https://core.schemas.verida.io/inbox/entry/latest/schema.json). The two most important properties are:
 
 - `type` — The type of inbox entry. This references a full schema URL.
 - `data` — The data contained in the inbox entry. This will be an object adhering to the schema specified in `type`. [See a list of currently supported inbox types](https://github.com/verida/schemas/tree/master/schemas/inbox/type).
@@ -65,7 +65,7 @@ listener.cancel()
 
 Your application can send messages to other accounts on the Verida network.
 
-This example sends a contact record to a user’s Verida Vault:
+This example sends a contact record to a user’s Verida Wallet:
 
 ```tsx
 const did = 'did:vda:0x6B2a1bE81ee770cbB4648801e343E135e8D2Aa6F'
@@ -114,9 +114,9 @@ const config = {
 
 ### Setting avatar and name
 
-When sending an inbox message, the sender avatar and name are automatically loaded from the public profile of the sending Verida Account. You will need to set these for your account so they can be loaded by applications across the network (including the Verida Vault).
+When sending an inbox message, the sender avatar and name are automatically loaded from the public profile of the sending Verida Account. You will need to set these for your account so they can be loaded by applications across the network (including the Verida Wallet).
 
-You could add your Verida Account to the Verida Vault and use the mobile app to set a profile avatar and name. This will then be the default for every application used by the sending Verida Account. Alternatively, you could manually set the profile information for the application context sending the inbox message. See [Account Profiles](../client-sdk/profiles) for more information on how to achieve this.
+You could add your Verida Account to the Verida Wallet and use the mobile app to set a profile avatar and name. This will then be the default for every application used by the sending Verida Account. Alternatively, you could manually set the profile information for the application context sending the inbox message. See [Account Profiles](../client-sdk/profiles) for more information on how to achieve this.
 
 ## Built-in Message Types
 

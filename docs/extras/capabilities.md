@@ -1,5 +1,5 @@
 ---
-sidebar_position: 9
+sidebar_position: 1
 title: Verida Capabilities
 description: Capabilities of the Verida developer platform
 keywords: [Verida, Web3, Developers]
@@ -83,7 +83,7 @@ The major capabilities of the Verida developer platform are as follows:
     <td align="center">✅ </td>
     <td align="left">
         <ul>
-            <li><a href="https://vault.verida.io">Available in the Verida Vault</a></li>
+            <li><a href="https://vault.verida.io">Available in the Verida Wallet</a></li>
         </ul>
     </td>
 </tr>
@@ -109,32 +109,4 @@ The major capabilities of the Verida developer platform are as follows:
 </tr>
 
 </table>
-
-
-## Roadmap
-
-```mermaid
-gantt
-    title Verida Technical Roadmap
-    dateFormat  YYYY-MM-DD
-    axisFormat  %Y-Q%q
-    todayMarker off
-    section Verida Vault
-        iOS Developer Preview       :milestone, done, iOSDev, 2021-11-30, 1d
-        iOS Public Release          :iOSR1, 2022-02-01, 60d
-        Android Public Release      :androidR1, 2022-03-01, 60d
-    section Blockchain Transactions
-        Algorand Support            :algo, 2022-02-01, 30d
-        Ethereum Support            :eth, after algo, 20d
-        NEAR Support                :near, after eth, 20d
-
-    section Developer APIs
-        Alpha API                   :milestone, done, iOSDev, 2021-11-30, 1d
-        Beta API on Testnet         :testnet, 2022-03-01, 30d
-        Mainnet API                 :mainnet, 2022-06-01, 30d
-        Unique Device Credential    :udc, 2022-03-01, 30d
-        Personal Data Oracle        :pdo, 2022-02-01, 200d
-
-```
-
 

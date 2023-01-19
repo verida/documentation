@@ -15,11 +15,11 @@ Your application must install the appropriate account package and connect it to 
 
 There are two ways to authenticate a user to your application:
 
-## 1. Verida Vault
+## 1. Verida Wallet
 
 Designed *for secure web applications*
 
-Your web application integrates the [Verida Connect SDK](../single-sign-on-sdk/single-sign-on-sdk.md) which displays a QR code to a user. A user scans the QR code and is walked through an onboarding process of installing the Verida Vault, creating a blockchain account and then authenticating with your application.
+Your web application integrates the [Verida Connect SDK](../single-sign-on-sdk/single-sign-on-sdk.md) which displays a QR code to a user. A user scans the QR code and is walked through an onboarding process of installing the Verida Wallet, creating a blockchain account and then authenticating with your application.
 
 See the [Verida Connect SDK](../single-sign-on-sdk/single-sign-on-sdk.md) for more details.
 
@@ -27,7 +27,7 @@ See the [Verida Connect SDK](../single-sign-on-sdk/single-sign-on-sdk.md) for mo
 
 Designed *for NodeJs and Mobile Apps*
 
-An existing Verida account seed phrase is used to authenticate a user to your application.
+An existing Verida account private key is used to authenticate a user to your application.
 
 This approach is ideal for integrating the Verida protocol into a server side NodeJs application or embedding Verida into an existing mobile application using the [React Native client](react-native.md)
 
@@ -38,9 +38,42 @@ import { Network, EnvironmentType } from '@verida/client-ts'
 import { AutoAccount } from '@verida/account-node'
 
 const VERIDA_ENVIRONMENT = EnvironmentType.TESTNET
-const CONTEXT_NAME = 'My Application Context Name'
-const VERIDA_TESTNET_DEFAULT_SERVER = 'https://db.testnet.verida.io:5002/'
+const CONTEXT_NAME = 'My Application: Context Name'
 
+// Default servers to store your data for the above context
+// Recommend specifying at least three for redundancy
+// Full list of current testnet nodes is here: https://assets.verida.io/registry/storageNodes/testnet.json
+const VERIDA_TESTNET_DEFAULT_SERVERS = [
+    'https://node1-use2.acacia.verida.tech/',
+    'https://node2-use2.acacia.verida.tech/',
+    'https://node3-use2.acacia.verida.tech/'
+]
+
+// If the DID account doesn't exist, it will automatically be created
+// These are default servers that will store your DID document if
+// your account doesnt exist
+// You can use the same ones as above (with `did/` appended)
+// Or you can choose three different ones
+// It's often good to have some geographical diversity
+const VERIDA_TESTNET_DEFAULT_DID_SERVERS = [
+    'https://node1-use2.acacia.verida.tech/did/',
+    'https://node1-apse2.acacia.verida.tech/did/',
+    'https://node3-use2.acacia.verida.tech/did/'
+]
+
+// Configuration for the DID client
+// `privateKey` must be a Polygon private key that has enough
+// MATIC to perform a blockchain transaction to create your DID
+// if it doesn't exist
+const DID_CLIENT_CONFIG = {
+    callType: 'web3',
+    web3Config: {
+        privateKey: '0x...',
+    },
+    didEndpoints: VERIDA_TESTNET_DEFAULT_DID_SERVERS
+}
+
+// Create a connection to the network and open your context
 const context = await Network.connect({
     context: {
         name: CONTEXT_NAME
@@ -51,25 +84,31 @@ const context = await Network.connect({
     account: new AutoAccount({
         defaultDatabaseServer: {
             type: 'VeridaDatabase',
-            endpointUri: VERIDA_TESTNET_DEFAULT_SERVER
+            endpointUri: VERIDA_TESTNET_DEFAULT_SERVERS
         },
         defaultMessageServer: {
             type: 'VeridaMessage',
-            endpointUri: VERIDA_TESTNET_DEFAULT_SERVER
+            endpointUri: VERIDA_TESTNET_DEFAULT_SERVERS
         }
     }, {
         privateKey: '0x...' // or Verida mnemonic seed phrase
+        environment: VERIDA_ENVIRONMENT,
+        didClientConfig: DID_CLIENT_CONFIG
     })
 })
 ```
 
 See the [@verida/account-node package](https://github.com/verida/verida-js/tree/main/packages/account-node) for more details.
 
-:::tip
+### Generate private key
 
 Verida accounts use the same standard the same as Ethereum accounts, so Ethers.js can be used to generate a new seed phrase or private key.
 
-:::
+```
+import { ethers } from 'ethers'
+const wallet = new ethers.Wallet()
+const privateKey = wallet.privateKey
+```
 
 ## Advanced
 
@@ -82,8 +121,27 @@ import { Client, EnvironmentType } from '@verida/client-ts'
 import { AutoAccount } from '@verida/account-node'
 
 const VERIDA_ENVIRONMENT = EnvironmentType.TESTNET
-const CONTEXT_NAME = 'My Application Context Name'
-const VERIDA_TESTNET_DEFAULT_SERVER = 'https://db.testnet.verida.io:5002/'
+const CONTEXT_NAME = 'My Application: Context Name'
+
+// See comments in the `Private Key` section above for a detailed
+// explanation of these configuration options
+const VERIDA_TESTNET_DEFAULT_SERVERS = [
+    'https://node1-use2.acacia.verida.tech/',
+    'https://node2-use2.acacia.verida.tech/',
+    'https://node3-use2.acacia.verida.tech/'
+]
+const VERIDA_TESTNET_DEFAULT_DID_SERVERS = [
+    'https://node1-use2.acacia.verida.tech/did/',
+    'https://node1-apse2.acacia.verida.tech/did/',
+    'https://node3-use2.acacia.verida.tech/did/'
+]
+const DID_CLIENT_CONFIG = {
+    callType: 'web3',
+    web3Config: {
+        privateKey: '0x...',
+    },
+    didEndpoints: VERIDA_TESTNET_DEFAULT_DID_SERVERS
+}
 
 // establish a network connection
 const client = new Client({
@@ -95,14 +153,16 @@ const client = new Client({
 const account = new AutoAccount({
     defaultDatabaseServer: {
         type: 'VeridaDatabase',
-        endpointUri: VERIDA_TESTNET_DEFAULT_SERVER
+        endpointUri: VERIDA_TESTNET_DEFAULT_SERVERS
     },
     defaultMessageServer: {
         type: 'VeridaMessage',
-        endpointUri: VERIDA_TESTNET_DEFAULT_SERVER
+        endpointUri: VERIDA_TESTNET_DEFAULT_SERVERS
     }
-}, {
-    privateKey: '0x...'
+}, , {
+    privateKey: '0x...' // or Verida mnemonic seed phrase
+    environment: VERIDA_ENVIRONMENT,
+    didClientConfig: DID_CLIENT_CONFIG
 })
 
 // Connect the Verida account to the Verida client

@@ -10,7 +10,7 @@ keywords: [Verida, Web3, Developers, Tutorial, Messaging]
 Every application has a built-in inbox for receiving messages and outbox for sending messages.
 This allows users and applications to send data between each other knowing nothing than the other user's DID and application name.
 
-This example sends a contact record to a user's Verida Vault mobile application.
+This example sends a contact record to a user's Verida Wallet mobile application.
 
 ```jsx live
 VeridaMessagingExample = () => {
@@ -57,7 +57,7 @@ VeridaMessagingExample = () => {
     let did = veridaContext.account.accountDid
     await messaging.send(did, messageType, data, subject, config)
 
-    setStatus("Text message sent. Please check the inbox in the Verida Vault")
+    setStatus("Text message sent. Please check the inbox in the Verida Wallet")
   }
 
   sendDataMessage = async function () {
@@ -93,7 +93,7 @@ VeridaMessagingExample = () => {
     let did = veridaContext.account.accountDid
     await messaging.send(did, messageType, data, subject, config)
 
-    setStatus("Data message sent. Please check the inbox in the Verida Vault")
+    setStatus("Data message sent. Please check the inbox in the Verida Wallet")
   }
 
   let statusMessage = <div></div>
