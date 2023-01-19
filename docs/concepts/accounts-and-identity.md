@@ -24,7 +24,7 @@ It’s also entirely anonymous. No information is known about the holder of the 
 
 ## DID Registry
 
-DID's are more than just an address. The specification supports creating DID Documents that provide enhanced discovery of services being operated for that DID (ie: storage, messaging) and public keys (useful for verying data signed by the DID).
+DID's are more than just an address. The specification supports creating DID Documents that provide enhanced discovery of services being operated for that DID (ie: storage, messaging) and public keys (useful for verifying data signed by the DID).
 
 Verida has implemented it's own DID method (`did:vda`) based on the [VIP-2](https://github.com/verida/VIPs/blob/develop/VIPs/vip-2.md) specification. This was necessary as there is no currently available DID method that meets the performance, feature set and low cost necessary for the Verida network to be viable for mass adoption.
 
@@ -51,6 +51,6 @@ In the future, we will add support for:
 
 Data stored on the Verida Acacia Testnet is deleted regularly, so don’t rely on that data persisting.
 
-If you need help spinning up your own storage node, please contact us.
+If you need help spinning up your own storage node, please reach out via [Discord](https://discord.verida.io) or [Register your interest in running a Storage Node](https://www.verida.network/developers#build-with-us).
 
 :::
