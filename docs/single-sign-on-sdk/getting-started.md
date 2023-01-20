@@ -12,7 +12,7 @@ This easy to use integration method allows a user to scan a QR code to sign into
 This requires installing the `@verida/account-web-vault` dependency:
 
 ```bash npm2yarn
-npm install  @verida/account-web-vault
+yarn add @verida/account-web-vault @verida/client-ts
 ```
 
 ## Usage
