@@ -110,6 +110,42 @@ console.log(items)
 
 The database will be created if it doesn’t exist.
 
+### Closing Databases
+
+You can close an open database:
+
+```tsx
+await db.close()
+```
+
+This closes any connection to remote CouchDB server(s), releases sockets and disconnects event listeners.
+
+You can optionally specify an option to `clearLocal`:
+
+```tsx
+await db.close({
+  clearLocal: true
+})
+```
+
+In a Node.js environment,`clearLocal` will delete any local files created to cache a remote database. This occurs when connecting to remote encrypted databases and a local, decrypted, cache is created.
+
+### Deleting Databases
+
+Databases can be permanently deleted from the Verida network:
+
+```tsx
+await db.destroy()
+```
+
+You can optionally specify an option to only delete local cache copies of databases:
+
+```tsx
+await db.close({
+  localOnly: true
+})
+```
+
 ## Datastores
 
 In a world where users own their own data, it’s important their data is portable between applications. Otherwise we end up with the current situation of data silos, where user data is scattered across lots of different applications.
