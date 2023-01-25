@@ -1,6 +1,6 @@
 ---
 title: Authentication Server
-sidebar_position: 3
+sidebar_position: 4
 description: Verida Developer Documentation
 keywords: [Verida, Web3, Developers]
 ---

@@ -1,6 +1,6 @@
 ---
 title: WalletConnect Support
-sidebar_position: 2
+sidebar_position: 3
 description: Verida Developer Documentation
 keywords: [Verida, Web3, Developers]
 ---

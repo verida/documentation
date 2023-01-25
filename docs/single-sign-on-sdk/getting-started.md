@@ -54,7 +54,7 @@ const account = new VaultAccount({
   },
 });
 
-const context = Network.connect({
+const context = await Network.connect({
 	client: {
 		environment: VERIDA_ENVIRONMENT,
 	},

@@ -56,7 +56,7 @@ Open the user's context profile:
 
 ```jsx
 
-const userProfile = await context.openProfile('public');
+const userProfile = await context.openProfile('basicProfile');
 
 // Modify the profile properties
 const avatarUri = 'data:image/png;base64,iVBOR...'; //  Data URL of base64-encoded image
