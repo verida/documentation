@@ -45,7 +45,7 @@ const config = {
 	],
 	scripts: [
 		{
-			src: "https://plausible.io/js/plausible.js",
+			src: "https://plausible.io/js/plausible.js",  defer: true, 'data-domain': 'developers.verida.network'
 		},
 	],
 	themeConfig:
