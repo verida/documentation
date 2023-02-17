@@ -25,7 +25,7 @@
 		"@svgr/webpack": "^5.5.0",
 		"@verida/account-web-vault": "^2.0.1",
 		"@verida/client-ts": "^2.0.1",
-		"@verida/verifiable-credentials": "^2.0.1",
+		"@verida/verifiable-credentials": "^2.1.2",
 		"@walletconnect/client": "^1.8.0",
 		"clsx": "^1.1.1",
 		"crypto-browserify": "^3.12.0",
