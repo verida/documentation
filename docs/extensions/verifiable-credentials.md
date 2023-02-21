@@ -7,18 +7,12 @@ keywords: [Verida, Web3, Developers, Verifiable Credentials]
 
 # Verifiable Credentials
 
-:::caution
-
-The Verida implementation of Verifiable Credentials is in development and are subject to breaking changes.
-
-:::
-
 
 ## Introduction
 
 Verifiable Credentials are are [W3C standard](https://www.w3.org/TR/vc-data-model/) that is supported within the Verida network with the [@verida/verifiable-credential](https://npmjs.com/@verida/verifiable-credentials) npm package.
 
-Verida has a demonstration implementation of verifiable credentials. We expect the implementation of this may change at some point in the future. 
+Verida has a demonstration implementation of verifiable credentials. We expect to support other credential libraries and protocols in the future.
 
 Verifiable Credentials can be issued by an account on the Verida Network. The credentials can be privately or publicly stored by a Verida Account on the Verida Network. They can be verified by anyone, using the Verida Verifiable Credentials library (`@verida/verifiable-credential`).
 
@@ -34,12 +28,6 @@ Verifiable Credentials can be issued by an account on the Verida Network. The cr
 - Screenshots of the Vault credentials in action
 - Explain how they can display a QR code to verify in real life
 -->
-
-### Credential Display within the Verida Wallet
-
-The Verida Wallet will automatically show the public profile icon of the Verida Account that signed the credential. You will need to set this icon for your Verida account so the icon displays correctly.
-
-You could add the signing Verida Account to the Verida Wallet and use the mobile app to set a profile avatar and name. This will then be the default for every inbox message and credential issued across the Verida network. Alternatively, you could manually set the profile information for the application context generating the credential. See [Account Profiles](../client-sdk/profiles) for more information on how to achieve this.
 
 <!-- 
 ## Credentials Management Platform
@@ -68,14 +56,6 @@ A credential is issued by creating a JSON object (`credentialData`) containing d
 
 The code below creates a credential that matches a predefined credential schema (https://common.schemas.verida.io/health/pathology/tests/covid19/pcr/v0.1.0/schema.json).
 
-You can easily create your own schemas.
-
-:::info
-
-Schemas should be hosted on a publicly available web host that sets the `Access-Control-Allow-Origin` CORS header. [Read more here](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors/CORSMissingAllowOrigin).
-
-:::
-
 ```ts
 import Credentials from "@verida/verifiable-credentials";
 
@@ -85,34 +65,58 @@ const credentialSDK = new Credentials();
 // The Verida DID that is the subject of this credential (who is being verified with this credential?)
 const subjectDid = 'did:vda:0x....';
 
+const credentialSchema = 'https://common.schemas.verida.io/identity/kyc/FinClusive/individual-basic/latest/schema.json'
+
 // Data for the credential that matches the credential schema
 const credentialData = {
-    fullName: "Jane Doe",
-    dateOfBirth: "1992-07-03",
-    patientId: "ABC123",
-    testTimestamp: "2022-03-01T10:30:05.435Z",
-    result: "Negative",
-    schema: "https://common.schemas.verida.io/health/pathology/tests/covid19/pcr/v0.1.0/schema.json"
-};
+  "finClusiveId": "12345",
+  "gender": "male",
+  "firstName": "Chris",
+  "lastName": "Tester",
+  "streetAddress1": "123 Four Ave",
+  "suburb": "Adelaide",
+  "state": "SA",
+  "postcode": "5000",
+  "dateOfBirth": "2000-01-01"
+}
 
-const credential = await credentialSDK.createCredentialJWT(subjectDid, credentialData, context);
+const title = 'KYC Credential'
+const summary = 'Credential issued by <signer> on <date>'
+const options = {}
+
+const credentialRecord = await credentials.createVerifiableCredentialRecord({
+  context: context as any,
+  data: credentialData,
+  subjectId: subjectDid,
+  schema: credentialSchema,
+  options
+}, title, summary);
 ```
 
-This generated `credential` object that can be saved to the holder's private Verida Datastore that holds their credentials:
+This generates a `credentialRecord` matching the Verida Credential data storage schema (https://common.schemas.verida.io/credential/base/v0.2.0/schema.json):
 
 ```js
 {
-  fullName: 'Jane Doe',
-  dateOfBirth: '1992-07-03',
-  patientId: 'ABC123',
-  testTimestamp: '2022-03-01T10:30:05.435Z',
-  result: 'Negative',
-  schema: 'https://common.schemas.verida.io/health/pathology/tests/covid19/pcr/v0.1.0/schema.json',
+  name: 'KYC Credential',
+  summary: 'Credential issued by <signer> on <date>',
+  schema: 'https://common.schemas.verida.io/credential/base/v0.2.0/schema.json',
+  credentialData: {
+    "finClusiveId": "12345",
+    "gender": "male",
+    "firstName": "Chris",
+    "lastName": "Tester",
+    "streetAddress1": "123 Four Ave",
+    "suburb": "Adelaide",
+    "state": "SA",
+    "postcode": "5000",
+    "dateOfBirth": "2000-01-01"
+  },
+  credentialSchema: 'https://common.schemas.verida.io/identity/kyc/FinClusive/individual-basic/latest/schema.json',
   didJwtVc: 'eyJhbGciOiJFUzI1NksiLCJ0eXAiOiJKV1QifQ.eyJ2YyI6eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvMjAxOC9jcmVkZW50aWFscy92MSIsImh0dHBzOi8vd3d3LnczLm9yZy8yMDE4L2NyZWRlbnRpYWxzL2V4YW1wbGVzL3YxIl0sInN1YiI6ImRpZDp2ZGE6MHhDMjYyOTk4MkEyNTg1NTQ0RkQ3MmM5OUNGMzc3M2E5YzZiYUJENTVjIiwidHlwZSI6WyJWZXJpZmlhYmxlQ3JlZGVudGlhbCJdLCJpc3N1ZXIiOiJkaWQ6dmRhOjB4QjM3Mjk5ODJBMjU4NTU0NEZENzJjOTlDRjM3NzNhOWM2YmFCRDU1YyIsImlzc3VhbmNlRGF0ZSI6IjIwMjItMDMtMDhUMjM6MTQ6MjUuNzUxWiIsImNyZWRlbnRpYWxTdWJqZWN0Ijp7ImZ1bGxOYW1lIjoiSmFuZSBEb2UiLCJkYXRlT2ZCaXJ0aCI6IjE5OTItMDctMDMiLCJwYXRpZW50SWQiOiJBQkMxMjMiLCJ0ZXN0VGltZXN0YW1wIjoiMjAyMi0wMy0wMVQxMDozMDowNS40MzVaIiwicmVzdWx0IjoiTmVnYXRpdmUiLCJzY2hlbWEiOiJodHRwczovL2NvbW1vbi5zY2hlbWFzLnZlcmlkYS5pby9oZWFsdGgvcGF0aG9sb2d5L3Rlc3RzL2NvdmlkMTkvcGNyL3YwLjEuMC9zY2hlbWEuanNvbiJ9LCJjcmVkZW50aWFsU2NoZW1hIjp7ImlkIjoiaHR0cHM6Ly9jb21tb24uc2NoZW1hcy52ZXJpZGEuaW8vaGVhbHRoL3BhdGhvbG9neS90ZXN0cy9jb3ZpZDE5L3Bjci92MC4xLjAvc2NoZW1hLmpzb24iLCJ0eXBlIjoiSnNvblNjaGVtYVZhbGlkYXRvcjIwMTgifX0sImlzcyI6ImRpZDp2ZGE6MHhCMzcyOTk4MkEyNTg1NTQ0RkQ3MmM5OUNGMzc3M2E5YzZiYUJENTVjIn0.F9rk2VRz042tQOygU6VuI9NOyTQYYqPcbdfqUPYTvvZ1vx8gIqllSKqZHivpqnWoCB3zyzXKiG1KEHSpHrZYlg'
 }
 ```
 
-The raw data along with the `didJwtVc` attribute is stored as a normal JSON object in the Verida Datastore. The `didJwtVc` is a DID-JWT Verifiable Credential generated using the [did-jwt-vc library](https://github.com/decentralized-identity/did-jwt-vc/).
+`didJwtVc` is a DID-JWT Verifiable Credential generated using the [did-jwt-vc library](https://github.com/decentralized-identity/did-jwt-vc/).
 
 ### Verify a Credential
 
@@ -171,17 +175,20 @@ Returned `decodedCredential` object:
       issuanceDate: '2022-03-08T23:25:31.097Z'
     },
     credentialSubject: {
-      fullName: 'Jane Doe',
-      dateOfBirth: '1992-07-03',
-      patientId: 'ABC123',
-      testTimestamp: '2022-03-01T10:30:05.435Z',
-      result: 'Negative',
-      schema: 'https://common.schemas.verida.io/health/pathology/tests/covid19/pcr/v0.1.0/schema.json'
+      "finClusiveId": "12345",
+      "gender": "male",
+      "firstName": "Chris",
+      "lastName": "Tester",
+      "streetAddress1": "123 Four Ave",
+      "suburb": "Adelaide",
+      "state": "SA",
+      "postcode": "5000",
+      "dateOfBirth": "2000-01-01"
     },
     issuer: { id: 'did:vda:0xB3729982A2585544FD72c99CF3773a9c6baBD55c' },
     type: [ 'VerifiableCredential' ],
     credentialSchema: {
-      id: 'https://common.schemas.verida.io/health/pathology/tests/covid19/pcr/v0.1.0/schema.json',
+      id: 'https://common.schemas.verida.io/identity/kyc/FinClusive/individual-basic/latest/schema.json',
       type: 'JsonSchemaValidator2018'
     },
     '@context': [
@@ -248,7 +255,7 @@ Returned `shareData` object:
   // verida://<did>/base64(<contextName>)/<databaseName>/recordId?key=<encryptionKey>
   veridaUri: 'verida://did:vda:0xB3729982A2585544FD72c99CF3773a9c6baBD55c/GpNDePvWU4RQud9jaZJiNwFyAS/credential_public_encrypted/876ec340-9f3c-11ec-a4d8-35d2dca04a1c?key=c8fd78a9baa44c8ade5e269e0310dcf1139d0374980110b4802b5db6e0820543',
   // A public URI that can be opened in a web browser that can decode a base64 encoded veridaUri, fetch the data, decrypt it and display to the viewer
-  publicUri: 'https://scan.verida.io/credential?uri=dmVyaWRhOi8vZGlkOnZkYToweEIzNzI5OTgyQTI1ODU1NDRGRDcyYzk5Q0YzNzczYTljNmJhQkQ1NWMvR3BORGVQdldVNFJRdWQ5amFaSmlOd0Z5QVMvY3JlZGVudGlhbF9wdWJsaWNfZW5jcnlwdGVkLzg3NmVjMzQwLTlmM2MtMTFlYy1hNGQ4LTM1ZDJkY2EwNGExYz9rZXk9YzhmZDc4YTliYWE0NGM4YWRlNWUyNjllMDMxMGRjZjExMzlkMDM3NDk4MDExMGI0ODAyYjVkYjZlMDgyMDU0Mw=='
+  publicUri: 'https://explorer.verida.network/credential?uri=dmVyaWRhOi8vZGlkOnZkYToweEIzNzI5OTgyQTI1ODU1NDRGRDcyYzk5Q0YzNzczYTljNmJhQkQ1NWMvR3BORGVQdldVNFJRdWQ5amFaSmlOd0Z5QVMvY3JlZGVudGlhbF9wdWJsaWNfZW5jcnlwdGVkLzg3NmVjMzQwLTlmM2MtMTFlYy1hNGQ4LTM1ZDJkY2EwNGExYz9rZXk9YzhmZDc4YTliYWE0NGM4YWRlNWUyNjllMDMxMGRjZjExMzlkMDM3NDk4MDExMGI0ODAyYjVkYjZlMDgyMDU0Mw=='
 }
 ```
 
@@ -259,6 +266,8 @@ Returned `shareData` object:
 #### Send via Verida Messaging
 
 The `credential` object created by an issuer can be sent to a Verida Account via their Vault.
+
+See [Messaging](../client-sdk/messaging#sending-messages-outbox)
 
 <!--
 @todo Add code example from the Vault Examples demo app
@@ -272,11 +281,69 @@ The `credential` object created by an issuer can be sent to a Verida Account via
 - Update Verida Network explorer to show a user's public credentials
 -->
 
+### Blockchain proofs
+
+The credential SDK supports the concept of `Blockchain proofs` that are certain attributes of a credential that are collectively signed in such a way as they can be quickly and cheaply verified on a blockchain.
+
+For example, it is possible to issue a Verifiable Credential proving someones credit score, but then provide a blockchain proof specifying the value of the credit score. This would allow the credit score to be used in a smart contract (or issued as a Soulbound token) without requiring the full verifiable credential to be parsed on chain (which is very expensive).
+
+Blockchain proofs are defined in the credential schema.
+
+See this example from [FinClusive/individual-basic](https://github.com/verida/schemas-common/blob/e1aa68c9ae068e15f30433a9351e70d218d833d7/identity/kyc/FinClusive/individual-basic/v0.1.0/schema.json#L9) which defines a `finclusive/individual-kyc` proof:
+
+```js
+"veridaProofs": {
+    "finclusive/individual-kyc": ["finclusive/individual-basic-kyc", "$finClusiveId"]
+},
+```
+
+Here the proof named `finclusive/individual-kyc` consists of a proof string that combines two attributes:
+
+1. The unaltered string `finclusive/individual-basic-kyc`
+2. The value of the credential for the variale `finClusiveId`
+
+These two attributes will be joined with the `-` character.
+
+The `$` parameter indicates the value of the credential should be included.
+
+The proof string that will be signed (usingthe example credential above):
+
+```
+finclusive/individual-kyc-12345
+```
+
+When the Verida SDK generates a credential, it will include a `proofs` attribute in the `payload` containing an array of signatures for each `veridaProof`.
+
+These proofs can then be verified on chain using the [Verida Personal Data Bridge](./personal-data-bridge)
+
 ## Credential Schemas
 
-Within the Verida Network each credential is a data object (represented as JSON) that matches a particular credential schema. 
-These schemas should inherit from https://common.schemas.verida.io/credential/base/v0.1.0/schema.json. An example of a working credential schema is https://common.schemas.verida.io/health/pathology/tests/covid19/pcr/v0.1.0/schema.json
+Within the Verida network each credential is a data object (represented as JSON) that matches a particular credential schema.
 
+Here is an example of a working credential schema [Identity / KYC / FinClusive / Individual (Basic)](https://github.com/verida/schemas-common/blob/develop/identity/kyc/FinClusive/individual-basic/v0.1.0/schema.json)
+
+You can create your own schemas.
+
+:::info
+
+Schemas should be hosted on a publicly available web host that sets the `Access-Control-Allow-Origin` CORS header. [Read more here](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors/CORSMissingAllowOrigin).
+
+:::
+
+
+## Verida Wallet
+
+Credentials stored with the [credential schema](https://common.schemas.verida.io/credential/base/v0.2.0/schema.json) will automatically be rendered in the Verida Wallet as a credential. This custom display includes:
+
+1. A scannable QR code 
+2. The profile icon of the Verida DID that issued / signed the credential
+3. A tick of approval indicating the credential has been verified
+
+### Setting the signer avatar
+
+The Verida Wallet will automatically show the public profile icon of the Verida Account that signed the credential. You will need to set this icon for your Verida account so the icon displays correctly.
+
+You could add the signing Verida Account to the Verida Wallet and use the mobile app to set a profile avatar and name. This will then be the default for every inbox message and credential issued across the Verida network. Alternatively, you could manually set the profile information for the application context generating the credential. See [Account Profiles](../client-sdk/profiles) for more information on how to achieve this.
 
 <!--
 @todo
