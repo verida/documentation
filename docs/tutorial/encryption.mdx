@@ -41,16 +41,35 @@ VeridaEncryptionExample = () => {
         // globalLoginFunction is a globally defined version of the login function 
         // See https://developers.verida.io/docs/tutorial/SSO
         let ctx = await globalLoginFunction(this.CONTEXT_NAME);
+        Window.ctx = ctx
         setVeridaContext(ctx);
       }
     }
+
+    if (Window.db === undefined) {
+      openDatabase();
+    }
   }, []);
+
+  openDatabase = async function () {
+    // veridaContext will be undefined if the user isn't logged in
+    if (veridaContext !== undefined && !Window.db) {
+      // Open / create a test database
+      Window.db = await veridaContext.openDatabase("test_db");
+
+      return true
+    } else {
+      // This method shouldn't be called if no one is logged in
+      console.log("veridaContext is null. This means no one has logged in")
+      return false;
+    }
+  }
 
   showLocal = async function () {
     const items = await Window.db.getMany(null, null) // get the database items
     const last_item = items.slice(-1)[0] // find the last item in the list
 
-    data = await Window.db._localDb.get(last_item._id) // get the record
+    data = await Window.db.get(last_item._id) // get the record
     console.log("Local data", data)
 
     setLocalData(data)
@@ -59,8 +78,9 @@ VeridaEncryptionExample = () => {
   showRemote = async function () {
     const items = await Window.db.getMany(null, null) // get the database items
     const last_item = items.slice(-1)[0] // find the last item in the list
+    const remoteDb = await Window.db.getRemoteEncrypted()
 
-    data = await Window.db._remoteDbEncrypted.get(last_item._id) // get the record
+    data = await remoteDb.get(last_item._id) // get the record
     console.log("Remote data", data)
 
     setRemoteData(data)
