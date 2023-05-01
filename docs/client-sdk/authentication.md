@@ -40,37 +40,16 @@ import { AutoAccount } from '@verida/account-node'
 const VERIDA_ENVIRONMENT = EnvironmentType.TESTNET
 const CONTEXT_NAME = 'My Application: Context Name'
 
-// Default servers to store your data for the above context
-// Recommend specifying at least three for redundancy
-// Full list of current testnet nodes is here: https://assets.verida.io/registry/storageNodes/testnet.json
-const VERIDA_TESTNET_DEFAULT_SERVERS = [
-    'https://node1-use2.acacia.verida.tech/',
-    'https://node2-use2.acacia.verida.tech/',
-    'https://node3-use2.acacia.verida.tech/'
-]
-
-// If the DID account doesn't exist, it will automatically be created
-// These are default servers that will store your DID document if
-// your account doesnt exist
-// You can use the same ones as above (with `did/` appended)
-// Or you can choose three different ones
-// It's often good to have some geographical diversity
-const VERIDA_TESTNET_DEFAULT_DID_SERVERS = [
-    'https://node1-use2.acacia.verida.tech/did/',
-    'https://node1-apse2.acacia.verida.tech/did/',
-    'https://node3-use2.acacia.verida.tech/did/'
-]
-
 // Configuration for the DID client
 // `privateKey` must be a Polygon private key that has enough
 // MATIC to perform a blockchain transaction to create your DID
-// if it doesn't exist
+// (If it doesn't exist)
 const DID_CLIENT_CONFIG = {
     callType: 'web3',
     web3Config: {
+        // Polygon private key
         privateKey: '0x...',
-    },
-    didEndpoints: VERIDA_TESTNET_DEFAULT_DID_SERVERS
+    }
 }
 
 // Create a connection to the network and open your context
@@ -82,15 +61,6 @@ const context = await Network.connect({
         environment: VERIDA_ENVIRONMENT
     },
     account: new AutoAccount({
-        defaultDatabaseServer: {
-            type: 'VeridaDatabase',
-            endpointUri: VERIDA_TESTNET_DEFAULT_SERVERS
-        },
-        defaultMessageServer: {
-            type: 'VeridaMessage',
-            endpointUri: VERIDA_TESTNET_DEFAULT_SERVERS
-        }
-    }, {
         privateKey: '0x...' // or Verida mnemonic seed phrase
         environment: VERIDA_ENVIRONMENT,
         didClientConfig: DID_CLIENT_CONFIG
@@ -123,24 +93,11 @@ import { AutoAccount } from '@verida/account-node'
 const VERIDA_ENVIRONMENT = EnvironmentType.TESTNET
 const CONTEXT_NAME = 'My Application: Context Name'
 
-// See comments in the `Private Key` section above for a detailed
-// explanation of these configuration options
-const VERIDA_TESTNET_DEFAULT_SERVERS = [
-    'https://node1-use2.acacia.verida.tech/',
-    'https://node2-use2.acacia.verida.tech/',
-    'https://node3-use2.acacia.verida.tech/'
-]
-const VERIDA_TESTNET_DEFAULT_DID_SERVERS = [
-    'https://node1-use2.acacia.verida.tech/did/',
-    'https://node1-apse2.acacia.verida.tech/did/',
-    'https://node3-use2.acacia.verida.tech/did/'
-]
 const DID_CLIENT_CONFIG = {
     callType: 'web3',
     web3Config: {
         privateKey: '0x...',
-    },
-    didEndpoints: VERIDA_TESTNET_DEFAULT_DID_SERVERS
+    }
 }
 
 // establish a network connection
@@ -151,15 +108,6 @@ const client = new Client({
 // create a Verida account instance that wraps the authorized Verida DID server connection
 // The `AutoAccount` instance will automatically sign any consent messages
 const account = new AutoAccount({
-    defaultDatabaseServer: {
-        type: 'VeridaDatabase',
-        endpointUri: VERIDA_TESTNET_DEFAULT_SERVERS
-    },
-    defaultMessageServer: {
-        type: 'VeridaMessage',
-        endpointUri: VERIDA_TESTNET_DEFAULT_SERVERS
-    }
-}, , {
     privateKey: '0x...' // or Verida mnemonic seed phrase
     environment: VERIDA_ENVIRONMENT,
     didClientConfig: DID_CLIENT_CONFIG
@@ -174,3 +122,22 @@ const context = await client.openContext(CONTEXT_NAME, true)
 // Open a database
 const database = await context.openDatabase('my_database')
 ```
+
+### AccountNode Config
+
+The first parameter for `AutoAccount()` is an interface that meets the `AccountNodeConfig` definition:
+
+```ts
+export interface AccountNodeConfig {
+    privateKey: string;
+    environment: EnvironmentType;
+    didClientConfig: AccountNodeDIDClientConfig;
+    options?: any;
+    countryCode?: string;
+}
+```
+
+- `privateKey` - Verida network private key for the account
+- `environment` - Verida environment (`EnvironmentType.TESTNET` or `EnvironmentType.MAINNET`)
+- `didClientConfig` - Instance of `AccountNodeDIDClientConfig`
+- `countryCode` - (optional) Country to use for selecting storage and DID nodes on the network. If not specified, will choose random global nodes. If specified, will use nodes in that country. If not enough nodes are available in that country, it will fallback to selecting nodes in the same region as that country, then fallback to global nodes.
