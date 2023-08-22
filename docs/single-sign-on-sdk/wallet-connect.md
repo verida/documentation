@@ -5,53 +5,73 @@ description: Verida Developer Documentation
 keywords: [Verida, Web3, Developers]
 ---
 
-The Verida SSO supports establishing WalletConnect (v1 on Ethereum, Polygon and Algorand or v2 on NEAR) connections when a user signs into your application. This allows your application to get both; private storage for your dApp and a direct wallet connection for blockchain transactions.
+The Verida Wallet supports [WalletConnect](https://walletconnect.com/) (v2) to connect crypto wallets with dApps. It enables seamless integration and communication between applications and supported blockchains.
+Currently, the following blockchains and networks are supported:
 
-WalletConnect is a bridge server that sits in between Dapps and wallets to transmit requests and results through web socket connections.
+- Ethereum Goerli (testnet) - ChainID `eip155:5`
+- Polygon Mumbai (testnet) - ChainID `eip155:80001`
+- NEAR testnet - ChainID `near:testnet`
 
-When the user authorizes a connection to your application they can also be prompted to establish a WalletConnect connection.
+Support for blockchain mainnets will be introduced with the launch of the Verida Network mainnet.
 
-![wallet-connect.png](wallet-connect.png)
+## Verida Connect and WalletConnect Integration
 
-Currently WalletConnect v1 is the most used version on EVM chains (ie, Ethereum and Polygon) and on Algorand. NEAR only supports WalletConnet v2. 
+Verida Connect facilitates the connection between the application and the Verida Network, offering powerful storage capabilities. By integrating WalletConnect, Verida Connect enables a unified authentication flow for users, streamlining the process.
+When users authorize a connection to your application in the Verida Wallet, they will also be prompted to establish a WalletConnect connection simultaneously.
 
+### API
 
-## Enabling WalletConnect
+To combine Verida Connect and WalletConnect, you need to specify the `walletConnect` configuration when creating a `VaultAccount` instance. The `walletConnect` configuration requires the following property:
 
-You can enable WalletConnect in your application by specifying the `walletConnect` configuration when creating a `VaultAccount` instance.
+- `uri`: (required) URI of the WalletConnect request
 
-```jsx
-// Create WalletConnect instance
-const DEFAULT_CHAIN_ID = "eip155:5"
-connector = new WalletConnect({
-    bridge: 'https://bridge.walletconnect.org',
+### Example
+
+Consider the following example code, which demonstrates the integration of WalletConnect with Verida Connect:
+
+```ts
+// Example simplified for brevity
+
+import AuthClient, { generateNonce } from "@walletconnect/auth-client";
+
+// Initialise the AuthClient
+const walletConnectClient = await AuthClient.init({
+  projectId: process.env.PROJECT_ID,
+  relayUrl: process.env.RELAY_URL,
+  // ...
+  // Refer to the WalletConnect AuthClient documentation for the full required configuration
 });
+
+// Set the listeners on the client
+walletConnectClient.on("auth_response", () => {
+  // logic to handle the response event
+})
+
+// Build the request URI
+const walletConnectUri = await walletConnectClient.request({
+  chainId: "eip155:5", // The Verida Wallet will reject blockchain network that are not supported
+  // ...
+  // Refer to the WalletConnect AuthClient documentation for the full required configuration
+})
 
 // Configure the `VaultAccount` instance with WalletConnect
 const account = new VaultAccount({
   walletConnect: {
-    version: connector.version,
-    uri: connector.uri,
-    chainId: DEFAULT_CHAIN_ID,
+    uri: walletConnectUri,
   },
+  // ...
+  // Refer to the Verida Connect documentation for the full configuration
+});
+
+// Trigger the connection with Verida Connect
+const context = await Network.connect({
+  account: account,
+  // ...
+  // Refer to the Verida Connect documentation for the full configuration
 });
 ```
 
-The `walletConnect` configuration options are:
+Refer to the WalletConnect documentation and  for using the `AuthClient` in your application.
 
-- `version`: (required) Wallet connect version (`1` or `2`)
-- `uri`: (required) URI of the WalletConnect bridging server
-- `chainId` (required) A CAIP chain ID such as `eip155:5` for Ethereum Goerli. See below for details
 
-### Chain ID
-
-The `chainId` must be a CAIP compatible blockchain identifier (See [CAIP-2](https://github.com/ChainAgnostic/CAIPs/blob/master/CAIPs/caip-2.md)).
-
-The Verida Wallet currently supports the following testnet networks:
-
-1. `eip155:5` Ethereum Goerli Testnet
-2. `eip155:80001` Polygon Mumbai Testnet
-3. `algorand:SGO1GKSzyE7IEPItTxCByw9x8FmnrCDexi9` Algorand Testnet
-4. `near:testnet` NEAR Testnet
-
-Full mainnet support for Ethereum, Polygon, Algorand and NEAR will be available shortly.
+For further guidance on using the `AuthClient` in your application, consult the WalletConnect [documentation](https://walletconnect.com/) and review the provided [examples](https://github.com/WalletConnect/web-examples/blob/main/dapps/react-dapp-auth/pages/index.tsx).
