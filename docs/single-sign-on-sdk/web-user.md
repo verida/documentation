@@ -1,34 +1,30 @@
 ---
-title: Web User
+title: WebUser
 sidebar_position: 2
 description: Verida Developer Documentation
 keywords: [Verida, Web3, Developers]
 ---
 
-This is a helper class that simplifies using the Verida network in a web application. It represents a global user that is either `connected` or `disconnected` from the network.
+`WebUser` is a helper class that simplifies using the Verida Network in a web application. An instance of the class represents a User with a set of common methods available such as `connect`, `getDid`, `getPublicProfile`, etc.
 
 ## Usage
 
-Create a file in your project `VeridaUser.js`:
+```ts
+// Example simplified for brevity. Notably, async/await should be handled appropriately
 
-```tsx
 import { EnvironmentType } from '@verida/types'
-import { WebUser } from '@verida/account-web-vault'
-
-export class MyAppUser extends WebUser {
-    // Implement any custom logic for your user
-}
+import { WebUser } from '@verida/web-helpers'
 
 // Your application context name
-const CONTEXT_NAME = '<Company name>: <Application Name>'
+const CONTEXT_NAME = '<Company name>: <Application name>'
 
-// Your logo URL (appears in the Vault)
+// Your logo URL (appears in the Wallet)
 const LOGO_URL = ''
 
 // Create a singleton instance of your user with network connection configuration
 // Return this singleton instance so there is only ever one user object
 // in your application.
-export const VeridaUser = new MyAppUser({
+export const user = new WebUser({
     accountConfig: {
         request: {
             logoUrl: LOGO_URL
@@ -40,47 +36,48 @@ export const VeridaUser = new MyAppUser({
     contextConfig: {
         name: CONTEXT_NAME
     },
-    debug: true
+    debug: true // Provides logs in the console
 })
-```
-
-Note: `accountConfig`, `clientConfig`, `contextConfig` are all configuration objects that match their respective `account-web-vault`, `client` and `context` configuration objects.
-
-You can now import your `VeridaUser` in any other project files:
-
-```tsx
-import VeridaUser from './VeridaUser'
+// Note: `accountConfig`, `clientConfig`, `contextConfig` are all configuration objects that match their respective `account-web-vault`, `client` and `context` configuration objects.
 
 // Bind some event listeners
-VeridaUser.on('profileChanged',(profile) => { console.log('Profile changed!', profile) })
-VeridaUser.on('connected',(profile) => { console.log('User connected!') })
-VeridaUser.on('disconnect',(profile) => { console.log('User connected!') })
+user.on('connected',() => { console.log('User connected!') })
+user.on('disconnect',() => { console.log('User disconnected!') })
+user.on('profileChanged',(newProfile) => { console.log('Profile changed!', newProfile) })
 
-const isConnected = await VeridaUser.isConnected()
+// Automatically connect the user if there's an existing local session
+await autoConnectExistingSession()
+
+// Check if the user is connected. Note: `autoConnectExistingSession` also return the connection status
+const isConnected = user.isConnected()
+
 if (!isConnected) {
-    const success = await VeridaUser.connect()
+    // Use the `connect` method to explicitly prompt the user to connect with the Verida Wallet
+    const success = await user.connect()
     if (!success) {
-        throw Error('User cancelled connect')
+        throw Error('User cancelled the connection')
     }
 }
 
-// Send a message to the logged in user on their mobile device
-const did = await VeridaUser.getDid()
+// Get the DID of the user
+const did = user.getDid()
 console.log(`Logged in with ${did}`)
 
-const publicProfile = await VeridaUser.getPublicProfile()
+// Get the public name, avatar and description from the user's profile
+const publicProfile = await user.getPublicProfile()
 console.log(`Public profile:`, publicProfile)
 
-await VeridaUser.sendMessage(did, 'Hello!')
+// Send a message from the connected user to the specified DID (in this example to itself)
+await user.sendMessage(did, 'Hello!')
 
 // Open a private encrypted user database and save a row
-const db = await VeridaUser.openDatabase('test_db')
-const row = await db.save({'hello': 'world'})
+const database = await user.openDatabase('test_db')
+const row = await database.save({'hello': 'world'})
 console.log(row)
 
 // Open a private encrypted user datastore and save a row
-const ds = await VeridaUser.openDatastore('https://common.schemas.verida.io/social/contact/v0.1.0/schema.json')
-const row = await ds.save({
+const datastore = await user.openDatastore('https://common.schemas.verida.io/social/contact/v0.1.0/schema.json')
+const row = await datastore.save({
     firstName: 'Jane',
     lastName: 'Smith',
     email: 'jane_smith@example.com'
@@ -88,5 +85,45 @@ const row = await ds.save({
 console.log(row)
 
 // Disconnect the user
-await VeridaUser.disconnect()
+await user.disconnect()
+```
+
+### Note
+
+It is recommended to avoid multiple instances of `WebUser` to prevent side effects on shared resources.
+
+```ts
+import { WebUser, WebUserConfig } from '@verida/web-helpers'
+
+// Define the configuration
+const CONFIG: WebUserConfig = {
+  accountConfig: {
+    // ...
+  },
+  clientConfig: {
+    // ...
+  },
+  contextConfig: {
+    // ...
+  },
+}
+
+// Implement a singleton class
+export class SingletonWebUser extends WebUser {
+  private static instance: VeridaUser
+
+  private constructor(config: WebUserConfig) {
+    super(config)
+  }
+
+  public static getInstance() {
+    if (this.instance) {
+      return this.instance
+    }
+    this.instance = new VeridaUser(CONFIG)
+    return this.instance
+  }
+}
+
+const user = SingletonWebUser.getInstance()
 ```
