@@ -51,12 +51,13 @@ VeridaRequestDataExample = () => {
       const message = 'Please share your Verifiable Credential'
       const messageType = 'inbox/type/dataRequest'
 
-      // note that requestSchema is the same schema we used when we issued the VC
+      // note that credentialSchema used in the filter is the same schema we used when we issued the VC
       // userSelect: true lets the user select which VC to respond with
       const data = {
-        requestSchema: 
-          'https://common.schemas.verida.io/health/pathology/tests/covid19/pcr/v0.1.0/schema.json', 
-        filter: {},
+        requestSchema: "https://common.schemas.verida.io/credential/base/v0.2.0/schema.json", 
+        filter: {
+          credentialSchema: 'https://common.schemas.verida.io/health/pathology/tests/covid19/pcr/v0.1.0/schema.json'
+        },
         userSelect: true
       }
 
