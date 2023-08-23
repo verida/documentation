@@ -33,8 +33,8 @@ if (ExecutionEnvironment.canUseDOM) {
   VaultAccount = veridaWebVault.VaultAccount;
   hasSession = veridaWebVault.hasSession;
 
-  // const veridaVerifiableCredentials = require("@verida/verifiable-credentials");
-  // Credentials = veridaVerifiableCredentials.Credentials;
+  const veridaVerifiableCredentials = require("@verida/verifiable-credentials");
+  Credentials = veridaVerifiableCredentials.Credentials;
 
   const initWalletConnection = async () => {
     const bridgeURL = "https://bridge.walletconnect.org"
