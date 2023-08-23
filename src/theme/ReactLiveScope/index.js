@@ -5,10 +5,9 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React from "react";
-import { useState, useEffect } from "react";
-import { store, useGlobalState } from "state-pool";
 import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
+import React, { useEffect, useState } from "react";
+import { store, useGlobalState } from "state-pool";
 
 
 // We do this weird importing thing because Docusaurus attempts to do ServerSide Rendering and
@@ -34,8 +33,8 @@ if (ExecutionEnvironment.canUseDOM) {
   VaultAccount = veridaWebVault.VaultAccount;
   hasSession = veridaWebVault.hasSession;
 
-  const veridaVerifiableCredentials = require("@verida/verifiable-credentials");
-  Credentials = veridaVerifiableCredentials.Credentials;
+  // const veridaVerifiableCredentials = require("@verida/verifiable-credentials");
+  // Credentials = veridaVerifiableCredentials.Credentials;
 
   const initWalletConnection = async () => {
     const bridgeURL = "https://bridge.walletconnect.org"

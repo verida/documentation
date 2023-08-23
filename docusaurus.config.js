@@ -26,7 +26,6 @@ const config = {
 					sidebarPath: require.resolve("./sidebars.js"),
 					remarkPlugins: [
 						(require("@docusaurus/remark-plugin-npm2yarn"), { sync: true }),
-						require("mdx-mermaid"),
 					],
 				},
 				sitemap: {
@@ -55,7 +54,6 @@ const config = {
 				defaultMode: "light",
 				disableSwitch: true,
 				respectPrefersColorScheme: false,
-				switchConfig: {},
 			},
 			metadata: [
 				{ name: "keywords", content: "verida, personal data" },
