@@ -36,7 +36,7 @@ VeridaLoginExample = () => {
             await connector.createSession();
         }
         connector.on("connect", (error, payload) => {
-            console.log("WalletConnect on disconnect payload:", payload);
+            console.log("WalletConnect on connect payload:", payload);
         })
         connector.on("disconnect", (error, payload) => {
             if (error) {
