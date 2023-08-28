@@ -20,7 +20,7 @@
 
 #### Defined in
 
-node_modules/ajv/dist/compile/errors.d.ts:6
+packages/client-ts/node_modules/ajv/dist/compile/errors.d.ts:6
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/errors.d.ts:8
+packages/client-ts/node_modules/ajv/dist/compile/errors.d.ts:8
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/errors.d.ts:7
+packages/client-ts/node_modules/ajv/dist/compile/errors.d.ts:7

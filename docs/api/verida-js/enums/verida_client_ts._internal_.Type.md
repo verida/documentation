@@ -19,7 +19,7 @@
 
 #### Defined in
 
-node_modules/ajv/dist/compile/util.d.ts:35
+packages/client-ts/node_modules/ajv/dist/compile/util.d.ts:35
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/util.d.ts:36
+packages/client-ts/node_modules/ajv/dist/compile/util.d.ts:36

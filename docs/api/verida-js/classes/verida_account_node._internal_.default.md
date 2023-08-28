@@ -12,6 +12,10 @@ An Authenticator that automatically signs everything
 
   ↳ [`AutoAccount`](verida_account_node.AutoAccount.md)
 
+## Implements
+
+- [`IAccount`](../interfaces/verida_account_node._internal_.IAccount.md)
+
 ## Table of contents
 
 ### Constructors
@@ -23,10 +27,12 @@ An Authenticator that automatically signs everything
 - [createDidJwt](verida_account_node._internal_.default.md#createdidjwt)
 - [did](verida_account_node._internal_.default.md#did)
 - [disconnect](verida_account_node._internal_.default.md#disconnect)
-- [getDidClient](verida_account_node._internal_.default.md#getdidclient)
+- [disconnectDevice](verida_account_node._internal_.default.md#disconnectdevice)
+- [getAuthContext](verida_account_node._internal_.default.md#getauthcontext)
 - [keyring](verida_account_node._internal_.default.md#keyring)
 - [linkStorage](verida_account_node._internal_.default.md#linkstorage)
 - [linkStorageContextService](verida_account_node._internal_.default.md#linkstoragecontextservice)
+- [setAccountConfig](verida_account_node._internal_.default.md#setaccountconfig)
 - [sign](verida_account_node._internal_.default.md#sign)
 - [storageConfig](verida_account_node._internal_.default.md#storageconfig)
 - [unlinkStorage](verida_account_node._internal_.default.md#unlinkstorage)
@@ -57,6 +63,10 @@ Create a DID-JWT from a data object
 
 `Promise`<`string`\>
 
+#### Implementation of
+
+[IAccount](../interfaces/verida_account_node._internal_.IAccount.md).[createDidJwt](../interfaces/verida_account_node._internal_.IAccount.md#createdidjwt)
+
 #### Defined in
 
 packages/account/dist/account.d.ts:42
@@ -72,6 +82,10 @@ Get the DID of the current user
 #### Returns
 
 `Promise`<`string`\>
+
+#### Implementation of
+
+[IAccount](../interfaces/verida_account_node._internal_.IAccount.md).[did](../interfaces/verida_account_node._internal_.IAccount.md#did)
 
 #### Defined in
 
@@ -97,29 +111,71 @@ For example, in a web browser context, it would remove any stored signatures fro
 
 `Promise`<`void`\>
 
+#### Implementation of
+
+[IAccount](../interfaces/verida_account_node._internal_.IAccount.md).[disconnect](../interfaces/verida_account_node._internal_.IAccount.md#disconnect)
+
 #### Defined in
 
 packages/account/dist/account.d.ts:48
 
 ___
 
-### getDidClient
+### disconnectDevice
 
-▸ **getDidClient**(): `void`
+▸ **disconnectDevice**(`contextName`, `deviceId?`): `Promise`<`boolean`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `contextName` | `string` |
+| `deviceId?` | `string` |
 
 #### Returns
 
-`void`
+`Promise`<`boolean`\>
+
+#### Implementation of
+
+[IAccount](../interfaces/verida_account_node._internal_.IAccount.md).[disconnectDevice](../interfaces/verida_account_node._internal_.IAccount.md#disconnectdevice)
 
 #### Defined in
 
-packages/account/dist/account.d.ts:37
+packages/account/dist/account.d.ts:50
+
+___
+
+### getAuthContext
+
+▸ **getAuthContext**(`contextName`, `contextConfig`, `authConfig?`, `authType?`): `Promise`<[`AuthContext`](../interfaces/verida_account_node._internal_.AuthContext.md)\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `contextName` | `string` |
+| `contextConfig` | [`SecureContextConfig`](../interfaces/verida_account_node._internal_.SecureContextConfig.md) |
+| `authConfig?` | [`AuthTypeConfig`](../interfaces/verida_account_node._internal_.AuthTypeConfig.md) |
+| `authType?` | `string` |
+
+#### Returns
+
+`Promise`<[`AuthContext`](../interfaces/verida_account_node._internal_.AuthContext.md)\>
+
+#### Implementation of
+
+[IAccount](../interfaces/verida_account_node._internal_.IAccount.md).[getAuthContext](../interfaces/verida_account_node._internal_.IAccount.md#getauthcontext)
+
+#### Defined in
+
+packages/account/dist/account.d.ts:49
 
 ___
 
 ### keyring
 
-▸ **keyring**(`contextName`): `Promise`<[`default`](verida_account_node._internal_.default-3.md)\>
+▸ **keyring**(`contextName`): `Promise`<[`default`](verida_account_node._internal_.default-2.md)\>
 
 Generate a keyring for this user for a given storage context.
 
@@ -131,7 +187,11 @@ Generate a keyring for this user for a given storage context.
 
 #### Returns
 
-`Promise`<[`default`](verida_account_node._internal_.default-3.md)\>
+`Promise`<[`default`](verida_account_node._internal_.default-2.md)\>
+
+#### Implementation of
+
+[IAccount](../interfaces/verida_account_node._internal_.IAccount.md).[keyring](../interfaces/verida_account_node._internal_.IAccount.md#keyring)
 
 #### Defined in
 
@@ -141,7 +201,7 @@ ___
 
 ### linkStorage
 
-▸ **linkStorage**(`storageConfig`): `Promise`<`void`\>
+▸ **linkStorage**(`storageConfig`): `Promise`<`boolean`\>
 
 Link storage to this user
 
@@ -153,7 +213,11 @@ Link storage to this user
 
 #### Returns
 
-`Promise`<`void`\>
+`Promise`<`boolean`\>
+
+#### Implementation of
+
+[IAccount](../interfaces/verida_account_node._internal_.IAccount.md).[linkStorage](../interfaces/verida_account_node._internal_.IAccount.md#linkstorage)
 
 #### Defined in
 
@@ -163,7 +227,7 @@ ___
 
 ### linkStorageContextService
 
-▸ **linkStorageContextService**(`contextName`, `endpointType`, `serverType`, `endpointUri`): `Promise`<`boolean`\>
+▸ **linkStorageContextService**(`contextName`, `endpointType`, `serverType`, `endpointUris`): `Promise`<`boolean`\>
 
 #### Parameters
 
@@ -172,15 +236,43 @@ ___
 | `contextName` | `string` |
 | `endpointType` | `string` |
 | `serverType` | `string` |
-| `endpointUri` | `string` |
+| `endpointUris` | `string`[] |
 
 #### Returns
 
 `Promise`<`boolean`\>
 
+#### Implementation of
+
+[IAccount](../interfaces/verida_account_node._internal_.IAccount.md).[linkStorageContextService](../interfaces/verida_account_node._internal_.IAccount.md#linkstoragecontextservice)
+
 #### Defined in
 
 packages/account/dist/account.d.ts:36
+
+___
+
+### setAccountConfig
+
+▸ **setAccountConfig**(`accountConfig`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `accountConfig` | [`AccountConfig`](../interfaces/verida_account_node._internal_.AccountConfig.md) |
+
+#### Returns
+
+`void`
+
+#### Implementation of
+
+[IAccount](../interfaces/verida_account_node._internal_.IAccount.md).[setAccountConfig](../interfaces/verida_account_node._internal_.IAccount.md#setaccountconfig)
+
+#### Defined in
+
+packages/account/dist/account.d.ts:37
 
 ___
 
@@ -199,6 +291,10 @@ Sign a string as the current user
 #### Returns
 
 `Promise`<`string`\>
+
+#### Implementation of
+
+[IAccount](../interfaces/verida_account_node._internal_.IAccount.md).[sign](../interfaces/verida_account_node._internal_.IAccount.md#sign)
 
 #### Defined in
 
@@ -221,6 +317,10 @@ ___
 
 `Promise`<`undefined` \| [`SecureContextConfig`](../interfaces/verida_account_node._internal_.SecureContextConfig.md)\>
 
+#### Implementation of
+
+[IAccount](../interfaces/verida_account_node._internal_.IAccount.md).[storageConfig](../interfaces/verida_account_node._internal_.IAccount.md#storageconfig)
+
 #### Defined in
 
 packages/account/dist/account.d.ts:35
@@ -242,6 +342,10 @@ Unlink storage for this user
 #### Returns
 
 `Promise`<`boolean`\>
+
+#### Implementation of
+
+[IAccount](../interfaces/verida_account_node._internal_.IAccount.md).[unlinkStorage](../interfaces/verida_account_node._internal_.IAccount.md#unlinkstorage)
 
 #### Defined in
 

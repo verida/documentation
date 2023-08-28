@@ -25,7 +25,7 @@
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/scope.d.ts:14
+packages/client-ts/node_modules/ajv/dist/compile/codegen/scope.d.ts:14
 
 ___
 
@@ -35,4 +35,4 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/scope.d.ts:13
+packages/client-ts/node_modules/ajv/dist/compile/codegen/scope.d.ts:13

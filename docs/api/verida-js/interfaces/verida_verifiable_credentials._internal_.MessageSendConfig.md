@@ -12,6 +12,7 @@ Interface for any MessageSendConfig
 
 - [did](verida_verifiable_credentials._internal_.MessageSendConfig.md#did)
 - [expiry](verida_verifiable_credentials._internal_.MessageSendConfig.md#expiry)
+- [openUrl](verida_verifiable_credentials._internal_.MessageSendConfig.md#openurl)
 - [recipientContextName](verida_verifiable_credentials._internal_.MessageSendConfig.md#recipientcontextname)
 
 ## Properties
@@ -22,7 +23,7 @@ Interface for any MessageSendConfig
 
 #### Defined in
 
-packages/client-ts/dist/context/interfaces.d.ts:97
+packages/types/dist/ContextInterfaces.d.ts:120
 
 ___
 
@@ -32,7 +33,17 @@ ___
 
 #### Defined in
 
-packages/client-ts/dist/context/interfaces.d.ts:98
+packages/types/dist/ContextInterfaces.d.ts:121
+
+___
+
+### openUrl
+
+• `Optional` **openUrl**: `string`
+
+#### Defined in
+
+packages/types/dist/ContextInterfaces.d.ts:123
 
 ___
 
@@ -42,4 +53,4 @@ ___
 
 #### Defined in
 
-packages/client-ts/dist/context/interfaces.d.ts:99
+packages/types/dist/ContextInterfaces.d.ts:122

@@ -21,7 +21,7 @@
 
 #### Defined in
 
-packages/account/dist/interfaces.d.ts:3
+packages/types/dist/AccountInterfaces.d.ts:7
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 #### Defined in
 
-packages/account/dist/interfaces.d.ts:4
+packages/types/dist/AccountInterfaces.d.ts:8
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-packages/account/dist/interfaces.d.ts:6
+packages/types/dist/AccountInterfaces.d.ts:10
 
 ___
 
@@ -51,4 +51,4 @@ ___
 
 #### Defined in
 
-packages/account/dist/interfaces.d.ts:5
+packages/types/dist/AccountInterfaces.d.ts:9

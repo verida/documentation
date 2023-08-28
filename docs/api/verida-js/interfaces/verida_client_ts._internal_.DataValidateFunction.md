@@ -22,7 +22,7 @@
 
 #### Defined in
 
-node_modules/ajv/dist/types/index.d.ts:107
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:107
 
 ## Table of contents
 
@@ -38,4 +38,4 @@ node_modules/ajv/dist/types/index.d.ts:107
 
 #### Defined in
 
-node_modules/ajv/dist/types/index.d.ts:108
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:108

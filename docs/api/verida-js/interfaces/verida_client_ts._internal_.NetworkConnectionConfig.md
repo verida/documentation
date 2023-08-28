@@ -18,11 +18,11 @@ Interface for NetworkConnectionConfig
 
 ### account
 
-• **account**: [`default`](../classes/verida_client_ts._internal_.default-1.md)
+• **account**: [`IAccount`](verida_client_ts._internal_.IAccount.md)
 
 #### Defined in
 
-[packages/client-ts/src/interfaces.ts:45](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/interfaces.ts#L45)
+packages/types/dist/NetworkInterfaces.d.ts:58
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/interfaces.ts:43](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/interfaces.ts#L43)
+packages/types/dist/NetworkInterfaces.d.ts:56
 
 ___
 
@@ -42,4 +42,4 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/interfaces.ts:44](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/interfaces.ts#L44)
+packages/types/dist/NetworkInterfaces.d.ts:57

@@ -13,6 +13,7 @@
 ### Properties
 
 - [\_did](verida_did_client.Wallet.md#_did)
+- [\_network](verida_did_client.Wallet.md#_network)
 - [\_privateKey](verida_did_client.Wallet.md#_privatekey)
 - [\_publicKey](verida_did_client.Wallet.md#_publickey)
 
@@ -35,17 +36,18 @@
 
 ### constructor
 
-• **new Wallet**(`privateKey`)
+• **new Wallet**(`privateKey`, `network`)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `privateKey` | `string` |
+| `network` | `string` |
 
 #### Defined in
 
-[packages/did-client/src/wallet.ts:12](https://github.com/verida/verida-js/blob/c03b336/packages/did-client/src/wallet.ts#L12)
+[packages/did-client/src/wallet.ts:14](https://github.com/verida/verida-js/blob/a690f60/packages/did-client/src/wallet.ts#L14)
 
 ## Properties
 
@@ -55,7 +57,17 @@
 
 #### Defined in
 
-[packages/did-client/src/wallet.ts:6](https://github.com/verida/verida-js/blob/c03b336/packages/did-client/src/wallet.ts#L6)
+[packages/did-client/src/wallet.ts:6](https://github.com/verida/verida-js/blob/a690f60/packages/did-client/src/wallet.ts#L6)
+
+___
+
+### \_network
+
+• `Private` **\_network**: `string`
+
+#### Defined in
+
+[packages/did-client/src/wallet.ts:12](https://github.com/verida/verida-js/blob/a690f60/packages/did-client/src/wallet.ts#L12)
 
 ___
 
@@ -65,7 +77,7 @@ ___
 
 #### Defined in
 
-[packages/did-client/src/wallet.ts:10](https://github.com/verida/verida-js/blob/c03b336/packages/did-client/src/wallet.ts#L10)
+[packages/did-client/src/wallet.ts:10](https://github.com/verida/verida-js/blob/a690f60/packages/did-client/src/wallet.ts#L10)
 
 ___
 
@@ -75,7 +87,7 @@ ___
 
 #### Defined in
 
-[packages/did-client/src/wallet.ts:8](https://github.com/verida/verida-js/blob/c03b336/packages/did-client/src/wallet.ts#L8)
+[packages/did-client/src/wallet.ts:8](https://github.com/verida/verida-js/blob/a690f60/packages/did-client/src/wallet.ts#L8)
 
 ## Accessors
 
@@ -89,7 +101,7 @@ ___
 
 #### Defined in
 
-[packages/did-client/src/wallet.ts:34](https://github.com/verida/verida-js/blob/c03b336/packages/did-client/src/wallet.ts#L34)
+[packages/did-client/src/wallet.ts:37](https://github.com/verida/verida-js/blob/a690f60/packages/did-client/src/wallet.ts#L37)
 
 ___
 
@@ -103,7 +115,7 @@ ___
 
 #### Defined in
 
-[packages/did-client/src/wallet.ts:38](https://github.com/verida/verida-js/blob/c03b336/packages/did-client/src/wallet.ts#L38)
+[packages/did-client/src/wallet.ts:41](https://github.com/verida/verida-js/blob/a690f60/packages/did-client/src/wallet.ts#L41)
 
 ___
 
@@ -117,7 +129,7 @@ ___
 
 #### Defined in
 
-[packages/did-client/src/wallet.ts:54](https://github.com/verida/verida-js/blob/c03b336/packages/did-client/src/wallet.ts#L54)
+[packages/did-client/src/wallet.ts:57](https://github.com/verida/verida-js/blob/a690f60/packages/did-client/src/wallet.ts#L57)
 
 ___
 
@@ -131,7 +143,7 @@ ___
 
 #### Defined in
 
-[packages/did-client/src/wallet.ts:46](https://github.com/verida/verida-js/blob/c03b336/packages/did-client/src/wallet.ts#L46)
+[packages/did-client/src/wallet.ts:49](https://github.com/verida/verida-js/blob/a690f60/packages/did-client/src/wallet.ts#L49)
 
 ___
 
@@ -145,7 +157,7 @@ ___
 
 #### Defined in
 
-[packages/did-client/src/wallet.ts:42](https://github.com/verida/verida-js/blob/c03b336/packages/did-client/src/wallet.ts#L42)
+[packages/did-client/src/wallet.ts:45](https://github.com/verida/verida-js/blob/a690f60/packages/did-client/src/wallet.ts#L45)
 
 ___
 
@@ -159,7 +171,7 @@ ___
 
 #### Defined in
 
-[packages/did-client/src/wallet.ts:58](https://github.com/verida/verida-js/blob/c03b336/packages/did-client/src/wallet.ts#L58)
+[packages/did-client/src/wallet.ts:61](https://github.com/verida/verida-js/blob/a690f60/packages/did-client/src/wallet.ts#L61)
 
 ___
 
@@ -173,7 +185,7 @@ ___
 
 #### Defined in
 
-[packages/did-client/src/wallet.ts:50](https://github.com/verida/verida-js/blob/c03b336/packages/did-client/src/wallet.ts#L50)
+[packages/did-client/src/wallet.ts:53](https://github.com/verida/verida-js/blob/a690f60/packages/did-client/src/wallet.ts#L53)
 
 ## Methods
 
@@ -193,13 +205,19 @@ ___
 
 #### Defined in
 
-[packages/did-client/src/wallet.ts:21](https://github.com/verida/verida-js/blob/c03b336/packages/did-client/src/wallet.ts#L21)
+[packages/did-client/src/wallet.ts:24](https://github.com/verida/verida-js/blob/a690f60/packages/did-client/src/wallet.ts#L24)
 
 ___
 
 ### createRandom
 
-▸ `Static` **createRandom**(): [`Wallet`](verida_did_client.Wallet.md)
+▸ `Static` **createRandom**(`network?`): [`Wallet`](verida_did_client.Wallet.md)
+
+#### Parameters
+
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `network` | `string` | `'testnet'` |
 
 #### Returns
 
@@ -207,4 +225,4 @@ ___
 
 #### Defined in
 
-[packages/did-client/src/wallet.ts:16](https://github.com/verida/verida-js/blob/c03b336/packages/did-client/src/wallet.ts#L16)
+[packages/did-client/src/wallet.ts:19](https://github.com/verida/verida-js/blob/a690f60/packages/did-client/src/wallet.ts#L19)

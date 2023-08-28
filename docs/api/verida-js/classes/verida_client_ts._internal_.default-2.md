@@ -4,11 +4,13 @@
 
 [@verida/client-ts](../modules/verida_client_ts.md).[<internal\>](../modules/verida_client_ts._internal_.md).default
 
-## Hierarchy
+Class that takes a signature (generated from a signed consent message) and generates a
+collection of asymmetric keys, symmetric key and signing key for a given secure storage
+context.
 
-- **`default`**
+## Implements
 
-  ↳ [`Ajv2020`](verida_client_ts._internal_.Ajv2020.md)
+- [`IKeyring`](../interfaces/verida_client_ts._internal_.IKeyring.md)
 
 ## Table of contents
 
@@ -18,931 +20,404 @@
 
 ### Properties
 
-- [RULES](verida_client_ts._internal_.default-2.md#rules)
-- [\_cache](verida_client_ts._internal_.default-2.md#_cache)
-- [\_checkUnique](verida_client_ts._internal_.default-2.md#_checkunique)
-- [\_compilations](verida_client_ts._internal_.default-2.md#_compilations)
-- [\_compileMetaSchema](verida_client_ts._internal_.default-2.md#_compilemetaschema)
-- [\_compileSchemaEnv](verida_client_ts._internal_.default-2.md#_compileschemaenv)
-- [\_loading](verida_client_ts._internal_.default-2.md#_loading)
-- [\_metaOpts](verida_client_ts._internal_.default-2.md#_metaopts)
-- [\_removeAllSchemas](verida_client_ts._internal_.default-2.md#_removeallschemas)
-- [errors](verida_client_ts._internal_.default-2.md#errors)
-- [formats](verida_client_ts._internal_.default-2.md#formats)
-- [logger](verida_client_ts._internal_.default-2.md#logger)
-- [opts](verida_client_ts._internal_.default-2.md#opts)
-- [refs](verida_client_ts._internal_.default-2.md#refs)
-- [schemas](verida_client_ts._internal_.default-2.md#schemas)
-- [scope](verida_client_ts._internal_.default-2.md#scope)
-- [MissingRefError](verida_client_ts._internal_.default-2.md#missingreferror)
-- [ValidationError](verida_client_ts._internal_.default-2.md#validationerror)
+- [asymKeyPair](verida_client_ts._internal_.default-2.md#asymkeypair)
+- [buildKey](verida_client_ts._internal_.default-2.md#buildkey)
+- [seed](verida_client_ts._internal_.default-2.md#seed)
+- [signKeyPair](verida_client_ts._internal_.default-2.md#signkeypair)
+- [storageContextKeys](verida_client_ts._internal_.default-2.md#storagecontextkeys)
+- [symKey](verida_client_ts._internal_.default-2.md#symkey)
 
 ### Methods
 
-- [$dataMetaSchema](verida_client_ts._internal_.default-2.md#$datametaschema)
-- [\_addDefaultMetaSchema](verida_client_ts._internal_.default-2.md#_adddefaultmetaschema)
-- [\_addSchema](verida_client_ts._internal_.default-2.md#_addschema)
-- [\_addVocabularies](verida_client_ts._internal_.default-2.md#_addvocabularies)
-- [addFormat](verida_client_ts._internal_.default-2.md#addformat)
-- [addKeyword](verida_client_ts._internal_.default-2.md#addkeyword)
-- [addMetaSchema](verida_client_ts._internal_.default-2.md#addmetaschema)
-- [addSchema](verida_client_ts._internal_.default-2.md#addschema)
-- [addVocabulary](verida_client_ts._internal_.default-2.md#addvocabulary)
-- [compile](verida_client_ts._internal_.default-2.md#compile)
-- [compileAsync](verida_client_ts._internal_.default-2.md#compileasync)
-- [defaultMeta](verida_client_ts._internal_.default-2.md#defaultmeta)
-- [errorsText](verida_client_ts._internal_.default-2.md#errorstext)
-- [getKeyword](verida_client_ts._internal_.default-2.md#getkeyword)
-- [getSchema](verida_client_ts._internal_.default-2.md#getschema)
-- [removeKeyword](verida_client_ts._internal_.default-2.md#removekeyword)
-- [removeSchema](verida_client_ts._internal_.default-2.md#removeschema)
-- [validate](verida_client_ts._internal_.default-2.md#validate)
-- [validateSchema](verida_client_ts._internal_.default-2.md#validateschema)
+- [\_init](verida_client_ts._internal_.default-2.md#_init)
+- [asymDecrypt](verida_client_ts._internal_.default-2.md#asymdecrypt)
+- [asymEncrypt](verida_client_ts._internal_.default-2.md#asymencrypt)
+- [buildSharedKeyEnd](verida_client_ts._internal_.default-2.md#buildsharedkeyend)
+- [buildSharedKeyStart](verida_client_ts._internal_.default-2.md#buildsharedkeystart)
+- [getKeys](verida_client_ts._internal_.default-2.md#getkeys)
+- [getSeed](verida_client_ts._internal_.default-2.md#getseed)
+- [getStorageContextKey](verida_client_ts._internal_.default-2.md#getstoragecontextkey)
+- [publicKeys](verida_client_ts._internal_.default-2.md#publickeys)
+- [sign](verida_client_ts._internal_.default-2.md#sign)
+- [symDecrypt](verida_client_ts._internal_.default-2.md#symdecrypt)
+- [symEncrypt](verida_client_ts._internal_.default-2.md#symencrypt)
+- [verifySig](verida_client_ts._internal_.default-2.md#verifysig)
 
 ## Constructors
 
 ### constructor
 
-• **new default**(`opts?`)
+• **new default**(`seed`)
+
+A string used as a seed for this keyring.
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `opts?` | [`Options`](../modules/verida_client_ts._internal_.md#options) |
+| `seed` | `string` |
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:123
+packages/keyring/dist/keyring.d.ts:19
 
 ## Properties
 
-### RULES
+### asymKeyPair
 
-• `Readonly` **RULES**: [`ValidationRules`](../interfaces/verida_client_ts._internal_.ValidationRules.md)
+• `Optional` **asymKeyPair**: [`BoxKeyPair`](../interfaces/verida_client_ts._internal_.BoxKeyPair.md)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:116
+packages/keyring/dist/keyring.d.ts:9
 
 ___
 
-### \_cache
+### buildKey
 
-• `Private` `Readonly` **\_cache**: `any`
+• `Private` **buildKey**: `any`
+
+Helper function that generates a key of the appropriate type
+
+**`param`**
+
+**`param`**
+
+**`returns`**
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:119
+packages/keyring/dist/keyring.d.ts:29
 
 ___
 
-### \_checkUnique
+### seed
 
-• `Private` **\_checkUnique**: `any`
+• `Private` **seed**: `any`
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:162
+packages/keyring/dist/keyring.d.ts:12
 
 ___
 
-### \_compilations
+### signKeyPair
 
-• `Readonly` **\_compilations**: `Set`<[`SchemaEnv`](verida_client_ts._internal_.SchemaEnv.md)\>
+• `Optional` **signKeyPair**: [`SignKeyPair`](../interfaces/verida_client_ts._internal_.SignKeyPair.md)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:117
+packages/keyring/dist/keyring.d.ts:10
 
 ___
 
-### \_compileMetaSchema
+### storageContextKeys
 
-• `Private` **\_compileMetaSchema**: `any`
+• `Private` **storageContextKeys**: `any`
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:164
+packages/keyring/dist/keyring.d.ts:13
 
 ___
 
-### \_compileSchemaEnv
+### symKey
 
-• `Private` **\_compileSchemaEnv**: `any`
-
-#### Defined in
-
-node_modules/ajv/dist/core.d.ts:163
-
-___
-
-### \_loading
-
-• `Private` `Readonly` **\_loading**: `any`
+• `Optional` **symKey**: `Uint8Array`
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:118
-
-___
-
-### \_metaOpts
-
-• `Private` `Readonly` **\_metaOpts**: `any`
-
-#### Defined in
-
-node_modules/ajv/dist/core.d.ts:120
-
-___
-
-### \_removeAllSchemas
-
-• `Private` **\_removeAllSchemas**: `any`
-
-#### Defined in
-
-node_modules/ajv/dist/core.d.ts:160
-
-___
-
-### errors
-
-• `Optional` **errors**: ``null`` \| [`ErrorObject`](../interfaces/verida_client_ts._internal_.ErrorObject.md)<`string`, [`Record`](../modules/verida_client_ts._internal_.md#record)<`string`, `any`\>, `unknown`\>[]
-
-#### Defined in
-
-node_modules/ajv/dist/core.d.ts:104
-
-___
-
-### formats
-
-• `Readonly` **formats**: `Object`
-
-#### Defined in
-
-node_modules/ajv/dist/core.d.ts:113
-
-___
-
-### logger
-
-• **logger**: [`Logger`](../interfaces/verida_client_ts._internal_.Logger.md)
-
-#### Defined in
-
-node_modules/ajv/dist/core.d.ts:105
-
-___
-
-### opts
-
-• **opts**: [`InstanceOptions`](../modules/verida_client_ts._internal_.md#instanceoptions)
-
-#### Defined in
-
-node_modules/ajv/dist/core.d.ts:103
-
-___
-
-### refs
-
-• `Readonly` **refs**: `Object`
-
-#### Defined in
-
-node_modules/ajv/dist/core.d.ts:110
-
-___
-
-### schemas
-
-• `Readonly` **schemas**: `Object`
-
-#### Defined in
-
-node_modules/ajv/dist/core.d.ts:107
-
-___
-
-### scope
-
-• `Readonly` **scope**: [`ValueScope`](verida_client_ts._internal_.ValueScope.md)
-
-#### Defined in
-
-node_modules/ajv/dist/core.d.ts:106
-
-___
-
-### MissingRefError
-
-▪ `Static` **MissingRefError**: typeof [`default`](verida_client_ts._internal_.default-4.md)
-
-#### Defined in
-
-node_modules/ajv/dist/core.d.ts:122
-
-___
-
-### ValidationError
-
-▪ `Static` **ValidationError**: typeof [`default`](verida_client_ts._internal_.default-3.md)
-
-#### Defined in
-
-node_modules/ajv/dist/core.d.ts:121
+packages/keyring/dist/keyring.d.ts:11
 
 ## Methods
 
-### $dataMetaSchema
+### \_init
 
-▸ **$dataMetaSchema**(`metaSchema`, `keywordsJsonPointers`): [`AnySchemaObject`](../modules/verida_client_ts._internal_.md#anyschemaobject)
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `metaSchema` | [`AnySchemaObject`](../modules/verida_client_ts._internal_.md#anyschemaobject) |
-| `keywordsJsonPointers` | `string`[] |
+▸ **_init**(): `Promise`<`void`\>
 
 #### Returns
 
-[`AnySchemaObject`](../modules/verida_client_ts._internal_.md#anyschemaobject)
+`Promise`<`void`\>
+
+#### Implementation of
+
+[IKeyring](../interfaces/verida_client_ts._internal_.IKeyring.md).[_init](../interfaces/verida_client_ts._internal_.IKeyring.md#_init)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:159
+packages/keyring/dist/keyring.d.ts:21
 
 ___
 
-### \_addDefaultMetaSchema
+### asymDecrypt
 
-▸ **_addDefaultMetaSchema**(): `void`
+▸ **asymDecrypt**(`messageWithNonce`, `secretOrSharedKey`): `Promise`<`any`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `messageWithNonce` | `string` |
+| `secretOrSharedKey` | `Uint8Array` |
 
 #### Returns
 
-`void`
+`Promise`<`any`\>
+
+#### Implementation of
+
+[IKeyring](../interfaces/verida_client_ts._internal_.IKeyring.md).[asymDecrypt](../interfaces/verida_client_ts._internal_.IKeyring.md#asymdecrypt)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:125
+packages/keyring/dist/keyring.d.ts:41
 
 ___
 
-### \_addSchema
+### asymEncrypt
 
-▸ **_addSchema**(`schema`, `meta?`, `baseId?`, `validateSchema?`, `addSchema?`): [`SchemaEnv`](verida_client_ts._internal_.SchemaEnv.md)
+▸ **asymEncrypt**(`data`, `secretOrSharedKey`): `Promise`<`string`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `schema` | [`AnySchema`](../modules/verida_client_ts._internal_.md#anyschema) |
-| `meta?` | `boolean` |
-| `baseId?` | `string` |
-| `validateSchema?` | `boolean` \| ``"log"`` |
-| `addSchema?` | `boolean` |
+| `data` | `string` |
+| `secretOrSharedKey` | `Uint8Array` |
 
 #### Returns
 
-[`SchemaEnv`](verida_client_ts._internal_.SchemaEnv.md)
+`Promise`<`string`\>
+
+#### Implementation of
+
+[IKeyring](../interfaces/verida_client_ts._internal_.IKeyring.md).[asymEncrypt](../interfaces/verida_client_ts._internal_.IKeyring.md#asymencrypt)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:161
+packages/keyring/dist/keyring.d.ts:40
 
 ___
 
-### \_addVocabularies
+### buildSharedKeyEnd
 
-▸ **_addVocabularies**(): `void`
+▸ **buildSharedKeyEnd**(`publicKey`): `Promise`<`Uint8Array`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `publicKey` | `Uint8Array` |
 
 #### Returns
 
-`void`
+`Promise`<`Uint8Array`\>
+
+#### Implementation of
+
+[IKeyring](../interfaces/verida_client_ts._internal_.IKeyring.md).[buildSharedKeyEnd](../interfaces/verida_client_ts._internal_.IKeyring.md#buildsharedkeyend)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:124
+packages/keyring/dist/keyring.d.ts:43
 
 ___
 
-### addFormat
+### buildSharedKeyStart
 
-▸ **addFormat**(`name`, `format`): [`default`](verida_client_ts._internal_.default-2.md)
+▸ **buildSharedKeyStart**(`privateKey`): `Promise`<`Uint8Array`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `name` | `string` |
-| `format` | [`Format`](../modules/verida_client_ts._internal_.md#format) |
+| `privateKey` | `Uint8Array` |
 
 #### Returns
 
-[`default`](verida_client_ts._internal_.default-2.md)
+`Promise`<`Uint8Array`\>
+
+#### Implementation of
+
+[IKeyring](../interfaces/verida_client_ts._internal_.IKeyring.md).[buildSharedKeyStart](../interfaces/verida_client_ts._internal_.IKeyring.md#buildsharedkeystart)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:156
+packages/keyring/dist/keyring.d.ts:42
 
 ___
 
-### addKeyword
+### getKeys
 
-▸ **addKeyword**(`kwdOrDef`, `def?`): [`default`](verida_client_ts._internal_.default-2.md)
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `kwdOrDef` | `string` \| [`KeywordDefinition`](../modules/verida_client_ts._internal_.md#keyworddefinition) |
-| `def?` | [`KeywordDefinition`](../modules/verida_client_ts._internal_.md#keyworddefinition) |
+▸ **getKeys**(): `Promise`<`any`\>
 
 #### Returns
 
-[`default`](verida_client_ts._internal_.default-2.md)
+`Promise`<`any`\>
+
+#### Implementation of
+
+[IKeyring](../interfaces/verida_client_ts._internal_.IKeyring.md).[getKeys](../interfaces/verida_client_ts._internal_.IKeyring.md#getkeys)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:153
+packages/keyring/dist/keyring.d.ts:20
 
 ___
 
-### addMetaSchema
+### getSeed
 
-▸ **addMetaSchema**(`schema`, `key?`, `_validateSchema?`): [`default`](verida_client_ts._internal_.default-2.md)
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `schema` | [`AnySchemaObject`](../modules/verida_client_ts._internal_.md#anyschemaobject) |
-| `key?` | `string` |
-| `_validateSchema?` | `boolean` \| ``"log"`` |
-
-#### Returns
-
-[`default`](verida_client_ts._internal_.default-2.md)
-
-#### Defined in
-
-node_modules/ajv/dist/core.d.ts:147
-
-___
-
-### addSchema
-
-▸ **addSchema**(`schema`, `key?`, `_meta?`, `_validateSchema?`): [`default`](verida_client_ts._internal_.default-2.md)
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `schema` | [`AnySchema`](../modules/verida_client_ts._internal_.md#anyschema) \| [`AnySchema`](../modules/verida_client_ts._internal_.md#anyschema)[] |
-| `key?` | `string` |
-| `_meta?` | `boolean` |
-| `_validateSchema?` | `boolean` \| ``"log"`` |
-
-#### Returns
-
-[`default`](verida_client_ts._internal_.default-2.md)
-
-#### Defined in
-
-node_modules/ajv/dist/core.d.ts:143
-
-___
-
-### addVocabulary
-
-▸ **addVocabulary**(`definitions`): [`default`](verida_client_ts._internal_.default-2.md)
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `definitions` | [`Vocabulary`](../modules/verida_client_ts._internal_.md#vocabulary) |
-
-#### Returns
-
-[`default`](verida_client_ts._internal_.default-2.md)
-
-#### Defined in
-
-node_modules/ajv/dist/core.d.ts:152
-
-___
-
-### compile
-
-▸ **compile**<`T`\>(`schema`, `_meta?`): [`ValidateFunction`](../interfaces/verida_client_ts._internal_.ValidateFunction.md)<`T`\>
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | `unknown` |
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `schema` | [`Schema`](../modules/verida_client_ts._internal_.md#schema) \| [`UncheckedJSONSchemaType`](../modules/verida_client_ts._internal_.md#uncheckedjsonschematype)<`T`, ``false``\> |
-| `_meta?` | `boolean` |
-
-#### Returns
-
-[`ValidateFunction`](../interfaces/verida_client_ts._internal_.ValidateFunction.md)<`T`\>
-
-#### Defined in
-
-node_modules/ajv/dist/core.d.ts:134
-
-▸ **compile**<`T`\>(`schema`, `_meta?`): [`ValidateFunction`](../interfaces/verida_client_ts._internal_.ValidateFunction.md)<`T`\>
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | `unknown` |
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `schema` | [`JTDSchemaType`](../modules/verida_client_ts._internal_.md#jtdschematype)<`T`, [`Record`](../modules/verida_client_ts._internal_.md#record)<`string`, `never`\>\> |
-| `_meta?` | `boolean` |
-
-#### Returns
-
-[`ValidateFunction`](../interfaces/verida_client_ts._internal_.ValidateFunction.md)<`T`\>
-
-#### Defined in
-
-node_modules/ajv/dist/core.d.ts:135
-
-▸ **compile**<`N`, `T`\>(`schema`, `_meta?`): [`ValidateFunction`](../interfaces/verida_client_ts._internal_.ValidateFunction.md)<[`JTDDataType`](../modules/verida_client_ts._internal_.md#jtddatatype)<`T`\>\>
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `N` | extends `never` |
-| `T` | extends [`SomeJTDSchemaType`](../modules/verida_client_ts._internal_.md#somejtdschematype) |
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `schema` | `T` |
-| `_meta?` | `boolean` |
-
-#### Returns
-
-[`ValidateFunction`](../interfaces/verida_client_ts._internal_.ValidateFunction.md)<[`JTDDataType`](../modules/verida_client_ts._internal_.md#jtddatatype)<`T`\>\>
-
-#### Defined in
-
-node_modules/ajv/dist/core.d.ts:136
-
-▸ **compile**<`T`\>(`schema`, `_meta?`): [`AsyncValidateFunction`](../interfaces/verida_client_ts._internal_.AsyncValidateFunction.md)<`T`\>
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | `unknown` |
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `schema` | [`AsyncSchema`](../interfaces/verida_client_ts._internal_.AsyncSchema.md) |
-| `_meta?` | `boolean` |
-
-#### Returns
-
-[`AsyncValidateFunction`](../interfaces/verida_client_ts._internal_.AsyncValidateFunction.md)<`T`\>
-
-#### Defined in
-
-node_modules/ajv/dist/core.d.ts:137
-
-▸ **compile**<`T`\>(`schema`, `_meta?`): [`AnyValidateFunction`](../modules/verida_client_ts._internal_.md#anyvalidatefunction)<`T`\>
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | `unknown` |
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `schema` | [`AnySchema`](../modules/verida_client_ts._internal_.md#anyschema) |
-| `_meta?` | `boolean` |
-
-#### Returns
-
-[`AnyValidateFunction`](../modules/verida_client_ts._internal_.md#anyvalidatefunction)<`T`\>
-
-#### Defined in
-
-node_modules/ajv/dist/core.d.ts:138
-
-___
-
-### compileAsync
-
-▸ **compileAsync**<`T`\>(`schema`, `_meta?`): `Promise`<[`ValidateFunction`](../interfaces/verida_client_ts._internal_.ValidateFunction.md)<`T`\>\>
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | `unknown` |
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `schema` | [`SchemaObject`](../interfaces/verida_client_ts._internal_.SchemaObject.md) \| [`UncheckedJSONSchemaType`](../modules/verida_client_ts._internal_.md#uncheckedjsonschematype)<`T`, ``false``\> |
-| `_meta?` | `boolean` |
-
-#### Returns
-
-`Promise`<[`ValidateFunction`](../interfaces/verida_client_ts._internal_.ValidateFunction.md)<`T`\>\>
-
-#### Defined in
-
-node_modules/ajv/dist/core.d.ts:139
-
-▸ **compileAsync**<`T`\>(`schema`, `_meta?`): `Promise`<[`ValidateFunction`](../interfaces/verida_client_ts._internal_.ValidateFunction.md)<`T`\>\>
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | `unknown` |
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `schema` | [`JTDSchemaType`](../modules/verida_client_ts._internal_.md#jtdschematype)<`T`, [`Record`](../modules/verida_client_ts._internal_.md#record)<`string`, `never`\>\> |
-| `_meta?` | `boolean` |
-
-#### Returns
-
-`Promise`<[`ValidateFunction`](../interfaces/verida_client_ts._internal_.ValidateFunction.md)<`T`\>\>
-
-#### Defined in
-
-node_modules/ajv/dist/core.d.ts:140
-
-▸ **compileAsync**<`T`\>(`schema`, `meta?`): `Promise`<[`AsyncValidateFunction`](../interfaces/verida_client_ts._internal_.AsyncValidateFunction.md)<`T`\>\>
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | `unknown` |
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `schema` | [`AsyncSchema`](../interfaces/verida_client_ts._internal_.AsyncSchema.md) |
-| `meta?` | `boolean` |
-
-#### Returns
-
-`Promise`<[`AsyncValidateFunction`](../interfaces/verida_client_ts._internal_.AsyncValidateFunction.md)<`T`\>\>
-
-#### Defined in
-
-node_modules/ajv/dist/core.d.ts:141
-
-▸ **compileAsync**<`T`\>(`schema`, `meta?`): `Promise`<[`AnyValidateFunction`](../modules/verida_client_ts._internal_.md#anyvalidatefunction)<`T`\>\>
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | `unknown` |
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `schema` | [`AnySchemaObject`](../modules/verida_client_ts._internal_.md#anyschemaobject) |
-| `meta?` | `boolean` |
-
-#### Returns
-
-`Promise`<[`AnyValidateFunction`](../modules/verida_client_ts._internal_.md#anyvalidatefunction)<`T`\>\>
-
-#### Defined in
-
-node_modules/ajv/dist/core.d.ts:142
-
-___
-
-### defaultMeta
-
-▸ **defaultMeta**(): `undefined` \| `string` \| [`AnySchemaObject`](../modules/verida_client_ts._internal_.md#anyschemaobject)
-
-#### Returns
-
-`undefined` \| `string` \| [`AnySchemaObject`](../modules/verida_client_ts._internal_.md#anyschemaobject)
-
-#### Defined in
-
-node_modules/ajv/dist/core.d.ts:126
-
-___
-
-### errorsText
-
-▸ **errorsText**(`errors?`, `__namedParameters?`): `string`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `errors?` | ``null`` \| [`ErrorObject`](../interfaces/verida_client_ts._internal_.ErrorObject.md)<`string`, [`Record`](../modules/verida_client_ts._internal_.md#record)<`string`, `any`\>, `unknown`\>[] |
-| `__namedParameters?` | [`ErrorsTextOptions`](../interfaces/verida_client_ts._internal_.ErrorsTextOptions.md) |
+▸ **getSeed**(): `string`
 
 #### Returns
 
 `string`
 
+#### Implementation of
+
+[IKeyring](../interfaces/verida_client_ts._internal_.IKeyring.md).[getSeed](../interfaces/verida_client_ts._internal_.IKeyring.md#getseed)
+
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:157
+packages/keyring/dist/keyring.d.ts:44
 
 ___
 
-### getKeyword
+### getStorageContextKey
 
-▸ **getKeyword**(`keyword`): `boolean` \| [`AddedKeywordDefinition`](../modules/verida_client_ts._internal_.md#addedkeyworddefinition)
+▸ **getStorageContextKey**(`databaseName`): `Promise`<`any`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `keyword` | `string` |
+| `databaseName` | `string` |
 
 #### Returns
 
-`boolean` \| [`AddedKeywordDefinition`](../modules/verida_client_ts._internal_.md#addedkeyworddefinition)
+`Promise`<`any`\>
+
+#### Implementation of
+
+[IKeyring](../interfaces/verida_client_ts._internal_.IKeyring.md).[getStorageContextKey](../interfaces/verida_client_ts._internal_.IKeyring.md#getstoragecontextkey)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:154
+packages/keyring/dist/keyring.d.ts:45
 
 ___
 
-### getSchema
+### publicKeys
 
-▸ **getSchema**<`T`\>(`keyRef`): `undefined` \| [`AnyValidateFunction`](../modules/verida_client_ts._internal_.md#anyvalidatefunction)<`T`\>
+▸ **publicKeys**(): `Promise`<[`KeyringPublicKeys`](../interfaces/verida_client_ts._internal_.KeyringPublicKeys.md)\>
 
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | `unknown` |
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `keyRef` | `string` |
+Generate an object containing all the public keys for this Keyring
 
 #### Returns
 
-`undefined` \| [`AnyValidateFunction`](../modules/verida_client_ts._internal_.md#anyvalidatefunction)<`T`\>
+`Promise`<[`KeyringPublicKeys`](../interfaces/verida_client_ts._internal_.KeyringPublicKeys.md)\>
+
+#### Implementation of
+
+[IKeyring](../interfaces/verida_client_ts._internal_.IKeyring.md).[publicKeys](../interfaces/verida_client_ts._internal_.IKeyring.md#publickeys)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:150
+packages/keyring/dist/keyring.d.ts:35
 
 ___
 
-### removeKeyword
+### sign
 
-▸ **removeKeyword**(`keyword`): [`default`](verida_client_ts._internal_.default-2.md)
+▸ **sign**(`data`): `Promise`<`string`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `keyword` | `string` |
+| `data` | `any` |
 
 #### Returns
 
-[`default`](verida_client_ts._internal_.default-2.md)
+`Promise`<`string`\>
+
+#### Implementation of
+
+[IKeyring](../interfaces/verida_client_ts._internal_.IKeyring.md).[sign](../interfaces/verida_client_ts._internal_.IKeyring.md#sign)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:155
+packages/keyring/dist/keyring.d.ts:36
 
 ___
 
-### removeSchema
+### symDecrypt
 
-▸ **removeSchema**(`schemaKeyRef?`): [`default`](verida_client_ts._internal_.default-2.md)
+▸ **symDecrypt**(`data`): `Promise`<`any`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `schemaKeyRef?` | `string` \| `RegExp` \| [`AnySchema`](../modules/verida_client_ts._internal_.md#anyschema) |
+| `data` | `string` |
 
 #### Returns
 
-[`default`](verida_client_ts._internal_.default-2.md)
+`Promise`<`any`\>
+
+#### Implementation of
+
+[IKeyring](../interfaces/verida_client_ts._internal_.IKeyring.md).[symDecrypt](../interfaces/verida_client_ts._internal_.IKeyring.md#symdecrypt)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:151
+packages/keyring/dist/keyring.d.ts:39
 
 ___
 
-### validate
+### symEncrypt
 
-▸ **validate**(`schema`, `data`): `boolean`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `schema` | `string` \| [`Schema`](../modules/verida_client_ts._internal_.md#schema) |
-| `data` | `unknown` |
-
-#### Returns
-
-`boolean`
-
-#### Defined in
-
-node_modules/ajv/dist/core.d.ts:127
-
-▸ **validate**(`schemaKeyRef`, `data`): `boolean` \| `Promise`<`unknown`\>
+▸ **symEncrypt**(`data`): `Promise`<`string`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `schemaKeyRef` | `string` \| [`AnySchema`](../modules/verida_client_ts._internal_.md#anyschema) |
-| `data` | `unknown` |
+| `data` | `string` |
 
 #### Returns
 
-`boolean` \| `Promise`<`unknown`\>
+`Promise`<`string`\>
+
+#### Implementation of
+
+[IKeyring](../interfaces/verida_client_ts._internal_.IKeyring.md).[symEncrypt](../interfaces/verida_client_ts._internal_.IKeyring.md#symencrypt)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:128
-
-▸ **validate**<`T`\>(`schema`, `data`): data is T
-
-#### Type parameters
-
-| Name |
-| :------ |
-| `T` |
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `schema` | `string` \| [`Schema`](../modules/verida_client_ts._internal_.md#schema) \| [`UncheckedJSONSchemaType`](../modules/verida_client_ts._internal_.md#uncheckedjsonschematype)<`T`, ``false``\> |
-| `data` | `unknown` |
-
-#### Returns
-
-data is T
-
-#### Defined in
-
-node_modules/ajv/dist/core.d.ts:129
-
-▸ **validate**<`T`\>(`schema`, `data`): data is T
-
-#### Type parameters
-
-| Name |
-| :------ |
-| `T` |
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `schema` | [`JTDSchemaType`](../modules/verida_client_ts._internal_.md#jtdschematype)<`T`, [`Record`](../modules/verida_client_ts._internal_.md#record)<`string`, `never`\>\> |
-| `data` | `unknown` |
-
-#### Returns
-
-data is T
-
-#### Defined in
-
-node_modules/ajv/dist/core.d.ts:130
-
-▸ **validate**<`N`, `T`\>(`schema`, `data`): data is JTDDataType<T\>
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `N` | extends `never` |
-| `T` | extends [`SomeJTDSchemaType`](../modules/verida_client_ts._internal_.md#somejtdschematype) |
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `schema` | `T` |
-| `data` | `unknown` |
-
-#### Returns
-
-data is JTDDataType<T\>
-
-#### Defined in
-
-node_modules/ajv/dist/core.d.ts:131
-
-▸ **validate**<`T`\>(`schema`, `data`): `Promise`<`T`\>
-
-#### Type parameters
-
-| Name |
-| :------ |
-| `T` |
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `schema` | [`AsyncSchema`](../interfaces/verida_client_ts._internal_.AsyncSchema.md) |
-| `data` | `unknown` |
-
-#### Returns
-
-`Promise`<`T`\>
-
-#### Defined in
-
-node_modules/ajv/dist/core.d.ts:132
-
-▸ **validate**<`T`\>(`schemaKeyRef`, `data`): data is T \| Promise<T\>
-
-#### Type parameters
-
-| Name |
-| :------ |
-| `T` |
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `schemaKeyRef` | `string` \| [`AnySchema`](../modules/verida_client_ts._internal_.md#anyschema) |
-| `data` | `unknown` |
-
-#### Returns
-
-data is T \| Promise<T\>
-
-#### Defined in
-
-node_modules/ajv/dist/core.d.ts:133
+packages/keyring/dist/keyring.d.ts:38
 
 ___
 
-### validateSchema
+### verifySig
 
-▸ **validateSchema**(`schema`, `throwOrLogError?`): `boolean` \| `Promise`<`unknown`\>
+▸ **verifySig**(`data`, `sig`): `Promise`<`boolean`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `schema` | [`AnySchema`](../modules/verida_client_ts._internal_.md#anyschema) |
-| `throwOrLogError?` | `boolean` |
+| `data` | `string` |
+| `sig` | `string` |
 
 #### Returns
 
-`boolean` \| `Promise`<`unknown`\>
+`Promise`<`boolean`\>
+
+#### Implementation of
+
+[IKeyring](../interfaces/verida_client_ts._internal_.IKeyring.md).[verifySig](../interfaces/verida_client_ts._internal_.IKeyring.md#verifysig)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:149
+packages/keyring/dist/keyring.d.ts:37

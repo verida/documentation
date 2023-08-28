@@ -12,10 +12,6 @@
 
 - [VaultAccount](../classes/verida_account_web_vault.VaultAccount.md)
 
-### Interfaces
-
-- [VaultAccountConfig](../interfaces/verida_account_web_vault.VaultAccountConfig.md)
-
 ### Functions
 
 - [hasSession](verida_account_web_vault.md#hassession)
@@ -38,4 +34,4 @@
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:42](https://github.com/verida/verida-js/blob/c03b336/packages/account-web-vault/src/vault-account.ts#L42)
+[packages/account-web-vault/src/vault-account.ts:54](https://github.com/verida/verida-js/blob/a690f60/packages/account-web-vault/src/vault-account.ts#L54)

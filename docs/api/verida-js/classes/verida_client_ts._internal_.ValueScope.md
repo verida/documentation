@@ -55,7 +55,7 @@
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/scope.d.ts:70
+packages/client-ts/node_modules/ajv/dist/compile/codegen/scope.d.ts:70
 
 ## Properties
 
@@ -69,7 +69,7 @@ node_modules/ajv/dist/compile/codegen/scope.d.ts:70
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/scope.d.ts:41
+packages/client-ts/node_modules/ajv/dist/compile/codegen/scope.d.ts:41
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/scope.d.ts:45
+packages/client-ts/node_modules/ajv/dist/compile/codegen/scope.d.ts:45
 
 ___
 
@@ -97,7 +97,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/scope.d.ts:44
+packages/client-ts/node_modules/ajv/dist/compile/codegen/scope.d.ts:44
 
 ___
 
@@ -107,7 +107,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/scope.d.ts:77
+packages/client-ts/node_modules/ajv/dist/compile/codegen/scope.d.ts:77
 
 ___
 
@@ -117,7 +117,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/scope.d.ts:68
+packages/client-ts/node_modules/ajv/dist/compile/codegen/scope.d.ts:68
 
 ___
 
@@ -127,7 +127,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/scope.d.ts:67
+packages/client-ts/node_modules/ajv/dist/compile/codegen/scope.d.ts:67
 
 ___
 
@@ -137,7 +137,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/scope.d.ts:69
+packages/client-ts/node_modules/ajv/dist/compile/codegen/scope.d.ts:69
 
 ## Methods
 
@@ -161,7 +161,7 @@ node_modules/ajv/dist/compile/codegen/scope.d.ts:69
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/scope.d.ts:49
+packages/client-ts/node_modules/ajv/dist/compile/codegen/scope.d.ts:49
 
 ___
 
@@ -175,7 +175,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/scope.d.ts:71
+packages/client-ts/node_modules/ajv/dist/compile/codegen/scope.d.ts:71
 
 ___
 
@@ -196,7 +196,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/scope.d.ts:74
+packages/client-ts/node_modules/ajv/dist/compile/codegen/scope.d.ts:74
 
 ___
 
@@ -220,7 +220,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/scope.d.ts:72
+packages/client-ts/node_modules/ajv/dist/compile/codegen/scope.d.ts:72
 
 ___
 
@@ -242,7 +242,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/scope.d.ts:76
+packages/client-ts/node_modules/ajv/dist/compile/codegen/scope.d.ts:76
 
 ___
 
@@ -263,7 +263,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/scope.d.ts:75
+packages/client-ts/node_modules/ajv/dist/compile/codegen/scope.d.ts:75
 
 ___
 
@@ -287,7 +287,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/scope.d.ts:47
+packages/client-ts/node_modules/ajv/dist/compile/codegen/scope.d.ts:47
 
 ___
 
@@ -308,4 +308,4 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/scope.d.ts:73
+packages/client-ts/node_modules/ajv/dist/compile/codegen/scope.d.ts:73

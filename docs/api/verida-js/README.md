@@ -2,7 +2,7 @@ root / [Modules](modules.md)
 
 # Verida Javascript Library
 
-This monorepo contains [Verida Client Library](https://github.com/verida/verida-js/tree/main/packages/client-ts) and a variety of utility packages that support that library.
+This monorepo contains [Verida Client Library](https://github.com/verida/verida-js/tree/main/packages/verida-ts) and a variety of utility packages that support that library.
 
 There is a React Native repository that maintains a slightly modified version of the `Verida Client Library` that is used to generate the [@verida/client-rn](https://github.com/verida/client-rn) package.
 
@@ -11,7 +11,7 @@ There is a React Native repository that maintains a slightly modified version of
 These are the main packages you are likely to use:
 
 - [client-ts](https://github.com/verida/verida-js/tree/main/packages/client-ts): Verida client library. Install this library in your project to add support for the Verida protocol.
-- [account-web-vault](https://github.com/verida/verida-js/tree/main/packages/account-web-vault): Create a Verida network connection that uses a QR code and the Verida Wallet to sign authentication requests. Use this for your web application.
+- [account-web-vault](https://github.com/verida/verida-js/tree/main/packages/account-web-vault): Create a Verida network connection that uses a QR code and the Verida Vault to sign authentication requests. Use this for your web application.
 - [account-node](https://github.com/verida/verida-js/tree/main/packages/account-node): Create an instance of a Verida account using a private key or seed phrase. Automatically signs all authentication requests. Use this for NodeJS server side applications or React Native applications.
 
 These are helper packages that typically aren't used directly:
@@ -36,7 +36,7 @@ nvm use v14.17.1
 
 It's not possible to add dependencies between monorepo packages using yarn (ie: `yarn add @verida/encryption-utils`) if that package hasn't been published to `npm`.
 
-Unpublished dependencies betwen monorepo packages can be linked by:
+Unpublished dependencies between monorepo packages can be linked by:
 
 - Manually adding the expected dependency to `package.json` (ie: `@verida/encryption-utils`)
 - Run `npx lerna bootstrap` in the root directory of this project
@@ -64,5 +64,7 @@ Update all the CHANGELOG.md files in each package to include entries for all the
 
 ```
 $ npx lerna run build
-$ npx lerna publish
+$ npx lerna publish --dist-tag next
 ```
+
+Use tag `next` for an upcoming release or `latest` for the latest version.

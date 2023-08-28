@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[packages/account-web-vault/src/interfaces.ts:34](https://github.com/verida/verida-js/blob/c03b336/packages/account-web-vault/src/interfaces.ts#L34)
+packages/types/dist/AccountInterfaces.d.ts:88
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[packages/account-web-vault/src/interfaces.ts:33](https://github.com/verida/verida-js/blob/c03b336/packages/account-web-vault/src/interfaces.ts#L33)
+packages/types/dist/AccountInterfaces.d.ts:87
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 #### Defined in
 
-[packages/account-web-vault/src/interfaces.ts:32](https://github.com/verida/verida-js/blob/c03b336/packages/account-web-vault/src/interfaces.ts#L32)
+packages/types/dist/AccountInterfaces.d.ts:86

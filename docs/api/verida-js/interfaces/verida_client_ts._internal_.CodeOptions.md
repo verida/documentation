@@ -32,7 +32,7 @@
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:73
+packages/client-ts/node_modules/ajv/dist/core.d.ts:73
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:76
+packages/client-ts/node_modules/ajv/dist/core.d.ts:76
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:74
+packages/client-ts/node_modules/ajv/dist/core.d.ts:74
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:75
+packages/client-ts/node_modules/ajv/dist/core.d.ts:75
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:77
+packages/client-ts/node_modules/ajv/dist/core.d.ts:77
 
 ## Methods
 
@@ -93,4 +93,4 @@ node_modules/ajv/dist/core.d.ts:77
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:78
+packages/client-ts/node_modules/ajv/dist/core.d.ts:78

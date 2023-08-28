@@ -20,7 +20,7 @@
 
 #### Defined in
 
-packages/storage-link/dist/interfaces.d.ts:21
+packages/types/dist/StorageLinkInterfaces.d.ts:17
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-packages/storage-link/dist/interfaces.d.ts:22
+packages/types/dist/StorageLinkInterfaces.d.ts:18
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 #### Defined in
 
-packages/storage-link/dist/interfaces.d.ts:23
+packages/types/dist/StorageLinkInterfaces.d.ts:19

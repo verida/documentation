@@ -8,6 +8,10 @@ Class that takes a signature (generated from a signed consent message) and gener
 collection of asymmetric keys, symmetric key and signing key for a given secure storage
 context.
 
+## Implements
+
+- [`IKeyring`](../interfaces/verida_keyring._internal_.IKeyring.md)
+
 ## Table of contents
 
 ### Constructors
@@ -46,7 +50,6 @@ context.
 • **new Keyring**(`seed`)
 
 A string used as a seed for this keyring.
-The seed should be a hex signature obtained by 3ID signed consent message.
 
 #### Parameters
 
@@ -56,7 +59,7 @@ The seed should be a hex signature obtained by 3ID signed consent message.
 
 #### Defined in
 
-[packages/keyring/src/keyring.ts:27](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L27)
+[packages/keyring/src/keyring.ts:25](https://github.com/verida/verida-js/blob/a690f60/packages/keyring/src/keyring.ts#L25)
 
 ## Properties
 
@@ -66,7 +69,7 @@ The seed should be a hex signature obtained by 3ID signed consent message.
 
 #### Defined in
 
-[packages/keyring/src/keyring.ts:14](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L14)
+[packages/keyring/src/keyring.ts:13](https://github.com/verida/verida-js/blob/a690f60/packages/keyring/src/keyring.ts#L13)
 
 ___
 
@@ -76,7 +79,7 @@ ___
 
 #### Defined in
 
-[packages/keyring/src/keyring.ts:18](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L18)
+[packages/keyring/src/keyring.ts:17](https://github.com/verida/verida-js/blob/a690f60/packages/keyring/src/keyring.ts#L17)
 
 ___
 
@@ -86,7 +89,7 @@ ___
 
 #### Defined in
 
-[packages/keyring/src/keyring.ts:15](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L15)
+[packages/keyring/src/keyring.ts:14](https://github.com/verida/verida-js/blob/a690f60/packages/keyring/src/keyring.ts#L14)
 
 ___
 
@@ -96,7 +99,7 @@ ___
 
 #### Defined in
 
-[packages/keyring/src/keyring.ts:19](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L19)
+[packages/keyring/src/keyring.ts:18](https://github.com/verida/verida-js/blob/a690f60/packages/keyring/src/keyring.ts#L18)
 
 ___
 
@@ -106,7 +109,7 @@ ___
 
 #### Defined in
 
-[packages/keyring/src/keyring.ts:16](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L16)
+[packages/keyring/src/keyring.ts:15](https://github.com/verida/verida-js/blob/a690f60/packages/keyring/src/keyring.ts#L15)
 
 ## Methods
 
@@ -118,9 +121,13 @@ ___
 
 `Promise`<`void`\>
 
+#### Implementation of
+
+[IKeyring](../interfaces/verida_keyring._internal_.IKeyring.md).[_init](../interfaces/verida_keyring._internal_.IKeyring.md#_init)
+
 #### Defined in
 
-[packages/keyring/src/keyring.ts:50](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L50)
+[packages/keyring/src/keyring.ts:53](https://github.com/verida/verida-js/blob/a690f60/packages/keyring/src/keyring.ts#L53)
 
 ___
 
@@ -139,9 +146,13 @@ ___
 
 `Promise`<`any`\>
 
+#### Implementation of
+
+[IKeyring](../interfaces/verida_keyring._internal_.IKeyring.md).[asymDecrypt](../interfaces/verida_keyring._internal_.IKeyring.md#asymdecrypt)
+
 #### Defined in
 
-[packages/keyring/src/keyring.ts:135](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L135)
+[packages/keyring/src/keyring.ts:138](https://github.com/verida/verida-js/blob/a690f60/packages/keyring/src/keyring.ts#L138)
 
 ___
 
@@ -160,9 +171,13 @@ ___
 
 `Promise`<`string`\>
 
+#### Implementation of
+
+[IKeyring](../interfaces/verida_keyring._internal_.IKeyring.md).[asymEncrypt](../interfaces/verida_keyring._internal_.IKeyring.md#asymencrypt)
+
 #### Defined in
 
-[packages/keyring/src/keyring.ts:130](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L130)
+[packages/keyring/src/keyring.ts:133](https://github.com/verida/verida-js/blob/a690f60/packages/keyring/src/keyring.ts#L133)
 
 ___
 
@@ -185,7 +200,7 @@ Helper function that generates a key of the appropriate type
 
 #### Defined in
 
-[packages/keyring/src/keyring.ts:69](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L69)
+[packages/keyring/src/keyring.ts:72](https://github.com/verida/verida-js/blob/a690f60/packages/keyring/src/keyring.ts#L72)
 
 ___
 
@@ -203,9 +218,13 @@ ___
 
 `Promise`<`Uint8Array`\>
 
+#### Implementation of
+
+[IKeyring](../interfaces/verida_keyring._internal_.IKeyring.md).[buildSharedKeyEnd](../interfaces/verida_keyring._internal_.IKeyring.md#buildsharedkeyend)
+
 #### Defined in
 
-[packages/keyring/src/keyring.ts:145](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L145)
+[packages/keyring/src/keyring.ts:148](https://github.com/verida/verida-js/blob/a690f60/packages/keyring/src/keyring.ts#L148)
 
 ___
 
@@ -223,9 +242,13 @@ ___
 
 `Promise`<`Uint8Array`\>
 
+#### Implementation of
+
+[IKeyring](../interfaces/verida_keyring._internal_.IKeyring.md).[buildSharedKeyStart](../interfaces/verida_keyring._internal_.IKeyring.md#buildsharedkeystart)
+
 #### Defined in
 
-[packages/keyring/src/keyring.ts:140](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L140)
+[packages/keyring/src/keyring.ts:143](https://github.com/verida/verida-js/blob/a690f60/packages/keyring/src/keyring.ts#L143)
 
 ___
 
@@ -237,9 +260,13 @@ ___
 
 `Promise`<`any`\>
 
+#### Implementation of
+
+[IKeyring](../interfaces/verida_keyring._internal_.IKeyring.md).[getKeys](../interfaces/verida_keyring._internal_.IKeyring.md#getkeys)
+
 #### Defined in
 
-[packages/keyring/src/keyring.ts:31](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L31)
+[packages/keyring/src/keyring.ts:29](https://github.com/verida/verida-js/blob/a690f60/packages/keyring/src/keyring.ts#L29)
 
 ___
 
@@ -251,9 +278,13 @@ ___
 
 `string`
 
+#### Implementation of
+
+[IKeyring](../interfaces/verida_keyring._internal_.IKeyring.md).[getSeed](../interfaces/verida_keyring._internal_.IKeyring.md#getseed)
+
 #### Defined in
 
-[packages/keyring/src/keyring.ts:150](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L150)
+[packages/keyring/src/keyring.ts:153](https://github.com/verida/verida-js/blob/a690f60/packages/keyring/src/keyring.ts#L153)
 
 ___
 
@@ -271,25 +302,33 @@ ___
 
 `Promise`<`any`\>
 
+#### Implementation of
+
+[IKeyring](../interfaces/verida_keyring._internal_.IKeyring.md).[getStorageContextKey](../interfaces/verida_keyring._internal_.IKeyring.md#getstoragecontextkey)
+
 #### Defined in
 
-[packages/keyring/src/keyring.ts:154](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L154)
+[packages/keyring/src/keyring.ts:157](https://github.com/verida/verida-js/blob/a690f60/packages/keyring/src/keyring.ts#L157)
 
 ___
 
 ### publicKeys
 
-▸ **publicKeys**(): `Promise`<{ `asymPublicKey`: `Uint8Array` ; `asymPublicKeyBase58`: `string` ; `asymPublicKeyHex`: `string` ; `signPublicKey`: `Uint8Array` ; `signPublicKeyBase58`: `string` ; `signPublicKeyHex`: `string`  }\>
+▸ **publicKeys**(): `Promise`<[`KeyringPublicKeys`](../interfaces/verida_keyring._internal_.KeyringPublicKeys.md)\>
 
 Generate an object containing all the public keys for this Keyring
 
 #### Returns
 
-`Promise`<{ `asymPublicKey`: `Uint8Array` ; `asymPublicKeyBase58`: `string` ; `asymPublicKeyHex`: `string` ; `signPublicKey`: `Uint8Array` ; `signPublicKeyBase58`: `string` ; `signPublicKeyHex`: `string`  }\>
+`Promise`<[`KeyringPublicKeys`](../interfaces/verida_keyring._internal_.KeyringPublicKeys.md)\>
+
+#### Implementation of
+
+[IKeyring](../interfaces/verida_keyring._internal_.IKeyring.md).[publicKeys](../interfaces/verida_keyring._internal_.IKeyring.md#publickeys)
 
 #### Defined in
 
-[packages/keyring/src/keyring.ts:97](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L97)
+[packages/keyring/src/keyring.ts:100](https://github.com/verida/verida-js/blob/a690f60/packages/keyring/src/keyring.ts#L100)
 
 ___
 
@@ -307,9 +346,13 @@ ___
 
 `Promise`<`string`\>
 
+#### Implementation of
+
+[IKeyring](../interfaces/verida_keyring._internal_.IKeyring.md).[sign](../interfaces/verida_keyring._internal_.IKeyring.md#sign)
+
 #### Defined in
 
-[packages/keyring/src/keyring.ts:110](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L110)
+[packages/keyring/src/keyring.ts:113](https://github.com/verida/verida-js/blob/a690f60/packages/keyring/src/keyring.ts#L113)
 
 ___
 
@@ -327,9 +370,13 @@ ___
 
 `Promise`<`any`\>
 
+#### Implementation of
+
+[IKeyring](../interfaces/verida_keyring._internal_.IKeyring.md).[symDecrypt](../interfaces/verida_keyring._internal_.IKeyring.md#symdecrypt)
+
 #### Defined in
 
-[packages/keyring/src/keyring.ts:125](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L125)
+[packages/keyring/src/keyring.ts:128](https://github.com/verida/verida-js/blob/a690f60/packages/keyring/src/keyring.ts#L128)
 
 ___
 
@@ -347,9 +394,13 @@ ___
 
 `Promise`<`string`\>
 
+#### Implementation of
+
+[IKeyring](../interfaces/verida_keyring._internal_.IKeyring.md).[symEncrypt](../interfaces/verida_keyring._internal_.IKeyring.md#symencrypt)
+
 #### Defined in
 
-[packages/keyring/src/keyring.ts:120](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L120)
+[packages/keyring/src/keyring.ts:123](https://github.com/verida/verida-js/blob/a690f60/packages/keyring/src/keyring.ts#L123)
 
 ___
 
@@ -368,6 +419,10 @@ ___
 
 `Promise`<`boolean`\>
 
+#### Implementation of
+
+[IKeyring](../interfaces/verida_keyring._internal_.IKeyring.md).[verifySig](../interfaces/verida_keyring._internal_.IKeyring.md#verifysig)
+
 #### Defined in
 
-[packages/keyring/src/keyring.ts:115](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/keyring.ts#L115)
+[packages/keyring/src/keyring.ts:118](https://github.com/verida/verida-js/blob/a690f60/packages/keyring/src/keyring.ts#L118)

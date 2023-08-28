@@ -13,6 +13,7 @@
 ### Methods
 
 - [connect](verida_client_ts.Network.md#connect)
+- [getRecord](verida_client_ts.Network.md#getrecord)
 
 ## Constructors
 
@@ -45,4 +46,25 @@ If the user logs in a valid `Context` object is returned. If an unexpected error
 
 #### Defined in
 
-[packages/client-ts/src/network.ts:19](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/network.ts#L19)
+[packages/client-ts/src/network.ts:20](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/network.ts#L20)
+
+___
+
+### getRecord
+
+▸ `Static` **getRecord**(`veridaUri`, `encoded?`): `Promise`<`any`\>
+
+#### Parameters
+
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `veridaUri` | `string` | `undefined` |
+| `encoded` | `boolean` | `false` |
+
+#### Returns
+
+`Promise`<`any`\>
+
+#### Defined in
+
+[packages/client-ts/src/network.ts:38](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/network.ts#L38)

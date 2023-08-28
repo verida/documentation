@@ -42,7 +42,7 @@
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/code.d.ts:3
+packages/client-ts/node_modules/ajv/dist/compile/codegen/code.d.ts:3
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/code.d.ts:2
+packages/client-ts/node_modules/ajv/dist/compile/codegen/code.d.ts:2
 
 ## Methods
 
@@ -66,7 +66,7 @@ node_modules/ajv/dist/compile/codegen/code.d.ts:2
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/code.d.ts:5
+packages/client-ts/node_modules/ajv/dist/compile/codegen/code.d.ts:5
 
 ___
 
@@ -80,4 +80,4 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/code.d.ts:4
+packages/client-ts/node_modules/ajv/dist/compile/codegen/code.d.ts:4

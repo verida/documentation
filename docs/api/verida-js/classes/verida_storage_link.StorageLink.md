@@ -20,7 +20,7 @@ Class representing the link between a DID and Storage context
 - [getLinks](verida_storage_link.StorageLink.md#getlinks)
 - [setContextService](verida_storage_link.StorageLink.md#setcontextservice)
 - [setLink](verida_storage_link.StorageLink.md#setlink)
-- [standardizeUrl](verida_storage_link.StorageLink.md#standardizeurl)
+- [standardizeUrls](verida_storage_link.StorageLink.md#standardizeurls)
 - [unlink](verida_storage_link.StorageLink.md#unlink)
 
 ## Constructors
@@ -33,7 +33,7 @@ Class representing the link between a DID and Storage context
 
 ### \_findHash
 
-▸ `Static` **_findHash**(`contexts`, `hash`): `undefined` \| [`SecureContextConfig`](../interfaces/verida_storage_link.Interfaces.SecureContextConfig.md)
+▸ `Static` **_findHash**(`contexts`, `hash`): `undefined` \| [`SecureContextConfig`](../interfaces/verida_storage_link._internal_.SecureContextConfig.md)
 
 #### Parameters
 
@@ -44,162 +44,164 @@ Class representing the link between a DID and Storage context
 
 #### Returns
 
-`undefined` \| [`SecureContextConfig`](../interfaces/verida_storage_link.Interfaces.SecureContextConfig.md)
+`undefined` \| [`SecureContextConfig`](../interfaces/verida_storage_link._internal_.SecureContextConfig.md)
 
 #### Defined in
 
-[packages/storage-link/src/storage-link.ts:130](https://github.com/verida/verida-js/blob/c03b336/packages/storage-link/src/storage-link.ts#L130)
+[packages/storage-link/src/storage-link.ts:135](https://github.com/verida/verida-js/blob/a690f60/packages/storage-link/src/storage-link.ts#L135)
 
 ___
 
 ### buildSecureContexts
 
-▸ `Static` **buildSecureContexts**(`didDocument`): [`SecureContextConfig`](../interfaces/verida_storage_link.Interfaces.SecureContextConfig.md)[]
+▸ `Static` **buildSecureContexts**(`didDocument`): [`SecureContextConfig`](../interfaces/verida_storage_link._internal_.SecureContextConfig.md)[]
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `didDocument` | [`default`](verida_storage_link._internal_.default-1.md) |
+| `didDocument` | [`default`](verida_storage_link._internal_.default.md) |
 
 #### Returns
 
-[`SecureContextConfig`](../interfaces/verida_storage_link.Interfaces.SecureContextConfig.md)[]
+[`SecureContextConfig`](../interfaces/verida_storage_link._internal_.SecureContextConfig.md)[]
 
 #### Defined in
 
-[packages/storage-link/src/storage-link.ts:138](https://github.com/verida/verida-js/blob/c03b336/packages/storage-link/src/storage-link.ts#L138)
+[packages/storage-link/src/storage-link.ts:143](https://github.com/verida/verida-js/blob/a690f60/packages/storage-link/src/storage-link.ts#L143)
 
 ___
 
 ### getLink
 
-▸ `Static` **getLink**(`didClient`, `did`, `context`, `contextIsName?`): `Promise`<`undefined` \| [`SecureContextConfig`](../interfaces/verida_storage_link.Interfaces.SecureContextConfig.md)\>
+▸ `Static` **getLink**(`didClient`, `did`, `context`, `contextIsName?`): `Promise`<`undefined` \| [`SecureContextConfig`](../interfaces/verida_storage_link._internal_.SecureContextConfig.md)\>
 
 #### Parameters
 
 | Name | Type | Default value |
 | :------ | :------ | :------ |
-| `didClient` | [`default`](verida_storage_link._internal_.default.md) | `undefined` |
+| `didClient` | [`DIDClient`](verida_storage_link._internal_.DIDClient.md) | `undefined` |
 | `did` | `string` | `undefined` |
 | `context` | `string` | `undefined` |
 | `contextIsName` | `boolean` | `true` |
 
 #### Returns
 
-`Promise`<`undefined` \| [`SecureContextConfig`](../interfaces/verida_storage_link.Interfaces.SecureContextConfig.md)\>
+`Promise`<`undefined` \| [`SecureContextConfig`](../interfaces/verida_storage_link._internal_.SecureContextConfig.md)\>
 
 SecureStorageContextConfig | undefined (if not found)
 
 #### Defined in
 
-[packages/storage-link/src/storage-link.ts:32](https://github.com/verida/verida-js/blob/c03b336/packages/storage-link/src/storage-link.ts#L32)
+[packages/storage-link/src/storage-link.ts:34](https://github.com/verida/verida-js/blob/a690f60/packages/storage-link/src/storage-link.ts#L34)
 
 ___
 
 ### getLinks
 
-▸ `Static` **getLinks**(`didClient`, `did`): `Promise`<[`SecureContextConfig`](../interfaces/verida_storage_link.Interfaces.SecureContextConfig.md)[]\>
+▸ `Static` **getLinks**(`didClient`, `did`): `Promise`<[`SecureContextConfig`](../interfaces/verida_storage_link._internal_.SecureContextConfig.md)[]\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `didClient` | [`default`](verida_storage_link._internal_.default.md) |
+| `didClient` | [`DIDClient`](verida_storage_link._internal_.DIDClient.md) |
 | `did` | `string` |
 
 #### Returns
 
-`Promise`<[`SecureContextConfig`](../interfaces/verida_storage_link.Interfaces.SecureContextConfig.md)[]\>
+`Promise`<[`SecureContextConfig`](../interfaces/verida_storage_link._internal_.SecureContextConfig.md)[]\>
 
 #### Defined in
 
-[packages/storage-link/src/storage-link.ts:12](https://github.com/verida/verida-js/blob/c03b336/packages/storage-link/src/storage-link.ts#L12)
+[packages/storage-link/src/storage-link.ts:13](https://github.com/verida/verida-js/blob/a690f60/packages/storage-link/src/storage-link.ts#L13)
 
 ___
 
 ### setContextService
 
-▸ `Static` **setContextService**(`didClient`, `contextName`, `endpointType`, `serverType`, `endpointUri`): `Promise`<`boolean`\>
+▸ `Static` **setContextService**(`didClient`, `contextName`, `endpointType`, `serverType`, `endpointUris`): `Promise`<[`VdaDidEndpointResponses`](../modules/verida_storage_link._internal_.md#vdadidendpointresponses)\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `didClient` | [`default`](verida_storage_link._internal_.default.md) |
+| `didClient` | [`DIDClient`](verida_storage_link._internal_.DIDClient.md) |
 | `contextName` | `string` |
-| `endpointType` | [`EndpointType`](../enums/verida_storage_link._internal_.EndpointType.md) |
+| `endpointType` | [`SecureContextEndpointType`](../enums/verida_storage_link._internal_.SecureContextEndpointType.md) |
 | `serverType` | `string` |
-| `endpointUri` | `string` |
+| `endpointUris` | `string`[] |
 
 #### Returns
 
-`Promise`<`boolean`\>
+`Promise`<[`VdaDidEndpointResponses`](../modules/verida_storage_link._internal_.md#vdadidendpointresponses)\>
 
 #### Defined in
 
-[packages/storage-link/src/storage-link.ts:90](https://github.com/verida/verida-js/blob/c03b336/packages/storage-link/src/storage-link.ts#L90)
+[packages/storage-link/src/storage-link.ts:89](https://github.com/verida/verida-js/blob/a690f60/packages/storage-link/src/storage-link.ts#L89)
 
 ___
 
 ### setLink
 
-▸ `Static` **setLink**(`didClient`, `storageConfig`): `Promise`<`boolean`\>
+▸ `Static` **setLink**(`didClient`, `storageConfig`, `keyring`, `privateKey`): `Promise`<[`VdaDidEndpointResponses`](../modules/verida_storage_link._internal_.md#vdadidendpointresponses)\>
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `didClient` | [`default`](verida_storage_link._internal_.default.md) |  |
-| `storageConfig` | [`SecureContextConfig`](../interfaces/verida_storage_link.Interfaces.SecureContextConfig.md) | (Must have .id as the contextName) |
+| `didClient` | [`DIDClient`](verida_storage_link._internal_.DIDClient.md) |  |
+| `storageConfig` | [`SecureContextConfig`](../interfaces/verida_storage_link._internal_.SecureContextConfig.md) | (Must have .id as the contextName) |
+| `keyring` | [`IKeyring`](../interfaces/verida_storage_link._internal_.IKeyring.md) | - |
+| `privateKey` | `string` | - |
 
 #### Returns
 
-`Promise`<`boolean`\>
+`Promise`<[`VdaDidEndpointResponses`](../modules/verida_storage_link._internal_.md#vdadidendpointresponses)\>
 
 #### Defined in
 
-[packages/storage-link/src/storage-link.ts:49](https://github.com/verida/verida-js/blob/c03b336/packages/storage-link/src/storage-link.ts#L49)
+[packages/storage-link/src/storage-link.ts:51](https://github.com/verida/verida-js/blob/a690f60/packages/storage-link/src/storage-link.ts#L51)
 
 ___
 
-### standardizeUrl
+### standardizeUrls
 
-▸ `Static` **standardizeUrl**(`url`): `string`
+▸ `Static` **standardizeUrls**(`endpoints`): [`ServiceEndpoint`](../modules/verida_storage_link._internal_.md#serviceendpoint)[]
 
-Ensure the URL has a trailing slash
+Ensure the URL has a trailing slash and appropriate port set
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `url` | `string` |
+| `endpoints` | [`ServiceEndpoint`](../modules/verida_storage_link._internal_.md#serviceendpoint)[] |
 
 #### Returns
 
-`string`
+[`ServiceEndpoint`](../modules/verida_storage_link._internal_.md#serviceendpoint)[]
 
 #### Defined in
 
-[packages/storage-link/src/storage-link.ts:231](https://github.com/verida/verida-js/blob/c03b336/packages/storage-link/src/storage-link.ts#L231)
+[packages/storage-link/src/storage-link.ts:235](https://github.com/verida/verida-js/blob/a690f60/packages/storage-link/src/storage-link.ts#L235)
 
 ___
 
 ### unlink
 
-▸ `Static` **unlink**(`didClient`, `contextName`): `Promise`<`boolean`\>
+▸ `Static` **unlink**(`didClient`, `contextName`): `Promise`<`boolean` \| [`VdaDidEndpointResponses`](../modules/verida_storage_link._internal_.md#vdadidendpointresponses)\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `didClient` | [`default`](verida_storage_link._internal_.default.md) |
+| `didClient` | [`DIDClient`](verida_storage_link._internal_.DIDClient.md) |
 | `contextName` | `string` |
 
 #### Returns
 
-`Promise`<`boolean`\>
+`Promise`<`boolean` \| [`VdaDidEndpointResponses`](../modules/verida_storage_link._internal_.md#vdadidendpointresponses)\>
 
 #### Defined in
 
-[packages/storage-link/src/storage-link.ts:111](https://github.com/verida/verida-js/blob/c03b336/packages/storage-link/src/storage-link.ts#L111)
+[packages/storage-link/src/storage-link.ts:113](https://github.com/verida/verida-js/blob/a690f60/packages/storage-link/src/storage-link.ts#L113)

@@ -22,6 +22,7 @@ Utilizes `keccak256` algorithm to hash signed data and `secp256k1` signature alg
 - [bytesToHex](verida_encryption_utils.default.md#bytestohex)
 - [decodeBase64](verida_encryption_utils.default.md#decodebase64)
 - [encodeBase64](verida_encryption_utils.default.md#encodebase64)
+- [getSigner](verida_encryption_utils.default.md#getsigner)
 - [hash](verida_encryption_utils.default.md#hash)
 - [hashBytes](verida_encryption_utils.default.md#hashbytes)
 - [hexToBase58](verida_encryption_utils.default.md#hextobase58)
@@ -62,7 +63,7 @@ Utilizes `keccak256` algorithm to hash signed data and `secp256k1` signature alg
 
 #### Defined in
 
-[packages/encryption-utils/src/index.ts:79](https://github.com/verida/verida-js/blob/c03b336/packages/encryption-utils/src/index.ts#L79)
+[packages/encryption-utils/src/index.ts:80](https://github.com/verida/verida-js/blob/a690f60/packages/encryption-utils/src/index.ts#L80)
 
 ___
 
@@ -83,7 +84,7 @@ ___
 
 #### Defined in
 
-[packages/encryption-utils/src/index.ts:66](https://github.com/verida/verida-js/blob/c03b336/packages/encryption-utils/src/index.ts#L66)
+[packages/encryption-utils/src/index.ts:67](https://github.com/verida/verida-js/blob/a690f60/packages/encryption-utils/src/index.ts#L67)
 
 ___
 
@@ -103,7 +104,7 @@ ___
 
 #### Defined in
 
-[packages/encryption-utils/src/index.ts:152](https://github.com/verida/verida-js/blob/c03b336/packages/encryption-utils/src/index.ts#L152)
+[packages/encryption-utils/src/index.ts:182](https://github.com/verida/verida-js/blob/a690f60/packages/encryption-utils/src/index.ts#L182)
 
 ___
 
@@ -123,7 +124,7 @@ ___
 
 #### Defined in
 
-[packages/encryption-utils/src/index.ts:164](https://github.com/verida/verida-js/blob/c03b336/packages/encryption-utils/src/index.ts#L164)
+[packages/encryption-utils/src/index.ts:194](https://github.com/verida/verida-js/blob/a690f60/packages/encryption-utils/src/index.ts#L194)
 
 ___
 
@@ -143,7 +144,7 @@ ___
 
 #### Defined in
 
-[packages/encryption-utils/src/index.ts:131](https://github.com/verida/verida-js/blob/c03b336/packages/encryption-utils/src/index.ts#L131)
+[packages/encryption-utils/src/index.ts:157](https://github.com/verida/verida-js/blob/a690f60/packages/encryption-utils/src/index.ts#L157)
 
 ___
 
@@ -163,7 +164,28 @@ ___
 
 #### Defined in
 
-[packages/encryption-utils/src/index.ts:135](https://github.com/verida/verida-js/blob/c03b336/packages/encryption-utils/src/index.ts#L135)
+[packages/encryption-utils/src/index.ts:161](https://github.com/verida/verida-js/blob/a690f60/packages/encryption-utils/src/index.ts#L161)
+
+___
+
+### getSigner
+
+▸ `Static` **getSigner**(`data`, `signature`): `string`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `data` | `any` |
+| `signature` | `string` |
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+[packages/encryption-utils/src/index.ts:142](https://github.com/verida/verida-js/blob/a690f60/packages/encryption-utils/src/index.ts#L142)
 
 ___
 
@@ -183,7 +205,7 @@ ___
 
 #### Defined in
 
-[packages/encryption-utils/src/index.ts:139](https://github.com/verida/verida-js/blob/c03b336/packages/encryption-utils/src/index.ts#L139)
+[packages/encryption-utils/src/index.ts:165](https://github.com/verida/verida-js/blob/a690f60/packages/encryption-utils/src/index.ts#L165)
 
 ___
 
@@ -203,7 +225,7 @@ ___
 
 #### Defined in
 
-[packages/encryption-utils/src/index.ts:147](https://github.com/verida/verida-js/blob/c03b336/packages/encryption-utils/src/index.ts#L147)
+[packages/encryption-utils/src/index.ts:177](https://github.com/verida/verida-js/blob/a690f60/packages/encryption-utils/src/index.ts#L177)
 
 ___
 
@@ -223,7 +245,7 @@ ___
 
 #### Defined in
 
-[packages/encryption-utils/src/index.ts:156](https://github.com/verida/verida-js/blob/c03b336/packages/encryption-utils/src/index.ts#L156)
+[packages/encryption-utils/src/index.ts:186](https://github.com/verida/verida-js/blob/a690f60/packages/encryption-utils/src/index.ts#L186)
 
 ___
 
@@ -243,7 +265,7 @@ ___
 
 #### Defined in
 
-[packages/encryption-utils/src/index.ts:160](https://github.com/verida/verida-js/blob/c03b336/packages/encryption-utils/src/index.ts#L160)
+[packages/encryption-utils/src/index.ts:190](https://github.com/verida/verida-js/blob/a690f60/packages/encryption-utils/src/index.ts#L190)
 
 ___
 
@@ -263,7 +285,7 @@ ___
 
 #### Defined in
 
-[packages/encryption-utils/src/index.ts:168](https://github.com/verida/verida-js/blob/c03b336/packages/encryption-utils/src/index.ts#L168)
+[packages/encryption-utils/src/index.ts:198](https://github.com/verida/verida-js/blob/a690f60/packages/encryption-utils/src/index.ts#L198)
 
 ___
 
@@ -283,7 +305,7 @@ ___
 
 #### Defined in
 
-[packages/encryption-utils/src/index.ts:101](https://github.com/verida/verida-js/blob/c03b336/packages/encryption-utils/src/index.ts#L101)
+[packages/encryption-utils/src/index.ts:102](https://github.com/verida/verida-js/blob/a690f60/packages/encryption-utils/src/index.ts#L102)
 
 ___
 
@@ -297,7 +319,7 @@ ___
 
 #### Defined in
 
-[packages/encryption-utils/src/index.ts:105](https://github.com/verida/verida-js/blob/c03b336/packages/encryption-utils/src/index.ts#L105)
+[packages/encryption-utils/src/index.ts:106](https://github.com/verida/verida-js/blob/a690f60/packages/encryption-utils/src/index.ts#L106)
 
 ___
 
@@ -318,7 +340,7 @@ ___
 
 #### Defined in
 
-[packages/encryption-utils/src/index.ts:97](https://github.com/verida/verida-js/blob/c03b336/packages/encryption-utils/src/index.ts#L97)
+[packages/encryption-utils/src/index.ts:98](https://github.com/verida/verida-js/blob/a690f60/packages/encryption-utils/src/index.ts#L98)
 
 ___
 
@@ -339,7 +361,7 @@ ___
 
 #### Defined in
 
-[packages/encryption-utils/src/index.ts:109](https://github.com/verida/verida-js/blob/c03b336/packages/encryption-utils/src/index.ts#L109)
+[packages/encryption-utils/src/index.ts:110](https://github.com/verida/verida-js/blob/a690f60/packages/encryption-utils/src/index.ts#L110)
 
 ___
 
@@ -360,7 +382,7 @@ ___
 
 #### Defined in
 
-[packages/encryption-utils/src/index.ts:60](https://github.com/verida/verida-js/blob/c03b336/packages/encryption-utils/src/index.ts#L60)
+[packages/encryption-utils/src/index.ts:61](https://github.com/verida/verida-js/blob/a690f60/packages/encryption-utils/src/index.ts#L61)
 
 ___
 
@@ -381,7 +403,7 @@ ___
 
 #### Defined in
 
-[packages/encryption-utils/src/index.ts:35](https://github.com/verida/verida-js/blob/c03b336/packages/encryption-utils/src/index.ts#L35)
+[packages/encryption-utils/src/index.ts:36](https://github.com/verida/verida-js/blob/a690f60/packages/encryption-utils/src/index.ts#L36)
 
 ___
 
@@ -402,7 +424,7 @@ ___
 
 #### Defined in
 
-[packages/encryption-utils/src/index.ts:51](https://github.com/verida/verida-js/blob/c03b336/packages/encryption-utils/src/index.ts#L51)
+[packages/encryption-utils/src/index.ts:52](https://github.com/verida/verida-js/blob/a690f60/packages/encryption-utils/src/index.ts#L52)
 
 ___
 
@@ -423,21 +445,21 @@ ___
 
 #### Defined in
 
-[packages/encryption-utils/src/index.ts:22](https://github.com/verida/verida-js/blob/c03b336/packages/encryption-utils/src/index.ts#L22)
+[packages/encryption-utils/src/index.ts:23](https://github.com/verida/verida-js/blob/a690f60/packages/encryption-utils/src/index.ts#L23)
 
 ___
 
 ### verifySig
 
-▸ `Static` **verifySig**(`data`, `signature`, `publicKey`): `boolean`
+▸ `Static` **verifySig**(`data`, `signature`, `publicKeyOrAddress`): `boolean`
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `data` | `any` |  |
-| `signature` | `string` |  |
-| `publicKey` | `string` | Hex encoded public key |
+| Name | Type |
+| :------ | :------ |
+| `data` | `any` |
+| `signature` | `string` |
+| `publicKeyOrAddress` | `string` |
 
 #### Returns
 
@@ -445,4 +467,4 @@ ___
 
 #### Defined in
 
-[packages/encryption-utils/src/index.ts:123](https://github.com/verida/verida-js/blob/c03b336/packages/encryption-utils/src/index.ts#L123)
+[packages/encryption-utils/src/index.ts:132](https://github.com/verida/verida-js/blob/a690f60/packages/encryption-utils/src/index.ts#L132)

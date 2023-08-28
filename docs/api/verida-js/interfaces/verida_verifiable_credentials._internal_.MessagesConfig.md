@@ -20,4 +20,4 @@ Interface for any MessagesConfig
 
 #### Defined in
 
-packages/client-ts/dist/context/interfaces.d.ts:71
+packages/types/dist/ContextInterfaces.d.ts:89

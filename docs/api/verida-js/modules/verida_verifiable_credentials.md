@@ -12,3 +12,25 @@
 
 - [Credentials](../classes/verida_verifiable_credentials.Credentials.md)
 - [SharingCredential](../classes/verida_verifiable_credentials.SharingCredential.md)
+
+### Interfaces
+
+- [CreateCredentialJWT](../interfaces/verida_verifiable_credentials.CreateCredentialJWT.md)
+- [CreateCredentialOptions](../interfaces/verida_verifiable_credentials.CreateCredentialOptions.md)
+- [VCResult](../interfaces/verida_verifiable_credentials.VCResult.md)
+- [VeridaCredentialRecord](../interfaces/verida_verifiable_credentials.VeridaCredentialRecord.md)
+- [VeridaCredentialSchema](../interfaces/verida_verifiable_credentials.VeridaCredentialSchema.md)
+
+### Variables
+
+- [VERIDA\_CREDENTIAL\_SCHEMA](verida_verifiable_credentials.md#verida_credential_schema)
+
+## Variables
+
+### VERIDA\_CREDENTIAL\_SCHEMA
+
+• `Const` **VERIDA\_CREDENTIAL\_SCHEMA**: ``"https://common.schemas.verida.io/credential/base/v0.2.0/schema.json"``
+
+#### Defined in
+
+[packages/verifiable-credentials/src/interfaces.ts:3](https://github.com/verida/verida-js/blob/a690f60/packages/verifiable-credentials/src/interfaces.ts#L3)

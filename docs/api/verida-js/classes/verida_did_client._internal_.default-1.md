@@ -4,9 +4,9 @@
 
 [@verida/did-client](../modules/verida_did_client.md).[<internal\>](../modules/verida_did_client._internal_.md).default
 
-Class that takes a signature (generated from a signed consent message) and generates a
-collection of asymmetric keys, symmetric key and signing key for a given secure storage
-context.
+## Implements
+
+- [`IDIDDocument`](../interfaces/verida_did_client._internal_.IDIDDocument.md)
 
 ## Table of contents
 
@@ -16,231 +16,495 @@ context.
 
 ### Properties
 
-- [asymKeyPair](verida_did_client._internal_.default-1.md#asymkeypair)
-- [buildKey](verida_did_client._internal_.default-1.md#buildkey)
-- [seed](verida_did_client._internal_.default-1.md#seed)
-- [signKeyPair](verida_did_client._internal_.default-1.md#signkeypair)
-- [storageContextKeys](verida_did_client._internal_.default-1.md#storagecontextkeys)
-- [symKey](verida_did_client._internal_.default-1.md#symkey)
+- [doc](verida_did_client._internal_.default-1.md#doc)
+- [errors](verida_did_client._internal_.default-1.md#errors)
+- [getProofData](verida_did_client._internal_.default-1.md#getproofdata)
+
+### Accessors
+
+- [id](verida_did_client._internal_.default-1.md#id)
 
 ### Methods
 
-- [\_init](verida_did_client._internal_.default-1.md#_init)
-- [asymDecrypt](verida_did_client._internal_.default-1.md#asymdecrypt)
-- [asymEncrypt](verida_did_client._internal_.default-1.md#asymencrypt)
-- [buildSharedKeyEnd](verida_did_client._internal_.default-1.md#buildsharedkeyend)
-- [buildSharedKeyStart](verida_did_client._internal_.default-1.md#buildsharedkeystart)
-- [getKeys](verida_did_client._internal_.default-1.md#getkeys)
-- [getSeed](verida_did_client._internal_.default-1.md#getseed)
-- [getStorageContextKey](verida_did_client._internal_.default-1.md#getstoragecontextkey)
-- [publicKeys](verida_did_client._internal_.default-1.md#publickeys)
-- [sign](verida_did_client._internal_.default-1.md#sign)
-- [symDecrypt](verida_did_client._internal_.default-1.md#symdecrypt)
-- [symEncrypt](verida_did_client._internal_.default-1.md#symencrypt)
+- [addContext](verida_did_client._internal_.default-1.md#addcontext)
+- [addContextAsymKey](verida_did_client._internal_.default-1.md#addcontextasymkey)
+- [addContextService](verida_did_client._internal_.default-1.md#addcontextservice)
+- [addContextSignKey](verida_did_client._internal_.default-1.md#addcontextsignkey)
+- [buildTimestamp](verida_did_client._internal_.default-1.md#buildtimestamp)
+- [export](verida_did_client._internal_.default-1.md#export)
+- [getErrors](verida_did_client._internal_.default-1.md#geterrors)
+- [import](verida_did_client._internal_.default-1.md#import)
+- [locateContextProof](verida_did_client._internal_.default-1.md#locatecontextproof)
+- [locateServiceEndpoint](verida_did_client._internal_.default-1.md#locateserviceendpoint)
+- [removeContext](verida_did_client._internal_.default-1.md#removecontext)
+- [setAttributes](verida_did_client._internal_.default-1.md#setattributes)
+- [signProof](verida_did_client._internal_.default-1.md#signproof)
+- [verifyContextSignature](verida_did_client._internal_.default-1.md#verifycontextsignature)
+- [verifyProof](verida_did_client._internal_.default-1.md#verifyproof)
 - [verifySig](verida_did_client._internal_.default-1.md#verifysig)
+- [generateContextHash](verida_did_client._internal_.default-1.md#generatecontexthash)
 
 ## Constructors
 
 ### constructor
 
-• **new default**(`seed`)
+• **new default**(`doc`, `publicKeyHex?`)
 
-A string used as a seed for this keyring.
-The seed should be a hex signature obtained by 3ID signed consent message.
+Force lower case DID as we can't guarantee the DID will always be provided with checksum
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `seed` | `string` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `doc` | `string` \| [`VeridaDocInterface`](../interfaces/verida_did_client._internal_.VeridaDocInterface.md) | this value can be a DocInterface or DID. |
+| `publicKeyHex?` | `string` | - |
 
 #### Defined in
 
-packages/keyring/dist/keyring.d.ts:19
+packages/did-document/dist/did-document.d.ts:11
 
 ## Properties
 
-### asymKeyPair
+### doc
 
-• `Optional` **asymKeyPair**: `any`
+• `Private` **doc**: `any`
 
 #### Defined in
 
-packages/keyring/dist/keyring.d.ts:8
+packages/did-document/dist/did-document.d.ts:4
 
 ___
 
-### buildKey
+### errors
 
-• `Private` **buildKey**: `any`
-
-Helper function that generates a key of the appropriate type
-
-**`param`**
-
-**`param`**
-
-**`returns`**
+• `Protected` **errors**: `string`[]
 
 #### Defined in
 
-packages/keyring/dist/keyring.d.ts:29
+packages/did-document/dist/did-document.d.ts:5
 
 ___
 
-### seed
+### getProofData
 
-• `Private` **seed**: `any`
-
-#### Defined in
-
-packages/keyring/dist/keyring.d.ts:11
-
-___
-
-### signKeyPair
-
-• `Optional` **signKeyPair**: `any`
+• `Private` **getProofData**: `any`
 
 #### Defined in
 
-packages/keyring/dist/keyring.d.ts:9
+packages/did-document/dist/did-document.d.ts:37
 
-___
+## Accessors
 
-### storageContextKeys
+### id
 
-• `Private` **storageContextKeys**: `any`
+• `get` **id**(): `string`
 
-#### Defined in
+#### Returns
 
-packages/keyring/dist/keyring.d.ts:12
+`string`
 
-___
+#### Implementation of
 
-### symKey
-
-• `Optional` **symKey**: `Uint8Array`
+IDIDDocument.id
 
 #### Defined in
 
-packages/keyring/dist/keyring.d.ts:10
+packages/did-document/dist/did-document.d.ts:12
 
 ## Methods
 
-### \_init
+### addContext
 
-▸ **_init**(): `Promise`<`void`\>
+▸ **addContext**(`contextName`, `keyring`, `privateKey`, `endpoints`): `Promise`<`void`\>
+
+Not used directly, used for testing
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `contextName` | `string` | string |
+| `keyring` | [`IKeyring`](../interfaces/verida_did_client._internal_.IKeyring.md) | Keyring |
+| `privateKey` | `string` | Private key of the DID that controls this DID Document |
+| `endpoints` | [`SecureContextEndpoints`](../interfaces/verida_did_client._internal_.SecureContextEndpoints.md) | Endpoints |
 
 #### Returns
 
 `Promise`<`void`\>
 
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_did_client._internal_.IDIDDocument.md).[addContext](../interfaces/verida_did_client._internal_.IDIDDocument.md#addcontext)
+
 #### Defined in
 
-packages/keyring/dist/keyring.d.ts:21
+packages/did-document/dist/did-document.d.ts:22
 
 ___
 
-### asymDecrypt
+### addContextAsymKey
 
-▸ **asymDecrypt**(`messageWithNonce`, `secretOrSharedKey`): `Promise`<`any`\>
+▸ **addContextAsymKey**(`contextHash`, `publicKeyHex`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `messageWithNonce` | `string` |
-| `secretOrSharedKey` | `Uint8Array` |
+| `contextHash` | `string` |
+| `publicKeyHex` | `string` |
 
 #### Returns
 
-`Promise`<`any`\>
+`void`
+
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_did_client._internal_.IDIDDocument.md).[addContextAsymKey](../interfaces/verida_did_client._internal_.IDIDDocument.md#addcontextasymkey)
 
 #### Defined in
 
-packages/keyring/dist/keyring.d.ts:48
+packages/did-document/dist/did-document.d.ts:29
 
 ___
 
-### asymEncrypt
+### addContextService
 
-▸ **asymEncrypt**(`data`, `secretOrSharedKey`): `Promise`<`string`\>
+▸ **addContextService**(`contextHash`, `endpointType`, `serviceType`, `endpointUris`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `data` | `string` |
-| `secretOrSharedKey` | `Uint8Array` |
+| `contextHash` | `string` |
+| `endpointType` | [`SecureContextEndpointType`](../enums/verida_did_client._internal_.SecureContextEndpointType.md) |
+| `serviceType` | `string` |
+| `endpointUris` | [`ServiceEndpoint`](../modules/verida_did_client._internal_.md#serviceendpoint)[] |
 
 #### Returns
 
-`Promise`<`string`\>
+`void`
+
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_did_client._internal_.IDIDDocument.md).[addContextService](../interfaces/verida_did_client._internal_.IDIDDocument.md#addcontextservice)
 
 #### Defined in
 
-packages/keyring/dist/keyring.d.ts:47
+packages/did-document/dist/did-document.d.ts:27
 
 ___
 
-### buildSharedKeyEnd
+### addContextSignKey
 
-▸ **buildSharedKeyEnd**(`publicKey`): `Promise`<`Uint8Array`\>
+▸ **addContextSignKey**(`contextHash`, `publicKeyHex`, `proof`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `publicKey` | `Uint8Array` |
+| `contextHash` | `string` |
+| `publicKeyHex` | `string` |
+| `proof` | `string` |
 
 #### Returns
 
-`Promise`<`Uint8Array`\>
+`void`
+
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_did_client._internal_.IDIDDocument.md).[addContextSignKey](../interfaces/verida_did_client._internal_.IDIDDocument.md#addcontextsignkey)
 
 #### Defined in
 
-packages/keyring/dist/keyring.d.ts:50
+packages/did-document/dist/did-document.d.ts:28
 
 ___
 
-### buildSharedKeyStart
+### buildTimestamp
 
-▸ **buildSharedKeyStart**(`privateKey`): `Promise`<`Uint8Array`\>
+▸ **buildTimestamp**(`date`): `string`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `privateKey` | `Uint8Array` |
+| `date` | `Date` |
 
 #### Returns
 
-`Promise`<`Uint8Array`\>
+`string`
+
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_did_client._internal_.IDIDDocument.md).[buildTimestamp](../interfaces/verida_did_client._internal_.IDIDDocument.md#buildtimestamp)
 
 #### Defined in
 
-packages/keyring/dist/keyring.d.ts:49
+packages/did-document/dist/did-document.d.ts:38
 
 ___
 
-### getKeys
+### export
 
-▸ **getKeys**(): `Promise`<`any`\>
+▸ **export**(): [`VeridaDocInterface`](../interfaces/verida_did_client._internal_.VeridaDocInterface.md)
 
 #### Returns
 
-`Promise`<`any`\>
+[`VeridaDocInterface`](../interfaces/verida_did_client._internal_.VeridaDocInterface.md)
+
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_did_client._internal_.IDIDDocument.md).[export](../interfaces/verida_did_client._internal_.IDIDDocument.md#export)
 
 #### Defined in
 
-packages/keyring/dist/keyring.d.ts:20
+packages/did-document/dist/did-document.d.ts:26
 
 ___
 
-### getSeed
+### getErrors
 
-▸ **getSeed**(): `string`
+▸ **getErrors**(): `string`[]
+
+#### Returns
+
+`string`[]
+
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_did_client._internal_.IDIDDocument.md).[getErrors](../interfaces/verida_did_client._internal_.IDIDDocument.md#geterrors)
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:13
+
+___
+
+### import
+
+▸ **import**(`doc`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `doc` | [`VeridaDocInterface`](../interfaces/verida_did_client._internal_.VeridaDocInterface.md) |
+
+#### Returns
+
+`void`
+
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_did_client._internal_.IDIDDocument.md).[import](../interfaces/verida_did_client._internal_.IDIDDocument.md#import)
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:25
+
+___
+
+### locateContextProof
+
+▸ **locateContextProof**(`contextName`): `undefined` \| `string`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `contextName` | `string` |
+
+#### Returns
+
+`undefined` \| `string`
+
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_did_client._internal_.IDIDDocument.md).[locateContextProof](../interfaces/verida_did_client._internal_.IDIDDocument.md#locatecontextproof)
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:34
+
+___
+
+### locateServiceEndpoint
+
+▸ **locateServiceEndpoint**(`contextName`, `endpointType`): `undefined` \| [`Service`](../interfaces/verida_did_client._internal_.Service.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `contextName` | `string` |
+| `endpointType` | [`SecureContextEndpointType`](../enums/verida_did_client._internal_.SecureContextEndpointType.md) |
+
+#### Returns
+
+`undefined` \| [`Service`](../interfaces/verida_did_client._internal_.Service.md)
+
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_did_client._internal_.IDIDDocument.md).[locateServiceEndpoint](../interfaces/verida_did_client._internal_.IDIDDocument.md#locateserviceendpoint)
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:33
+
+___
+
+### removeContext
+
+▸ **removeContext**(`contextName`): `boolean`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `contextName` | `string` |
+
+#### Returns
+
+`boolean`
+
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_did_client._internal_.IDIDDocument.md).[removeContext](../interfaces/verida_did_client._internal_.IDIDDocument.md#removecontext)
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:23
+
+___
+
+### setAttributes
+
+▸ **setAttributes**(`attributes`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `attributes` | [`Record`](../modules/verida_did_client._internal_.md#record)<`string`, `any`\> |
+
+#### Returns
+
+`void`
+
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_did_client._internal_.IDIDDocument.md).[setAttributes](../interfaces/verida_did_client._internal_.IDIDDocument.md#setattributes)
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:24
+
+___
+
+### signProof
+
+▸ **signProof**(`privateKey`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `privateKey` | `string` \| `Uint8Array` |
+
+#### Returns
+
+`void`
+
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_did_client._internal_.IDIDDocument.md).[signProof](../interfaces/verida_did_client._internal_.IDIDDocument.md#signproof)
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:35
+
+___
+
+### verifyContextSignature
+
+▸ **verifyContextSignature**(`data`, `contextName`, `signature`, `contextIsHash?`): `boolean`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `data` | `any` |
+| `contextName` | `string` |
+| `signature` | `string` |
+| `contextIsHash?` | `boolean` |
+
+#### Returns
+
+`boolean`
+
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_did_client._internal_.IDIDDocument.md).[verifyContextSignature](../interfaces/verida_did_client._internal_.IDIDDocument.md#verifycontextsignature)
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:31
+
+___
+
+### verifyProof
+
+▸ **verifyProof**(): `boolean`
+
+#### Returns
+
+`boolean`
+
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_did_client._internal_.IDIDDocument.md).[verifyProof](../interfaces/verida_did_client._internal_.IDIDDocument.md#verifyproof)
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:36
+
+___
+
+### verifySig
+
+▸ **verifySig**(`data`, `signature`): `boolean`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `data` | `any` |
+| `signature` | `string` |
+
+#### Returns
+
+`boolean`
+
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_did_client._internal_.IDIDDocument.md).[verifySig](../interfaces/verida_did_client._internal_.IDIDDocument.md#verifysig)
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:30
+
+___
+
+### generateContextHash
+
+▸ `Static` **generateContextHash**(`did`, `contextName`): `string`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `did` | `string` |
+| `contextName` | `string` |
 
 #### Returns
 
@@ -248,121 +512,4 @@ ___
 
 #### Defined in
 
-packages/keyring/dist/keyring.d.ts:51
-
-___
-
-### getStorageContextKey
-
-▸ **getStorageContextKey**(`databaseName`): `Promise`<`any`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `databaseName` | `string` |
-
-#### Returns
-
-`Promise`<`any`\>
-
-#### Defined in
-
-packages/keyring/dist/keyring.d.ts:52
-
-___
-
-### publicKeys
-
-▸ **publicKeys**(): `Promise`<{ `asymPublicKey`: `Uint8Array` ; `asymPublicKeyBase58`: `string` ; `asymPublicKeyHex`: `string` ; `signPublicKey`: `Uint8Array` ; `signPublicKeyBase58`: `string` ; `signPublicKeyHex`: `string`  }\>
-
-Generate an object containing all the public keys for this Keyring
-
-#### Returns
-
-`Promise`<{ `asymPublicKey`: `Uint8Array` ; `asymPublicKeyBase58`: `string` ; `asymPublicKeyHex`: `string` ; `signPublicKey`: `Uint8Array` ; `signPublicKeyBase58`: `string` ; `signPublicKeyHex`: `string`  }\>
-
-#### Defined in
-
-packages/keyring/dist/keyring.d.ts:35
-
-___
-
-### sign
-
-▸ **sign**(`data`): `Promise`<`string`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `data` | `any` |
-
-#### Returns
-
-`Promise`<`string`\>
-
-#### Defined in
-
-packages/keyring/dist/keyring.d.ts:43
-
-___
-
-### symDecrypt
-
-▸ **symDecrypt**(`data`): `Promise`<`any`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `data` | `string` |
-
-#### Returns
-
-`Promise`<`any`\>
-
-#### Defined in
-
-packages/keyring/dist/keyring.d.ts:46
-
-___
-
-### symEncrypt
-
-▸ **symEncrypt**(`data`): `Promise`<`string`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `data` | `string` |
-
-#### Returns
-
-`Promise`<`string`\>
-
-#### Defined in
-
-packages/keyring/dist/keyring.d.ts:45
-
-___
-
-### verifySig
-
-▸ **verifySig**(`data`, `sig`): `Promise`<`boolean`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `data` | `string` |
-| `sig` | `string` |
-
-#### Returns
-
-`Promise`<`boolean`\>
-
-#### Defined in
-
-packages/keyring/dist/keyring.d.ts:44
+packages/did-document/dist/did-document.d.ts:32

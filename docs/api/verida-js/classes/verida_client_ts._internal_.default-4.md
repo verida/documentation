@@ -18,11 +18,12 @@
 
 ### Properties
 
+- [ajv](verida_client_ts._internal_.default-4.md#ajv)
+- [errors](verida_client_ts._internal_.default-4.md#errors)
 - [message](verida_client_ts._internal_.default-4.md#message)
-- [missingRef](verida_client_ts._internal_.default-4.md#missingref)
-- [missingSchema](verida_client_ts._internal_.default-4.md#missingschema)
 - [name](verida_client_ts._internal_.default-4.md#name)
 - [stack](verida_client_ts._internal_.default-4.md#stack)
+- [validation](verida_client_ts._internal_.default-4.md#validation)
 - [prepareStackTrace](verida_client_ts._internal_.default-4.md#preparestacktrace)
 - [stackTraceLimit](verida_client_ts._internal_.default-4.md#stacktracelimit)
 
@@ -34,15 +35,13 @@
 
 ### constructor
 
-• **new default**(`baseId`, `ref`, `msg?`)
+• **new default**(`errors`)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `baseId` | `string` |
-| `ref` | `string` |
-| `msg?` | `string` |
+| `errors` | [`Partial`](../modules/verida_client_ts._internal_.md#partial)<[`ErrorObject`](../interfaces/verida_client_ts._internal_.ErrorObject.md)<`string`, [`Record`](../modules/verida_client_ts._internal_.md#record)<`string`, `any`\>, `unknown`\>\>[] |
 
 #### Overrides
 
@@ -50,9 +49,29 @@ Error.constructor
 
 #### Defined in
 
-node_modules/ajv/dist/compile/ref_error.d.ts:4
+packages/client-ts/node_modules/ajv/dist/runtime/validation_error.d.ts:6
 
 ## Properties
+
+### ajv
+
+• `Readonly` **ajv**: ``true``
+
+#### Defined in
+
+packages/client-ts/node_modules/ajv/dist/runtime/validation_error.d.ts:4
+
+___
+
+### errors
+
+• `Readonly` **errors**: [`Partial`](../modules/verida_client_ts._internal_.md#partial)<[`ErrorObject`](../interfaces/verida_client_ts._internal_.ErrorObject.md)<`string`, [`Record`](../modules/verida_client_ts._internal_.md#record)<`string`, `any`\>, `unknown`\>\>[]
+
+#### Defined in
+
+packages/client-ts/node_modules/ajv/dist/runtime/validation_error.d.ts:3
+
+___
 
 ### message
 
@@ -65,26 +84,6 @@ Error.message
 #### Defined in
 
 node_modules/typescript/lib/lib.es5.d.ts:974
-
-___
-
-### missingRef
-
-• `Readonly` **missingRef**: `string`
-
-#### Defined in
-
-node_modules/ajv/dist/compile/ref_error.d.ts:2
-
-___
-
-### missingSchema
-
-• `Readonly` **missingSchema**: `string`
-
-#### Defined in
-
-node_modules/ajv/dist/compile/ref_error.d.ts:3
 
 ___
 
@@ -113,6 +112,16 @@ Error.stack
 #### Defined in
 
 node_modules/typescript/lib/lib.es5.d.ts:975
+
+___
+
+### validation
+
+• `Readonly` **validation**: ``true``
+
+#### Defined in
+
+packages/client-ts/node_modules/ajv/dist/runtime/validation_error.d.ts:5
 
 ___
 

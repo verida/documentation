@@ -20,7 +20,7 @@
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/index.d.ts:21
+packages/client-ts/node_modules/ajv/dist/compile/codegen/index.d.ts:21
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/index.d.ts:22
+packages/client-ts/node_modules/ajv/dist/compile/codegen/index.d.ts:22
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/index.d.ts:23
+packages/client-ts/node_modules/ajv/dist/compile/codegen/index.d.ts:23

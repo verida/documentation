@@ -19,7 +19,7 @@
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:168
+packages/client-ts/node_modules/ajv/dist/core.d.ts:168
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:167
+packages/client-ts/node_modules/ajv/dist/core.d.ts:167

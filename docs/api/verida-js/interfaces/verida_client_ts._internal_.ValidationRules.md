@@ -22,7 +22,7 @@
 
 #### Defined in
 
-node_modules/ajv/dist/compile/rules.d.ts:11
+packages/client-ts/node_modules/ajv/dist/compile/rules.d.ts:11
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/rules.d.ts:14
+packages/client-ts/node_modules/ajv/dist/compile/rules.d.ts:14
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/rules.d.ts:10
+packages/client-ts/node_modules/ajv/dist/compile/rules.d.ts:10
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/rules.d.ts:9
+packages/client-ts/node_modules/ajv/dist/compile/rules.d.ts:9
 
 ___
 
@@ -62,4 +62,4 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/rules.d.ts:17
+packages/client-ts/node_modules/ajv/dist/compile/rules.d.ts:17

@@ -4,7 +4,9 @@
 
 [@verida/client-ts](../modules/verida_client_ts.md).[<internal\>](../modules/verida_client_ts._internal_.md).default
 
-An Authenticator that automatically signs everything
+## Implements
+
+- [`IDIDDocument`](../interfaces/verida_client_ts._internal_.IDIDDocument.md)
 
 ## Table of contents
 
@@ -12,110 +14,299 @@ An Authenticator that automatically signs everything
 
 - [constructor](verida_client_ts._internal_.default-1.md#constructor)
 
+### Properties
+
+- [doc](verida_client_ts._internal_.default-1.md#doc)
+- [errors](verida_client_ts._internal_.default-1.md#errors)
+- [getProofData](verida_client_ts._internal_.default-1.md#getproofdata)
+
+### Accessors
+
+- [id](verida_client_ts._internal_.default-1.md#id)
+
 ### Methods
 
-- [createDidJwt](verida_client_ts._internal_.default-1.md#createdidjwt)
-- [did](verida_client_ts._internal_.default-1.md#did)
-- [disconnect](verida_client_ts._internal_.default-1.md#disconnect)
-- [getDidClient](verida_client_ts._internal_.default-1.md#getdidclient)
-- [keyring](verida_client_ts._internal_.default-1.md#keyring)
-- [linkStorage](verida_client_ts._internal_.default-1.md#linkstorage)
-- [linkStorageContextService](verida_client_ts._internal_.default-1.md#linkstoragecontextservice)
-- [sign](verida_client_ts._internal_.default-1.md#sign)
-- [storageConfig](verida_client_ts._internal_.default-1.md#storageconfig)
-- [unlinkStorage](verida_client_ts._internal_.default-1.md#unlinkstorage)
+- [addContext](verida_client_ts._internal_.default-1.md#addcontext)
+- [addContextAsymKey](verida_client_ts._internal_.default-1.md#addcontextasymkey)
+- [addContextService](verida_client_ts._internal_.default-1.md#addcontextservice)
+- [addContextSignKey](verida_client_ts._internal_.default-1.md#addcontextsignkey)
+- [buildTimestamp](verida_client_ts._internal_.default-1.md#buildtimestamp)
+- [export](verida_client_ts._internal_.default-1.md#export)
+- [getErrors](verida_client_ts._internal_.default-1.md#geterrors)
+- [import](verida_client_ts._internal_.default-1.md#import)
+- [locateContextProof](verida_client_ts._internal_.default-1.md#locatecontextproof)
+- [locateServiceEndpoint](verida_client_ts._internal_.default-1.md#locateserviceendpoint)
+- [removeContext](verida_client_ts._internal_.default-1.md#removecontext)
+- [setAttributes](verida_client_ts._internal_.default-1.md#setattributes)
+- [signProof](verida_client_ts._internal_.default-1.md#signproof)
+- [verifyContextSignature](verida_client_ts._internal_.default-1.md#verifycontextsignature)
+- [verifyProof](verida_client_ts._internal_.default-1.md#verifyproof)
+- [verifySig](verida_client_ts._internal_.default-1.md#verifysig)
+- [generateContextHash](verida_client_ts._internal_.default-1.md#generatecontexthash)
 
 ## Constructors
 
 ### constructor
 
-• **new default**()
+• **new default**(`doc`, `publicKeyHex?`)
+
+Force lower case DID as we can't guarantee the DID will always be provided with checksum
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `doc` | `string` \| [`VeridaDocInterface`](../interfaces/verida_client_ts._internal_.VeridaDocInterface.md) | this value can be a DocInterface or DID. |
+| `publicKeyHex?` | `string` | - |
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:11
+
+## Properties
+
+### doc
+
+• `Private` **doc**: `any`
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:4
+
+___
+
+### errors
+
+• `Protected` **errors**: `string`[]
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:5
+
+___
+
+### getProofData
+
+• `Private` **getProofData**: `any`
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:37
+
+## Accessors
+
+### id
+
+• `get` **id**(): `string`
+
+#### Returns
+
+`string`
+
+#### Implementation of
+
+IDIDDocument.id
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:12
 
 ## Methods
 
-### createDidJwt
+### addContext
 
-▸ **createDidJwt**(`contextName`, `data`, `config?`): `Promise`<`string`\>
+▸ **addContext**(`contextName`, `keyring`, `privateKey`, `endpoints`): `Promise`<`void`\>
 
-Create a DID-JWT from a data object
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `contextName` | `string` |
-| `data` | `object` |
-| `config?` | `any` |
-
-#### Returns
-
-`Promise`<`string`\>
-
-#### Defined in
-
-packages/account/dist/account.d.ts:42
-
-___
-
-### did
-
-▸ **did**(): `Promise`<`string`\>
-
-Get the DID of the current user
-
-#### Returns
-
-`Promise`<`string`\>
-
-#### Defined in
-
-packages/account/dist/account.d.ts:22
-
-___
-
-### disconnect
-
-▸ **disconnect**(`contextName?`): `Promise`<`void`\>
-
-An optional method that can be used to disconnect the current user.
-
-For example, in a web browser context, it would remove any stored signatures from local storage.
+Not used directly, used for testing
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `contextName?` | `string` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `contextName` | `string` | string |
+| `keyring` | [`IKeyring`](../interfaces/verida_client_ts._internal_.IKeyring.md) | Keyring |
+| `privateKey` | `string` | Private key of the DID that controls this DID Document |
+| `endpoints` | [`SecureContextEndpoints`](../interfaces/verida_client_ts._internal_.SecureContextEndpoints.md) | Endpoints |
 
 #### Returns
 
 `Promise`<`void`\>
 
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_client_ts._internal_.IDIDDocument.md).[addContext](../interfaces/verida_client_ts._internal_.IDIDDocument.md#addcontext)
+
 #### Defined in
 
-packages/account/dist/account.d.ts:48
+packages/did-document/dist/did-document.d.ts:22
 
 ___
 
-### getDidClient
+### addContextAsymKey
 
-▸ **getDidClient**(): `void`
+▸ **addContextAsymKey**(`contextHash`, `publicKeyHex`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `contextHash` | `string` |
+| `publicKeyHex` | `string` |
 
 #### Returns
 
 `void`
 
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_client_ts._internal_.IDIDDocument.md).[addContextAsymKey](../interfaces/verida_client_ts._internal_.IDIDDocument.md#addcontextasymkey)
+
 #### Defined in
 
-packages/account/dist/account.d.ts:37
+packages/did-document/dist/did-document.d.ts:29
 
 ___
 
-### keyring
+### addContextService
 
-▸ **keyring**(`contextName`): `Promise`<[`default`](verida_client_ts._internal_.default-5.md)\>
+▸ **addContextService**(`contextHash`, `endpointType`, `serviceType`, `endpointUris`): `void`
 
-Generate a keyring for this user for a given storage context.
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `contextHash` | `string` |
+| `endpointType` | [`SecureContextEndpointType`](../enums/verida_client_ts._internal_.SecureContextEndpointType.md) |
+| `serviceType` | `string` |
+| `endpointUris` | [`ServiceEndpoint`](../modules/verida_client_ts._internal_.md#serviceendpoint)[] |
+
+#### Returns
+
+`void`
+
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_client_ts._internal_.IDIDDocument.md).[addContextService](../interfaces/verida_client_ts._internal_.IDIDDocument.md#addcontextservice)
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:27
+
+___
+
+### addContextSignKey
+
+▸ **addContextSignKey**(`contextHash`, `publicKeyHex`, `proof`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `contextHash` | `string` |
+| `publicKeyHex` | `string` |
+| `proof` | `string` |
+
+#### Returns
+
+`void`
+
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_client_ts._internal_.IDIDDocument.md).[addContextSignKey](../interfaces/verida_client_ts._internal_.IDIDDocument.md#addcontextsignkey)
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:28
+
+___
+
+### buildTimestamp
+
+▸ **buildTimestamp**(`date`): `string`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `date` | `Date` |
+
+#### Returns
+
+`string`
+
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_client_ts._internal_.IDIDDocument.md).[buildTimestamp](../interfaces/verida_client_ts._internal_.IDIDDocument.md#buildtimestamp)
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:38
+
+___
+
+### export
+
+▸ **export**(): [`VeridaDocInterface`](../interfaces/verida_client_ts._internal_.VeridaDocInterface.md)
+
+#### Returns
+
+[`VeridaDocInterface`](../interfaces/verida_client_ts._internal_.VeridaDocInterface.md)
+
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_client_ts._internal_.IDIDDocument.md).[export](../interfaces/verida_client_ts._internal_.IDIDDocument.md#export)
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:26
+
+___
+
+### getErrors
+
+▸ **getErrors**(): `string`[]
+
+#### Returns
+
+`string`[]
+
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_client_ts._internal_.IDIDDocument.md).[getErrors](../interfaces/verida_client_ts._internal_.IDIDDocument.md#geterrors)
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:13
+
+___
+
+### import
+
+▸ **import**(`doc`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `doc` | [`VeridaDocInterface`](../interfaces/verida_client_ts._internal_.VeridaDocInterface.md) |
+
+#### Returns
+
+`void`
+
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_client_ts._internal_.IDIDDocument.md).[import](../interfaces/verida_client_ts._internal_.IDIDDocument.md#import)
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:25
+
+___
+
+### locateContextProof
+
+▸ **locateContextProof**(`contextName`): `undefined` \| `string`
 
 #### Parameters
 
@@ -125,107 +316,46 @@ Generate a keyring for this user for a given storage context.
 
 #### Returns
 
-`Promise`<[`default`](verida_client_ts._internal_.default-5.md)\>
+`undefined` \| `string`
+
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_client_ts._internal_.IDIDDocument.md).[locateContextProof](../interfaces/verida_client_ts._internal_.IDIDDocument.md#locatecontextproof)
 
 #### Defined in
 
-packages/account/dist/account.d.ts:12
+packages/did-document/dist/did-document.d.ts:34
 
 ___
 
-### linkStorage
+### locateServiceEndpoint
 
-▸ **linkStorage**(`storageConfig`): `Promise`<`void`\>
-
-Link storage to this user
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `storageConfig` | [`SecureContextConfig`](../interfaces/verida_client_ts._internal_.SecureContextConfig.md) |
-
-#### Returns
-
-`Promise`<`void`\>
-
-#### Defined in
-
-packages/account/dist/account.d.ts:28
-
-___
-
-### linkStorageContextService
-
-▸ **linkStorageContextService**(`contextName`, `endpointType`, `serverType`, `endpointUri`): `Promise`<`boolean`\>
+▸ **locateServiceEndpoint**(`contextName`, `endpointType`): `undefined` \| [`Service`](../interfaces/verida_client_ts._internal_.Service.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `contextName` | `string` |
-| `endpointType` | `string` |
-| `serverType` | `string` |
-| `endpointUri` | `string` |
+| `endpointType` | [`SecureContextEndpointType`](../enums/verida_client_ts._internal_.SecureContextEndpointType.md) |
 
 #### Returns
 
-`Promise`<`boolean`\>
+`undefined` \| [`Service`](../interfaces/verida_client_ts._internal_.Service.md)
+
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_client_ts._internal_.IDIDDocument.md).[locateServiceEndpoint](../interfaces/verida_client_ts._internal_.IDIDDocument.md#locateserviceendpoint)
 
 #### Defined in
 
-packages/account/dist/account.d.ts:36
+packages/did-document/dist/did-document.d.ts:33
 
 ___
 
-### sign
+### removeContext
 
-▸ **sign**(`input`): `Promise`<`string`\>
-
-Sign a string as the current user
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `input` | `string` |
-
-#### Returns
-
-`Promise`<`string`\>
-
-#### Defined in
-
-packages/account/dist/account.d.ts:18
-
-___
-
-### storageConfig
-
-▸ **storageConfig**(`contextName`, `forceCreate?`): `Promise`<`undefined` \| [`SecureContextConfig`](../interfaces/verida_client_ts._internal_.SecureContextConfig.md)\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `contextName` | `string` |
-| `forceCreate?` | `boolean` |
-
-#### Returns
-
-`Promise`<`undefined` \| [`SecureContextConfig`](../interfaces/verida_client_ts._internal_.SecureContextConfig.md)\>
-
-#### Defined in
-
-packages/account/dist/account.d.ts:35
-
-___
-
-### unlinkStorage
-
-▸ **unlinkStorage**(`contextName`): `Promise`<`boolean`\>
-
-Unlink storage for this user
+▸ **removeContext**(`contextName`): `boolean`
 
 #### Parameters
 
@@ -235,8 +365,151 @@ Unlink storage for this user
 
 #### Returns
 
-`Promise`<`boolean`\>
+`boolean`
+
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_client_ts._internal_.IDIDDocument.md).[removeContext](../interfaces/verida_client_ts._internal_.IDIDDocument.md#removecontext)
 
 #### Defined in
 
-packages/account/dist/account.d.ts:34
+packages/did-document/dist/did-document.d.ts:23
+
+___
+
+### setAttributes
+
+▸ **setAttributes**(`attributes`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `attributes` | [`Record`](../modules/verida_client_ts._internal_.md#record)<`string`, `any`\> |
+
+#### Returns
+
+`void`
+
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_client_ts._internal_.IDIDDocument.md).[setAttributes](../interfaces/verida_client_ts._internal_.IDIDDocument.md#setattributes)
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:24
+
+___
+
+### signProof
+
+▸ **signProof**(`privateKey`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `privateKey` | `string` \| `Uint8Array` |
+
+#### Returns
+
+`void`
+
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_client_ts._internal_.IDIDDocument.md).[signProof](../interfaces/verida_client_ts._internal_.IDIDDocument.md#signproof)
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:35
+
+___
+
+### verifyContextSignature
+
+▸ **verifyContextSignature**(`data`, `contextName`, `signature`, `contextIsHash?`): `boolean`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `data` | `any` |
+| `contextName` | `string` |
+| `signature` | `string` |
+| `contextIsHash?` | `boolean` |
+
+#### Returns
+
+`boolean`
+
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_client_ts._internal_.IDIDDocument.md).[verifyContextSignature](../interfaces/verida_client_ts._internal_.IDIDDocument.md#verifycontextsignature)
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:31
+
+___
+
+### verifyProof
+
+▸ **verifyProof**(): `boolean`
+
+#### Returns
+
+`boolean`
+
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_client_ts._internal_.IDIDDocument.md).[verifyProof](../interfaces/verida_client_ts._internal_.IDIDDocument.md#verifyproof)
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:36
+
+___
+
+### verifySig
+
+▸ **verifySig**(`data`, `signature`): `boolean`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `data` | `any` |
+| `signature` | `string` |
+
+#### Returns
+
+`boolean`
+
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_client_ts._internal_.IDIDDocument.md).[verifySig](../interfaces/verida_client_ts._internal_.IDIDDocument.md#verifysig)
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:30
+
+___
+
+### generateContextHash
+
+▸ `Static` **generateContextHash**(`did`, `contextName`): `string`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `did` | `string` |
+| `contextName` | `string` |
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+packages/did-document/dist/did-document.d.ts:32

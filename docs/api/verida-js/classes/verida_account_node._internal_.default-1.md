@@ -12,138 +12,98 @@
 
 ### Properties
 
+- [\_did](verida_account_node._internal_.default-1.md#_did)
+- [\_network](verida_account_node._internal_.default-1.md#_network)
+- [\_privateKey](verida_account_node._internal_.default-1.md#_privatekey)
+- [\_publicKey](verida_account_node._internal_.default-1.md#_publickey)
+- [load](verida_account_node._internal_.default-1.md#load)
+
+### Accessors
+
 - [did](verida_account_node._internal_.default-1.md#did)
-- [endpointUrl](verida_account_node._internal_.default-1.md#endpointurl)
 - [privateKey](verida_account_node._internal_.default-1.md#privatekey)
-- [wallet](verida_account_node._internal_.default-1.md#wallet)
+- [privateKeyBase58](verida_account_node._internal_.default-1.md#privatekeybase58)
+- [privateKeyBuffer](verida_account_node._internal_.default-1.md#privatekeybuffer)
+- [publicKey](verida_account_node._internal_.default-1.md#publickey)
+- [publicKeyBase58](verida_account_node._internal_.default-1.md#publickeybase58)
+- [publicKeyBuffer](verida_account_node._internal_.default-1.md#publickeybuffer)
 
 ### Methods
 
-- [authenticate](verida_account_node._internal_.default-1.md#authenticate)
-- [get](verida_account_node._internal_.default-1.md#get)
-- [getDid](verida_account_node._internal_.default-1.md#getdid)
-- [getPublicKey](verida_account_node._internal_.default-1.md#getpublickey)
-- [save](verida_account_node._internal_.default-1.md#save)
+- [createRandom](verida_account_node._internal_.default-1.md#createrandom)
 
 ## Constructors
 
 ### constructor
 
-• **new default**(`endpointUrl`)
+• **new default**(`privateKey`, `network`)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `endpointUrl` | `string` |
+| `privateKey` | `string` |
+| `network` | `string` |
 
 #### Defined in
 
-packages/did-client/dist/did-client.d.ts:7
+packages/did-client/dist/wallet.d.ts:6
 
 ## Properties
 
+### \_did
+
+• `Private` **\_did**: `any`
+
+#### Defined in
+
+packages/did-client/dist/wallet.d.ts:2
+
+___
+
+### \_network
+
+• `Private` **\_network**: `any`
+
+#### Defined in
+
+packages/did-client/dist/wallet.d.ts:5
+
+___
+
+### \_privateKey
+
+• `Private` **\_privateKey**: `any`
+
+#### Defined in
+
+packages/did-client/dist/wallet.d.ts:4
+
+___
+
+### \_publicKey
+
+• `Private` **\_publicKey**: `any`
+
+#### Defined in
+
+packages/did-client/dist/wallet.d.ts:3
+
+___
+
+### load
+
+• `Private` **load**: `any`
+
+#### Defined in
+
+packages/did-client/dist/wallet.d.ts:8
+
+## Accessors
+
 ### did
 
-• `Private` `Optional` **did**: `any`
-
-#### Defined in
-
-packages/did-client/dist/did-client.d.ts:5
-
-___
-
-### endpointUrl
-
-• `Private` **endpointUrl**: `any`
-
-#### Defined in
-
-packages/did-client/dist/did-client.d.ts:3
-
-___
-
-### privateKey
-
-• `Private` `Optional` **privateKey**: `any`
-
-#### Defined in
-
-packages/did-client/dist/did-client.d.ts:4
-
-___
-
-### wallet
-
-• `Private` `Optional` **wallet**: `any`
-
-#### Defined in
-
-packages/did-client/dist/did-client.d.ts:6
-
-## Methods
-
-### authenticate
-
-▸ **authenticate**(`privateKey`): `void`
-
-Authenticate using a privateKey or seed phrase.
-
-This allows the DIDClient to sign DIDDocuments before saving
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `privateKey` | `string` | Hex representation of the private key or a mnemonic |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-packages/did-client/dist/did-client.d.ts:15
-
-___
-
-### get
-
-▸ **get**(`did`): `Promise`<`undefined` \| [`default`](verida_account_node._internal_.default-4.md)\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `did` | `string` |
-
-#### Returns
-
-`Promise`<`undefined` \| [`default`](verida_account_node._internal_.default-4.md)\>
-
-#### Defined in
-
-packages/did-client/dist/did-client.d.ts:25
-
-___
-
-### getDid
-
-▸ **getDid**(): `undefined` \| `string`
-
-#### Returns
-
-`undefined` \| `string`
-
-#### Defined in
-
-packages/did-client/dist/did-client.d.ts:16
-
-___
-
-### getPublicKey
-
-▸ **getPublicKey**(): `string`
+• `get` **did**(): `string`
 
 #### Returns
 
@@ -151,26 +111,108 @@ ___
 
 #### Defined in
 
-packages/did-client/dist/did-client.d.ts:17
+packages/did-client/dist/wallet.d.ts:9
 
 ___
 
-### save
+### privateKey
 
-▸ **save**(`document`): `Promise`<`boolean`\>
+• `get` **privateKey**(): `string`
 
-Save a DID document
+#### Returns
+
+`string`
+
+#### Defined in
+
+packages/did-client/dist/wallet.d.ts:10
+
+___
+
+### privateKeyBase58
+
+• `get` **privateKeyBase58**(): `string`
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+packages/did-client/dist/wallet.d.ts:14
+
+___
+
+### privateKeyBuffer
+
+• `get` **privateKeyBuffer**(): `Uint8Array`
+
+#### Returns
+
+`Uint8Array`
+
+#### Defined in
+
+packages/did-client/dist/wallet.d.ts:12
+
+___
+
+### publicKey
+
+• `get` **publicKey**(): `string`
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+packages/did-client/dist/wallet.d.ts:11
+
+___
+
+### publicKeyBase58
+
+• `get` **publicKeyBase58**(): `string`
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+packages/did-client/dist/wallet.d.ts:15
+
+___
+
+### publicKeyBuffer
+
+• `get` **publicKeyBuffer**(): `Uint8Array`
+
+#### Returns
+
+`Uint8Array`
+
+#### Defined in
+
+packages/did-client/dist/wallet.d.ts:13
+
+## Methods
+
+### createRandom
+
+▸ `Static` **createRandom**(`network?`): [`default`](verida_account_node._internal_.default-1.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `document` | [`default`](verida_account_node._internal_.default-4.md) |
+| `network?` | `string` |
 
 #### Returns
 
-`Promise`<`boolean`\>
+[`default`](verida_account_node._internal_.default-1.md)
 
 #### Defined in
 
-packages/did-client/dist/did-client.d.ts:24
+packages/did-client/dist/wallet.d.ts:7

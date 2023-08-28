@@ -8,11 +8,22 @@
 
 ### Enumeration members
 
+- [DEVNET](verida_account_node._internal_.EnvironmentType.md#devnet)
 - [LOCAL](verida_account_node._internal_.EnvironmentType.md#local)
 - [MAINNET](verida_account_node._internal_.EnvironmentType.md#mainnet)
 - [TESTNET](verida_account_node._internal_.EnvironmentType.md#testnet)
 
 ## Enumeration members
+
+### DEVNET
+
+• **DEVNET** = `"devnet"`
+
+#### Defined in
+
+packages/types/dist/NetworkInterfaces.d.ts:6
+
+___
 
 ### LOCAL
 
@@ -20,7 +31,7 @@
 
 #### Defined in
 
-packages/account/dist/interfaces.d.ts:9
+packages/types/dist/NetworkInterfaces.d.ts:5
 
 ___
 
@@ -30,7 +41,7 @@ ___
 
 #### Defined in
 
-packages/account/dist/interfaces.d.ts:11
+packages/types/dist/NetworkInterfaces.d.ts:8
 
 ___
 
@@ -40,4 +51,4 @@ ___
 
 #### Defined in
 
-packages/account/dist/interfaces.d.ts:10
+packages/types/dist/NetworkInterfaces.d.ts:7

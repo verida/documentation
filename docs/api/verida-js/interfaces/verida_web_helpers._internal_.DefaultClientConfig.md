@@ -1,0 +1,94 @@
+[root](../README.md) / [Modules](../modules.md) / [@verida/web-helpers](../modules/verida_web_helpers.md) / [<internal\>](../modules/verida_web_helpers._internal_.md) / DefaultClientConfig
+
+# Interface: DefaultClientConfig
+
+[@verida/web-helpers](../modules/verida_web_helpers.md).[<internal\>](../modules/verida_web_helpers._internal_.md).DefaultClientConfig
+
+## Hierarchy
+
+- [`DefaultEnvironmentConfig`](verida_web_helpers._internal_.DefaultEnvironmentConfig.md)
+
+  ↳ **`DefaultClientConfig`**
+
+## Table of contents
+
+### Properties
+
+- [defaultDatabaseServerUrl](verida_web_helpers._internal_.DefaultClientConfig.md#defaultdatabaseserverurl)
+- [defaultMessageServerUrl](verida_web_helpers._internal_.DefaultClientConfig.md#defaultmessageserverurl)
+- [environment](verida_web_helpers._internal_.DefaultClientConfig.md#environment)
+- [environments](verida_web_helpers._internal_.DefaultClientConfig.md#environments)
+- [schemaPaths](verida_web_helpers._internal_.DefaultClientConfig.md#schemapaths)
+- [vaultAppName](verida_web_helpers._internal_.DefaultClientConfig.md#vaultappname)
+
+## Properties
+
+### defaultDatabaseServerUrl
+
+• `Optional` **defaultDatabaseServerUrl**: `string`
+
+#### Inherited from
+
+[DefaultEnvironmentConfig](verida_web_helpers._internal_.DefaultEnvironmentConfig.md).[defaultDatabaseServerUrl](verida_web_helpers._internal_.DefaultEnvironmentConfig.md#defaultdatabaseserverurl)
+
+#### Defined in
+
+packages/types/dist/NetworkInterfaces.d.ts:11
+
+___
+
+### defaultMessageServerUrl
+
+• `Optional` **defaultMessageServerUrl**: `string`
+
+#### Inherited from
+
+[DefaultEnvironmentConfig](verida_web_helpers._internal_.DefaultEnvironmentConfig.md).[defaultMessageServerUrl](verida_web_helpers._internal_.DefaultEnvironmentConfig.md#defaultmessageserverurl)
+
+#### Defined in
+
+packages/types/dist/NetworkInterfaces.d.ts:12
+
+___
+
+### environment
+
+• **environment**: [`EnvironmentType`](../enums/verida_web_helpers._internal_.EnvironmentType.md)
+
+#### Defined in
+
+packages/types/dist/NetworkInterfaces.d.ts:16
+
+___
+
+### environments
+
+• **environments**: [`Record`](../modules/verida_web_helpers._internal_.md#record)<`string`, [`DefaultEnvironmentConfig`](verida_web_helpers._internal_.DefaultEnvironmentConfig.md)\>
+
+#### Defined in
+
+packages/types/dist/NetworkInterfaces.d.ts:17
+
+___
+
+### schemaPaths
+
+• `Optional` **schemaPaths**: [`Record`](../modules/verida_web_helpers._internal_.md#record)<`string`, `string`\>
+
+#### Inherited from
+
+[DefaultEnvironmentConfig](verida_web_helpers._internal_.DefaultEnvironmentConfig.md).[schemaPaths](verida_web_helpers._internal_.DefaultEnvironmentConfig.md#schemapaths)
+
+#### Defined in
+
+packages/types/dist/NetworkInterfaces.d.ts:13
+
+___
+
+### vaultAppName
+
+• **vaultAppName**: `string`
+
+#### Defined in
+
+packages/types/dist/NetworkInterfaces.d.ts:18

@@ -8,17 +8,10 @@
 
 - [&lt;internal\&gt;](verida_account._internal_.md)
 
-### Enumerations
-
-- [EnvironmentType](../enums/verida_account.EnvironmentType.md)
-
 ### Classes
 
 - [Account](../classes/verida_account.Account.md)
-
-### Interfaces
-
-- [AccountConfig](../interfaces/verida_account.AccountConfig.md)
+- [AuthType](../classes/verida_account.AuthType.md)
 
 ### Variables
 
@@ -32,4 +25,4 @@
 
 #### Defined in
 
-[packages/account/src/config.ts:3](https://github.com/verida/verida-js/blob/c03b336/packages/account/src/config.ts#L3)
+[packages/account/src/config.ts:3](https://github.com/verida/verida-js/blob/a690f60/packages/account/src/config.ts#L3)

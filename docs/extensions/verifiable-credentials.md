@@ -7,7 +7,6 @@ keywords: [Verida, Web3, Developers, Verifiable Credentials]
 
 # Verifiable Credentials
 
-
 ## Introduction
 
 Verifiable Credentials are are [W3C standard](https://www.w3.org/TR/vc-data-model/) that is supported within the Verida network with the [@verida/verifiable-credential](https://npmjs.com/@verida/verifiable-credentials) npm package.

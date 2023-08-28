@@ -21,7 +21,7 @@
 
 #### Defined in
 
-packages/storage-link/dist/interfaces.d.ts:15
+packages/types/dist/StorageLinkInterfaces.d.ts:11
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 #### Defined in
 
-packages/storage-link/dist/interfaces.d.ts:16
+packages/types/dist/StorageLinkInterfaces.d.ts:12
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-packages/storage-link/dist/interfaces.d.ts:18
+packages/types/dist/StorageLinkInterfaces.d.ts:14
 
 ___
 
@@ -51,4 +51,4 @@ ___
 
 #### Defined in
 
-packages/storage-link/dist/interfaces.d.ts:17
+packages/types/dist/StorageLinkInterfaces.d.ts:13

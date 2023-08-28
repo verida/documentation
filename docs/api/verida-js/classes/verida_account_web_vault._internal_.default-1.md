@@ -8,6 +8,10 @@ Class that takes a signature (generated from a signed consent message) and gener
 collection of asymmetric keys, symmetric key and signing key for a given secure storage
 context.
 
+## Implements
+
+- [`IKeyring`](../interfaces/verida_account_web_vault._internal_.IKeyring.md)
+
 ## Table of contents
 
 ### Constructors
@@ -46,7 +50,6 @@ context.
 • **new default**(`seed`)
 
 A string used as a seed for this keyring.
-The seed should be a hex signature obtained by 3ID signed consent message.
 
 #### Parameters
 
@@ -66,7 +69,7 @@ packages/keyring/dist/keyring.d.ts:19
 
 #### Defined in
 
-packages/keyring/dist/keyring.d.ts:8
+packages/keyring/dist/keyring.d.ts:9
 
 ___
 
@@ -94,7 +97,7 @@ ___
 
 #### Defined in
 
-packages/keyring/dist/keyring.d.ts:11
+packages/keyring/dist/keyring.d.ts:12
 
 ___
 
@@ -104,7 +107,7 @@ ___
 
 #### Defined in
 
-packages/keyring/dist/keyring.d.ts:9
+packages/keyring/dist/keyring.d.ts:10
 
 ___
 
@@ -114,7 +117,7 @@ ___
 
 #### Defined in
 
-packages/keyring/dist/keyring.d.ts:12
+packages/keyring/dist/keyring.d.ts:13
 
 ___
 
@@ -124,7 +127,7 @@ ___
 
 #### Defined in
 
-packages/keyring/dist/keyring.d.ts:10
+packages/keyring/dist/keyring.d.ts:11
 
 ## Methods
 
@@ -135,6 +138,10 @@ packages/keyring/dist/keyring.d.ts:10
 #### Returns
 
 `Promise`<`void`\>
+
+#### Implementation of
+
+[IKeyring](../interfaces/verida_account_web_vault._internal_.IKeyring.md).[_init](../interfaces/verida_account_web_vault._internal_.IKeyring.md#_init)
 
 #### Defined in
 
@@ -157,9 +164,13 @@ ___
 
 `Promise`<`any`\>
 
+#### Implementation of
+
+[IKeyring](../interfaces/verida_account_web_vault._internal_.IKeyring.md).[asymDecrypt](../interfaces/verida_account_web_vault._internal_.IKeyring.md#asymdecrypt)
+
 #### Defined in
 
-packages/keyring/dist/keyring.d.ts:48
+packages/keyring/dist/keyring.d.ts:41
 
 ___
 
@@ -178,9 +189,13 @@ ___
 
 `Promise`<`string`\>
 
+#### Implementation of
+
+[IKeyring](../interfaces/verida_account_web_vault._internal_.IKeyring.md).[asymEncrypt](../interfaces/verida_account_web_vault._internal_.IKeyring.md#asymencrypt)
+
 #### Defined in
 
-packages/keyring/dist/keyring.d.ts:47
+packages/keyring/dist/keyring.d.ts:40
 
 ___
 
@@ -198,9 +213,13 @@ ___
 
 `Promise`<`Uint8Array`\>
 
+#### Implementation of
+
+[IKeyring](../interfaces/verida_account_web_vault._internal_.IKeyring.md).[buildSharedKeyEnd](../interfaces/verida_account_web_vault._internal_.IKeyring.md#buildsharedkeyend)
+
 #### Defined in
 
-packages/keyring/dist/keyring.d.ts:50
+packages/keyring/dist/keyring.d.ts:43
 
 ___
 
@@ -218,9 +237,13 @@ ___
 
 `Promise`<`Uint8Array`\>
 
+#### Implementation of
+
+[IKeyring](../interfaces/verida_account_web_vault._internal_.IKeyring.md).[buildSharedKeyStart](../interfaces/verida_account_web_vault._internal_.IKeyring.md#buildsharedkeystart)
+
 #### Defined in
 
-packages/keyring/dist/keyring.d.ts:49
+packages/keyring/dist/keyring.d.ts:42
 
 ___
 
@@ -231,6 +254,10 @@ ___
 #### Returns
 
 `Promise`<`any`\>
+
+#### Implementation of
+
+[IKeyring](../interfaces/verida_account_web_vault._internal_.IKeyring.md).[getKeys](../interfaces/verida_account_web_vault._internal_.IKeyring.md#getkeys)
 
 #### Defined in
 
@@ -246,9 +273,13 @@ ___
 
 `string`
 
+#### Implementation of
+
+[IKeyring](../interfaces/verida_account_web_vault._internal_.IKeyring.md).[getSeed](../interfaces/verida_account_web_vault._internal_.IKeyring.md#getseed)
+
 #### Defined in
 
-packages/keyring/dist/keyring.d.ts:51
+packages/keyring/dist/keyring.d.ts:44
 
 ___
 
@@ -266,21 +297,29 @@ ___
 
 `Promise`<`any`\>
 
+#### Implementation of
+
+[IKeyring](../interfaces/verida_account_web_vault._internal_.IKeyring.md).[getStorageContextKey](../interfaces/verida_account_web_vault._internal_.IKeyring.md#getstoragecontextkey)
+
 #### Defined in
 
-packages/keyring/dist/keyring.d.ts:52
+packages/keyring/dist/keyring.d.ts:45
 
 ___
 
 ### publicKeys
 
-▸ **publicKeys**(): `Promise`<{ `asymPublicKey`: `Uint8Array` ; `asymPublicKeyBase58`: `string` ; `asymPublicKeyHex`: `string` ; `signPublicKey`: `Uint8Array` ; `signPublicKeyBase58`: `string` ; `signPublicKeyHex`: `string`  }\>
+▸ **publicKeys**(): `Promise`<[`KeyringPublicKeys`](../interfaces/verida_account_web_vault._internal_.KeyringPublicKeys.md)\>
 
 Generate an object containing all the public keys for this Keyring
 
 #### Returns
 
-`Promise`<{ `asymPublicKey`: `Uint8Array` ; `asymPublicKeyBase58`: `string` ; `asymPublicKeyHex`: `string` ; `signPublicKey`: `Uint8Array` ; `signPublicKeyBase58`: `string` ; `signPublicKeyHex`: `string`  }\>
+`Promise`<[`KeyringPublicKeys`](../interfaces/verida_account_web_vault._internal_.KeyringPublicKeys.md)\>
+
+#### Implementation of
+
+[IKeyring](../interfaces/verida_account_web_vault._internal_.IKeyring.md).[publicKeys](../interfaces/verida_account_web_vault._internal_.IKeyring.md#publickeys)
 
 #### Defined in
 
@@ -302,9 +341,13 @@ ___
 
 `Promise`<`string`\>
 
+#### Implementation of
+
+[IKeyring](../interfaces/verida_account_web_vault._internal_.IKeyring.md).[sign](../interfaces/verida_account_web_vault._internal_.IKeyring.md#sign)
+
 #### Defined in
 
-packages/keyring/dist/keyring.d.ts:43
+packages/keyring/dist/keyring.d.ts:36
 
 ___
 
@@ -322,9 +365,13 @@ ___
 
 `Promise`<`any`\>
 
+#### Implementation of
+
+[IKeyring](../interfaces/verida_account_web_vault._internal_.IKeyring.md).[symDecrypt](../interfaces/verida_account_web_vault._internal_.IKeyring.md#symdecrypt)
+
 #### Defined in
 
-packages/keyring/dist/keyring.d.ts:46
+packages/keyring/dist/keyring.d.ts:39
 
 ___
 
@@ -342,9 +389,13 @@ ___
 
 `Promise`<`string`\>
 
+#### Implementation of
+
+[IKeyring](../interfaces/verida_account_web_vault._internal_.IKeyring.md).[symEncrypt](../interfaces/verida_account_web_vault._internal_.IKeyring.md#symencrypt)
+
 #### Defined in
 
-packages/keyring/dist/keyring.d.ts:45
+packages/keyring/dist/keyring.d.ts:38
 
 ___
 
@@ -363,6 +414,10 @@ ___
 
 `Promise`<`boolean`\>
 
+#### Implementation of
+
+[IKeyring](../interfaces/verida_account_web_vault._internal_.IKeyring.md).[verifySig](../interfaces/verida_account_web_vault._internal_.IKeyring.md#verifysig)
+
 #### Defined in
 
-packages/keyring/dist/keyring.d.ts:44
+packages/keyring/dist/keyring.d.ts:37

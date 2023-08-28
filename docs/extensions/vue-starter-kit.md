@@ -1,6 +1,6 @@
 ---
 title: Vue Components
-sidebar_position: 2
+sidebar_position: 4
 description: Verida Developer Documentation
 keywords: [Verida, Web3, Developers, Verifiable Credentials]
 ---

@@ -7,7 +7,6 @@
 ### Namespaces
 
 - [&lt;internal\&gt;](verida_storage_link._internal_.md)
-- [Interfaces](verida_storage_link.Interfaces.md)
 
 ### Classes
 

@@ -19,7 +19,7 @@
 
 #### Defined in
 
-packages/storage-link/dist/interfaces.d.ts:6
+packages/types/dist/StorageLinkInterfaces.d.ts:7
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 #### Defined in
 
-packages/storage-link/dist/interfaces.d.ts:7
+packages/types/dist/StorageLinkInterfaces.d.ts:8

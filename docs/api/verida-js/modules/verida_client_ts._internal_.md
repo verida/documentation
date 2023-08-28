@@ -6,28 +6,45 @@
 
 ## Table of contents
 
+### Namespaces
+
+- [EventEmitter](verida_client_ts._internal_.EventEmitter.md)
+
 ### Enumerations
 
-- [EndpointType](../enums/verida_client_ts._internal_.EndpointType.md)
+- [ContextEngineType](../enums/verida_client_ts._internal_.ContextEngineType.md)
+- [DatabasePermissionOptionsEnum](../enums/verida_client_ts._internal_.DatabasePermissionOptionsEnum.md)
+- [EnvironmentType](../enums/verida_client_ts._internal_.EnvironmentType.md)
+- [SecureContextEndpointType](../enums/verida_client_ts._internal_.SecureContextEndpointType.md)
 - [Type](../enums/verida_client_ts._internal_.Type.md)
 - [UsedValueState](../enums/verida_client_ts._internal_.UsedValueState.md)
 
 ### Modules Classes
 
-- [BaseStorageEngine](../classes/verida_client_ts._internal_.BaseStorageEngine.md)
 - [DIDContextManager](../classes/verida_client_ts._internal_.DIDContextManager.md)
+- [Datastore](../classes/verida_client_ts._internal_.Datastore.md)
 - [DbRegistry](../classes/verida_client_ts._internal_.DbRegistry.md)
+- [Profile](../classes/verida_client_ts._internal_.Profile.md)
+- [Schema](../classes/verida_client_ts._internal_.Schema.md)
 
 ### Other Classes
 
 - [Ajv2020](../classes/verida_client_ts._internal_.Ajv2020.md)
+- [BigNumber](../classes/verida_client_ts._internal_.BigNumber.md)
 - [CodeGen](../classes/verida_client_ts._internal_.CodeGen.md)
+- [DIDClient](../classes/verida_client_ts._internal_.DIDClient.md)
+- [Description](../classes/verida_client_ts._internal_.Description.md)
+- [EventEmitter](../classes/verida_client_ts._internal_.EventEmitter-1.md)
+- [ForkEvent](../classes/verida_client_ts._internal_.ForkEvent.md)
 - [KeywordCxt](../classes/verida_client_ts._internal_.KeywordCxt.md)
 - [Name](../classes/verida_client_ts._internal_.Name.md)
+- [Provider](../classes/verida_client_ts._internal_.Provider.md)
 - [SchemaEnv](../classes/verida_client_ts._internal_.SchemaEnv.md)
 - [Scope](../classes/verida_client_ts._internal_.Scope.md)
+- [Signer](../classes/verida_client_ts._internal_.Signer.md)
 - [ValueScope](../classes/verida_client_ts._internal_.ValueScope.md)
 - [ValueScopeName](../classes/verida_client_ts._internal_.ValueScopeName.md)
+- [VeridaNameClient](../classes/verida_client_ts._internal_.VeridaNameClient.md)
 - [\_Code](../classes/verida_client_ts._internal_._Code.md)
 - [\_CodeOrName](../classes/verida_client_ts._internal_._CodeOrName.md)
 - [default](../classes/verida_client_ts._internal_.default.md)
@@ -36,53 +53,98 @@
 - [default](../classes/verida_client_ts._internal_.default-3.md)
 - [default](../classes/verida_client_ts._internal_.default-4.md)
 - [default](../classes/verida_client_ts._internal_.default-5.md)
-- [default](../classes/verida_client_ts._internal_.default-6.md)
 
 ### Interfaces
 
+- [AbortSignal](../interfaces/verida_client_ts._internal_.AbortSignal.md)
+- [AccountConfig](../interfaces/verida_client_ts._internal_.AccountConfig.md)
+- [ArrayLike](../interfaces/verida_client_ts._internal_.ArrayLike.md)
 - [AsyncFormatDefinition](../interfaces/verida_client_ts._internal_.AsyncFormatDefinition.md)
+- [AsyncIterableIterator](../interfaces/verida_client_ts._internal_.AsyncIterableIterator.md)
+- [AsyncIterator](../interfaces/verida_client_ts._internal_.AsyncIterator.md)
 - [AsyncSchema](../interfaces/verida_client_ts._internal_.AsyncSchema.md)
 - [AsyncValidateFunction](../interfaces/verida_client_ts._internal_.AsyncValidateFunction.md)
+- [AuthContext](../interfaces/verida_client_ts._internal_.AuthContext.md)
+- [AuthTypeConfig](../interfaces/verida_client_ts._internal_.AuthTypeConfig.md)
+- [Block](../interfaces/verida_client_ts._internal_.Block.md)
+- [BlockWithTransactions](../interfaces/verida_client_ts._internal_.BlockWithTransactions.md)
 - [BoxKeyPair](../interfaces/verida_client_ts._internal_.BoxKeyPair.md)
 - [CallSite](../interfaces/verida_client_ts._internal_.CallSite.md)
 - [ClientConfig](../interfaces/verida_client_ts._internal_.ClientConfig.md)
 - [CodeGenOptions](../interfaces/verida_client_ts._internal_.CodeGenOptions.md)
 - [CodeKeywordDefinition](../interfaces/verida_client_ts._internal_.CodeKeywordDefinition.md)
 - [CodeOptions](../interfaces/verida_client_ts._internal_.CodeOptions.md)
+- [ContextCloseOptions](../interfaces/verida_client_ts._internal_.ContextCloseOptions.md)
 - [ContextConfig](../interfaces/verida_client_ts._internal_.ContextConfig.md)
+- [ContextDatabaseInfo](../interfaces/verida_client_ts._internal_.ContextDatabaseInfo.md)
+- [ContextInfo](../interfaces/verida_client_ts._internal_.ContextInfo.md)
 - [CurrentOptions](../interfaces/verida_client_ts._internal_.CurrentOptions.md)
+- [DIDClientConfig](../interfaces/verida_client_ts._internal_.DIDClientConfig.md)
 - [DIDContextConfigs](../interfaces/verida_client_ts._internal_.DIDContextConfigs.md)
-- [DIDDocumentStruct](../interfaces/verida_client_ts._internal_.DIDDocumentStruct.md)
+- [DOMEventTarget](../interfaces/verida_client_ts._internal_.DOMEventTarget.md)
 - [DataValidateFunction](../interfaces/verida_client_ts._internal_.DataValidateFunction.md)
 - [DataValidationCxt](../interfaces/verida_client_ts._internal_.DataValidationCxt.md)
+- [DatabaseCloseOptions](../interfaces/verida_client_ts._internal_.DatabaseCloseOptions.md)
+- [DatabaseDeleteConfig](../interfaces/verida_client_ts._internal_.DatabaseDeleteConfig.md)
 - [DatabaseEngines](../interfaces/verida_client_ts._internal_.DatabaseEngines.md)
+- [DatabaseOpenConfig](../interfaces/verida_client_ts._internal_.DatabaseOpenConfig.md)
+- [DatabasePermissionsConfig](../interfaces/verida_client_ts._internal_.DatabasePermissionsConfig.md)
+- [DatastoreOpenConfig](../interfaces/verida_client_ts._internal_.DatastoreOpenConfig.md)
 - [DbRegistryEntry](../interfaces/verida_client_ts._internal_.DbRegistryEntry.md)
 - [DbRegistryEntryEncryptionKey](../interfaces/verida_client_ts._internal_.DbRegistryEntryEncryptionKey.md)
 - [DefaultClientConfig](../interfaces/verida_client_ts._internal_.DefaultClientConfig.md)
 - [DefaultEnvironmentConfig](../interfaces/verida_client_ts._internal_.DefaultEnvironmentConfig.md)
 - [DeprecatedOptions](../interfaces/verida_client_ts._internal_.DeprecatedOptions.md)
-- [Endpoints](../interfaces/verida_client_ts._internal_.Endpoints.md)
+- [EndpointUsage](../interfaces/verida_client_ts._internal_.EndpointUsage.md)
 - [Error](../interfaces/verida_client_ts._internal_.Error.md)
 - [ErrorObject](../interfaces/verida_client_ts._internal_.ErrorObject.md)
 - [ErrorPaths](../interfaces/verida_client_ts._internal_.ErrorPaths.md)
 - [ErrorsTextOptions](../interfaces/verida_client_ts._internal_.ErrorsTextOptions.md)
 - [Evaluated](../interfaces/verida_client_ts._internal_.Evaluated.md)
-- [EventEmitter](../interfaces/verida_client_ts._internal_.EventEmitter.md)
-- [FetchUriParams](../interfaces/verida_client_ts._internal_.FetchUriParams.md)
+- [EventEmitterOptions](../interfaces/verida_client_ts._internal_.EventEmitterOptions.md)
+- [EventFilter](../interfaces/verida_client_ts._internal_.EventFilter.md)
+- [FeeData](../interfaces/verida_client_ts._internal_.FeeData.md)
+- [Filter](../interfaces/verida_client_ts._internal_.Filter.md)
 - [FormatDefinition](../interfaces/verida_client_ts._internal_.FormatDefinition.md)
 - [FuncKeywordDefinition](../interfaces/verida_client_ts._internal_.FuncKeywordDefinition.md)
+- [Hexable](../interfaces/verida_client_ts._internal_.Hexable.md)
+- [IAccount](../interfaces/verida_client_ts._internal_.IAccount.md)
+- [IClient](../interfaces/verida_client_ts._internal_.IClient.md)
+- [IContext](../interfaces/verida_client_ts._internal_.IContext.md)
+- [IDIDClient](../interfaces/verida_client_ts._internal_.IDIDClient.md)
+- [IDIDContextManager](../interfaces/verida_client_ts._internal_.IDIDContextManager.md)
+- [IDIDDocument](../interfaces/verida_client_ts._internal_.IDIDDocument.md)
+- [IDatabase](../interfaces/verida_client_ts._internal_.IDatabase.md)
+- [IDatastore](../interfaces/verida_client_ts._internal_.IDatastore.md)
+- [IDbRegistry](../interfaces/verida_client_ts._internal_.IDbRegistry.md)
+- [IKeyring](../interfaces/verida_client_ts._internal_.IKeyring.md)
+- [IMessaging](../interfaces/verida_client_ts._internal_.IMessaging.md)
+- [INotification](../interfaces/verida_client_ts._internal_.INotification.md)
+- [IProfile](../interfaces/verida_client_ts._internal_.IProfile.md)
+- [ISchema](../interfaces/verida_client_ts._internal_.ISchema.md)
+- [IStorageEngine](../interfaces/verida_client_ts._internal_.IStorageEngine.md)
 - [InstanceCodeOptions](../interfaces/verida_client_ts._internal_.InstanceCodeOptions.md)
+- [IteratorReturnResult](../interfaces/verida_client_ts._internal_.IteratorReturnResult.md)
+- [IteratorYieldResult](../interfaces/verida_client_ts._internal_.IteratorYieldResult.md)
 - [JsonWebKey](../interfaces/verida_client_ts._internal_.JsonWebKey.md)
+- [KeyringPublicKeys](../interfaces/verida_client_ts._internal_.KeyringPublicKeys.md)
 - [KeywordErrorCxt](../interfaces/verida_client_ts._internal_.KeywordErrorCxt.md)
 - [KeywordErrorDefinition](../interfaces/verida_client_ts._internal_.KeywordErrorDefinition.md)
+- [Log](../interfaces/verida_client_ts._internal_.Log.md)
 - [Logger](../interfaces/verida_client_ts._internal_.Logger.md)
 - [MacroKeywordDefinition](../interfaces/verida_client_ts._internal_.MacroKeywordDefinition.md)
+- [MessageSendConfig](../interfaces/verida_client_ts._internal_.MessageSendConfig.md)
+- [MessagesConfig](../interfaces/verida_client_ts._internal_.MessagesConfig.md)
+- [NameClientConfig](../interfaces/verida_client_ts._internal_.NameClientConfig.md)
 - [NameValue](../interfaces/verida_client_ts._internal_.NameValue.md)
 - [NetworkConnectionConfig](../interfaces/verida_client_ts._internal_.NetworkConnectionConfig.md)
+- [NodeEventTarget](../interfaces/verida_client_ts._internal_.NodeEventTarget.md)
 - [Number](../interfaces/verida_client_ts._internal_.Number.md)
 - [NumberKeywords](../interfaces/verida_client_ts._internal_.NumberKeywords.md)
+- [OnceBlockable](../interfaces/verida_client_ts._internal_.OnceBlockable.md)
 - [ProfileDocument](../interfaces/verida_client_ts._internal_.ProfileDocument.md)
-- [Proof](../interfaces/verida_client_ts._internal_.Proof.md)
+- [PromiseLike](../interfaces/verida_client_ts._internal_.PromiseLike.md)
+- [ProofInterface](../interfaces/verida_client_ts._internal_.ProofInterface.md)
 - [Rule](../interfaces/verida_client_ts._internal_.Rule.md)
 - [RuleGroup](../interfaces/verida_client_ts._internal_.RuleGroup.md)
 - [SchemaCxt](../interfaces/verida_client_ts._internal_.SchemaCxt.md)
@@ -94,39 +156,59 @@
 - [ScopePath](../interfaces/verida_client_ts._internal_.ScopePath.md)
 - [SecureContextConfig](../interfaces/verida_client_ts._internal_.SecureContextConfig.md)
 - [SecureContextEndpoint](../interfaces/verida_client_ts._internal_.SecureContextEndpoint.md)
-- [SecureContextEndpoint](../interfaces/verida_client_ts._internal_.SecureContextEndpoint-1.md)
+- [SecureContextEndpoints](../interfaces/verida_client_ts._internal_.SecureContextEndpoints.md)
 - [SecureContextPublicKey](../interfaces/verida_client_ts._internal_.SecureContextPublicKey.md)
 - [SecureContextServices](../interfaces/verida_client_ts._internal_.SecureContextServices.md)
 - [SecureStorageContextPublicKeys](../interfaces/verida_client_ts._internal_.SecureStorageContextPublicKeys.md)
-- [ServiceEndpoint](../interfaces/verida_client_ts._internal_.ServiceEndpoint.md)
+- [Service](../interfaces/verida_client_ts._internal_.Service.md)
 - [SignKeyPair](../interfaces/verida_client_ts._internal_.SignKeyPair.md)
 - [SourceCode](../interfaces/verida_client_ts._internal_.SourceCode.md)
+- [StaticEventEmitterOptions](../interfaces/verida_client_ts._internal_.StaticEventEmitterOptions.md)
 - [StringKeywords](../interfaces/verida_client_ts._internal_.StringKeywords.md)
+- [Transaction](../interfaces/verida_client_ts._internal_.Transaction.md)
+- [TransactionReceipt](../interfaces/verida_client_ts._internal_.TransactionReceipt.md)
+- [TransactionResponse](../interfaces/verida_client_ts._internal_.TransactionResponse.md)
 - [VSOptions](../interfaces/verida_client_ts._internal_.VSOptions.md)
 - [ValidateFunction](../interfaces/verida_client_ts._internal_.ValidateFunction.md)
 - [ValidationRules](../interfaces/verida_client_ts._internal_.ValidationRules.md)
 - [ValueScopeOptions](../interfaces/verida_client_ts._internal_.ValueScopeOptions.md)
+- [VdaDidEndpointResponse](../interfaces/verida_client_ts._internal_.VdaDidEndpointResponse.md)
+- [VeridaDocInterface](../interfaces/verida_client_ts._internal_.VeridaDocInterface.md)
 - [VerificationMethod](../interfaces/verida_client_ts._internal_.VerificationMethod.md)
+- [Web3GasConfiguration](../interfaces/verida_client_ts._internal_.Web3GasConfiguration.md)
+- [Web3GaslessPostConfig](../interfaces/verida_client_ts._internal_.Web3GaslessPostConfig.md)
+- [Web3GaslessRequestConfig](../interfaces/verida_client_ts._internal_.Web3GaslessRequestConfig.md)
+- [Web3MetaTransactionConfig](../interfaces/verida_client_ts._internal_.Web3MetaTransactionConfig.md)
+- [Web3SelfTransactionConfig](../interfaces/verida_client_ts._internal_.Web3SelfTransactionConfig.md)
+- [Web3SelfTransactionConfigPart](../interfaces/verida_client_ts._internal_.Web3SelfTransactionConfigPart.md)
+- [\_Block](../interfaces/verida_client_ts._internal_._Block.md)
 - [\_KeywordDef](../interfaces/verida_client_ts._internal_._KeywordDef.md)
 - [\_SchemaObject](../interfaces/verida_client_ts._internal_._SchemaObject.md)
-- [default](../interfaces/verida_client_ts._internal_.default-7.md)
 
 ### Type aliases
 
+- [AccessList](verida_client_ts._internal_.md#accesslist)
+- [AccessListish](verida_client_ts._internal_.md#accesslistish)
 - [AddedFormat](verida_client_ts._internal_.md#addedformat)
 - [AddedKeywordDefinition](verida_client_ts._internal_.md#addedkeyworddefinition)
 - [AnySchema](verida_client_ts._internal_.md#anyschema)
 - [AnySchemaObject](verida_client_ts._internal_.md#anyschemaobject)
 - [AnyValidateFunction](verida_client_ts._internal_.md#anyvalidatefunction)
 - [AsyncFormatValidator](verida_client_ts._internal_.md#asyncformatvalidator)
+- [BigNumberish](verida_client_ts._internal_.md#bignumberish)
 - [Block](verida_client_ts._internal_.md#block)
+- [BlockTag](verida_client_ts._internal_.md#blocktag)
+- [Bytes](verida_client_ts._internal_.md#bytes)
+- [BytesLike](verida_client_ts._internal_.md#byteslike)
 - [Code](verida_client_ts._internal_.md#code)
 - [CodeItem](verida_client_ts._internal_.md#codeitem)
 - [CompileKeywordFunc](verida_client_ts._internal_.md#compilekeywordfunc)
 - [DIDDocument](verida_client_ts._internal_.md#diddocument)
+- [Deferrable](verida_client_ts._internal_.md#deferrable)
 - [EnumString](verida_client_ts._internal_.md#enumstring)
 - [EvaluatedItems](verida_client_ts._internal_.md#evaluateditems)
 - [EvaluatedProperties](verida_client_ts._internal_.md#evaluatedproperties)
+- [EventType](verida_client_ts._internal_.md#eventtype)
 - [Exclude](verida_client_ts._internal_.md#exclude)
 - [Extensible](verida_client_ts._internal_.md#extensible)
 - [Format](verida_client_ts._internal_.md#format)
@@ -139,6 +221,7 @@
 - [IsUnion](verida_client_ts._internal_.md#isunion)
 - [IsUnion\_](verida_client_ts._internal_.md#isunion_)
 - [IsValues](verida_client_ts._internal_.md#isvalues)
+- [IteratorResult](verida_client_ts._internal_.md#iteratorresult)
 - [JSONType](verida_client_ts._internal_.md#jsontype)
 - [JSONType](verida_client_ts._internal_.md#jsontype)
 - [JTDDataDef](verida_client_ts._internal_.md#jtddatadef)
@@ -148,8 +231,10 @@
 - [KeywordCxtParams](verida_client_ts._internal_.md#keywordcxtparams)
 - [KeywordDefinition](verida_client_ts._internal_.md#keyworddefinition)
 - [Known](verida_client_ts._internal_.md#known)
+- [Listener](verida_client_ts._internal_.md#listener)
 - [LocalRefs](verida_client_ts._internal_.md#localrefs)
 - [MacroKeywordFunc](verida_client_ts._internal_.md#macrokeywordfunc)
+- [Network](verida_client_ts._internal_.md#network)
 - [NonNullable](verida_client_ts._internal_.md#nonnullable)
 - [NullTypeEquality](verida_client_ts._internal_.md#nulltypeequality)
 - [Nullable](verida_client_ts._internal_.md#nullable)
@@ -169,8 +254,10 @@
 - [ScopeStore](verida_client_ts._internal_.md#scopestore)
 - [ScopeValueSets](verida_client_ts._internal_.md#scopevaluesets)
 - [ScopeValues](verida_client_ts._internal_.md#scopevalues)
+- [ServiceEndpoint](verida_client_ts._internal_.md#serviceendpoint)
 - [SomeJTDSchemaType](verida_client_ts._internal_.md#somejtdschematype)
 - [StringType](verida_client_ts._internal_.md#stringtype)
+- [TransactionRequest](verida_client_ts._internal_.md#transactionrequest)
 - [TypeEquality](verida_client_ts._internal_.md#typeequality)
 - [UncheckedJSONSchemaType](verida_client_ts._internal_.md#uncheckedjsonschematype)
 - [UncheckedPartialSchema](verida_client_ts._internal_.md#uncheckedpartialschema)
@@ -181,10 +268,13 @@
 - [UsedScopeValues](verida_client_ts._internal_.md#usedscopevalues)
 - [ValidationTypes](verida_client_ts._internal_.md#validationtypes)
 - [ValueReference](verida_client_ts._internal_.md#valuereference)
+- [VdaDidEndpointResponses](verida_client_ts._internal_.md#vdadidendpointresponses)
 - [Vocabulary](verida_client_ts._internal_.md#vocabulary)
+- [Web3CallType](verida_client_ts._internal_.md#web3calltype)
 
 ### Variables
 
+- [AbortSignal](verida_client_ts._internal_.md#abortsignal)
 - [Error](verida_client_ts._internal_.md#error)
 - [EventEmitter](verida_client_ts._internal_.md#eventemitter)
 - [Number](verida_client_ts._internal_.md#number)
@@ -192,13 +282,33 @@
 
 ## Type aliases
 
+### AccessList
+
+Ƭ **AccessList**: { `address`: `string` ; `storageKeys`: `string`[]  }[]
+
+#### Defined in
+
+node_modules/@ethersproject/transactions/lib/index.d.ts:3
+
+___
+
+### AccessListish
+
+Ƭ **AccessListish**: [`AccessList`](verida_client_ts._internal_.md#accesslist) \| [`string`, `string`[]][] \| [`Record`](verida_client_ts._internal_.md#record)<`string`, `string`[]\>
+
+#### Defined in
+
+node_modules/@ethersproject/transactions/lib/index.d.ts:7
+
+___
+
 ### AddedFormat
 
 Ƭ **AddedFormat**: ``true`` \| `RegExp` \| [`FormatValidator`](verida_client_ts._internal_.md#formatvalidator)<`string`\> \| [`FormatDefinition`](../interfaces/verida_client_ts._internal_.FormatDefinition.md)<`string`\> \| [`FormatDefinition`](../interfaces/verida_client_ts._internal_.FormatDefinition.md)<`number`\> \| [`AsyncFormatDefinition`](../interfaces/verida_client_ts._internal_.AsyncFormatDefinition.md)<`string`\> \| [`AsyncFormatDefinition`](../interfaces/verida_client_ts._internal_.AsyncFormatDefinition.md)<`number`\>
 
 #### Defined in
 
-node_modules/ajv/dist/types/index.d.ts:168
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:168
 
 ___
 
@@ -208,7 +318,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/types/index.d.ts:127
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:127
 
 ___
 
@@ -218,7 +328,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/types/index.d.ts:24
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:24
 
 ___
 
@@ -228,7 +338,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/types/index.d.ts:22
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:22
 
 ___
 
@@ -244,7 +354,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/types/index.d.ts:72
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:72
 
 ___
 
@@ -274,7 +384,17 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/types/index.d.ts:155
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:155
+
+___
+
+### BigNumberish
+
+Ƭ **BigNumberish**: [`BigNumber`](../classes/verida_client_ts._internal_.BigNumber.md) \| [`Bytes`](verida_client_ts._internal_.md#bytes) \| `bigint` \| `string` \| `number`
+
+#### Defined in
+
+node_modules/@ethersproject/bignumber/lib/bignumber.d.ts:2
 
 ___
 
@@ -284,7 +404,37 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/index.d.ts:7
+packages/client-ts/node_modules/ajv/dist/compile/codegen/index.d.ts:7
+
+___
+
+### BlockTag
+
+Ƭ **BlockTag**: `string` \| `number`
+
+#### Defined in
+
+node_modules/@ethersproject/abstract-provider/lib/index.d.ts:33
+
+___
+
+### Bytes
+
+Ƭ **Bytes**: [`ArrayLike`](../interfaces/verida_client_ts._internal_.ArrayLike.md)<`number`\>
+
+#### Defined in
+
+node_modules/@ethersproject/bytes/lib/index.d.ts:1
+
+___
+
+### BytesLike
+
+Ƭ **BytesLike**: [`Bytes`](verida_client_ts._internal_.md#bytes) \| `string`
+
+#### Defined in
+
+node_modules/@ethersproject/bytes/lib/index.d.ts:2
 
 ___
 
@@ -294,7 +444,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/code.d.ts:27
+packages/client-ts/node_modules/ajv/dist/compile/codegen/code.d.ts:27
 
 ___
 
@@ -304,7 +454,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/code.d.ts:25
+packages/client-ts/node_modules/ajv/dist/compile/codegen/code.d.ts:25
 
 ___
 
@@ -330,17 +480,37 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/types/index.d.ts:105
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:105
 
 ___
 
 ### DIDDocument
 
-Ƭ **DIDDocument**: { `@context?`: ``"https://www.w3.org/ns/did/v1"`` \| `string` \| `string`[] ; `alsoKnownAs?`: `string`[] ; `controller?`: `string` \| `string`[] ; `id`: `string` ; `publicKey?`: [`VerificationMethod`](../interfaces/verida_client_ts._internal_.VerificationMethod.md)[] ; `service?`: [`ServiceEndpoint`](../interfaces/verida_client_ts._internal_.ServiceEndpoint.md)[] ; `verificationMethod?`: [`VerificationMethod`](../interfaces/verida_client_ts._internal_.VerificationMethod.md)[]  } & { [x in KeyCapabilitySection]?: (string \| VerificationMethod)[] }
+Ƭ **DIDDocument**: { `@context?`: ``"https://www.w3.org/ns/did/v1"`` \| `string` \| `string`[] ; `alsoKnownAs?`: `string`[] ; `controller?`: `string` \| `string`[] ; `id`: `string` ; `publicKey?`: [`VerificationMethod`](../interfaces/verida_client_ts._internal_.VerificationMethod.md)[] ; `service?`: [`Service`](../interfaces/verida_client_ts._internal_.Service.md)[] ; `verificationMethod?`: [`VerificationMethod`](../interfaces/verida_client_ts._internal_.VerificationMethod.md)[]  } & { [x in KeyCapabilitySection]?: (string \| VerificationMethod)[] }
+
+Represents a DID document.
+
+**`see`** [https://www.w3.org/TR/did-core/#did-document-properties](https://www.w3.org/TR/did-core/#did-document-properties)
 
 #### Defined in
 
-packages/did-document/node_modules/did-resolver/lib/resolver.d.ts:25
+node_modules/did-resolver/lib/resolver.d.ts:60
+
+___
+
+### Deferrable
+
+Ƭ **Deferrable**<`T`\>: { [K in keyof T]: T[K] \| Promise<T[K]\> }
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `T` |
+
+#### Defined in
+
+node_modules/@ethersproject/properties/lib/index.d.ts:3
 
 ___
 
@@ -358,7 +528,7 @@ gets only the string literals of a type or null if a type isn't a string literal
 
 #### Defined in
 
-node_modules/ajv/dist/types/jtd-schema.d.ts:49
+packages/client-ts/node_modules/ajv/dist/types/jtd-schema.d.ts:49
 
 ___
 
@@ -368,7 +538,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/types/index.d.ts:61
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:61
 
 ___
 
@@ -378,7 +548,17 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/types/index.d.ts:58
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:58
+
+___
+
+### EventType
+
+Ƭ **EventType**: `string` \| (`string` \| `string`[])[] \| [`EventFilter`](../interfaces/verida_client_ts._internal_.EventFilter.md) \| [`ForkEvent`](../classes/verida_client_ts._internal_.ForkEvent.md)
+
+#### Defined in
+
+node_modules/@ethersproject/abstract-provider/lib/index.d.ts:121
 
 ___
 
@@ -405,9 +585,11 @@ ___
 
 Ƭ **Extensible**: [`Record`](verida_client_ts._internal_.md#record)<`string`, `any`\>
 
+Defines an object type that can be extended with other properties.
+
 #### Defined in
 
-packages/did-document/node_modules/did-resolver/lib/resolver.d.ts:1
+node_modules/did-resolver/lib/resolver.d.ts:4
 
 ___
 
@@ -417,7 +599,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/types/index.d.ts:169
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:169
 
 ___
 
@@ -448,7 +630,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/types/index.d.ts:154
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:154
 
 ___
 
@@ -478,7 +660,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/types/index.d.ts:153
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:153
 
 ___
 
@@ -488,7 +670,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:96
+packages/client-ts/node_modules/ajv/dist/core.d.ts:96
 
 ___
 
@@ -506,7 +688,7 @@ true only if all types are array types (not tuples)
 
 #### Defined in
 
-node_modules/ajv/dist/types/jtd-schema.d.ts:53
+packages/client-ts/node_modules/ajv/dist/types/jtd-schema.d.ts:53
 
 ___
 
@@ -524,7 +706,7 @@ true if type is a union of string literals
 
 #### Defined in
 
-node_modules/ajv/dist/types/jtd-schema.d.ts:51
+packages/client-ts/node_modules/ajv/dist/types/jtd-schema.d.ts:51
 
 ___
 
@@ -543,7 +725,7 @@ true if type is a proeprties type and Union is false, or type is a discriminator
 
 #### Defined in
 
-node_modules/ajv/dist/types/jtd-schema.d.ts:57
+packages/client-ts/node_modules/ajv/dist/types/jtd-schema.d.ts:57
 
 ___
 
@@ -559,7 +741,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/types/jtd-schema.d.ts:43
+packages/client-ts/node_modules/ajv/dist/types/jtd-schema.d.ts:43
 
 ___
 
@@ -578,7 +760,7 @@ type is true if T is a union type
 
 #### Defined in
 
-node_modules/ajv/dist/types/jtd-schema.d.ts:42
+packages/client-ts/node_modules/ajv/dist/types/jtd-schema.d.ts:42
 
 ___
 
@@ -596,7 +778,24 @@ true if the the type is a values type
 
 #### Defined in
 
-node_modules/ajv/dist/types/jtd-schema.d.ts:55
+packages/client-ts/node_modules/ajv/dist/types/jtd-schema.d.ts:55
+
+___
+
+### IteratorResult
+
+Ƭ **IteratorResult**<`T`, `TReturn`\>: [`IteratorYieldResult`](../interfaces/verida_client_ts._internal_.IteratorYieldResult.md)<`T`\> \| [`IteratorReturnResult`](../interfaces/verida_client_ts._internal_.IteratorReturnResult.md)<`TReturn`\>
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | `T` |
+| `TReturn` | `any` |
+
+#### Defined in
+
+node_modules/typescript/lib/lib.es2015.iterable.d.ts:41
 
 ___
 
@@ -606,7 +805,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/rules.d.ts:3
+packages/client-ts/node_modules/ajv/dist/compile/rules.d.ts:3
 
 ___
 
@@ -623,7 +822,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/types/json-schema.d.ts:6
+packages/client-ts/node_modules/ajv/dist/types/json-schema.d.ts:6
 
 ___
 
@@ -640,7 +839,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/types/jtd-schema.d.ts:121
+packages/client-ts/node_modules/ajv/dist/types/jtd-schema.d.ts:121
 
 ___
 
@@ -656,7 +855,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/types/jtd-schema.d.ts:165
+packages/client-ts/node_modules/ajv/dist/types/jtd-schema.d.ts:165
 
 ___
 
@@ -675,7 +874,7 @@ actual schema
 
 #### Defined in
 
-node_modules/ajv/dist/types/jtd-schema.d.ts:59
+packages/client-ts/node_modules/ajv/dist/types/jtd-schema.d.ts:59
 
 ___
 
@@ -683,9 +882,13 @@ ___
 
 Ƭ **KeyCapabilitySection**: ``"authentication"`` \| ``"assertionMethod"`` \| ``"keyAgreement"`` \| ``"capabilityInvocation"`` \| ``"capabilityDelegation"``
 
+Represents the Verification Relationship between a DID subject and a Verification Method.
+
+**`see`** [https://www.w3.org/TR/did-core/#verification-relationships](https://www.w3.org/TR/did-core/#verification-relationships)
+
 #### Defined in
 
-packages/did-document/node_modules/did-resolver/lib/resolver.d.ts:24
+node_modules/did-resolver/lib/resolver.d.ts:54
 
 ___
 
@@ -695,7 +898,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/types/index.d.ts:150
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:150
 
 ___
 
@@ -705,7 +908,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/types/index.d.ts:126
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:126
 
 ___
 
@@ -715,7 +918,31 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/types/json-schema.d.ts:101
+packages/client-ts/node_modules/ajv/dist/types/json-schema.d.ts:101
+
+___
+
+### Listener
+
+Ƭ **Listener**: (...`args`: `any`[]) => `void`
+
+#### Type declaration
+
+▸ (...`args`): `void`
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `...args` | `any`[] |
+
+##### Returns
+
+`void`
+
+#### Defined in
+
+node_modules/@ethersproject/abstract-provider/lib/index.d.ts:122
 
 ___
 
@@ -725,7 +952,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/resolve.d.ts:4
+packages/client-ts/node_modules/ajv/dist/compile/resolve.d.ts:4
 
 ___
 
@@ -751,7 +978,26 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/types/index.d.ts:104
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:104
+
+___
+
+### Network
+
+Ƭ **Network**: `Object`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `chainId` | `number` |
+| `ensAddress?` | `string` |
+| `name` | `string` |
+| `_defaultProvider?` | (`providers`: `any`, `options?`: `any`) => `any` |
+
+#### Defined in
+
+node_modules/@ethersproject/networks/lib/types.d.ts:1
 
 ___
 
@@ -788,7 +1034,7 @@ type is true if T or null is identically E or null
 
 #### Defined in
 
-node_modules/ajv/dist/types/jtd-schema.d.ts:47
+packages/client-ts/node_modules/ajv/dist/types/jtd-schema.d.ts:47
 
 ___
 
@@ -804,7 +1050,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/types/json-schema.d.ts:114
+packages/client-ts/node_modules/ajv/dist/types/json-schema.d.ts:114
 
 ___
 
@@ -816,7 +1062,7 @@ numeric strings
 
 #### Defined in
 
-node_modules/ajv/dist/types/jtd-schema.d.ts:2
+packages/client-ts/node_modules/ajv/dist/types/jtd-schema.d.ts:2
 
 ___
 
@@ -853,7 +1099,7 @@ optional or undifined-able keys of an object
 
 #### Defined in
 
-node_modules/ajv/dist/types/jtd-schema.d.ts:38
+packages/client-ts/node_modules/ajv/dist/types/jtd-schema.d.ts:38
 
 ___
 
@@ -863,7 +1109,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:21
+packages/client-ts/node_modules/ajv/dist/core.d.ts:21
 
 ___
 
@@ -947,7 +1193,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:91
+packages/client-ts/node_modules/ajv/dist/core.d.ts:91
 
 ___
 
@@ -965,7 +1211,7 @@ required keys of an object, not undefined
 
 #### Defined in
 
-node_modules/ajv/dist/types/jtd-schema.d.ts:34
+packages/client-ts/node_modules/ajv/dist/types/jtd-schema.d.ts:34
 
 ___
 
@@ -975,7 +1221,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/index.d.ts:6
+packages/client-ts/node_modules/ajv/dist/compile/codegen/index.d.ts:6
 
 ___
 
@@ -985,7 +1231,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/types/index.d.ts:23
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:23
 
 ___
 
@@ -995,7 +1241,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/index.d.ts:7
+packages/client-ts/node_modules/ajv/dist/compile/index.d.ts:7
 
 ___
 
@@ -1005,7 +1251,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/scope.d.ts:21
+packages/client-ts/node_modules/ajv/dist/compile/codegen/scope.d.ts:21
 
 ___
 
@@ -1015,7 +1261,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/scope.d.ts:25
+packages/client-ts/node_modules/ajv/dist/compile/codegen/scope.d.ts:25
 
 ___
 
@@ -1025,7 +1271,23 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/scope.d.ts:22
+packages/client-ts/node_modules/ajv/dist/compile/codegen/scope.d.ts:22
+
+___
+
+### ServiceEndpoint
+
+Ƭ **ServiceEndpoint**: `string` \| [`Record`](verida_client_ts._internal_.md#record)<`string`, `any`\>
+
+Represents an endpoint of a Service entry in a DID document.
+
+**`see`** [https://www.w3.org/TR/did-core/#dfn-serviceendpoint](https://www.w3.org/TR/did-core/#dfn-serviceendpoint)
+
+**`see`** [https://www.w3.org/TR/did-core/#services](https://www.w3.org/TR/did-core/#services)
+
+#### Defined in
+
+node_modules/did-resolver/lib/resolver.d.ts:92
 
 ___
 
@@ -1037,7 +1299,7 @@ Generic JTD Schema without inference of the represented type
 
 #### Defined in
 
-node_modules/ajv/dist/types/jtd-schema.d.ts:6
+packages/client-ts/node_modules/ajv/dist/types/jtd-schema.d.ts:6
 
 ___
 
@@ -1049,7 +1311,36 @@ string strings
 
 #### Defined in
 
-node_modules/ajv/dist/types/jtd-schema.d.ts:4
+packages/client-ts/node_modules/ajv/dist/types/jtd-schema.d.ts:4
+
+___
+
+### TransactionRequest
+
+Ƭ **TransactionRequest**: `Object`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `accessList?` | [`AccessListish`](verida_client_ts._internal_.md#accesslistish) |
+| `ccipReadEnabled?` | `boolean` |
+| `chainId?` | `number` |
+| `customData?` | [`Record`](verida_client_ts._internal_.md#record)<`string`, `any`\> |
+| `data?` | [`BytesLike`](verida_client_ts._internal_.md#byteslike) |
+| `from?` | `string` |
+| `gasLimit?` | [`BigNumberish`](verida_client_ts._internal_.md#bignumberish) |
+| `gasPrice?` | [`BigNumberish`](verida_client_ts._internal_.md#bignumberish) |
+| `maxFeePerGas?` | [`BigNumberish`](verida_client_ts._internal_.md#bignumberish) |
+| `maxPriorityFeePerGas?` | [`BigNumberish`](verida_client_ts._internal_.md#bignumberish) |
+| `nonce?` | [`BigNumberish`](verida_client_ts._internal_.md#bignumberish) |
+| `to?` | `string` |
+| `type?` | `number` |
+| `value?` | [`BigNumberish`](verida_client_ts._internal_.md#bignumberish) |
+
+#### Defined in
+
+node_modules/@ethersproject/abstract-provider/lib/index.d.ts:7
 
 ___
 
@@ -1068,7 +1359,7 @@ type is true if T is identically E
 
 #### Defined in
 
-node_modules/ajv/dist/types/jtd-schema.d.ts:45
+packages/client-ts/node_modules/ajv/dist/types/jtd-schema.d.ts:45
 
 ___
 
@@ -1085,7 +1376,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/types/json-schema.d.ts:21
+packages/client-ts/node_modules/ajv/dist/types/json-schema.d.ts:21
 
 ___
 
@@ -1101,7 +1392,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/types/json-schema.d.ts:4
+packages/client-ts/node_modules/ajv/dist/types/json-schema.d.ts:4
 
 ___
 
@@ -1117,7 +1408,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/types/json-schema.d.ts:104
+packages/client-ts/node_modules/ajv/dist/types/json-schema.d.ts:104
 
 ___
 
@@ -1133,7 +1424,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/types/json-schema.d.ts:110
+packages/client-ts/node_modules/ajv/dist/types/json-schema.d.ts:110
 
 ___
 
@@ -1149,7 +1440,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/types/json-schema.d.ts:2
+packages/client-ts/node_modules/ajv/dist/types/json-schema.d.ts:2
 
 ___
 
@@ -1159,7 +1450,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/code.d.ts:26
+packages/client-ts/node_modules/ajv/dist/compile/codegen/code.d.ts:26
 
 ___
 
@@ -1169,7 +1460,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/scope.d.ts:32
+packages/client-ts/node_modules/ajv/dist/compile/codegen/scope.d.ts:32
 
 ___
 
@@ -1179,7 +1470,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/rules.d.ts:5
+packages/client-ts/node_modules/ajv/dist/compile/rules.d.ts:5
 
 ___
 
@@ -1189,7 +1480,17 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/scope.d.ts:11
+packages/client-ts/node_modules/ajv/dist/compile/codegen/scope.d.ts:11
+
+___
+
+### VdaDidEndpointResponses
+
+Ƭ **VdaDidEndpointResponses**: [`Record`](verida_client_ts._internal_.md#record)<`string`, [`VdaDidEndpointResponse`](../interfaces/verida_client_ts._internal_.VdaDidEndpointResponse.md)\>
+
+#### Defined in
+
+packages/types/dist/Web3Interfaces.d.ts:100
 
 ___
 
@@ -1199,9 +1500,37 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/types/index.d.ts:135
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:135
+
+___
+
+### Web3CallType
+
+Ƭ **Web3CallType**: ``"web3"`` \| ``"gasless"``
+
+Web3 SDK running mode
+
+#### Defined in
+
+packages/types/dist/Web3Interfaces.d.ts:5
 
 ## Variables
+
+### AbortSignal
+
+• **AbortSignal**: `Object`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `prototype` | [`AbortSignal`](verida_client_ts._internal_.md#abortsignal) |
+
+#### Defined in
+
+node_modules/@types/node/globals.d.ts:72
+
+___
 
 ### Error
 
@@ -1219,7 +1548,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/profiles/profile.ts:1](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/profiles/profile.ts#L1)
+[packages/client-ts/src/context/profiles/profile.ts:1](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/profiles/profile.ts#L1)
 
 ___
 
@@ -1241,4 +1570,4 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/rules.d.ts:2
+packages/client-ts/node_modules/ajv/dist/compile/rules.d.ts:2

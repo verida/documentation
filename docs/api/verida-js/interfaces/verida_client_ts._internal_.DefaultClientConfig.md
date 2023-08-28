@@ -16,7 +16,6 @@
 
 - [defaultDatabaseServerUrl](verida_client_ts._internal_.DefaultClientConfig.md#defaultdatabaseserverurl)
 - [defaultMessageServerUrl](verida_client_ts._internal_.DefaultClientConfig.md#defaultmessageserverurl)
-- [didServerUrl](verida_client_ts._internal_.DefaultClientConfig.md#didserverurl)
 - [environment](verida_client_ts._internal_.DefaultClientConfig.md#environment)
 - [environments](verida_client_ts._internal_.DefaultClientConfig.md#environments)
 - [schemaPaths](verida_client_ts._internal_.DefaultClientConfig.md#schemapaths)
@@ -34,7 +33,7 @@
 
 #### Defined in
 
-[packages/client-ts/src/interfaces.ts:79](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/interfaces.ts#L79)
+packages/types/dist/NetworkInterfaces.d.ts:11
 
 ___
 
@@ -48,31 +47,17 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/interfaces.ts:80](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/interfaces.ts#L80)
-
-___
-
-### didServerUrl
-
-• `Optional` **didServerUrl**: `string`
-
-#### Inherited from
-
-[DefaultEnvironmentConfig](verida_client_ts._internal_.DefaultEnvironmentConfig.md).[didServerUrl](verida_client_ts._internal_.DefaultEnvironmentConfig.md#didserverurl)
-
-#### Defined in
-
-[packages/client-ts/src/interfaces.ts:78](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/interfaces.ts#L78)
+packages/types/dist/NetworkInterfaces.d.ts:12
 
 ___
 
 ### environment
 
-• **environment**: `string`
+• **environment**: [`EnvironmentType`](../enums/verida_client_ts._internal_.EnvironmentType.md)
 
 #### Defined in
 
-[packages/client-ts/src/interfaces.ts:85](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/interfaces.ts#L85)
+packages/types/dist/NetworkInterfaces.d.ts:16
 
 ___
 
@@ -82,7 +67,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/interfaces.ts:86](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/interfaces.ts#L86)
+packages/types/dist/NetworkInterfaces.d.ts:17
 
 ___
 
@@ -96,7 +81,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/interfaces.ts:81](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/interfaces.ts#L81)
+packages/types/dist/NetworkInterfaces.d.ts:13
 
 ___
 
@@ -106,4 +91,4 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/interfaces.ts:87](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/interfaces.ts#L87)
+packages/types/dist/NetworkInterfaces.d.ts:18

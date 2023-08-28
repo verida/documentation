@@ -22,7 +22,7 @@
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:85
+packages/client-ts/node_modules/ajv/dist/core.d.ts:85
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:87
+packages/client-ts/node_modules/ajv/dist/core.d.ts:87
 
 ___
 
@@ -46,4 +46,4 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:89
+packages/client-ts/node_modules/ajv/dist/core.d.ts:89

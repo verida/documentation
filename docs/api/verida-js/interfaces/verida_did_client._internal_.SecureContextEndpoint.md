@@ -20,17 +20,17 @@
 
 #### Defined in
 
-packages/did-document/dist/interfaces.d.ts:5
+packages/types/dist/DocumentInterfaces.d.ts:5
 
 ___
 
 ### endpointUri
 
-• **endpointUri**: `string`
+• **endpointUri**: [`ServiceEndpoint`](../modules/verida_did_client._internal_.md#serviceendpoint)[]
 
 #### Defined in
 
-packages/did-document/dist/interfaces.d.ts:4
+packages/types/dist/DocumentInterfaces.d.ts:4
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 #### Defined in
 
-packages/did-document/dist/interfaces.d.ts:3
+packages/types/dist/DocumentInterfaces.d.ts:3

@@ -7,7 +7,6 @@
 ### Namespaces
 
 - [&lt;internal\&gt;](verida_did_document._internal_.md)
-- [Interfaces](verida_did_document.Interfaces.md)
 
 ### Classes
 
