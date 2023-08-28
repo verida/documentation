@@ -4,6 +4,15 @@
 
 [@verida/did-client](../modules/verida_did_client.md).[<internal\>](../modules/verida_did_client._internal_.md).VerificationMethod
 
+Represents the properties of a Verification Method listed in a DID document.
+
+This data type includes public key representations that are no longer present in the spec but are still used by
+several DID methods / resolvers and kept for backward compatibility.
+
+**`see`** [https://www.w3.org/TR/did-core/#verification-methods](https://www.w3.org/TR/did-core/#verification-methods)
+
+**`see`** [https://www.w3.org/TR/did-core/#verification-method-properties](https://www.w3.org/TR/did-core/#verification-method-properties)
+
 ## Table of contents
 
 ### Properties
@@ -27,7 +36,7 @@
 
 #### Defined in
 
-packages/did-document/node_modules/did-resolver/lib/resolver.d.ts:67
+node_modules/did-resolver/lib/resolver.d.ts:133
 
 ___
 
@@ -37,7 +46,7 @@ ___
 
 #### Defined in
 
-packages/did-document/node_modules/did-resolver/lib/resolver.d.ts:61
+node_modules/did-resolver/lib/resolver.d.ts:127
 
 ___
 
@@ -47,7 +56,7 @@ ___
 
 #### Defined in
 
-packages/did-document/node_modules/did-resolver/lib/resolver.d.ts:68
+node_modules/did-resolver/lib/resolver.d.ts:134
 
 ___
 
@@ -57,7 +66,7 @@ ___
 
 #### Defined in
 
-packages/did-document/node_modules/did-resolver/lib/resolver.d.ts:59
+node_modules/did-resolver/lib/resolver.d.ts:125
 
 ___
 
@@ -67,7 +76,7 @@ ___
 
 #### Defined in
 
-packages/did-document/node_modules/did-resolver/lib/resolver.d.ts:62
+node_modules/did-resolver/lib/resolver.d.ts:128
 
 ___
 
@@ -77,7 +86,7 @@ ___
 
 #### Defined in
 
-packages/did-document/node_modules/did-resolver/lib/resolver.d.ts:63
+node_modules/did-resolver/lib/resolver.d.ts:129
 
 ___
 
@@ -87,7 +96,7 @@ ___
 
 #### Defined in
 
-packages/did-document/node_modules/did-resolver/lib/resolver.d.ts:65
+node_modules/did-resolver/lib/resolver.d.ts:131
 
 ___
 
@@ -97,7 +106,7 @@ ___
 
 #### Defined in
 
-packages/did-document/node_modules/did-resolver/lib/resolver.d.ts:64
+node_modules/did-resolver/lib/resolver.d.ts:130
 
 ___
 
@@ -107,7 +116,7 @@ ___
 
 #### Defined in
 
-packages/did-document/node_modules/did-resolver/lib/resolver.d.ts:66
+node_modules/did-resolver/lib/resolver.d.ts:132
 
 ___
 
@@ -117,4 +126,4 @@ ___
 
 #### Defined in
 
-packages/did-document/node_modules/did-resolver/lib/resolver.d.ts:60
+node_modules/did-resolver/lib/resolver.d.ts:126

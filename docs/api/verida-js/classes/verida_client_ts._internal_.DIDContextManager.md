@@ -35,31 +35,31 @@
 
 | Name | Type |
 | :------ | :------ |
-| `didClient` | [`default`](verida_client_ts._internal_.default.md) |
+| `didClient` | [`DIDClient`](verida_client_ts._internal_.DIDClient.md) |
 
 #### Defined in
 
-[packages/client-ts/src/did-context-manager.ts:25](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/did-context-manager.ts#L25)
+[packages/client-ts/src/did-context-manager.ts:22](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/did-context-manager.ts#L22)
 
 ## Properties
 
 ### account
 
-• `Private` `Optional` **account**: [`default`](verida_client_ts._internal_.default-1.md)
+• `Private` `Optional` **account**: [`IAccount`](../interfaces/verida_client_ts._internal_.IAccount.md)
 
 #### Defined in
 
-[packages/client-ts/src/did-context-manager.ts:23](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/did-context-manager.ts#L23)
+[packages/client-ts/src/did-context-manager.ts:20](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/did-context-manager.ts#L20)
 
 ___
 
 ### didClient
 
-• `Private` **didClient**: [`default`](verida_client_ts._internal_.default.md)
+• `Private` **didClient**: [`DIDClient`](verida_client_ts._internal_.DIDClient.md)
 
 #### Defined in
 
-[packages/client-ts/src/did-context-manager.ts:22](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/did-context-manager.ts#L22)
+[packages/client-ts/src/did-context-manager.ts:19](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/did-context-manager.ts#L19)
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/did-context-manager.ts:20](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/did-context-manager.ts#L20)
+[packages/client-ts/src/did-context-manager.ts:17](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/did-context-manager.ts#L17)
 
 ## Methods
 
@@ -91,7 +91,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/did-context-manager.ts:33](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/did-context-manager.ts#L33)
+[packages/client-ts/src/did-context-manager.ts:30](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/did-context-manager.ts#L30)
 
 ___
 
@@ -113,7 +113,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/did-context-manager.ts:63](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/did-context-manager.ts#L63)
+[packages/client-ts/src/did-context-manager.ts:60](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/did-context-manager.ts#L60)
 
 ___
 
@@ -135,7 +135,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/did-context-manager.ts:46](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/did-context-manager.ts#L46)
+[packages/client-ts/src/did-context-manager.ts:43](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/did-context-manager.ts#L43)
 
 ___
 
@@ -157,7 +157,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/did-context-manager.ts:97](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/did-context-manager.ts#L97)
+[packages/client-ts/src/did-context-manager.ts:94](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/did-context-manager.ts#L94)
 
 ___
 
@@ -178,7 +178,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/did-context-manager.ts:76](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/did-context-manager.ts#L76)
+[packages/client-ts/src/did-context-manager.ts:73](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/did-context-manager.ts#L73)
 
 ___
 
@@ -190,7 +190,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `account` | [`default`](verida_client_ts._internal_.default-1.md) |
+| `account` | [`IAccount`](../interfaces/verida_client_ts._internal_.IAccount.md) |
 
 #### Returns
 
@@ -198,4 +198,4 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/did-context-manager.ts:29](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/did-context-manager.ts#L29)
+[packages/client-ts/src/did-context-manager.ts:26](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/did-context-manager.ts#L26)

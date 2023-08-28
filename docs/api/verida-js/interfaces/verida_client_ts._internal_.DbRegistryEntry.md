@@ -15,6 +15,7 @@ Interface for DbRegistryEntry
 - [dbName](verida_client_ts._internal_.DbRegistryEntry.md#dbname)
 - [did](verida_client_ts._internal_.DbRegistryEntry.md#did)
 - [encryptionKey](verida_client_ts._internal_.DbRegistryEntry.md#encryptionkey)
+- [endpoint](verida_client_ts._internal_.DbRegistryEntry.md#endpoint)
 - [endpointType](verida_client_ts._internal_.DbRegistryEntry.md#endpointtype)
 - [permissions](verida_client_ts._internal_.DbRegistryEntry.md#permissions)
 
@@ -26,7 +27,7 @@ Interface for DbRegistryEntry
 
 #### Defined in
 
-[packages/client-ts/src/context/db-registry.ts:24](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/db-registry.ts#L24)
+packages/types/dist/ContextInterfaces.d.ts:155
 
 ___
 
@@ -36,7 +37,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/db-registry.ts:20](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/db-registry.ts#L20)
+packages/types/dist/ContextInterfaces.d.ts:151
 
 ___
 
@@ -46,7 +47,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/db-registry.ts:21](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/db-registry.ts#L21)
+packages/types/dist/ContextInterfaces.d.ts:152
 
 ___
 
@@ -56,7 +57,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/db-registry.ts:23](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/db-registry.ts#L23)
+packages/types/dist/ContextInterfaces.d.ts:154
 
 ___
 
@@ -66,7 +67,17 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/db-registry.ts:26](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/db-registry.ts#L26)
+packages/types/dist/ContextInterfaces.d.ts:157
+
+___
+
+### endpoint
+
+• **endpoint**: `string`
+
+#### Defined in
+
+packages/types/dist/ContextInterfaces.d.ts:158
 
 ___
 
@@ -76,14 +87,14 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/db-registry.ts:22](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/db-registry.ts#L22)
+packages/types/dist/ContextInterfaces.d.ts:153
 
 ___
 
 ### permissions
 
-• **permissions**: [`PermissionsConfig`](verida_client_ts.ContextInterfaces.PermissionsConfig.md)
+• **permissions**: [`DatabasePermissionsConfig`](verida_client_ts._internal_.DatabasePermissionsConfig.md)
 
 #### Defined in
 
-[packages/client-ts/src/context/db-registry.ts:25](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/db-registry.ts#L25)
+packages/types/dist/ContextInterfaces.d.ts:156

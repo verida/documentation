@@ -21,7 +21,7 @@ Interface for DbRegistryEntryEncryptionKey
 
 #### Defined in
 
-packages/client-ts/dist/context/db-registry.d.ts:8
+packages/types/dist/ContextInterfaces.d.ts:144
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 #### Defined in
 
-packages/client-ts/dist/context/db-registry.d.ts:9
+packages/types/dist/ContextInterfaces.d.ts:145

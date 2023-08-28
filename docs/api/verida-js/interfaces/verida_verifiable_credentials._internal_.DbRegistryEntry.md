@@ -15,6 +15,7 @@ Interface for DbRegistryEntry
 - [dbName](verida_verifiable_credentials._internal_.DbRegistryEntry.md#dbname)
 - [did](verida_verifiable_credentials._internal_.DbRegistryEntry.md#did)
 - [encryptionKey](verida_verifiable_credentials._internal_.DbRegistryEntry.md#encryptionkey)
+- [endpoint](verida_verifiable_credentials._internal_.DbRegistryEntry.md#endpoint)
 - [endpointType](verida_verifiable_credentials._internal_.DbRegistryEntry.md#endpointtype)
 - [permissions](verida_verifiable_credentials._internal_.DbRegistryEntry.md#permissions)
 
@@ -26,7 +27,7 @@ Interface for DbRegistryEntry
 
 #### Defined in
 
-packages/client-ts/dist/context/db-registry.d.ts:19
+packages/types/dist/ContextInterfaces.d.ts:155
 
 ___
 
@@ -36,7 +37,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/dist/context/db-registry.d.ts:15
+packages/types/dist/ContextInterfaces.d.ts:151
 
 ___
 
@@ -46,7 +47,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/dist/context/db-registry.d.ts:16
+packages/types/dist/ContextInterfaces.d.ts:152
 
 ___
 
@@ -56,7 +57,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/dist/context/db-registry.d.ts:18
+packages/types/dist/ContextInterfaces.d.ts:154
 
 ___
 
@@ -66,7 +67,17 @@ ___
 
 #### Defined in
 
-packages/client-ts/dist/context/db-registry.d.ts:21
+packages/types/dist/ContextInterfaces.d.ts:157
+
+___
+
+### endpoint
+
+• **endpoint**: `string`
+
+#### Defined in
+
+packages/types/dist/ContextInterfaces.d.ts:158
 
 ___
 
@@ -76,14 +87,14 @@ ___
 
 #### Defined in
 
-packages/client-ts/dist/context/db-registry.d.ts:17
+packages/types/dist/ContextInterfaces.d.ts:153
 
 ___
 
 ### permissions
 
-• **permissions**: [`PermissionsConfig`](verida_verifiable_credentials._internal_.PermissionsConfig.md)
+• **permissions**: [`DatabasePermissionsConfig`](verida_verifiable_credentials._internal_.DatabasePermissionsConfig.md)
 
 #### Defined in
 
-packages/client-ts/dist/context/db-registry.d.ts:20
+packages/types/dist/ContextInterfaces.d.ts:156

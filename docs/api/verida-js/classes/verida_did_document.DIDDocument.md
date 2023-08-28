@@ -4,6 +4,10 @@
 
 [@verida/did-document](../modules/verida_did_document.md).DIDDocument
 
+## Implements
+
+- [`IDIDDocument`](../interfaces/verida_did_document._internal_.IDIDDocument.md)
+
 ## Table of contents
 
 ### Constructors
@@ -25,12 +29,15 @@
 - [addContextAsymKey](verida_did_document.DIDDocument.md#addcontextasymkey)
 - [addContextService](verida_did_document.DIDDocument.md#addcontextservice)
 - [addContextSignKey](verida_did_document.DIDDocument.md#addcontextsignkey)
+- [buildTimestamp](verida_did_document.DIDDocument.md#buildtimestamp)
 - [export](verida_did_document.DIDDocument.md#export)
 - [getErrors](verida_did_document.DIDDocument.md#geterrors)
 - [getProofData](verida_did_document.DIDDocument.md#getproofdata)
 - [import](verida_did_document.DIDDocument.md#import)
+- [locateContextProof](verida_did_document.DIDDocument.md#locatecontextproof)
 - [locateServiceEndpoint](verida_did_document.DIDDocument.md#locateserviceendpoint)
 - [removeContext](verida_did_document.DIDDocument.md#removecontext)
+- [setAttributes](verida_did_document.DIDDocument.md#setattributes)
 - [signProof](verida_did_document.DIDDocument.md#signproof)
 - [verifyContextSignature](verida_did_document.DIDDocument.md#verifycontextsignature)
 - [verifyProof](verida_did_document.DIDDocument.md#verifyproof)
@@ -47,24 +54,24 @@ Force lower case DID as we can't guarantee the DID will always be provided with 
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `doc` | `string` \| [`DIDDocumentStruct`](../interfaces/verida_did_document.Interfaces.DIDDocumentStruct.md) |
-| `publicKeyHex?` | `string` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `doc` | `string` \| [`VeridaDocInterface`](../interfaces/verida_did_document._internal_.VeridaDocInterface.md) | this value can be a DocInterface or DID. |
+| `publicKeyHex?` | `string` | - |
 
 #### Defined in
 
-[packages/did-document/src/did-document.ts:16](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L16)
+[packages/did-document/src/did-document.ts:44](https://github.com/verida/verida-js/blob/a690f60/packages/did-document/src/did-document.ts#L44)
 
 ## Properties
 
 ### doc
 
-• `Private` **doc**: [`DIDDocumentStruct`](../interfaces/verida_did_document.Interfaces.DIDDocumentStruct.md)
+• `Private` **doc**: [`VeridaDocInterface`](../interfaces/verida_did_document._internal_.VeridaDocInterface.md)
 
 #### Defined in
 
-[packages/did-document/src/did-document.ts:8](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L8)
+[packages/did-document/src/did-document.ts:36](https://github.com/verida/verida-js/blob/a690f60/packages/did-document/src/did-document.ts#L36)
 
 ___
 
@@ -74,7 +81,7 @@ ___
 
 #### Defined in
 
-[packages/did-document/src/did-document.ts:9](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L9)
+[packages/did-document/src/did-document.ts:37](https://github.com/verida/verida-js/blob/a690f60/packages/did-document/src/did-document.ts#L37)
 
 ## Accessors
 
@@ -86,33 +93,42 @@ ___
 
 `string`
 
+#### Implementation of
+
+IDIDDocument.id
+
 #### Defined in
 
-[packages/did-document/src/did-document.ts:44](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L44)
+[packages/did-document/src/did-document.ts:100](https://github.com/verida/verida-js/blob/a690f60/packages/did-document/src/did-document.ts#L100)
 
 ## Methods
 
 ### addContext
 
-▸ **addContext**(`contextName`, `keyring`, `endpoints`): `Promise`<`void`\>
+▸ **addContext**(`contextName`, `keyring`, `privateKey`, `endpoints`): `Promise`<`void`\>
 
 Not used directly, used for testing
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `contextName` | `string` |
-| `keyring` | [`default`](verida_did_document._internal_.default.md) |
-| `endpoints` | [`Endpoints`](../interfaces/verida_did_document.Interfaces.Endpoints.md) |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `contextName` | `string` | string |
+| `keyring` | [`IKeyring`](../interfaces/verida_did_document._internal_.IKeyring.md) | Keyring |
+| `privateKey` | `string` | Private key of the DID that controls this DID Document |
+| `endpoints` | [`SecureContextEndpoints`](../interfaces/verida_did_document._internal_.SecureContextEndpoints.md) | Endpoints |
 
 #### Returns
 
 `Promise`<`void`\>
 
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_did_document._internal_.IDIDDocument.md).[addContext](../interfaces/verida_did_document._internal_.IDIDDocument.md#addcontext)
+
 #### Defined in
 
-[packages/did-document/src/did-document.ts:59](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L59)
+[packages/did-document/src/did-document.ts:116](https://github.com/verida/verida-js/blob/a690f60/packages/did-document/src/did-document.ts#L116)
 
 ___
 
@@ -131,38 +147,46 @@ ___
 
 `void`
 
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_did_document._internal_.IDIDDocument.md).[addContextAsymKey](../interfaces/verida_did_document._internal_.IDIDDocument.md#addcontextasymkey)
+
 #### Defined in
 
-[packages/did-document/src/did-document.ts:160](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L160)
+[packages/did-document/src/did-document.ts:243](https://github.com/verida/verida-js/blob/a690f60/packages/did-document/src/did-document.ts#L243)
 
 ___
 
 ### addContextService
 
-▸ **addContextService**(`contextHash`, `endpointType`, `serviceType`, `endpointUri`): `void`
+▸ **addContextService**(`contextHash`, `endpointType`, `serviceType`, `endpointUris`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `contextHash` | `string` |
-| `endpointType` | [`EndpointType`](../enums/verida_did_document.Interfaces.EndpointType.md) |
+| `endpointType` | [`SecureContextEndpointType`](../enums/verida_did_document._internal_.SecureContextEndpointType.md) |
 | `serviceType` | `string` |
-| `endpointUri` | `string` |
+| `endpointUris` | [`ServiceEndpoint`](../modules/verida_did_document._internal_.md#serviceendpoint)[] |
 
 #### Returns
 
 `void`
 
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_did_document._internal_.IDIDDocument.md).[addContextService](../interfaces/verida_did_document._internal_.IDIDDocument.md#addcontextservice)
+
 #### Defined in
 
-[packages/did-document/src/did-document.ts:127](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L127)
+[packages/did-document/src/did-document.ts:206](https://github.com/verida/verida-js/blob/a690f60/packages/did-document/src/did-document.ts#L206)
 
 ___
 
 ### addContextSignKey
 
-▸ **addContextSignKey**(`contextHash`, `publicKeyHex`): `void`
+▸ **addContextSignKey**(`contextHash`, `publicKeyHex`, `proof`): `void`
 
 #### Parameters
 
@@ -170,28 +194,61 @@ ___
 | :------ | :------ |
 | `contextHash` | `string` |
 | `publicKeyHex` | `string` |
+| `proof` | `string` |
 
 #### Returns
 
 `void`
 
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_did_document._internal_.IDIDDocument.md).[addContextSignKey](../interfaces/verida_did_document._internal_.IDIDDocument.md#addcontextsignkey)
+
 #### Defined in
 
-[packages/did-document/src/did-document.ts:139](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L139)
+[packages/did-document/src/did-document.ts:219](https://github.com/verida/verida-js/blob/a690f60/packages/did-document/src/did-document.ts#L219)
+
+___
+
+### buildTimestamp
+
+▸ **buildTimestamp**(`date`): `string`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `date` | `Date` |
+
+#### Returns
+
+`string`
+
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_did_document._internal_.IDIDDocument.md).[buildTimestamp](../interfaces/verida_did_document._internal_.IDIDDocument.md#buildtimestamp)
+
+#### Defined in
+
+[packages/did-document/src/did-document.ts:361](https://github.com/verida/verida-js/blob/a690f60/packages/did-document/src/did-document.ts#L361)
 
 ___
 
 ### export
 
-▸ **export**(): [`DIDDocumentStruct`](../interfaces/verida_did_document.Interfaces.DIDDocumentStruct.md)
+▸ **export**(): [`VeridaDocInterface`](../interfaces/verida_did_document._internal_.VeridaDocInterface.md)
 
 #### Returns
 
-[`DIDDocumentStruct`](../interfaces/verida_did_document.Interfaces.DIDDocumentStruct.md)
+[`VeridaDocInterface`](../interfaces/verida_did_document._internal_.VeridaDocInterface.md)
+
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_did_document._internal_.IDIDDocument.md).[export](../interfaces/verida_did_document._internal_.IDIDDocument.md#export)
 
 #### Defined in
 
-[packages/did-document/src/did-document.ts:123](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L123)
+[packages/did-document/src/did-document.ts:202](https://github.com/verida/verida-js/blob/a690f60/packages/did-document/src/did-document.ts#L202)
 
 ___
 
@@ -203,23 +260,27 @@ ___
 
 `string`[]
 
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_did_document._internal_.IDIDDocument.md).[getErrors](../interfaces/verida_did_document._internal_.IDIDDocument.md#geterrors)
+
 #### Defined in
 
-[packages/did-document/src/did-document.ts:48](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L48)
+[packages/did-document/src/did-document.ts:104](https://github.com/verida/verida-js/blob/a690f60/packages/did-document/src/did-document.ts#L104)
 
 ___
 
 ### getProofData
 
-▸ `Private` **getProofData**(): [`DIDDocumentStruct`](../interfaces/verida_did_document.Interfaces.DIDDocumentStruct.md)
+▸ `Private` **getProofData**(): `any`
 
 #### Returns
 
-[`DIDDocumentStruct`](../interfaces/verida_did_document.Interfaces.DIDDocumentStruct.md)
+`any`
 
 #### Defined in
 
-[packages/did-document/src/did-document.ts:236](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L236)
+[packages/did-document/src/did-document.ts:355](https://github.com/verida/verida-js/blob/a690f60/packages/did-document/src/did-document.ts#L355)
 
 ___
 
@@ -231,36 +292,68 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `doc` | [`DIDDocumentStruct`](../interfaces/verida_did_document.Interfaces.DIDDocumentStruct.md) |
+| `doc` | [`VeridaDocInterface`](../interfaces/verida_did_document._internal_.VeridaDocInterface.md) |
 
 #### Returns
 
 `void`
 
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_did_document._internal_.IDIDDocument.md).[import](../interfaces/verida_did_document._internal_.IDIDDocument.md#import)
+
 #### Defined in
 
-[packages/did-document/src/did-document.ts:118](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L118)
+[packages/did-document/src/did-document.ts:197](https://github.com/verida/verida-js/blob/a690f60/packages/did-document/src/did-document.ts#L197)
 
 ___
 
-### locateServiceEndpoint
+### locateContextProof
 
-▸ **locateServiceEndpoint**(`contextName`, `endpointType`): `undefined` \| [`ServiceEndpoint`](../interfaces/verida_did_document._internal_.ServiceEndpoint.md)
+▸ **locateContextProof**(`contextName`): `undefined` \| `string`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `contextName` | `string` |
-| `endpointType` | [`EndpointType`](../enums/verida_did_document.Interfaces.EndpointType.md) |
 
 #### Returns
 
-`undefined` \| [`ServiceEndpoint`](../interfaces/verida_did_document._internal_.ServiceEndpoint.md)
+`undefined` \| `string`
+
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_did_document._internal_.IDIDDocument.md).[locateContextProof](../interfaces/verida_did_document._internal_.IDIDDocument.md#locatecontextproof)
 
 #### Defined in
 
-[packages/did-document/src/did-document.ts:247](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L247)
+[packages/did-document/src/did-document.ts:314](https://github.com/verida/verida-js/blob/a690f60/packages/did-document/src/did-document.ts#L314)
+
+___
+
+### locateServiceEndpoint
+
+▸ **locateServiceEndpoint**(`contextName`, `endpointType`): `undefined` \| [`Service`](../interfaces/verida_did_document._internal_.Service.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `contextName` | `string` |
+| `endpointType` | [`SecureContextEndpointType`](../enums/verida_did_document._internal_.SecureContextEndpointType.md) |
+
+#### Returns
+
+`undefined` \| [`Service`](../interfaces/verida_did_document._internal_.Service.md)
+
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_did_document._internal_.IDIDDocument.md).[locateServiceEndpoint](../interfaces/verida_did_document._internal_.IDIDDocument.md#locateserviceendpoint)
+
+#### Defined in
+
+[packages/did-document/src/did-document.ts:307](https://github.com/verida/verida-js/blob/a690f60/packages/did-document/src/did-document.ts#L307)
 
 ___
 
@@ -278,9 +371,37 @@ ___
 
 `boolean`
 
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_did_document._internal_.IDIDDocument.md).[removeContext](../interfaces/verida_did_document._internal_.IDIDDocument.md#removecontext)
+
 #### Defined in
 
-[packages/did-document/src/did-document.ts:84](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L84)
+[packages/did-document/src/did-document.ts:154](https://github.com/verida/verida-js/blob/a690f60/packages/did-document/src/did-document.ts#L154)
+
+___
+
+### setAttributes
+
+▸ **setAttributes**(`attributes`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `attributes` | [`Record`](../modules/verida_did_document._internal_.md#record)<`string`, `any`\> |
+
+#### Returns
+
+`void`
+
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_did_document._internal_.IDIDDocument.md).[setAttributes](../interfaces/verida_did_document._internal_.IDIDDocument.md#setattributes)
+
+#### Defined in
+
+[packages/did-document/src/did-document.ts:190](https://github.com/verida/verida-js/blob/a690f60/packages/did-document/src/did-document.ts#L190)
 
 ___
 
@@ -298,9 +419,13 @@ ___
 
 `void`
 
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_did_document._internal_.IDIDDocument.md).[signProof](../interfaces/verida_did_document._internal_.IDIDDocument.md#signproof)
+
 #### Defined in
 
-[packages/did-document/src/did-document.ts:181](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L181)
+[packages/did-document/src/did-document.ts:328](https://github.com/verida/verida-js/blob/a690f60/packages/did-document/src/did-document.ts#L328)
 
 ___
 
@@ -321,9 +446,13 @@ ___
 
 `boolean`
 
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_did_document._internal_.IDIDDocument.md).[verifyContextSignature](../interfaces/verida_did_document._internal_.IDIDDocument.md#verifycontextsignature)
+
 #### Defined in
 
-[packages/did-document/src/did-document.ts:219](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L219)
+[packages/did-document/src/did-document.ts:285](https://github.com/verida/verida-js/blob/a690f60/packages/did-document/src/did-document.ts#L285)
 
 ___
 
@@ -335,9 +464,13 @@ ___
 
 `boolean`
 
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_did_document._internal_.IDIDDocument.md).[verifyProof](../interfaces/verida_did_document._internal_.IDIDDocument.md#verifyproof)
+
 #### Defined in
 
-[packages/did-document/src/did-document.ts:197](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L197)
+[packages/did-document/src/did-document.ts:344](https://github.com/verida/verida-js/blob/a690f60/packages/did-document/src/did-document.ts#L344)
 
 ___
 
@@ -356,9 +489,13 @@ ___
 
 `boolean`
 
+#### Implementation of
+
+[IDIDDocument](../interfaces/verida_did_document._internal_.IDIDDocument.md).[verifySig](../interfaces/verida_did_document._internal_.IDIDDocument.md#verifysig)
+
 #### Defined in
 
-[packages/did-document/src/did-document.ts:208](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L208)
+[packages/did-document/src/did-document.ts:273](https://github.com/verida/verida-js/blob/a690f60/packages/did-document/src/did-document.ts#L273)
 
 ___
 
@@ -379,4 +516,4 @@ ___
 
 #### Defined in
 
-[packages/did-document/src/did-document.ts:242](https://github.com/verida/verida-js/blob/c03b336/packages/did-document/src/did-document.ts#L242)
+[packages/did-document/src/did-document.ts:302](https://github.com/verida/verida-js/blob/a690f60/packages/did-document/src/did-document.ts#L302)

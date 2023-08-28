@@ -6,7 +6,7 @@
 
 ## Hierarchy
 
-- [`default`](verida_client_ts._internal_.default-2.md)
+- [`default`](verida_client_ts._internal_.default-3.md)
 
   ↳ **`Ajv2020`**
 
@@ -66,11 +66,11 @@
 
 #### Overrides
 
-[default](verida_client_ts._internal_.default-2.md).[constructor](verida_client_ts._internal_.default-2.md#constructor)
+[default](verida_client_ts._internal_.default-3.md).[constructor](verida_client_ts._internal_.default-3.md#constructor)
 
 #### Defined in
 
-node_modules/ajv/dist/2020.d.ts:4
+packages/client-ts/node_modules/ajv/dist/2020.d.ts:4
 
 ## Properties
 
@@ -80,11 +80,11 @@ node_modules/ajv/dist/2020.d.ts:4
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[RULES](verida_client_ts._internal_.default-2.md#rules)
+[default](verida_client_ts._internal_.default-3.md).[RULES](verida_client_ts._internal_.default-3.md#rules)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:116
+packages/client-ts/node_modules/ajv/dist/core.d.ts:116
 
 ___
 
@@ -94,11 +94,11 @@ ___
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[_compilations](verida_client_ts._internal_.default-2.md#_compilations)
+[default](verida_client_ts._internal_.default-3.md).[_compilations](verida_client_ts._internal_.default-3.md#_compilations)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:117
+packages/client-ts/node_modules/ajv/dist/core.d.ts:117
 
 ___
 
@@ -108,11 +108,11 @@ ___
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[errors](verida_client_ts._internal_.default-2.md#errors)
+[default](verida_client_ts._internal_.default-3.md).[errors](verida_client_ts._internal_.default-3.md#errors)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:104
+packages/client-ts/node_modules/ajv/dist/core.d.ts:104
 
 ___
 
@@ -122,11 +122,11 @@ ___
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[formats](verida_client_ts._internal_.default-2.md#formats)
+[default](verida_client_ts._internal_.default-3.md).[formats](verida_client_ts._internal_.default-3.md#formats)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:113
+packages/client-ts/node_modules/ajv/dist/core.d.ts:113
 
 ___
 
@@ -136,11 +136,11 @@ ___
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[logger](verida_client_ts._internal_.default-2.md#logger)
+[default](verida_client_ts._internal_.default-3.md).[logger](verida_client_ts._internal_.default-3.md#logger)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:105
+packages/client-ts/node_modules/ajv/dist/core.d.ts:105
 
 ___
 
@@ -150,11 +150,11 @@ ___
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[opts](verida_client_ts._internal_.default-2.md#opts)
+[default](verida_client_ts._internal_.default-3.md).[opts](verida_client_ts._internal_.default-3.md#opts)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:103
+packages/client-ts/node_modules/ajv/dist/core.d.ts:103
 
 ___
 
@@ -164,11 +164,11 @@ ___
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[refs](verida_client_ts._internal_.default-2.md#refs)
+[default](verida_client_ts._internal_.default-3.md).[refs](verida_client_ts._internal_.default-3.md#refs)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:110
+packages/client-ts/node_modules/ajv/dist/core.d.ts:110
 
 ___
 
@@ -178,11 +178,11 @@ ___
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[schemas](verida_client_ts._internal_.default-2.md#schemas)
+[default](verida_client_ts._internal_.default-3.md).[schemas](verida_client_ts._internal_.default-3.md#schemas)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:107
+packages/client-ts/node_modules/ajv/dist/core.d.ts:107
 
 ___
 
@@ -192,39 +192,39 @@ ___
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[scope](verida_client_ts._internal_.default-2.md#scope)
+[default](verida_client_ts._internal_.default-3.md).[scope](verida_client_ts._internal_.default-3.md#scope)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:106
+packages/client-ts/node_modules/ajv/dist/core.d.ts:106
 
 ___
 
 ### MissingRefError
 
-▪ `Static` **MissingRefError**: typeof [`default`](verida_client_ts._internal_.default-4.md)
+▪ `Static` **MissingRefError**: typeof [`default`](verida_client_ts._internal_.default-5.md)
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[MissingRefError](verida_client_ts._internal_.default-2.md#missingreferror)
+[default](verida_client_ts._internal_.default-3.md).[MissingRefError](verida_client_ts._internal_.default-3.md#missingreferror)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:122
+packages/client-ts/node_modules/ajv/dist/core.d.ts:122
 
 ___
 
 ### ValidationError
 
-▪ `Static` **ValidationError**: typeof [`default`](verida_client_ts._internal_.default-3.md)
+▪ `Static` **ValidationError**: typeof [`default`](verida_client_ts._internal_.default-4.md)
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[ValidationError](verida_client_ts._internal_.default-2.md#validationerror)
+[default](verida_client_ts._internal_.default-3.md).[ValidationError](verida_client_ts._internal_.default-3.md#validationerror)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:121
+packages/client-ts/node_modules/ajv/dist/core.d.ts:121
 
 ## Methods
 
@@ -245,11 +245,11 @@ node_modules/ajv/dist/core.d.ts:121
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[$dataMetaSchema](verida_client_ts._internal_.default-2.md#$datametaschema)
+[default](verida_client_ts._internal_.default-3.md).[$dataMetaSchema](verida_client_ts._internal_.default-3.md#$datametaschema)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:159
+packages/client-ts/node_modules/ajv/dist/core.d.ts:159
 
 ___
 
@@ -263,11 +263,11 @@ ___
 
 #### Overrides
 
-[default](verida_client_ts._internal_.default-2.md).[_addDefaultMetaSchema](verida_client_ts._internal_.default-2.md#_adddefaultmetaschema)
+[default](verida_client_ts._internal_.default-3.md).[_addDefaultMetaSchema](verida_client_ts._internal_.default-3.md#_adddefaultmetaschema)
 
 #### Defined in
 
-node_modules/ajv/dist/2020.d.ts:6
+packages/client-ts/node_modules/ajv/dist/2020.d.ts:6
 
 ___
 
@@ -291,11 +291,11 @@ ___
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[_addSchema](verida_client_ts._internal_.default-2.md#_addschema)
+[default](verida_client_ts._internal_.default-3.md).[_addSchema](verida_client_ts._internal_.default-3.md#_addschema)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:161
+packages/client-ts/node_modules/ajv/dist/core.d.ts:161
 
 ___
 
@@ -309,17 +309,17 @@ ___
 
 #### Overrides
 
-[default](verida_client_ts._internal_.default-2.md).[_addVocabularies](verida_client_ts._internal_.default-2.md#_addvocabularies)
+[default](verida_client_ts._internal_.default-3.md).[_addVocabularies](verida_client_ts._internal_.default-3.md#_addvocabularies)
 
 #### Defined in
 
-node_modules/ajv/dist/2020.d.ts:5
+packages/client-ts/node_modules/ajv/dist/2020.d.ts:5
 
 ___
 
 ### addFormat
 
-▸ **addFormat**(`name`, `format`): [`default`](verida_client_ts._internal_.default-2.md)
+▸ **addFormat**(`name`, `format`): [`default`](verida_client_ts._internal_.default-3.md)
 
 #### Parameters
 
@@ -330,21 +330,21 @@ ___
 
 #### Returns
 
-[`default`](verida_client_ts._internal_.default-2.md)
+[`default`](verida_client_ts._internal_.default-3.md)
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[addFormat](verida_client_ts._internal_.default-2.md#addformat)
+[default](verida_client_ts._internal_.default-3.md).[addFormat](verida_client_ts._internal_.default-3.md#addformat)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:156
+packages/client-ts/node_modules/ajv/dist/core.d.ts:156
 
 ___
 
 ### addKeyword
 
-▸ **addKeyword**(`kwdOrDef`, `def?`): [`default`](verida_client_ts._internal_.default-2.md)
+▸ **addKeyword**(`kwdOrDef`, `def?`): [`default`](verida_client_ts._internal_.default-3.md)
 
 #### Parameters
 
@@ -355,21 +355,21 @@ ___
 
 #### Returns
 
-[`default`](verida_client_ts._internal_.default-2.md)
+[`default`](verida_client_ts._internal_.default-3.md)
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[addKeyword](verida_client_ts._internal_.default-2.md#addkeyword)
+[default](verida_client_ts._internal_.default-3.md).[addKeyword](verida_client_ts._internal_.default-3.md#addkeyword)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:153
+packages/client-ts/node_modules/ajv/dist/core.d.ts:153
 
 ___
 
 ### addMetaSchema
 
-▸ **addMetaSchema**(`schema`, `key?`, `_validateSchema?`): [`default`](verida_client_ts._internal_.default-2.md)
+▸ **addMetaSchema**(`schema`, `key?`, `_validateSchema?`): [`default`](verida_client_ts._internal_.default-3.md)
 
 #### Parameters
 
@@ -381,21 +381,21 @@ ___
 
 #### Returns
 
-[`default`](verida_client_ts._internal_.default-2.md)
+[`default`](verida_client_ts._internal_.default-3.md)
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[addMetaSchema](verida_client_ts._internal_.default-2.md#addmetaschema)
+[default](verida_client_ts._internal_.default-3.md).[addMetaSchema](verida_client_ts._internal_.default-3.md#addmetaschema)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:147
+packages/client-ts/node_modules/ajv/dist/core.d.ts:147
 
 ___
 
 ### addSchema
 
-▸ **addSchema**(`schema`, `key?`, `_meta?`, `_validateSchema?`): [`default`](verida_client_ts._internal_.default-2.md)
+▸ **addSchema**(`schema`, `key?`, `_meta?`, `_validateSchema?`): [`default`](verida_client_ts._internal_.default-3.md)
 
 #### Parameters
 
@@ -408,21 +408,21 @@ ___
 
 #### Returns
 
-[`default`](verida_client_ts._internal_.default-2.md)
+[`default`](verida_client_ts._internal_.default-3.md)
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[addSchema](verida_client_ts._internal_.default-2.md#addschema)
+[default](verida_client_ts._internal_.default-3.md).[addSchema](verida_client_ts._internal_.default-3.md#addschema)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:143
+packages/client-ts/node_modules/ajv/dist/core.d.ts:143
 
 ___
 
 ### addVocabulary
 
-▸ **addVocabulary**(`definitions`): [`default`](verida_client_ts._internal_.default-2.md)
+▸ **addVocabulary**(`definitions`): [`default`](verida_client_ts._internal_.default-3.md)
 
 #### Parameters
 
@@ -432,15 +432,15 @@ ___
 
 #### Returns
 
-[`default`](verida_client_ts._internal_.default-2.md)
+[`default`](verida_client_ts._internal_.default-3.md)
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[addVocabulary](verida_client_ts._internal_.default-2.md#addvocabulary)
+[default](verida_client_ts._internal_.default-3.md).[addVocabulary](verida_client_ts._internal_.default-3.md#addvocabulary)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:152
+packages/client-ts/node_modules/ajv/dist/core.d.ts:152
 
 ___
 
@@ -467,11 +467,11 @@ ___
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[compile](verida_client_ts._internal_.default-2.md#compile)
+[default](verida_client_ts._internal_.default-3.md).[compile](verida_client_ts._internal_.default-3.md#compile)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:134
+packages/client-ts/node_modules/ajv/dist/core.d.ts:134
 
 ▸ **compile**<`T`\>(`schema`, `_meta?`): [`ValidateFunction`](../interfaces/verida_client_ts._internal_.ValidateFunction.md)<`T`\>
 
@@ -494,11 +494,11 @@ node_modules/ajv/dist/core.d.ts:134
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[compile](verida_client_ts._internal_.default-2.md#compile)
+[default](verida_client_ts._internal_.default-3.md).[compile](verida_client_ts._internal_.default-3.md#compile)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:135
+packages/client-ts/node_modules/ajv/dist/core.d.ts:135
 
 ▸ **compile**<`N`, `T`\>(`schema`, `_meta?`): [`ValidateFunction`](../interfaces/verida_client_ts._internal_.ValidateFunction.md)<[`JTDDataType`](../modules/verida_client_ts._internal_.md#jtddatatype)<`T`\>\>
 
@@ -522,11 +522,11 @@ node_modules/ajv/dist/core.d.ts:135
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[compile](verida_client_ts._internal_.default-2.md#compile)
+[default](verida_client_ts._internal_.default-3.md).[compile](verida_client_ts._internal_.default-3.md#compile)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:136
+packages/client-ts/node_modules/ajv/dist/core.d.ts:136
 
 ▸ **compile**<`T`\>(`schema`, `_meta?`): [`AsyncValidateFunction`](../interfaces/verida_client_ts._internal_.AsyncValidateFunction.md)<`T`\>
 
@@ -549,11 +549,11 @@ node_modules/ajv/dist/core.d.ts:136
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[compile](verida_client_ts._internal_.default-2.md#compile)
+[default](verida_client_ts._internal_.default-3.md).[compile](verida_client_ts._internal_.default-3.md#compile)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:137
+packages/client-ts/node_modules/ajv/dist/core.d.ts:137
 
 ▸ **compile**<`T`\>(`schema`, `_meta?`): [`AnyValidateFunction`](../modules/verida_client_ts._internal_.md#anyvalidatefunction)<`T`\>
 
@@ -576,11 +576,11 @@ node_modules/ajv/dist/core.d.ts:137
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[compile](verida_client_ts._internal_.default-2.md#compile)
+[default](verida_client_ts._internal_.default-3.md).[compile](verida_client_ts._internal_.default-3.md#compile)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:138
+packages/client-ts/node_modules/ajv/dist/core.d.ts:138
 
 ___
 
@@ -607,11 +607,11 @@ ___
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[compileAsync](verida_client_ts._internal_.default-2.md#compileasync)
+[default](verida_client_ts._internal_.default-3.md).[compileAsync](verida_client_ts._internal_.default-3.md#compileasync)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:139
+packages/client-ts/node_modules/ajv/dist/core.d.ts:139
 
 ▸ **compileAsync**<`T`\>(`schema`, `_meta?`): `Promise`<[`ValidateFunction`](../interfaces/verida_client_ts._internal_.ValidateFunction.md)<`T`\>\>
 
@@ -634,11 +634,11 @@ node_modules/ajv/dist/core.d.ts:139
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[compileAsync](verida_client_ts._internal_.default-2.md#compileasync)
+[default](verida_client_ts._internal_.default-3.md).[compileAsync](verida_client_ts._internal_.default-3.md#compileasync)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:140
+packages/client-ts/node_modules/ajv/dist/core.d.ts:140
 
 ▸ **compileAsync**<`T`\>(`schema`, `meta?`): `Promise`<[`AsyncValidateFunction`](../interfaces/verida_client_ts._internal_.AsyncValidateFunction.md)<`T`\>\>
 
@@ -661,11 +661,11 @@ node_modules/ajv/dist/core.d.ts:140
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[compileAsync](verida_client_ts._internal_.default-2.md#compileasync)
+[default](verida_client_ts._internal_.default-3.md).[compileAsync](verida_client_ts._internal_.default-3.md#compileasync)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:141
+packages/client-ts/node_modules/ajv/dist/core.d.ts:141
 
 ▸ **compileAsync**<`T`\>(`schema`, `meta?`): `Promise`<[`AnyValidateFunction`](../modules/verida_client_ts._internal_.md#anyvalidatefunction)<`T`\>\>
 
@@ -688,11 +688,11 @@ node_modules/ajv/dist/core.d.ts:141
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[compileAsync](verida_client_ts._internal_.default-2.md#compileasync)
+[default](verida_client_ts._internal_.default-3.md).[compileAsync](verida_client_ts._internal_.default-3.md#compileasync)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:142
+packages/client-ts/node_modules/ajv/dist/core.d.ts:142
 
 ___
 
@@ -706,11 +706,11 @@ ___
 
 #### Overrides
 
-[default](verida_client_ts._internal_.default-2.md).[defaultMeta](verida_client_ts._internal_.default-2.md#defaultmeta)
+[default](verida_client_ts._internal_.default-3.md).[defaultMeta](verida_client_ts._internal_.default-3.md#defaultmeta)
 
 #### Defined in
 
-node_modules/ajv/dist/2020.d.ts:7
+packages/client-ts/node_modules/ajv/dist/2020.d.ts:7
 
 ___
 
@@ -731,11 +731,11 @@ ___
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[errorsText](verida_client_ts._internal_.default-2.md#errorstext)
+[default](verida_client_ts._internal_.default-3.md).[errorsText](verida_client_ts._internal_.default-3.md#errorstext)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:157
+packages/client-ts/node_modules/ajv/dist/core.d.ts:157
 
 ___
 
@@ -755,11 +755,11 @@ ___
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[getKeyword](verida_client_ts._internal_.default-2.md#getkeyword)
+[default](verida_client_ts._internal_.default-3.md).[getKeyword](verida_client_ts._internal_.default-3.md#getkeyword)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:154
+packages/client-ts/node_modules/ajv/dist/core.d.ts:154
 
 ___
 
@@ -785,17 +785,17 @@ ___
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[getSchema](verida_client_ts._internal_.default-2.md#getschema)
+[default](verida_client_ts._internal_.default-3.md).[getSchema](verida_client_ts._internal_.default-3.md#getschema)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:150
+packages/client-ts/node_modules/ajv/dist/core.d.ts:150
 
 ___
 
 ### removeKeyword
 
-▸ **removeKeyword**(`keyword`): [`default`](verida_client_ts._internal_.default-2.md)
+▸ **removeKeyword**(`keyword`): [`default`](verida_client_ts._internal_.default-3.md)
 
 #### Parameters
 
@@ -805,21 +805,21 @@ ___
 
 #### Returns
 
-[`default`](verida_client_ts._internal_.default-2.md)
+[`default`](verida_client_ts._internal_.default-3.md)
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[removeKeyword](verida_client_ts._internal_.default-2.md#removekeyword)
+[default](verida_client_ts._internal_.default-3.md).[removeKeyword](verida_client_ts._internal_.default-3.md#removekeyword)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:155
+packages/client-ts/node_modules/ajv/dist/core.d.ts:155
 
 ___
 
 ### removeSchema
 
-▸ **removeSchema**(`schemaKeyRef?`): [`default`](verida_client_ts._internal_.default-2.md)
+▸ **removeSchema**(`schemaKeyRef?`): [`default`](verida_client_ts._internal_.default-3.md)
 
 #### Parameters
 
@@ -829,15 +829,15 @@ ___
 
 #### Returns
 
-[`default`](verida_client_ts._internal_.default-2.md)
+[`default`](verida_client_ts._internal_.default-3.md)
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[removeSchema](verida_client_ts._internal_.default-2.md#removeschema)
+[default](verida_client_ts._internal_.default-3.md).[removeSchema](verida_client_ts._internal_.default-3.md#removeschema)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:151
+packages/client-ts/node_modules/ajv/dist/core.d.ts:151
 
 ___
 
@@ -858,11 +858,11 @@ ___
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[validate](verida_client_ts._internal_.default-2.md#validate)
+[default](verida_client_ts._internal_.default-3.md).[validate](verida_client_ts._internal_.default-3.md#validate)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:127
+packages/client-ts/node_modules/ajv/dist/core.d.ts:127
 
 ▸ **validate**(`schemaKeyRef`, `data`): `boolean` \| `Promise`<`unknown`\>
 
@@ -879,11 +879,11 @@ node_modules/ajv/dist/core.d.ts:127
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[validate](verida_client_ts._internal_.default-2.md#validate)
+[default](verida_client_ts._internal_.default-3.md).[validate](verida_client_ts._internal_.default-3.md#validate)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:128
+packages/client-ts/node_modules/ajv/dist/core.d.ts:128
 
 ▸ **validate**<`T`\>(`schema`, `data`): data is T
 
@@ -906,11 +906,11 @@ data is T
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[validate](verida_client_ts._internal_.default-2.md#validate)
+[default](verida_client_ts._internal_.default-3.md).[validate](verida_client_ts._internal_.default-3.md#validate)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:129
+packages/client-ts/node_modules/ajv/dist/core.d.ts:129
 
 ▸ **validate**<`T`\>(`schema`, `data`): data is T
 
@@ -933,11 +933,11 @@ data is T
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[validate](verida_client_ts._internal_.default-2.md#validate)
+[default](verida_client_ts._internal_.default-3.md).[validate](verida_client_ts._internal_.default-3.md#validate)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:130
+packages/client-ts/node_modules/ajv/dist/core.d.ts:130
 
 ▸ **validate**<`N`, `T`\>(`schema`, `data`): data is JTDDataType<T\>
 
@@ -961,11 +961,11 @@ data is JTDDataType<T\>
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[validate](verida_client_ts._internal_.default-2.md#validate)
+[default](verida_client_ts._internal_.default-3.md).[validate](verida_client_ts._internal_.default-3.md#validate)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:131
+packages/client-ts/node_modules/ajv/dist/core.d.ts:131
 
 ▸ **validate**<`T`\>(`schema`, `data`): `Promise`<`T`\>
 
@@ -988,11 +988,11 @@ node_modules/ajv/dist/core.d.ts:131
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[validate](verida_client_ts._internal_.default-2.md#validate)
+[default](verida_client_ts._internal_.default-3.md).[validate](verida_client_ts._internal_.default-3.md#validate)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:132
+packages/client-ts/node_modules/ajv/dist/core.d.ts:132
 
 ▸ **validate**<`T`\>(`schemaKeyRef`, `data`): data is T \| Promise<T\>
 
@@ -1015,11 +1015,11 @@ data is T \| Promise<T\>
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[validate](verida_client_ts._internal_.default-2.md#validate)
+[default](verida_client_ts._internal_.default-3.md).[validate](verida_client_ts._internal_.default-3.md#validate)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:133
+packages/client-ts/node_modules/ajv/dist/core.d.ts:133
 
 ___
 
@@ -1040,8 +1040,8 @@ ___
 
 #### Inherited from
 
-[default](verida_client_ts._internal_.default-2.md).[validateSchema](verida_client_ts._internal_.default-2.md#validateschema)
+[default](verida_client_ts._internal_.default-3.md).[validateSchema](verida_client_ts._internal_.default-3.md#validateschema)
 
 #### Defined in
 
-node_modules/ajv/dist/core.d.ts:149
+packages/client-ts/node_modules/ajv/dist/core.d.ts:149

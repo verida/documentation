@@ -22,7 +22,7 @@ Represents a tuple of a DID-URL with a `Signer` and associated algorithm.
 
 #### Defined in
 
-node_modules/did-jwt-vc/lib/types.d.ts:190
+node_modules/did-jwt-vc/lib/types.d.ts:194
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 #### Defined in
 
-node_modules/did-jwt-vc/lib/types.d.ts:188
+node_modules/did-jwt-vc/lib/types.d.ts:192
 
 ___
 
@@ -42,4 +42,4 @@ ___
 
 #### Defined in
 
-node_modules/did-jwt-vc/lib/types.d.ts:189
+node_modules/did-jwt-vc/lib/types.d.ts:193

@@ -57,7 +57,7 @@
 
 #### Defined in
 
-node_modules/ajv/dist/compile/index.d.ts:24
+packages/client-ts/node_modules/ajv/dist/compile/index.d.ts:24
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/index.d.ts:12
+packages/client-ts/node_modules/ajv/dist/compile/index.d.ts:12
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/index.d.ts:28
+packages/client-ts/node_modules/ajv/dist/compile/index.d.ts:28
 
 ___
 
@@ -99,7 +99,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/index.d.ts:33
+packages/client-ts/node_modules/ajv/dist/compile/index.d.ts:33
 
 ___
 
@@ -113,7 +113,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/index.d.ts:38
+packages/client-ts/node_modules/ajv/dist/compile/index.d.ts:38
 
 ___
 
@@ -127,7 +127,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/index.d.ts:13
+packages/client-ts/node_modules/ajv/dist/compile/index.d.ts:13
 
 ___
 
@@ -141,7 +141,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/index.d.ts:18
+packages/client-ts/node_modules/ajv/dist/compile/index.d.ts:18
 
 ___
 
@@ -155,7 +155,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/index.d.ts:16
+packages/client-ts/node_modules/ajv/dist/compile/index.d.ts:16
 
 ___
 
@@ -169,7 +169,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/index.d.ts:17
+packages/client-ts/node_modules/ajv/dist/compile/index.d.ts:17
 
 ___
 
@@ -183,7 +183,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/index.d.ts:19
+packages/client-ts/node_modules/ajv/dist/compile/index.d.ts:19
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/index.d.ts:20
+packages/client-ts/node_modules/ajv/dist/compile/index.d.ts:20
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/index.d.ts:30
+packages/client-ts/node_modules/ajv/dist/compile/index.d.ts:30
 
 ___
 
@@ -225,7 +225,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/index.d.ts:31
+packages/client-ts/node_modules/ajv/dist/compile/index.d.ts:31
 
 ___
 
@@ -239,7 +239,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/index.d.ts:23
+packages/client-ts/node_modules/ajv/dist/compile/index.d.ts:23
 
 ___
 
@@ -253,7 +253,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/index.d.ts:11
+packages/client-ts/node_modules/ajv/dist/compile/index.d.ts:11
 
 ___
 
@@ -267,7 +267,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/index.d.ts:35
+packages/client-ts/node_modules/ajv/dist/compile/index.d.ts:35
 
 ___
 
@@ -281,7 +281,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/index.d.ts:36
+packages/client-ts/node_modules/ajv/dist/compile/index.d.ts:36
 
 ___
 
@@ -295,7 +295,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/index.d.ts:37
+packages/client-ts/node_modules/ajv/dist/compile/index.d.ts:37
 
 ___
 
@@ -309,7 +309,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/index.d.ts:39
+packages/client-ts/node_modules/ajv/dist/compile/index.d.ts:39
 
 ___
 
@@ -323,7 +323,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/index.d.ts:14
+packages/client-ts/node_modules/ajv/dist/compile/index.d.ts:14
 
 ___
 
@@ -337,7 +337,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/index.d.ts:15
+packages/client-ts/node_modules/ajv/dist/compile/index.d.ts:15
 
 ___
 
@@ -351,7 +351,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/index.d.ts:32
+packages/client-ts/node_modules/ajv/dist/compile/index.d.ts:32
 
 ___
 
@@ -365,7 +365,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/index.d.ts:34
+packages/client-ts/node_modules/ajv/dist/compile/index.d.ts:34
 
 ___
 
@@ -379,7 +379,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/index.d.ts:27
+packages/client-ts/node_modules/ajv/dist/compile/index.d.ts:27
 
 ___
 
@@ -393,7 +393,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/index.d.ts:43
+packages/client-ts/node_modules/ajv/dist/compile/index.d.ts:43
 
 ___
 
@@ -407,7 +407,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/index.d.ts:26
+packages/client-ts/node_modules/ajv/dist/compile/index.d.ts:26
 
 ___
 
@@ -421,13 +421,13 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/index.d.ts:29
+packages/client-ts/node_modules/ajv/dist/compile/index.d.ts:29
 
 ___
 
 ### self
 
-• `Readonly` **self**: [`default`](../classes/verida_client_ts._internal_.default-2.md)
+• `Readonly` **self**: [`default`](../classes/verida_client_ts._internal_.default-3.md)
 
 #### Inherited from
 
@@ -435,7 +435,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/index.d.ts:40
+packages/client-ts/node_modules/ajv/dist/compile/index.d.ts:40
 
 ___
 
@@ -449,7 +449,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/index.d.ts:21
+packages/client-ts/node_modules/ajv/dist/compile/index.d.ts:21
 
 ___
 
@@ -463,4 +463,4 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/index.d.ts:22
+packages/client-ts/node_modules/ajv/dist/compile/index.d.ts:22

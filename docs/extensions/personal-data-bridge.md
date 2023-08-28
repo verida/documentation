@@ -1,6 +1,6 @@
 ---
 title: Personal Data Bridge
-sidebar_position: 1
+sidebar_position: 3
 description: Verida Developer Documentation
 keywords: [Verida, Web3, Developers, Data Bridge]
 ---

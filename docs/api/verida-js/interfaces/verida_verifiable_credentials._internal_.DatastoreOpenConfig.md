@@ -28,7 +28,7 @@ Interface for any DatastoreOpenConfig
 
 #### Defined in
 
-packages/client-ts/dist/context/interfaces.d.ts:65
+packages/types/dist/ContextInterfaces.d.ts:83
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/dist/context/interfaces.d.ts:63
+packages/types/dist/ContextInterfaces.d.ts:81
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/dist/context/interfaces.d.ts:62
+packages/types/dist/ContextInterfaces.d.ts:80
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/dist/context/interfaces.d.ts:58
+packages/types/dist/ContextInterfaces.d.ts:76
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/dist/context/interfaces.d.ts:61
+packages/types/dist/ContextInterfaces.d.ts:79
 
 ___
 
@@ -78,17 +78,17 @@ ___
 
 #### Defined in
 
-packages/client-ts/dist/context/interfaces.d.ts:64
+packages/types/dist/ContextInterfaces.d.ts:82
 
 ___
 
 ### permissions
 
-• `Optional` **permissions**: [`PermissionsConfig`](verida_verifiable_credentials._internal_.PermissionsConfig.md)
+• `Optional` **permissions**: [`DatabasePermissionsConfig`](verida_verifiable_credentials._internal_.DatabasePermissionsConfig.md)
 
 #### Defined in
 
-packages/client-ts/dist/context/interfaces.d.ts:57
+packages/types/dist/ContextInterfaces.d.ts:75
 
 ___
 
@@ -98,7 +98,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/dist/context/interfaces.d.ts:60
+packages/types/dist/ContextInterfaces.d.ts:78
 
 ___
 
@@ -108,4 +108,4 @@ ___
 
 #### Defined in
 
-packages/client-ts/dist/context/interfaces.d.ts:59
+packages/types/dist/ContextInterfaces.d.ts:77

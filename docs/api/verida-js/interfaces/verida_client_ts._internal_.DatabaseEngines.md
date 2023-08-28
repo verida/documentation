@@ -8,4 +8,4 @@ Interface for any DatabaseEngines
 
 ## Indexable
 
-▪ [key: `string`]: [`BaseStorageEngine`](../classes/verida_client_ts._internal_.BaseStorageEngine.md)
+▪ [key: `string`]: [`IStorageEngine`](verida_client_ts._internal_.IStorageEngine.md)

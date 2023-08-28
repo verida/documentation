@@ -28,14 +28,19 @@ An Authenticator that requests for authorization from the Vault
 
 - [addContext](verida_account_web_vault.VaultAccount.md#addcontext)
 - [connectContext](verida_account_web_vault.VaultAccount.md#connectcontext)
+- [contextAuthIsValid](verida_account_web_vault.VaultAccount.md#contextauthisvalid)
 - [createDidJwt](verida_account_web_vault.VaultAccount.md#createdidjwt)
 - [did](verida_account_web_vault.VaultAccount.md#did)
 - [disconnect](verida_account_web_vault.VaultAccount.md#disconnect)
-- [getDidClient](verida_account_web_vault.VaultAccount.md#getdidclient)
+- [disconnectDevice](verida_account_web_vault.VaultAccount.md#disconnectdevice)
+- [getAuthContext](verida_account_web_vault.VaultAccount.md#getauthcontext)
+- [getAxios](verida_account_web_vault.VaultAccount.md#getaxios)
 - [keyring](verida_account_web_vault.VaultAccount.md#keyring)
 - [linkStorage](verida_account_web_vault.VaultAccount.md#linkstorage)
 - [linkStorageContextService](verida_account_web_vault.VaultAccount.md#linkstoragecontextservice)
 - [loadFromSession](verida_account_web_vault.VaultAccount.md#loadfromsession)
+- [locateEndpointContextAuth](verida_account_web_vault.VaultAccount.md#locateendpointcontextauth)
+- [setAccountConfig](verida_account_web_vault.VaultAccount.md#setaccountconfig)
 - [setDid](verida_account_web_vault.VaultAccount.md#setdid)
 - [sign](verida_account_web_vault.VaultAccount.md#sign)
 - [storageConfig](verida_account_web_vault.VaultAccount.md#storageconfig)
@@ -51,7 +56,7 @@ An Authenticator that requests for authorization from the Vault
 
 | Name | Type |
 | :------ | :------ |
-| `config` | [`VaultAccountConfig`](../interfaces/verida_account_web_vault.VaultAccountConfig.md) |
+| `config` | [`AccountVaultConfig`](../interfaces/verida_account_web_vault._internal_.AccountVaultConfig.md) |
 
 #### Overrides
 
@@ -59,7 +64,7 @@ An Authenticator that requests for authorization from the Vault
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:69](https://github.com/verida/verida-js/blob/c03b336/packages/account-web-vault/src/vault-account.ts#L69)
+[packages/account-web-vault/src/vault-account.ts:81](https://github.com/verida/verida-js/blob/a690f60/packages/account-web-vault/src/vault-account.ts#L81)
 
 ## Properties
 
@@ -69,17 +74,17 @@ An Authenticator that requests for authorization from the Vault
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:66](https://github.com/verida/verida-js/blob/c03b336/packages/account-web-vault/src/vault-account.ts#L66)
+[packages/account-web-vault/src/vault-account.ts:78](https://github.com/verida/verida-js/blob/a690f60/packages/account-web-vault/src/vault-account.ts#L78)
 
 ___
 
 ### config
 
-• `Private` **config**: [`VaultAccountConfig`](../interfaces/verida_account_web_vault.VaultAccountConfig.md)
+• `Private` **config**: [`AccountVaultConfig`](../interfaces/verida_account_web_vault._internal_.AccountVaultConfig.md)
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:64](https://github.com/verida/verida-js/blob/c03b336/packages/account-web-vault/src/vault-account.ts#L64)
+[packages/account-web-vault/src/vault-account.ts:76](https://github.com/verida/verida-js/blob/a690f60/packages/account-web-vault/src/vault-account.ts#L76)
 
 ___
 
@@ -89,13 +94,13 @@ ___
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:67](https://github.com/verida/verida-js/blob/c03b336/packages/account-web-vault/src/vault-account.ts#L67)
+[packages/account-web-vault/src/vault-account.ts:79](https://github.com/verida/verida-js/blob/a690f60/packages/account-web-vault/src/vault-account.ts#L79)
 
 ## Methods
 
 ### addContext
 
-▸ **addContext**(`contextName`, `contextConfig`, `keyring`): `void`
+▸ **addContext**(`contextName`, `contextConfig`, `keyring`, `contextAuths`): `void`
 
 #### Parameters
 
@@ -104,6 +109,7 @@ ___
 | `contextName` | `string` |
 | `contextConfig` | [`SecureContextConfig`](../interfaces/verida_account_web_vault._internal_.SecureContextConfig.md) |
 | `keyring` | [`default`](verida_account_web_vault._internal_.default-1.md) |
+| `contextAuths` | [`VeridaDatabaseAuthContext`](../interfaces/verida_account_web_vault._internal_.VeridaDatabaseAuthContext.md)[] |
 
 #### Returns
 
@@ -111,19 +117,20 @@ ___
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:161](https://github.com/verida/verida-js/blob/c03b336/packages/account-web-vault/src/vault-account.ts#L161)
+[packages/account-web-vault/src/vault-account.ts:234](https://github.com/verida/verida-js/blob/a690f60/packages/account-web-vault/src/vault-account.ts#L234)
 
 ___
 
 ### connectContext
 
-▸ **connectContext**(`contextName`): `Promise`<`boolean` \| [`SecureContextConfig`](../interfaces/verida_account_web_vault._internal_.SecureContextConfig.md)\>
+▸ **connectContext**(`contextName`, `ignoreSession?`): `Promise`<`boolean` \| [`SecureContextConfig`](../interfaces/verida_account_web_vault._internal_.SecureContextConfig.md)\>
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `contextName` | `string` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `contextName` | `string` | `undefined` |
+| `ignoreSession` | `boolean` | `false` |
 
 #### Returns
 
@@ -131,7 +138,29 @@ ___
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:74](https://github.com/verida/verida-js/blob/c03b336/packages/account-web-vault/src/vault-account.ts#L74)
+[packages/account-web-vault/src/vault-account.ts:94](https://github.com/verida/verida-js/blob/a690f60/packages/account-web-vault/src/vault-account.ts#L94)
+
+___
+
+### contextAuthIsValid
+
+▸ **contextAuthIsValid**(`contextAuths`): `boolean`
+
+Verify we have valid JWT's and non-expired accessToken and refreshToken
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `contextAuths` | [`VeridaDatabaseAuthContext`](../interfaces/verida_account_web_vault._internal_.VeridaDatabaseAuthContext.md)[] |
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+[packages/account-web-vault/src/vault-account.ts:146](https://github.com/verida/verida-js/blob/a690f60/packages/account-web-vault/src/vault-account.ts#L146)
 
 ___
 
@@ -179,7 +208,7 @@ Get the DID of the current user
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:186](https://github.com/verida/verida-js/blob/c03b336/packages/account-web-vault/src/vault-account.ts#L186)
+[packages/account-web-vault/src/vault-account.ts:260](https://github.com/verida/verida-js/blob/a690f60/packages/account-web-vault/src/vault-account.ts#L260)
 
 ___
 
@@ -207,25 +236,80 @@ For example, in a web browser context, it would remove any stored signatures fro
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:212](https://github.com/verida/verida-js/blob/c03b336/packages/account-web-vault/src/vault-account.ts#L212)
+[packages/account-web-vault/src/vault-account.ts:286](https://github.com/verida/verida-js/blob/a690f60/packages/account-web-vault/src/vault-account.ts#L286)
 
 ___
 
-### getDidClient
+### disconnectDevice
 
-▸ **getDidClient**(): `void`
+▸ **disconnectDevice**(`contextName`, `deviceId?`): `Promise`<`boolean`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `contextName` | `string` |
+| `deviceId?` | `string` |
 
 #### Returns
 
-`void`
+`Promise`<`boolean`\>
 
 #### Inherited from
 
-[default](verida_account_web_vault._internal_.default.md).[getDidClient](verida_account_web_vault._internal_.default.md#getdidclient)
+[default](verida_account_web_vault._internal_.default.md).[disconnectDevice](verida_account_web_vault._internal_.default.md#disconnectdevice)
 
 #### Defined in
 
-packages/account/dist/account.d.ts:37
+packages/account/dist/account.d.ts:50
+
+___
+
+### getAuthContext
+
+▸ **getAuthContext**(`contextName`, `contextConfig`, `authConfig?`, `authType?`): `Promise`<[`AuthContext`](../interfaces/verida_account_web_vault._internal_.AuthContext.md)\>
+
+#### Parameters
+
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `contextName` | `string` | `undefined` |
+| `contextConfig` | [`SecureContextConfig`](../interfaces/verida_account_web_vault._internal_.SecureContextConfig.md) | `undefined` |
+| `authConfig` | [`AuthTypeConfig`](../interfaces/verida_account_web_vault._internal_.AuthTypeConfig.md) | `undefined` |
+| `authType` | `string` | `"database"` |
+
+#### Returns
+
+`Promise`<[`AuthContext`](../interfaces/verida_account_web_vault._internal_.AuthContext.md)\>
+
+#### Overrides
+
+[default](verida_account_web_vault._internal_.default.md).[getAuthContext](verida_account_web_vault._internal_.default.md#getauthcontext)
+
+#### Defined in
+
+[packages/account-web-vault/src/vault-account.ts:307](https://github.com/verida/verida-js/blob/a690f60/packages/account-web-vault/src/vault-account.ts#L307)
+
+___
+
+### getAxios
+
+▸ `Private` **getAxios**(`storageContext`, `accessToken?`): [`AxiosInstance`](../interfaces/verida_account_web_vault._internal_.AxiosInstance.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `storageContext` | `string` |
+| `accessToken?` | `string` |
+
+#### Returns
+
+[`AxiosInstance`](../interfaces/verida_account_web_vault._internal_.AxiosInstance.md)
+
+#### Defined in
+
+[packages/account-web-vault/src/vault-account.ts:361](https://github.com/verida/verida-js/blob/a690f60/packages/account-web-vault/src/vault-account.ts#L361)
 
 ___
 
@@ -251,13 +335,13 @@ Generate a keyring for this user for a given storage context.
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:153](https://github.com/verida/verida-js/blob/c03b336/packages/account-web-vault/src/vault-account.ts#L153)
+[packages/account-web-vault/src/vault-account.ts:226](https://github.com/verida/verida-js/blob/a690f60/packages/account-web-vault/src/vault-account.ts#L226)
 
 ___
 
 ### linkStorage
 
-▸ **linkStorage**(`storageConfig`): `Promise`<`void`\>
+▸ **linkStorage**(`storageConfig`): `Promise`<`boolean`\>
 
 Link storage to this user
 
@@ -269,7 +353,7 @@ Link storage to this user
 
 #### Returns
 
-`Promise`<`void`\>
+`Promise`<`boolean`\>
 
 #### Overrides
 
@@ -277,13 +361,13 @@ Link storage to this user
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:199](https://github.com/verida/verida-js/blob/c03b336/packages/account-web-vault/src/vault-account.ts#L199)
+[packages/account-web-vault/src/vault-account.ts:273](https://github.com/verida/verida-js/blob/a690f60/packages/account-web-vault/src/vault-account.ts#L273)
 
 ___
 
 ### linkStorageContextService
 
-▸ **linkStorageContextService**(`contextName`, `endpointType`, `serverType`, `endpointUri`): `Promise`<`boolean`\>
+▸ **linkStorageContextService**(`contextName`, `endpointType`, `serverType`, `endpointUris`): `Promise`<`boolean`\>
 
 #### Parameters
 
@@ -292,7 +376,7 @@ ___
 | `contextName` | `string` |
 | `endpointType` | `string` |
 | `serverType` | `string` |
-| `endpointUri` | `string` |
+| `endpointUris` | `string`[] |
 
 #### Returns
 
@@ -324,7 +408,52 @@ ___
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:112](https://github.com/verida/verida-js/blob/c03b336/packages/account-web-vault/src/vault-account.ts#L112)
+[packages/account-web-vault/src/vault-account.ts:175](https://github.com/verida/verida-js/blob/a690f60/packages/account-web-vault/src/vault-account.ts#L175)
+
+___
+
+### locateEndpointContextAuth
+
+▸ `Private` **locateEndpointContextAuth**(`contextName`, `endpointUri`): `any`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `contextName` | `string` |
+| `endpointUri` | `string` |
+
+#### Returns
+
+`any`
+
+#### Defined in
+
+[packages/account-web-vault/src/vault-account.ts:293](https://github.com/verida/verida-js/blob/a690f60/packages/account-web-vault/src/vault-account.ts#L293)
+
+___
+
+### setAccountConfig
+
+▸ **setAccountConfig**(`accountConfig`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `accountConfig` | [`AccountConfig`](../interfaces/verida_account_web_vault._internal_.AccountConfig.md) |
+
+#### Returns
+
+`void`
+
+#### Overrides
+
+[default](verida_account_web_vault._internal_.default.md).[setAccountConfig](verida_account_web_vault._internal_.default.md#setaccountconfig)
+
+#### Defined in
+
+[packages/account-web-vault/src/vault-account.ts:136](https://github.com/verida/verida-js/blob/a690f60/packages/account-web-vault/src/vault-account.ts#L136)
 
 ___
 
@@ -344,7 +473,7 @@ ___
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:190](https://github.com/verida/verida-js/blob/c03b336/packages/account-web-vault/src/vault-account.ts#L190)
+[packages/account-web-vault/src/vault-account.ts:264](https://github.com/verida/verida-js/blob/a690f60/packages/account-web-vault/src/vault-account.ts#L264)
 
 ___
 
@@ -370,7 +499,7 @@ Sign a string as the current user
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:182](https://github.com/verida/verida-js/blob/c03b336/packages/account-web-vault/src/vault-account.ts#L182)
+[packages/account-web-vault/src/vault-account.ts:256](https://github.com/verida/verida-js/blob/a690f60/packages/account-web-vault/src/vault-account.ts#L256)
 
 ___
 
@@ -395,7 +524,7 @@ ___
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:168](https://github.com/verida/verida-js/blob/c03b336/packages/account-web-vault/src/vault-account.ts#L168)
+[packages/account-web-vault/src/vault-account.ts:242](https://github.com/verida/verida-js/blob/a690f60/packages/account-web-vault/src/vault-account.ts#L242)
 
 ___
 
@@ -421,4 +550,4 @@ Unlink storage for this user
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:208](https://github.com/verida/verida-js/blob/c03b336/packages/account-web-vault/src/vault-account.ts#L208)
+[packages/account-web-vault/src/vault-account.ts:282](https://github.com/verida/verida-js/blob/a690f60/packages/account-web-vault/src/vault-account.ts#L282)

@@ -21,7 +21,7 @@
 
 #### Defined in
 
-node_modules/ajv/dist/types/json-schema.d.ts:19
+packages/client-ts/node_modules/ajv/dist/types/json-schema.d.ts:19
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/types/json-schema.d.ts:17
+packages/client-ts/node_modules/ajv/dist/types/json-schema.d.ts:17
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/types/json-schema.d.ts:16
+packages/client-ts/node_modules/ajv/dist/types/json-schema.d.ts:16
 
 ___
 
@@ -51,4 +51,4 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/types/json-schema.d.ts:18
+packages/client-ts/node_modules/ajv/dist/types/json-schema.d.ts:18

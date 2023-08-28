@@ -13,13 +13,15 @@ Interface for any DatabaseOpenConfig
 - [contextName](verida_verifiable_credentials._internal_.DatabaseOpenConfig.md#contextname)
 - [createContext](verida_verifiable_credentials._internal_.DatabaseOpenConfig.md#createcontext)
 - [did](verida_verifiable_credentials._internal_.DatabaseOpenConfig.md#did)
-- [dsn](verida_verifiable_credentials._internal_.DatabaseOpenConfig.md#dsn)
 - [encryptionKey](verida_verifiable_credentials._internal_.DatabaseOpenConfig.md#encryptionkey)
+- [endpoints](verida_verifiable_credentials._internal_.DatabaseOpenConfig.md#endpoints)
+- [ignoreCache](verida_verifiable_credentials._internal_.DatabaseOpenConfig.md#ignorecache)
 - [isOwner](verida_verifiable_credentials._internal_.DatabaseOpenConfig.md#isowner)
 - [permissions](verida_verifiable_credentials._internal_.DatabaseOpenConfig.md#permissions)
 - [readOnly](verida_verifiable_credentials._internal_.DatabaseOpenConfig.md#readonly)
 - [saveDatabase](verida_verifiable_credentials._internal_.DatabaseOpenConfig.md#savedatabase)
 - [signingContext](verida_verifiable_credentials._internal_.DatabaseOpenConfig.md#signingcontext)
+- [token](verida_verifiable_credentials._internal_.DatabaseOpenConfig.md#token)
 
 ## Properties
 
@@ -31,7 +33,7 @@ Optionally specify an external context to open
 
 #### Defined in
 
-packages/client-ts/dist/context/interfaces.d.ts:47
+packages/types/dist/ContextInterfaces.d.ts:53
 
 ___
 
@@ -43,7 +45,7 @@ Create an application context if it doesn't already exist for the connected acco
 
 #### Defined in
 
-packages/client-ts/dist/context/interfaces.d.ts:43
+packages/types/dist/ContextInterfaces.d.ts:49
 
 ___
 
@@ -57,33 +59,45 @@ This ensures the Verida client connects to the correct database server hosting t
 
 #### Defined in
 
-packages/client-ts/dist/context/interfaces.d.ts:15
-
-___
-
-### dsn
-
-• `Optional` **dsn**: `string`
-
-Specify a specific database connection string to use when opening the database.
-
-#### Defined in
-
-packages/client-ts/dist/context/interfaces.d.ts:19
+packages/types/dist/ContextInterfaces.d.ts:17
 
 ___
 
 ### encryptionKey
 
-• `Optional` **encryptionKey**: `string`
+• `Optional` **encryptionKey**: `Buffer`
 
-An optional encryption key to use for encyrpting / decrypting data.
+An optional encryption key to use for encrypting / decrypting data.
 
 This encryption key will not apply if the database is marked as `public`.
 
 #### Defined in
 
-packages/client-ts/dist/context/interfaces.d.ts:39
+packages/types/dist/ContextInterfaces.d.ts:45
+
+___
+
+### endpoints
+
+• `Optional` **endpoints**: `string` \| `string`[]
+
+Specify an array of possible database connection strings to use when opening the database.
+
+#### Defined in
+
+packages/types/dist/ContextInterfaces.d.ts:21
+
+___
+
+### ignoreCache
+
+• `Optional` **ignoreCache**: `boolean`
+
+Ignore any cached instance already created
+
+#### Defined in
+
+packages/types/dist/ContextInterfaces.d.ts:61
 
 ___
 
@@ -95,19 +109,19 @@ Boolean indicating if it's expected the current connected account is the owner o
 
 #### Defined in
 
-packages/client-ts/dist/context/interfaces.d.ts:33
+packages/types/dist/ContextInterfaces.d.ts:39
 
 ___
 
 ### permissions
 
-• `Optional` **permissions**: [`PermissionsConfig`](verida_verifiable_credentials._internal_.PermissionsConfig.md)
+• `Optional` **permissions**: [`DatabasePermissionsConfig`](verida_verifiable_credentials._internal_.DatabasePermissionsConfig.md)
 
 Specify the permissions to use when opening this database.
 
 #### Defined in
 
-packages/client-ts/dist/context/interfaces.d.ts:9
+packages/types/dist/ContextInterfaces.d.ts:11
 
 ___
 
@@ -121,7 +135,7 @@ This is useful when opening a database owned by an external `did` where the curr
 
 #### Defined in
 
-packages/client-ts/dist/context/interfaces.d.ts:29
+packages/types/dist/ContextInterfaces.d.ts:35
 
 ___
 
@@ -133,16 +147,28 @@ Save this database into the user's master list of opened databases.
 
 #### Defined in
 
-packages/client-ts/dist/context/interfaces.d.ts:23
+packages/types/dist/ContextInterfaces.d.ts:29
 
 ___
 
 ### signingContext
 
-• `Optional` **signingContext**: [`Context`](../classes/verida_verifiable_credentials._internal_.Context.md)
+• `Optional` **signingContext**: [`IContext`](verida_verifiable_credentials._internal_.IContext.md)
 
 Optionally specify the context used to sign data
 
 #### Defined in
 
-packages/client-ts/dist/context/interfaces.d.ts:51
+packages/types/dist/ContextInterfaces.d.ts:57
+
+___
+
+### token
+
+• `Optional` **token**: `string`
+
+Specify a JWT token to use when opening the database.
+
+#### Defined in
+
+packages/types/dist/ContextInterfaces.d.ts:25

@@ -20,17 +20,17 @@
 
 #### Defined in
 
-packages/storage-link/dist/interfaces.d.ts:12
+packages/types/dist/DocumentInterfaces.d.ts:5
 
 ___
 
 ### endpointUri
 
-• **endpointUri**: `string`
+• **endpointUri**: [`ServiceEndpoint`](../modules/verida_account_node._internal_.md#serviceendpoint)[]
 
 #### Defined in
 
-packages/storage-link/dist/interfaces.d.ts:11
+packages/types/dist/DocumentInterfaces.d.ts:4
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 #### Defined in
 
-packages/storage-link/dist/interfaces.d.ts:10
+packages/types/dist/DocumentInterfaces.d.ts:3

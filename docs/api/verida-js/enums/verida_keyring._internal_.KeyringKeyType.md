@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[packages/keyring/src/interfaces.ts:4](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/interfaces.ts#L4)
+packages/types/dist/IKeyring.d.ts:26
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[packages/keyring/src/interfaces.ts:3](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/interfaces.ts#L3)
+packages/types/dist/IKeyring.d.ts:25
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 #### Defined in
 
-[packages/keyring/src/interfaces.ts:5](https://github.com/verida/verida-js/blob/c03b336/packages/keyring/src/interfaces.ts#L5)
+packages/types/dist/IKeyring.d.ts:27

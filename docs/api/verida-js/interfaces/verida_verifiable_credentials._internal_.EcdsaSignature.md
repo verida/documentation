@@ -22,7 +22,7 @@
 
 #### Defined in
 
-packages/verifiable-credentials/node_modules/did-jwt/lib/util.d.ts:6
+node_modules/did-jwt/lib/util.d.ts:6
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 #### Defined in
 
-packages/verifiable-credentials/node_modules/did-jwt/lib/util.d.ts:8
+node_modules/did-jwt/lib/util.d.ts:8
 
 ___
 
@@ -42,4 +42,4 @@ ___
 
 #### Defined in
 
-packages/verifiable-credentials/node_modules/did-jwt/lib/util.d.ts:7
+node_modules/did-jwt/lib/util.d.ts:7

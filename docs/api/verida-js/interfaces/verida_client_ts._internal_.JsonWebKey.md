@@ -4,6 +4,14 @@
 
 [@verida/client-ts](../modules/verida_client_ts.md).[<internal\>](../modules/verida_client_ts._internal_.md).JsonWebKey
 
+Encapsulates a JSON web key type that includes only the public properties that
+can be used in DID documents.
+
+The private properties are intentionally omitted to discourage the use
+(and accidental disclosure) of private keys in DID documents.
+
+**`see`** [RFC7517 JsonWebKey (JWK)](https://www.rfc-editor.org/rfc/rfc7517)
+
 ## Hierarchy
 
 - [`Extensible`](../modules/verida_client_ts._internal_.md#extensible)
@@ -34,7 +42,7 @@
 
 #### Defined in
 
-packages/did-document/node_modules/did-resolver/lib/resolver.d.ts:46
+node_modules/did-resolver/lib/resolver.d.ts:103
 
 ___
 
@@ -44,7 +52,7 @@ ___
 
 #### Defined in
 
-packages/did-document/node_modules/did-resolver/lib/resolver.d.ts:47
+node_modules/did-resolver/lib/resolver.d.ts:104
 
 ___
 
@@ -54,7 +62,7 @@ ___
 
 #### Defined in
 
-packages/did-document/node_modules/did-resolver/lib/resolver.d.ts:48
+node_modules/did-resolver/lib/resolver.d.ts:105
 
 ___
 
@@ -64,7 +72,7 @@ ___
 
 #### Defined in
 
-packages/did-document/node_modules/did-resolver/lib/resolver.d.ts:49
+node_modules/did-resolver/lib/resolver.d.ts:106
 
 ___
 
@@ -74,7 +82,7 @@ ___
 
 #### Defined in
 
-packages/did-document/node_modules/did-resolver/lib/resolver.d.ts:50
+node_modules/did-resolver/lib/resolver.d.ts:107
 
 ___
 
@@ -84,7 +92,7 @@ ___
 
 #### Defined in
 
-packages/did-document/node_modules/did-resolver/lib/resolver.d.ts:51
+node_modules/did-resolver/lib/resolver.d.ts:108
 
 ___
 
@@ -94,7 +102,7 @@ ___
 
 #### Defined in
 
-packages/did-document/node_modules/did-resolver/lib/resolver.d.ts:52
+node_modules/did-resolver/lib/resolver.d.ts:109
 
 ___
 
@@ -104,7 +112,7 @@ ___
 
 #### Defined in
 
-packages/did-document/node_modules/did-resolver/lib/resolver.d.ts:53
+node_modules/did-resolver/lib/resolver.d.ts:110
 
 ___
 
@@ -114,7 +122,7 @@ ___
 
 #### Defined in
 
-packages/did-document/node_modules/did-resolver/lib/resolver.d.ts:54
+node_modules/did-resolver/lib/resolver.d.ts:111
 
 ___
 
@@ -124,7 +132,7 @@ ___
 
 #### Defined in
 
-packages/did-document/node_modules/did-resolver/lib/resolver.d.ts:55
+node_modules/did-resolver/lib/resolver.d.ts:112
 
 ___
 
@@ -134,4 +142,4 @@ ___
 
 #### Defined in
 
-packages/did-document/node_modules/did-resolver/lib/resolver.d.ts:56
+node_modules/did-resolver/lib/resolver.d.ts:113

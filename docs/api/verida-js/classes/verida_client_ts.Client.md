@@ -4,6 +4,10 @@
 
 [@verida/client-ts](../modules/verida_client_ts.md).Client
 
+## Implements
+
+- [`IClient`](../interfaces/verida_client_ts._internal_.IClient.md)
+
 ## Table of contents
 
 ### Constructors
@@ -18,24 +22,28 @@
 - [didClient](verida_client_ts.Client.md#didclient)
 - [didContextManager](verida_client_ts.Client.md#didcontextmanager)
 - [environment](verida_client_ts.Client.md#environment)
+- [nameClient](verida_client_ts.Client.md#nameclient)
 
 ### Methods
 
 - [connect](verida_client_ts.Client.md#connect)
 - [getConfig](verida_client_ts.Client.md#getconfig)
 - [getContextConfig](verida_client_ts.Client.md#getcontextconfig)
+- [getDID](verida_client_ts.Client.md#getdid)
 - [getSchema](verida_client_ts.Client.md#getschema)
+- [getUsernames](verida_client_ts.Client.md#getusernames)
 - [getValidDataSignatures](verida_client_ts.Client.md#getvaliddatasignatures)
 - [isConnected](verida_client_ts.Client.md#isconnected)
 - [openContext](verida_client_ts.Client.md#opencontext)
 - [openExternalContext](verida_client_ts.Client.md#openexternalcontext)
 - [openPublicProfile](verida_client_ts.Client.md#openpublicprofile)
+- [parseDid](verida_client_ts.Client.md#parsedid)
 
 ## Constructors
 
 ### constructor
 
-• **new Client**(`userConfig?`)
+• **new Client**(`userConfig`)
 
 Create a client connection to the Verida network
 
@@ -47,19 +55,19 @@ Create a client connection to the Verida network
 
 #### Defined in
 
-[packages/client-ts/src/client.ts:56](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/client.ts#L56)
+[packages/client-ts/src/client.ts:53](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/client.ts#L53)
 
 ## Properties
 
 ### account
 
-• `Private` `Optional` **account**: [`default`](verida_client_ts._internal_.default-1.md)
+• `Private` `Optional` **account**: [`IAccount`](../interfaces/verida_client_ts._internal_.IAccount.md)
 
 Connected account instance
 
 #### Defined in
 
-[packages/client-ts/src/client.ts:34](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/client.ts#L34)
+[packages/client-ts/src/client.ts:29](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/client.ts#L29)
 
 ___
 
@@ -71,7 +79,7 @@ Current configuration for this client
 
 #### Defined in
 
-[packages/client-ts/src/client.ts:49](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/client.ts#L49)
+[packages/client-ts/src/client.ts:46](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/client.ts#L46)
 
 ___
 
@@ -83,19 +91,19 @@ DID of connected account
 
 #### Defined in
 
-[packages/client-ts/src/client.ts:39](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/client.ts#L39)
+[packages/client-ts/src/client.ts:34](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/client.ts#L34)
 
 ___
 
 ### didClient
 
-• **didClient**: [`default`](verida_client_ts._internal_.default.md)
+• **didClient**: [`DIDClient`](verida_client_ts._internal_.DIDClient.md)
 
 Connection to the Verida DID Registry
 
 #### Defined in
 
-[packages/client-ts/src/client.ts:24](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/client.ts#L24)
+[packages/client-ts/src/client.ts:19](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/client.ts#L19)
 
 ___
 
@@ -107,19 +115,29 @@ Helper instance to manage DID contexts
 
 #### Defined in
 
-[packages/client-ts/src/client.ts:29](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/client.ts#L29)
+[packages/client-ts/src/client.ts:24](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/client.ts#L24)
 
 ___
 
 ### environment
 
-• `Private` **environment**: `string`
+• `Private` **environment**: [`EnvironmentType`](../enums/verida_client_ts._internal_.EnvironmentType.md)
 
 Currently selected environment
 
 #### Defined in
 
-[packages/client-ts/src/client.ts:44](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/client.ts#L44)
+[packages/client-ts/src/client.ts:39](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/client.ts#L39)
+
+___
+
+### nameClient
+
+• `Private` **nameClient**: [`VeridaNameClient`](verida_client_ts._internal_.VeridaNameClient.md)
+
+#### Defined in
+
+[packages/client-ts/src/client.ts:41](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/client.ts#L41)
 
 ## Methods
 
@@ -136,15 +154,19 @@ authenticate with databases, send messages etc.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `account` | [`default`](verida_client_ts._internal_.default-1.md) | AccountInterface |
+| `account` | [`IAccount`](../interfaces/verida_client_ts._internal_.IAccount.md) | AccountInterface |
 
 #### Returns
 
 `Promise`<`void`\>
 
+#### Implementation of
+
+[IClient](../interfaces/verida_client_ts._internal_.IClient.md).[connect](../interfaces/verida_client_ts._internal_.IClient.md#connect)
+
 #### Defined in
 
-[packages/client-ts/src/client.ts:79](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/client.ts#L79)
+[packages/client-ts/src/client.ts:92](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/client.ts#L92)
 
 ___
 
@@ -158,7 +180,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/client.ts:188](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/client.ts#L188)
+[packages/client-ts/src/client.ts:204](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/client.ts#L204)
 
 ___
 
@@ -183,15 +205,41 @@ This provides the public details about the database, storage and messaging endpo
 
 SecureContextConfig | undefined
 
+#### Implementation of
+
+[IClient](../interfaces/verida_client_ts._internal_.IClient.md).[getContextConfig](../interfaces/verida_client_ts._internal_.IClient.md#getcontextconfig)
+
 #### Defined in
 
-[packages/client-ts/src/client.ts:181](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/client.ts#L181)
+[packages/client-ts/src/client.ts:196](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/client.ts#L196)
+
+___
+
+### getDID
+
+▸ **getDID**(`username`): `Promise`<`string`\>
+
+Get the DID linked to a username
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `username` | `string` |
+
+#### Returns
+
+`Promise`<`string`\>
+
+#### Defined in
+
+[packages/client-ts/src/client.ts:341](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/client.ts#L341)
 
 ___
 
 ### getSchema
 
-▸ **getSchema**(`schemaUri`): `Promise`<[`Schema`](verida_client_ts.Schema.md)\>
+▸ **getSchema**(`schemaUri`): `Promise`<[`Schema`](verida_client_ts._internal_.Schema.md)\>
 
 Get a Schama instance by URL.
 
@@ -203,13 +251,39 @@ Get a Schama instance by URL.
 
 #### Returns
 
-`Promise`<[`Schema`](verida_client_ts.Schema.md)\>
+`Promise`<[`Schema`](verida_client_ts._internal_.Schema.md)\>
 
 Schema A schema object
 
+#### Implementation of
+
+[IClient](../interfaces/verida_client_ts._internal_.IClient.md).[getSchema](../interfaces/verida_client_ts._internal_.IClient.md#getschema)
+
 #### Defined in
 
-[packages/client-ts/src/client.ts:290](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/client.ts#L290)
+[packages/client-ts/src/client.ts:314](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/client.ts#L314)
+
+___
+
+### getUsernames
+
+▸ **getUsernames**(`did`): `Promise`<`string`[]\>
+
+Get an array of usernames linked to a DID
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `did` | `string` |
+
+#### Returns
+
+`Promise`<`string`[]\>
+
+#### Defined in
+
+[packages/client-ts/src/client.ts:351](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/client.ts#L351)
 
 ___
 
@@ -236,9 +310,13 @@ Only returns the signatures that are valid.
 
 string[] Array of DIDs that have validly signed the data
 
+#### Implementation of
+
+[IClient](../interfaces/verida_client_ts._internal_.IClient.md).[getValidDataSignatures](../interfaces/verida_client_ts._internal_.IClient.md#getvaliddatasignatures)
+
 #### Defined in
 
-[packages/client-ts/src/client.ts:238](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/client.ts#L238)
+[packages/client-ts/src/client.ts:255](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/client.ts#L255)
 
 ___
 
@@ -254,15 +332,19 @@ Check if an account is connected to this client.
 
 boolean True of an account is connected
 
+#### Implementation of
+
+[IClient](../interfaces/verida_client_ts._internal_.IClient.md).[isConnected](../interfaces/verida_client_ts._internal_.IClient.md#isconnected)
+
 #### Defined in
 
-[packages/client-ts/src/client.ts:94](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/client.ts#L94)
+[packages/client-ts/src/client.ts:107](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/client.ts#L107)
 
 ___
 
 ### openContext
 
-▸ **openContext**(`contextName`, `forceCreate?`): `Promise`<`undefined` \| [`Context`](verida_client_ts.Context.md)\>
+▸ **openContext**(`contextName`, `forceCreate?`): `Promise`<`undefined` \| [`IContext`](../interfaces/verida_client_ts._internal_.IContext.md)\>
 
 Open a storage context for the current account.
 
@@ -275,19 +357,23 @@ Open a storage context for the current account.
 
 #### Returns
 
-`Promise`<`undefined` \| [`Context`](verida_client_ts.Context.md)\>
+`Promise`<`undefined` \| [`IContext`](../interfaces/verida_client_ts._internal_.IContext.md)\>
 
 Context | undefined
 
+#### Implementation of
+
+[IClient](../interfaces/verida_client_ts._internal_.IClient.md).[openContext](../interfaces/verida_client_ts._internal_.IClient.md#opencontext)
+
 #### Defined in
 
-[packages/client-ts/src/client.ts:105](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/client.ts#L105)
+[packages/client-ts/src/client.ts:118](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/client.ts#L118)
 
 ___
 
 ### openExternalContext
 
-▸ **openExternalContext**(`contextName`, `did`): `Promise`<[`Context`](verida_client_ts.Context.md)\>
+▸ **openExternalContext**(`contextName`, `did`): `Promise`<[`IContext`](../interfaces/verida_client_ts._internal_.IContext.md)\>
 
 #### Parameters
 
@@ -298,17 +384,21 @@ ___
 
 #### Returns
 
-`Promise`<[`Context`](verida_client_ts.Context.md)\>
+`Promise`<[`IContext`](../interfaces/verida_client_ts._internal_.IContext.md)\>
+
+#### Implementation of
+
+[IClient](../interfaces/verida_client_ts._internal_.IClient.md).[openExternalContext](../interfaces/verida_client_ts._internal_.IClient.md#openexternalcontext)
 
 #### Defined in
 
-[packages/client-ts/src/client.ts:156](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/client.ts#L156)
+[packages/client-ts/src/client.ts:169](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/client.ts#L169)
 
 ___
 
 ### openPublicProfile
 
-▸ **openPublicProfile**(`did`, `contextName`, `profileName?`, `fallbackContext?`): `Promise`<`undefined` \| [`Profile`](verida_client_ts.Profile.md)\>
+▸ **openPublicProfile**(`did`, `contextName`, `profileName?`, `fallbackContext?`): `Promise`<`undefined` \| [`IProfile`](../interfaces/verida_client_ts._internal_.IProfile.md)\>
 
 Open the public profile of any user in read only mode.
 
@@ -327,10 +417,37 @@ You most likely want to request the `Verida: Vault` context.
 
 #### Returns
 
-`Promise`<`undefined` \| [`Profile`](verida_client_ts.Profile.md)\>
+`Promise`<`undefined` \| [`IProfile`](../interfaces/verida_client_ts._internal_.IProfile.md)\>
 
 `<Profile | undefined>`
 
+#### Implementation of
+
+[IClient](../interfaces/verida_client_ts._internal_.IClient.md).[openPublicProfile](../interfaces/verida_client_ts._internal_.IClient.md#openpublicprofile)
+
 #### Defined in
 
-[packages/client-ts/src/client.ts:203](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/client.ts#L203)
+[packages/client-ts/src/client.ts:219](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/client.ts#L219)
+
+___
+
+### parseDid
+
+▸ **parseDid**(`didOrUsername`): `Promise`<`string`\>
+
+Converts a string that may be either a valid DID or a valid Verida username into
+a Verida username.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `didOrUsername` | `string` | DID string or Verida username string (ending in `.vda`) |
+
+#### Returns
+
+`Promise`<`string`\>
+
+#### Defined in
+
+[packages/client-ts/src/client.ts:325](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/client.ts#L325)

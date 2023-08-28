@@ -13,4 +13,6 @@
 ### Interfaces
 
 - [BoxKeyPair](../interfaces/verida_keyring._internal_.BoxKeyPair.md)
+- [IKeyring](../interfaces/verida_keyring._internal_.IKeyring.md)
+- [KeyringPublicKeys](../interfaces/verida_keyring._internal_.KeyringPublicKeys.md)
 - [SignKeyPair](../interfaces/verida_keyring._internal_.SignKeyPair.md)

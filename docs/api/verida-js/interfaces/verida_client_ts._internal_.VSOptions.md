@@ -29,7 +29,7 @@
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/scope.d.ts:64
+packages/client-ts/node_modules/ajv/dist/compile/codegen/scope.d.ts:64
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/scope.d.ts:18
+packages/client-ts/node_modules/ajv/dist/compile/codegen/scope.d.ts:18
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/scope.d.ts:19
+packages/client-ts/node_modules/ajv/dist/compile/codegen/scope.d.ts:19
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/scope.d.ts:14
+packages/client-ts/node_modules/ajv/dist/compile/codegen/scope.d.ts:14
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/scope.d.ts:13
+packages/client-ts/node_modules/ajv/dist/compile/codegen/scope.d.ts:13
 
 ___
 
@@ -99,4 +99,4 @@ ___
 
 #### Defined in
 
-node_modules/ajv/dist/compile/codegen/scope.d.ts:17
+packages/client-ts/node_modules/ajv/dist/compile/codegen/scope.d.ts:17

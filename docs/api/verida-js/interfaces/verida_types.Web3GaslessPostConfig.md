@@ -1,0 +1,37 @@
+[root](../README.md) / [Modules](../modules.md) / [@verida/types](../modules/verida_types.md) / Web3GaslessPostConfig
+
+# Interface: Web3GaslessPostConfig
+
+[@verida/types](../modules/verida_types.md).Web3GaslessPostConfig
+
+Configuration type for gasless post
+
+## Indexable
+
+▪ [key: `string`]: `any`
+
+## Table of contents
+
+### Properties
+
+- [headers](verida_types.Web3GaslessPostConfig.md#headers)
+
+## Properties
+
+### headers
+
+• **headers**: `Object`
+
+#### Index signature
+
+▪ [key: `string`]: `any`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `user-agent` | `string` |
+
+#### Defined in
+
+[packages/types/src/Web3Interfaces.ts:61](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/Web3Interfaces.ts#L61)

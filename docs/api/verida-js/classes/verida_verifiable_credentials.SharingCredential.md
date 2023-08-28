@@ -29,27 +29,27 @@
 
 | Name | Type |
 | :------ | :------ |
-| `context` | [`Context`](verida_verifiable_credentials._internal_.Context.md) |
+| `context` | [`IContext`](../interfaces/verida_verifiable_credentials._internal_.IContext.md) |
 
 #### Defined in
 
-[packages/verifiable-credentials/src/sharing-credential.ts:20](https://github.com/verida/verida-js/blob/c03b336/packages/verifiable-credentials/src/sharing-credential.ts#L20)
+[packages/verifiable-credentials/src/sharing-credential.ts:21](https://github.com/verida/verida-js/blob/a690f60/packages/verifiable-credentials/src/sharing-credential.ts#L21)
 
 ## Properties
 
 ### context
 
-• **context**: [`Context`](verida_verifiable_credentials._internal_.Context.md)
+• **context**: [`IContext`](../interfaces/verida_verifiable_credentials._internal_.IContext.md)
 
 #### Defined in
 
-[packages/verifiable-credentials/src/sharing-credential.ts:18](https://github.com/verida/verida-js/blob/c03b336/packages/verifiable-credentials/src/sharing-credential.ts#L18)
+[packages/verifiable-credentials/src/sharing-credential.ts:19](https://github.com/verida/verida-js/blob/a690f60/packages/verifiable-credentials/src/sharing-credential.ts#L19)
 
 ## Methods
 
 ### issueEncryptedPresentation
 
-▸ **issueEncryptedPresentation**(`item`): `Promise`<`any`\>
+▸ **issueEncryptedPresentation**(`didJwtVc`): `Promise`<`any`\>
 
 Method to encrypt and issue credential
 
@@ -57,7 +57,7 @@ Method to encrypt and issue credential
 
 | Name | Type |
 | :------ | :------ |
-| `item` | `any` |
+| `didJwtVc` | `any` |
 
 #### Returns
 
@@ -65,13 +65,13 @@ Method to encrypt and issue credential
 
 #### Defined in
 
-[packages/verifiable-credentials/src/sharing-credential.ts:29](https://github.com/verida/verida-js/blob/c03b336/packages/verifiable-credentials/src/sharing-credential.ts#L29)
+[packages/verifiable-credentials/src/sharing-credential.ts:30](https://github.com/verida/verida-js/blob/a690f60/packages/verifiable-credentials/src/sharing-credential.ts#L30)
 
 ___
 
 ### issuePublicPresentation
 
-▸ **issuePublicPresentation**(`did`, `item`, `contextName`, `options`): `Promise`<`unknown`\>
+▸ **issuePublicPresentation**(`did`, `didJwtVc`, `contextName`, `options`): `Promise`<`unknown`\>
 
  Method for for publishing an encrypted credential data
 
@@ -80,7 +80,7 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `did` | `string` |
-| `item` | `any` |
+| `didJwtVc` | `any` |
 | `contextName` | `string` |
 | `options` | `any` |
 
@@ -90,4 +90,4 @@ ___
 
 #### Defined in
 
-[packages/verifiable-credentials/src/sharing-credential.ts:51](https://github.com/verida/verida-js/blob/c03b336/packages/verifiable-credentials/src/sharing-credential.ts#L51)
+[packages/verifiable-credentials/src/sharing-credential.ts:52](https://github.com/verida/verida-js/blob/a690f60/packages/verifiable-credentials/src/sharing-credential.ts#L52)

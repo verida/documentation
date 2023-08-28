@@ -24,7 +24,7 @@
 
 ### generate
 
-▸ `Static` **generate**(`account`, `contextName`, `servicesConfig`): `Promise`<[`SecureContextConfig`](../interfaces/verida_storage_link.Interfaces.SecureContextConfig.md)\>
+▸ `Static` **generate**(`account`, `contextName`, `servicesConfig`): `Promise`<[`SecureContextConfig`](../interfaces/verida_storage_link._internal_.SecureContextConfig.md)\>
 
 Generate a storage link for an existing DID
 
@@ -36,12 +36,12 @@ Generate a storage link for an existing DID
 | :------ | :------ |
 | `account` | `any` |
 | `contextName` | `string` |
-| `servicesConfig` | [`SecureContextServices`](../interfaces/verida_storage_link.Interfaces.SecureContextServices.md) |
+| `servicesConfig` | [`SecureContextServices`](../interfaces/verida_storage_link._internal_.SecureContextServices.md) |
 
 #### Returns
 
-`Promise`<[`SecureContextConfig`](../interfaces/verida_storage_link.Interfaces.SecureContextConfig.md)\>
+`Promise`<[`SecureContextConfig`](../interfaces/verida_storage_link._internal_.SecureContextConfig.md)\>
 
 #### Defined in
 
-[packages/storage-link/src/did-storage-config.ts:13](https://github.com/verida/verida-js/blob/c03b336/packages/storage-link/src/did-storage-config.ts#L13)
+[packages/storage-link/src/did-storage-config.ts:13](https://github.com/verida/verida-js/blob/a690f60/packages/storage-link/src/did-storage-config.ts#L13)

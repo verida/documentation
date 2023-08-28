@@ -16,7 +16,6 @@
 
 - [defaultDatabaseServerUrl](verida_client_ts._internal_.DefaultEnvironmentConfig.md#defaultdatabaseserverurl)
 - [defaultMessageServerUrl](verida_client_ts._internal_.DefaultEnvironmentConfig.md#defaultmessageserverurl)
-- [didServerUrl](verida_client_ts._internal_.DefaultEnvironmentConfig.md#didserverurl)
 - [schemaPaths](verida_client_ts._internal_.DefaultEnvironmentConfig.md#schemapaths)
 
 ## Properties
@@ -27,7 +26,7 @@
 
 #### Defined in
 
-[packages/client-ts/src/interfaces.ts:79](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/interfaces.ts#L79)
+packages/types/dist/NetworkInterfaces.d.ts:11
 
 ___
 
@@ -37,17 +36,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/interfaces.ts:80](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/interfaces.ts#L80)
-
-___
-
-### didServerUrl
-
-• `Optional` **didServerUrl**: `string`
-
-#### Defined in
-
-[packages/client-ts/src/interfaces.ts:78](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/interfaces.ts#L78)
+packages/types/dist/NetworkInterfaces.d.ts:12
 
 ___
 
@@ -57,4 +46,4 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/interfaces.ts:81](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/interfaces.ts#L81)
+packages/types/dist/NetworkInterfaces.d.ts:13

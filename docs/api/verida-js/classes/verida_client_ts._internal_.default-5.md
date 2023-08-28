@@ -4,9 +4,11 @@
 
 [@verida/client-ts](../modules/verida_client_ts.md).[<internal\>](../modules/verida_client_ts._internal_.md).default
 
-Class that takes a signature (generated from a signed consent message) and generates a
-collection of asymmetric keys, symmetric key and signing key for a given secure storage
-context.
+## Hierarchy
+
+- [`Error`](../modules/verida_client_ts._internal_.md#error)
+
+  ↳ **`default`**
 
 ## Table of contents
 
@@ -16,353 +18,172 @@ context.
 
 ### Properties
 
-- [asymKeyPair](verida_client_ts._internal_.default-5.md#asymkeypair)
-- [buildKey](verida_client_ts._internal_.default-5.md#buildkey)
-- [seed](verida_client_ts._internal_.default-5.md#seed)
-- [signKeyPair](verida_client_ts._internal_.default-5.md#signkeypair)
-- [storageContextKeys](verida_client_ts._internal_.default-5.md#storagecontextkeys)
-- [symKey](verida_client_ts._internal_.default-5.md#symkey)
+- [message](verida_client_ts._internal_.default-5.md#message)
+- [missingRef](verida_client_ts._internal_.default-5.md#missingref)
+- [missingSchema](verida_client_ts._internal_.default-5.md#missingschema)
+- [name](verida_client_ts._internal_.default-5.md#name)
+- [stack](verida_client_ts._internal_.default-5.md#stack)
+- [prepareStackTrace](verida_client_ts._internal_.default-5.md#preparestacktrace)
+- [stackTraceLimit](verida_client_ts._internal_.default-5.md#stacktracelimit)
 
 ### Methods
 
-- [\_init](verida_client_ts._internal_.default-5.md#_init)
-- [asymDecrypt](verida_client_ts._internal_.default-5.md#asymdecrypt)
-- [asymEncrypt](verida_client_ts._internal_.default-5.md#asymencrypt)
-- [buildSharedKeyEnd](verida_client_ts._internal_.default-5.md#buildsharedkeyend)
-- [buildSharedKeyStart](verida_client_ts._internal_.default-5.md#buildsharedkeystart)
-- [getKeys](verida_client_ts._internal_.default-5.md#getkeys)
-- [getSeed](verida_client_ts._internal_.default-5.md#getseed)
-- [getStorageContextKey](verida_client_ts._internal_.default-5.md#getstoragecontextkey)
-- [publicKeys](verida_client_ts._internal_.default-5.md#publickeys)
-- [sign](verida_client_ts._internal_.default-5.md#sign)
-- [symDecrypt](verida_client_ts._internal_.default-5.md#symdecrypt)
-- [symEncrypt](verida_client_ts._internal_.default-5.md#symencrypt)
-- [verifySig](verida_client_ts._internal_.default-5.md#verifysig)
+- [captureStackTrace](verida_client_ts._internal_.default-5.md#capturestacktrace)
 
 ## Constructors
 
 ### constructor
 
-• **new default**(`seed`)
-
-A string used as a seed for this keyring.
-The seed should be a hex signature obtained by 3ID signed consent message.
+• **new default**(`baseId`, `ref`, `msg?`)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `seed` | `string` |
+| `baseId` | `string` |
+| `ref` | `string` |
+| `msg?` | `string` |
+
+#### Overrides
+
+Error.constructor
 
 #### Defined in
 
-packages/keyring/dist/keyring.d.ts:19
+packages/client-ts/node_modules/ajv/dist/compile/ref_error.d.ts:4
 
 ## Properties
 
-### asymKeyPair
+### message
 
-• `Optional` **asymKeyPair**: [`BoxKeyPair`](../interfaces/verida_client_ts._internal_.BoxKeyPair.md)
+• **message**: `string`
+
+#### Inherited from
+
+Error.message
 
 #### Defined in
 
-packages/keyring/dist/keyring.d.ts:8
+node_modules/typescript/lib/lib.es5.d.ts:974
 
 ___
 
-### buildKey
+### missingRef
 
-• `Private` **buildKey**: `any`
-
-Helper function that generates a key of the appropriate type
-
-**`param`**
-
-**`param`**
-
-**`returns`**
+• `Readonly` **missingRef**: `string`
 
 #### Defined in
 
-packages/keyring/dist/keyring.d.ts:29
+packages/client-ts/node_modules/ajv/dist/compile/ref_error.d.ts:2
 
 ___
 
-### seed
+### missingSchema
 
-• `Private` **seed**: `any`
+• `Readonly` **missingSchema**: `string`
 
 #### Defined in
 
-packages/keyring/dist/keyring.d.ts:11
+packages/client-ts/node_modules/ajv/dist/compile/ref_error.d.ts:3
 
 ___
 
-### signKeyPair
+### name
 
-• `Optional` **signKeyPair**: [`SignKeyPair`](../interfaces/verida_client_ts._internal_.SignKeyPair.md)
+• **name**: `string`
+
+#### Inherited from
+
+Error.name
 
 #### Defined in
 
-packages/keyring/dist/keyring.d.ts:9
+node_modules/typescript/lib/lib.es5.d.ts:973
 
 ___
 
-### storageContextKeys
+### stack
 
-• `Private` **storageContextKeys**: `any`
+• `Optional` **stack**: `string`
+
+#### Inherited from
+
+Error.stack
 
 #### Defined in
 
-packages/keyring/dist/keyring.d.ts:12
+node_modules/typescript/lib/lib.es5.d.ts:975
 
 ___
 
-### symKey
+### prepareStackTrace
 
-• `Optional` **symKey**: `Uint8Array`
+▪ `Static` `Optional` **prepareStackTrace**: (`err`: [`Error`](../modules/verida_client_ts._internal_.md#error), `stackTraces`: [`CallSite`](../interfaces/verida_client_ts._internal_.CallSite.md)[]) => `any`
+
+#### Type declaration
+
+▸ (`err`, `stackTraces`): `any`
+
+Optional override for formatting stack traces
+
+**`see`** https://v8.dev/docs/stack-trace-api#customizing-stack-traces
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `err` | [`Error`](../modules/verida_client_ts._internal_.md#error) |
+| `stackTraces` | [`CallSite`](../interfaces/verida_client_ts._internal_.CallSite.md)[] |
+
+##### Returns
+
+`any`
+
+#### Inherited from
+
+Error.prepareStackTrace
 
 #### Defined in
 
-packages/keyring/dist/keyring.d.ts:10
+node_modules/@types/node/globals.d.ts:11
+
+___
+
+### stackTraceLimit
+
+▪ `Static` **stackTraceLimit**: `number`
+
+#### Inherited from
+
+Error.stackTraceLimit
+
+#### Defined in
+
+node_modules/@types/node/globals.d.ts:13
 
 ## Methods
 
-### \_init
+### captureStackTrace
 
-▸ **_init**(): `Promise`<`void`\>
+▸ `Static` **captureStackTrace**(`targetObject`, `constructorOpt?`): `void`
 
-#### Returns
-
-`Promise`<`void`\>
-
-#### Defined in
-
-packages/keyring/dist/keyring.d.ts:21
-
-___
-
-### asymDecrypt
-
-▸ **asymDecrypt**(`messageWithNonce`, `secretOrSharedKey`): `Promise`<`any`\>
+Create .stack property on a target object
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `messageWithNonce` | `string` |
-| `secretOrSharedKey` | `Uint8Array` |
+| `targetObject` | `object` |
+| `constructorOpt?` | `Function` |
 
 #### Returns
 
-`Promise`<`any`\>
+`void`
+
+#### Inherited from
+
+Error.captureStackTrace
 
 #### Defined in
 
-packages/keyring/dist/keyring.d.ts:48
-
-___
-
-### asymEncrypt
-
-▸ **asymEncrypt**(`data`, `secretOrSharedKey`): `Promise`<`string`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `data` | `string` |
-| `secretOrSharedKey` | `Uint8Array` |
-
-#### Returns
-
-`Promise`<`string`\>
-
-#### Defined in
-
-packages/keyring/dist/keyring.d.ts:47
-
-___
-
-### buildSharedKeyEnd
-
-▸ **buildSharedKeyEnd**(`publicKey`): `Promise`<`Uint8Array`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `publicKey` | `Uint8Array` |
-
-#### Returns
-
-`Promise`<`Uint8Array`\>
-
-#### Defined in
-
-packages/keyring/dist/keyring.d.ts:50
-
-___
-
-### buildSharedKeyStart
-
-▸ **buildSharedKeyStart**(`privateKey`): `Promise`<`Uint8Array`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `privateKey` | `Uint8Array` |
-
-#### Returns
-
-`Promise`<`Uint8Array`\>
-
-#### Defined in
-
-packages/keyring/dist/keyring.d.ts:49
-
-___
-
-### getKeys
-
-▸ **getKeys**(): `Promise`<`any`\>
-
-#### Returns
-
-`Promise`<`any`\>
-
-#### Defined in
-
-packages/keyring/dist/keyring.d.ts:20
-
-___
-
-### getSeed
-
-▸ **getSeed**(): `string`
-
-#### Returns
-
-`string`
-
-#### Defined in
-
-packages/keyring/dist/keyring.d.ts:51
-
-___
-
-### getStorageContextKey
-
-▸ **getStorageContextKey**(`databaseName`): `Promise`<`any`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `databaseName` | `string` |
-
-#### Returns
-
-`Promise`<`any`\>
-
-#### Defined in
-
-packages/keyring/dist/keyring.d.ts:52
-
-___
-
-### publicKeys
-
-▸ **publicKeys**(): `Promise`<{ `asymPublicKey`: `Uint8Array` ; `asymPublicKeyBase58`: `string` ; `asymPublicKeyHex`: `string` ; `signPublicKey`: `Uint8Array` ; `signPublicKeyBase58`: `string` ; `signPublicKeyHex`: `string`  }\>
-
-Generate an object containing all the public keys for this Keyring
-
-#### Returns
-
-`Promise`<{ `asymPublicKey`: `Uint8Array` ; `asymPublicKeyBase58`: `string` ; `asymPublicKeyHex`: `string` ; `signPublicKey`: `Uint8Array` ; `signPublicKeyBase58`: `string` ; `signPublicKeyHex`: `string`  }\>
-
-#### Defined in
-
-packages/keyring/dist/keyring.d.ts:35
-
-___
-
-### sign
-
-▸ **sign**(`data`): `Promise`<`string`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `data` | `any` |
-
-#### Returns
-
-`Promise`<`string`\>
-
-#### Defined in
-
-packages/keyring/dist/keyring.d.ts:43
-
-___
-
-### symDecrypt
-
-▸ **symDecrypt**(`data`): `Promise`<`any`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `data` | `string` |
-
-#### Returns
-
-`Promise`<`any`\>
-
-#### Defined in
-
-packages/keyring/dist/keyring.d.ts:46
-
-___
-
-### symEncrypt
-
-▸ **symEncrypt**(`data`): `Promise`<`string`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `data` | `string` |
-
-#### Returns
-
-`Promise`<`string`\>
-
-#### Defined in
-
-packages/keyring/dist/keyring.d.ts:45
-
-___
-
-### verifySig
-
-▸ **verifySig**(`data`, `sig`): `Promise`<`boolean`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `data` | `string` |
-| `sig` | `string` |
-
-#### Returns
-
-`Promise`<`boolean`\>
-
-#### Defined in
-
-packages/keyring/dist/keyring.d.ts:44
+node_modules/@types/node/globals.d.ts:4

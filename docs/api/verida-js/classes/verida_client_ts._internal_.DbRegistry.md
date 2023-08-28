@@ -4,6 +4,10 @@
 
 [@verida/client-ts](../modules/verida_client_ts.md).[<internal\>](../modules/verida_client_ts._internal_.md).DbRegistry
 
+## Implements
+
+- [`IDbRegistry`](../interfaces/verida_client_ts._internal_.IDbRegistry.md)
+
 ## Table of contents
 
 ### Constructors
@@ -21,6 +25,7 @@
 - [get](verida_client_ts._internal_.DbRegistry.md#get)
 - [getMany](verida_client_ts._internal_.DbRegistry.md#getmany)
 - [init](verida_client_ts._internal_.DbRegistry.md#init)
+- [removeDb](verida_client_ts._internal_.DbRegistry.md#removedb)
 - [saveDb](verida_client_ts._internal_.DbRegistry.md#savedb)
 
 ## Constructors
@@ -37,7 +42,7 @@
 
 #### Defined in
 
-[packages/client-ts/src/context/db-registry.ts:42](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/db-registry.ts#L42)
+[packages/client-ts/src/context/db-registry.ts:20](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/db-registry.ts#L20)
 
 ## Properties
 
@@ -47,17 +52,17 @@
 
 #### Defined in
 
-[packages/client-ts/src/context/db-registry.ts:39](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/db-registry.ts#L39)
+[packages/client-ts/src/context/db-registry.ts:17](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/db-registry.ts#L17)
 
 ___
 
 ### dbStore
 
-• `Private` `Optional` **dbStore**: [`Datastore`](verida_client_ts.Datastore.md)
+• `Private` `Optional` **dbStore**: [`Datastore`](verida_client_ts._internal_.Datastore.md)
 
 #### Defined in
 
-[packages/client-ts/src/context/db-registry.ts:40](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/db-registry.ts#L40)
+[packages/client-ts/src/context/db-registry.ts:18](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/db-registry.ts#L18)
 
 ## Methods
 
@@ -79,7 +84,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/db-registry.ts:127](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/db-registry.ts#L127)
+[packages/client-ts/src/context/db-registry.ts:117](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/db-registry.ts#L117)
 
 ___
 
@@ -99,15 +104,19 @@ ___
 
 `Promise`<`any`\>
 
+#### Implementation of
+
+[IDbRegistry](../interfaces/verida_client_ts._internal_.IDbRegistry.md).[get](../interfaces/verida_client_ts._internal_.IDbRegistry.md#get)
+
 #### Defined in
 
-[packages/client-ts/src/context/db-registry.ts:107](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/db-registry.ts#L107)
+[packages/client-ts/src/context/db-registry.ts:97](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/db-registry.ts#L97)
 
 ___
 
 ### getMany
 
-▸ **getMany**(`filter`, `options`): `Promise`<`object`[]\>
+▸ **getMany**(`filter?`, `options?`): `Promise`<`object`[]\>
 
 #### Parameters
 
@@ -120,9 +129,13 @@ ___
 
 `Promise`<`object`[]\>
 
+#### Implementation of
+
+[IDbRegistry](../interfaces/verida_client_ts._internal_.IDbRegistry.md).[getMany](../interfaces/verida_client_ts._internal_.IDbRegistry.md#getmany)
+
 #### Defined in
 
-[packages/client-ts/src/context/db-registry.ts:101](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/db-registry.ts#L101)
+[packages/client-ts/src/context/db-registry.ts:91](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/db-registry.ts#L91)
 
 ___
 
@@ -134,9 +147,39 @@ ___
 
 `Promise`<`void`\>
 
+#### Implementation of
+
+[IDbRegistry](../interfaces/verida_client_ts._internal_.IDbRegistry.md).[init](../interfaces/verida_client_ts._internal_.IDbRegistry.md#init)
+
 #### Defined in
 
-[packages/client-ts/src/context/db-registry.ts:142](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/db-registry.ts#L142)
+[packages/client-ts/src/context/db-registry.ts:132](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/db-registry.ts#L132)
+
+___
+
+### removeDb
+
+▸ **removeDb**(`databaseName`, `did`, `contextName`): `Promise`<`boolean`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `databaseName` | `string` |
+| `did` | `string` |
+| `contextName` | `string` |
+
+#### Returns
+
+`Promise`<`boolean`\>
+
+#### Implementation of
+
+[IDbRegistry](../interfaces/verida_client_ts._internal_.IDbRegistry.md).[removeDb](../interfaces/verida_client_ts._internal_.IDbRegistry.md#removedb)
+
+#### Defined in
+
+[packages/client-ts/src/context/db-registry.ts:79](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/db-registry.ts#L79)
 
 ___
 
@@ -148,13 +191,17 @@ ___
 
 | Name | Type | Default value |
 | :------ | :------ | :------ |
-| `database` | [`Database`](../interfaces/verida_client_ts.Database.md) | `undefined` |
+| `database` | [`IDatabase`](../interfaces/verida_client_ts._internal_.IDatabase.md) | `undefined` |
 | `checkPermissions` | `boolean` | `true` |
 
 #### Returns
 
 `Promise`<`void`\>
 
+#### Implementation of
+
+[IDbRegistry](../interfaces/verida_client_ts._internal_.IDbRegistry.md).[saveDb](../interfaces/verida_client_ts._internal_.IDbRegistry.md#savedb)
+
 #### Defined in
 
-[packages/client-ts/src/context/db-registry.ts:55](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/context/db-registry.ts#L55)
+[packages/client-ts/src/context/db-registry.ts:33](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/db-registry.ts#L33)

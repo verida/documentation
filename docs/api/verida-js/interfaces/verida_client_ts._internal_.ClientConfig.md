@@ -10,36 +10,34 @@ Interface for ClientConfig
 
 ### Properties
 
-- [didServerUrl](verida_client_ts._internal_.ClientConfig.md#didserverurl)
+- [didClientConfig](verida_client_ts._internal_.ClientConfig.md#didclientconfig)
 - [environment](verida_client_ts._internal_.ClientConfig.md#environment)
 - [schemaPaths](verida_client_ts._internal_.ClientConfig.md#schemapaths)
 - [vaultAppName](verida_client_ts._internal_.ClientConfig.md#vaultappname)
 
 ## Properties
 
-### didServerUrl
+### didClientConfig
 
-• `Optional` **didServerUrl**: `string`
-
-URL of Verida DID Server node to use.
+• `Optional` **didClientConfig**: [`DIDClientConfig`](verida_client_ts._internal_.DIDClientConfig.md)
 
 #### Defined in
 
-[packages/client-ts/src/interfaces.ts:23](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/interfaces.ts#L23)
+packages/types/dist/NetworkInterfaces.d.ts:39
 
 ___
 
 ### environment
 
-• `Optional` **environment**: [`EnvironmentType`](../enums/verida_client_ts.EnvironmentType.md)
+• `Optional` **environment**: [`EnvironmentType`](../enums/verida_client_ts._internal_.EnvironmentType.md)
 
 Environment to load by default.
 
-Environment configuration can still be overriden by config items.
+Environment configuration can still be overridden by config items.
 
 #### Defined in
 
-[packages/client-ts/src/interfaces.ts:18](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/interfaces.ts#L18)
+packages/types/dist/NetworkInterfaces.d.ts:38
 
 ___
 
@@ -47,11 +45,11 @@ ___
 
 • `Optional` **schemaPaths**: `object`
 
-Specify custom schema paths (typicaly for local development).
+Specify custom schema paths (typically for local development).
 
 #### Defined in
 
-[packages/client-ts/src/interfaces.ts:28](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/interfaces.ts#L28)
+packages/types/dist/NetworkInterfaces.d.ts:43
 
 ___
 
@@ -63,4 +61,4 @@ Specify client's App name.
 
 #### Defined in
 
-[packages/client-ts/src/interfaces.ts:12](https://github.com/verida/verida-js/blob/c03b336/packages/client-ts/src/interfaces.ts#L12)
+packages/types/dist/NetworkInterfaces.d.ts:32
