@@ -3392,12 +3392,22 @@
     tweetnacl "^1.0.3"
     tweetnacl-util "^0.15.1"
 
-"@verida/helpers@^2.3.1":
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/@verida/helpers/-/helpers-2.3.1.tgz#9adbfdbd898b628635550dae67a730c8e67252a9"
-  integrity sha512-NkELT6fGhF56F4prwzx32HKsaiY0o1RmQh6omT4TkRfoPEf6ZMBYDlXtwA+1y0II1FTg2DsxZrTQGw/QuA+bAA==
+"@verida/encryption-utils@^2.2.2":
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/@verida/encryption-utils/-/encryption-utils-2.2.2.tgz#e88b9fa12ced5378b646cf2d3d1666c18a2be6ad"
+  integrity sha512-6ovaFCTaRcNwqABNQ25loHc+0nBcSYFvFWNALSY5X45Guv7L69NPMQywn+nyoYJsyGMAqdF62GVfbyXfpKXftQ==
   dependencies:
-    "@verida/encryption-utils" "^2.2.1"
+    ethers "^5.5.1"
+    json.sortify "^2.2.2"
+    tweetnacl "^1.0.3"
+    tweetnacl-util "^0.15.1"
+
+"@verida/helpers@^2.3.1":
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/@verida/helpers/-/helpers-2.3.2.tgz#49a12f6d81f4db3ec5122162567e112d134002c6"
+  integrity sha512-LVGUhqdAb4tdm8eIqxyJlE5o/brwm2OBM2Pha4RbEVu7zDF6CEcGo3pbedPio42mVSHtXRXcrz+CZPxyFSaOww==
+  dependencies:
+    "@verida/encryption-utils" "^2.2.2"
     "@verida/types" "^2.3.1"
     bs58 "^5.0.0"
     url "^0.11.0"
