@@ -3369,15 +3369,15 @@
     ethers "^5.5.1"
 
 "@verida/did-document@^2.3.1":
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/@verida/did-document/-/did-document-2.3.1.tgz#33703386f95b1b54e88af1bf4e763627bea0005e"
-  integrity sha512-YV53vBnVKn2eNLQB/XkK9j+NmW9pxFV1emwGuDbULlewu1VOwsk2vEqPVWg0mhtkbr2x59xXiewE8LSvE5iwjQ==
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/@verida/did-document/-/did-document-2.3.2.tgz#6080100ea294426e4a98829a09bfc4799a4612b6"
+  integrity sha512-VoPeAT3osbDEReHlTN38R+CqmhsuKv1qcO3BOrRp17Ol2jnqkYHUigzaGNkf9MoesHZ//YmHNin3Rk/TIlNbfw==
   dependencies:
     "@ethersproject/address" "^5.7.0"
     "@ethersproject/bignumber" "^5.7.0"
     "@ethersproject/transactions" "^5.7.0"
-    "@verida/encryption-utils" "^2.2.1"
-    "@verida/keyring" "^2.3.1"
+    "@verida/encryption-utils" "^2.2.2"
+    "@verida/keyring" "^2.3.2"
     "@verida/types" "^2.3.1"
     did-resolver "^4.0.1"
     lodash "^4.17.21"
@@ -3386,6 +3386,16 @@
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@verida/encryption-utils/-/encryption-utils-2.2.1.tgz#76104228a194187f8019bf97e6b609d6742c67a3"
   integrity sha512-0UNlTd9In2JJD8Ov5RXX9t4ta52gtpwJvg00nR4oT8TpMH7B2SEaLzJZqvBK3cRb3Y5IMJxdmjDhiParj9a+zw==
+  dependencies:
+    ethers "^5.5.1"
+    json.sortify "^2.2.2"
+    tweetnacl "^1.0.3"
+    tweetnacl-util "^0.15.1"
+
+"@verida/encryption-utils@^2.2.2":
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/@verida/encryption-utils/-/encryption-utils-2.2.2.tgz#e88b9fa12ced5378b646cf2d3d1666c18a2be6ad"
+  integrity sha512-6ovaFCTaRcNwqABNQ25loHc+0nBcSYFvFWNALSY5X45Guv7L69NPMQywn+nyoYJsyGMAqdF62GVfbyXfpKXftQ==
   dependencies:
     ethers "^5.5.1"
     json.sortify "^2.2.2"
@@ -3408,6 +3418,17 @@
   integrity sha512-Rbbp36bwOlFZDF6hV2nr+A2GdHVyK1XV5mFumTDl2pdLEPgKcpzGkfBsfx8fyfNEgMfbaoB35hQt90FO4LrEWg==
   dependencies:
     "@verida/encryption-utils" "^2.2.1"
+    "@verida/types" "^2.3.1"
+    ethers "^5.5.1"
+    tweetnacl "^1.0.3"
+    uuid "^8.3.2"
+
+"@verida/keyring@^2.3.2":
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/@verida/keyring/-/keyring-2.3.2.tgz#6a1ccd18121474f31066d00d339da54c811fa147"
+  integrity sha512-KXeUbF8q9IqOwaxN6LInsK/d6xNPwyzWmkaDHmnOEHUja7Ln0bg94XvEbuuG4Bw6NDVv2Z1TNHC55N4p4tCYBw==
+  dependencies:
+    "@verida/encryption-utils" "^2.2.2"
     "@verida/types" "^2.3.1"
     ethers "^5.5.1"
     tweetnacl "^1.0.3"
