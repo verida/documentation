@@ -3392,6 +3392,16 @@
     tweetnacl "^1.0.3"
     tweetnacl-util "^0.15.1"
 
+"@verida/encryption-utils@^2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@verida/encryption-utils/-/encryption-utils-2.2.3.tgz#625dc5d49f63f031d41a63c6769307420363809d"
+  integrity sha512-jYxWEsLjaOWmjb7NiOFMtSg8g93HHkg5/24VdCSbnHYRAy//r2Bj08E6gWkqU8ot6P9g1s+VCF2DeWnhcmPHpA==
+  dependencies:
+    ethers "^5.5.1"
+    json.sortify "^2.2.2"
+    tweetnacl "^1.0.3"
+    tweetnacl-util "^0.15.1"
+
 "@verida/helpers@^2.3.1":
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/@verida/helpers/-/helpers-2.3.1.tgz#9adbfdbd898b628635550dae67a730c8e67252a9"
@@ -3439,11 +3449,11 @@
     tweetnacl "^1.0.3"
 
 "@verida/vda-common@^2.3.4":
-  version "2.3.4"
-  resolved "https://registry.yarnpkg.com/@verida/vda-common/-/vda-common-2.3.4.tgz#06e910151c7d10f266d7dc829325810c92a56795"
-  integrity sha512-NFkeXt2kAHpcwdBydibxXr/iMDbFi4vFUAGmcuNTwiKKDUmf/G+vXvJkta5+kt71ca3otwddZJYG+EN5maSpRg==
+  version "2.3.6"
+  resolved "https://registry.yarnpkg.com/@verida/vda-common/-/vda-common-2.3.6.tgz#d2dee47c852b5f5a425aac02e9079916f3fa44e0"
+  integrity sha512-E439YHkafz58kjAvTHoZUUkSYOHg/zT5ItTXD8M9AdfQzR4IzInbEukn9LtX00b0Zupp1TtF16aMgWsRsuJRgQ==
   dependencies:
-    "@verida/encryption-utils" "^2.2.1"
+    "@verida/encryption-utils" "^2.2.3"
     copyfiles "^2.4.1"
     ethers "5.5.1"
 
