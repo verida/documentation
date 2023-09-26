@@ -77,8 +77,8 @@ Various configuration options can be set (as parameters in `VaultAccount`) for t
 These (all optional) config options include:
 
 - `request?` — An object representing an authorization request that matches https://vault.schemas.verida.io/auth/loginRequest/latest/schema.json
-- `request?.logoUrl?` — The URL of a 170x170 PNG logo to display in the vault
-- `request?.openUrl?` — An optional URL for the Vault to open in the default browser on the user's mobile device after login is accepted. This will automatically authorize the user in local storage so future page loads of your application will be authenticated.
+- `request?.logoUrl?` — The URL of a 170x170 PNG logo to display in the Wallet
+- `request?.openUrl?` — An optional URL for the Wallet to open in the default browser on the user's mobile device after login is accepted. This will automatically authorize the user in local storage so future page loads of your application will be authenticated.
 - `request?.walletConnect?` — An optional configuration to automatically establish a wallet connection upon sign in. See [WalletConnect Support](./wallet-connect)
 - `callback?` — A callback function when the auth response is received.
 - `deeplinkId?` — The HTML element ID of a link that should have the deeplink URI attached to the `href` property

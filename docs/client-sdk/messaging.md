@@ -101,7 +101,7 @@ This could be used in two scenarios:
 
 ### Opening your app
 
-It can be helpful if the Vault opens your application in a web browser after the user accepts a message. You can enable this by providing an optional parameter to the `config`.
+It can be helpful if the Wallet opens your application in a web browser after the user accepts a message. You can enable this by providing an optional parameter to the `config`.
 
 ie:
 

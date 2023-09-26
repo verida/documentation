@@ -11,7 +11,7 @@ There is a React Native repository that maintains a slightly modified version of
 These are the main packages you are likely to use:
 
 - [client-ts](https://github.com/verida/verida-js/tree/main/packages/client-ts): Verida client library. Install this library in your project to add support for the Verida protocol.
-- [account-web-vault](https://github.com/verida/verida-js/tree/main/packages/account-web-vault): Create a Verida network connection that uses a QR code and the Verida Vault to sign authentication requests. Use this for your web application.
+- [account-web-vault](https://github.com/verida/verida-js/tree/main/packages/account-web-vault): Create a Verida Network connection that uses a QR code and the Verida Wallet to sign authentication requests. Use this for your web application.
 - [account-node](https://github.com/verida/verida-js/tree/main/packages/account-node): Create an instance of a Verida account using a private key or seed phrase. Automatically signs all authentication requests. Use this for NodeJS server side applications or React Native applications.
 
 These are helper packages that typically aren't used directly:

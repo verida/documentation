@@ -42,7 +42,7 @@ The Verida Wallet provides users with the following core capabilities:
 - **Profiles:** Users can create and manage both public and private profiles that can be shared with third parties.
 - **Tokens and Transactions:** Users can interact with any supported blockchain by signing transactions, transferring assets, managing NFTs etc. Users can also earn Verida token rewards by simply using the network.
 
-[Learn more](https://www.verida.io/user-vault)
+[Learn more](https://www.verida.io)
 
 
 ## Client SDK

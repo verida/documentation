@@ -5,7 +5,7 @@ import styles from "./footer.module.css";
 
 export const products = [
 	{ title: "Solutions", link: "https://www.verida.io/solutions" },
-	{ title: "Get App", link: "https://www.verida.io/user-vault" },
+	{ title: "Get App", link: "https://www.verida.io" },
 ];
 
 export const company = [

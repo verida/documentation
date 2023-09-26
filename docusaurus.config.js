@@ -93,7 +93,7 @@ const config = {
 						title: "Product",
 						items: [
 							{ label: "Solutions", href: "https://www.verida.io/solutions" },
-							{ label: "Get App", href: "https://www.verida.io/user-vault" },
+							{ label: "Get App", href: "https://www.verida.io" },
 						],
 					},
 					{

@@ -8,9 +8,9 @@ keywords: [Verida, Web3, Developers, Tutorial, Requesting Data]
 
 # Request Data
 
-You can request data stored by any user on the Verida Network. 
+You can request data stored by any user on the Verida Network.
 
-In this example we request the verifiable credential [previously issued to ourselves](/docs/tutorial/verifiable_credentials#runcode). 
+In this example we request the verifiable credential [previously issued to ourselves](/docs/tutorial/verifiable_credentials#runcode).
 
 ```jsx live
 
@@ -19,13 +19,13 @@ VeridaRequestDataExample = () => {
     const [veridaContext, setVeridaContext] = useState(undefined)
     const [credentialResponse, setCredentialResponse] = useState(undefined)
     this.CONTEXT_NAME = "Verida Tutorial"
-  
+
   React.useEffect(async () => {
     // See the login example for an explaination of this
     if (!veridaContext) {
       if (hasSession(this.CONTEXT_NAME)) {
         // we know we have a session already
-        // globalLoginFunction is a globally defined version of the login function 
+        // globalLoginFunction is a globally defined version of the login function
         // See https://developers.verida.io/docs/tutorial/SSO
         let ctx = await globalLoginFunction(this.CONTEXT_NAME);
         setVeridaContext(ctx);
@@ -36,10 +36,10 @@ VeridaRequestDataExample = () => {
   requestVC = async function () {
       setCredentialResponse(undefined)
       setStatus("Initalizing messaging... please wait.")
-      const messaging = await veridaContext.getMessaging()  
+      const messaging = await veridaContext.getMessaging()
 
       // setup a listener to show the response
-      messaging.onMessage(function(message) { 
+      messaging.onMessage(function(message) {
         console.log('New message:')
         console.log(message)
         setStatus('New message')
@@ -54,7 +54,7 @@ VeridaRequestDataExample = () => {
       // note that credentialSchema used in the filter is the same schema we used when we issued the VC
       // userSelect: true lets the user select which VC to respond with
       const data = {
-        requestSchema: "https://common.schemas.verida.io/credential/base/v0.2.0/schema.json", 
+        requestSchema: "https://common.schemas.verida.io/credential/base/v0.2.0/schema.json",
         filter: {
           credentialSchema: 'https://common.schemas.verida.io/health/pathology/tests/covid19/pcr/v0.1.0/schema.json'
         },
@@ -70,14 +70,14 @@ VeridaRequestDataExample = () => {
       const requestFromDID = veridaContext.account.accountDid
 
       await messaging.send(requestFromDID, messageType, data, message, config)
-      setStatus("Request sent. Please check the Vault and share your VC")
+      setStatus("Request sent. Please check the Wallet and share your VC")
 
-  }    
+  }
 
   let credentialMessage = <span></span>
   if (credentialResponse !== undefined) {
     // Note that this can have more than one credential in the response
-    // We are only displaying the first here. 
+    // We are only displaying the first here.
     credentialMessage = (
       <div>
         <div>Summary: {credentialResponse.data.data[0].summary}</div>
@@ -96,14 +96,14 @@ VeridaRequestDataExample = () => {
         {credentialMessage}
       </div>
     )
-  }    
+  }
 
   // if we have a veridaContext we are logged in
   if (veridaContext) {
     // user is logged in
     return (
       <div>
-        Please make sure you have <a href="/docs/tutorial/verifiable_credentials#runcode">issued yourself a verifiable credential</a> before requesting it. 
+        Please make sure you have <a href="/docs/tutorial/verifiable_credentials#runcode">issued yourself a verifiable credential</a> before requesting it.
         <br />
         <button onClick={this.requestVC}>Request Data</button>
 
@@ -121,7 +121,7 @@ VeridaRequestDataExample = () => {
   }
 
 }
-  
+
 ```
 
 
