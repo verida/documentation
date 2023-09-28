@@ -9,26 +9,46 @@ import GooglePlay from '/img/play_store_google.svg';
 
 # Polygon ID
 
-The Verida Wallet added support for Polygon ID verifiable credentials on the Polygon ID mainnet. This allows you to receive and store Polygon ID credentials as well as reply to proof requests in a privacy-preserving way thanks to Polygon ID Zero-Knowledge technology.
+The Verida Wallet supports Polygon ID verifiable credentials on the Polygon ID mainnet. This allows users to receive and store Polygon ID credentials as well as reply to proof requests in a privacy-preserving way thanks to Polygon ID Zero-Knowledge technology.
 
 To learn more about Polygon ID, [check our Blog post](https://news.verida.io/polygon-id-and-verida-make-zero-knowledge-credentials-accessible-to-all-fc0ac17538c9) and head over to their [website](https://polygon.technology/polygon-id) and [developer documentation](https://0xpolygonid.github.io/tutorials/).
 
-## For the Wallet Users
+Here's a demo video showing the credential flow and user experience:
 
-You can use the Verida Wallet to receive verifiable credentials from Issuers using the Polygon ID technology. These credentials are stored in your Vault (your private and secured storage space on the Verida Network) and therefore shown in the Verida Wallet alongside other credentials.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kcuJCOTaS8s?si=wn0OAqNDQ9uTAWnr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+## Wallet Users
+
+Users can install the Verida Wallet to receive verifiable credentials from Issuers using the Polygon ID technology. These credentials are stored in your Vault (your private and secured storage space on the Verida Network) and therefore shown in the Verida Wallet alongside other credentials.
 
 Verifiers can also send you Polygon ID proof requests. The Verida Wallet will automatically generate the Zero-Knowledge proof (ZKP) for you and send it to the Verifier. The Zero-Knowledge proof means no data is actually shared with the Verifier, only the fact that you have a valid credential satisfying the request.
 
 [Check our User Guide](https://news.verida.io/user-guide-get-started-with-polygon-id-zero-knowledge-credentials-in-the-verida-wallet-f1d6f953f285) for more information and a walkthrough on how to use the Verida Wallet with Polygon ID.
 
-## For Credential Issuers and Verifiers
+## Credential Issuers and Verifiers
 
 You can suggest your users to install and use the Verida Wallet to support your credential flows. The Verida Wallet is a mobile app available on iOS and Android and is free to use.
 
 [<AppleAppStore className="appstorebutton" />](https://apps.apple.com/us/app/verida-vault/id1546599632)
 [<GooglePlay className="appstorebutton" />](https://play.google.com/store/apps/details?id=io.verida.vault)
 
-Feel free to [contact us](https://www.verida.network/ecosystem#partner) for any questions and opportunitites.
+Feel free to [contact us](https://www.verida.network/ecosystem#partner) for any questions or partnership opportunities.
+
+### Issuing a Polygon ID credential
+
+Your application can issue a credential to a user in many different ways. A comprehensive list is available in the [Polygon ID Issuer documentation](https://0xpolygonid.github.io/tutorials/issuer/issuer-overview/) and includes; running an issuer node, using a javascript SDK or issuing on-chain via a smart contract.
+
+There is also a third party product, [Gatekeeper software](https://gatekeeper.software/), that can operate a Polygon ID node on your behalf and simplify the process of issuing credentials.
+
+Regardless of the process used to issue a credential, the end result will be the generation of a QR code that can be signed by the user to “receive” their credential.
+
+This QR code can be scanned by the Verida Wallet which will automatically detect it as a Polygon ID credential and prompt the user to save to their Wallet. This credential is encrypted and backed up on the self-sovereign Verida network, ensuring the user can easily restore their credentials on different devices, provided they backup their Verida Wallet seed phrase.
+
+### Verifying a Polygon ID credential
+
+Your application can verify a zero knowledge proof generated from a Polygon ID credential stored in the user's Verida Wallet. More information is available in the [Polygon ID Verification documentation](https://0xpolygonid.github.io/tutorials/verifier/verifier-overview/).
+
+There is also a third party product, [Gatekeeper software](https://gatekeeper.software/), that provides a simple, web based, configuration tool to create code that can be embedded in your website to generate a verification request QR code.
 
 ### QR Code and Deep Linking
 
