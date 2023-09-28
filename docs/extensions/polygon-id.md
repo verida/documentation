@@ -38,17 +38,17 @@ Feel free to [contact us](https://www.verida.network/ecosystem#partner) for any 
 
 Your application can issue a credential to a user in many different ways. A comprehensive list is available in the [Polygon ID Issuer documentation](https://0xpolygonid.github.io/tutorials/issuer/issuer-overview/) and includes; running an issuer node, using a javascript SDK or issuing on-chain via a smart contract.
 
-There is also a third party product, [Gatekeeper software](https://gatekeeper.software/), that can operate a Polygon ID node on your behalf and simplify the process of issuing credentials.
+There are also third party products, such as [Gatekeeper software](https://gatekeeper.software/), that provide simple, web based, configuration tools to create code that can be embedded in your website to generate verification requests.
 
-Regardless of the process used to issue a credential, the end result will be the generation of a QR code that can be signed by the user to “receive” their credential.
+Regardless of the process used to issue a credential, the end result will be the generation of a credential offer that can be signed by the user to “receive” their credential.
 
-This QR code can be scanned by the Verida Wallet which will automatically detect it as a Polygon ID credential and prompt the user to save to their Wallet. This credential is encrypted and backed up on the self-sovereign Verida network, ensuring the user can easily restore their credentials on different devices, provided they backup their Verida Wallet seed phrase.
+The credential offer can be transferred via QR code or deep link that the Verida Wallet will automatically detect as a Polygon ID credential and prompt the user to save to their Wallet. This credential is encrypted and backed up on the self-sovereign Verida Network, ensuring the user can easily restore their credentials on different devices, provided they backup their Verida Wallet seed phrase.
 
 ### Verifying a Polygon ID credential
 
 Your application can verify a zero knowledge proof generated from a Polygon ID credential stored in the user's Verida Wallet. More information is available in the [Polygon ID Verification documentation](https://0xpolygonid.github.io/tutorials/verifier/verifier-overview/).
 
-There is also a third party product, [Gatekeeper software](https://gatekeeper.software/), that provides a simple, web based, configuration tool to create code that can be embedded in your website to generate a verification request QR code.
+There are also third party products, such as [Gatekeeper software](https://gatekeeper.software/), that can operate a Polygon ID node on your behalf and simplify the process of issuing credentials.
 
 ### QR Code and Deep Linking
 
