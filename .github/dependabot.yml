@@ -1,10 +1,17 @@
 version: 2
 updates:
-
-  # Maintain dependencies for verida only
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "daily"
-    allow: 
-      - dependency-name: "@verida/*"
+      interval: "monthly"
+    target-branch: "develop"
+    groups:
+      verida:
+        patterns:
+          - "@verida/*"
+      others:
+        update-types:
+          - "minor"
+          - "patch"
+        exclude-patterns:
+          - "@verida/*"

@@ -16,17 +16,17 @@
 	},
 	"dependencies": {
 		"@cmfcmf/docusaurus-search-local": "^1.1.0",
-		"@docusaurus/core": "^2.4.1",
-		"@docusaurus/preset-classic": "^2.4.1",
-		"@docusaurus/remark-plugin-npm2yarn": "^2.4.1",
-		"@docusaurus/theme-live-codeblock": "^2.4.1",
-		"@docusaurus/theme-search-algolia": "^2.4.1",
+		"@docusaurus/core": "^2.4.3",
+		"@docusaurus/preset-classic": "^2.4.3",
+		"@docusaurus/remark-plugin-npm2yarn": "^2.4.3",
+		"@docusaurus/theme-live-codeblock": "^2.4.3",
+		"@docusaurus/theme-search-algolia": "^2.4.3",
 		"@mdx-js/react": "^1.6.21",
 		"@svgr/webpack": "^5.5.0",
-		"@verida/account-web-vault": "^2.3.7",
-		"@verida/client-ts": "^2.3.7",
+		"@verida/account-web-vault": "^2.3.9",
+		"@verida/client-ts": "^2.3.9",
 		"@verida/types": "^2.3.1",
-		"@verida/verifiable-credentials": "^2.3.7",
+		"@verida/verifiable-credentials": "^2.3.9",
 		"@walletconnect/client": "^1.8.0",
 		"clsx": "^1.1.1",
 		"crypto-browserify": "^3.12.0",
@@ -38,7 +38,7 @@
 		"querystring-es3": "^0.2.1",
 		"react": "^17.0.1",
 		"react-dom": "^17.0.1",
-		"react-player": "^2.9.0",
+		"react-player": "^2.13.0",
 		"state-pool": "^0.6.0",
 		"store": "^2.0.12",
 		"stream-browserify": "^3.0.0",
@@ -59,7 +59,7 @@
 			"last 1 safari version"
 		]
 	},
-  "resolutions": {
-    "did-jwt-vc": "3.1.0"
-  }
+	"resolutions": {
+		"did-jwt-vc": "3.1.0"
+	}
 }
