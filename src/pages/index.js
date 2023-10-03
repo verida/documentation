@@ -102,7 +102,7 @@ export default function Home() {
 								))}
 							</div>
 							<div className={styles.vaultDL}>
-								<h1>Download the Verida Vault (Developer Preview)</h1>
+								<h1>Download the Verida Wallet</h1>
 							</div>
 							<div className={styles.storeButtons}>
 								<a href={APPLE_STORE_LINK}>

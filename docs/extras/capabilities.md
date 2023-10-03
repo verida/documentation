@@ -5,7 +5,7 @@ description: Capabilities of the Verida developer platform
 keywords: [Verida, Web3, Developers]
 ---
 
-## Capabilities 
+## Capabilities
 
 The major capabilities of the Verida developer platform are as follows:
 
@@ -79,7 +79,7 @@ The major capabilities of the Verida developer platform are as follows:
 </tr>
 
 <tr>
-    <td align="left">Vault Token Transfers</td>
+    <td align="left">Token Transfers</td>
     <td align="center">✅ </td>
     <td align="left">
         <ul>

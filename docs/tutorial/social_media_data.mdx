@@ -8,7 +8,7 @@ keywords: [Verida, Web3, Developers, Tutorial, Requesting Data, Social Media]
 
 # Request Social Media Data
 
-You can request data stored by any user on the Verida Network. 
+You can request data stored by any user on the Verida Network.
 
 In this example we are going to request a user's social media posts.
 
@@ -22,13 +22,13 @@ VeridaRequestDataExample = () => {
     const [socialDataResponse, setSocialDataResponse] = useState(undefined)
     const [tableRows, setTableRows] = useState([]);
     this.CONTEXT_NAME = "Verida Tutorial"
-  
+
   React.useEffect(async () => {
     // See the login example for an explaination of this
     if (!veridaContext) {
       if (hasSession(this.CONTEXT_NAME)) {
         // we know we have a session already
-        // globalLoginFunction is a globally defined version of the login function 
+        // globalLoginFunction is a globally defined version of the login function
         // See https://developers.verida.io/docs/tutorial/SSO
         let ctx = await globalLoginFunction(this.CONTEXT_NAME);
         setVeridaContext(ctx);
@@ -39,10 +39,10 @@ VeridaRequestDataExample = () => {
   requestSocialData = async function () {
       setSocialDataResponse(undefined)
       setStatus("Initalizing messaging... please wait.")
-      const messaging = await veridaContext.getMessaging()  
+      const messaging = await veridaContext.getMessaging()
 
       // setup a listener to show the response
-      messaging.onMessage(function(message) { 
+      messaging.onMessage(function(message) {
         console.log('New message:')
         console.log(message)
         setStatus('New message')
@@ -57,7 +57,7 @@ VeridaRequestDataExample = () => {
 
       // Note: You could apply a filter `{sourceApplication: 'https://twitter.com/'}` to only include twitter results
       const data = {
-        requestSchema: 
+        requestSchema:
           'https://common.schemas.verida.io/social/post/v0.1.0/schema.json',
         filter: {},
         userSelect: false
@@ -72,9 +72,9 @@ VeridaRequestDataExample = () => {
       const requestFromDID = veridaContext.account.accountDid
 
       await messaging.send(requestFromDID, messageType, data, message, config)
-      setStatus("Request sent. Please check the Vault and share your social data")
+      setStatus("Request sent. Please check the Wallet and share your social data")
 
-  }   
+  }
 
   generateTableRows = (items) => {
     // We render all available fields here
@@ -90,7 +90,7 @@ VeridaRequestDataExample = () => {
       </tr>
     ))
     setTableRows(rows)
-  } 
+  }
 
   let socialMediaMessage = <span></span>
   if (socialDataResponse !== undefined) {
@@ -115,14 +115,14 @@ VeridaRequestDataExample = () => {
         {socialMediaMessage}
       </div>
     )
-  }    
+  }
 
   // if we have a veridaContext we are logged in
   if (veridaContext) {
     // user is logged in
     return (
       <div>
-        Please make sure you have connected Facebook and / or Twitter to your Verida Wallet. 
+        Please make sure you have connected Facebook and / or Twitter to your Verida Wallet.
         <br />
         <button onClick={this.requestSocialData}>Request Social Data</button>
 
@@ -140,7 +140,7 @@ VeridaRequestDataExample = () => {
   }
 
 }
-  
+
 ```
 
 
