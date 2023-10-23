@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[packages/account-node/src/nodeSelector.ts:26](https://github.com/verida/verida-js/blob/a690f60/packages/account-node/src/nodeSelector.ts#L26)
+[packages/account-node/src/nodeSelector.ts:26](https://github.com/verida/verida-js/blob/032961c/packages/account-node/src/nodeSelector.ts#L26)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[packages/account-node/src/nodeSelector.ts:24](https://github.com/verida/verida-js/blob/a690f60/packages/account-node/src/nodeSelector.ts#L24)
+[packages/account-node/src/nodeSelector.ts:24](https://github.com/verida/verida-js/blob/032961c/packages/account-node/src/nodeSelector.ts#L24)
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 #### Defined in
 
-[packages/account-node/src/nodeSelector.ts:25](https://github.com/verida/verida-js/blob/a690f60/packages/account-node/src/nodeSelector.ts#L25)
+[packages/account-node/src/nodeSelector.ts:25](https://github.com/verida/verida-js/blob/032961c/packages/account-node/src/nodeSelector.ts#L25)

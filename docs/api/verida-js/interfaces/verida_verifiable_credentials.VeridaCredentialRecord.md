@@ -24,7 +24,7 @@
 
 #### Defined in
 
-[packages/verifiable-credentials/src/interfaces.ts:35](https://github.com/verida/verida-js/blob/a690f60/packages/verifiable-credentials/src/interfaces.ts#L35)
+[packages/verifiable-credentials/src/interfaces.ts:35](https://github.com/verida/verida-js/blob/032961c/packages/verifiable-credentials/src/interfaces.ts#L35)
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 #### Defined in
 
-[packages/verifiable-credentials/src/interfaces.ts:34](https://github.com/verida/verida-js/blob/a690f60/packages/verifiable-credentials/src/interfaces.ts#L34)
+[packages/verifiable-credentials/src/interfaces.ts:34](https://github.com/verida/verida-js/blob/032961c/packages/verifiable-credentials/src/interfaces.ts#L34)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[packages/verifiable-credentials/src/interfaces.ts:33](https://github.com/verida/verida-js/blob/a690f60/packages/verifiable-credentials/src/interfaces.ts#L33)
+[packages/verifiable-credentials/src/interfaces.ts:33](https://github.com/verida/verida-js/blob/032961c/packages/verifiable-credentials/src/interfaces.ts#L33)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[packages/verifiable-credentials/src/interfaces.ts:32](https://github.com/verida/verida-js/blob/a690f60/packages/verifiable-credentials/src/interfaces.ts#L32)
+[packages/verifiable-credentials/src/interfaces.ts:32](https://github.com/verida/verida-js/blob/032961c/packages/verifiable-credentials/src/interfaces.ts#L32)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[packages/verifiable-credentials/src/interfaces.ts:30](https://github.com/verida/verida-js/blob/a690f60/packages/verifiable-credentials/src/interfaces.ts#L30)
+[packages/verifiable-credentials/src/interfaces.ts:30](https://github.com/verida/verida-js/blob/032961c/packages/verifiable-credentials/src/interfaces.ts#L30)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[packages/verifiable-credentials/src/interfaces.ts:29](https://github.com/verida/verida-js/blob/a690f60/packages/verifiable-credentials/src/interfaces.ts#L29)
+[packages/verifiable-credentials/src/interfaces.ts:29](https://github.com/verida/verida-js/blob/032961c/packages/verifiable-credentials/src/interfaces.ts#L29)
 
 ___
 
@@ -84,4 +84,4 @@ ___
 
 #### Defined in
 
-[packages/verifiable-credentials/src/interfaces.ts:31](https://github.com/verida/verida-js/blob/a690f60/packages/verifiable-credentials/src/interfaces.ts#L31)
+[packages/verifiable-credentials/src/interfaces.ts:31](https://github.com/verida/verida-js/blob/032961c/packages/verifiable-credentials/src/interfaces.ts#L31)

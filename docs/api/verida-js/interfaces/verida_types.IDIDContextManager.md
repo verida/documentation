@@ -35,7 +35,7 @@
 
 #### Defined in
 
-[packages/types/src/IDIDContextManager.ts:9](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IDIDContextManager.ts#L9)
+[packages/types/src/IDIDContextManager.ts:9](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDIDContextManager.ts#L9)
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDIDContextManager.ts:21](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IDIDContextManager.ts#L21)
+[packages/types/src/IDIDContextManager.ts:21](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDIDContextManager.ts#L21)
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDIDContextManager.ts:15](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IDIDContextManager.ts#L15)
+[packages/types/src/IDIDContextManager.ts:15](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDIDContextManager.ts#L15)
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDIDContextManager.ts:29](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IDIDContextManager.ts#L29)
+[packages/types/src/IDIDContextManager.ts:29](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDIDContextManager.ts#L29)
 
 ___
 
@@ -122,7 +122,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDIDContextManager.ts:27](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IDIDContextManager.ts#L27)
+[packages/types/src/IDIDContextManager.ts:27](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDIDContextManager.ts#L27)
 
 ___
 
@@ -142,4 +142,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDIDContextManager.ts:7](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IDIDContextManager.ts#L7)
+[packages/types/src/IDIDContextManager.ts:7](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDIDContextManager.ts#L7)

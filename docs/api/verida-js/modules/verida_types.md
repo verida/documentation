@@ -113,7 +113,7 @@
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:121](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/Web3Interfaces.ts#L121)
+[packages/types/src/Web3Interfaces.ts:121](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L121)
 
 ___
 
@@ -123,7 +123,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:48](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/Web3Interfaces.ts#L48)
+[packages/types/src/Web3Interfaces.ts:48](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L48)
 
 ___
 
@@ -133,7 +133,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:90](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/Web3Interfaces.ts#L90)
+[packages/types/src/Web3Interfaces.ts:90](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L90)
 
 ___
 
@@ -145,4 +145,4 @@ Web3 SDK running mode
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:7](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/Web3Interfaces.ts#L7)
+[packages/types/src/Web3Interfaces.ts:7](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L7)

@@ -25,7 +25,7 @@
 
 #### Defined in
 
-[packages/types/src/ISchema.ts:3](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/ISchema.ts#L3)
+[packages/types/src/ISchema.ts:3](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ISchema.ts#L3)
 
 ## Methods
 
@@ -39,7 +39,7 @@
 
 #### Defined in
 
-[packages/types/src/ISchema.ts:11](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/ISchema.ts#L11)
+[packages/types/src/ISchema.ts:11](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ISchema.ts#L11)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/ISchema.ts:9](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/ISchema.ts#L9)
+[packages/types/src/ISchema.ts:9](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ISchema.ts#L9)
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/ISchema.ts:5](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/ISchema.ts#L5)
+[packages/types/src/ISchema.ts:5](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ISchema.ts#L5)
 
 ___
 
@@ -87,4 +87,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/ISchema.ts:7](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/ISchema.ts#L7)
+[packages/types/src/ISchema.ts:7](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ISchema.ts#L7)

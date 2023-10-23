@@ -53,7 +53,7 @@
 
 #### Defined in
 
-[packages/account-node/src/authTypes/VeridaDatabase.ts:15](https://github.com/verida/verida-js/blob/a690f60/packages/account-node/src/authTypes/VeridaDatabase.ts#L15)
+[packages/account-node/src/authTypes/VeridaDatabase.ts:15](https://github.com/verida/verida-js/blob/032961c/packages/account-node/src/authTypes/VeridaDatabase.ts#L15)
 
 ## Properties
 
@@ -67,7 +67,7 @@
 
 #### Defined in
 
-[packages/account-node/src/authTypes/VeridaDatabase.ts:11](https://github.com/verida/verida-js/blob/a690f60/packages/account-node/src/authTypes/VeridaDatabase.ts#L11)
+[packages/account-node/src/authTypes/VeridaDatabase.ts:11](https://github.com/verida/verida-js/blob/032961c/packages/account-node/src/authTypes/VeridaDatabase.ts#L11)
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[packages/account-node/src/authTypes/VeridaDatabase.ts:10](https://github.com/verida/verida-js/blob/a690f60/packages/account-node/src/authTypes/VeridaDatabase.ts#L10)
+[packages/account-node/src/authTypes/VeridaDatabase.ts:10](https://github.com/verida/verida-js/blob/032961c/packages/account-node/src/authTypes/VeridaDatabase.ts#L10)
 
 ___
 
@@ -133,7 +133,7 @@ ___
 
 #### Defined in
 
-[packages/account-node/src/authTypes/VeridaDatabase.ts:13](https://github.com/verida/verida-js/blob/a690f60/packages/account-node/src/authTypes/VeridaDatabase.ts#L13)
+[packages/account-node/src/authTypes/VeridaDatabase.ts:13](https://github.com/verida/verida-js/blob/032961c/packages/account-node/src/authTypes/VeridaDatabase.ts#L13)
 
 ## Methods
 
@@ -157,7 +157,7 @@ ___
 
 #### Defined in
 
-[packages/account-node/src/authTypes/VeridaDatabase.ts:133](https://github.com/verida/verida-js/blob/a690f60/packages/account-node/src/authTypes/VeridaDatabase.ts#L133)
+[packages/account-node/src/authTypes/VeridaDatabase.ts:133](https://github.com/verida/verida-js/blob/032961c/packages/account-node/src/authTypes/VeridaDatabase.ts#L133)
 
 ___
 
@@ -181,7 +181,7 @@ ___
 
 #### Defined in
 
-[packages/account-node/src/authTypes/VeridaDatabase.ts:20](https://github.com/verida/verida-js/blob/a690f60/packages/account-node/src/authTypes/VeridaDatabase.ts#L20)
+[packages/account-node/src/authTypes/VeridaDatabase.ts:20](https://github.com/verida/verida-js/blob/032961c/packages/account-node/src/authTypes/VeridaDatabase.ts#L20)
 
 ___
 
@@ -202,7 +202,7 @@ ___
 
 #### Defined in
 
-[packages/account-node/src/authTypes/VeridaDatabase.ts:162](https://github.com/verida/verida-js/blob/a690f60/packages/account-node/src/authTypes/VeridaDatabase.ts#L162)
+[packages/account-node/src/authTypes/VeridaDatabase.ts:162](https://github.com/verida/verida-js/blob/032961c/packages/account-node/src/authTypes/VeridaDatabase.ts#L162)
 
 ___
 

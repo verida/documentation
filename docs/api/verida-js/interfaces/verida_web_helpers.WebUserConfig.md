@@ -21,7 +21,7 @@
 
 #### Defined in
 
-[packages/web-helpers/src/WebUser.ts:15](https://github.com/verida/verida-js/blob/a690f60/packages/web-helpers/src/WebUser.ts#L15)
+[packages/web-helpers/src/WebUser.ts:15](https://github.com/verida/verida-js/blob/032961c/packages/web-helpers/src/WebUser.ts#L15)
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 #### Defined in
 
-[packages/web-helpers/src/WebUser.ts:14](https://github.com/verida/verida-js/blob/a690f60/packages/web-helpers/src/WebUser.ts#L14)
+[packages/web-helpers/src/WebUser.ts:14](https://github.com/verida/verida-js/blob/032961c/packages/web-helpers/src/WebUser.ts#L14)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[packages/web-helpers/src/WebUser.ts:16](https://github.com/verida/verida-js/blob/a690f60/packages/web-helpers/src/WebUser.ts#L16)
+[packages/web-helpers/src/WebUser.ts:16](https://github.com/verida/verida-js/blob/032961c/packages/web-helpers/src/WebUser.ts#L16)
 
 ___
 
@@ -51,4 +51,4 @@ ___
 
 #### Defined in
 
-[packages/web-helpers/src/WebUser.ts:17](https://github.com/verida/verida-js/blob/a690f60/packages/web-helpers/src/WebUser.ts#L17)
+[packages/web-helpers/src/WebUser.ts:17](https://github.com/verida/verida-js/blob/032961c/packages/web-helpers/src/WebUser.ts#L17)

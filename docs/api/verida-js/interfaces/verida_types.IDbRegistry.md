@@ -34,7 +34,7 @@
 
 #### Defined in
 
-[packages/types/src/IDbRegistry.ts:11](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IDbRegistry.ts#L11)
+[packages/types/src/IDbRegistry.ts:11](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDbRegistry.ts#L11)
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDbRegistry.ts:9](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IDbRegistry.ts#L9)
+[packages/types/src/IDbRegistry.ts:9](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDbRegistry.ts#L9)
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDbRegistry.ts:17](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IDbRegistry.ts#L17)
+[packages/types/src/IDbRegistry.ts:17](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDbRegistry.ts#L17)
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDbRegistry.ts:7](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IDbRegistry.ts#L7)
+[packages/types/src/IDbRegistry.ts:7](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDbRegistry.ts#L7)
 
 ___
 
@@ -112,4 +112,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDbRegistry.ts:5](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IDbRegistry.ts#L5)
+[packages/types/src/IDbRegistry.ts:5](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDbRegistry.ts#L5)

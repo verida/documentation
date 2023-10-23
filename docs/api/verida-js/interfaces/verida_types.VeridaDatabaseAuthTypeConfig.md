@@ -27,7 +27,7 @@
 
 #### Defined in
 
-[packages/types/src/AccountInterfaces.ts:30](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/AccountInterfaces.ts#L30)
+[packages/types/src/AccountInterfaces.ts:30](https://github.com/verida/verida-js/blob/032961c/packages/types/src/AccountInterfaces.ts#L30)
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/AccountInterfaces.ts:31](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/AccountInterfaces.ts#L31)
+[packages/types/src/AccountInterfaces.ts:31](https://github.com/verida/verida-js/blob/032961c/packages/types/src/AccountInterfaces.ts#L31)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/AccountInterfaces.ts:19](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/AccountInterfaces.ts#L19)
+[packages/types/src/AccountInterfaces.ts:19](https://github.com/verida/verida-js/blob/032961c/packages/types/src/AccountInterfaces.ts#L19)
 
 ___
 
@@ -61,4 +61,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/AccountInterfaces.ts:32](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/AccountInterfaces.ts#L32)
+[packages/types/src/AccountInterfaces.ts:32](https://github.com/verida/verida-js/blob/032961c/packages/types/src/AccountInterfaces.ts#L32)

@@ -22,7 +22,7 @@ Interface for NetworkConnectionConfig
 
 #### Defined in
 
-[packages/types/src/NetworkInterfaces.ts:68](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/NetworkInterfaces.ts#L68)
+[packages/types/src/NetworkInterfaces.ts:68](https://github.com/verida/verida-js/blob/032961c/packages/types/src/NetworkInterfaces.ts#L68)
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/NetworkInterfaces.ts:66](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/NetworkInterfaces.ts#L66)
+[packages/types/src/NetworkInterfaces.ts:66](https://github.com/verida/verida-js/blob/032961c/packages/types/src/NetworkInterfaces.ts#L66)
 
 ___
 
@@ -42,4 +42,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/NetworkInterfaces.ts:67](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/NetworkInterfaces.ts#L67)
+[packages/types/src/NetworkInterfaces.ts:67](https://github.com/verida/verida-js/blob/032961c/packages/types/src/NetworkInterfaces.ts#L67)

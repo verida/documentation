@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[packages/types/src/DocumentInterfaces.ts:7](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/DocumentInterfaces.ts#L7)
+[packages/types/src/DocumentInterfaces.ts:7](https://github.com/verida/verida-js/blob/032961c/packages/types/src/DocumentInterfaces.ts#L7)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/DocumentInterfaces.ts:6](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/DocumentInterfaces.ts#L6)
+[packages/types/src/DocumentInterfaces.ts:6](https://github.com/verida/verida-js/blob/032961c/packages/types/src/DocumentInterfaces.ts#L6)
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/DocumentInterfaces.ts:5](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/DocumentInterfaces.ts#L5)
+[packages/types/src/DocumentInterfaces.ts:5](https://github.com/verida/verida-js/blob/032961c/packages/types/src/DocumentInterfaces.ts#L5)

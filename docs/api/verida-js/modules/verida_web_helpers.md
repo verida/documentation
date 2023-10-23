@@ -36,4 +36,4 @@ Usage:
 
 #### Defined in
 
-[packages/web-helpers/src/WebUser.ts:48](https://github.com/verida/verida-js/blob/a690f60/packages/web-helpers/src/WebUser.ts#L48)
+[packages/web-helpers/src/WebUser.ts:48](https://github.com/verida/verida-js/blob/032961c/packages/web-helpers/src/WebUser.ts#L48)

@@ -41,7 +41,7 @@
 
 #### Defined in
 
-[packages/account/src/auth-type.ts:13](https://github.com/verida/verida-js/blob/a690f60/packages/account/src/auth-type.ts#L13)
+[packages/account/src/auth-type.ts:13](https://github.com/verida/verida-js/blob/032961c/packages/account/src/auth-type.ts#L13)
 
 ## Properties
 
@@ -51,7 +51,7 @@
 
 #### Defined in
 
-[packages/account/src/auth-type.ts:8](https://github.com/verida/verida-js/blob/a690f60/packages/account/src/auth-type.ts#L8)
+[packages/account/src/auth-type.ts:8](https://github.com/verida/verida-js/blob/032961c/packages/account/src/auth-type.ts#L8)
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 #### Defined in
 
-[packages/account/src/auth-type.ts:7](https://github.com/verida/verida-js/blob/a690f60/packages/account/src/auth-type.ts#L7)
+[packages/account/src/auth-type.ts:7](https://github.com/verida/verida-js/blob/032961c/packages/account/src/auth-type.ts#L7)
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 #### Defined in
 
-[packages/account/src/auth-type.ts:9](https://github.com/verida/verida-js/blob/a690f60/packages/account/src/auth-type.ts#L9)
+[packages/account/src/auth-type.ts:9](https://github.com/verida/verida-js/blob/032961c/packages/account/src/auth-type.ts#L9)
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[packages/account/src/auth-type.ts:10](https://github.com/verida/verida-js/blob/a690f60/packages/account/src/auth-type.ts#L10)
+[packages/account/src/auth-type.ts:10](https://github.com/verida/verida-js/blob/032961c/packages/account/src/auth-type.ts#L10)
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 #### Defined in
 
-[packages/account/src/auth-type.ts:11](https://github.com/verida/verida-js/blob/a690f60/packages/account/src/auth-type.ts#L11)
+[packages/account/src/auth-type.ts:11](https://github.com/verida/verida-js/blob/032961c/packages/account/src/auth-type.ts#L11)
 
 ## Methods
 
@@ -111,7 +111,7 @@ ___
 
 #### Defined in
 
-[packages/account/src/auth-type.ts:28](https://github.com/verida/verida-js/blob/a690f60/packages/account/src/auth-type.ts#L28)
+[packages/account/src/auth-type.ts:28](https://github.com/verida/verida-js/blob/032961c/packages/account/src/auth-type.ts#L28)
 
 ___
 
@@ -131,7 +131,7 @@ ___
 
 #### Defined in
 
-[packages/account/src/auth-type.ts:20](https://github.com/verida/verida-js/blob/a690f60/packages/account/src/auth-type.ts#L20)
+[packages/account/src/auth-type.ts:20](https://github.com/verida/verida-js/blob/032961c/packages/account/src/auth-type.ts#L20)
 
 ___
 
@@ -151,4 +151,4 @@ ___
 
 #### Defined in
 
-[packages/account/src/auth-type.ts:24](https://github.com/verida/verida-js/blob/a690f60/packages/account/src/auth-type.ts#L24)
+[packages/account/src/auth-type.ts:24](https://github.com/verida/verida-js/blob/032961c/packages/account/src/auth-type.ts#L24)

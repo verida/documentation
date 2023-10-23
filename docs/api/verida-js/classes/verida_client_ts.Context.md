@@ -103,7 +103,7 @@ Instantiate a new context.
 
 #### Defined in
 
-[packages/client-ts/src/context/context.ts:87](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/context.ts#L87)
+[packages/client-ts/src/context/context.ts:87](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/context.ts#L87)
 
 ## Properties
 
@@ -113,7 +113,7 @@ Instantiate a new context.
 
 #### Defined in
 
-[packages/client-ts/src/context/context.ts:66](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/context.ts#L66)
+[packages/client-ts/src/context/context.ts:66](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/context.ts#L66)
 
 ___
 
@@ -123,7 +123,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/context.ts:65](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/context.ts#L65)
+[packages/client-ts/src/context/context.ts:65](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/context.ts#L65)
 
 ___
 
@@ -133,7 +133,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/context.ts:70](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/context.ts#L70)
+[packages/client-ts/src/context/context.ts:70](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/context.ts#L70)
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/context.ts:75](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/context.ts#L75)
+[packages/client-ts/src/context/context.ts:75](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/context.ts#L75)
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/context.ts:72](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/context.ts#L72)
+[packages/client-ts/src/context/context.ts:72](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/context.ts#L72)
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/context.ts:73](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/context.ts#L73)
+[packages/client-ts/src/context/context.ts:73](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/context.ts#L73)
 
 ___
 
@@ -173,7 +173,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/context.ts:71](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/context.ts#L71)
+[packages/client-ts/src/context/context.ts:71](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/context.ts#L71)
 
 ___
 
@@ -183,7 +183,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/context.ts:67](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/context.ts#L67)
+[packages/client-ts/src/context/context.ts:67](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/context.ts#L67)
 
 ___
 
@@ -193,7 +193,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/context.ts:68](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/context.ts#L68)
+[packages/client-ts/src/context/context.ts:68](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/context.ts#L68)
 
 ___
 
@@ -286,7 +286,7 @@ Emits `progress` event when adding the endpoint has progressed (ie: replicating 
 
 #### Defined in
 
-[packages/client-ts/src/context/context.ts:518](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/context.ts#L518)
+[packages/client-ts/src/context/context.ts:518](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/context.ts#L518)
 
 ___
 
@@ -340,7 +340,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/context.ts:559](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/context.ts#L559)
+[packages/client-ts/src/context/context.ts:559](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/context.ts#L559)
 
 ___
 
@@ -368,7 +368,7 @@ Closes all open database connections, returns resources, cancels event listeners
 
 #### Defined in
 
-[packages/client-ts/src/context/context.ts:549](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/context.ts#L549)
+[packages/client-ts/src/context/context.ts:549](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/context.ts#L549)
 
 ___
 
@@ -386,7 +386,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/context.ts:138](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/context.ts#L138)
+[packages/client-ts/src/context/context.ts:138](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/context.ts#L138)
 
 ___
 
@@ -505,7 +505,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/context.ts:126](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/context.ts#L126)
+[packages/client-ts/src/context/context.ts:126](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/context.ts#L126)
 
 ___
 
@@ -530,7 +530,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/context.ts:497](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/context.ts#L497)
+[packages/client-ts/src/context/context.ts:497](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/context.ts#L497)
 
 ___
 
@@ -548,7 +548,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/context.ts:134](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/context.ts#L134)
+[packages/client-ts/src/context/context.ts:134](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/context.ts#L134)
 
 ___
 
@@ -574,7 +574,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/context.ts:102](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/context.ts#L102)
+[packages/client-ts/src/context/context.ts:102](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/context.ts#L102)
 
 ___
 
@@ -592,7 +592,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/context.ts:122](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/context.ts#L122)
+[packages/client-ts/src/context/context.ts:122](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/context.ts#L122)
 
 ___
 
@@ -619,7 +619,7 @@ Get a storage engine for a given DID and this contextName
 
 #### Defined in
 
-[packages/client-ts/src/context/context.ts:154](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/context.ts#L154)
+[packages/client-ts/src/context/context.ts:154](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/context.ts#L154)
 
 ___
 
@@ -637,7 +637,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/context.ts:474](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/context.ts#L474)
+[packages/client-ts/src/context/context.ts:474](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/context.ts#L474)
 
 ___
 
@@ -655,7 +655,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/context.ts:130](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/context.ts#L130)
+[packages/client-ts/src/context/context.ts:130](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/context.ts#L130)
 
 ___
 
@@ -708,7 +708,7 @@ Messaging instance
 
 #### Defined in
 
-[packages/client-ts/src/context/context.ts:207](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/context.ts#L207)
+[packages/client-ts/src/context/context.ts:207](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/context.ts#L207)
 
 ___
 
@@ -733,7 +733,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/context.ts:238](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/context.ts#L238)
+[packages/client-ts/src/context/context.ts:238](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/context.ts#L238)
 
 ___
 
@@ -753,7 +753,7 @@ Get the status of this context for databases, their connected endpoints and data
 
 #### Defined in
 
-[packages/client-ts/src/context/context.ts:483](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/context.ts#L483)
+[packages/client-ts/src/context/context.ts:483](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/context.ts#L483)
 
 ___
 
@@ -977,7 +977,7 @@ Open a database owned by this account.
 
 #### Defined in
 
-[packages/client-ts/src/context/context.ts:310](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/context.ts#L310)
+[packages/client-ts/src/context/context.ts:310](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/context.ts#L310)
 
 ___
 
@@ -1004,7 +1004,7 @@ Open a dataastore owned by this account.
 
 #### Defined in
 
-[packages/client-ts/src/context/context.ts:436](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/context.ts#L436)
+[packages/client-ts/src/context/context.ts:436](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/context.ts#L436)
 
 ___
 
@@ -1032,7 +1032,7 @@ Open an external database owned by an account that isn't the currently connected
 
 #### Defined in
 
-[packages/client-ts/src/context/context.ts:370](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/context.ts#L370)
+[packages/client-ts/src/context/context.ts:370](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/context.ts#L370)
 
 ___
 
@@ -1060,7 +1060,7 @@ Open an external datastore owned by an account that isn't the currently connecte
 
 #### Defined in
 
-[packages/client-ts/src/context/context.ts:456](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/context.ts#L456)
+[packages/client-ts/src/context/context.ts:456](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/context.ts#L456)
 
 ___
 
@@ -1087,7 +1087,7 @@ Get a user's profile.
 
 #### Defined in
 
-[packages/client-ts/src/context/context.ts:281](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/context.ts#L281)
+[packages/client-ts/src/context/context.ts:281](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/context.ts#L281)
 
 ___
 

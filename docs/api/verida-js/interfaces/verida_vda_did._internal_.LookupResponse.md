@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[packages/vda-did/src/blockchain/blockchainApi.ts:9](https://github.com/verida/verida-js/blob/a690f60/packages/vda-did/src/blockchain/blockchainApi.ts#L9)
+[packages/vda-did/src/blockchain/blockchainApi.ts:9](https://github.com/verida/verida-js/blob/032961c/packages/vda-did/src/blockchain/blockchainApi.ts#L9)
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 #### Defined in
 
-[packages/vda-did/src/blockchain/blockchainApi.ts:10](https://github.com/verida/verida-js/blob/a690f60/packages/vda-did/src/blockchain/blockchainApi.ts#L10)
+[packages/vda-did/src/blockchain/blockchainApi.ts:10](https://github.com/verida/verida-js/blob/032961c/packages/vda-did/src/blockchain/blockchainApi.ts#L10)

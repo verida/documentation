@@ -28,7 +28,7 @@ Interface for any DatastoreOpenConfig
 
 #### Defined in
 
-[packages/types/src/ContextInterfaces.ts:101](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/ContextInterfaces.ts#L101)
+[packages/types/src/ContextInterfaces.ts:101](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ContextInterfaces.ts#L101)
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/ContextInterfaces.ts:99](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/ContextInterfaces.ts#L99)
+[packages/types/src/ContextInterfaces.ts:99](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ContextInterfaces.ts#L99)
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/ContextInterfaces.ts:98](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/ContextInterfaces.ts#L98)
+[packages/types/src/ContextInterfaces.ts:98](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ContextInterfaces.ts#L98)
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/ContextInterfaces.ts:94](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/ContextInterfaces.ts#L94)
+[packages/types/src/ContextInterfaces.ts:94](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ContextInterfaces.ts#L94)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/ContextInterfaces.ts:97](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/ContextInterfaces.ts#L97)
+[packages/types/src/ContextInterfaces.ts:97](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ContextInterfaces.ts#L97)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/ContextInterfaces.ts:100](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/ContextInterfaces.ts#L100)
+[packages/types/src/ContextInterfaces.ts:100](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ContextInterfaces.ts#L100)
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/ContextInterfaces.ts:93](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/ContextInterfaces.ts#L93)
+[packages/types/src/ContextInterfaces.ts:93](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ContextInterfaces.ts#L93)
 
 ___
 
@@ -98,7 +98,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/ContextInterfaces.ts:96](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/ContextInterfaces.ts#L96)
+[packages/types/src/ContextInterfaces.ts:96](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ContextInterfaces.ts#L96)
 
 ___
 
@@ -108,4 +108,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/ContextInterfaces.ts:95](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/ContextInterfaces.ts#L95)
+[packages/types/src/ContextInterfaces.ts:95](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ContextInterfaces.ts#L95)

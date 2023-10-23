@@ -38,7 +38,7 @@
 
 #### Defined in
 
-[packages/vda-common/src/contract.ts:2](https://github.com/verida/verida-js/blob/a690f60/packages/vda-common/src/contract.ts#L2)
+[packages/vda-common/src/contract.ts:2](https://github.com/verida/verida-js/blob/032961c/packages/vda-common/src/contract.ts#L2)
 
 ## Variables
 
@@ -48,7 +48,7 @@
 
 #### Defined in
 
-[packages/vda-common/src/contract.ts:63](https://github.com/verida/verida-js/blob/a690f60/packages/vda-common/src/contract.ts#L63)
+[packages/vda-common/src/contract.ts:63](https://github.com/verida/verida-js/blob/032961c/packages/vda-common/src/contract.ts#L63)
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 #### Defined in
 
-[packages/vda-common/src/contract.ts:17](https://github.com/verida/verida-js/blob/a690f60/packages/vda-common/src/contract.ts#L17)
+[packages/vda-common/src/contract.ts:17](https://github.com/verida/verida-js/blob/032961c/packages/vda-common/src/contract.ts#L17)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[packages/vda-common/src/rpc.ts:1](https://github.com/verida/verida-js/blob/a690f60/packages/vda-common/src/rpc.ts#L1)
+[packages/vda-common/src/rpc.ts:1](https://github.com/verida/verida-js/blob/032961c/packages/vda-common/src/rpc.ts#L1)
 
 ## Functions
 
@@ -89,7 +89,7 @@ ___
 
 #### Defined in
 
-[packages/vda-common/src/contract.ts:73](https://github.com/verida/verida-js/blob/a690f60/packages/vda-common/src/contract.ts#L73)
+[packages/vda-common/src/contract.ts:73](https://github.com/verida/verida-js/blob/032961c/packages/vda-common/src/contract.ts#L73)
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-[packages/vda-common/src/rpc.ts:9](https://github.com/verida/verida-js/blob/a690f60/packages/vda-common/src/rpc.ts#L9)
+[packages/vda-common/src/rpc.ts:9](https://github.com/verida/verida-js/blob/032961c/packages/vda-common/src/rpc.ts#L9)
 
 ___
 
@@ -130,7 +130,7 @@ ___
 
 #### Defined in
 
-[packages/vda-common/src/utils.ts:38](https://github.com/verida/verida-js/blob/a690f60/packages/vda-common/src/utils.ts#L38)
+[packages/vda-common/src/utils.ts:38](https://github.com/verida/verida-js/blob/032961c/packages/vda-common/src/utils.ts#L38)
 
 ___
 
@@ -152,7 +152,7 @@ ___
 
 #### Defined in
 
-[packages/vda-common/src/utils.ts:29](https://github.com/verida/verida-js/blob/a690f60/packages/vda-common/src/utils.ts#L29)
+[packages/vda-common/src/utils.ts:29](https://github.com/verida/verida-js/blob/032961c/packages/vda-common/src/utils.ts#L29)
 
 ___
 
@@ -178,4 +178,4 @@ ___
 
 #### Defined in
 
-[packages/vda-common/src/utils.ts:6](https://github.com/verida/verida-js/blob/a690f60/packages/vda-common/src/utils.ts#L6)
+[packages/vda-common/src/utils.ts:6](https://github.com/verida/verida-js/blob/032961c/packages/vda-common/src/utils.ts#L6)

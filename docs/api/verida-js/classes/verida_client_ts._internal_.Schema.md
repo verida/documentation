@@ -61,7 +61,7 @@ Access via {@link App#getSchema}
 
 #### Defined in
 
-[packages/client-ts/src/context/schema.ts:51](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/schema.ts#L51)
+[packages/client-ts/src/context/schema.ts:51](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/schema.ts#L51)
 
 ## Properties
 
@@ -71,7 +71,7 @@ Access via {@link App#getSchema}
 
 #### Defined in
 
-[packages/client-ts/src/context/schema.ts:32](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/schema.ts#L32)
+[packages/client-ts/src/context/schema.ts:32](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/schema.ts#L32)
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/schema.ts:29](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/schema.ts#L29)
+[packages/client-ts/src/context/schema.ts:29](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/schema.ts#L29)
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/schema.ts:35](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/schema.ts#L35)
+[packages/client-ts/src/context/schema.ts:35](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/schema.ts#L35)
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/schema.ts:31](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/schema.ts#L31)
+[packages/client-ts/src/context/schema.ts:31](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/schema.ts#L31)
 
 ___
 
@@ -115,7 +115,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/schema.ts:34](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/schema.ts#L34)
+[packages/client-ts/src/context/schema.ts:34](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/schema.ts#L34)
 
 ___
 
@@ -125,7 +125,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/schema.ts:36](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/schema.ts#L36)
+[packages/client-ts/src/context/schema.ts:36](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/schema.ts#L36)
 
 ___
 
@@ -135,7 +135,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/schema.ts:37](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/schema.ts#L37)
+[packages/client-ts/src/context/schema.ts:37](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/schema.ts#L37)
 
 ___
 
@@ -145,7 +145,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/schema.ts:39](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/schema.ts#L39)
+[packages/client-ts/src/context/schema.ts:39](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/schema.ts#L39)
 
 ___
 
@@ -155,7 +155,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/schema.ts:40](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/schema.ts#L40)
+[packages/client-ts/src/context/schema.ts:40](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/schema.ts#L40)
 
 ## Methods
 
@@ -173,7 +173,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/schema.ts:155](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/schema.ts#L155)
+[packages/client-ts/src/context/schema.ts:155](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/schema.ts#L155)
 
 ___
 
@@ -194,7 +194,7 @@ Handle shortened paths:
 
 #### Defined in
 
-[packages/client-ts/src/context/schema.ts:189](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/schema.ts#L189)
+[packages/client-ts/src/context/schema.ts:189](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/schema.ts#L189)
 
 ___
 
@@ -214,7 +214,7 @@ Fetch unresolved JSON schema
 
 #### Defined in
 
-[packages/client-ts/src/context/schema.ts:141](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/schema.ts#L141)
+[packages/client-ts/src/context/schema.ts:141](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/schema.ts#L141)
 
 ___
 
@@ -243,7 +243,7 @@ JSON object representing the defereferenced schema
 
 #### Defined in
 
-[packages/client-ts/src/context/schema.ts:103](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/schema.ts#L103)
+[packages/client-ts/src/context/schema.ts:103](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/schema.ts#L103)
 
 ___
 
@@ -271,7 +271,7 @@ True if the data validates against the schema.
 
 #### Defined in
 
-[packages/client-ts/src/context/schema.ts:123](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/schema.ts#L123)
+[packages/client-ts/src/context/schema.ts:123](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/schema.ts#L123)
 
 ___
 
@@ -291,7 +291,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/schema.ts:76](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/schema.ts#L76)
+[packages/client-ts/src/context/schema.ts:76](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/schema.ts#L76)
 
 ___
 
@@ -305,7 +305,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/schema.ts:88](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/schema.ts#L88)
+[packages/client-ts/src/context/schema.ts:88](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/schema.ts#L88)
 
 ___
 
@@ -332,7 +332,7 @@ schemaName without the version
 
 #### Defined in
 
-[packages/client-ts/src/context/schema.ts:272](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/schema.ts#L272)
+[packages/client-ts/src/context/schema.ts:272](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/schema.ts#L272)
 
 ___
 
@@ -356,7 +356,7 @@ Used by AJV.
 
 #### Defined in
 
-[packages/client-ts/src/context/schema.ts:241](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/schema.ts#L241)
+[packages/client-ts/src/context/schema.ts:241](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/schema.ts#L241)
 
 ___
 
@@ -378,7 +378,7 @@ Force schema paths to be applied to URLs
 
 #### Defined in
 
-[packages/client-ts/src/context/schema.ts:221](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/schema.ts#L221)
+[packages/client-ts/src/context/schema.ts:221](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/schema.ts#L221)
 
 ___
 
@@ -398,4 +398,4 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/schema.ts:84](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/schema.ts#L84)
+[packages/client-ts/src/context/schema.ts:84](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/schema.ts#L84)

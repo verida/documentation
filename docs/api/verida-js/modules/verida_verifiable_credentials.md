@@ -33,4 +33,4 @@
 
 #### Defined in
 
-[packages/verifiable-credentials/src/interfaces.ts:3](https://github.com/verida/verida-js/blob/a690f60/packages/verifiable-credentials/src/interfaces.ts#L3)
+[packages/verifiable-credentials/src/interfaces.ts:3](https://github.com/verida/verida-js/blob/032961c/packages/verifiable-credentials/src/interfaces.ts#L3)

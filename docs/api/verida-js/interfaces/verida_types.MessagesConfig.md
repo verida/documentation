@@ -20,4 +20,4 @@ Interface for any MessagesConfig
 
 #### Defined in
 
-[packages/types/src/ContextInterfaces.ts:108](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/ContextInterfaces.ts#L108)
+[packages/types/src/ContextInterfaces.ts:108](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ContextInterfaces.ts#L108)

@@ -21,7 +21,7 @@ Interface for ContextConfig
 
 #### Defined in
 
-[packages/types/src/NetworkInterfaces.ts:59](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/NetworkInterfaces.ts#L59)
+[packages/types/src/NetworkInterfaces.ts:59](https://github.com/verida/verida-js/blob/032961c/packages/types/src/NetworkInterfaces.ts#L59)
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/NetworkInterfaces.ts:58](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/NetworkInterfaces.ts#L58)
+[packages/types/src/NetworkInterfaces.ts:58](https://github.com/verida/verida-js/blob/032961c/packages/types/src/NetworkInterfaces.ts#L58)

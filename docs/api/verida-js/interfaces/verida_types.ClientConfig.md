@@ -23,7 +23,7 @@ Interface for ClientConfig
 
 #### Defined in
 
-[packages/types/src/NetworkInterfaces.ts:46](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/NetworkInterfaces.ts#L46)
+[packages/types/src/NetworkInterfaces.ts:46](https://github.com/verida/verida-js/blob/032961c/packages/types/src/NetworkInterfaces.ts#L46)
 
 ___
 
@@ -37,7 +37,7 @@ Environment configuration can still be overridden by config items.
 
 #### Defined in
 
-[packages/types/src/NetworkInterfaces.ts:44](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/NetworkInterfaces.ts#L44)
+[packages/types/src/NetworkInterfaces.ts:44](https://github.com/verida/verida-js/blob/032961c/packages/types/src/NetworkInterfaces.ts#L44)
 
 ___
 
@@ -49,7 +49,7 @@ Specify custom schema paths (typically for local development).
 
 #### Defined in
 
-[packages/types/src/NetworkInterfaces.ts:51](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/NetworkInterfaces.ts#L51)
+[packages/types/src/NetworkInterfaces.ts:51](https://github.com/verida/verida-js/blob/032961c/packages/types/src/NetworkInterfaces.ts#L51)
 
 ___
 
@@ -61,4 +61,4 @@ Specify client's App name.
 
 #### Defined in
 
-[packages/types/src/NetworkInterfaces.ts:37](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/NetworkInterfaces.ts#L37)
+[packages/types/src/NetworkInterfaces.ts:37](https://github.com/verida/verida-js/blob/032961c/packages/types/src/NetworkInterfaces.ts#L37)

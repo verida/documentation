@@ -31,7 +31,7 @@ on chain, if required
 
 #### Defined in
 
-[packages/types/src/AccountInterfaces.ts:55](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/AccountInterfaces.ts#L55)
+[packages/types/src/AccountInterfaces.ts:55](https://github.com/verida/verida-js/blob/032961c/packages/types/src/AccountInterfaces.ts#L55)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/AccountInterfaces.ts:57](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/AccountInterfaces.ts#L57)
+[packages/types/src/AccountInterfaces.ts:57](https://github.com/verida/verida-js/blob/032961c/packages/types/src/AccountInterfaces.ts#L57)
 
 ___
 
@@ -55,7 +55,7 @@ Omit.rpcUrl
 
 #### Defined in
 
-[packages/types/src/NetworkInterfaces.ts:26](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/NetworkInterfaces.ts#L26)
+[packages/types/src/NetworkInterfaces.ts:26](https://github.com/verida/verida-js/blob/032961c/packages/types/src/NetworkInterfaces.ts#L26)
 
 ___
 
@@ -69,7 +69,7 @@ Omit.timeout
 
 #### Defined in
 
-[packages/types/src/NetworkInterfaces.ts:27](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/NetworkInterfaces.ts#L27)
+[packages/types/src/NetworkInterfaces.ts:27](https://github.com/verida/verida-js/blob/032961c/packages/types/src/NetworkInterfaces.ts#L27)
 
 ___
 
@@ -79,4 +79,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/AccountInterfaces.ts:56](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/AccountInterfaces.ts#L56)
+[packages/types/src/AccountInterfaces.ts:56](https://github.com/verida/verida-js/blob/032961c/packages/types/src/AccountInterfaces.ts#L56)

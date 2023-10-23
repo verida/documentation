@@ -48,7 +48,7 @@ Build a URI that represents a specific record in a database
 
 #### Defined in
 
-[packages/helpers/src/Utils.ts:16](https://github.com/verida/verida-js/blob/a690f60/packages/helpers/src/Utils.ts#L16)
+[packages/helpers/src/Utils.ts:16](https://github.com/verida/verida-js/blob/032961c/packages/helpers/src/Utils.ts#L16)
 
 ___
 
@@ -70,7 +70,7 @@ Decode a Verida URI from base58 to it's `verida://` URI format
 
 #### Defined in
 
-[packages/helpers/src/Utils.ts:170](https://github.com/verida/verida-js/blob/a690f60/packages/helpers/src/Utils.ts#L170)
+[packages/helpers/src/Utils.ts:170](https://github.com/verida/verida-js/blob/032961c/packages/helpers/src/Utils.ts#L170)
 
 ___
 
@@ -92,7 +92,7 @@ Encode a Verida URI in base58 to create a unique string reference on the network
 
 #### Defined in
 
-[packages/helpers/src/Utils.ts:161](https://github.com/verida/verida-js/blob/a690f60/packages/helpers/src/Utils.ts#L161)
+[packages/helpers/src/Utils.ts:161](https://github.com/verida/verida-js/blob/032961c/packages/helpers/src/Utils.ts#L161)
 
 ___
 
@@ -119,7 +119,7 @@ Get the `network` and `address` parts of a DID
 
 #### Defined in
 
-[packages/helpers/src/Utils.ts:186](https://github.com/verida/verida-js/blob/a690f60/packages/helpers/src/Utils.ts#L186)
+[packages/helpers/src/Utils.ts:186](https://github.com/verida/verida-js/blob/032961c/packages/helpers/src/Utils.ts#L186)
 
 ___
 
@@ -141,7 +141,7 @@ Explode a Verida URI into it's individual pieces
 
 #### Defined in
 
-[packages/helpers/src/Utils.ts:54](https://github.com/verida/verida-js/blob/a690f60/packages/helpers/src/Utils.ts#L54)
+[packages/helpers/src/Utils.ts:54](https://github.com/verida/verida-js/blob/032961c/packages/helpers/src/Utils.ts#L54)
 
 ___
 
@@ -164,7 +164,7 @@ Fetch the data accessible from a Verida URI
 
 #### Defined in
 
-[packages/helpers/src/Utils.ts:90](https://github.com/verida/verida-js/blob/a690f60/packages/helpers/src/Utils.ts#L90)
+[packages/helpers/src/Utils.ts:90](https://github.com/verida/verida-js/blob/032961c/packages/helpers/src/Utils.ts#L90)
 
 ___
 
@@ -189,4 +189,4 @@ ie: wrapUri('http://data.verida.network', ...)
 
 #### Defined in
 
-[packages/helpers/src/Utils.ts:150](https://github.com/verida/verida-js/blob/a690f60/packages/helpers/src/Utils.ts#L150)
+[packages/helpers/src/Utils.ts:150](https://github.com/verida/verida-js/blob/032961c/packages/helpers/src/Utils.ts#L150)

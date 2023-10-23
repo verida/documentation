@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[packages/types/src/ContextInterfaces.ts:119](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/ContextInterfaces.ts#L119)
+[packages/types/src/ContextInterfaces.ts:119](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ContextInterfaces.ts#L119)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/ContextInterfaces.ts:121](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/ContextInterfaces.ts#L121)
+[packages/types/src/ContextInterfaces.ts:121](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ContextInterfaces.ts#L121)
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/ContextInterfaces.ts:120](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/ContextInterfaces.ts#L120)
+[packages/types/src/ContextInterfaces.ts:120](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ContextInterfaces.ts#L120)

@@ -34,4 +34,4 @@ Configuration type for gasless request
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:52](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/Web3Interfaces.ts#L52)
+[packages/types/src/Web3Interfaces.ts:52](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L52)

@@ -26,7 +26,7 @@ Interface for notifications
 
 #### Defined in
 
-[packages/types/src/INotification.ts:19](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/INotification.ts#L19)
+[packages/types/src/INotification.ts:19](https://github.com/verida/verida-js/blob/032961c/packages/types/src/INotification.ts#L19)
 
 ___
 
@@ -44,7 +44,7 @@ Initialize notifications for the connected user
 
 #### Defined in
 
-[packages/types/src/INotification.ts:11](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/INotification.ts#L11)
+[packages/types/src/INotification.ts:11](https://github.com/verida/verida-js/blob/032961c/packages/types/src/INotification.ts#L11)
 
 ___
 
@@ -68,4 +68,4 @@ TODO: Change this
 
 #### Defined in
 
-[packages/types/src/INotification.ts:17](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/INotification.ts#L17)
+[packages/types/src/INotification.ts:17](https://github.com/verida/verida-js/blob/032961c/packages/types/src/INotification.ts#L17)

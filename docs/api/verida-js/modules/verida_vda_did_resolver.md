@@ -53,7 +53,7 @@ Call lookUp() function of DIDRegistry contract
 
 #### Defined in
 
-[packages/vda-did-resolver/src/activeDIDCount.ts:11](https://github.com/verida/verida-js/blob/a690f60/packages/vda-did-resolver/src/activeDIDCount.ts#L11)
+[packages/vda-did-resolver/src/activeDIDCount.ts:11](https://github.com/verida/verida-js/blob/032961c/packages/vda-did-resolver/src/activeDIDCount.ts#L11)
 
 ___
 
@@ -78,7 +78,7 @@ Call lookUp() function of DIDRegistry contract
 
 #### Defined in
 
-[packages/vda-did-resolver/src/getDIDs.ts:14](https://github.com/verida/verida-js/blob/a690f60/packages/vda-did-resolver/src/getDIDs.ts#L14)
+[packages/vda-did-resolver/src/getDIDs.ts:14](https://github.com/verida/verida-js/blob/032961c/packages/vda-did-resolver/src/getDIDs.ts#L14)
 
 ___
 
@@ -102,7 +102,7 @@ VdaDidResolver instance
 
 #### Defined in
 
-[packages/vda-did-resolver/src/resolver.ts:20](https://github.com/verida/verida-js/blob/a690f60/packages/vda-did-resolver/src/resolver.ts#L20)
+[packages/vda-did-resolver/src/resolver.ts:20](https://github.com/verida/verida-js/blob/032961c/packages/vda-did-resolver/src/resolver.ts#L20)
 
 ___
 
@@ -126,4 +126,4 @@ Call lookUp() function of DIDRegistry contract
 
 #### Defined in
 
-[packages/vda-did-resolver/src/lookup.ts:11](https://github.com/verida/verida-js/blob/a690f60/packages/vda-did-resolver/src/lookup.ts#L11)
+[packages/vda-did-resolver/src/lookup.ts:11](https://github.com/verida/verida-js/blob/032961c/packages/vda-did-resolver/src/lookup.ts#L11)

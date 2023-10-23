@@ -33,7 +33,7 @@
 
 #### Defined in
 
-[packages/verifiable-credentials/src/sharing-credential.ts:21](https://github.com/verida/verida-js/blob/a690f60/packages/verifiable-credentials/src/sharing-credential.ts#L21)
+[packages/verifiable-credentials/src/sharing-credential.ts:21](https://github.com/verida/verida-js/blob/032961c/packages/verifiable-credentials/src/sharing-credential.ts#L21)
 
 ## Properties
 
@@ -43,7 +43,7 @@
 
 #### Defined in
 
-[packages/verifiable-credentials/src/sharing-credential.ts:19](https://github.com/verida/verida-js/blob/a690f60/packages/verifiable-credentials/src/sharing-credential.ts#L19)
+[packages/verifiable-credentials/src/sharing-credential.ts:19](https://github.com/verida/verida-js/blob/032961c/packages/verifiable-credentials/src/sharing-credential.ts#L19)
 
 ## Methods
 
@@ -65,7 +65,7 @@ Method to encrypt and issue credential
 
 #### Defined in
 
-[packages/verifiable-credentials/src/sharing-credential.ts:30](https://github.com/verida/verida-js/blob/a690f60/packages/verifiable-credentials/src/sharing-credential.ts#L30)
+[packages/verifiable-credentials/src/sharing-credential.ts:30](https://github.com/verida/verida-js/blob/032961c/packages/verifiable-credentials/src/sharing-credential.ts#L30)
 
 ___
 
@@ -90,4 +90,4 @@ ___
 
 #### Defined in
 
-[packages/verifiable-credentials/src/sharing-credential.ts:52](https://github.com/verida/verida-js/blob/a690f60/packages/verifiable-credentials/src/sharing-credential.ts#L52)
+[packages/verifiable-credentials/src/sharing-credential.ts:52](https://github.com/verida/verida-js/blob/032961c/packages/verifiable-credentials/src/sharing-credential.ts#L52)

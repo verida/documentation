@@ -34,7 +34,7 @@ Interface for vda-name-client instance creation. Same as VDA-DID configuration
 
 #### Defined in
 
-[packages/vda-name-client/src/blockchain/blockchainApi.ts:28](https://github.com/verida/verida-js/blob/a690f60/packages/vda-name-client/src/blockchain/blockchainApi.ts#L28)
+[packages/vda-name-client/src/blockchain/blockchainApi.ts:28](https://github.com/verida/verida-js/blob/032961c/packages/vda-name-client/src/blockchain/blockchainApi.ts#L28)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[packages/vda-name-client/src/blockchain/blockchainApi.ts:26](https://github.com/verida/verida-js/blob/a690f60/packages/vda-name-client/src/blockchain/blockchainApi.ts#L26)
+[packages/vda-name-client/src/blockchain/blockchainApi.ts:26](https://github.com/verida/verida-js/blob/032961c/packages/vda-name-client/src/blockchain/blockchainApi.ts#L26)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[packages/vda-name-client/src/blockchain/blockchainApi.ts:25](https://github.com/verida/verida-js/blob/a690f60/packages/vda-name-client/src/blockchain/blockchainApi.ts#L25)
+[packages/vda-name-client/src/blockchain/blockchainApi.ts:25](https://github.com/verida/verida-js/blob/032961c/packages/vda-name-client/src/blockchain/blockchainApi.ts#L25)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[packages/vda-name-client/src/blockchain/blockchainApi.ts:27](https://github.com/verida/verida-js/blob/a690f60/packages/vda-name-client/src/blockchain/blockchainApi.ts#L27)
+[packages/vda-name-client/src/blockchain/blockchainApi.ts:27](https://github.com/verida/verida-js/blob/032961c/packages/vda-name-client/src/blockchain/blockchainApi.ts#L27)
 
 ___
 
@@ -74,4 +74,4 @@ ___
 
 #### Defined in
 
-[packages/vda-name-client/src/blockchain/blockchainApi.ts:29](https://github.com/verida/verida-js/blob/a690f60/packages/vda-name-client/src/blockchain/blockchainApi.ts#L29)
+[packages/vda-name-client/src/blockchain/blockchainApi.ts:29](https://github.com/verida/verida-js/blob/032961c/packages/vda-name-client/src/blockchain/blockchainApi.ts#L29)

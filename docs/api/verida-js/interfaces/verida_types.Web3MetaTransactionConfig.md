@@ -22,7 +22,7 @@ Configuration type for gasless mode
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:45](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/Web3Interfaces.ts#L45)
+[packages/types/src/Web3Interfaces.ts:45](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L45)
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:44](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/Web3Interfaces.ts#L44)
+[packages/types/src/Web3Interfaces.ts:44](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L44)
 
 ___
 
@@ -42,4 +42,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:43](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/Web3Interfaces.ts#L43)
+[packages/types/src/Web3Interfaces.ts:43](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L43)

@@ -33,7 +33,7 @@
 
 #### Defined in
 
-[packages/types/src/IProfile.ts:13](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IProfile.ts#L13)
+[packages/types/src/IProfile.ts:13](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IProfile.ts#L13)
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IProfile.ts:7](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IProfile.ts#L7)
+[packages/types/src/IProfile.ts:7](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IProfile.ts#L7)
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IProfile.ts:15](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IProfile.ts#L15)
+[packages/types/src/IProfile.ts:15](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IProfile.ts#L15)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IProfile.ts:21](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IProfile.ts#L21)
+[packages/types/src/IProfile.ts:21](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IProfile.ts#L21)
 
 ___
 
@@ -117,7 +117,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IProfile.ts:17](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IProfile.ts#L17)
+[packages/types/src/IProfile.ts:17](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IProfile.ts#L17)
 
 ___
 
@@ -137,4 +137,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/IProfile.ts:19](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IProfile.ts#L19)
+[packages/types/src/IProfile.ts:19](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IProfile.ts#L19)

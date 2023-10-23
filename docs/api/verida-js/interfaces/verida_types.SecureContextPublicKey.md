@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[packages/types/src/StorageLinkInterfaces.ts:5](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/StorageLinkInterfaces.ts#L5)
+[packages/types/src/StorageLinkInterfaces.ts:5](https://github.com/verida/verida-js/blob/032961c/packages/types/src/StorageLinkInterfaces.ts#L5)
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/StorageLinkInterfaces.ts:4](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/StorageLinkInterfaces.ts#L4)
+[packages/types/src/StorageLinkInterfaces.ts:4](https://github.com/verida/verida-js/blob/032961c/packages/types/src/StorageLinkInterfaces.ts#L4)

@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[packages/helpers/src/Utils.ts:178](https://github.com/verida/verida-js/blob/a690f60/packages/helpers/src/Utils.ts#L178)
+[packages/helpers/src/Utils.ts:178](https://github.com/verida/verida-js/blob/032961c/packages/helpers/src/Utils.ts#L178)
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 #### Defined in
 
-[packages/helpers/src/Utils.ts:177](https://github.com/verida/verida-js/blob/a690f60/packages/helpers/src/Utils.ts#L177)
+[packages/helpers/src/Utils.ts:177](https://github.com/verida/verida-js/blob/032961c/packages/helpers/src/Utils.ts#L177)

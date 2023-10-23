@@ -41,7 +41,7 @@
 
 #### Defined in
 
-[packages/types/src/IAccount.ts:24](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IAccount.ts#L24)
+[packages/types/src/IAccount.ts:24](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IAccount.ts#L24)
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IAccount.ts:12](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IAccount.ts#L12)
+[packages/types/src/IAccount.ts:12](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IAccount.ts#L12)
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IAccount.ts:26](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IAccount.ts#L26)
+[packages/types/src/IAccount.ts:26](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IAccount.ts#L26)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IAccount.ts:30](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IAccount.ts#L30)
+[packages/types/src/IAccount.ts:30](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IAccount.ts#L30)
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IAccount.ts:28](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IAccount.ts#L28)
+[packages/types/src/IAccount.ts:28](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IAccount.ts#L28)
 
 ___
 
@@ -139,7 +139,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IAccount.ts:8](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IAccount.ts#L8)
+[packages/types/src/IAccount.ts:8](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IAccount.ts#L8)
 
 ___
 
@@ -159,7 +159,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IAccount.ts:14](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IAccount.ts#L14)
+[packages/types/src/IAccount.ts:14](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IAccount.ts#L14)
 
 ___
 
@@ -182,7 +182,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IAccount.ts:20](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IAccount.ts#L20)
+[packages/types/src/IAccount.ts:20](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IAccount.ts#L20)
 
 ___
 
@@ -202,7 +202,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IAccount.ts:22](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IAccount.ts#L22)
+[packages/types/src/IAccount.ts:22](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IAccount.ts#L22)
 
 ___
 
@@ -222,7 +222,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IAccount.ts:10](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IAccount.ts#L10)
+[packages/types/src/IAccount.ts:10](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IAccount.ts#L10)
 
 ___
 
@@ -243,7 +243,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IAccount.ts:18](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IAccount.ts#L18)
+[packages/types/src/IAccount.ts:18](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IAccount.ts#L18)
 
 ___
 
@@ -263,4 +263,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/IAccount.ts:16](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IAccount.ts#L16)
+[packages/types/src/IAccount.ts:16](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IAccount.ts#L16)

@@ -22,4 +22,4 @@
 
 #### Defined in
 
-[packages/types/src/IProfile.ts:2](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IProfile.ts#L2)
+[packages/types/src/IProfile.ts:2](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IProfile.ts#L2)

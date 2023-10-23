@@ -21,7 +21,7 @@
 
 #### Defined in
 
-[packages/types/src/NetworkInterfaces.ts:7](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/NetworkInterfaces.ts#L7)
+[packages/types/src/NetworkInterfaces.ts:7](https://github.com/verida/verida-js/blob/032961c/packages/types/src/NetworkInterfaces.ts#L7)
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/NetworkInterfaces.ts:6](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/NetworkInterfaces.ts#L6)
+[packages/types/src/NetworkInterfaces.ts:6](https://github.com/verida/verida-js/blob/032961c/packages/types/src/NetworkInterfaces.ts#L6)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/NetworkInterfaces.ts:9](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/NetworkInterfaces.ts#L9)
+[packages/types/src/NetworkInterfaces.ts:9](https://github.com/verida/verida-js/blob/032961c/packages/types/src/NetworkInterfaces.ts#L9)
 
 ___
 
@@ -51,4 +51,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/NetworkInterfaces.ts:8](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/NetworkInterfaces.ts#L8)
+[packages/types/src/NetworkInterfaces.ts:8](https://github.com/verida/verida-js/blob/032961c/packages/types/src/NetworkInterfaces.ts#L8)

@@ -1548,7 +1548,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/profiles/profile.ts:1](https://github.com/verida/verida-js/blob/a690f60/packages/client-ts/src/context/profiles/profile.ts#L1)
+[packages/client-ts/src/context/profiles/profile.ts:1](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/profiles/profile.ts#L1)
 
 ___
 

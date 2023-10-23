@@ -28,7 +28,7 @@ Gas configuration
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:20](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/Web3Interfaces.ts#L20)
+[packages/types/src/Web3Interfaces.ts:20](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L20)
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:18](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/Web3Interfaces.ts#L18)
+[packages/types/src/Web3Interfaces.ts:18](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L18)
 
 ___
 
@@ -48,4 +48,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:19](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/Web3Interfaces.ts#L19)
+[packages/types/src/Web3Interfaces.ts:19](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L19)

@@ -122,7 +122,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/DocumentInterfaces.ts:48](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/DocumentInterfaces.ts#L48)
+[packages/types/src/DocumentInterfaces.ts:48](https://github.com/verida/verida-js/blob/032961c/packages/types/src/DocumentInterfaces.ts#L48)
 
 ___
 
@@ -132,7 +132,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/DocumentInterfaces.ts:50](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/DocumentInterfaces.ts#L50)
+[packages/types/src/DocumentInterfaces.ts:50](https://github.com/verida/verida-js/blob/032961c/packages/types/src/DocumentInterfaces.ts#L50)
 
 ___
 
@@ -166,7 +166,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/DocumentInterfaces.ts:51](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/DocumentInterfaces.ts#L51)
+[packages/types/src/DocumentInterfaces.ts:51](https://github.com/verida/verida-js/blob/032961c/packages/types/src/DocumentInterfaces.ts#L51)
 
 ___
 
@@ -206,7 +206,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/DocumentInterfaces.ts:49](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/DocumentInterfaces.ts#L49)
+[packages/types/src/DocumentInterfaces.ts:49](https://github.com/verida/verida-js/blob/032961c/packages/types/src/DocumentInterfaces.ts#L49)
 
 ___
 
@@ -230,4 +230,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/DocumentInterfaces.ts:47](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/DocumentInterfaces.ts#L47)
+[packages/types/src/DocumentInterfaces.ts:47](https://github.com/verida/verida-js/blob/032961c/packages/types/src/DocumentInterfaces.ts#L47)

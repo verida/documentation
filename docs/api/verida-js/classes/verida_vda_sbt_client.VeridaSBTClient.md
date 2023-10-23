@@ -47,7 +47,7 @@
 
 #### Defined in
 
-[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:44](https://github.com/verida/verida-js/blob/a690f60/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L44)
+[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:44](https://github.com/verida/verida-js/blob/032961c/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L44)
 
 ## Properties
 
@@ -57,7 +57,7 @@
 
 #### Defined in
 
-[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:36](https://github.com/verida/verida-js/blob/a690f60/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L36)
+[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:36](https://github.com/verida/verida-js/blob/032961c/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L36)
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 #### Defined in
 
-[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:42](https://github.com/verida/verida-js/blob/a690f60/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L42)
+[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:42](https://github.com/verida/verida-js/blob/032961c/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L42)
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 #### Defined in
 
-[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:38](https://github.com/verida/verida-js/blob/a690f60/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L38)
+[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:38](https://github.com/verida/verida-js/blob/032961c/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L38)
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 #### Defined in
 
-[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:37](https://github.com/verida/verida-js/blob/a690f60/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L37)
+[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:37](https://github.com/verida/verida-js/blob/032961c/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L37)
 
 ___
 
@@ -97,7 +97,7 @@ ___
 
 #### Defined in
 
-[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:40](https://github.com/verida/verida-js/blob/a690f60/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L40)
+[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:40](https://github.com/verida/verida-js/blob/032961c/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L40)
 
 ___
 
@@ -107,7 +107,7 @@ ___
 
 #### Defined in
 
-[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:41](https://github.com/verida/verida-js/blob/a690f60/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L41)
+[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:41](https://github.com/verida/verida-js/blob/032961c/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L41)
 
 ## Methods
 
@@ -131,7 +131,7 @@ Not able to remove other's tokens.
 
 #### Defined in
 
-[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:371](https://github.com/verida/verida-js/blob/a690f60/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L371)
+[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:371](https://github.com/verida/verida-js/blob/032961c/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L371)
 
 ___
 
@@ -160,7 +160,7 @@ Minted token ID
 
 #### Defined in
 
-[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:212](https://github.com/verida/verida-js/blob/a690f60/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L212)
+[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:212](https://github.com/verida/verida-js/blob/032961c/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L212)
 
 ___
 
@@ -184,7 +184,7 @@ Token ID list
 
 #### Defined in
 
-[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:314](https://github.com/verida/verida-js/blob/a690f60/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L314)
+[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:314](https://github.com/verida/verida-js/blob/032961c/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L314)
 
 ___
 
@@ -202,7 +202,7 @@ list of addresses
 
 #### Defined in
 
-[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:181](https://github.com/verida/verida-js/blob/a690f60/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L181)
+[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:181](https://github.com/verida/verida-js/blob/032961c/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L181)
 
 ___
 
@@ -226,7 +226,7 @@ true if tokenID is locked
 
 #### Defined in
 
-[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:130](https://github.com/verida/verida-js/blob/a690f60/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L130)
+[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:130](https://github.com/verida/verida-js/blob/032961c/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L130)
 
 ___
 
@@ -252,7 +252,7 @@ true if SBT claimed
 
 #### Defined in
 
-[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:283](https://github.com/verida/verida-js/blob/a690f60/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L283)
+[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:283](https://github.com/verida/verida-js/blob/032961c/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L283)
 
 ___
 
@@ -270,7 +270,7 @@ nonce of DID
 
 #### Defined in
 
-[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:87](https://github.com/verida/verida-js/blob/a690f60/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L87)
+[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:87](https://github.com/verida/verida-js/blob/032961c/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L87)
 
 ___
 
@@ -294,7 +294,7 @@ owner address of the token
 
 #### Defined in
 
-[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:390](https://github.com/verida/verida-js/blob/a690f60/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L390)
+[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:390](https://github.com/verida/verida-js/blob/032961c/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L390)
 
 ___
 
@@ -318,7 +318,7 @@ string array of SBT type & uniqueId
 
 #### Defined in
 
-[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:342](https://github.com/verida/verida-js/blob/a690f60/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L342)
+[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:342](https://github.com/verida/verida-js/blob/032961c/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L342)
 
 ___
 
@@ -342,7 +342,7 @@ tokenURI from SBT contract
 
 #### Defined in
 
-[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:104](https://github.com/verida/verida-js/blob/a690f60/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L104)
+[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:104](https://github.com/verida/verida-js/blob/032961c/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L104)
 
 ___
 
@@ -360,4 +360,4 @@ total number of tokens minted. It includes the burnt tokens.
 
 #### Defined in
 
-[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:156](https://github.com/verida/verida-js/blob/a690f60/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L156)
+[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:156](https://github.com/verida/verida-js/blob/032961c/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L156)

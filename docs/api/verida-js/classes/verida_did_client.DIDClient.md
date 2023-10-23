@@ -48,7 +48,7 @@
 
 #### Defined in
 
-[packages/did-client/src/did-client.ts:26](https://github.com/verida/verida-js/blob/a690f60/packages/did-client/src/did-client.ts#L26)
+[packages/did-client/src/did-client.ts:26](https://github.com/verida/verida-js/blob/032961c/packages/did-client/src/did-client.ts#L26)
 
 ## Properties
 
@@ -58,7 +58,7 @@
 
 #### Defined in
 
-[packages/did-client/src/did-client.ts:12](https://github.com/verida/verida-js/blob/a690f60/packages/did-client/src/did-client.ts#L12)
+[packages/did-client/src/did-client.ts:12](https://github.com/verida/verida-js/blob/032961c/packages/did-client/src/did-client.ts#L12)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[packages/did-client/src/did-client.ts:22](https://github.com/verida/verida-js/blob/a690f60/packages/did-client/src/did-client.ts#L22)
+[packages/did-client/src/did-client.ts:22](https://github.com/verida/verida-js/blob/032961c/packages/did-client/src/did-client.ts#L22)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-[packages/did-client/src/did-client.ts:15](https://github.com/verida/verida-js/blob/a690f60/packages/did-client/src/did-client.ts#L15)
+[packages/did-client/src/did-client.ts:15](https://github.com/verida/verida-js/blob/032961c/packages/did-client/src/did-client.ts#L15)
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 #### Defined in
 
-[packages/did-client/src/did-client.ts:24](https://github.com/verida/verida-js/blob/a690f60/packages/did-client/src/did-client.ts#L24)
+[packages/did-client/src/did-client.ts:24](https://github.com/verida/verida-js/blob/032961c/packages/did-client/src/did-client.ts#L24)
 
 ___
 
@@ -98,7 +98,7 @@ ___
 
 #### Defined in
 
-[packages/did-client/src/did-client.ts:17](https://github.com/verida/verida-js/blob/a690f60/packages/did-client/src/did-client.ts#L17)
+[packages/did-client/src/did-client.ts:17](https://github.com/verida/verida-js/blob/032961c/packages/did-client/src/did-client.ts#L17)
 
 ___
 
@@ -108,7 +108,7 @@ ___
 
 #### Defined in
 
-[packages/did-client/src/did-client.ts:20](https://github.com/verida/verida-js/blob/a690f60/packages/did-client/src/did-client.ts#L20)
+[packages/did-client/src/did-client.ts:20](https://github.com/verida/verida-js/blob/032961c/packages/did-client/src/did-client.ts#L20)
 
 ## Methods
 
@@ -137,7 +137,7 @@ Unlock save() function by providing verida signing key.
 
 #### Defined in
 
-[packages/did-client/src/did-client.ts:58](https://github.com/verida/verida-js/blob/a690f60/packages/did-client/src/did-client.ts#L58)
+[packages/did-client/src/did-client.ts:58](https://github.com/verida/verida-js/blob/032961c/packages/did-client/src/did-client.ts#L58)
 
 ___
 
@@ -155,7 +155,7 @@ ___
 
 #### Defined in
 
-[packages/did-client/src/did-client.ts:100](https://github.com/verida/verida-js/blob/a690f60/packages/did-client/src/did-client.ts#L100)
+[packages/did-client/src/did-client.ts:100](https://github.com/verida/verida-js/blob/032961c/packages/did-client/src/did-client.ts#L100)
 
 ___
 
@@ -183,7 +183,7 @@ DID Document instance
 
 #### Defined in
 
-[packages/did-client/src/did-client.ts:200](https://github.com/verida/verida-js/blob/a690f60/packages/did-client/src/did-client.ts#L200)
+[packages/did-client/src/did-client.ts:200](https://github.com/verida/verida-js/blob/032961c/packages/did-client/src/did-client.ts#L200)
 
 ___
 
@@ -201,7 +201,7 @@ ___
 
 #### Defined in
 
-[packages/did-client/src/did-client.ts:104](https://github.com/verida/verida-js/blob/a690f60/packages/did-client/src/did-client.ts#L104)
+[packages/did-client/src/did-client.ts:104](https://github.com/verida/verida-js/blob/032961c/packages/did-client/src/did-client.ts#L104)
 
 ___
 
@@ -219,7 +219,7 @@ ___
 
 #### Defined in
 
-[packages/did-client/src/did-client.ts:191](https://github.com/verida/verida-js/blob/a690f60/packages/did-client/src/did-client.ts#L191)
+[packages/did-client/src/did-client.ts:191](https://github.com/verida/verida-js/blob/032961c/packages/did-client/src/did-client.ts#L191)
 
 ___
 
@@ -237,7 +237,7 @@ ___
 
 #### Defined in
 
-[packages/did-client/src/did-client.ts:117](https://github.com/verida/verida-js/blob/a690f60/packages/did-client/src/did-client.ts#L117)
+[packages/did-client/src/did-client.ts:117](https://github.com/verida/verida-js/blob/032961c/packages/did-client/src/did-client.ts#L117)
 
 ___
 
@@ -255,7 +255,7 @@ ___
 
 #### Defined in
 
-[packages/did-client/src/did-client.ts:42](https://github.com/verida/verida-js/blob/a690f60/packages/did-client/src/did-client.ts#L42)
+[packages/did-client/src/did-client.ts:42](https://github.com/verida/verida-js/blob/032961c/packages/did-client/src/did-client.ts#L42)
 
 ___
 
@@ -283,4 +283,4 @@ true if success.
 
 #### Defined in
 
-[packages/did-client/src/did-client.ts:131](https://github.com/verida/verida-js/blob/a690f60/packages/did-client/src/did-client.ts#L131)
+[packages/did-client/src/did-client.ts:131](https://github.com/verida/verida-js/blob/032961c/packages/did-client/src/did-client.ts#L131)

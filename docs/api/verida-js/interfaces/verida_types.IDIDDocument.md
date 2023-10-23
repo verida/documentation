@@ -41,7 +41,7 @@
 
 #### Defined in
 
-[packages/types/src/IDIDDocument.ts:6](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IDIDDocument.ts#L6)
+[packages/types/src/IDIDDocument.ts:6](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDIDDocument.ts#L6)
 
 ## Methods
 
@@ -64,7 +64,7 @@
 
 #### Defined in
 
-[packages/types/src/IDIDDocument.ts:10](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IDIDDocument.ts#L10)
+[packages/types/src/IDIDDocument.ts:10](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDIDDocument.ts#L10)
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDIDDocument.ts:24](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IDIDDocument.ts#L24)
+[packages/types/src/IDIDDocument.ts:24](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDIDDocument.ts#L24)
 
 ___
 
@@ -108,7 +108,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDIDDocument.ts:20](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IDIDDocument.ts#L20)
+[packages/types/src/IDIDDocument.ts:20](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDIDDocument.ts#L20)
 
 ___
 
@@ -130,7 +130,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDIDDocument.ts:22](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IDIDDocument.ts#L22)
+[packages/types/src/IDIDDocument.ts:22](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDIDDocument.ts#L22)
 
 ___
 
@@ -150,7 +150,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDIDDocument.ts:38](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IDIDDocument.ts#L38)
+[packages/types/src/IDIDDocument.ts:38](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDIDDocument.ts#L38)
 
 ___
 
@@ -164,7 +164,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDIDDocument.ts:18](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IDIDDocument.ts#L18)
+[packages/types/src/IDIDDocument.ts:18](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDIDDocument.ts#L18)
 
 ___
 
@@ -178,7 +178,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDIDDocument.ts:8](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IDIDDocument.ts#L8)
+[packages/types/src/IDIDDocument.ts:8](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDIDDocument.ts#L8)
 
 ___
 
@@ -198,7 +198,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDIDDocument.ts:16](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IDIDDocument.ts#L16)
+[packages/types/src/IDIDDocument.ts:16](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDIDDocument.ts#L16)
 
 ___
 
@@ -218,7 +218,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDIDDocument.ts:32](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IDIDDocument.ts#L32)
+[packages/types/src/IDIDDocument.ts:32](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDIDDocument.ts#L32)
 
 ___
 
@@ -239,7 +239,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDIDDocument.ts:30](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IDIDDocument.ts#L30)
+[packages/types/src/IDIDDocument.ts:30](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDIDDocument.ts#L30)
 
 ___
 
@@ -259,7 +259,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDIDDocument.ts:12](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IDIDDocument.ts#L12)
+[packages/types/src/IDIDDocument.ts:12](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDIDDocument.ts#L12)
 
 ___
 
@@ -279,7 +279,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDIDDocument.ts:14](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IDIDDocument.ts#L14)
+[packages/types/src/IDIDDocument.ts:14](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDIDDocument.ts#L14)
 
 ___
 
@@ -299,7 +299,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDIDDocument.ts:34](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IDIDDocument.ts#L34)
+[packages/types/src/IDIDDocument.ts:34](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDIDDocument.ts#L34)
 
 ___
 
@@ -322,7 +322,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDIDDocument.ts:28](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IDIDDocument.ts#L28)
+[packages/types/src/IDIDDocument.ts:28](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDIDDocument.ts#L28)
 
 ___
 
@@ -336,7 +336,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDIDDocument.ts:36](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IDIDDocument.ts#L36)
+[packages/types/src/IDIDDocument.ts:36](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDIDDocument.ts#L36)
 
 ___
 
@@ -357,4 +357,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDIDDocument.ts:26](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/IDIDDocument.ts#L26)
+[packages/types/src/IDIDDocument.ts:26](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDIDDocument.ts#L26)

@@ -43,7 +43,7 @@ web3 - optional - Can use provider or web.currentProvider as a provider.
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:20](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/Web3Interfaces.ts#L20)
+[packages/types/src/Web3Interfaces.ts:20](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L20)
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:18](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/Web3Interfaces.ts#L18)
+[packages/types/src/Web3Interfaces.ts:18](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L18)
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:19](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/Web3Interfaces.ts#L19)
+[packages/types/src/Web3Interfaces.ts:19](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L19)
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:38](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/Web3Interfaces.ts#L38)
+[packages/types/src/Web3Interfaces.ts:38](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L38)
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:33](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/Web3Interfaces.ts#L33)
+[packages/types/src/Web3Interfaces.ts:33](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L33)
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:34](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/Web3Interfaces.ts#L34)
+[packages/types/src/Web3Interfaces.ts:34](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L34)
 
 ___
 
@@ -111,7 +111,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:35](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/Web3Interfaces.ts#L35)
+[packages/types/src/Web3Interfaces.ts:35](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L35)
 
 ___
 
@@ -121,7 +121,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:32](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/Web3Interfaces.ts#L32)
+[packages/types/src/Web3Interfaces.ts:32](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L32)
 
 ___
 
@@ -131,4 +131,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:36](https://github.com/verida/verida-js/blob/a690f60/packages/types/src/Web3Interfaces.ts#L36)
+[packages/types/src/Web3Interfaces.ts:36](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L36)
