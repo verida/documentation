@@ -21,7 +21,7 @@
 		"@docusaurus/remark-plugin-npm2yarn": "^2.4.3",
 		"@docusaurus/theme-live-codeblock": "^2.4.3",
 		"@docusaurus/theme-search-algolia": "^2.4.3",
-		"@mdx-js/react": "^1.6.21",
+		"@mdx-js/react": "^2.3.0",
 		"@svgr/webpack": "^5.5.0",
 		"@verida/account-web-vault": "^2.3.9",
 		"@verida/client-ts": "^2.3.9",
