@@ -6876,10 +6876,10 @@ immediate@3.3.0, immediate@^3.2.3:
   resolved "https://registry.yarnpkg.com/immediate/-/immediate-3.3.0.tgz#1aef225517836bcdf7f2a2de2600c79ff0269266"
   integrity sha512-HR7EVodfFUdQCTIeySw+WDRFJlPcLOJbXfwwZ7Oom6tjsvZ3bOkCDJHehQC3nxJrv7+f9XecwazynjU8e4Vw3Q==
 
-immer@>=6.0.3:
-  version "10.0.2"
-  resolved "https://registry.yarnpkg.com/immer/-/immer-10.0.2.tgz#11636c5b77acf529e059582d76faf338beb56141"
-  integrity sha512-Rx3CqeqQ19sxUtYV9CU911Vhy8/721wRFnJv3REVGWUmoAcIwzifTsdmJte/MV+0/XpM35LZdQMBGkRIoLPwQA==
+immer@>=10.0.0:
+  version "10.0.3"
+  resolved "https://registry.yarnpkg.com/immer/-/immer-10.0.3.tgz#a8de42065e964aa3edf6afc282dfc7f7f34ae3c9"
+  integrity sha512-pwupu3eWfouuaowscykeckFmVTpqbzW+rXFCX8rQLkZzM9ftBmU/++Ra+o+L27mz03zJTlyV4UUr+fdKNffo4A==
 
 immer@^9.0.7:
   version "9.0.21"
@@ -10082,12 +10082,12 @@ stable@^0.1.8:
   resolved "https://registry.yarnpkg.com/stable/-/stable-0.1.8.tgz#836eb3c8382fe2936feaf544631017ce7d47a3cf"
   integrity sha512-ji9qxRnOVfcuLDySj9qzhGSEFVobyt1kIOSkj1qZzYLzq7Tos/oUUWvotUPQLlrsidqsK6tBH89Bc9kL5zHA6w==
 
-state-pool@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/state-pool/-/state-pool-0.6.0.tgz#ec805e3b02f4321bf9371d378700c2b5bda40f46"
-  integrity sha512-oE5fMyL6wxoZDljzcoOy/TCkTmjK/v4JxYM+ENJRz2Q0xviI1q384J4AJtOdAnv9yWV+7PUQDDZjarEh2XBB5A==
+state-pool@^0.10.0:
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/state-pool/-/state-pool-0.10.0.tgz#b736e605fac902ff8996ea9b5aca309abb734f84"
+  integrity sha512-oTluM/xu/rCf4Y+SkzkqN7ihDZKcWjbcvmrm45o8rtJS3GbZyufMmsT6Y2SUmHQz9lDE1UoAHnDSxJ67nF/Eng==
   dependencies:
-    immer ">=6.0.3"
+    immer ">=10.0.0"
 
 state-toggle@^1.0.0:
   version "1.0.3"

@@ -39,7 +39,7 @@
 		"react": "^17.0.1",
 		"react-dom": "^17.0.1",
 		"react-player": "^2.13.0",
-		"state-pool": "^0.6.0",
+		"state-pool": "^0.10.0",
 		"store": "^2.0.12",
 		"stream-browserify": "^3.0.0",
 		"stream-http": "^3.2.0",
