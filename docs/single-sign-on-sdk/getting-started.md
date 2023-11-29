@@ -81,6 +81,7 @@ These (all optional) config options include:
 - `request?.openUrl?` — An optional URL for the Wallet to open in the default browser on the user's mobile device after login is accepted. This will automatically authorize the user in local storage so future page loads of your application will be authenticated.
 - `request?.walletConnect?` — An optional configuration to automatically establish a wallet connection upon sign in. See [WalletConnect Support](./wallet-connect)
 - `callback?` — A callback function when the auth response is received.
+- `environment?` - (`testnet`, `mainnet`) The Verida Wallet will ensure the user account exists on this network. Defaults to `mainnet`.
 - `deeplinkId?` — The HTML element ID of a link that should have the deeplink URI attached to the `href` property
 - `serverUri?` — An optional string representing the WSS URI of the authentication server. Leave this blank to use a server hosted by Verida or host your own (See [Authentication server](./sso-authentication-server))
 - `loginUri?` — The login URI or page where the user will be sent to login using the app; ie: vault.verida.io.
