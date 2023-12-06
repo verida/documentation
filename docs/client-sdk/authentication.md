@@ -49,6 +49,8 @@ const DID_CLIENT_CONFIG = {
     web3Config: {
         // Polygon private key
         privateKey: '0x...',
+        // Polygon network RPC URL
+        rpcUrl: 'https://rpc-mumbai.maticvigil.com/'
     }
 }
 
@@ -69,6 +71,24 @@ const context = await Network.connect({
 ```
 
 See the [@verida/account-node package](https://github.com/verida/verida-js/tree/main/packages/account-node) for more details.
+
+### Mainnet
+
+The example above is configured for the Verida Testnet. In order to use Verida Mainnet, we suggest the following configuration for `DID_CLIENT_CONFIG`:
+
+```tsx
+const DID_CLIENT_CONFIG = {
+    callType: 'web3',
+    web3Config: {
+        // Polygon private key
+        privateKey: '0x...',
+        // Polygon network RPC URL
+        rpcUrl: 'https://polygon-rpc.com/',
+        eip1559Mode: 'fast',
+        eip1559gasStationUrl: 'https://gasstation.polygon.technology/v2'
+    }
+}
+```
 
 ### Generate private key
 
