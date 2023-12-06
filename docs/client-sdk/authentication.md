@@ -72,9 +72,9 @@ const context = await Network.connect({
 
 See the [@verida/account-node package](https://github.com/verida/verida-js/tree/main/packages/account-node) for more details.
 
-### Mainnet
+### Web3Config
 
-The example above is configured for the Verida Testnet. In order to use Verida Mainnet, we suggest the following configuration for `DID_CLIENT_CONFIG`:
+`DID_CLIENT_CONFIG.web3Config` supports additional options used when communicating with the blockchain. Here's the default configuration when using Verida Mainnet (Polygon PoS network):
 
 ```tsx
 const DID_CLIENT_CONFIG = {
