@@ -17,6 +17,7 @@ import { WebUser } from '@verida/web-helpers'
 
 // Your application context name
 const CONTEXT_NAME = '<Company name>: <Application name>'
+const VERIDA_ENVIRONMENT = EnvironmentType.MAINNET
 
 // Your logo URL (appears in the Wallet)
 const LOGO_URL = ''

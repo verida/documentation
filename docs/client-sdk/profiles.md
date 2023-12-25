@@ -98,8 +98,7 @@ For example, open a user’s public profile created in the `Verida: Vault` mobil
 import { Client, EnvironmentType } from '@verida/client-ts';
 
 const userConfig = {
- environment: EnvironmentType.TESTNET,
- didServerUrl: 'https://dids.testnet.verida.io:5001',
+ environment: EnvironmentType.MAINNET,
 };
 
 const did = 'did:vda:0x6B2a1bE81ee770cbB4648801e343E135e8D2Aa6F';

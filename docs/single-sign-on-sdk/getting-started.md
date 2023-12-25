@@ -26,7 +26,7 @@ import { VaultAccount } from '@verida/account-web-vault';
 // (optional) Import WalletConnect if required
 import WalletConnect from "@walletconnect/client";
 
-const VERIDA_ENVIRONMENT = EnvironmentType.TESTNET;
+const VERIDA_ENVIRONMENT = EnvironmentType.MAINNET;
 const CONTEXT_NAME = 'My Application: Context Name';
 
 // (optional) WalletConnect configuration

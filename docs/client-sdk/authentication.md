@@ -37,7 +37,7 @@ This approach is ideal for integrating the Verida protocol into a server side No
 import { Network, EnvironmentType } from '@verida/client-ts'
 import { AutoAccount } from '@verida/account-node'
 
-const VERIDA_ENVIRONMENT = EnvironmentType.TESTNET
+const VERIDA_ENVIRONMENT = EnvironmentType.MAINNET
 const CONTEXT_NAME = 'My Application: Context Name'
 
 // Configuration for the DID client
@@ -49,8 +49,6 @@ const DID_CLIENT_CONFIG = {
     web3Config: {
         // Polygon private key
         privateKey: '0x...',
-        // Polygon network RPC URL
-        rpcUrl: 'https://rpc-mumbai.maticvigil.com/'
     }
 }
 
@@ -94,7 +92,7 @@ const DID_CLIENT_CONFIG = {
 
 Verida accounts use the same standard the same as Ethereum accounts, so Ethers.js can be used to generate a new seed phrase or private key.
 
-```
+```tsx
 import { ethers } from 'ethers'
 const wallet = new ethers.Wallet()
 const privateKey = wallet.privateKey
@@ -110,7 +108,7 @@ In your application, include the dependency and create a new client network inst
 import { Client, EnvironmentType } from '@verida/client-ts'
 import { AutoAccount } from '@verida/account-node'
 
-const VERIDA_ENVIRONMENT = EnvironmentType.TESTNET
+const VERIDA_ENVIRONMENT = EnvironmentType.MAINNET
 const CONTEXT_NAME = 'My Application: Context Name'
 
 const DID_CLIENT_CONFIG = {
