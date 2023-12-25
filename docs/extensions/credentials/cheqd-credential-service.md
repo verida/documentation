@@ -1,6 +1,6 @@
 ---
 title: cheqd Credential Service
-sidebar_position: 6
+sidebar_position: 2
 description: The Verida Wallet has built full support for Verifiable Credentials issued by cheqd’s Credential Service, a simple way of issuing Credentials over REST API.
 keywords: [Verida, Cheqd, Credentials, Verifiable Credentials]
 ---
@@ -13,7 +13,7 @@ Through this integration, the Verida Wallet can support storing, managing and ve
 
 Below is a diagram which explains how the cheqd and Verida stacks fit together.
 
-![Verida_X_cheqd_diagram](Verida_X_cheqd_diagram.png)
+![Verida_X_cheqd_diagram](./assets/Verida_X_cheqd_diagram.png)
 
 
 ## Getting Started
