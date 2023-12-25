@@ -6,17 +6,20 @@ keywords: [Verida, Web3, Developers]
 ---
 
 The Verida Wallet supports [WalletConnect](https://walletconnect.com/) (v2) to connect crypto wallets with dApps. It enables seamless integration and communication between applications and supported blockchains.
+
 Currently, the following blockchains and networks are supported:
 
-- Ethereum Goerli (testnet) - ChainID `eip155:5`
+- Ethereum Mainnet (mainnet) - ChainID `eip155:1`
+- Ethereum Sepolia (testnet) - ChainID `eip155:11155111`
+- Polygon PoS (mainnet) - ChainID `eip155:137`
 - Polygon Mumbai (testnet) - ChainID `eip155:80001`
-- NEAR testnet - ChainID `near:testnet`
-
-Support for blockchain mainnets will be introduced with the launch of the Verida Network mainnet.
+- NEAR Testnet - ChainID `near:testnet`
+- NEAR Mainnet - ChainID `near:mainnet`
 
 ## Verida Connect and WalletConnect Integration
 
 Verida Connect facilitates the connection between the application and the Verida Network, offering powerful storage capabilities. By integrating WalletConnect, Verida Connect enables a unified authentication flow for users, streamlining the process.
+
 When users authorize a connection to your application in the Verida Wallet, they will also be prompted to establish a WalletConnect connection simultaneously.
 
 ### API
