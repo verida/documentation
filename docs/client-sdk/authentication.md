@@ -37,7 +37,7 @@ This approach is ideal for integrating the Verida protocol into a server side No
 import { Network, EnvironmentType } from '@verida/client-ts'
 import { AutoAccount } from '@verida/account-node'
 
-const VERIDA_ENVIRONMENT = EnvironmentType.MAINNET
+const VERIDA_ENVIRONMENT = EnvironmentType.TESTNET
 const CONTEXT_NAME = 'My Application: Context Name'
 
 // Configuration for the DID client
@@ -68,6 +68,8 @@ const context = await Network.connect({
 })
 ```
 
+Note: Change `EnvironmentType.TESTNET` to `EnvironmentType.MAINNET` if connecting to Verida Mainnet.
+
 See the [@verida/account-node package](https://github.com/verida/verida-js/tree/main/packages/account-node) for more details.
 
 ### Web3Config
@@ -87,6 +89,8 @@ const DID_CLIENT_CONFIG = {
     }
 }
 ```
+
+Note: Only `privateKey` is required, the other values (`rpcUrl`, `eip1559xxx` will be populated with defaults in the protocol based on the Verida network selected)
 
 ### Generate private key
 
@@ -108,7 +112,7 @@ In your application, include the dependency and create a new client network inst
 import { Client, EnvironmentType } from '@verida/client-ts'
 import { AutoAccount } from '@verida/account-node'
 
-const VERIDA_ENVIRONMENT = EnvironmentType.MAINNET
+const VERIDA_ENVIRONMENT = EnvironmentType.TESTNET
 const CONTEXT_NAME = 'My Application: Context Name'
 
 const DID_CLIENT_CONFIG = {

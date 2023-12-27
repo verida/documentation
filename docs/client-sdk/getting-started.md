@@ -31,7 +31,7 @@ Initialize a connection to the Verida network using a private key stored on the 
 import { Network, EnvironmentType } from '@verida/client-ts';
 import { VaultAccount } from '@verida/account-web-vault';
 
-const VERIDA_ENVIRONMENT = EnvironmentType.MAINNET;
+const VERIDA_ENVIRONMENT = EnvironmentType.TESTNET;
 const CONTEXT_NAME = 'My Application Context Name';
 
 // The LOGO_URL should be a 170x170 PNG file
@@ -52,7 +52,7 @@ const context = Network.connect({
 });
 ```
 
-**Note:** The default settings will connect to the Verida testnet.
+Note: Change `EnvironmentType.TESTNET` to `EnvironmentType.MAINNET` if connecting to Verida Mainnet.
 
 - `CONTEXT_NAME`: A string representing your decentralized application. By convention prefix it with your company name. ie: `Verida: My Application`.
 

@@ -98,7 +98,7 @@ For example, open a user’s public profile created in the `Verida: Vault` mobil
 import { Client, EnvironmentType } from '@verida/client-ts';
 
 const userConfig = {
- environment: EnvironmentType.MAINNET,
+ environment: EnvironmentType.TESTNET,
 };
 
 const did = 'did:vda:0x6B2a1bE81ee770cbB4648801e343E135e8D2Aa6F';
@@ -114,3 +114,5 @@ const profile  = await profileInstance.getMany({}, {});
 
 }
 ```
+
+Note: Change `EnvironmentType.TESTNET` to `EnvironmentType.MAINNET` if loading a mainnet profile.

@@ -21,6 +21,4 @@ The protocol also maintains a [registry of smart contract addresses](https://git
 
 Verida currently operates all the storage nodes on the network while it measures performance and rapidly resolves issues during development.
 
-We will soon be opening up storage nodes for third parties to operate.
-
-[Register your interest in providing storage nodes for the network](https://www.verida.network/developers#build-with-us).
+We will soon be opening up storage nodes for third parties to operate. You can [learn more here](https://news.verida.io/decentralizing-the-verida-network-become-a-node-operator-e31a6a31daf1) or [register your interest in providing storage nodes for the network](https://www.verida.network/storage-node-providers).

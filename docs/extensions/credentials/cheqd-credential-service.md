@@ -46,4 +46,6 @@ Create, update and deactivate on-ledger DIDs with cheqd’s DID method (did:cheq
 
 ## Learn more about cheqd
 
+[Read the announcement of Verida's collaboration with cheqd](https://news.verida.io/verida-and-cheqd-release-mobile-wallet-credential-solution-for-enterprises-2a2aeeef1f8a)
+
 To learn more about cheqd, head over to their [website](https://cheqd.io) and [developers documentation](https://docs.cheqd.io/identity/getting-started/readme).
