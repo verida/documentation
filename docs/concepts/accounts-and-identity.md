@@ -5,6 +5,16 @@ description: Verida Developer Documentation
 keywords: [Verida, Web3, Developers]
 ---
 
+## Introduction
+
+There are lots of DID Methods (see the full list here). Unfortunately they all suffer from a variety of different problems that make none of them a suitable base for the next generation of web3 applications.
+
+Read the article below or watch the technical deep dive to learn about the key problems the Verida DID method solves.
+
+[Introducing "did:vda": A fast, cheap web3 identity solution on Polygon](https://news.verida.io/introducing-did-vda-a-fast-cheap-web3-identity-solution-on-polygon-5d1487941477)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PZv8ga3IdLQ?si=7zQA_nLwFd56o-Jm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Decentralized Identifiers (DIDs)
 
 Verida accounts are decentralized identities that implement the [decentralized identifier (DID) standard](https://w3c.github.io/did-core/). A DID has a unique addresses (ie: `did:vda:testnet:0x6B2a1bE81ee770cbB4648801e343E135e8D2Aa6F`) that is controlled by an end user with a private key or seed phrase.
