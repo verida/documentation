@@ -28,7 +28,8 @@ npm install --dev @types/pouchdb-core
 Initialize a connection to the Verida network using a private key stored on the user’s mobile device using the Verida Wallet:
 
 ```tsx
-import { Network, EnvironmentType } from '@verida/client-ts';
+import { Network } from '@verida/client-ts';
+import { EnvironmentType } from '@verida/types';
 import { VaultAccount } from '@verida/account-web-vault';
 
 const VERIDA_ENVIRONMENT = EnvironmentType.TESTNET;

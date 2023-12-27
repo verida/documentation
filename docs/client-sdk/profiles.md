@@ -95,7 +95,8 @@ Open an external profile for using an instance of the `client` object directly f
 For example, open a user’s public profile created in the `Verida: Vault` mobile application:
 
 ```tsx
-import { Client, EnvironmentType } from '@verida/client-ts';
+import { Client } from '@verida/client-ts';
+import { EnvironmentType } from '@verida/types';
 
 const userConfig = {
  environment: EnvironmentType.TESTNET,

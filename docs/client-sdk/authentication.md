@@ -34,7 +34,8 @@ This approach is ideal for integrating the Verida protocol into a server side No
 ### Example
 
 ```tsx
-import { Network, EnvironmentType } from '@verida/client-ts'
+import { Network } from '@verida/client-ts'
+import { EnvironmentType } from '@verida/types';
 import { AutoAccount } from '@verida/account-node'
 
 const VERIDA_ENVIRONMENT = EnvironmentType.TESTNET
@@ -109,7 +110,8 @@ The above examples initialize a connection to the Verida network and a single co
 In your application, include the dependency and create a new client network instance:
 
 ```tsx
-import { Client, EnvironmentType } from '@verida/client-ts'
+import { Client } from '@verida/client-ts'
+import { EnvironmentType } from '@verida/types'
 import { AutoAccount } from '@verida/account-node'
 
 const VERIDA_ENVIRONMENT = EnvironmentType.TESTNET
