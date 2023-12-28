@@ -19,11 +19,11 @@ You will need to run `yarn update` on all `@verida/xxx` packages used by your pr
 
 ie: `yarn update @verida/client-ts @verida/account-web-vault`
 
-## 2. Specify Verida EnvironmentType.MAINNET
+### 2. Specify Verida EnvironmentType.MAINNET
 
 In your code that connects to the Verida network, replace references of `EnvironmentType.TESTNET` to `EnvironmentType.MAINNET` 
 
-## 3. Server side app changes
+### 3. Server side app changes
 
 (Not required for web applications)
 
