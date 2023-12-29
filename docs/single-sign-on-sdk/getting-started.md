@@ -20,7 +20,8 @@ yarn add @verida/account-web-vault @verida/client-ts
 Here’s how you initialize an application context:
 
 ```jsx
-import { Network, EnvironmentType } from '@verida/client-ts';
+import { Network } from '@verida/client-ts';
+import { EnvironmentType } from '@verida/types';
 import { VaultAccount } from '@verida/account-web-vault';
 
 // (optional) Import WalletConnect if required

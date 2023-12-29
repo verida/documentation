@@ -16,7 +16,7 @@ const client = new Client(options)
 
 Some key options are:
 
-- `environment` — Sets default configuration settings for the specified environment. Options are; `local`, `testnet`, `mainnet` (not yet enabled)
+- `environment` — Sets default configuration settings for the specified environment. Options are; `local`, `testnet`, `mainnet`
 - `schemaPaths` — Routing rules to discover schemas
 
 ## Environment Variables

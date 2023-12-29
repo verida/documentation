@@ -1,6 +1,6 @@
 ---
 title: Polygon ID
-sidebar_position: 5
+sidebar_position: 3
 description: The Verida Wallet supports the Polygon ID verifiable credentials.
 keywords: [Verida, Polygon, Polygon ID, Credentials, Verifiable Credentials]
 ---

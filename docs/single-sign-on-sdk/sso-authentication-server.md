@@ -9,7 +9,7 @@ The [Verida Vault Authentication Server](https://github.com/verida/vault-auth-se
 
 This is similar to how WalletConnect bridges between a mobile wallet and a web application for blockchain transactions, however Verida enables database storage connections. In the future, it may be possible to leverage WalletConnect with additional extensions to replace this infrastructure.
 
-Verida is currently running a server for the Acacia testnet that is used by default by all applications: https://auth.testnet.verida.io/
+Verida is currently running a server for both Verida testnet and mainnet that is used by default by all applications: https://auth.testnet.verida.io/
 
 ### Usage
 

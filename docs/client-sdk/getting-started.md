@@ -28,13 +28,14 @@ npm install --dev @types/pouchdb-core
 Initialize a connection to the Verida network using a private key stored on the user’s mobile device using the Verida Wallet:
 
 ```tsx
-import { Network, EnvironmentType } from '@verida/client-ts';
+import { Network } from '@verida/client-ts';
+import { EnvironmentType } from '@verida/types';
 import { VaultAccount } from '@verida/account-web-vault';
 
 const VERIDA_ENVIRONMENT = EnvironmentType.TESTNET;
 const CONTEXT_NAME = 'My Application Context Name';
 
-# The LOGO_URL should be a 170x170 PNG file
+// The LOGO_URL should be a 170x170 PNG file
 const LOGO_URL = "https://assets.verida.io/verida_login_request_logo_170x170.png";
 
 const account = new VaultAccount({
@@ -52,16 +53,15 @@ const context = Network.connect({
 });
 ```
 
-**Note:** The default settings will connect to the Verida testnet.
+Note: Change `EnvironmentType.TESTNET` to `EnvironmentType.MAINNET` if connecting to Verida Mainnet.
 
 - `CONTEXT_NAME`: A string representing your decentralized application. By convention prefix it with your company name. ie: `Verida: My Application`.
-- `VERIDA_TESTNET_DEFAULT_SERVER`: The URI of a Verida Storage Node that provides a default encrypted storage option for your users. This example is using a testnet Storage Node that any application can use for testing.
 
 [Learn more](authentication.md) about different authentication methods.
 
 ## How to Use
 
-You can now verify the user has connected succesfully to your application:
+You can now verify the user has connected successfully to your application:
 
 ```tsx
 const did = await account.did();

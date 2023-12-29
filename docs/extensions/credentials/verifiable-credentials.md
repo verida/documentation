@@ -1,5 +1,5 @@
 ---
-title: Verifiable Credentials
+title: DID-JWT-VC Credentials
 sidebar_position: 1
 description: Verida Developer Documentation
 keywords: [Verida, Web3, Developers, Verifiable Credentials]

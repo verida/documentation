@@ -7,6 +7,16 @@ keywords: [Verida, Web3, Developers]
 
 ![concepts_architecture.png](network_architecture/concepts_architecture.png)
 
+## Introduction
+
+In today’s digital world, data storage is a crucial component for all applications, regardless of their scope or complexity. While traditional Web2 offers a wealth of storage options tailored to various use cases, such as SQL, NoSQL, Filestorage, S3, and FTP, the transition to Web3 demands a similar expansion of storage infrastructure to accommodate its unique requirements.
+
+Read the article below or watch the technical deep dive to learn about the key problems the Verida Network solves.
+
+[Revolutionizing Web3 Storage: A Deep Dive into IPFS and Verida DbStore](https://news.verida.io/revolutionizing-web3-storage-a-deep-dive-into-ipfs-and-verida-dbstore-7a15745dd118)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bCJAk44lzXg?si=ANVG1da56Vdkeg1P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Overview
 
 Verida is a network of users with decentralized identities that can access decentralized services (Verida Network). These services include private database storage, messaging and notifications. In time, this will be expanded to include block storage, blockchain access, on/off chain data bridges and trust services.

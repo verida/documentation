@@ -34,7 +34,8 @@ This approach is ideal for integrating the Verida protocol into a server side No
 ### Example
 
 ```tsx
-import { Network, EnvironmentType } from '@verida/client-ts'
+import { Network } from '@verida/client-ts'
+import { EnvironmentType } from '@verida/types';
 import { AutoAccount } from '@verida/account-node'
 
 const VERIDA_ENVIRONMENT = EnvironmentType.TESTNET
@@ -49,8 +50,6 @@ const DID_CLIENT_CONFIG = {
     web3Config: {
         // Polygon private key
         privateKey: '0x...',
-        // Polygon network RPC URL
-        rpcUrl: 'https://rpc-mumbai.maticvigil.com/'
     }
 }
 
@@ -69,6 +68,8 @@ const context = await Network.connect({
     })
 })
 ```
+
+Note: Change `EnvironmentType.TESTNET` to `EnvironmentType.MAINNET` if connecting to Verida Mainnet.
 
 See the [@verida/account-node package](https://github.com/verida/verida-js/tree/main/packages/account-node) for more details.
 
@@ -90,11 +91,13 @@ const DID_CLIENT_CONFIG = {
 }
 ```
 
+Note: Only `privateKey` is required, the other values (`rpcUrl`, `eip1559xxx` will be populated with defaults in the protocol based on the Verida network selected)
+
 ### Generate private key
 
 Verida accounts use the same standard the same as Ethereum accounts, so Ethers.js can be used to generate a new seed phrase or private key.
 
-```
+```tsx
 import { ethers } from 'ethers'
 const wallet = new ethers.Wallet()
 const privateKey = wallet.privateKey
@@ -107,7 +110,8 @@ The above examples initialize a connection to the Verida network and a single co
 In your application, include the dependency and create a new client network instance:
 
 ```tsx
-import { Client, EnvironmentType } from '@verida/client-ts'
+import { Client } from '@verida/client-ts'
+import { EnvironmentType } from '@verida/types'
 import { AutoAccount } from '@verida/account-node'
 
 const VERIDA_ENVIRONMENT = EnvironmentType.TESTNET

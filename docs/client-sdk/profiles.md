@@ -95,11 +95,11 @@ Open an external profile for using an instance of the `client` object directly f
 For example, open a user’s public profile created in the `Verida: Vault` mobile application:
 
 ```tsx
-import { Client, EnvironmentType } from '@verida/client-ts';
+import { Client } from '@verida/client-ts';
+import { EnvironmentType } from '@verida/types';
 
 const userConfig = {
  environment: EnvironmentType.TESTNET,
- didServerUrl: 'https://dids.testnet.verida.io:5001',
 };
 
 const did = 'did:vda:0x6B2a1bE81ee770cbB4648801e343E135e8D2Aa6F';
@@ -115,3 +115,5 @@ const profile  = await profileInstance.getMany({}, {});
 
 }
 ```
+
+Note: Change `EnvironmentType.TESTNET` to `EnvironmentType.MAINNET` if loading a mainnet profile.
