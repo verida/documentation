@@ -7,7 +7,7 @@ keywords: [Verida, Web3, Developers]
 
 ## Introduction
 
-There are lots of DID Methods (see the full list here). Unfortunately they all suffer from a variety of different problems that make none of them a suitable base for the next generation of web3 applications.
+There are lots of DID Methods [see the full list here](https://www.w3.org/TR/did-spec-registries/#did-methods). Unfortunately they all suffer from a variety of different problems that make none of them a suitable base for the next generation of web3 applications.
 
 Read the article below or watch the technical deep dive to learn about the key problems the Verida DID method solves.
 
