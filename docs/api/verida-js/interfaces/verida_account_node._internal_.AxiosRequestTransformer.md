@@ -23,4 +23,4 @@
 
 #### Defined in
 
-node_modules/axios/index.d.ts:9
+packages/account-node/node_modules/axios/index.d.ts:9

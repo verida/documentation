@@ -22,6 +22,7 @@ Interface for any DatabaseOpenConfig
 - [saveDatabase](verida_types.DatabaseOpenConfig.md#savedatabase)
 - [signingContext](verida_types.DatabaseOpenConfig.md#signingcontext)
 - [token](verida_types.DatabaseOpenConfig.md#token)
+- [verifyEncryptionKey](verida_types.DatabaseOpenConfig.md#verifyencryptionkey)
 
 ## Properties
 
@@ -33,7 +34,7 @@ Optionally specify an external context to open
 
 #### Defined in
 
-[packages/types/src/ContextInterfaces.ts:61](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ContextInterfaces.ts#L61)
+[packages/types/src/ContextInterfaces.ts:61](https://github.com/verida/verida-js/blob/5040472/packages/types/src/ContextInterfaces.ts#L61)
 
 ___
 
@@ -45,7 +46,7 @@ Create an application context if it doesn't already exist for the connected acco
 
 #### Defined in
 
-[packages/types/src/ContextInterfaces.ts:56](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ContextInterfaces.ts#L56)
+[packages/types/src/ContextInterfaces.ts:56](https://github.com/verida/verida-js/blob/5040472/packages/types/src/ContextInterfaces.ts#L56)
 
 ___
 
@@ -59,7 +60,7 @@ This ensures the Verida client connects to the correct database server hosting t
 
 #### Defined in
 
-[packages/types/src/ContextInterfaces.ts:17](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ContextInterfaces.ts#L17)
+[packages/types/src/ContextInterfaces.ts:17](https://github.com/verida/verida-js/blob/5040472/packages/types/src/ContextInterfaces.ts#L17)
 
 ___
 
@@ -73,7 +74,7 @@ This encryption key will not apply if the database is marked as `public`.
 
 #### Defined in
 
-[packages/types/src/ContextInterfaces.ts:51](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ContextInterfaces.ts#L51)
+[packages/types/src/ContextInterfaces.ts:51](https://github.com/verida/verida-js/blob/5040472/packages/types/src/ContextInterfaces.ts#L51)
 
 ___
 
@@ -85,7 +86,7 @@ Specify an array of possible database connection strings to use when opening the
 
 #### Defined in
 
-[packages/types/src/ContextInterfaces.ts:22](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ContextInterfaces.ts#L22)
+[packages/types/src/ContextInterfaces.ts:22](https://github.com/verida/verida-js/blob/5040472/packages/types/src/ContextInterfaces.ts#L22)
 
 ___
 
@@ -97,7 +98,7 @@ Ignore any cached instance already created
 
 #### Defined in
 
-[packages/types/src/ContextInterfaces.ts:71](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ContextInterfaces.ts#L71)
+[packages/types/src/ContextInterfaces.ts:71](https://github.com/verida/verida-js/blob/5040472/packages/types/src/ContextInterfaces.ts#L71)
 
 ___
 
@@ -109,7 +110,7 @@ Boolean indicating if it's expected the current connected account is the owner o
 
 #### Defined in
 
-[packages/types/src/ContextInterfaces.ts:44](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ContextInterfaces.ts#L44)
+[packages/types/src/ContextInterfaces.ts:44](https://github.com/verida/verida-js/blob/5040472/packages/types/src/ContextInterfaces.ts#L44)
 
 ___
 
@@ -121,7 +122,7 @@ Specify the permissions to use when opening this database.
 
 #### Defined in
 
-[packages/types/src/ContextInterfaces.ts:10](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ContextInterfaces.ts#L10)
+[packages/types/src/ContextInterfaces.ts:10](https://github.com/verida/verida-js/blob/5040472/packages/types/src/ContextInterfaces.ts#L10)
 
 ___
 
@@ -135,7 +136,7 @@ This is useful when opening a database owned by an external `did` where the curr
 
 #### Defined in
 
-[packages/types/src/ContextInterfaces.ts:39](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ContextInterfaces.ts#L39)
+[packages/types/src/ContextInterfaces.ts:39](https://github.com/verida/verida-js/blob/5040472/packages/types/src/ContextInterfaces.ts#L39)
 
 ___
 
@@ -147,7 +148,7 @@ Save this database into the user's master list of opened databases.
 
 #### Defined in
 
-[packages/types/src/ContextInterfaces.ts:32](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ContextInterfaces.ts#L32)
+[packages/types/src/ContextInterfaces.ts:32](https://github.com/verida/verida-js/blob/5040472/packages/types/src/ContextInterfaces.ts#L32)
 
 ___
 
@@ -159,7 +160,7 @@ Optionally specify the context used to sign data
 
 #### Defined in
 
-[packages/types/src/ContextInterfaces.ts:66](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ContextInterfaces.ts#L66)
+[packages/types/src/ContextInterfaces.ts:66](https://github.com/verida/verida-js/blob/5040472/packages/types/src/ContextInterfaces.ts#L66)
 
 ___
 
@@ -171,4 +172,16 @@ Specify a JWT token to use when opening the database.
 
 #### Defined in
 
-[packages/types/src/ContextInterfaces.ts:27](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ContextInterfaces.ts#L27)
+[packages/types/src/ContextInterfaces.ts:27](https://github.com/verida/verida-js/blob/5040472/packages/types/src/ContextInterfaces.ts#L27)
+
+___
+
+### verifyEncryptionKey
+
+• `Optional` **verifyEncryptionKey**: `boolean`
+
+Verify the encryption key is correct when opening the database
+
+#### Defined in
+
+[packages/types/src/ContextInterfaces.ts:76](https://github.com/verida/verida-js/blob/5040472/packages/types/src/ContextInterfaces.ts#L76)

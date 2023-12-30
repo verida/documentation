@@ -23,7 +23,7 @@
 
 #### Defined in
 
-[packages/types/src/NetworkInterfaces.ts:94](https://github.com/verida/verida-js/blob/032961c/packages/types/src/NetworkInterfaces.ts#L94)
+[packages/types/src/NetworkInterfaces.ts:94](https://github.com/verida/verida-js/blob/5040472/packages/types/src/NetworkInterfaces.ts#L94)
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/NetworkInterfaces.ts:95](https://github.com/verida/verida-js/blob/032961c/packages/types/src/NetworkInterfaces.ts#L95)
+[packages/types/src/NetworkInterfaces.ts:95](https://github.com/verida/verida-js/blob/5040472/packages/types/src/NetworkInterfaces.ts#L95)
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/NetworkInterfaces.ts:97](https://github.com/verida/verida-js/blob/032961c/packages/types/src/NetworkInterfaces.ts#L97)
+[packages/types/src/NetworkInterfaces.ts:97](https://github.com/verida/verida-js/blob/5040472/packages/types/src/NetworkInterfaces.ts#L97)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/NetworkInterfaces.ts:93](https://github.com/verida/verida-js/blob/032961c/packages/types/src/NetworkInterfaces.ts#L93)
+[packages/types/src/NetworkInterfaces.ts:93](https://github.com/verida/verida-js/blob/5040472/packages/types/src/NetworkInterfaces.ts#L93)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/NetworkInterfaces.ts:98](https://github.com/verida/verida-js/blob/032961c/packages/types/src/NetworkInterfaces.ts#L98)
+[packages/types/src/NetworkInterfaces.ts:98](https://github.com/verida/verida-js/blob/5040472/packages/types/src/NetworkInterfaces.ts#L98)
 
 ___
 
@@ -73,4 +73,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/NetworkInterfaces.ts:96](https://github.com/verida/verida-js/blob/032961c/packages/types/src/NetworkInterfaces.ts#L96)
+[packages/types/src/NetworkInterfaces.ts:96](https://github.com/verida/verida-js/blob/5040472/packages/types/src/NetworkInterfaces.ts#L96)

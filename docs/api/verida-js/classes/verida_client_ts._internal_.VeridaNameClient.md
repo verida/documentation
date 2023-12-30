@@ -39,11 +39,11 @@
 
 | Name | Type |
 | :------ | :------ |
-| `config` | [`NameClientConfig`](../interfaces/verida_client_ts._internal_.NameClientConfig.md) |
+| `config` | [`VdaClientConfig`](../interfaces/verida_client_ts._internal_.VdaClientConfig.md) |
 
 #### Defined in
 
-packages/vda-name-client/build/src/blockchain/blockchainApi.d.ts:25
+packages/vda-name-client/build/src/blockchain/blockchainApi.d.ts:10
 
 ## Properties
 
@@ -53,7 +53,7 @@ packages/vda-name-client/build/src/blockchain/blockchainApi.d.ts:25
 
 #### Defined in
 
-packages/vda-name-client/build/src/blockchain/blockchainApi.d.ts:18
+packages/vda-name-client/build/src/blockchain/blockchainApi.d.ts:3
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-packages/vda-name-client/build/src/blockchain/blockchainApi.d.ts:23
+packages/vda-name-client/build/src/blockchain/blockchainApi.d.ts:8
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-packages/vda-name-client/build/src/blockchain/blockchainApi.d.ts:20
+packages/vda-name-client/build/src/blockchain/blockchainApi.d.ts:5
 
 ___
 
@@ -93,7 +93,7 @@ Get a signature for {@link BlockchainApi#register} function
 
 #### Defined in
 
-packages/vda-name-client/build/src/blockchain/blockchainApi.d.ts:38
+packages/vda-name-client/build/src/blockchain/blockchainApi.d.ts:23
 
 ___
 
@@ -103,7 +103,7 @@ ___
 
 #### Defined in
 
-packages/vda-name-client/build/src/blockchain/blockchainApi.d.ts:19
+packages/vda-name-client/build/src/blockchain/blockchainApi.d.ts:4
 
 ___
 
@@ -113,7 +113,7 @@ ___
 
 #### Defined in
 
-packages/vda-name-client/build/src/blockchain/blockchainApi.d.ts:22
+packages/vda-name-client/build/src/blockchain/blockchainApi.d.ts:7
 
 ___
 
@@ -123,7 +123,7 @@ ___
 
 #### Defined in
 
-packages/vda-name-client/build/src/blockchain/blockchainApi.d.ts:24
+packages/vda-name-client/build/src/blockchain/blockchainApi.d.ts:9
 
 ___
 
@@ -133,7 +133,7 @@ ___
 
 #### Defined in
 
-packages/vda-name-client/build/src/blockchain/blockchainApi.d.ts:21
+packages/vda-name-client/build/src/blockchain/blockchainApi.d.ts:6
 
 ## Methods
 
@@ -157,7 +157,7 @@ DID address
 
 #### Defined in
 
-packages/vda-name-client/build/src/blockchain/blockchainApi.d.ts:62
+packages/vda-name-client/build/src/blockchain/blockchainApi.d.ts:47
 
 ___
 
@@ -181,7 +181,7 @@ username list
 
 #### Defined in
 
-packages/vda-name-client/build/src/blockchain/blockchainApi.d.ts:55
+packages/vda-name-client/build/src/blockchain/blockchainApi.d.ts:40
 
 ___
 
@@ -199,7 +199,7 @@ nonce of DID
 
 #### Defined in
 
-packages/vda-name-client/build/src/blockchain/blockchainApi.d.ts:30
+packages/vda-name-client/build/src/blockchain/blockchainApi.d.ts:15
 
 ___
 
@@ -221,7 +221,7 @@ Register a username to the did address
 
 #### Defined in
 
-packages/vda-name-client/build/src/blockchain/blockchainApi.d.ts:43
+packages/vda-name-client/build/src/blockchain/blockchainApi.d.ts:28
 
 ___
 
@@ -243,4 +243,4 @@ Unregister a username from the did address
 
 #### Defined in
 
-packages/vda-name-client/build/src/blockchain/blockchainApi.d.ts:48
+packages/vda-name-client/build/src/blockchain/blockchainApi.d.ts:33

@@ -24,4 +24,4 @@
 
 #### Defined in
 
-[packages/types/src/AccountInterfaces.ts:15](https://github.com/verida/verida-js/blob/032961c/packages/types/src/AccountInterfaces.ts#L15)
+[packages/types/src/AccountInterfaces.ts:15](https://github.com/verida/verida-js/blob/5040472/packages/types/src/AccountInterfaces.ts#L15)

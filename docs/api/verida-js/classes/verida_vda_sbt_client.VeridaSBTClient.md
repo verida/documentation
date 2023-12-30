@@ -43,21 +43,21 @@
 
 | Name | Type |
 | :------ | :------ |
-| `config` | [`SBTClientConfig`](../interfaces/verida_vda_sbt_client.SBTClientConfig.md) |
+| `config` | [`VdaClientConfig`](../interfaces/verida_vda_sbt_client._internal_.VdaClientConfig.md) |
 
 #### Defined in
 
-[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:44](https://github.com/verida/verida-js/blob/032961c/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L44)
+[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:24](https://github.com/verida/verida-js/blob/5040472/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L24)
 
 ## Properties
 
 ### config
 
-• `Private` **config**: [`SBTClientConfig`](../interfaces/verida_vda_sbt_client.SBTClientConfig.md)
+• `Private` **config**: [`VdaClientConfig`](../interfaces/verida_vda_sbt_client._internal_.VdaClientConfig.md)
 
 #### Defined in
 
-[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:36](https://github.com/verida/verida-js/blob/032961c/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L36)
+[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:16](https://github.com/verida/verida-js/blob/5040472/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L16)
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 #### Defined in
 
-[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:42](https://github.com/verida/verida-js/blob/032961c/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L42)
+[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:22](https://github.com/verida/verida-js/blob/5040472/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L22)
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 #### Defined in
 
-[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:38](https://github.com/verida/verida-js/blob/032961c/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L38)
+[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:18](https://github.com/verida/verida-js/blob/5040472/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L18)
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 #### Defined in
 
-[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:37](https://github.com/verida/verida-js/blob/032961c/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L37)
+[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:17](https://github.com/verida/verida-js/blob/5040472/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L17)
 
 ___
 
@@ -97,7 +97,7 @@ ___
 
 #### Defined in
 
-[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:40](https://github.com/verida/verida-js/blob/032961c/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L40)
+[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:20](https://github.com/verida/verida-js/blob/5040472/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L20)
 
 ___
 
@@ -107,7 +107,7 @@ ___
 
 #### Defined in
 
-[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:41](https://github.com/verida/verida-js/blob/032961c/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L41)
+[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:21](https://github.com/verida/verida-js/blob/5040472/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L21)
 
 ## Methods
 
@@ -123,7 +123,7 @@ Not able to remove other's tokens.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `tokenId` | `number` | SBT tokenId |
+| `tokenId` | [`BigNumberish`](../modules/verida_vda_sbt_client._internal_.md#bignumberish) | SBT tokenId |
 
 #### Returns
 
@@ -131,7 +131,7 @@ Not able to remove other's tokens.
 
 #### Defined in
 
-[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:371](https://github.com/verida/verida-js/blob/032961c/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L371)
+[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:351](https://github.com/verida/verida-js/blob/5040472/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L351)
 
 ___
 
@@ -160,7 +160,7 @@ Minted token ID
 
 #### Defined in
 
-[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:212](https://github.com/verida/verida-js/blob/032961c/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L212)
+[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:192](https://github.com/verida/verida-js/blob/5040472/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L192)
 
 ___
 
@@ -184,7 +184,7 @@ Token ID list
 
 #### Defined in
 
-[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:314](https://github.com/verida/verida-js/blob/032961c/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L314)
+[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:294](https://github.com/verida/verida-js/blob/5040472/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L294)
 
 ___
 
@@ -202,7 +202,7 @@ list of addresses
 
 #### Defined in
 
-[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:181](https://github.com/verida/verida-js/blob/032961c/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L181)
+[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:161](https://github.com/verida/verida-js/blob/5040472/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L161)
 
 ___
 
@@ -216,7 +216,7 @@ Check whether inputed tokenId is locked
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `tokenId` | `number` | Token ID |
+| `tokenId` | [`BigNumberish`](../modules/verida_vda_sbt_client._internal_.md#bignumberish) | Token ID |
 
 #### Returns
 
@@ -226,7 +226,7 @@ true if tokenID is locked
 
 #### Defined in
 
-[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:130](https://github.com/verida/verida-js/blob/032961c/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L130)
+[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:110](https://github.com/verida/verida-js/blob/5040472/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L110)
 
 ___
 
@@ -252,7 +252,7 @@ true if SBT claimed
 
 #### Defined in
 
-[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:283](https://github.com/verida/verida-js/blob/032961c/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L283)
+[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:263](https://github.com/verida/verida-js/blob/5040472/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L263)
 
 ___
 
@@ -270,7 +270,7 @@ nonce of DID
 
 #### Defined in
 
-[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:87](https://github.com/verida/verida-js/blob/032961c/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L87)
+[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:67](https://github.com/verida/verida-js/blob/5040472/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L67)
 
 ___
 
@@ -284,7 +284,7 @@ Get the owner address of token
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `tokenId` | `number` | SBT tokenId |
+| `tokenId` | [`BigNumberish`](../modules/verida_vda_sbt_client._internal_.md#bignumberish) | SBT tokenId |
 
 #### Returns
 
@@ -294,7 +294,7 @@ owner address of the token
 
 #### Defined in
 
-[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:390](https://github.com/verida/verida-js/blob/032961c/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L390)
+[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:370](https://github.com/verida/verida-js/blob/5040472/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L370)
 
 ___
 
@@ -308,7 +308,7 @@ Get the SBT type & uniqueId from tokenId
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `tokenId` | `number` | SBT tokenId |
+| `tokenId` | [`BigNumberish`](../modules/verida_vda_sbt_client._internal_.md#bignumberish) | SBT tokenId |
 
 #### Returns
 
@@ -318,7 +318,7 @@ string array of SBT type & uniqueId
 
 #### Defined in
 
-[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:342](https://github.com/verida/verida-js/blob/032961c/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L342)
+[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:322](https://github.com/verida/verida-js/blob/5040472/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L322)
 
 ___
 
@@ -332,7 +332,7 @@ Return the tokenURI matched to tokenId
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `tokenId` | `number` | tokenId |
+| `tokenId` | [`BigNumberish`](../modules/verida_vda_sbt_client._internal_.md#bignumberish) | tokenId |
 
 #### Returns
 
@@ -342,7 +342,7 @@ tokenURI from SBT contract
 
 #### Defined in
 
-[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:104](https://github.com/verida/verida-js/blob/032961c/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L104)
+[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:84](https://github.com/verida/verida-js/blob/5040472/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L84)
 
 ___
 
@@ -360,4 +360,4 @@ total number of tokens minted. It includes the burnt tokens.
 
 #### Defined in
 
-[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:156](https://github.com/verida/verida-js/blob/032961c/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L156)
+[packages/vda-sbt-client/src/blockchain/blockchainApi.ts:136](https://github.com/verida/verida-js/blob/5040472/packages/vda-sbt-client/src/blockchain/blockchainApi.ts#L136)

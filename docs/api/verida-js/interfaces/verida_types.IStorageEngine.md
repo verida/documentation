@@ -41,7 +41,7 @@
 
 #### Defined in
 
-[packages/types/src/IStorageEngine.ts:41](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IStorageEngine.ts#L41)
+[packages/types/src/IStorageEngine.ts:41](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IStorageEngine.ts#L41)
 
 ___
 
@@ -61,20 +61,20 @@ ___
 
 #### Defined in
 
-[packages/types/src/IStorageEngine.ts:20](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IStorageEngine.ts#L20)
+[packages/types/src/IStorageEngine.ts:20](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IStorageEngine.ts#L20)
 
 ___
 
 ### deleteDatabase
 
-▸ **deleteDatabase**(`databaseName`, `config`): `Promise`<`void`\>
+▸ **deleteDatabase**(`databaseName`, `config?`): `Promise`<`void`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `databaseName` | `string` |
-| `config` | [`DatabaseDeleteConfig`](verida_types.DatabaseDeleteConfig.md) |
+| `config?` | [`DatabaseDeleteConfig`](verida_types.DatabaseDeleteConfig.md) |
 
 #### Returns
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IStorageEngine.ts:34](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IStorageEngine.ts#L34)
+[packages/types/src/IStorageEngine.ts:34](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IStorageEngine.ts#L34)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IStorageEngine.ts:18](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IStorageEngine.ts#L18)
+[packages/types/src/IStorageEngine.ts:18](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IStorageEngine.ts#L18)
 
 ___
 
@@ -110,7 +110,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IStorageEngine.ts:16](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IStorageEngine.ts#L16)
+[packages/types/src/IStorageEngine.ts:16](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IStorageEngine.ts#L16)
 
 ___
 
@@ -124,7 +124,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IStorageEngine.ts:22](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IStorageEngine.ts#L22)
+[packages/types/src/IStorageEngine.ts:22](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IStorageEngine.ts#L22)
 
 ___
 
@@ -138,7 +138,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IStorageEngine.ts:14](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IStorageEngine.ts#L14)
+[packages/types/src/IStorageEngine.ts:14](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IStorageEngine.ts#L14)
 
 ___
 
@@ -152,7 +152,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IStorageEngine.ts:43](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IStorageEngine.ts#L43)
+[packages/types/src/IStorageEngine.ts:43](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IStorageEngine.ts#L43)
 
 ___
 
@@ -166,7 +166,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IStorageEngine.ts:39](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IStorageEngine.ts#L39)
+[packages/types/src/IStorageEngine.ts:39](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IStorageEngine.ts#L39)
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IStorageEngine.ts:24](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IStorageEngine.ts#L24)
+[packages/types/src/IStorageEngine.ts:24](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IStorageEngine.ts#L24)
 
 ___
 
@@ -208,4 +208,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/IStorageEngine.ts:29](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IStorageEngine.ts#L29)
+[packages/types/src/IStorageEngine.ts:29](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IStorageEngine.ts#L29)

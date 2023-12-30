@@ -42,7 +42,7 @@ Interface for VDA-DID instance creation.
 
 #### Defined in
 
-packages/types/dist/Web3Interfaces.d.ts:93
+packages/types/dist/Web3Interfaces.d.ts:106
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-packages/types/dist/Web3Interfaces.d.ts:92
+packages/types/dist/Web3Interfaces.d.ts:105
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 #### Defined in
 
-packages/types/dist/Web3Interfaces.d.ts:89
+packages/types/dist/Web3Interfaces.d.ts:102
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-packages/types/dist/Web3Interfaces.d.ts:90
+packages/types/dist/Web3Interfaces.d.ts:103
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-packages/types/dist/Web3Interfaces.d.ts:94
+packages/types/dist/Web3Interfaces.d.ts:107
 
 ## Methods
 
@@ -102,4 +102,4 @@ packages/types/dist/Web3Interfaces.d.ts:94
 
 #### Defined in
 
-packages/types/dist/Web3Interfaces.d.ts:91
+packages/types/dist/Web3Interfaces.d.ts:104

@@ -28,4 +28,4 @@
 
 #### Defined in
 
-[packages/types/src/ContextInterfaces.ts:81](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ContextInterfaces.ts#L81)
+[packages/types/src/ContextInterfaces.ts:86](https://github.com/verida/verida-js/blob/5040472/packages/types/src/ContextInterfaces.ts#L86)

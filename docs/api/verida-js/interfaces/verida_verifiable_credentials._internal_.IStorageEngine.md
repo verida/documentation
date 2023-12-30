@@ -67,14 +67,14 @@ ___
 
 ### deleteDatabase
 
-▸ **deleteDatabase**(`databaseName`, `config`): `Promise`<`void`\>
+▸ **deleteDatabase**(`databaseName`, `config?`): `Promise`<`void`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `databaseName` | `string` |
-| `config` | [`DatabaseDeleteConfig`](verida_verifiable_credentials._internal_.DatabaseDeleteConfig.md) |
+| `config?` | [`DatabaseDeleteConfig`](verida_verifiable_credentials._internal_.DatabaseDeleteConfig.md) |
 
 #### Returns
 

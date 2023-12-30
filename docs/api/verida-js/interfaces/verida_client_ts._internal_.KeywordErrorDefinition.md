@@ -19,7 +19,7 @@
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/types/index.d.ts:132
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:133
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/types/index.d.ts:133
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:134

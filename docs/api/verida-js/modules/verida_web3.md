@@ -39,4 +39,4 @@ VeridaContract instance
 
 #### Defined in
 
-[packages/vda-web3-client/src/index.ts:11](https://github.com/verida/verida-js/blob/032961c/packages/vda-web3-client/src/index.ts#L11)
+[packages/vda-web3-client/src/index.ts:11](https://github.com/verida/verida-js/blob/5040472/packages/vda-web3-client/src/index.ts#L11)

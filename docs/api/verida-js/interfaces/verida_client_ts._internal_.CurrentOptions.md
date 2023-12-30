@@ -47,6 +47,7 @@
 - [timestamp](verida_client_ts._internal_.CurrentOptions.md#timestamp)
 - [unevaluated](verida_client_ts._internal_.CurrentOptions.md#unevaluated)
 - [unicodeRegExp](verida_client_ts._internal_.CurrentOptions.md#unicoderegexp)
+- [uriResolver](verida_client_ts._internal_.CurrentOptions.md#uriresolver)
 - [useDefaults](verida_client_ts._internal_.CurrentOptions.md#usedefaults)
 - [validateFormats](verida_client_ts._internal_.CurrentOptions.md#validateformats)
 - [validateSchema](verida_client_ts._internal_.CurrentOptions.md#validateschema)
@@ -445,6 +446,16 @@ ___
 #### Defined in
 
 packages/client-ts/node_modules/ajv/dist/core.d.ts:36
+
+___
+
+### uriResolver
+
+• `Optional` **uriResolver**: [`UriResolver`](verida_client_ts._internal_.UriResolver.md)
+
+#### Defined in
+
+packages/client-ts/node_modules/ajv/dist/core.d.ts:71
 
 ___
 

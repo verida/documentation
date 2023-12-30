@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:130](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L130)
+[packages/types/src/Web3Interfaces.ts:144](https://github.com/verida/verida-js/blob/5040472/packages/types/src/Web3Interfaces.ts#L144)
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:131](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L131)
+[packages/types/src/Web3Interfaces.ts:145](https://github.com/verida/verida-js/blob/5040472/packages/types/src/Web3Interfaces.ts#L145)

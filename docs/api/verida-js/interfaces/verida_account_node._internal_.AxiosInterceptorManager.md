@@ -35,7 +35,7 @@
 
 #### Defined in
 
-node_modules/axios/index.d.ts:211
+packages/account-node/node_modules/axios/index.d.ts:211
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 #### Defined in
 
-node_modules/axios/index.d.ts:210
+packages/account-node/node_modules/axios/index.d.ts:210

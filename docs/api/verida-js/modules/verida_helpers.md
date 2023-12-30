@@ -20,6 +20,7 @@
 - [explodeDID](verida_helpers.md#explodedid)
 - [explodeVeridaUri](verida_helpers.md#explodeveridauri)
 - [fetchVeridaUri](verida_helpers.md#fetchveridauri)
+- [verifyDidControlsDomain](verida_helpers.md#verifydidcontrolsdomain)
 - [wrapUri](verida_helpers.md#wrapuri)
 
 ## Functions
@@ -48,7 +49,7 @@ Build a URI that represents a specific record in a database
 
 #### Defined in
 
-[packages/helpers/src/Utils.ts:16](https://github.com/verida/verida-js/blob/032961c/packages/helpers/src/Utils.ts#L16)
+[packages/helpers/src/Utils.ts:16](https://github.com/verida/verida-js/blob/5040472/packages/helpers/src/Utils.ts#L16)
 
 ___
 
@@ -70,7 +71,7 @@ Decode a Verida URI from base58 to it's `verida://` URI format
 
 #### Defined in
 
-[packages/helpers/src/Utils.ts:170](https://github.com/verida/verida-js/blob/032961c/packages/helpers/src/Utils.ts#L170)
+[packages/helpers/src/Utils.ts:170](https://github.com/verida/verida-js/blob/5040472/packages/helpers/src/Utils.ts#L170)
 
 ___
 
@@ -92,7 +93,7 @@ Encode a Verida URI in base58 to create a unique string reference on the network
 
 #### Defined in
 
-[packages/helpers/src/Utils.ts:161](https://github.com/verida/verida-js/blob/032961c/packages/helpers/src/Utils.ts#L161)
+[packages/helpers/src/Utils.ts:161](https://github.com/verida/verida-js/blob/5040472/packages/helpers/src/Utils.ts#L161)
 
 ___
 
@@ -119,7 +120,7 @@ Get the `network` and `address` parts of a DID
 
 #### Defined in
 
-[packages/helpers/src/Utils.ts:186](https://github.com/verida/verida-js/blob/032961c/packages/helpers/src/Utils.ts#L186)
+[packages/helpers/src/Utils.ts:186](https://github.com/verida/verida-js/blob/5040472/packages/helpers/src/Utils.ts#L186)
 
 ___
 
@@ -141,7 +142,7 @@ Explode a Verida URI into it's individual pieces
 
 #### Defined in
 
-[packages/helpers/src/Utils.ts:54](https://github.com/verida/verida-js/blob/032961c/packages/helpers/src/Utils.ts#L54)
+[packages/helpers/src/Utils.ts:54](https://github.com/verida/verida-js/blob/5040472/packages/helpers/src/Utils.ts#L54)
 
 ___
 
@@ -164,7 +165,34 @@ Fetch the data accessible from a Verida URI
 
 #### Defined in
 
-[packages/helpers/src/Utils.ts:90](https://github.com/verida/verida-js/blob/032961c/packages/helpers/src/Utils.ts#L90)
+[packages/helpers/src/Utils.ts:90](https://github.com/verida/verida-js/blob/5040472/packages/helpers/src/Utils.ts#L90)
+
+___
+
+### verifyDidControlsDomain
+
+▸ **verifyDidControlsDomain**(`did`, `domain`): `Promise`<`boolean`\>
+
+Uses `/.well-known/did.json` standard
+
+**`see`** https://w3c-ccg.github.io/did-method-web/
+
+**`see`** https://team.verida.network/.well-known/did.json
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `did` | `string` | DID that is expected to control the domain name |
+| `domain` | `string` | Domain (ie: team.verida.network) that is expected to be controlled by the DID. If protocol is specified (ie: `https`) it will automatically be stripped. HTTPS is forced. |
+
+#### Returns
+
+`Promise`<`boolean`\>
+
+#### Defined in
+
+[packages/helpers/src/verification.ts:12](https://github.com/verida/verida-js/blob/5040472/packages/helpers/src/verification.ts#L12)
 
 ___
 
@@ -189,4 +217,4 @@ ie: wrapUri('http://data.verida.network', ...)
 
 #### Defined in
 
-[packages/helpers/src/Utils.ts:150](https://github.com/verida/verida-js/blob/032961c/packages/helpers/src/Utils.ts#L150)
+[packages/helpers/src/Utils.ts:150](https://github.com/verida/verida-js/blob/5040472/packages/helpers/src/Utils.ts#L150)

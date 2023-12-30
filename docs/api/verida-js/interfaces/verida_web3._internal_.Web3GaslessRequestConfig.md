@@ -34,4 +34,4 @@ Configuration type for gasless request
 
 #### Defined in
 
-packages/types/dist/Web3Interfaces.d.ts:43
+packages/types/dist/Web3Interfaces.d.ts:56

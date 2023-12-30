@@ -30,7 +30,7 @@
 
 #### Defined in
 
-[packages/types/src/IAuthType.ts:8](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IAuthType.ts#L8)
+[packages/types/src/IAuthType.ts:8](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IAuthType.ts#L8)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IAuthType.ts:4](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IAuthType.ts#L4)
+[packages/types/src/IAuthType.ts:4](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IAuthType.ts#L4)
 
 ___
 
@@ -70,4 +70,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/IAuthType.ts:6](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IAuthType.ts#L6)
+[packages/types/src/IAuthType.ts:6](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IAuthType.ts#L6)

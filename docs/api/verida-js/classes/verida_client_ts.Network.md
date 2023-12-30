@@ -46,7 +46,7 @@ If the user logs in a valid `Context` object is returned. If an unexpected error
 
 #### Defined in
 
-[packages/client-ts/src/network.ts:20](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/network.ts#L20)
+[packages/client-ts/src/network.ts:20](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/network.ts#L20)
 
 ___
 
@@ -67,4 +67,4 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/network.ts:38](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/network.ts#L38)
+[packages/client-ts/src/network.ts:38](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/network.ts#L38)

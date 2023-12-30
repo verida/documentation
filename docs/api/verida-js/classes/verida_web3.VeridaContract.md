@@ -51,7 +51,7 @@ Create Verida smart contract instance. Add member functions of contract as param
 
 #### Defined in
 
-[packages/vda-web3-client/src/VeridaContractBase.ts:65](https://github.com/verida/verida-js/blob/032961c/packages/vda-web3-client/src/VeridaContractBase.ts#L65)
+[packages/vda-web3-client/src/VeridaContractBase.ts:61](https://github.com/verida/verida-js/blob/5040472/packages/vda-web3-client/src/VeridaContractBase.ts#L61)
 
 ## Properties
 
@@ -63,7 +63,7 @@ Contract instance used in web3 mode
 
 #### Defined in
 
-[packages/vda-web3-client/src/VeridaContractBase.ts:40](https://github.com/verida/verida-js/blob/032961c/packages/vda-web3-client/src/VeridaContractBase.ts#L40)
+[packages/vda-web3-client/src/VeridaContractBase.ts:36](https://github.com/verida/verida-js/blob/5040472/packages/vda-web3-client/src/VeridaContractBase.ts#L36)
 
 ___
 
@@ -75,7 +75,7 @@ endpoint url : Need to be defined in sub class constructor
 
 #### Defined in
 
-[packages/vda-web3-client/src/VeridaContractBase.ts:48](https://github.com/verida/verida-js/blob/032961c/packages/vda-web3-client/src/VeridaContractBase.ts#L48)
+[packages/vda-web3-client/src/VeridaContractBase.ts:44](https://github.com/verida/verida-js/blob/5040472/packages/vda-web3-client/src/VeridaContractBase.ts#L44)
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 #### Defined in
 
-[packages/vda-web3-client/src/VeridaContractBase.ts:58](https://github.com/verida/verida-js/blob/032961c/packages/vda-web3-client/src/VeridaContractBase.ts#L58)
+[packages/vda-web3-client/src/VeridaContractBase.ts:54](https://github.com/verida/verida-js/blob/5040472/packages/vda-web3-client/src/VeridaContractBase.ts#L54)
 
 ___
 
@@ -97,7 +97,7 @@ Configuration for gasless mode
 
 #### Defined in
 
-[packages/vda-web3-client/src/VeridaContractBase.ts:57](https://github.com/verida/verida-js/blob/032961c/packages/vda-web3-client/src/VeridaContractBase.ts#L57)
+[packages/vda-web3-client/src/VeridaContractBase.ts:53](https://github.com/verida/verida-js/blob/5040472/packages/vda-web3-client/src/VeridaContractBase.ts#L53)
 
 ___
 
@@ -109,7 +109,7 @@ Axios instance used in gasless mode
 
 #### Defined in
 
-[packages/vda-web3-client/src/VeridaContractBase.ts:46](https://github.com/verida/verida-js/blob/032961c/packages/vda-web3-client/src/VeridaContractBase.ts#L46)
+[packages/vda-web3-client/src/VeridaContractBase.ts:42](https://github.com/verida/verida-js/blob/5040472/packages/vda-web3-client/src/VeridaContractBase.ts#L42)
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-[packages/vda-web3-client/src/VeridaContractBase.ts:42](https://github.com/verida/verida-js/blob/032961c/packages/vda-web3-client/src/VeridaContractBase.ts#L42)
+[packages/vda-web3-client/src/VeridaContractBase.ts:38](https://github.com/verida/verida-js/blob/5040472/packages/vda-web3-client/src/VeridaContractBase.ts#L38)
 
 ___
 
@@ -131,7 +131,7 @@ Smart contract interaction mode
 
 #### Defined in
 
-[packages/vda-web3-client/src/VeridaContractBase.ts:31](https://github.com/verida/verida-js/blob/032961c/packages/vda-web3-client/src/VeridaContractBase.ts#L31)
+[packages/vda-web3-client/src/VeridaContractBase.ts:33](https://github.com/verida/verida-js/blob/5040472/packages/vda-web3-client/src/VeridaContractBase.ts#L33)
 
 ___
 
@@ -143,7 +143,7 @@ Configuration for web3 mode
 
 #### Defined in
 
-[packages/vda-web3-client/src/VeridaContractBase.ts:54](https://github.com/verida/verida-js/blob/032961c/packages/vda-web3-client/src/VeridaContractBase.ts#L54)
+[packages/vda-web3-client/src/VeridaContractBase.ts:50](https://github.com/verida/verida-js/blob/5040472/packages/vda-web3-client/src/VeridaContractBase.ts#L50)
 
 ## Methods
 
@@ -165,7 +165,7 @@ Connect signer to contract to sign transactions. Called in web3 mode only
 
 #### Defined in
 
-[packages/vda-web3-client/src/VeridaContractBase.ts:196](https://github.com/verida/verida-js/blob/032961c/packages/vda-web3-client/src/VeridaContractBase.ts#L196)
+[packages/vda-web3-client/src/VeridaContractBase.ts:216](https://github.com/verida/verida-js/blob/5040472/packages/vda-web3-client/src/VeridaContractBase.ts#L216)
 
 ___
 
@@ -192,4 +192,4 @@ Perform smart contract interaction. Called by member function that were created 
 
 #### Defined in
 
-[packages/vda-web3-client/src/VeridaContractBase.ts:220](https://github.com/verida/verida-js/blob/032961c/packages/vda-web3-client/src/VeridaContractBase.ts#L220)
+[packages/vda-web3-client/src/VeridaContractBase.ts:240](https://github.com/verida/verida-js/blob/5040472/packages/vda-web3-client/src/VeridaContractBase.ts#L240)

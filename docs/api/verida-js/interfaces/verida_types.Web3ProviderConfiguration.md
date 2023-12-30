@@ -35,7 +35,7 @@ It should contain at least one of `name` or `chainId` AND one of `provider`, `we
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:83](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L83)
+[packages/types/src/Web3Interfaces.ts:97](https://github.com/verida/verida-js/blob/5040472/packages/types/src/Web3Interfaces.ts#L97)
 
 ___
 
@@ -45,7 +45,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:81](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L81)
+[packages/types/src/Web3Interfaces.ts:95](https://github.com/verida/verida-js/blob/5040472/packages/types/src/Web3Interfaces.ts#L95)
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:82](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L82)
+[packages/types/src/Web3Interfaces.ts:96](https://github.com/verida/verida-js/blob/5040472/packages/types/src/Web3Interfaces.ts#L96)
 
 ___
 
@@ -65,4 +65,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:85](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L85)
+[packages/types/src/Web3Interfaces.ts:99](https://github.com/verida/verida-js/blob/5040472/packages/types/src/Web3Interfaces.ts#L99)

@@ -120,7 +120,7 @@ ___
 
 ### create
 
-▸ **create**(`didDocument`, `endpoints`): `Promise`<[`VdaDidEndpointResponses`](../modules/verida_did_client._internal_.md#vdadidendpointresponses)\>
+▸ **create**(`didDocument`, `endpoints`, `retries?`): `Promise`<[`VdaDidEndpointResponses`](../modules/verida_did_client._internal_.md#vdadidendpointresponses)\>
 
 Publish the first version of a DIDDocument to a list of endpoints.
 
@@ -133,6 +133,7 @@ list of valid endpoints on chain.
 | :------ | :------ |
 | `didDocument` | [`default`](verida_did_client._internal_.default-1.md) |
 | `endpoints` | `string`[] |
+| `retries?` | `number` |
 
 #### Returns
 

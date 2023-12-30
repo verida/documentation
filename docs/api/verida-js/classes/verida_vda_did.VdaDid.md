@@ -41,7 +41,7 @@
 
 #### Defined in
 
-[packages/vda-did/src/vdaDid.ts:15](https://github.com/verida/verida-js/blob/032961c/packages/vda-did/src/vdaDid.ts#L15)
+[packages/vda-did/src/vdaDid.ts:15](https://github.com/verida/verida-js/blob/5040472/packages/vda-did/src/vdaDid.ts#L15)
 
 ## Properties
 
@@ -51,7 +51,7 @@
 
 #### Defined in
 
-[packages/vda-did/src/vdaDid.ts:12](https://github.com/verida/verida-js/blob/032961c/packages/vda-did/src/vdaDid.ts#L12)
+[packages/vda-did/src/vdaDid.ts:12](https://github.com/verida/verida-js/blob/5040472/packages/vda-did/src/vdaDid.ts#L12)
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 #### Defined in
 
-[packages/vda-did/src/vdaDid.ts:13](https://github.com/verida/verida-js/blob/032961c/packages/vda-did/src/vdaDid.ts#L13)
+[packages/vda-did/src/vdaDid.ts:13](https://github.com/verida/verida-js/blob/5040472/packages/vda-did/src/vdaDid.ts#L13)
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 #### Defined in
 
-[packages/vda-did/src/vdaDid.ts:11](https://github.com/verida/verida-js/blob/032961c/packages/vda-did/src/vdaDid.ts#L11)
+[packages/vda-did/src/vdaDid.ts:11](https://github.com/verida/verida-js/blob/5040472/packages/vda-did/src/vdaDid.ts#L11)
 
 ## Methods
 
@@ -94,13 +94,13 @@ Add a new to an existing DID
 
 #### Defined in
 
-[packages/vda-did/src/vdaDid.ts:281](https://github.com/verida/verida-js/blob/032961c/packages/vda-did/src/vdaDid.ts#L281)
+[packages/vda-did/src/vdaDid.ts:283](https://github.com/verida/verida-js/blob/5040472/packages/vda-did/src/vdaDid.ts#L283)
 
 ___
 
 ### create
 
-▸ **create**(`didDocument`, `endpoints`): `Promise`<[`VdaDidEndpointResponses`](../modules/verida_vda_did._internal_.md#vdadidendpointresponses)\>
+▸ **create**(`didDocument`, `endpoints`, `retries?`): `Promise`<[`VdaDidEndpointResponses`](../modules/verida_vda_did._internal_.md#vdadidendpointresponses)\>
 
 Publish the first version of a DIDDocument to a list of endpoints.
 
@@ -109,10 +109,11 @@ list of valid endpoints on chain.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `didDocument` | [`default`](verida_vda_did._internal_.default-1.md) |
-| `endpoints` | `string`[] |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `didDocument` | [`default`](verida_vda_did._internal_.default-1.md) | `undefined` |
+| `endpoints` | `string`[] | `undefined` |
+| `retries` | `number` | `3` |
 
 #### Returns
 
@@ -122,7 +123,7 @@ VdaDidEndpointResponses Map of endpoints where the DID Document was successfully
 
 #### Defined in
 
-[packages/vda-did/src/vdaDid.ts:30](https://github.com/verida/verida-js/blob/032961c/packages/vda-did/src/vdaDid.ts#L30)
+[packages/vda-did/src/vdaDid.ts:30](https://github.com/verida/verida-js/blob/5040472/packages/vda-did/src/vdaDid.ts#L30)
 
 ___
 
@@ -136,7 +137,7 @@ ___
 
 #### Defined in
 
-[packages/vda-did/src/vdaDid.ts:247](https://github.com/verida/verida-js/blob/032961c/packages/vda-did/src/vdaDid.ts#L247)
+[packages/vda-did/src/vdaDid.ts:249](https://github.com/verida/verida-js/blob/5040472/packages/vda-did/src/vdaDid.ts#L249)
 
 ___
 
@@ -156,7 +157,7 @@ ___
 
 #### Defined in
 
-[packages/vda-did/src/vdaDid.ts:200](https://github.com/verida/verida-js/blob/032961c/packages/vda-did/src/vdaDid.ts#L200)
+[packages/vda-did/src/vdaDid.ts:202](https://github.com/verida/verida-js/blob/5040472/packages/vda-did/src/vdaDid.ts#L202)
 
 ___
 
@@ -176,7 +177,7 @@ ___
 
 #### Defined in
 
-[packages/vda-did/src/vdaDid.ts:333](https://github.com/verida/verida-js/blob/032961c/packages/vda-did/src/vdaDid.ts#L333)
+[packages/vda-did/src/vdaDid.ts:335](https://github.com/verida/verida-js/blob/5040472/packages/vda-did/src/vdaDid.ts#L335)
 
 ___
 
@@ -190,7 +191,7 @@ ___
 
 #### Defined in
 
-[packages/vda-did/src/vdaDid.ts:329](https://github.com/verida/verida-js/blob/032961c/packages/vda-did/src/vdaDid.ts#L329)
+[packages/vda-did/src/vdaDid.ts:331](https://github.com/verida/verida-js/blob/5040472/packages/vda-did/src/vdaDid.ts#L331)
 
 ___
 
@@ -211,7 +212,7 @@ ___
 
 #### Defined in
 
-[packages/vda-did/src/vdaDid.ts:321](https://github.com/verida/verida-js/blob/032961c/packages/vda-did/src/vdaDid.ts#L321)
+[packages/vda-did/src/vdaDid.ts:323](https://github.com/verida/verida-js/blob/5040472/packages/vda-did/src/vdaDid.ts#L323)
 
 ___
 
@@ -240,4 +241,4 @@ VdaDidEndpointResponses Map of endpoints where the DID Document was successfully
 
 #### Defined in
 
-[packages/vda-did/src/vdaDid.ts:110](https://github.com/verida/verida-js/blob/032961c/packages/vda-did/src/vdaDid.ts#L110)
+[packages/vda-did/src/vdaDid.ts:112](https://github.com/verida/verida-js/blob/5040472/packages/vda-did/src/vdaDid.ts#L112)

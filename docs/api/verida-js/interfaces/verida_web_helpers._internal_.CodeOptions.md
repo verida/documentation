@@ -15,9 +15,11 @@
 ### Properties
 
 - [es5](verida_web_helpers._internal_.CodeOptions.md#es5)
+- [esm](verida_web_helpers._internal_.CodeOptions.md#esm)
 - [formats](verida_web_helpers._internal_.CodeOptions.md#formats)
 - [lines](verida_web_helpers._internal_.CodeOptions.md#lines)
 - [optimize](verida_web_helpers._internal_.CodeOptions.md#optimize)
+- [regExp](verida_web_helpers._internal_.CodeOptions.md#regexp)
 - [source](verida_web_helpers._internal_.CodeOptions.md#source)
 
 ### Methods
@@ -32,7 +34,17 @@
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:73
+packages/client-ts/node_modules/ajv/dist/core.d.ts:74
+
+___
+
+### esm
+
+• `Optional` **esm**: `boolean`
+
+#### Defined in
+
+packages/client-ts/node_modules/ajv/dist/core.d.ts:75
 
 ___
 
@@ -42,7 +54,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:76
+packages/client-ts/node_modules/ajv/dist/core.d.ts:78
 
 ___
 
@@ -52,7 +64,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:74
+packages/client-ts/node_modules/ajv/dist/core.d.ts:76
 
 ___
 
@@ -62,7 +74,17 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:75
+packages/client-ts/node_modules/ajv/dist/core.d.ts:77
+
+___
+
+### regExp
+
+• `Optional` **regExp**: [`RegExpEngine`](verida_web_helpers._internal_.RegExpEngine.md)
+
+#### Defined in
+
+packages/client-ts/node_modules/ajv/dist/core.d.ts:81
 
 ___
 
@@ -72,7 +94,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:77
+packages/client-ts/node_modules/ajv/dist/core.d.ts:79
 
 ## Methods
 
@@ -93,4 +115,4 @@ packages/client-ts/node_modules/ajv/dist/core.d.ts:77
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:78
+packages/client-ts/node_modules/ajv/dist/core.d.ts:80

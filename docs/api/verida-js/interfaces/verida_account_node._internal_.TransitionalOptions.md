@@ -20,7 +20,7 @@
 
 #### Defined in
 
-node_modules/axios/index.d.ts:72
+packages/account-node/node_modules/axios/index.d.ts:72
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-node_modules/axios/index.d.ts:71
+packages/account-node/node_modules/axios/index.d.ts:71
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 #### Defined in
 
-node_modules/axios/index.d.ts:70
+packages/account-node/node_modules/axios/index.d.ts:70

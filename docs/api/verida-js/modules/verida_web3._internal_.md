@@ -79,6 +79,7 @@
 - [ContractFunction](verida_web3._internal_.md#contractfunction)
 - [ContractInterface](verida_web3._internal_.md#contractinterface)
 - [Deferrable](verida_web3._internal_.md#deferrable)
+- [EIP1559GasMode](verida_web3._internal_.md#eip1559gasmode)
 - [EventFilter](verida_web3._internal_.md#eventfilter)
 - [EventType](verida_web3._internal_.md#eventtype)
 - [FlatArray](verida_web3._internal_.md#flatarray)
@@ -262,6 +263,18 @@ node_modules/@ethersproject/properties/lib/index.d.ts:3
 
 ___
 
+### EIP1559GasMode
+
+Ƭ **EIP1559GasMode**: ``"safeLow"`` \| ``"standard"`` \| ``"fast"``
+
+EIP1559 Gas Configuration speed
+
+#### Defined in
+
+packages/types/dist/Web3Interfaces.d.ts:13
+
+___
+
 ### EventFilter
 
 Ƭ **EventFilter**: `Object`
@@ -420,7 +433,7 @@ ___
 
 #### Defined in
 
-packages/types/dist/Web3Interfaces.d.ts:40
+packages/types/dist/Web3Interfaces.d.ts:53
 
 ___
 

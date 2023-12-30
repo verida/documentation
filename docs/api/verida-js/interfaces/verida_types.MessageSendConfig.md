@@ -23,7 +23,7 @@ Interface for any MessageSendConfig
 
 #### Defined in
 
-[packages/types/src/ContextInterfaces.ts:144](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ContextInterfaces.ts#L144)
+[packages/types/src/ContextInterfaces.ts:149](https://github.com/verida/verida-js/blob/5040472/packages/types/src/ContextInterfaces.ts#L149)
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/ContextInterfaces.ts:145](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ContextInterfaces.ts#L145)
+[packages/types/src/ContextInterfaces.ts:150](https://github.com/verida/verida-js/blob/5040472/packages/types/src/ContextInterfaces.ts#L150)
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/ContextInterfaces.ts:147](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ContextInterfaces.ts#L147)
+[packages/types/src/ContextInterfaces.ts:152](https://github.com/verida/verida-js/blob/5040472/packages/types/src/ContextInterfaces.ts#L152)
 
 ___
 
@@ -53,4 +53,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/ContextInterfaces.ts:146](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ContextInterfaces.ts#L146)
+[packages/types/src/ContextInterfaces.ts:151](https://github.com/verida/verida-js/blob/5040472/packages/types/src/ContextInterfaces.ts#L151)

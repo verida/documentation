@@ -34,12 +34,13 @@
 
 ### constructor
 
-• **new default**(`baseId`, `ref`, `msg?`)
+• **new default**(`resolver`, `baseId`, `ref`, `msg?`)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
+| `resolver` | [`UriResolver`](../interfaces/verida_client_ts._internal_.UriResolver.md) |
 | `baseId` | `string` |
 | `ref` | `string` |
 | `msg?` | `string` |
@@ -50,7 +51,7 @@ Error.constructor
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/compile/ref_error.d.ts:4
+packages/client-ts/node_modules/ajv/dist/compile/ref_error.d.ts:5
 
 ## Properties
 
@@ -74,7 +75,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/compile/ref_error.d.ts:2
+packages/client-ts/node_modules/ajv/dist/compile/ref_error.d.ts:3
 
 ___
 
@@ -84,7 +85,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/compile/ref_error.d.ts:3
+packages/client-ts/node_modules/ajv/dist/compile/ref_error.d.ts:4
 
 ___
 

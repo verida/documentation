@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[packages/vda-common/src/contract.ts:13](https://github.com/verida/verida-js/blob/032961c/packages/vda-common/src/contract.ts#L13)
+[packages/vda-common/src/contract.ts:13](https://github.com/verida/verida-js/blob/5040472/packages/vda-common/src/contract.ts#L13)
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 #### Defined in
 
-[packages/vda-common/src/contract.ts:14](https://github.com/verida/verida-js/blob/032961c/packages/vda-common/src/contract.ts#L14)
+[packages/vda-common/src/contract.ts:14](https://github.com/verida/verida-js/blob/5040472/packages/vda-common/src/contract.ts#L14)

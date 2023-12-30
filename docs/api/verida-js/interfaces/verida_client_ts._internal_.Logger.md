@@ -30,7 +30,7 @@
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:100
+packages/client-ts/node_modules/ajv/dist/core.d.ts:104
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:98
+packages/client-ts/node_modules/ajv/dist/core.d.ts:102
 
 ___
 
@@ -70,4 +70,4 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:99
+packages/client-ts/node_modules/ajv/dist/core.d.ts:103

@@ -59,7 +59,7 @@ Create a new Datastore.
 
 #### Defined in
 
-[packages/client-ts/src/context/datastore.ts:41](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/datastore.ts#L41)
+[packages/client-ts/src/context/datastore.ts:41](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/datastore.ts#L41)
 
 ## Properties
 
@@ -69,7 +69,7 @@ Create a new Datastore.
 
 #### Defined in
 
-[packages/client-ts/src/context/datastore.ts:23](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/datastore.ts#L23)
+[packages/client-ts/src/context/datastore.ts:23](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/datastore.ts#L23)
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/datastore.ts:22](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/datastore.ts#L22)
+[packages/client-ts/src/context/datastore.ts:22](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/datastore.ts#L22)
 
 ___
 
@@ -89,7 +89,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/datastore.ts:25](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/datastore.ts#L25)
+[packages/client-ts/src/context/datastore.ts:25](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/datastore.ts#L25)
 
 ___
 
@@ -109,7 +109,7 @@ The errors remain until they are replaced by any new errors.
 
 #### Defined in
 
-[packages/client-ts/src/context/datastore.ts:34](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/datastore.ts#L34)
+[packages/client-ts/src/context/datastore.ts:34](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/datastore.ts#L34)
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/datastore.ts:20](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/datastore.ts#L20)
+[packages/client-ts/src/context/datastore.ts:20](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/datastore.ts#L20)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/datastore.ts:18](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/datastore.ts#L18)
+[packages/client-ts/src/context/datastore.ts:18](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/datastore.ts#L18)
 
 ___
 
@@ -139,7 +139,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/datastore.ts:19](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/datastore.ts#L19)
+[packages/client-ts/src/context/datastore.ts:19](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/datastore.ts#L19)
 
 ## Methods
 
@@ -168,7 +168,7 @@ Returns an object with a `.cancel()` method to cancel the listener
 
 #### Defined in
 
-[packages/client-ts/src/context/datastore.ts:195](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/datastore.ts#L195)
+[packages/client-ts/src/context/datastore.ts:195](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/datastore.ts#L195)
 
 ___
 
@@ -192,7 +192,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/datastore.ts:264](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/datastore.ts#L264)
+[packages/client-ts/src/context/datastore.ts:264](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/datastore.ts#L264)
 
 ___
 
@@ -218,7 +218,7 @@ Delete a record by ID.
 
 #### Defined in
 
-[packages/client-ts/src/context/datastore.ts:168](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/datastore.ts#L168)
+[packages/client-ts/src/context/datastore.ts:168](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/datastore.ts#L168)
 
 ___
 
@@ -236,7 +236,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/datastore.ts:173](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/datastore.ts#L173)
+[packages/client-ts/src/context/datastore.ts:173](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/datastore.ts#L173)
 
 ___
 
@@ -264,7 +264,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/datastore.ts:239](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/datastore.ts#L239)
+[packages/client-ts/src/context/datastore.ts:239](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/datastore.ts#L239)
 
 ___
 
@@ -291,7 +291,7 @@ Get a record by ID.
 
 #### Defined in
 
-[packages/client-ts/src/context/datastore.ts:158](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/datastore.ts#L158)
+[packages/client-ts/src/context/datastore.ts:158](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/datastore.ts#L158)
 
 ___
 
@@ -313,7 +313,7 @@ Get the underlying database instance associated with this datastore.
 
 #### Defined in
 
-[packages/client-ts/src/context/datastore.ts:183](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/datastore.ts#L183)
+[packages/client-ts/src/context/datastore.ts:183](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/datastore.ts#L183)
 
 ___
 
@@ -365,7 +365,7 @@ An array of database records.
 
 #### Defined in
 
-[packages/client-ts/src/context/datastore.ts:119](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/datastore.ts#L119)
+[packages/client-ts/src/context/datastore.ts:119](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/datastore.ts#L119)
 
 ___
 
@@ -394,7 +394,7 @@ A database record
 
 #### Defined in
 
-[packages/client-ts/src/context/datastore.ts:142](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/datastore.ts#L142)
+[packages/client-ts/src/context/datastore.ts:142](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/datastore.ts#L142)
 
 ___
 
@@ -412,7 +412,7 @@ Initialize this datastore instance before use.
 
 #### Defined in
 
-[packages/client-ts/src/context/datastore.ts:205](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/datastore.ts#L205)
+[packages/client-ts/src/context/datastore.ts:205](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/datastore.ts#L205)
 
 ___
 
@@ -461,7 +461,7 @@ Boolean indicating if the save was successful. If not successful `this.errors` w
 
 #### Defined in
 
-[packages/client-ts/src/context/datastore.ts:75](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/datastore.ts#L75)
+[packages/client-ts/src/context/datastore.ts:75](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/datastore.ts#L75)
 
 ___
 
@@ -488,4 +488,4 @@ Update the list of valid users for this datastore.
 
 #### Defined in
 
-[packages/client-ts/src/context/datastore.ts:256](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/datastore.ts#L256)
+[packages/client-ts/src/context/datastore.ts:256](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/datastore.ts#L256)

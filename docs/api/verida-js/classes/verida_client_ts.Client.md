@@ -27,8 +27,11 @@
 ### Methods
 
 - [connect](verida_client_ts.Client.md#connect)
+- [destroyAccount](verida_client_ts.Client.md#destroyaccount)
+- [destroyContext](verida_client_ts.Client.md#destroycontext)
 - [getConfig](verida_client_ts.Client.md#getconfig)
 - [getContextConfig](verida_client_ts.Client.md#getcontextconfig)
+- [getContextNameFromHash](verida_client_ts.Client.md#getcontextnamefromhash)
 - [getDID](verida_client_ts.Client.md#getdid)
 - [getSchema](verida_client_ts.Client.md#getschema)
 - [getUsernames](verida_client_ts.Client.md#getusernames)
@@ -55,7 +58,7 @@ Create a client connection to the Verida network
 
 #### Defined in
 
-[packages/client-ts/src/client.ts:53](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/client.ts#L53)
+[packages/client-ts/src/client.ts:56](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/client.ts#L56)
 
 ## Properties
 
@@ -67,7 +70,7 @@ Connected account instance
 
 #### Defined in
 
-[packages/client-ts/src/client.ts:29](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/client.ts#L29)
+[packages/client-ts/src/client.ts:32](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/client.ts#L32)
 
 ___
 
@@ -79,7 +82,7 @@ Current configuration for this client
 
 #### Defined in
 
-[packages/client-ts/src/client.ts:46](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/client.ts#L46)
+[packages/client-ts/src/client.ts:49](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/client.ts#L49)
 
 ___
 
@@ -91,7 +94,7 @@ DID of connected account
 
 #### Defined in
 
-[packages/client-ts/src/client.ts:34](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/client.ts#L34)
+[packages/client-ts/src/client.ts:37](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/client.ts#L37)
 
 ___
 
@@ -103,7 +106,7 @@ Connection to the Verida DID Registry
 
 #### Defined in
 
-[packages/client-ts/src/client.ts:19](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/client.ts#L19)
+[packages/client-ts/src/client.ts:22](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/client.ts#L22)
 
 ___
 
@@ -115,7 +118,7 @@ Helper instance to manage DID contexts
 
 #### Defined in
 
-[packages/client-ts/src/client.ts:24](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/client.ts#L24)
+[packages/client-ts/src/client.ts:27](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/client.ts#L27)
 
 ___
 
@@ -127,7 +130,7 @@ Currently selected environment
 
 #### Defined in
 
-[packages/client-ts/src/client.ts:39](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/client.ts#L39)
+[packages/client-ts/src/client.ts:42](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/client.ts#L42)
 
 ___
 
@@ -137,7 +140,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/client.ts:41](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/client.ts#L41)
+[packages/client-ts/src/client.ts:44](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/client.ts#L44)
 
 ## Methods
 
@@ -166,7 +169,41 @@ authenticate with databases, send messages etc.
 
 #### Defined in
 
-[packages/client-ts/src/client.ts:92](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/client.ts#L92)
+[packages/client-ts/src/client.ts:95](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/client.ts#L95)
+
+___
+
+### destroyAccount
+
+▸ **destroyAccount**(): `Promise`<`void`\>
+
+#### Returns
+
+`Promise`<`void`\>
+
+#### Defined in
+
+[packages/client-ts/src/client.ts:311](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/client.ts#L311)
+
+___
+
+### destroyContext
+
+▸ **destroyContext**(`contextName`): `Promise`<`any`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `contextName` | `string` |
+
+#### Returns
+
+`Promise`<`any`\>
+
+#### Defined in
+
+[packages/client-ts/src/client.ts:361](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/client.ts#L361)
 
 ___
 
@@ -180,7 +217,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/client.ts:204](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/client.ts#L204)
+[packages/client-ts/src/client.ts:207](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/client.ts#L207)
 
 ___
 
@@ -211,7 +248,28 @@ SecureContextConfig | undefined
 
 #### Defined in
 
-[packages/client-ts/src/client.ts:196](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/client.ts#L196)
+[packages/client-ts/src/client.ts:199](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/client.ts#L199)
+
+___
+
+### getContextNameFromHash
+
+▸ **getContextNameFromHash**(`contextHash`, `didDocument?`): `Promise`<`any`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `contextHash` | `string` |
+| `didDocument?` | [`default`](verida_client_ts._internal_.default-1.md) |
+
+#### Returns
+
+`Promise`<`any`\>
+
+#### Defined in
+
+[packages/client-ts/src/client.ts:417](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/client.ts#L417)
 
 ___
 
@@ -233,7 +291,7 @@ Get the DID linked to a username
 
 #### Defined in
 
-[packages/client-ts/src/client.ts:341](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/client.ts#L341)
+[packages/client-ts/src/client.ts:500](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/client.ts#L500)
 
 ___
 
@@ -261,7 +319,7 @@ Schema A schema object
 
 #### Defined in
 
-[packages/client-ts/src/client.ts:314](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/client.ts#L314)
+[packages/client-ts/src/client.ts:473](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/client.ts#L473)
 
 ___
 
@@ -283,7 +341,7 @@ Get an array of usernames linked to a DID
 
 #### Defined in
 
-[packages/client-ts/src/client.ts:351](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/client.ts#L351)
+[packages/client-ts/src/client.ts:510](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/client.ts#L510)
 
 ___
 
@@ -316,7 +374,7 @@ string[] Array of DIDs that have validly signed the data
 
 #### Defined in
 
-[packages/client-ts/src/client.ts:255](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/client.ts#L255)
+[packages/client-ts/src/client.ts:258](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/client.ts#L258)
 
 ___
 
@@ -338,7 +396,7 @@ boolean True of an account is connected
 
 #### Defined in
 
-[packages/client-ts/src/client.ts:107](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/client.ts#L107)
+[packages/client-ts/src/client.ts:110](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/client.ts#L110)
 
 ___
 
@@ -367,7 +425,7 @@ Context | undefined
 
 #### Defined in
 
-[packages/client-ts/src/client.ts:118](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/client.ts#L118)
+[packages/client-ts/src/client.ts:121](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/client.ts#L121)
 
 ___
 
@@ -392,7 +450,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/client.ts:169](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/client.ts#L169)
+[packages/client-ts/src/client.ts:172](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/client.ts#L172)
 
 ___
 
@@ -427,7 +485,7 @@ You most likely want to request the `Verida: Vault` context.
 
 #### Defined in
 
-[packages/client-ts/src/client.ts:219](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/client.ts#L219)
+[packages/client-ts/src/client.ts:222](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/client.ts#L222)
 
 ___
 
@@ -450,4 +508,4 @@ a Verida username.
 
 #### Defined in
 
-[packages/client-ts/src/client.ts:325](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/client.ts#L325)
+[packages/client-ts/src/client.ts:484](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/client.ts#L484)

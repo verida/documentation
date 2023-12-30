@@ -41,6 +41,7 @@
 - [saveRecord](verida_client_ts._internal_.Profile.md#saverecord)
 - [set](verida_client_ts._internal_.Profile.md#set)
 - [setMany](verida_client_ts._internal_.Profile.md#setmany)
+- [verifyWebsite](verida_client_ts._internal_.Profile.md#verifywebsite)
 
 ## Constructors
 
@@ -70,7 +71,7 @@ EventEmitter.constructor
 
 #### Defined in
 
-[packages/client-ts/src/context/profiles/profile.ts:40](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/profiles/profile.ts#L40)
+[packages/client-ts/src/context/profiles/profile.ts:41](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/profiles/profile.ts#L41)
 
 ## Properties
 
@@ -80,7 +81,7 @@ EventEmitter.constructor
 
 #### Defined in
 
-[packages/client-ts/src/context/profiles/profile.ts:21](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/profiles/profile.ts#L21)
+[packages/client-ts/src/context/profiles/profile.ts:22](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/profiles/profile.ts#L22)
 
 ___
 
@@ -90,7 +91,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/profiles/profile.ts:22](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/profiles/profile.ts#L22)
+[packages/client-ts/src/context/profiles/profile.ts:23](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/profiles/profile.ts#L23)
 
 ___
 
@@ -100,7 +101,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/profiles/profile.ts:30](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/profiles/profile.ts#L30)
+[packages/client-ts/src/context/profiles/profile.ts:31](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/profiles/profile.ts#L31)
 
 ___
 
@@ -110,7 +111,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/profiles/profile.ts:28](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/profiles/profile.ts#L28)
+[packages/client-ts/src/context/profiles/profile.ts:29](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/profiles/profile.ts#L29)
 
 ___
 
@@ -120,7 +121,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/profiles/profile.ts:24](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/profiles/profile.ts#L24)
+[packages/client-ts/src/context/profiles/profile.ts:25](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/profiles/profile.ts#L25)
 
 ___
 
@@ -130,7 +131,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/profiles/profile.ts:25](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/profiles/profile.ts#L25)
+[packages/client-ts/src/context/profiles/profile.ts:26](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/profiles/profile.ts#L26)
 
 ___
 
@@ -140,7 +141,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/profiles/profile.ts:27](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/profiles/profile.ts#L27)
+[packages/client-ts/src/context/profiles/profile.ts:28](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/profiles/profile.ts#L28)
 
 ## Methods
 
@@ -166,7 +167,7 @@ Boolean indicating if the delete was successful
 
 #### Defined in
 
-[packages/client-ts/src/context/profiles/profile.ts:86](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/profiles/profile.ts#L86)
+[packages/client-ts/src/context/profiles/profile.ts:87](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/profiles/profile.ts#L87)
 
 ___
 
@@ -203,7 +204,7 @@ Database record for this profile key. Object has keys [`key`, `value`, `_id`, `_
 
 #### Defined in
 
-[packages/client-ts/src/context/profiles/profile.ts:70](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/profiles/profile.ts#L70)
+[packages/client-ts/src/context/profiles/profile.ts:71](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/profiles/profile.ts#L71)
 
 ___
 
@@ -230,7 +231,7 @@ Get many profile values.
 
 #### Defined in
 
-[packages/client-ts/src/context/profiles/profile.ts:102](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/profiles/profile.ts#L102)
+[packages/client-ts/src/context/profiles/profile.ts:103](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/profiles/profile.ts#L103)
 
 ___
 
@@ -244,7 +245,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/profiles/profile.ts:162](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/profiles/profile.ts#L162)
+[packages/client-ts/src/context/profiles/profile.ts:172](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/profiles/profile.ts#L172)
 
 ___
 
@@ -258,7 +259,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/profiles/profile.ts:196](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/profiles/profile.ts#L196)
+[packages/client-ts/src/context/profiles/profile.ts:206](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/profiles/profile.ts#L206)
 
 ___
 
@@ -284,7 +285,7 @@ Listen for changes to the public profile
 
 #### Defined in
 
-[packages/client-ts/src/context/profiles/profile.ts:148](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/profiles/profile.ts#L148)
+[packages/client-ts/src/context/profiles/profile.ts:149](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/profiles/profile.ts#L149)
 
 ___
 
@@ -304,7 +305,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/profiles/profile.ts:185](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/profiles/profile.ts#L185)
+[packages/client-ts/src/context/profiles/profile.ts:195](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/profiles/profile.ts#L195)
 
 ___
 
@@ -344,7 +345,7 @@ Boolean indicating if the save was successful
 
 #### Defined in
 
-[packages/client-ts/src/context/profiles/profile.ts:123](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/profiles/profile.ts#L123)
+[packages/client-ts/src/context/profiles/profile.ts:124](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/profiles/profile.ts#L124)
 
 ___
 
@@ -370,4 +371,18 @@ Set many profile key / values at once
 
 #### Defined in
 
-[packages/client-ts/src/context/profiles/profile.ts:134](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/profiles/profile.ts#L134)
+[packages/client-ts/src/context/profiles/profile.ts:135](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/profiles/profile.ts#L135)
+
+___
+
+### verifyWebsite
+
+▸ **verifyWebsite**(): `Promise`<`boolean`\>
+
+#### Returns
+
+`Promise`<`boolean`\>
+
+#### Defined in
+
+[packages/client-ts/src/context/profiles/profile.ts:163](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/profiles/profile.ts#L163)

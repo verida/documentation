@@ -84,7 +84,7 @@ packages/client-ts/node_modules/ajv/dist/2020.d.ts:4
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:116
+packages/client-ts/node_modules/ajv/dist/core.d.ts:120
 
 ___
 
@@ -98,7 +98,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:117
+packages/client-ts/node_modules/ajv/dist/core.d.ts:121
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:104
+packages/client-ts/node_modules/ajv/dist/core.d.ts:108
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:113
+packages/client-ts/node_modules/ajv/dist/core.d.ts:117
 
 ___
 
@@ -140,7 +140,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:105
+packages/client-ts/node_modules/ajv/dist/core.d.ts:109
 
 ___
 
@@ -154,7 +154,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:103
+packages/client-ts/node_modules/ajv/dist/core.d.ts:107
 
 ___
 
@@ -168,7 +168,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:110
+packages/client-ts/node_modules/ajv/dist/core.d.ts:114
 
 ___
 
@@ -182,7 +182,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:107
+packages/client-ts/node_modules/ajv/dist/core.d.ts:111
 
 ___
 
@@ -196,7 +196,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:106
+packages/client-ts/node_modules/ajv/dist/core.d.ts:110
 
 ___
 
@@ -210,7 +210,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:122
+packages/client-ts/node_modules/ajv/dist/core.d.ts:126
 
 ___
 
@@ -224,7 +224,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:121
+packages/client-ts/node_modules/ajv/dist/core.d.ts:125
 
 ## Methods
 
@@ -249,7 +249,7 @@ packages/client-ts/node_modules/ajv/dist/core.d.ts:121
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:159
+packages/client-ts/node_modules/ajv/dist/core.d.ts:163
 
 ___
 
@@ -295,7 +295,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:161
+packages/client-ts/node_modules/ajv/dist/core.d.ts:165
 
 ___
 
@@ -338,7 +338,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:156
+packages/client-ts/node_modules/ajv/dist/core.d.ts:160
 
 ___
 
@@ -363,7 +363,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:153
+packages/client-ts/node_modules/ajv/dist/core.d.ts:157
 
 ___
 
@@ -389,7 +389,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:147
+packages/client-ts/node_modules/ajv/dist/core.d.ts:151
 
 ___
 
@@ -416,7 +416,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:143
+packages/client-ts/node_modules/ajv/dist/core.d.ts:147
 
 ___
 
@@ -440,7 +440,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:152
+packages/client-ts/node_modules/ajv/dist/core.d.ts:156
 
 ___
 
@@ -471,7 +471,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:134
+packages/client-ts/node_modules/ajv/dist/core.d.ts:138
 
 ▸ **compile**<`T`\>(`schema`, `_meta?`): [`ValidateFunction`](../interfaces/verida_web_helpers._internal_.ValidateFunction.md)<`T`\>
 
@@ -498,7 +498,7 @@ packages/client-ts/node_modules/ajv/dist/core.d.ts:134
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:135
+packages/client-ts/node_modules/ajv/dist/core.d.ts:139
 
 ▸ **compile**<`N`, `T`\>(`schema`, `_meta?`): [`ValidateFunction`](../interfaces/verida_web_helpers._internal_.ValidateFunction.md)<[`JTDDataType`](../modules/verida_web_helpers._internal_.md#jtddatatype)<`T`\>\>
 
@@ -526,7 +526,7 @@ packages/client-ts/node_modules/ajv/dist/core.d.ts:135
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:136
+packages/client-ts/node_modules/ajv/dist/core.d.ts:140
 
 ▸ **compile**<`T`\>(`schema`, `_meta?`): [`AsyncValidateFunction`](../interfaces/verida_web_helpers._internal_.AsyncValidateFunction.md)<`T`\>
 
@@ -553,7 +553,7 @@ packages/client-ts/node_modules/ajv/dist/core.d.ts:136
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:137
+packages/client-ts/node_modules/ajv/dist/core.d.ts:141
 
 ▸ **compile**<`T`\>(`schema`, `_meta?`): [`AnyValidateFunction`](../modules/verida_web_helpers._internal_.md#anyvalidatefunction)<`T`\>
 
@@ -580,7 +580,7 @@ packages/client-ts/node_modules/ajv/dist/core.d.ts:137
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:138
+packages/client-ts/node_modules/ajv/dist/core.d.ts:142
 
 ___
 
@@ -611,7 +611,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:139
+packages/client-ts/node_modules/ajv/dist/core.d.ts:143
 
 ▸ **compileAsync**<`T`\>(`schema`, `_meta?`): `Promise`<[`ValidateFunction`](../interfaces/verida_web_helpers._internal_.ValidateFunction.md)<`T`\>\>
 
@@ -638,7 +638,7 @@ packages/client-ts/node_modules/ajv/dist/core.d.ts:139
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:140
+packages/client-ts/node_modules/ajv/dist/core.d.ts:144
 
 ▸ **compileAsync**<`T`\>(`schema`, `meta?`): `Promise`<[`AsyncValidateFunction`](../interfaces/verida_web_helpers._internal_.AsyncValidateFunction.md)<`T`\>\>
 
@@ -665,7 +665,7 @@ packages/client-ts/node_modules/ajv/dist/core.d.ts:140
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:141
+packages/client-ts/node_modules/ajv/dist/core.d.ts:145
 
 ▸ **compileAsync**<`T`\>(`schema`, `meta?`): `Promise`<[`AnyValidateFunction`](../modules/verida_web_helpers._internal_.md#anyvalidatefunction)<`T`\>\>
 
@@ -692,7 +692,7 @@ packages/client-ts/node_modules/ajv/dist/core.d.ts:141
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:142
+packages/client-ts/node_modules/ajv/dist/core.d.ts:146
 
 ___
 
@@ -735,7 +735,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:157
+packages/client-ts/node_modules/ajv/dist/core.d.ts:161
 
 ___
 
@@ -759,7 +759,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:154
+packages/client-ts/node_modules/ajv/dist/core.d.ts:158
 
 ___
 
@@ -789,7 +789,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:150
+packages/client-ts/node_modules/ajv/dist/core.d.ts:154
 
 ___
 
@@ -813,7 +813,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:155
+packages/client-ts/node_modules/ajv/dist/core.d.ts:159
 
 ___
 
@@ -837,7 +837,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:151
+packages/client-ts/node_modules/ajv/dist/core.d.ts:155
 
 ___
 
@@ -862,7 +862,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:127
+packages/client-ts/node_modules/ajv/dist/core.d.ts:131
 
 ▸ **validate**(`schemaKeyRef`, `data`): `boolean` \| `Promise`<`unknown`\>
 
@@ -883,7 +883,7 @@ packages/client-ts/node_modules/ajv/dist/core.d.ts:127
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:128
+packages/client-ts/node_modules/ajv/dist/core.d.ts:132
 
 ▸ **validate**<`T`\>(`schema`, `data`): data is T
 
@@ -910,7 +910,7 @@ data is T
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:129
+packages/client-ts/node_modules/ajv/dist/core.d.ts:133
 
 ▸ **validate**<`T`\>(`schema`, `data`): data is T
 
@@ -937,7 +937,7 @@ data is T
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:130
+packages/client-ts/node_modules/ajv/dist/core.d.ts:134
 
 ▸ **validate**<`N`, `T`\>(`schema`, `data`): data is JTDDataType<T\>
 
@@ -965,7 +965,7 @@ data is JTDDataType<T\>
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:131
+packages/client-ts/node_modules/ajv/dist/core.d.ts:135
 
 ▸ **validate**<`T`\>(`schema`, `data`): `Promise`<`T`\>
 
@@ -992,7 +992,7 @@ packages/client-ts/node_modules/ajv/dist/core.d.ts:131
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:132
+packages/client-ts/node_modules/ajv/dist/core.d.ts:136
 
 ▸ **validate**<`T`\>(`schemaKeyRef`, `data`): data is T \| Promise<T\>
 
@@ -1019,7 +1019,7 @@ data is T \| Promise<T\>
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:133
+packages/client-ts/node_modules/ajv/dist/core.d.ts:137
 
 ___
 
@@ -1044,4 +1044,4 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:149
+packages/client-ts/node_modules/ajv/dist/core.d.ts:153

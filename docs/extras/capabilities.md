@@ -72,7 +72,7 @@ The major capabilities of the Verida developer platform are as follows:
     <td align="center">✅ </td>
     <td align="left">
         <ul>
-            <li><a href="/docs/extensions/verifiable-credentials">Documentation: Verifiable Credentials</a></li>
+            <li><a href="/docs/extensions/credentials/verifiable-credentials">Documentation: Verifiable Credentials</a></li>
             <li><a href="https://vault-examples.demos.verida.io/">Demo: Vault Example</a></li>
         </ul>
     </td>

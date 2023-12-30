@@ -62,6 +62,7 @@
 - [Transaction](../interfaces/verida_vda_name_client._internal_.Transaction.md)
 - [TransactionReceipt](../interfaces/verida_vda_name_client._internal_.TransactionReceipt.md)
 - [TransactionResponse](../interfaces/verida_vda_name_client._internal_.TransactionResponse.md)
+- [VdaClientConfig](../interfaces/verida_vda_name_client._internal_.VdaClientConfig.md)
 - [VdaTransactionResult](../interfaces/verida_vda_name_client._internal_.VdaTransactionResult.md)
 - [Web3ContractInfo](../interfaces/verida_vda_name_client._internal_.Web3ContractInfo.md)
 - [Web3GasConfiguration](../interfaces/verida_vda_name_client._internal_.Web3GasConfiguration.md)
@@ -84,6 +85,7 @@
 - [ContractFunction](verida_vda_name_client._internal_.md#contractfunction)
 - [ContractInterface](verida_vda_name_client._internal_.md#contractinterface)
 - [Deferrable](verida_vda_name_client._internal_.md#deferrable)
+- [EIP1559GasMode](verida_vda_name_client._internal_.md#eip1559gasmode)
 - [EventFilter](verida_vda_name_client._internal_.md#eventfilter)
 - [EventType](verida_vda_name_client._internal_.md#eventtype)
 - [FlatArray](verida_vda_name_client._internal_.md#flatarray)
@@ -267,6 +269,18 @@ node_modules/@ethersproject/properties/lib/index.d.ts:3
 
 ___
 
+### EIP1559GasMode
+
+Ƭ **EIP1559GasMode**: ``"safeLow"`` \| ``"standard"`` \| ``"fast"``
+
+EIP1559 Gas Configuration speed
+
+#### Defined in
+
+packages/types/dist/Web3Interfaces.d.ts:13
+
+___
+
 ### EventFilter
 
 Ƭ **EventFilter**: `Object`
@@ -425,7 +439,7 @@ ___
 
 #### Defined in
 
-packages/types/dist/Web3Interfaces.d.ts:40
+packages/types/dist/Web3Interfaces.d.ts:53
 
 ___
 

@@ -42,7 +42,7 @@
 
 #### Defined in
 
-[packages/client-ts/src/context/db-registry.ts:20](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/db-registry.ts#L20)
+[packages/client-ts/src/context/db-registry.ts:20](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/db-registry.ts#L20)
 
 ## Properties
 
@@ -52,7 +52,7 @@
 
 #### Defined in
 
-[packages/client-ts/src/context/db-registry.ts:17](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/db-registry.ts#L17)
+[packages/client-ts/src/context/db-registry.ts:17](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/db-registry.ts#L17)
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/db-registry.ts:18](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/db-registry.ts#L18)
+[packages/client-ts/src/context/db-registry.ts:18](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/db-registry.ts#L18)
 
 ## Methods
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/db-registry.ts:117](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/db-registry.ts#L117)
+[packages/client-ts/src/context/db-registry.ts:117](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/db-registry.ts#L117)
 
 ___
 
@@ -110,7 +110,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/db-registry.ts:97](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/db-registry.ts#L97)
+[packages/client-ts/src/context/db-registry.ts:97](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/db-registry.ts#L97)
 
 ___
 
@@ -135,7 +135,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/db-registry.ts:91](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/db-registry.ts#L91)
+[packages/client-ts/src/context/db-registry.ts:91](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/db-registry.ts#L91)
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/db-registry.ts:132](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/db-registry.ts#L132)
+[packages/client-ts/src/context/db-registry.ts:132](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/db-registry.ts#L132)
 
 ___
 
@@ -179,7 +179,7 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/db-registry.ts:79](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/db-registry.ts#L79)
+[packages/client-ts/src/context/db-registry.ts:79](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/db-registry.ts#L79)
 
 ___
 
@@ -204,4 +204,4 @@ ___
 
 #### Defined in
 
-[packages/client-ts/src/context/db-registry.ts:33](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/db-registry.ts#L33)
+[packages/client-ts/src/context/db-registry.ts:33](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/db-registry.ts#L33)

@@ -36,7 +36,7 @@
 
 #### Defined in
 
-[packages/vda-did-resolver/src/resolver.ts:32](https://github.com/verida/verida-js/blob/032961c/packages/vda-did-resolver/src/resolver.ts#L32)
+[packages/vda-did-resolver/src/resolver.ts:32](https://github.com/verida/verida-js/blob/5040472/packages/vda-did-resolver/src/resolver.ts#L32)
 
 ## Properties
 
@@ -46,7 +46,7 @@
 
 #### Defined in
 
-[packages/vda-did-resolver/src/resolver.ts:30](https://github.com/verida/verida-js/blob/032961c/packages/vda-did-resolver/src/resolver.ts#L30)
+[packages/vda-did-resolver/src/resolver.ts:30](https://github.com/verida/verida-js/blob/5040472/packages/vda-did-resolver/src/resolver.ts#L30)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[packages/vda-did-resolver/src/resolver.ts:29](https://github.com/verida/verida-js/blob/032961c/packages/vda-did-resolver/src/resolver.ts#L29)
+[packages/vda-did-resolver/src/resolver.ts:29](https://github.com/verida/verida-js/blob/5040472/packages/vda-did-resolver/src/resolver.ts#L29)
 
 ## Methods
 
@@ -86,7 +86,7 @@ Supports query parameters:
 
 #### Defined in
 
-[packages/vda-did-resolver/src/resolver.ts:83](https://github.com/verida/verida-js/blob/032961c/packages/vda-did-resolver/src/resolver.ts#L83)
+[packages/vda-did-resolver/src/resolver.ts:83](https://github.com/verida/verida-js/blob/5040472/packages/vda-did-resolver/src/resolver.ts#L83)
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 #### Defined in
 
-[packages/vda-did-resolver/src/resolver.ts:143](https://github.com/verida/verida-js/blob/032961c/packages/vda-did-resolver/src/resolver.ts#L143)
+[packages/vda-did-resolver/src/resolver.ts:143](https://github.com/verida/verida-js/blob/5040472/packages/vda-did-resolver/src/resolver.ts#L143)
 
 ___
 
@@ -122,7 +122,7 @@ Fetch the latest DIDDocument stored at each endpoint
 
 #### Defined in
 
-[packages/vda-did-resolver/src/resolver.ts:119](https://github.com/verida/verida-js/blob/032961c/packages/vda-did-resolver/src/resolver.ts#L119)
+[packages/vda-did-resolver/src/resolver.ts:119](https://github.com/verida/verida-js/blob/5040472/packages/vda-did-resolver/src/resolver.ts#L119)
 
 ___
 
@@ -147,4 +147,4 @@ Resolve a DIDDocument from a DID
 
 #### Defined in
 
-[packages/vda-did-resolver/src/resolver.ts:37](https://github.com/verida/verida-js/blob/032961c/packages/vda-did-resolver/src/resolver.ts#L37)
+[packages/vda-did-resolver/src/resolver.ts:37](https://github.com/verida/verida-js/blob/5040472/packages/vda-did-resolver/src/resolver.ts#L37)

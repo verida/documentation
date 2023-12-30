@@ -27,7 +27,7 @@
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/types/index.d.ts:20
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:21
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/types/index.d.ts:8
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:9
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/types/index.d.ts:9
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:10
 
 ___
 
@@ -69,4 +69,4 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/types/index.d.ts:7
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:8

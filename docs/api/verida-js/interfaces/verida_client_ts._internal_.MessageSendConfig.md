@@ -23,7 +23,7 @@ Interface for any MessageSendConfig
 
 #### Defined in
 
-packages/types/dist/ContextInterfaces.d.ts:120
+packages/types/dist/ContextInterfaces.d.ts:124
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 #### Defined in
 
-packages/types/dist/ContextInterfaces.d.ts:121
+packages/types/dist/ContextInterfaces.d.ts:125
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 #### Defined in
 
-packages/types/dist/ContextInterfaces.d.ts:123
+packages/types/dist/ContextInterfaces.d.ts:127
 
 ___
 
@@ -53,4 +53,4 @@ ___
 
 #### Defined in
 
-packages/types/dist/ContextInterfaces.d.ts:122
+packages/types/dist/ContextInterfaces.d.ts:126

@@ -15,9 +15,11 @@
 ### Properties
 
 - [es5](verida_client_ts._internal_.InstanceCodeOptions.md#es5)
+- [esm](verida_client_ts._internal_.InstanceCodeOptions.md#esm)
 - [formats](verida_client_ts._internal_.InstanceCodeOptions.md#formats)
 - [lines](verida_client_ts._internal_.InstanceCodeOptions.md#lines)
 - [optimize](verida_client_ts._internal_.InstanceCodeOptions.md#optimize)
+- [regExp](verida_client_ts._internal_.InstanceCodeOptions.md#regexp)
 - [source](verida_client_ts._internal_.InstanceCodeOptions.md#source)
 
 ### Methods
@@ -36,7 +38,21 @@
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:73
+packages/client-ts/node_modules/ajv/dist/core.d.ts:74
+
+___
+
+### esm
+
+• `Optional` **esm**: `boolean`
+
+#### Inherited from
+
+[CodeOptions](verida_client_ts._internal_.CodeOptions.md).[esm](verida_client_ts._internal_.CodeOptions.md#esm)
+
+#### Defined in
+
+packages/client-ts/node_modules/ajv/dist/core.d.ts:75
 
 ___
 
@@ -50,7 +66,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:76
+packages/client-ts/node_modules/ajv/dist/core.d.ts:78
 
 ___
 
@@ -64,7 +80,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:74
+packages/client-ts/node_modules/ajv/dist/core.d.ts:76
 
 ___
 
@@ -78,7 +94,21 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:81
+packages/client-ts/node_modules/ajv/dist/core.d.ts:85
+
+___
+
+### regExp
+
+• **regExp**: [`RegExpEngine`](verida_client_ts._internal_.RegExpEngine.md)
+
+#### Overrides
+
+[CodeOptions](verida_client_ts._internal_.CodeOptions.md).[regExp](verida_client_ts._internal_.CodeOptions.md#regexp)
+
+#### Defined in
+
+packages/client-ts/node_modules/ajv/dist/core.d.ts:84
 
 ___
 
@@ -92,7 +122,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:77
+packages/client-ts/node_modules/ajv/dist/core.d.ts:79
 
 ## Methods
 
@@ -117,4 +147,4 @@ packages/client-ts/node_modules/ajv/dist/core.d.ts:77
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:78
+packages/client-ts/node_modules/ajv/dist/core.d.ts:80

@@ -63,13 +63,13 @@ ___
 
 ### close
 
-▸ **close**(`options`): `Promise`<`void`\>
+▸ **close**(`options?`): `Promise`<`void`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `options` | [`DatabaseCloseOptions`](verida_client_ts._internal_.DatabaseCloseOptions.md) |
+| `options?` | [`DatabaseCloseOptions`](verida_client_ts._internal_.DatabaseCloseOptions.md) |
 
 #### Returns
 
@@ -172,14 +172,14 @@ ___
 
 ### getMany
 
-▸ **getMany**(`customFilter`, `options`): `Promise`<`object`[]\>
+▸ **getMany**(`customFilter?`, `options?`): `Promise`<`object`[]\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `customFilter` | `any` |
-| `options` | `any` |
+| `customFilter?` | `any` |
+| `options?` | `any` |
 
 #### Returns
 
@@ -193,14 +193,14 @@ ___
 
 ### getOne
 
-▸ **getOne**(`customFilter`, `options`): `Promise`<`undefined` \| `object`\>
+▸ **getOne**(`customFilter?`, `options?`): `Promise`<`undefined` \| `object`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `customFilter` | `any` |
-| `options` | `any` |
+| `customFilter?` | `any` |
+| `options?` | `any` |
 
 #### Returns
 

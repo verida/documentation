@@ -28,7 +28,7 @@
 
 #### Defined in
 
-[packages/vda-common-test/src/const.ts:9](https://github.com/verida/verida-js/blob/032961c/packages/vda-common-test/src/const.ts#L9)
+[packages/vda-common-test/src/const.ts:9](https://github.com/verida/verida-js/blob/5040472/packages/vda-common-test/src/const.ts#L9)
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 #### Defined in
 
-[packages/vda-common-test/src/const.ts:43](https://github.com/verida/verida-js/blob/032961c/packages/vda-common-test/src/const.ts#L43)
+[packages/vda-common-test/src/const.ts:43](https://github.com/verida/verida-js/blob/5040472/packages/vda-common-test/src/const.ts#L43)
 
 ___
 
@@ -56,17 +56,17 @@ ___
 
 #### Defined in
 
-[packages/vda-common-test/src/const.ts:37](https://github.com/verida/verida-js/blob/032961c/packages/vda-common-test/src/const.ts#L37)
+[packages/vda-common-test/src/const.ts:37](https://github.com/verida/verida-js/blob/5040472/packages/vda-common-test/src/const.ts#L37)
 
 ___
 
 ### ZERO\_ADDRESS
 
-• `Const` **ZERO\_ADDRESS**: `string` = `ethers.ZeroAddress`
+• `Const` **ZERO\_ADDRESS**: ``"0x0000000000000000000000000000000000000000"``
 
 #### Defined in
 
-[packages/vda-common-test/src/const.ts:49](https://github.com/verida/verida-js/blob/032961c/packages/vda-common-test/src/const.ts#L49)
+[packages/vda-common-test/src/const.ts:49](https://github.com/verida/verida-js/blob/5040472/packages/vda-common-test/src/const.ts#L49)
 
 ## Functions
 
@@ -91,7 +91,7 @@ ___
 
 #### Defined in
 
-[packages/vda-common-test/src/utils.ts:9](https://github.com/verida/verida-js/blob/032961c/packages/vda-common-test/src/utils.ts#L9)
+[packages/vda-common-test/src/utils.ts:9](https://github.com/verida/verida-js/blob/5040472/packages/vda-common-test/src/utils.ts#L9)
 
 ___
 
@@ -111,4 +111,4 @@ ___
 
 #### Defined in
 
-[packages/vda-common-test/src/utils.ts:3](https://github.com/verida/verida-js/blob/032961c/packages/vda-common-test/src/utils.ts#L3)
+[packages/vda-common-test/src/utils.ts:3](https://github.com/verida/verida-js/blob/5040472/packages/vda-common-test/src/utils.ts#L3)

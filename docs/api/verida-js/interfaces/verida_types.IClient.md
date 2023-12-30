@@ -35,7 +35,7 @@
 
 #### Defined in
 
-[packages/types/src/IClient.ts:8](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IClient.ts#L8)
+[packages/types/src/IClient.ts:8](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IClient.ts#L8)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IClient.ts:19](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IClient.ts#L19)
+[packages/types/src/IClient.ts:19](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IClient.ts#L19)
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IClient.ts:36](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IClient.ts#L36)
+[packages/types/src/IClient.ts:36](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IClient.ts#L36)
 
 ___
 
@@ -97,7 +97,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IClient.ts:31](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IClient.ts#L31)
+[packages/types/src/IClient.ts:31](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IClient.ts#L31)
 
 ___
 
@@ -111,7 +111,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IClient.ts:10](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IClient.ts#L10)
+[packages/types/src/IClient.ts:10](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IClient.ts#L10)
 
 ___
 
@@ -132,7 +132,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IClient.ts:12](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IClient.ts#L12)
+[packages/types/src/IClient.ts:12](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IClient.ts#L12)
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IClient.ts:17](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IClient.ts#L17)
+[packages/types/src/IClient.ts:17](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IClient.ts#L17)
 
 ___
 
@@ -176,4 +176,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/IClient.ts:24](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IClient.ts#L24)
+[packages/types/src/IClient.ts:24](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IClient.ts#L24)

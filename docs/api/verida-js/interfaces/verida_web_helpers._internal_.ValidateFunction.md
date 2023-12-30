@@ -35,7 +35,7 @@ data is T
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/types/index.d.ts:46
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:47
 
 ## Table of contents
 
@@ -55,7 +55,7 @@ packages/client-ts/node_modules/ajv/dist/types/index.d.ts:46
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/types/index.d.ts:47
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:48
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/types/index.d.ts:48
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:49
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/types/index.d.ts:49
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:50
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/types/index.d.ts:50
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:51
 
 ___
 
@@ -95,4 +95,4 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/types/index.d.ts:51
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:52

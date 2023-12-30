@@ -34,4 +34,4 @@ Configuration type for gasless post
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:61](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L61)
+[packages/types/src/Web3Interfaces.ts:75](https://github.com/verida/verida-js/blob/5040472/packages/types/src/Web3Interfaces.ts#L75)

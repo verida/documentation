@@ -27,7 +27,7 @@ Interface for DbRegistryEntry
 
 #### Defined in
 
-packages/types/dist/ContextInterfaces.d.ts:155
+packages/types/dist/ContextInterfaces.d.ts:159
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 #### Defined in
 
-packages/types/dist/ContextInterfaces.d.ts:151
+packages/types/dist/ContextInterfaces.d.ts:155
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 #### Defined in
 
-packages/types/dist/ContextInterfaces.d.ts:152
+packages/types/dist/ContextInterfaces.d.ts:156
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 #### Defined in
 
-packages/types/dist/ContextInterfaces.d.ts:154
+packages/types/dist/ContextInterfaces.d.ts:158
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 #### Defined in
 
-packages/types/dist/ContextInterfaces.d.ts:157
+packages/types/dist/ContextInterfaces.d.ts:161
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 #### Defined in
 
-packages/types/dist/ContextInterfaces.d.ts:158
+packages/types/dist/ContextInterfaces.d.ts:162
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 #### Defined in
 
-packages/types/dist/ContextInterfaces.d.ts:153
+packages/types/dist/ContextInterfaces.d.ts:157
 
 ___
 
@@ -97,4 +97,4 @@ ___
 
 #### Defined in
 
-packages/types/dist/ContextInterfaces.d.ts:156
+packages/types/dist/ContextInterfaces.d.ts:160

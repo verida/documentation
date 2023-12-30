@@ -19,7 +19,7 @@
 
 #### Defined in
 
-packages/types/dist/Web3Interfaces.d.ts:106
+packages/types/dist/Web3Interfaces.d.ts:119
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 #### Defined in
 
-packages/types/dist/Web3Interfaces.d.ts:107
+packages/types/dist/Web3Interfaces.d.ts:120

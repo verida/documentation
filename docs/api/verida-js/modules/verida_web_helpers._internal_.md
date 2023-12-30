@@ -143,6 +143,8 @@
 - [OnceBlockable](../interfaces/verida_web_helpers._internal_.OnceBlockable.md)
 - [PromiseLike](../interfaces/verida_web_helpers._internal_.PromiseLike.md)
 - [ProofInterface](../interfaces/verida_web_helpers._internal_.ProofInterface.md)
+- [RegExpEngine](../interfaces/verida_web_helpers._internal_.RegExpEngine.md)
+- [RegExpLike](../interfaces/verida_web_helpers._internal_.RegExpLike.md)
 - [Rule](../interfaces/verida_web_helpers._internal_.Rule.md)
 - [RuleGroup](../interfaces/verida_web_helpers._internal_.RuleGroup.md)
 - [SchemaCxt](../interfaces/verida_web_helpers._internal_.SchemaCxt.md)
@@ -165,6 +167,8 @@
 - [Transaction](../interfaces/verida_web_helpers._internal_.Transaction.md)
 - [TransactionReceipt](../interfaces/verida_web_helpers._internal_.TransactionReceipt.md)
 - [TransactionResponse](../interfaces/verida_web_helpers._internal_.TransactionResponse.md)
+- [URIComponents](../interfaces/verida_web_helpers._internal_.URIComponents.md)
+- [UriResolver](../interfaces/verida_web_helpers._internal_.UriResolver.md)
 - [VSOptions](../interfaces/verida_web_helpers._internal_.VSOptions.md)
 - [ValidateFunction](../interfaces/verida_web_helpers._internal_.ValidateFunction.md)
 - [ValidationRules](../interfaces/verida_web_helpers._internal_.ValidationRules.md)
@@ -212,6 +216,7 @@
 - [FormatValidator](verida_web_helpers._internal_.md#formatvalidator)
 - [InstanceOptions](verida_web_helpers._internal_.md#instanceoptions)
 - [IsElements](verida_web_helpers._internal_.md#iselements)
+- [IsEmptyRecord](verida_web_helpers._internal_.md#isemptyrecord)
 - [IsEnum](verida_web_helpers._internal_.md#isenum)
 - [IsRecord](verida_web_helpers._internal_.md#isrecord)
 - [IsUnion](verida_web_helpers._internal_.md#isunion)
@@ -303,7 +308,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/types/index.d.ts:168
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:169
 
 ___
 
@@ -313,7 +318,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/types/index.d.ts:127
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:128
 
 ___
 
@@ -323,7 +328,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/types/index.d.ts:24
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:25
 
 ___
 
@@ -333,7 +338,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/types/index.d.ts:22
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:23
 
 ___
 
@@ -349,7 +354,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/types/index.d.ts:72
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:73
 
 ___
 
@@ -379,7 +384,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/types/index.d.ts:155
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:156
 
 ___
 
@@ -475,7 +480,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/types/index.d.ts:105
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:106
 
 ___
 
@@ -533,7 +538,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/types/index.d.ts:61
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:62
 
 ___
 
@@ -543,7 +548,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/types/index.d.ts:58
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:59
 
 ___
 
@@ -594,7 +599,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/types/index.d.ts:169
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:170
 
 ___
 
@@ -625,7 +630,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/types/index.d.ts:154
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:155
 
 ___
 
@@ -655,7 +660,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/types/index.d.ts:153
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:154
 
 ___
 
@@ -665,7 +670,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:96
+packages/client-ts/node_modules/ajv/dist/core.d.ts:100
 
 ___
 
@@ -687,9 +692,27 @@ packages/client-ts/node_modules/ajv/dist/types/jtd-schema.d.ts:53
 
 ___
 
+### IsEmptyRecord
+
+Ƭ **IsEmptyRecord**<`T`\>: [`T`] extends [[`Record`](verida_web_helpers._internal_.md#record)<`string`, `never`\>] ? [`T`] extends [`never`] ? ``false`` : ``true`` : ``false``
+
+true if type represents an empty record
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `T` |
+
+#### Defined in
+
+packages/client-ts/node_modules/ajv/dist/types/jtd-schema.d.ts:59
+
+___
+
 ### IsEnum
 
-Ƭ **IsEnum**<`T`\>: ``null`` extends [`EnumString`](verida_web_helpers._internal_.md#enumstring)<[`Exclude`](verida_web_helpers._internal_.md#exclude)<`T`, ``null``\>\> ? ``false`` : ``true``
+Ƭ **IsEnum**<`T`\>: ``null`` extends [`EnumString`](verida_web_helpers._internal_.md#enumstring)<`T`\> ? ``false`` : ``true``
 
 true if type is a union of string literals
 
@@ -707,9 +730,9 @@ ___
 
 ### IsRecord
 
-Ƭ **IsRecord**<`T`, `Union`\>: `Union` extends [`IsUnion`](verida_web_helpers._internal_.md#isunion)<[`Exclude`](verida_web_helpers._internal_.md#exclude)<`T`, ``null``\>\> ? ``null`` extends [`EnumString`](verida_web_helpers._internal_.md#enumstring)<keyof [`Exclude`](verida_web_helpers._internal_.md#exclude)<`T`, ``null``\>\> ? ``false`` : ``true`` : ``false``
+Ƭ **IsRecord**<`T`, `Union`\>: `Union` extends [`IsUnion`](verida_web_helpers._internal_.md#isunion)<`T`\> ? ``null`` extends [`EnumString`](verida_web_helpers._internal_.md#enumstring)<keyof `T`\> ? ``false`` : ``true`` : ``false``
 
-true if type is a proeprties type and Union is false, or type is a discriminator type and Union is true
+true if type is a properties type and Union is false, or type is a discriminator type and Union is true
 
 #### Type parameters
 
@@ -761,7 +784,7 @@ ___
 
 ### IsValues
 
-Ƭ **IsValues**<`T`\>: ``false`` extends [`IsUnion`](verida_web_helpers._internal_.md#isunion)<[`Exclude`](verida_web_helpers._internal_.md#exclude)<`T`, ``null``\>\> ? [`TypeEquality`](verida_web_helpers._internal_.md#typeequality)<keyof [`Exclude`](verida_web_helpers._internal_.md#exclude)<`T`, ``null``\>, `string`\> : ``false``
+Ƭ **IsValues**<`T`\>: ``false`` extends [`IsUnion`](verida_web_helpers._internal_.md#isunion)<`T`\> ? [`TypeEquality`](verida_web_helpers._internal_.md#typeequality)<keyof `T`, `string`\> : ``false``
 
 true if the the type is a values type
 
@@ -834,7 +857,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/types/jtd-schema.d.ts:121
+packages/client-ts/node_modules/ajv/dist/types/jtd-schema.d.ts:126
 
 ___
 
@@ -850,13 +873,13 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/types/jtd-schema.d.ts:165
+packages/client-ts/node_modules/ajv/dist/types/jtd-schema.d.ts:171
 
 ___
 
 ### JTDSchemaType
 
-Ƭ **JTDSchemaType**<`T`, `D`\>: ``null`` extends [`EnumString`](verida_web_helpers._internal_.md#enumstring)<keyof `D`\> ? `never` : { [K in keyof D]: [T] extends [D[K]] ? Object : never }[keyof `D`] & { `nullable?`: ``false``  } \| ``null`` extends `T` ? { [K in keyof D]: [Exclude<T, null\>] extends [Exclude<D[K], null\>] ? Object : never }[keyof `D`] & { `nullable`: ``true``  } : `never` \| `unknown` extends `T` ? { `nullable?`: `boolean`  } : `never` \| ``true`` extends [`NullTypeEquality`](verida_web_helpers._internal_.md#nulltypeequality)<`T`, `number`\> ? { `type`: [`NumberType`](verida_web_helpers._internal_.md#numbertype)  } : ``true`` extends [`NullTypeEquality`](verida_web_helpers._internal_.md#nulltypeequality)<`T`, `boolean`\> ? { `type`: ``"boolean"``  } : ``true`` extends [`NullTypeEquality`](verida_web_helpers._internal_.md#nulltypeequality)<`T`, `string`\> ? { `type`: [`StringType`](verida_web_helpers._internal_.md#stringtype)  } : ``true`` extends [`NullTypeEquality`](verida_web_helpers._internal_.md#nulltypeequality)<`T`, `Date`\> ? { `type`: ``"timestamp"``  } : ``true`` extends [`IsEnum`](verida_web_helpers._internal_.md#isenum)<`T`\> ? { `enum`: [`EnumString`](verida_web_helpers._internal_.md#enumstring)<[`Exclude`](verida_web_helpers._internal_.md#exclude)<`T`, ``null``\>\>[]  } : ``true`` extends [`IsElements`](verida_web_helpers._internal_.md#iselements)<[`Exclude`](verida_web_helpers._internal_.md#exclude)<`T`, ``null``\>\> ? `T` extends readonly infer E[] ? { `elements`: [`JTDSchemaType`](verida_web_helpers._internal_.md#jtdschematype)<`E`, `D`\>  } : `never` : ``true`` extends [`IsValues`](verida_web_helpers._internal_.md#isvalues)<`T`\> ? `T` extends [`Record`](verida_web_helpers._internal_.md#record)<`string`, infer V\> ? { `values`: [`JTDSchemaType`](verida_web_helpers._internal_.md#jtdschematype)<`V`, `D`\>  } : `never` : ``true`` extends [`IsRecord`](verida_web_helpers._internal_.md#isrecord)<`T`, ``false``\> ? [[`RequiredKeys`](verida_web_helpers._internal_.md#requiredkeys)<[`Exclude`](verida_web_helpers._internal_.md#exclude)<`T`, ``null``\>\>] extends [`never`] ? { `properties?`: [`Record`](verida_web_helpers._internal_.md#record)<`string`, `never`\>  } : { `properties`: { [K in RequiredKeys<T\>]: JTDSchemaType<T[K], D\> }  } & [[`OptionalKeys`](verida_web_helpers._internal_.md#optionalkeys)<[`Exclude`](verida_web_helpers._internal_.md#exclude)<`T`, ``null``\>\>] extends [`never`] ? { `optionalProperties?`: [`Record`](verida_web_helpers._internal_.md#record)<`string`, `never`\>  } : { `optionalProperties`: { [K in OptionalKeys<T\>]: JTDSchemaType<Exclude<T[K], undefined\>, D\> }  } & { `additionalProperties?`: `boolean`  } : ``true`` extends [`IsRecord`](verida_web_helpers._internal_.md#isrecord)<`T`, ``true``\> ? { [K in keyof Exclude<T, null\>]-?: Exclude<T, null\>[K] extends string ? Object : never }[keyof [`Exclude`](verida_web_helpers._internal_.md#exclude)<`T`, ``null``\>] : `never` & ``null`` extends `T` ? { `nullable`: ``true``  } : { `nullable?`: ``false``  } & { `definitions?`: { [K in keyof D]: JTDSchemaType<D[K], D\> } ; `metadata?`: [`Record`](verida_web_helpers._internal_.md#record)<`string`, `unknown`\>  }
+Ƭ **JTDSchemaType**<`T`, `D`\>: ``null`` extends [`EnumString`](verida_web_helpers._internal_.md#enumstring)<keyof `D`\> ? `never` : { [K in keyof D]: [T] extends [D[K]] ? Object : never }[keyof `D`] & { `nullable?`: ``false``  } \| ``null`` extends `T` ? { [K in keyof D]: [Exclude<T, null\>] extends [Exclude<D[K], null\>] ? Object : never }[keyof `D`] & { `nullable`: ``true``  } : `never` \| `unknown` extends `T` ? { `nullable?`: `boolean`  } : `never` \| ``true`` extends [`NullTypeEquality`](verida_web_helpers._internal_.md#nulltypeequality)<`T`, `number`\> ? { `type`: [`NumberType`](verida_web_helpers._internal_.md#numbertype)  } : ``true`` extends [`NullTypeEquality`](verida_web_helpers._internal_.md#nulltypeequality)<`T`, `boolean`\> ? { `type`: ``"boolean"``  } : ``true`` extends [`NullTypeEquality`](verida_web_helpers._internal_.md#nulltypeequality)<`T`, `string`\> ? { `type`: [`StringType`](verida_web_helpers._internal_.md#stringtype)  } : ``true`` extends [`NullTypeEquality`](verida_web_helpers._internal_.md#nulltypeequality)<`T`, `Date`\> ? { `type`: ``"timestamp"``  } : ``true`` extends [`IsEnum`](verida_web_helpers._internal_.md#isenum)<[`Exclude`](verida_web_helpers._internal_.md#exclude)<`T`, ``null``\>\> ? { `enum`: [`EnumString`](verida_web_helpers._internal_.md#enumstring)<[`Exclude`](verida_web_helpers._internal_.md#exclude)<`T`, ``null``\>\>[]  } : ``true`` extends [`IsElements`](verida_web_helpers._internal_.md#iselements)<[`Exclude`](verida_web_helpers._internal_.md#exclude)<`T`, ``null``\>\> ? `T` extends readonly infer E[] ? { `elements`: [`JTDSchemaType`](verida_web_helpers._internal_.md#jtdschematype)<`E`, `D`\>  } : `never` : ``true`` extends [`IsEmptyRecord`](verida_web_helpers._internal_.md#isemptyrecord)<[`Exclude`](verida_web_helpers._internal_.md#exclude)<`T`, ``null``\>\> ? { `optionalProperties?`: [`Record`](verida_web_helpers._internal_.md#record)<`string`, `never`\> ; `properties`: [`Record`](verida_web_helpers._internal_.md#record)<`string`, `never`\>  } \| { `optionalProperties`: [`Record`](verida_web_helpers._internal_.md#record)<`string`, `never`\>  } : ``true`` extends [`IsValues`](verida_web_helpers._internal_.md#isvalues)<[`Exclude`](verida_web_helpers._internal_.md#exclude)<`T`, ``null``\>\> ? `T` extends [`Record`](verida_web_helpers._internal_.md#record)<`string`, infer V\> ? { `values`: [`JTDSchemaType`](verida_web_helpers._internal_.md#jtdschematype)<`V`, `D`\>  } : `never` : ``true`` extends [`IsRecord`](verida_web_helpers._internal_.md#isrecord)<[`Exclude`](verida_web_helpers._internal_.md#exclude)<`T`, ``null``\>, ``false``\> ? [[`RequiredKeys`](verida_web_helpers._internal_.md#requiredkeys)<[`Exclude`](verida_web_helpers._internal_.md#exclude)<`T`, ``null``\>\>] extends [`never`] ? { `properties?`: [`Record`](verida_web_helpers._internal_.md#record)<`string`, `never`\>  } : { `properties`: { [K in RequiredKeys<T\>]: JTDSchemaType<T[K], D\> }  } & [[`OptionalKeys`](verida_web_helpers._internal_.md#optionalkeys)<[`Exclude`](verida_web_helpers._internal_.md#exclude)<`T`, ``null``\>\>] extends [`never`] ? { `optionalProperties?`: [`Record`](verida_web_helpers._internal_.md#record)<`string`, `never`\>  } : { `optionalProperties`: { [K in OptionalKeys<T\>]: JTDSchemaType<Exclude<T[K], undefined\>, D\> }  } & { `additionalProperties?`: `boolean`  } : ``true`` extends [`IsRecord`](verida_web_helpers._internal_.md#isrecord)<[`Exclude`](verida_web_helpers._internal_.md#exclude)<`T`, ``null``\>, ``true``\> ? { [K in keyof Exclude<T, null\>]-?: Exclude<T, null\>[K] extends string ? Object : never }[keyof [`Exclude`](verida_web_helpers._internal_.md#exclude)<`T`, ``null``\>] : `never` & ``null`` extends `T` ? { `nullable`: ``true``  } : { `nullable?`: ``false``  } & { `definitions?`: { [K in keyof D]: JTDSchemaType<D[K], D\> } ; `metadata?`: [`Record`](verida_web_helpers._internal_.md#record)<`string`, `unknown`\>  }
 
 actual schema
 
@@ -869,7 +892,7 @@ actual schema
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/types/jtd-schema.d.ts:59
+packages/client-ts/node_modules/ajv/dist/types/jtd-schema.d.ts:61
 
 ___
 
@@ -893,7 +916,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/types/index.d.ts:150
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:151
 
 ___
 
@@ -903,7 +926,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/types/index.d.ts:126
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:127
 
 ___
 
@@ -973,7 +996,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/types/index.d.ts:104
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:105
 
 ___
 
@@ -1035,7 +1058,7 @@ ___
 
 ### Nullable
 
-Ƭ **Nullable**<`T`\>: `undefined` extends `T` ? { `const?`: ``null`` ; `default?`: `T` \| ``null`` ; `enum?`: [`Readonly`](verida_web_helpers._internal_.md#readonly)<(`T` \| ``null``)[]\> ; `nullable`: ``true``  } : { `const?`: `T` ; `default?`: `T` ; `enum?`: [`Readonly`](verida_web_helpers._internal_.md#readonly)<`T`[]\>  }
+Ƭ **Nullable**<`T`\>: `undefined` extends `T` ? { `const?`: ``null`` ; `default?`: `T` \| ``null`` ; `enum?`: [`Readonly`](verida_web_helpers._internal_.md#readonly)<(`T` \| ``null``)[]\> ; `nullable`: ``true``  } : { `const?`: `T` ; `default?`: `T` ; `enum?`: [`Readonly`](verida_web_helpers._internal_.md#readonly)<`T`[]\> ; `nullable?`: ``false``  }
 
 #### Type parameters
 
@@ -1184,11 +1207,11 @@ ___
 
 ### RequiredInstanceOptions
 
-Ƭ **RequiredInstanceOptions**: { [K in "strictSchema" \| "strictNumbers" \| "strictTypes" \| "strictTuples" \| "strictRequired" \| "inlineRefs" \| "loopRequired" \| "loopEnum" \| "meta" \| "messages" \| "schemaId" \| "addUsedSchema" \| "validateSchema" \| "validateFormats" \| "int32range" \| "unicodeRegExp"]: NonNullable<Options[K]\> } & { `code`: [`InstanceCodeOptions`](../interfaces/verida_web_helpers._internal_.InstanceCodeOptions.md)  }
+Ƭ **RequiredInstanceOptions**: { [K in "strictSchema" \| "strictNumbers" \| "strictTypes" \| "strictTuples" \| "strictRequired" \| "inlineRefs" \| "loopRequired" \| "loopEnum" \| "meta" \| "messages" \| "schemaId" \| "addUsedSchema" \| "validateSchema" \| "validateFormats" \| "int32range" \| "unicodeRegExp" \| "uriResolver"]: NonNullable<Options[K]\> } & { `code`: [`InstanceCodeOptions`](../interfaces/verida_web_helpers._internal_.InstanceCodeOptions.md)  }
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/core.d.ts:91
+packages/client-ts/node_modules/ajv/dist/core.d.ts:95
 
 ___
 
@@ -1226,7 +1249,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/types/index.d.ts:23
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:24
 
 ___
 
@@ -1485,7 +1508,7 @@ ___
 
 #### Defined in
 
-packages/types/dist/Web3Interfaces.d.ts:100
+packages/types/dist/Web3Interfaces.d.ts:113
 
 ___
 
@@ -1495,7 +1518,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/node_modules/ajv/dist/types/index.d.ts:135
+packages/client-ts/node_modules/ajv/dist/types/index.d.ts:136
 
 ___
 

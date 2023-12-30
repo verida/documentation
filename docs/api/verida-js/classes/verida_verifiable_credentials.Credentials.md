@@ -48,7 +48,7 @@ DID-JWT's
 
 #### Defined in
 
-[packages/verifiable-credentials/src/credentials.ts:27](https://github.com/verida/verida-js/blob/032961c/packages/verifiable-credentials/src/credentials.ts#L27)
+[packages/verifiable-credentials/src/credentials.ts:27](https://github.com/verida/verida-js/blob/5040472/packages/verifiable-credentials/src/credentials.ts#L27)
 
 ## Methods
 
@@ -75,7 +75,7 @@ DID-JWT's
 
 #### Defined in
 
-[packages/verifiable-credentials/src/credentials.ts:319](https://github.com/verida/verida-js/blob/032961c/packages/verifiable-credentials/src/credentials.ts#L319)
+[packages/verifiable-credentials/src/credentials.ts:319](https://github.com/verida/verida-js/blob/5040472/packages/verifiable-credentials/src/credentials.ts#L319)
 
 ___
 
@@ -101,7 +101,7 @@ A string DID-JWT representation
 
 #### Defined in
 
-[packages/verifiable-credentials/src/credentials.ts:203](https://github.com/verida/verida-js/blob/032961c/packages/verifiable-credentials/src/credentials.ts#L203)
+[packages/verifiable-credentials/src/credentials.ts:203](https://github.com/verida/verida-js/blob/5040472/packages/verifiable-credentials/src/credentials.ts#L203)
 
 ___
 
@@ -125,7 +125,7 @@ Verifiable Credential Issuer
 
 #### Defined in
 
-[packages/verifiable-credentials/src/credentials.ts:168](https://github.com/verida/verida-js/blob/032961c/packages/verifiable-credentials/src/credentials.ts#L168)
+[packages/verifiable-credentials/src/credentials.ts:168](https://github.com/verida/verida-js/blob/5040472/packages/verifiable-credentials/src/credentials.ts#L168)
 
 ___
 
@@ -150,7 +150,7 @@ DID-JWT representation of the Verifiable Credential
 
 #### Defined in
 
-[packages/verifiable-credentials/src/credentials.ts:42](https://github.com/verida/verida-js/blob/032961c/packages/verifiable-credentials/src/credentials.ts#L42)
+[packages/verifiable-credentials/src/credentials.ts:42](https://github.com/verida/verida-js/blob/5040472/packages/verifiable-credentials/src/credentials.ts#L42)
 
 ___
 
@@ -176,7 +176,7 @@ credential datastore.
 
 #### Defined in
 
-[packages/verifiable-credentials/src/credentials.ts:61](https://github.com/verida/verida-js/blob/032961c/packages/verifiable-credentials/src/credentials.ts#L61)
+[packages/verifiable-credentials/src/credentials.ts:61](https://github.com/verida/verida-js/blob/5040472/packages/verifiable-credentials/src/credentials.ts#L61)
 
 ___
 
@@ -201,7 +201,7 @@ Credential DID-JWT's
 
 #### Defined in
 
-[packages/verifiable-credentials/src/credentials.ts:89](https://github.com/verida/verida-js/blob/032961c/packages/verifiable-credentials/src/credentials.ts#L89)
+[packages/verifiable-credentials/src/credentials.ts:89](https://github.com/verida/verida-js/blob/5040472/packages/verifiable-credentials/src/credentials.ts#L89)
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-[packages/verifiable-credentials/src/credentials.ts:181](https://github.com/verida/verida-js/blob/032961c/packages/verifiable-credentials/src/credentials.ts#L181)
+[packages/verifiable-credentials/src/credentials.ts:181](https://github.com/verida/verida-js/blob/5040472/packages/verifiable-credentials/src/credentials.ts#L181)
 
 ___
 
@@ -241,7 +241,7 @@ ___
 
 #### Defined in
 
-[packages/verifiable-credentials/src/credentials.ts:299](https://github.com/verida/verida-js/blob/032961c/packages/verifiable-credentials/src/credentials.ts#L299)
+[packages/verifiable-credentials/src/credentials.ts:299](https://github.com/verida/verida-js/blob/5040472/packages/verifiable-credentials/src/credentials.ts#L299)
 
 ___
 
@@ -255,7 +255,7 @@ ___
 
 #### Defined in
 
-[packages/verifiable-credentials/src/credentials.ts:295](https://github.com/verida/verida-js/blob/032961c/packages/verifiable-credentials/src/credentials.ts#L295)
+[packages/verifiable-credentials/src/credentials.ts:295](https://github.com/verida/verida-js/blob/5040472/packages/verifiable-credentials/src/credentials.ts#L295)
 
 ___
 
@@ -275,7 +275,7 @@ ___
 
 #### Defined in
 
-[packages/verifiable-credentials/src/credentials.ts:309](https://github.com/verida/verida-js/blob/032961c/packages/verifiable-credentials/src/credentials.ts#L309)
+[packages/verifiable-credentials/src/credentials.ts:309](https://github.com/verida/verida-js/blob/5040472/packages/verifiable-credentials/src/credentials.ts#L309)
 
 ___
 
@@ -299,7 +299,7 @@ Verify a Verifiable Credential DID-JWT
 
 #### Defined in
 
-[packages/verifiable-credentials/src/credentials.ts:127](https://github.com/verida/verida-js/blob/032961c/packages/verifiable-credentials/src/credentials.ts#L127)
+[packages/verifiable-credentials/src/credentials.ts:127](https://github.com/verida/verida-js/blob/5040472/packages/verifiable-credentials/src/credentials.ts#L127)
 
 ___
 
@@ -319,7 +319,7 @@ ___
 
 #### Defined in
 
-[packages/verifiable-credentials/src/credentials.ts:289](https://github.com/verida/verida-js/blob/032961c/packages/verifiable-credentials/src/credentials.ts#L289)
+[packages/verifiable-credentials/src/credentials.ts:289](https://github.com/verida/verida-js/blob/5040472/packages/verifiable-credentials/src/credentials.ts#L289)
 
 ___
 
@@ -342,4 +342,4 @@ Verify a Verifiable Presentation DID-JWT
 
 #### Defined in
 
-[packages/verifiable-credentials/src/credentials.ts:115](https://github.com/verida/verida-js/blob/032961c/packages/verifiable-credentials/src/credentials.ts#L115)
+[packages/verifiable-credentials/src/credentials.ts:115](https://github.com/verida/verida-js/blob/5040472/packages/verifiable-credentials/src/credentials.ts#L115)
