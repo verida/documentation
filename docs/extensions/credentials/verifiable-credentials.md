@@ -266,7 +266,7 @@ Returned `shareData` object:
 
 The `credential` object created by an issuer can be sent to a Verida Account via their Vault.
 
-See [Messaging](../client-sdk/messaging#sending-messages-outbox)
+See [Messaging](../../client-sdk/messaging#sending-messages-outbox)
 
 <!--
 @todo Add code example from the Vault Examples demo app
@@ -313,7 +313,7 @@ finclusive/individual-kyc-12345
 
 When the Verida SDK generates a credential, it will include a `proofs` attribute in the `payload` containing an array of signatures for each `veridaProof`.
 
-These proofs can then be verified on chain using the [Verida Personal Data Bridge](./personal-data-bridge)
+These proofs can then be verified on chain using the [Verida Personal Data Bridge](../personal-data-bridge)
 
 ## Credential Schemas
 
@@ -342,7 +342,7 @@ Credentials stored with the [credential schema](https://common.schemas.verida.io
 
 The Verida Wallet will automatically show the public profile icon of the Verida Account that signed the credential. You will need to set this icon for your Verida account so the icon displays correctly.
 
-You could add the signing Verida Account to the Verida Wallet and use the mobile app to set a profile avatar and name. This will then be the default for every inbox message and credential issued across the Verida network. Alternatively, you could manually set the profile information for the application context generating the credential. See [Account Profiles](../client-sdk/profiles) for more information on how to achieve this.
+You could add the signing Verida Account to the Verida Wallet and use the mobile app to set a profile avatar and name. This will then be the default for every inbox message and credential issued across the Verida network. Alternatively, you could manually set the profile information for the application context generating the credential. See [Account Profiles](../../client-sdk/profiles) for more information on how to achieve this.
 
 <!--
 @todo
