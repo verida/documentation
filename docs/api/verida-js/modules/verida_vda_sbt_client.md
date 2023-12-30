@@ -11,7 +11,3 @@
 ### Classes
 
 - [VeridaSBTClient](../classes/verida_vda_sbt_client.VeridaSBTClient.md)
-
-### Interfaces
-
-- [SBTClientConfig](../interfaces/verida_vda_sbt_client.SBTClientConfig.md)

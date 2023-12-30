@@ -23,7 +23,7 @@ Interface for any PermissionsConfig
 
 #### Defined in
 
-packages/types/dist/ContextInterfaces.d.ts:106
+packages/types/dist/ContextInterfaces.d.ts:110
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 #### Defined in
 
-packages/types/dist/ContextInterfaces.d.ts:108
+packages/types/dist/ContextInterfaces.d.ts:112
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 #### Defined in
 
-packages/types/dist/ContextInterfaces.d.ts:107
+packages/types/dist/ContextInterfaces.d.ts:111
 
 ___
 
@@ -53,4 +53,4 @@ ___
 
 #### Defined in
 
-packages/types/dist/ContextInterfaces.d.ts:109
+packages/types/dist/ContextInterfaces.d.ts:113

@@ -28,7 +28,7 @@ Interface for any DatastoreOpenConfig
 
 #### Defined in
 
-packages/types/dist/ContextInterfaces.d.ts:83
+packages/types/dist/ContextInterfaces.d.ts:87
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 #### Defined in
 
-packages/types/dist/ContextInterfaces.d.ts:81
+packages/types/dist/ContextInterfaces.d.ts:85
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 #### Defined in
 
-packages/types/dist/ContextInterfaces.d.ts:80
+packages/types/dist/ContextInterfaces.d.ts:84
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 #### Defined in
 
-packages/types/dist/ContextInterfaces.d.ts:76
+packages/types/dist/ContextInterfaces.d.ts:80
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-packages/types/dist/ContextInterfaces.d.ts:79
+packages/types/dist/ContextInterfaces.d.ts:83
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-packages/types/dist/ContextInterfaces.d.ts:82
+packages/types/dist/ContextInterfaces.d.ts:86
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 #### Defined in
 
-packages/types/dist/ContextInterfaces.d.ts:75
+packages/types/dist/ContextInterfaces.d.ts:79
 
 ___
 
@@ -98,7 +98,7 @@ ___
 
 #### Defined in
 
-packages/types/dist/ContextInterfaces.d.ts:78
+packages/types/dist/ContextInterfaces.d.ts:82
 
 ___
 
@@ -108,4 +108,4 @@ ___
 
 #### Defined in
 
-packages/types/dist/ContextInterfaces.d.ts:77
+packages/types/dist/ContextInterfaces.d.ts:81

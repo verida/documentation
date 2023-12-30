@@ -41,6 +41,7 @@
 - [listen](verida_web_helpers._internal_.Profile.md#listen)
 - [set](verida_web_helpers._internal_.Profile.md#set)
 - [setMany](verida_web_helpers._internal_.Profile.md#setmany)
+- [verifyWebsite](verida_web_helpers._internal_.Profile.md#verifywebsite)
 
 ## Constructors
 
@@ -110,7 +111,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/dist/context/profiles/profile.d.ts:86
+packages/client-ts/dist/context/profiles/profile.d.ts:87
 
 ___
 
@@ -120,7 +121,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/dist/context/profiles/profile.d.ts:88
+packages/client-ts/dist/context/profiles/profile.d.ts:89
 
 ___
 
@@ -150,7 +151,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/dist/context/profiles/profile.d.ts:87
+packages/client-ts/dist/context/profiles/profile.d.ts:88
 
 ___
 
@@ -353,3 +354,17 @@ Set many profile key / values at once
 #### Defined in
 
 packages/client-ts/dist/context/profiles/profile.d.ts:81
+
+___
+
+### verifyWebsite
+
+▸ **verifyWebsite**(): `Promise`<`boolean`\>
+
+#### Returns
+
+`Promise`<`boolean`\>
+
+#### Defined in
+
+packages/client-ts/dist/context/profiles/profile.d.ts:86

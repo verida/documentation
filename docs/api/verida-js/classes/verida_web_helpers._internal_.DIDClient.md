@@ -27,6 +27,7 @@
 
 - [authenticate](verida_web_helpers._internal_.DIDClient.md#authenticate)
 - [authenticated](verida_web_helpers._internal_.DIDClient.md#authenticated)
+- [destroy](verida_web_helpers._internal_.DIDClient.md#destroy)
 - [get](verida_web_helpers._internal_.DIDClient.md#get)
 - [getDid](verida_web_helpers._internal_.DIDClient.md#getdid)
 - [getLastEndpointErrors](verida_web_helpers._internal_.DIDClient.md#getlastendpointerrors)
@@ -159,6 +160,24 @@ packages/did-client/dist/did-client.d.ts:20
 
 ___
 
+### destroy
+
+▸ **destroy**(): `Promise`<[`VdaDidEndpointResponses`](../modules/verida_web_helpers._internal_.md#vdadidendpointresponses)\>
+
+Destroy this DID
+
+Note: This can not be reversed and is written to the blockchain
+
+#### Returns
+
+`Promise`<[`VdaDidEndpointResponses`](../modules/verida_web_helpers._internal_.md#vdadidendpointresponses)\>
+
+#### Defined in
+
+packages/did-client/dist/did-client.d.ts:28
+
+___
+
 ### get
 
 ▸ **get**(`did`): `Promise`<[`default`](verida_web_helpers._internal_.default-2.md)\>
@@ -183,7 +202,7 @@ DID Document instance
 
 #### Defined in
 
-packages/did-client/dist/did-client.d.ts:36
+packages/did-client/dist/did-client.d.ts:42
 
 ___
 
@@ -219,7 +238,7 @@ ___
 
 #### Defined in
 
-packages/did-client/dist/did-client.d.ts:30
+packages/did-client/dist/did-client.d.ts:36
 
 ___
 
@@ -283,4 +302,4 @@ true if success.
 
 #### Defined in
 
-packages/did-client/dist/did-client.d.ts:29
+packages/did-client/dist/did-client.d.ts:35

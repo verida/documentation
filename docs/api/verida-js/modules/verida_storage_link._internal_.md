@@ -331,7 +331,7 @@ ___
 
 #### Defined in
 
-packages/types/dist/Web3Interfaces.d.ts:100
+packages/types/dist/Web3Interfaces.d.ts:113
 
 ___
 

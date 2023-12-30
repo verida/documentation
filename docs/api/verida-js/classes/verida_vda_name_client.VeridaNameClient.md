@@ -39,21 +39,21 @@
 
 | Name | Type |
 | :------ | :------ |
-| `config` | [`NameClientConfig`](../interfaces/verida_vda_name_client.NameClientConfig.md) |
+| `config` | [`VdaClientConfig`](../interfaces/verida_vda_name_client._internal_.VdaClientConfig.md) |
 
 #### Defined in
 
-[packages/vda-name-client/src/blockchain/blockchainApi.ts:45](https://github.com/verida/verida-js/blob/032961c/packages/vda-name-client/src/blockchain/blockchainApi.ts#L45)
+[packages/vda-name-client/src/blockchain/blockchainApi.ts:24](https://github.com/verida/verida-js/blob/5040472/packages/vda-name-client/src/blockchain/blockchainApi.ts#L24)
 
 ## Properties
 
 ### config
 
-• `Private` **config**: [`NameClientConfig`](../interfaces/verida_vda_name_client.NameClientConfig.md)
+• `Private` **config**: [`VdaClientConfig`](../interfaces/verida_vda_name_client._internal_.VdaClientConfig.md)
 
 #### Defined in
 
-[packages/vda-name-client/src/blockchain/blockchainApi.ts:34](https://github.com/verida/verida-js/blob/032961c/packages/vda-name-client/src/blockchain/blockchainApi.ts#L34)
+[packages/vda-name-client/src/blockchain/blockchainApi.ts:13](https://github.com/verida/verida-js/blob/5040472/packages/vda-name-client/src/blockchain/blockchainApi.ts#L13)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[packages/vda-name-client/src/blockchain/blockchainApi.ts:41](https://github.com/verida/verida-js/blob/032961c/packages/vda-name-client/src/blockchain/blockchainApi.ts#L41)
+[packages/vda-name-client/src/blockchain/blockchainApi.ts:20](https://github.com/verida/verida-js/blob/5040472/packages/vda-name-client/src/blockchain/blockchainApi.ts#L20)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[packages/vda-name-client/src/blockchain/blockchainApi.ts:36](https://github.com/verida/verida-js/blob/032961c/packages/vda-name-client/src/blockchain/blockchainApi.ts#L36)
+[packages/vda-name-client/src/blockchain/blockchainApi.ts:15](https://github.com/verida/verida-js/blob/5040472/packages/vda-name-client/src/blockchain/blockchainApi.ts#L15)
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 #### Defined in
 
-[packages/vda-name-client/src/blockchain/blockchainApi.ts:35](https://github.com/verida/verida-js/blob/032961c/packages/vda-name-client/src/blockchain/blockchainApi.ts#L35)
+[packages/vda-name-client/src/blockchain/blockchainApi.ts:14](https://github.com/verida/verida-js/blob/5040472/packages/vda-name-client/src/blockchain/blockchainApi.ts#L14)
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 #### Defined in
 
-[packages/vda-name-client/src/blockchain/blockchainApi.ts:40](https://github.com/verida/verida-js/blob/032961c/packages/vda-name-client/src/blockchain/blockchainApi.ts#L40)
+[packages/vda-name-client/src/blockchain/blockchainApi.ts:19](https://github.com/verida/verida-js/blob/5040472/packages/vda-name-client/src/blockchain/blockchainApi.ts#L19)
 
 ___
 
@@ -103,7 +103,7 @@ ___
 
 #### Defined in
 
-[packages/vda-name-client/src/blockchain/blockchainApi.ts:43](https://github.com/verida/verida-js/blob/032961c/packages/vda-name-client/src/blockchain/blockchainApi.ts#L43)
+[packages/vda-name-client/src/blockchain/blockchainApi.ts:22](https://github.com/verida/verida-js/blob/5040472/packages/vda-name-client/src/blockchain/blockchainApi.ts#L22)
 
 ___
 
@@ -113,7 +113,7 @@ ___
 
 #### Defined in
 
-[packages/vda-name-client/src/blockchain/blockchainApi.ts:38](https://github.com/verida/verida-js/blob/032961c/packages/vda-name-client/src/blockchain/blockchainApi.ts#L38)
+[packages/vda-name-client/src/blockchain/blockchainApi.ts:17](https://github.com/verida/verida-js/blob/5040472/packages/vda-name-client/src/blockchain/blockchainApi.ts#L17)
 
 ## Methods
 
@@ -137,7 +137,7 @@ DID address
 
 #### Defined in
 
-[packages/vda-name-client/src/blockchain/blockchainApi.ts:217](https://github.com/verida/verida-js/blob/032961c/packages/vda-name-client/src/blockchain/blockchainApi.ts#L217)
+[packages/vda-name-client/src/blockchain/blockchainApi.ts:196](https://github.com/verida/verida-js/blob/5040472/packages/vda-name-client/src/blockchain/blockchainApi.ts#L196)
 
 ___
 
@@ -163,7 +163,7 @@ Signature
 
 #### Defined in
 
-[packages/vda-name-client/src/blockchain/blockchainApi.ts:108](https://github.com/verida/verida-js/blob/032961c/packages/vda-name-client/src/blockchain/blockchainApi.ts#L108)
+[packages/vda-name-client/src/blockchain/blockchainApi.ts:87](https://github.com/verida/verida-js/blob/5040472/packages/vda-name-client/src/blockchain/blockchainApi.ts#L87)
 
 ___
 
@@ -187,7 +187,7 @@ username list
 
 #### Defined in
 
-[packages/vda-name-client/src/blockchain/blockchainApi.ts:169](https://github.com/verida/verida-js/blob/032961c/packages/vda-name-client/src/blockchain/blockchainApi.ts#L169)
+[packages/vda-name-client/src/blockchain/blockchainApi.ts:148](https://github.com/verida/verida-js/blob/5040472/packages/vda-name-client/src/blockchain/blockchainApi.ts#L148)
 
 ___
 
@@ -205,7 +205,7 @@ nonce of DID
 
 #### Defined in
 
-[packages/vda-name-client/src/blockchain/blockchainApi.ts:89](https://github.com/verida/verida-js/blob/032961c/packages/vda-name-client/src/blockchain/blockchainApi.ts#L89)
+[packages/vda-name-client/src/blockchain/blockchainApi.ts:68](https://github.com/verida/verida-js/blob/5040472/packages/vda-name-client/src/blockchain/blockchainApi.ts#L68)
 
 ___
 
@@ -227,7 +227,7 @@ Register a username to the did address
 
 #### Defined in
 
-[packages/vda-name-client/src/blockchain/blockchainApi.ts:121](https://github.com/verida/verida-js/blob/032961c/packages/vda-name-client/src/blockchain/blockchainApi.ts#L121)
+[packages/vda-name-client/src/blockchain/blockchainApi.ts:100](https://github.com/verida/verida-js/blob/5040472/packages/vda-name-client/src/blockchain/blockchainApi.ts#L100)
 
 ___
 
@@ -249,4 +249,4 @@ Unregister a username from the did address
 
 #### Defined in
 
-[packages/vda-name-client/src/blockchain/blockchainApi.ts:146](https://github.com/verida/verida-js/blob/032961c/packages/vda-name-client/src/blockchain/blockchainApi.ts#L146)
+[packages/vda-name-client/src/blockchain/blockchainApi.ts:125](https://github.com/verida/verida-js/blob/5040472/packages/vda-name-client/src/blockchain/blockchainApi.ts#L125)

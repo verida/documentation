@@ -25,7 +25,7 @@
 
 #### Defined in
 
-[packages/account-node/src/nodeSelector.ts:13](https://github.com/verida/verida-js/blob/032961c/packages/account-node/src/nodeSelector.ts#L13)
+[packages/account-node/src/nodeSelector.ts:13](https://github.com/verida/verida-js/blob/5040472/packages/account-node/src/nodeSelector.ts#L13)
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 #### Defined in
 
-[packages/account-node/src/nodeSelector.ts:10](https://github.com/verida/verida-js/blob/032961c/packages/account-node/src/nodeSelector.ts#L10)
+[packages/account-node/src/nodeSelector.ts:10](https://github.com/verida/verida-js/blob/5040472/packages/account-node/src/nodeSelector.ts#L10)
 
 ___
 
@@ -45,7 +45,7 @@ ___
 
 #### Defined in
 
-[packages/account-node/src/nodeSelector.ts:9](https://github.com/verida/verida-js/blob/032961c/packages/account-node/src/nodeSelector.ts#L9)
+[packages/account-node/src/nodeSelector.ts:9](https://github.com/verida/verida-js/blob/5040472/packages/account-node/src/nodeSelector.ts#L9)
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 #### Defined in
 
-[packages/account-node/src/nodeSelector.ts:12](https://github.com/verida/verida-js/blob/032961c/packages/account-node/src/nodeSelector.ts#L12)
+[packages/account-node/src/nodeSelector.ts:12](https://github.com/verida/verida-js/blob/5040472/packages/account-node/src/nodeSelector.ts#L12)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[packages/account-node/src/nodeSelector.ts:7](https://github.com/verida/verida-js/blob/032961c/packages/account-node/src/nodeSelector.ts#L7)
+[packages/account-node/src/nodeSelector.ts:7](https://github.com/verida/verida-js/blob/5040472/packages/account-node/src/nodeSelector.ts#L7)
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 #### Defined in
 
-[packages/account-node/src/nodeSelector.ts:8](https://github.com/verida/verida-js/blob/032961c/packages/account-node/src/nodeSelector.ts#L8)
+[packages/account-node/src/nodeSelector.ts:8](https://github.com/verida/verida-js/blob/5040472/packages/account-node/src/nodeSelector.ts#L8)
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 #### Defined in
 
-[packages/account-node/src/nodeSelector.ts:14](https://github.com/verida/verida-js/blob/032961c/packages/account-node/src/nodeSelector.ts#L14)
+[packages/account-node/src/nodeSelector.ts:14](https://github.com/verida/verida-js/blob/5040472/packages/account-node/src/nodeSelector.ts#L14)
 
 ___
 
@@ -95,4 +95,4 @@ ___
 
 #### Defined in
 
-[packages/account-node/src/nodeSelector.ts:11](https://github.com/verida/verida-js/blob/032961c/packages/account-node/src/nodeSelector.ts#L11)
+[packages/account-node/src/nodeSelector.ts:11](https://github.com/verida/verida-js/blob/5040472/packages/account-node/src/nodeSelector.ts#L11)

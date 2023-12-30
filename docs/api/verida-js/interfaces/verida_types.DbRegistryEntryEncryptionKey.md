@@ -21,7 +21,7 @@ Interface for DbRegistryEntryEncryptionKey
 
 #### Defined in
 
-[packages/types/src/ContextInterfaces.ts:172](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ContextInterfaces.ts#L172)
+[packages/types/src/ContextInterfaces.ts:177](https://github.com/verida/verida-js/blob/5040472/packages/types/src/ContextInterfaces.ts#L177)
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/ContextInterfaces.ts:173](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ContextInterfaces.ts#L173)
+[packages/types/src/ContextInterfaces.ts:178](https://github.com/verida/verida-js/blob/5040472/packages/types/src/ContextInterfaces.ts#L178)

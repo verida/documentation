@@ -43,19 +43,19 @@ Interface for any database returned from a storage engine
 
 #### Defined in
 
-[packages/types/src/IDatabase.ts:17](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDatabase.ts#L17)
+[packages/types/src/IDatabase.ts:17](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IDatabase.ts#L17)
 
 ___
 
 ### close
 
-▸ **close**(`options`): `Promise`<`void`\>
+▸ **close**(`options?`): `Promise`<`void`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `options` | [`DatabaseCloseOptions`](verida_types.DatabaseCloseOptions.md) |
+| `options?` | [`DatabaseCloseOptions`](verida_types.DatabaseCloseOptions.md) |
 
 #### Returns
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDatabase.ts:27](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDatabase.ts#L27)
+[packages/types/src/IDatabase.ts:27](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IDatabase.ts#L27)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDatabase.ts:13](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDatabase.ts#L13)
+[packages/types/src/IDatabase.ts:13](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IDatabase.ts#L13)
 
 ___
 
@@ -98,19 +98,19 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDatabase.ts:15](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDatabase.ts#L15)
+[packages/types/src/IDatabase.ts:15](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IDatabase.ts#L15)
 
 ___
 
 ### destroy
 
-▸ **destroy**(`options`): `Promise`<`void`\>
+▸ **destroy**(`options?`): `Promise`<`void`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `options` | [`DatabaseDeleteConfig`](verida_types.DatabaseDeleteConfig.md) |
+| `options?` | [`DatabaseDeleteConfig`](verida_types.DatabaseDeleteConfig.md) |
 
 #### Returns
 
@@ -118,7 +118,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDatabase.ts:29](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDatabase.ts#L29)
+[packages/types/src/IDatabase.ts:29](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IDatabase.ts#L29)
 
 ___
 
@@ -139,7 +139,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDatabase.ts:11](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDatabase.ts#L11)
+[packages/types/src/IDatabase.ts:11](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IDatabase.ts#L11)
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDatabase.ts:21](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDatabase.ts#L21)
+[packages/types/src/IDatabase.ts:21](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IDatabase.ts#L21)
 
 ___
 
@@ -174,7 +174,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDatabase.ts:9](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDatabase.ts#L9)
+[packages/types/src/IDatabase.ts:9](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IDatabase.ts#L9)
 
 ___
 
@@ -188,7 +188,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDatabase.ts:23](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDatabase.ts#L23)
+[packages/types/src/IDatabase.ts:23](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IDatabase.ts#L23)
 
 ___
 
@@ -202,7 +202,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDatabase.ts:25](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDatabase.ts#L25)
+[packages/types/src/IDatabase.ts:25](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IDatabase.ts#L25)
 
 ___
 
@@ -223,7 +223,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDatabase.ts:7](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDatabase.ts#L7)
+[packages/types/src/IDatabase.ts:7](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IDatabase.ts#L7)
 
 ___
 
@@ -244,7 +244,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDatabase.ts:19](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDatabase.ts#L19)
+[packages/types/src/IDatabase.ts:19](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IDatabase.ts#L19)
 
 ___
 
@@ -258,4 +258,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDatabase.ts:31](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDatabase.ts#L31)
+[packages/types/src/IDatabase.ts:31](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IDatabase.ts#L31)

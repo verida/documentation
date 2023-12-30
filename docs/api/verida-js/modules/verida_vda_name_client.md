@@ -11,7 +11,3 @@
 ### Classes
 
 - [VeridaNameClient](../classes/verida_vda_name_client.VeridaNameClient.md)
-
-### Interfaces
-
-- [NameClientConfig](../interfaces/verida_vda_name_client.NameClientConfig.md)

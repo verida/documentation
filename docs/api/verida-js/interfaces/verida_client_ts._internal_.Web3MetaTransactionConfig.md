@@ -22,7 +22,7 @@ Configuration type for gasless mode
 
 #### Defined in
 
-packages/types/dist/Web3Interfaces.d.ts:38
+packages/types/dist/Web3Interfaces.d.ts:51
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 #### Defined in
 
-packages/types/dist/Web3Interfaces.d.ts:37
+packages/types/dist/Web3Interfaces.d.ts:50
 
 ___
 
@@ -42,4 +42,4 @@ ___
 
 #### Defined in
 
-packages/types/dist/Web3Interfaces.d.ts:36
+packages/types/dist/Web3Interfaces.d.ts:49

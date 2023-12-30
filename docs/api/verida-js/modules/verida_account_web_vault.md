@@ -34,4 +34,4 @@
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:54](https://github.com/verida/verida-js/blob/032961c/packages/account-web-vault/src/vault-account.ts#L54)
+[packages/account-web-vault/src/vault-account.ts:57](https://github.com/verida/verida-js/blob/5040472/packages/account-web-vault/src/vault-account.ts#L57)

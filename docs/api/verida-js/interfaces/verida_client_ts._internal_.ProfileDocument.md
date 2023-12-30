@@ -22,4 +22,4 @@
 
 #### Defined in
 
-[packages/client-ts/src/context/profiles/profile.ts:8](https://github.com/verida/verida-js/blob/032961c/packages/client-ts/src/context/profiles/profile.ts#L8)
+[packages/client-ts/src/context/profiles/profile.ts:9](https://github.com/verida/verida-js/blob/5040472/packages/client-ts/src/context/profiles/profile.ts#L9)

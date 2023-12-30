@@ -48,7 +48,7 @@
 
 #### Defined in
 
-[packages/types/src/IContext.ts:77](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IContext.ts#L77)
+[packages/types/src/IContext.ts:77](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IContext.ts#L77)
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IContext.ts:81](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IContext.ts#L81)
+[packages/types/src/IContext.ts:81](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IContext.ts#L81)
 
 ___
 
@@ -89,7 +89,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IContext.ts:79](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IContext.ts#L79)
+[packages/types/src/IContext.ts:79](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IContext.ts#L79)
 
 ___
 
@@ -103,7 +103,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IContext.ts:30](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IContext.ts#L30)
+[packages/types/src/IContext.ts:30](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IContext.ts#L30)
 
 ___
 
@@ -117,7 +117,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IContext.ts:24](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IContext.ts#L24)
+[packages/types/src/IContext.ts:24](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IContext.ts#L24)
 
 ___
 
@@ -138,7 +138,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IContext.ts:75](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IContext.ts#L75)
+[packages/types/src/IContext.ts:75](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IContext.ts#L75)
 
 ___
 
@@ -152,7 +152,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IContext.ts:28](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IContext.ts#L28)
+[packages/types/src/IContext.ts:28](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IContext.ts#L28)
 
 ___
 
@@ -174,7 +174,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IContext.ts:16](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IContext.ts#L16)
+[packages/types/src/IContext.ts:16](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IContext.ts#L16)
 
 ___
 
@@ -188,7 +188,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IContext.ts:22](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IContext.ts#L22)
+[packages/types/src/IContext.ts:22](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IContext.ts#L22)
 
 ___
 
@@ -209,7 +209,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IContext.ts:32](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IContext.ts#L32)
+[packages/types/src/IContext.ts:32](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IContext.ts#L32)
 
 ___
 
@@ -223,7 +223,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IContext.ts:71](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IContext.ts#L71)
+[packages/types/src/IContext.ts:71](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IContext.ts#L71)
 
 ___
 
@@ -237,7 +237,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IContext.ts:26](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IContext.ts#L26)
+[packages/types/src/IContext.ts:26](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IContext.ts#L26)
 
 ___
 
@@ -257,7 +257,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IContext.ts:37](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IContext.ts#L37)
+[packages/types/src/IContext.ts:37](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IContext.ts#L37)
 
 ___
 
@@ -278,7 +278,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IContext.ts:39](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IContext.ts#L39)
+[packages/types/src/IContext.ts:39](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IContext.ts#L39)
 
 ___
 
@@ -292,7 +292,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IContext.ts:73](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IContext.ts#L73)
+[packages/types/src/IContext.ts:73](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IContext.ts#L73)
 
 ___
 
@@ -313,7 +313,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IContext.ts:46](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IContext.ts#L46)
+[packages/types/src/IContext.ts:46](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IContext.ts#L46)
 
 ___
 
@@ -334,7 +334,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IContext.ts:59](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IContext.ts#L59)
+[packages/types/src/IContext.ts:59](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IContext.ts#L59)
 
 ___
 
@@ -356,7 +356,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IContext.ts:52](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IContext.ts#L52)
+[packages/types/src/IContext.ts:52](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IContext.ts#L52)
 
 ___
 
@@ -378,7 +378,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IContext.ts:65](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IContext.ts#L65)
+[packages/types/src/IContext.ts:65](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IContext.ts#L65)
 
 ___
 
@@ -399,4 +399,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/IContext.ts:41](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IContext.ts#L41)
+[packages/types/src/IContext.ts:41](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IContext.ts#L41)

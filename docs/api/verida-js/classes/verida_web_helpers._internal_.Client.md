@@ -27,8 +27,11 @@
 ### Methods
 
 - [connect](verida_web_helpers._internal_.Client.md#connect)
+- [destroyAccount](verida_web_helpers._internal_.Client.md#destroyaccount)
+- [destroyContext](verida_web_helpers._internal_.Client.md#destroycontext)
 - [getConfig](verida_web_helpers._internal_.Client.md#getconfig)
 - [getContextConfig](verida_web_helpers._internal_.Client.md#getcontextconfig)
+- [getContextNameFromHash](verida_web_helpers._internal_.Client.md#getcontextnamefromhash)
 - [getDID](verida_web_helpers._internal_.Client.md#getdid)
 - [getSchema](verida_web_helpers._internal_.Client.md#getschema)
 - [getUsernames](verida_web_helpers._internal_.Client.md#getusernames)
@@ -55,7 +58,7 @@ Create a client connection to the Verida network
 
 #### Defined in
 
-packages/client-ts/dist/client.d.ts:39
+packages/client-ts/dist/client.d.ts:40
 
 ## Properties
 
@@ -67,7 +70,7 @@ Connected account instance
 
 #### Defined in
 
-packages/client-ts/dist/client.d.ts:20
+packages/client-ts/dist/client.d.ts:21
 
 ___
 
@@ -79,7 +82,7 @@ Current configuration for this client
 
 #### Defined in
 
-packages/client-ts/dist/client.d.ts:33
+packages/client-ts/dist/client.d.ts:34
 
 ___
 
@@ -91,7 +94,7 @@ DID of connected account
 
 #### Defined in
 
-packages/client-ts/dist/client.d.ts:24
+packages/client-ts/dist/client.d.ts:25
 
 ___
 
@@ -103,7 +106,7 @@ Connection to the Verida DID Registry
 
 #### Defined in
 
-packages/client-ts/dist/client.d.ts:12
+packages/client-ts/dist/client.d.ts:13
 
 ___
 
@@ -115,7 +118,7 @@ Helper instance to manage DID contexts
 
 #### Defined in
 
-packages/client-ts/dist/client.d.ts:16
+packages/client-ts/dist/client.d.ts:17
 
 ___
 
@@ -127,7 +130,7 @@ Currently selected environment
 
 #### Defined in
 
-packages/client-ts/dist/client.d.ts:28
+packages/client-ts/dist/client.d.ts:29
 
 ___
 
@@ -137,7 +140,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/dist/client.d.ts:29
+packages/client-ts/dist/client.d.ts:30
 
 ## Methods
 
@@ -166,7 +169,41 @@ authenticate with databases, send messages etc.
 
 #### Defined in
 
-packages/client-ts/dist/client.d.ts:48
+packages/client-ts/dist/client.d.ts:49
+
+___
+
+### destroyAccount
+
+▸ **destroyAccount**(): `Promise`<`void`\>
+
+#### Returns
+
+`Promise`<`void`\>
+
+#### Defined in
+
+packages/client-ts/dist/client.d.ts:106
+
+___
+
+### destroyContext
+
+▸ **destroyContext**(`contextName`): `Promise`<`any`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `contextName` | `string` |
+
+#### Returns
+
+`Promise`<`any`\>
+
+#### Defined in
+
+packages/client-ts/dist/client.d.ts:107
 
 ___
 
@@ -180,7 +217,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/dist/client.d.ts:80
+packages/client-ts/dist/client.d.ts:81
 
 ___
 
@@ -211,7 +248,28 @@ SecureContextConfig | undefined
 
 #### Defined in
 
-packages/client-ts/dist/client.d.ts:79
+packages/client-ts/dist/client.d.ts:80
+
+___
+
+### getContextNameFromHash
+
+▸ **getContextNameFromHash**(`contextHash`, `didDocument?`): `Promise`<`any`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `contextHash` | `string` |
+| `didDocument?` | [`default`](verida_web_helpers._internal_.default-2.md) |
+
+#### Returns
+
+`Promise`<`any`\>
+
+#### Defined in
+
+packages/client-ts/dist/client.d.ts:108
 
 ___
 
@@ -233,7 +291,7 @@ Get the DID linked to a username
 
 #### Defined in
 
-packages/client-ts/dist/client.d.ts:126
+packages/client-ts/dist/client.d.ts:130
 
 ___
 
@@ -261,7 +319,7 @@ Schema A schema object
 
 #### Defined in
 
-packages/client-ts/dist/client.d.ts:111
+packages/client-ts/dist/client.d.ts:115
 
 ___
 
@@ -283,7 +341,7 @@ Get an array of usernames linked to a DID
 
 #### Defined in
 
-packages/client-ts/dist/client.d.ts:133
+packages/client-ts/dist/client.d.ts:137
 
 ___
 
@@ -316,7 +374,7 @@ string[] Array of DIDs that have validly signed the data
 
 #### Defined in
 
-packages/client-ts/dist/client.d.ts:104
+packages/client-ts/dist/client.d.ts:105
 
 ___
 
@@ -338,7 +396,7 @@ boolean True of an account is connected
 
 #### Defined in
 
-packages/client-ts/dist/client.d.ts:54
+packages/client-ts/dist/client.d.ts:55
 
 ___
 
@@ -367,7 +425,7 @@ Context | undefined
 
 #### Defined in
 
-packages/client-ts/dist/client.d.ts:62
+packages/client-ts/dist/client.d.ts:63
 
 ___
 
@@ -392,7 +450,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/dist/client.d.ts:69
+packages/client-ts/dist/client.d.ts:70
 
 ___
 
@@ -427,7 +485,7 @@ You most likely want to request the `Verida: Vault` context.
 
 #### Defined in
 
-packages/client-ts/dist/client.d.ts:92
+packages/client-ts/dist/client.d.ts:93
 
 ___
 
@@ -450,4 +508,4 @@ a Verida username.
 
 #### Defined in
 
-packages/client-ts/dist/client.d.ts:119
+packages/client-ts/dist/client.d.ts:123

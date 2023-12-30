@@ -21,7 +21,10 @@ web3 - optional - Can use provider or web.currentProvider as a provider.
 
 ### Properties
 
+- [eip1559Mode](verida_did_client._internal_.Web3SelfTransactionConfig.md#eip1559mode)
+- [eip1559gasStationUrl](verida_did_client._internal_.Web3SelfTransactionConfig.md#eip1559gasstationurl)
 - [gasLimit](verida_did_client._internal_.Web3SelfTransactionConfig.md#gaslimit)
+- [gasPrice](verida_did_client._internal_.Web3SelfTransactionConfig.md#gasprice)
 - [maxFeePerGas](verida_did_client._internal_.Web3SelfTransactionConfig.md#maxfeepergas)
 - [maxPriorityFeePerGas](verida_did_client._internal_.Web3SelfTransactionConfig.md#maxpriorityfeepergas)
 - [methodDefaults](verida_did_client._internal_.Web3SelfTransactionConfig.md#methoddefaults)
@@ -33,6 +36,34 @@ web3 - optional - Can use provider or web.currentProvider as a provider.
 
 ## Properties
 
+### eip1559Mode
+
+• `Optional` **eip1559Mode**: [`EIP1559GasMode`](../modules/verida_did_client._internal_.md#eip1559gasmode)
+
+#### Inherited from
+
+[Web3GasConfiguration](verida_did_client._internal_.Web3GasConfiguration.md).[eip1559Mode](verida_did_client._internal_.Web3GasConfiguration.md#eip1559mode)
+
+#### Defined in
+
+packages/types/dist/Web3Interfaces.d.ts:24
+
+___
+
+### eip1559gasStationUrl
+
+• `Optional` **eip1559gasStationUrl**: `string`
+
+#### Inherited from
+
+[Web3GasConfiguration](verida_did_client._internal_.Web3GasConfiguration.md).[eip1559gasStationUrl](verida_did_client._internal_.Web3GasConfiguration.md#eip1559gasstationurl)
+
+#### Defined in
+
+packages/types/dist/Web3Interfaces.d.ts:25
+
+___
+
 ### gasLimit
 
 • `Optional` **gasLimit**: [`BigNumber`](../classes/verida_did_client._internal_.BigNumber.md)
@@ -43,7 +74,21 @@ web3 - optional - Can use provider or web.currentProvider as a provider.
 
 #### Defined in
 
-packages/types/dist/Web3Interfaces.d.ts:16
+packages/types/dist/Web3Interfaces.d.ts:28
+
+___
+
+### gasPrice
+
+• `Optional` **gasPrice**: [`BigNumber`](../classes/verida_did_client._internal_.BigNumber.md)
+
+#### Inherited from
+
+[Web3GasConfiguration](verida_did_client._internal_.Web3GasConfiguration.md).[gasPrice](verida_did_client._internal_.Web3GasConfiguration.md#gasprice)
+
+#### Defined in
+
+packages/types/dist/Web3Interfaces.d.ts:29
 
 ___
 
@@ -57,7 +102,7 @@ ___
 
 #### Defined in
 
-packages/types/dist/Web3Interfaces.d.ts:14
+packages/types/dist/Web3Interfaces.d.ts:26
 
 ___
 
@@ -71,7 +116,7 @@ ___
 
 #### Defined in
 
-packages/types/dist/Web3Interfaces.d.ts:15
+packages/types/dist/Web3Interfaces.d.ts:27
 
 ___
 
@@ -81,7 +126,7 @@ ___
 
 #### Defined in
 
-packages/types/dist/Web3Interfaces.d.ts:32
+packages/types/dist/Web3Interfaces.d.ts:45
 
 ___
 
@@ -91,7 +136,7 @@ ___
 
 #### Defined in
 
-packages/types/dist/Web3Interfaces.d.ts:28
+packages/types/dist/Web3Interfaces.d.ts:41
 
 ___
 
@@ -101,7 +146,7 @@ ___
 
 #### Defined in
 
-packages/types/dist/Web3Interfaces.d.ts:29
+packages/types/dist/Web3Interfaces.d.ts:42
 
 ___
 
@@ -111,7 +156,7 @@ ___
 
 #### Defined in
 
-packages/types/dist/Web3Interfaces.d.ts:30
+packages/types/dist/Web3Interfaces.d.ts:43
 
 ___
 
@@ -121,7 +166,7 @@ ___
 
 #### Defined in
 
-packages/types/dist/Web3Interfaces.d.ts:27
+packages/types/dist/Web3Interfaces.d.ts:40
 
 ___
 
@@ -131,4 +176,4 @@ ___
 
 #### Defined in
 
-packages/types/dist/Web3Interfaces.d.ts:31
+packages/types/dist/Web3Interfaces.d.ts:44

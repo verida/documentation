@@ -28,7 +28,7 @@
 
 #### Defined in
 
-node_modules/axios/index.d.ts:28
+packages/account-node/node_modules/axios/index.d.ts:28
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 #### Defined in
 
-node_modules/axios/index.d.ts:26
+packages/account-node/node_modules/axios/index.d.ts:26
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 #### Defined in
 
-node_modules/axios/index.d.ts:27
+packages/account-node/node_modules/axios/index.d.ts:27
 
 ___
 
@@ -58,4 +58,4 @@ ___
 
 #### Defined in
 
-node_modules/axios/index.d.ts:32
+packages/account-node/node_modules/axios/index.d.ts:32

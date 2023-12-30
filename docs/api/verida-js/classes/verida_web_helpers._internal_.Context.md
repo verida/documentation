@@ -42,6 +42,7 @@
 - [addListener](verida_web_helpers._internal_.Context.md#addlistener)
 - [clearDatabaseCache](verida_web_helpers._internal_.Context.md#cleardatabasecache)
 - [close](verida_web_helpers._internal_.Context.md#close)
+- [deleteDatabase](verida_web_helpers._internal_.Context.md#deletedatabase)
 - [disconnect](verida_web_helpers._internal_.Context.md#disconnect)
 - [emit](verida_web_helpers._internal_.Context.md#emit)
 - [eventNames](verida_web_helpers._internal_.Context.md#eventnames)
@@ -286,7 +287,7 @@ Emits `progress` event when adding the endpoint has progressed (ie: replicating 
 
 #### Defined in
 
-packages/client-ts/dist/context/context.d.ts:122
+packages/client-ts/dist/context/context.d.ts:123
 
 ___
 
@@ -340,7 +341,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/dist/context/context.d.ts:129
+packages/client-ts/dist/context/context.d.ts:130
 
 ___
 
@@ -368,7 +369,27 @@ Closes all open database connections, returns resources, cancels event listeners
 
 #### Defined in
 
-packages/client-ts/dist/context/context.d.ts:128
+packages/client-ts/dist/context/context.d.ts:129
+
+___
+
+### deleteDatabase
+
+▸ **deleteDatabase**(`databaseName`): `Promise`<`void`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `databaseName` | `string` |
+
+#### Returns
+
+`Promise`<`void`\>
+
+#### Defined in
+
+packages/client-ts/dist/context/context.d.ts:91
 
 ___
 
@@ -530,7 +551,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/dist/context/context.d.ts:115
+packages/client-ts/dist/context/context.d.ts:116
 
 ___
 
@@ -637,7 +658,7 @@ ___
 
 #### Defined in
 
-packages/client-ts/dist/context/context.d.ts:108
+packages/client-ts/dist/context/context.d.ts:109
 
 ___
 
@@ -753,7 +774,7 @@ Get the status of this context for databases, their connected endpoints and data
 
 #### Defined in
 
-packages/client-ts/dist/context/context.d.ts:114
+packages/client-ts/dist/context/context.d.ts:115
 
 ___
 
@@ -1004,7 +1025,7 @@ Open a dataastore owned by this account.
 
 #### Defined in
 
-packages/client-ts/dist/context/context.d.ts:98
+packages/client-ts/dist/context/context.d.ts:99
 
 ___
 
@@ -1060,7 +1081,7 @@ Open an external datastore owned by an account that isn't the currently connecte
 
 #### Defined in
 
-packages/client-ts/dist/context/context.d.ts:107
+packages/client-ts/dist/context/context.d.ts:108
 
 ___
 

@@ -49,13 +49,13 @@ ___
 
 ### close
 
-▸ **close**(`options`): `Promise`<`void`\>
+▸ **close**(`options?`): `Promise`<`void`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `options` | [`DatabaseCloseOptions`](verida_helpers._internal_.DatabaseCloseOptions.md) |
+| `options?` | [`DatabaseCloseOptions`](verida_helpers._internal_.DatabaseCloseOptions.md) |
 
 #### Returns
 
@@ -104,13 +104,13 @@ ___
 
 ### destroy
 
-▸ **destroy**(`options`): `Promise`<`void`\>
+▸ **destroy**(`options?`): `Promise`<`void`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `options` | [`DatabaseDeleteConfig`](verida_helpers._internal_.DatabaseDeleteConfig.md) |
+| `options?` | [`DatabaseDeleteConfig`](verida_helpers._internal_.DatabaseDeleteConfig.md) |
 
 #### Returns
 

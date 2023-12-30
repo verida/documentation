@@ -44,7 +44,7 @@
 
 #### Defined in
 
-[packages/vda-did/src/blockchain/blockchainApi.ts:21](https://github.com/verida/verida-js/blob/032961c/packages/vda-did/src/blockchain/blockchainApi.ts#L21)
+[packages/vda-did/src/blockchain/blockchainApi.ts:21](https://github.com/verida/verida-js/blob/5040472/packages/vda-did/src/blockchain/blockchainApi.ts#L21)
 
 ## Properties
 
@@ -54,7 +54,7 @@
 
 #### Defined in
 
-[packages/vda-did/src/blockchain/blockchainApi.ts:17](https://github.com/verida/verida-js/blob/032961c/packages/vda-did/src/blockchain/blockchainApi.ts#L17)
+[packages/vda-did/src/blockchain/blockchainApi.ts:17](https://github.com/verida/verida-js/blob/5040472/packages/vda-did/src/blockchain/blockchainApi.ts#L17)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[packages/vda-did/src/blockchain/blockchainApi.ts:16](https://github.com/verida/verida-js/blob/032961c/packages/vda-did/src/blockchain/blockchainApi.ts#L16)
+[packages/vda-did/src/blockchain/blockchainApi.ts:16](https://github.com/verida/verida-js/blob/5040472/packages/vda-did/src/blockchain/blockchainApi.ts#L16)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[packages/vda-did/src/blockchain/blockchainApi.ts:15](https://github.com/verida/verida-js/blob/032961c/packages/vda-did/src/blockchain/blockchainApi.ts#L15)
+[packages/vda-did/src/blockchain/blockchainApi.ts:15](https://github.com/verida/verida-js/blob/5040472/packages/vda-did/src/blockchain/blockchainApi.ts#L15)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-[packages/vda-did/src/blockchain/blockchainApi.ts:19](https://github.com/verida/verida-js/blob/032961c/packages/vda-did/src/blockchain/blockchainApi.ts#L19)
+[packages/vda-did/src/blockchain/blockchainApi.ts:19](https://github.com/verida/verida-js/blob/5040472/packages/vda-did/src/blockchain/blockchainApi.ts#L19)
 
 ## Methods
 
@@ -102,7 +102,7 @@ Number of active did count
 
 #### Defined in
 
-[packages/vda-did/src/blockchain/blockchainApi.ts:206](https://github.com/verida/verida-js/blob/032961c/packages/vda-did/src/blockchain/blockchainApi.ts#L206)
+[packages/vda-did/src/blockchain/blockchainApi.ts:222](https://github.com/verida/verida-js/blob/5040472/packages/vda-did/src/blockchain/blockchainApi.ts#L222)
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 #### Defined in
 
-[packages/vda-did/src/blockchain/blockchainApi.ts:165](https://github.com/verida/verida-js/blob/032961c/packages/vda-did/src/blockchain/blockchainApi.ts#L165)
+[packages/vda-did/src/blockchain/blockchainApi.ts:175](https://github.com/verida/verida-js/blob/5040472/packages/vda-did/src/blockchain/blockchainApi.ts#L175)
 
 ___
 
@@ -140,7 +140,7 @@ Signature
 
 #### Defined in
 
-[packages/vda-did/src/blockchain/blockchainApi.ts:129](https://github.com/verida/verida-js/blob/032961c/packages/vda-did/src/blockchain/blockchainApi.ts#L129)
+[packages/vda-did/src/blockchain/blockchainApi.ts:134](https://github.com/verida/verida-js/blob/5040472/packages/vda-did/src/blockchain/blockchainApi.ts#L134)
 
 ___
 
@@ -164,7 +164,7 @@ Signature
 
 #### Defined in
 
-[packages/vda-did/src/blockchain/blockchainApi.ts:91](https://github.com/verida/verida-js/blob/032961c/packages/vda-did/src/blockchain/blockchainApi.ts#L91)
+[packages/vda-did/src/blockchain/blockchainApi.ts:91](https://github.com/verida/verida-js/blob/5040472/packages/vda-did/src/blockchain/blockchainApi.ts#L91)
 
 ___
 
@@ -182,7 +182,7 @@ Signature
 
 #### Defined in
 
-[packages/vda-did/src/blockchain/blockchainApi.ts:179](https://github.com/verida/verida-js/blob/032961c/packages/vda-did/src/blockchain/blockchainApi.ts#L179)
+[packages/vda-did/src/blockchain/blockchainApi.ts:189](https://github.com/verida/verida-js/blob/5040472/packages/vda-did/src/blockchain/blockchainApi.ts#L189)
 
 ___
 
@@ -206,7 +206,7 @@ Controller & Endpoints array
 
 #### Defined in
 
-[packages/vda-did/src/blockchain/blockchainApi.ts:71](https://github.com/verida/verida-js/blob/032961c/packages/vda-did/src/blockchain/blockchainApi.ts#L71)
+[packages/vda-did/src/blockchain/blockchainApi.ts:71](https://github.com/verida/verida-js/blob/5040472/packages/vda-did/src/blockchain/blockchainApi.ts#L71)
 
 ___
 
@@ -224,13 +224,13 @@ nonce of DID
 
 #### Defined in
 
-[packages/vda-did/src/blockchain/blockchainApi.ts:59](https://github.com/verida/verida-js/blob/032961c/packages/vda-did/src/blockchain/blockchainApi.ts#L59)
+[packages/vda-did/src/blockchain/blockchainApi.ts:59](https://github.com/verida/verida-js/blob/5040472/packages/vda-did/src/blockchain/blockchainApi.ts#L59)
 
 ___
 
 ### register
 
-▸ **register**(`endpoints`): `Promise`<`void`\>
+▸ **register**(`endpoints`, `gasConfig?`): `Promise`<`void`\>
 
 Register endpoints to blockchain
 
@@ -239,6 +239,7 @@ Register endpoints to blockchain
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `endpoints` | `string`[] | Array of endpoints to be registered |
+| `gasConfig?` | [`Web3GasConfiguration`](../interfaces/verida_vda_did._internal_.Web3GasConfiguration.md) | - |
 
 #### Returns
 
@@ -246,15 +247,21 @@ Register endpoints to blockchain
 
 #### Defined in
 
-[packages/vda-did/src/blockchain/blockchainApi.ts:111](https://github.com/verida/verida-js/blob/032961c/packages/vda-did/src/blockchain/blockchainApi.ts#L111)
+[packages/vda-did/src/blockchain/blockchainApi.ts:111](https://github.com/verida/verida-js/blob/5040472/packages/vda-did/src/blockchain/blockchainApi.ts#L111)
 
 ___
 
 ### revoke
 
-▸ **revoke**(): `Promise`<`void`\>
+▸ **revoke**(`gasConfig?`): `Promise`<`void`\>
 
 Revoke a DID address from the blockchain
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `gasConfig?` | [`Web3GasConfiguration`](../interfaces/verida_vda_did._internal_.Web3GasConfiguration.md) |
 
 #### Returns
 
@@ -262,13 +269,13 @@ Revoke a DID address from the blockchain
 
 #### Defined in
 
-[packages/vda-did/src/blockchain/blockchainApi.ts:190](https://github.com/verida/verida-js/blob/032961c/packages/vda-did/src/blockchain/blockchainApi.ts#L190)
+[packages/vda-did/src/blockchain/blockchainApi.ts:200](https://github.com/verida/verida-js/blob/5040472/packages/vda-did/src/blockchain/blockchainApi.ts#L200)
 
 ___
 
 ### setController
 
-▸ **setController**(`controllerPrivateKey`): `Promise`<`void`\>
+▸ **setController**(`controllerPrivateKey`, `gasConfig?`): `Promise`<`void`\>
 
 Set a controller of the {@link BlockchainApi#didAddress} to the blockchain
 
@@ -277,6 +284,7 @@ Set a controller of the {@link BlockchainApi#didAddress} to the blockchain
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `controllerPrivateKey` | `string` | private key of new controller |
+| `gasConfig?` | [`Web3GasConfiguration`](../interfaces/verida_vda_did._internal_.Web3GasConfiguration.md) | - |
 
 #### Returns
 
@@ -284,4 +292,4 @@ Set a controller of the {@link BlockchainApi#didAddress} to the blockchain
 
 #### Defined in
 
-[packages/vda-did/src/blockchain/blockchainApi.ts:143](https://github.com/verida/verida-js/blob/032961c/packages/vda-did/src/blockchain/blockchainApi.ts#L143)
+[packages/vda-did/src/blockchain/blockchainApi.ts:148](https://github.com/verida/verida-js/blob/5040472/packages/vda-did/src/blockchain/blockchainApi.ts#L148)

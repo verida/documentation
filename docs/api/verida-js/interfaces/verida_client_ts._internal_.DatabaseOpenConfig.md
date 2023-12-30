@@ -22,6 +22,7 @@ Interface for any DatabaseOpenConfig
 - [saveDatabase](verida_client_ts._internal_.DatabaseOpenConfig.md#savedatabase)
 - [signingContext](verida_client_ts._internal_.DatabaseOpenConfig.md#signingcontext)
 - [token](verida_client_ts._internal_.DatabaseOpenConfig.md#token)
+- [verifyEncryptionKey](verida_client_ts._internal_.DatabaseOpenConfig.md#verifyencryptionkey)
 
 ## Properties
 
@@ -172,3 +173,15 @@ Specify a JWT token to use when opening the database.
 #### Defined in
 
 packages/types/dist/ContextInterfaces.d.ts:25
+
+___
+
+### verifyEncryptionKey
+
+• `Optional` **verifyEncryptionKey**: `boolean`
+
+Verify the encryption key is correct when opening the database
+
+#### Defined in
+
+packages/types/dist/ContextInterfaces.d.ts:65

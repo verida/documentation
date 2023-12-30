@@ -12,6 +12,7 @@
 
 - [ContextEngineType](../enums/verida_types.ContextEngineType.md)
 - [DatabasePermissionOptionsEnum](../enums/verida_types.DatabasePermissionOptionsEnum.md)
+- [EnumStatus](../enums/verida_types.EnumStatus.md)
 - [EnvironmentType](../enums/verida_types.EnvironmentType.md)
 - [KeyringKeyType](../enums/verida_types.KeyringKeyType.md)
 - [SecureContextEndpointType](../enums/verida_types.SecureContextEndpointType.md)
@@ -81,6 +82,7 @@
 - [SecureContextServices](../interfaces/verida_types.SecureContextServices.md)
 - [SecureStorageContextPublicKeys](../interfaces/verida_types.SecureStorageContextPublicKeys.md)
 - [StorageEngineTypes](../interfaces/verida_types.StorageEngineTypes.md)
+- [VdaClientConfig](../interfaces/verida_types.VdaClientConfig.md)
 - [VdaDidConfigurationOptions](../interfaces/verida_types.VdaDidConfigurationOptions.md)
 - [VdaDidEndpointResponse](../interfaces/verida_types.VdaDidEndpointResponse.md)
 - [VdaTransactionResult](../interfaces/verida_types.VdaTransactionResult.md)
@@ -100,6 +102,7 @@
 
 ### Type aliases
 
+- [EIP1559GasMode](verida_types.md#eip1559gasmode)
 - [VdaDidEndpointResponses](verida_types.md#vdadidendpointresponses)
 - [VeridaWeb3Config](verida_types.md#veridaweb3config)
 - [VeridaWeb3ConfigurationOptions](verida_types.md#veridaweb3configurationoptions)
@@ -107,13 +110,25 @@
 
 ## Type aliases
 
+### EIP1559GasMode
+
+Ƭ **EIP1559GasMode**: ``"safeLow"`` \| ``"standard"`` \| ``"fast"``
+
+EIP1559 Gas Configuration speed
+
+#### Defined in
+
+[packages/types/src/Web3Interfaces.ts:17](https://github.com/verida/verida-js/blob/5040472/packages/types/src/Web3Interfaces.ts#L17)
+
+___
+
 ### VdaDidEndpointResponses
 
 Ƭ **VdaDidEndpointResponses**: [`Record`](verida_types._internal_.md#record)<`string`, [`VdaDidEndpointResponse`](../interfaces/verida_types.VdaDidEndpointResponse.md)\>
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:121](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L121)
+[packages/types/src/Web3Interfaces.ts:135](https://github.com/verida/verida-js/blob/5040472/packages/types/src/Web3Interfaces.ts#L135)
 
 ___
 
@@ -123,7 +138,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:48](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L48)
+[packages/types/src/Web3Interfaces.ts:62](https://github.com/verida/verida-js/blob/5040472/packages/types/src/Web3Interfaces.ts#L62)
 
 ___
 
@@ -133,7 +148,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:90](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L90)
+[packages/types/src/Web3Interfaces.ts:104](https://github.com/verida/verida-js/blob/5040472/packages/types/src/Web3Interfaces.ts#L104)
 
 ___
 
@@ -145,4 +160,4 @@ Web3 SDK running mode
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:7](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L7)
+[packages/types/src/Web3Interfaces.ts:7](https://github.com/verida/verida-js/blob/5040472/packages/types/src/Web3Interfaces.ts#L7)

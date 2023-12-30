@@ -38,7 +38,7 @@
 
 #### Defined in
 
-[packages/types/src/IDIDClient.ts:6](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDIDClient.ts#L6)
+[packages/types/src/IDIDClient.ts:6](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IDIDClient.ts#L6)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDIDClient.ts:13](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDIDClient.ts#L13)
+[packages/types/src/IDIDClient.ts:13](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IDIDClient.ts#L13)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDIDClient.ts:23](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDIDClient.ts#L23)
+[packages/types/src/IDIDClient.ts:23](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IDIDClient.ts#L23)
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDIDClient.ts:15](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDIDClient.ts#L15)
+[packages/types/src/IDIDClient.ts:15](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IDIDClient.ts#L15)
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDIDClient.ts:21](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDIDClient.ts#L21)
+[packages/types/src/IDIDClient.ts:21](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IDIDClient.ts#L21)
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDIDClient.ts:17](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDIDClient.ts#L17)
+[packages/types/src/IDIDClient.ts:17](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IDIDClient.ts#L17)
 
 ___
 
@@ -128,7 +128,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDIDClient.ts:25](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDIDClient.ts#L25)
+[packages/types/src/IDIDClient.ts:25](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IDIDClient.ts#L25)
 
 ___
 
@@ -148,4 +148,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/IDIDClient.ts:19](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IDIDClient.ts#L19)
+[packages/types/src/IDIDClient.ts:19](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IDIDClient.ts#L19)

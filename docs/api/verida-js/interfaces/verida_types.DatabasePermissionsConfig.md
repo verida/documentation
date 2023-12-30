@@ -23,7 +23,7 @@ Interface for any PermissionsConfig
 
 #### Defined in
 
-[packages/types/src/ContextInterfaces.ts:128](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ContextInterfaces.ts#L128)
+[packages/types/src/ContextInterfaces.ts:133](https://github.com/verida/verida-js/blob/5040472/packages/types/src/ContextInterfaces.ts#L133)
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/ContextInterfaces.ts:130](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ContextInterfaces.ts#L130)
+[packages/types/src/ContextInterfaces.ts:135](https://github.com/verida/verida-js/blob/5040472/packages/types/src/ContextInterfaces.ts#L135)
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/ContextInterfaces.ts:129](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ContextInterfaces.ts#L129)
+[packages/types/src/ContextInterfaces.ts:134](https://github.com/verida/verida-js/blob/5040472/packages/types/src/ContextInterfaces.ts#L134)
 
 ___
 
@@ -53,4 +53,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/ContextInterfaces.ts:131](https://github.com/verida/verida-js/blob/032961c/packages/types/src/ContextInterfaces.ts#L131)
+[packages/types/src/ContextInterfaces.ts:136](https://github.com/verida/verida-js/blob/5040472/packages/types/src/ContextInterfaces.ts#L136)

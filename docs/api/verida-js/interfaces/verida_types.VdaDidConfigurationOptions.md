@@ -42,7 +42,7 @@ Interface for VDA-DID instance creation.
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:112](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L112)
+[packages/types/src/Web3Interfaces.ts:126](https://github.com/verida/verida-js/blob/5040472/packages/types/src/Web3Interfaces.ts#L126)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:110](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L110)
+[packages/types/src/Web3Interfaces.ts:124](https://github.com/verida/verida-js/blob/5040472/packages/types/src/Web3Interfaces.ts#L124)
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:107](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L107)
+[packages/types/src/Web3Interfaces.ts:121](https://github.com/verida/verida-js/blob/5040472/packages/types/src/Web3Interfaces.ts#L121)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:108](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L108)
+[packages/types/src/Web3Interfaces.ts:122](https://github.com/verida/verida-js/blob/5040472/packages/types/src/Web3Interfaces.ts#L122)
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:113](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L113)
+[packages/types/src/Web3Interfaces.ts:127](https://github.com/verida/verida-js/blob/5040472/packages/types/src/Web3Interfaces.ts#L127)
 
 ## Methods
 
@@ -102,4 +102,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:109](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L109)
+[packages/types/src/Web3Interfaces.ts:123](https://github.com/verida/verida-js/blob/5040472/packages/types/src/Web3Interfaces.ts#L123)

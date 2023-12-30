@@ -79,6 +79,7 @@
 - [DIDDocument](verida_did_client._internal_.md#diddocument)
 - [DIDResolver](verida_did_client._internal_.md#didresolver)
 - [Deferrable](verida_did_client._internal_.md#deferrable)
+- [EIP1559GasMode](verida_did_client._internal_.md#eip1559gasmode)
 - [EventType](verida_did_client._internal_.md#eventtype)
 - [Extensible](verida_did_client._internal_.md#extensible)
 - [KeyCapabilitySection](verida_did_client._internal_.md#keycapabilitysection)
@@ -237,6 +238,18 @@ ___
 #### Defined in
 
 node_modules/@ethersproject/properties/lib/index.d.ts:3
+
+___
+
+### EIP1559GasMode
+
+Ƭ **EIP1559GasMode**: ``"safeLow"`` \| ``"standard"`` \| ``"fast"``
+
+EIP1559 Gas Configuration speed
+
+#### Defined in
+
+packages/types/dist/Web3Interfaces.d.ts:13
 
 ___
 
@@ -425,7 +438,7 @@ ___
 
 #### Defined in
 
-packages/types/dist/Web3Interfaces.d.ts:100
+packages/types/dist/Web3Interfaces.d.ts:113
 
 ___
 
@@ -435,7 +448,7 @@ ___
 
 #### Defined in
 
-packages/types/dist/Web3Interfaces.d.ts:75
+packages/types/dist/Web3Interfaces.d.ts:88
 
 ___
 

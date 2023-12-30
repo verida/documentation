@@ -21,7 +21,10 @@ web3 - optional - Can use provider or web.currentProvider as a provider.
 
 ### Properties
 
+- [eip1559Mode](verida_types.Web3SelfTransactionConfig.md#eip1559mode)
+- [eip1559gasStationUrl](verida_types.Web3SelfTransactionConfig.md#eip1559gasstationurl)
 - [gasLimit](verida_types.Web3SelfTransactionConfig.md#gaslimit)
+- [gasPrice](verida_types.Web3SelfTransactionConfig.md#gasprice)
 - [maxFeePerGas](verida_types.Web3SelfTransactionConfig.md#maxfeepergas)
 - [maxPriorityFeePerGas](verida_types.Web3SelfTransactionConfig.md#maxpriorityfeepergas)
 - [methodDefaults](verida_types.Web3SelfTransactionConfig.md#methoddefaults)
@@ -33,6 +36,34 @@ web3 - optional - Can use provider or web.currentProvider as a provider.
 
 ## Properties
 
+### eip1559Mode
+
+• `Optional` **eip1559Mode**: [`EIP1559GasMode`](../modules/verida_types.md#eip1559gasmode)
+
+#### Inherited from
+
+[Web3GasConfiguration](verida_types.Web3GasConfiguration.md).[eip1559Mode](verida_types.Web3GasConfiguration.md#eip1559mode)
+
+#### Defined in
+
+[packages/types/src/Web3Interfaces.ts:28](https://github.com/verida/verida-js/blob/5040472/packages/types/src/Web3Interfaces.ts#L28)
+
+___
+
+### eip1559gasStationUrl
+
+• `Optional` **eip1559gasStationUrl**: `string`
+
+#### Inherited from
+
+[Web3GasConfiguration](verida_types.Web3GasConfiguration.md).[eip1559gasStationUrl](verida_types.Web3GasConfiguration.md#eip1559gasstationurl)
+
+#### Defined in
+
+[packages/types/src/Web3Interfaces.ts:29](https://github.com/verida/verida-js/blob/5040472/packages/types/src/Web3Interfaces.ts#L29)
+
+___
+
 ### gasLimit
 
 • `Optional` **gasLimit**: [`BigNumber`](../classes/verida_types._internal_.BigNumber.md)
@@ -43,7 +74,21 @@ web3 - optional - Can use provider or web.currentProvider as a provider.
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:20](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L20)
+[packages/types/src/Web3Interfaces.ts:33](https://github.com/verida/verida-js/blob/5040472/packages/types/src/Web3Interfaces.ts#L33)
+
+___
+
+### gasPrice
+
+• `Optional` **gasPrice**: [`BigNumber`](../classes/verida_types._internal_.BigNumber.md)
+
+#### Inherited from
+
+[Web3GasConfiguration](verida_types.Web3GasConfiguration.md).[gasPrice](verida_types.Web3GasConfiguration.md#gasprice)
+
+#### Defined in
+
+[packages/types/src/Web3Interfaces.ts:34](https://github.com/verida/verida-js/blob/5040472/packages/types/src/Web3Interfaces.ts#L34)
 
 ___
 
@@ -57,7 +102,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:18](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L18)
+[packages/types/src/Web3Interfaces.ts:31](https://github.com/verida/verida-js/blob/5040472/packages/types/src/Web3Interfaces.ts#L31)
 
 ___
 
@@ -71,7 +116,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:19](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L19)
+[packages/types/src/Web3Interfaces.ts:32](https://github.com/verida/verida-js/blob/5040472/packages/types/src/Web3Interfaces.ts#L32)
 
 ___
 
@@ -81,7 +126,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:38](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L38)
+[packages/types/src/Web3Interfaces.ts:52](https://github.com/verida/verida-js/blob/5040472/packages/types/src/Web3Interfaces.ts#L52)
 
 ___
 
@@ -91,7 +136,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:33](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L33)
+[packages/types/src/Web3Interfaces.ts:47](https://github.com/verida/verida-js/blob/5040472/packages/types/src/Web3Interfaces.ts#L47)
 
 ___
 
@@ -101,7 +146,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:34](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L34)
+[packages/types/src/Web3Interfaces.ts:48](https://github.com/verida/verida-js/blob/5040472/packages/types/src/Web3Interfaces.ts#L48)
 
 ___
 
@@ -111,7 +156,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:35](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L35)
+[packages/types/src/Web3Interfaces.ts:49](https://github.com/verida/verida-js/blob/5040472/packages/types/src/Web3Interfaces.ts#L49)
 
 ___
 
@@ -121,7 +166,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:32](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L32)
+[packages/types/src/Web3Interfaces.ts:46](https://github.com/verida/verida-js/blob/5040472/packages/types/src/Web3Interfaces.ts#L46)
 
 ___
 
@@ -131,4 +176,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:36](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L36)
+[packages/types/src/Web3Interfaces.ts:50](https://github.com/verida/verida-js/blob/5040472/packages/types/src/Web3Interfaces.ts#L50)

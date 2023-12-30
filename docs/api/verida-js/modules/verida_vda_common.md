@@ -28,6 +28,7 @@
 - [getDefaultRpcUrl](verida_vda_common.md#getdefaultrpcurl)
 - [getVeridaSign](verida_vda_common.md#getveridasign)
 - [getVeridaSignWithNonce](verida_vda_common.md#getveridasignwithnonce)
+- [getWeb3ConfigDefaults](verida_vda_common.md#getweb3configdefaults)
 - [interpretIdentifier](verida_vda_common.md#interpretidentifier)
 
 ## Type aliases
@@ -38,7 +39,7 @@
 
 #### Defined in
 
-[packages/vda-common/src/contract.ts:2](https://github.com/verida/verida-js/blob/032961c/packages/vda-common/src/contract.ts#L2)
+[packages/vda-common/src/contract.ts:2](https://github.com/verida/verida-js/blob/5040472/packages/vda-common/src/contract.ts#L2)
 
 ## Variables
 
@@ -48,7 +49,7 @@
 
 #### Defined in
 
-[packages/vda-common/src/contract.ts:63](https://github.com/verida/verida-js/blob/032961c/packages/vda-common/src/contract.ts#L63)
+[packages/vda-common/src/contract.ts:63](https://github.com/verida/verida-js/blob/5040472/packages/vda-common/src/contract.ts#L63)
 
 ___
 
@@ -58,7 +59,7 @@ ___
 
 #### Defined in
 
-[packages/vda-common/src/contract.ts:17](https://github.com/verida/verida-js/blob/032961c/packages/vda-common/src/contract.ts#L17)
+[packages/vda-common/src/contract.ts:17](https://github.com/verida/verida-js/blob/5040472/packages/vda-common/src/contract.ts#L17)
 
 ___
 
@@ -68,7 +69,7 @@ ___
 
 #### Defined in
 
-[packages/vda-common/src/rpc.ts:1](https://github.com/verida/verida-js/blob/032961c/packages/vda-common/src/rpc.ts#L1)
+[packages/vda-common/src/rpc.ts:1](https://github.com/verida/verida-js/blob/5040472/packages/vda-common/src/rpc.ts#L1)
 
 ## Functions
 
@@ -89,7 +90,7 @@ ___
 
 #### Defined in
 
-[packages/vda-common/src/contract.ts:73](https://github.com/verida/verida-js/blob/032961c/packages/vda-common/src/contract.ts#L73)
+[packages/vda-common/src/contract.ts:73](https://github.com/verida/verida-js/blob/5040472/packages/vda-common/src/contract.ts#L73)
 
 ___
 
@@ -109,7 +110,7 @@ ___
 
 #### Defined in
 
-[packages/vda-common/src/rpc.ts:9](https://github.com/verida/verida-js/blob/032961c/packages/vda-common/src/rpc.ts#L9)
+[packages/vda-common/src/rpc.ts:9](https://github.com/verida/verida-js/blob/5040472/packages/vda-common/src/rpc.ts#L9)
 
 ___
 
@@ -130,7 +131,7 @@ ___
 
 #### Defined in
 
-[packages/vda-common/src/utils.ts:38](https://github.com/verida/verida-js/blob/032961c/packages/vda-common/src/utils.ts#L38)
+[packages/vda-common/src/utils.ts:38](https://github.com/verida/verida-js/blob/5040472/packages/vda-common/src/utils.ts#L38)
 
 ___
 
@@ -144,7 +145,7 @@ ___
 | :------ | :------ |
 | `rawMsg` | `string` |
 | `privateKey` | `string` |
-| `nonce` | `number` |
+| `nonce` | [`BigNumberish`](verida_vda_common._internal_.md#bignumberish) |
 
 #### Returns
 
@@ -152,7 +153,27 @@ ___
 
 #### Defined in
 
-[packages/vda-common/src/utils.ts:29](https://github.com/verida/verida-js/blob/032961c/packages/vda-common/src/utils.ts#L29)
+[packages/vda-common/src/utils.ts:29](https://github.com/verida/verida-js/blob/5040472/packages/vda-common/src/utils.ts#L29)
+
+___
+
+### getWeb3ConfigDefaults
+
+▸ **getWeb3ConfigDefaults**(`chainName`): `undefined` \| { `eip1559Mode`: `string` = 'fast'; `eip1559gasStationUrl`: `string` = 'https://gasstation-testnet.polygon.technology/v2'; `rpcUrl`: ``null`` \| `string`  }
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `chainName` | `string` |
+
+#### Returns
+
+`undefined` \| { `eip1559Mode`: `string` = 'fast'; `eip1559gasStationUrl`: `string` = 'https://gasstation-testnet.polygon.technology/v2'; `rpcUrl`: ``null`` \| `string`  }
+
+#### Defined in
+
+[packages/vda-common/src/defaults.ts:3](https://github.com/verida/verida-js/blob/5040472/packages/vda-common/src/defaults.ts#L3)
 
 ___
 
@@ -178,4 +199,4 @@ ___
 
 #### Defined in
 
-[packages/vda-common/src/utils.ts:6](https://github.com/verida/verida-js/blob/032961c/packages/vda-common/src/utils.ts#L6)
+[packages/vda-common/src/utils.ts:6](https://github.com/verida/verida-js/blob/5040472/packages/vda-common/src/utils.ts#L6)

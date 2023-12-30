@@ -23,7 +23,7 @@
 
 #### Defined in
 
-[packages/verifiable-credentials/src/interfaces.ts:24](https://github.com/verida/verida-js/blob/032961c/packages/verifiable-credentials/src/interfaces.ts#L24)
+[packages/verifiable-credentials/src/interfaces.ts:24](https://github.com/verida/verida-js/blob/5040472/packages/verifiable-credentials/src/interfaces.ts#L24)
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 #### Defined in
 
-[packages/verifiable-credentials/src/interfaces.ts:22](https://github.com/verida/verida-js/blob/032961c/packages/verifiable-credentials/src/interfaces.ts#L22)
+[packages/verifiable-credentials/src/interfaces.ts:22](https://github.com/verida/verida-js/blob/5040472/packages/verifiable-credentials/src/interfaces.ts#L22)
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 #### Defined in
 
-[packages/verifiable-credentials/src/interfaces.ts:20](https://github.com/verida/verida-js/blob/032961c/packages/verifiable-credentials/src/interfaces.ts#L20)
+[packages/verifiable-credentials/src/interfaces.ts:20](https://github.com/verida/verida-js/blob/5040472/packages/verifiable-credentials/src/interfaces.ts#L20)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[packages/verifiable-credentials/src/interfaces.ts:25](https://github.com/verida/verida-js/blob/032961c/packages/verifiable-credentials/src/interfaces.ts#L25)
+[packages/verifiable-credentials/src/interfaces.ts:25](https://github.com/verida/verida-js/blob/5040472/packages/verifiable-credentials/src/interfaces.ts#L25)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[packages/verifiable-credentials/src/interfaces.ts:23](https://github.com/verida/verida-js/blob/032961c/packages/verifiable-credentials/src/interfaces.ts#L23)
+[packages/verifiable-credentials/src/interfaces.ts:23](https://github.com/verida/verida-js/blob/5040472/packages/verifiable-credentials/src/interfaces.ts#L23)
 
 ___
 
@@ -73,4 +73,4 @@ ___
 
 #### Defined in
 
-[packages/verifiable-credentials/src/interfaces.ts:21](https://github.com/verida/verida-js/blob/032961c/packages/verifiable-credentials/src/interfaces.ts#L21)
+[packages/verifiable-credentials/src/interfaces.ts:21](https://github.com/verida/verida-js/blob/5040472/packages/verifiable-credentials/src/interfaces.ts#L21)

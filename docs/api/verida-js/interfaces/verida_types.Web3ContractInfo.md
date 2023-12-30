@@ -22,7 +22,7 @@ Contract Info. Used for 'web3' mode
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:11](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L11)
+[packages/types/src/Web3Interfaces.ts:11](https://github.com/verida/verida-js/blob/5040472/packages/types/src/Web3Interfaces.ts#L11)
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:12](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L12)
+[packages/types/src/Web3Interfaces.ts:12](https://github.com/verida/verida-js/blob/5040472/packages/types/src/Web3Interfaces.ts#L12)
 
 ___
 
@@ -42,4 +42,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/Web3Interfaces.ts:13](https://github.com/verida/verida-js/blob/032961c/packages/types/src/Web3Interfaces.ts#L13)
+[packages/types/src/Web3Interfaces.ts:13](https://github.com/verida/verida-js/blob/5040472/packages/types/src/Web3Interfaces.ts#L13)

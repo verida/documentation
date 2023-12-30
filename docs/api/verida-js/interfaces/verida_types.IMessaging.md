@@ -40,7 +40,7 @@ Used internally.
 
 #### Defined in
 
-[packages/types/src/IMessaging.ts:74](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IMessaging.ts#L74)
+[packages/types/src/IMessaging.ts:74](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IMessaging.ts#L74)
 
 ___
 
@@ -58,7 +58,7 @@ any Currently returns a `Datastore` instance.
 
 #### Defined in
 
-[packages/types/src/IMessaging.ts:65](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IMessaging.ts#L65)
+[packages/types/src/IMessaging.ts:65](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IMessaging.ts#L65)
 
 ___
 
@@ -81,7 +81,7 @@ Get messages from this inbox.
 
 #### Defined in
 
-[packages/types/src/IMessaging.ts:58](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IMessaging.ts#L58)
+[packages/types/src/IMessaging.ts:58](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IMessaging.ts#L58)
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IMessaging.ts:9](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IMessaging.ts#L9)
+[packages/types/src/IMessaging.ts:9](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IMessaging.ts#L9)
 
 ___
 
@@ -117,7 +117,7 @@ Unregister a callback to fire when a new message is received
 
 #### Defined in
 
-[packages/types/src/IMessaging.ts:50](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IMessaging.ts#L50)
+[packages/types/src/IMessaging.ts:50](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IMessaging.ts#L50)
 
 ___
 
@@ -149,7 +149,7 @@ Returns an event emitter
 
 #### Defined in
 
-[packages/types/src/IMessaging.ts:43](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IMessaging.ts#L43)
+[packages/types/src/IMessaging.ts:43](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IMessaging.ts#L43)
 
 ___
 
@@ -177,4 +177,4 @@ Send a message to another DID on the network.
 
 #### Defined in
 
-[packages/types/src/IMessaging.ts:22](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IMessaging.ts#L22)
+[packages/types/src/IMessaging.ts:22](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IMessaging.ts#L22)

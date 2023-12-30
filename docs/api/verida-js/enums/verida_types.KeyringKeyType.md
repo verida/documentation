@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[packages/types/src/IKeyring.ts:41](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IKeyring.ts#L41)
+[packages/types/src/IKeyring.ts:41](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IKeyring.ts#L41)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[packages/types/src/IKeyring.ts:40](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IKeyring.ts#L40)
+[packages/types/src/IKeyring.ts:40](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IKeyring.ts#L40)
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 #### Defined in
 
-[packages/types/src/IKeyring.ts:42](https://github.com/verida/verida-js/blob/032961c/packages/types/src/IKeyring.ts#L42)
+[packages/types/src/IKeyring.ts:42](https://github.com/verida/verida-js/blob/5040472/packages/types/src/IKeyring.ts#L42)

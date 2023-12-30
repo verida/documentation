@@ -64,7 +64,7 @@ An Authenticator that requests for authorization from the Vault
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:81](https://github.com/verida/verida-js/blob/032961c/packages/account-web-vault/src/vault-account.ts#L81)
+[packages/account-web-vault/src/vault-account.ts:84](https://github.com/verida/verida-js/blob/5040472/packages/account-web-vault/src/vault-account.ts#L84)
 
 ## Properties
 
@@ -74,7 +74,7 @@ An Authenticator that requests for authorization from the Vault
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:78](https://github.com/verida/verida-js/blob/032961c/packages/account-web-vault/src/vault-account.ts#L78)
+[packages/account-web-vault/src/vault-account.ts:81](https://github.com/verida/verida-js/blob/5040472/packages/account-web-vault/src/vault-account.ts#L81)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:76](https://github.com/verida/verida-js/blob/032961c/packages/account-web-vault/src/vault-account.ts#L76)
+[packages/account-web-vault/src/vault-account.ts:79](https://github.com/verida/verida-js/blob/5040472/packages/account-web-vault/src/vault-account.ts#L79)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:79](https://github.com/verida/verida-js/blob/032961c/packages/account-web-vault/src/vault-account.ts#L79)
+[packages/account-web-vault/src/vault-account.ts:82](https://github.com/verida/verida-js/blob/5040472/packages/account-web-vault/src/vault-account.ts#L82)
 
 ## Methods
 
@@ -117,7 +117,7 @@ ___
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:234](https://github.com/verida/verida-js/blob/032961c/packages/account-web-vault/src/vault-account.ts#L234)
+[packages/account-web-vault/src/vault-account.ts:237](https://github.com/verida/verida-js/blob/5040472/packages/account-web-vault/src/vault-account.ts#L237)
 
 ___
 
@@ -138,7 +138,7 @@ ___
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:94](https://github.com/verida/verida-js/blob/032961c/packages/account-web-vault/src/vault-account.ts#L94)
+[packages/account-web-vault/src/vault-account.ts:97](https://github.com/verida/verida-js/blob/5040472/packages/account-web-vault/src/vault-account.ts#L97)
 
 ___
 
@@ -160,7 +160,7 @@ Verify we have valid JWT's and non-expired accessToken and refreshToken
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:146](https://github.com/verida/verida-js/blob/032961c/packages/account-web-vault/src/vault-account.ts#L146)
+[packages/account-web-vault/src/vault-account.ts:149](https://github.com/verida/verida-js/blob/5040472/packages/account-web-vault/src/vault-account.ts#L149)
 
 ___
 
@@ -208,7 +208,7 @@ Get the DID of the current user
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:260](https://github.com/verida/verida-js/blob/032961c/packages/account-web-vault/src/vault-account.ts#L260)
+[packages/account-web-vault/src/vault-account.ts:263](https://github.com/verida/verida-js/blob/5040472/packages/account-web-vault/src/vault-account.ts#L263)
 
 ___
 
@@ -236,7 +236,7 @@ For example, in a web browser context, it would remove any stored signatures fro
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:286](https://github.com/verida/verida-js/blob/032961c/packages/account-web-vault/src/vault-account.ts#L286)
+[packages/account-web-vault/src/vault-account.ts:289](https://github.com/verida/verida-js/blob/5040472/packages/account-web-vault/src/vault-account.ts#L289)
 
 ___
 
@@ -288,7 +288,7 @@ ___
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:307](https://github.com/verida/verida-js/blob/032961c/packages/account-web-vault/src/vault-account.ts#L307)
+[packages/account-web-vault/src/vault-account.ts:310](https://github.com/verida/verida-js/blob/5040472/packages/account-web-vault/src/vault-account.ts#L310)
 
 ___
 
@@ -309,7 +309,7 @@ ___
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:361](https://github.com/verida/verida-js/blob/032961c/packages/account-web-vault/src/vault-account.ts#L361)
+[packages/account-web-vault/src/vault-account.ts:364](https://github.com/verida/verida-js/blob/5040472/packages/account-web-vault/src/vault-account.ts#L364)
 
 ___
 
@@ -335,7 +335,7 @@ Generate a keyring for this user for a given storage context.
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:226](https://github.com/verida/verida-js/blob/032961c/packages/account-web-vault/src/vault-account.ts#L226)
+[packages/account-web-vault/src/vault-account.ts:229](https://github.com/verida/verida-js/blob/5040472/packages/account-web-vault/src/vault-account.ts#L229)
 
 ___
 
@@ -361,7 +361,7 @@ Link storage to this user
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:273](https://github.com/verida/verida-js/blob/032961c/packages/account-web-vault/src/vault-account.ts#L273)
+[packages/account-web-vault/src/vault-account.ts:276](https://github.com/verida/verida-js/blob/5040472/packages/account-web-vault/src/vault-account.ts#L276)
 
 ___
 
@@ -408,7 +408,7 @@ ___
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:175](https://github.com/verida/verida-js/blob/032961c/packages/account-web-vault/src/vault-account.ts#L175)
+[packages/account-web-vault/src/vault-account.ts:178](https://github.com/verida/verida-js/blob/5040472/packages/account-web-vault/src/vault-account.ts#L178)
 
 ___
 
@@ -429,7 +429,7 @@ ___
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:293](https://github.com/verida/verida-js/blob/032961c/packages/account-web-vault/src/vault-account.ts#L293)
+[packages/account-web-vault/src/vault-account.ts:296](https://github.com/verida/verida-js/blob/5040472/packages/account-web-vault/src/vault-account.ts#L296)
 
 ___
 
@@ -453,7 +453,7 @@ ___
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:136](https://github.com/verida/verida-js/blob/032961c/packages/account-web-vault/src/vault-account.ts#L136)
+[packages/account-web-vault/src/vault-account.ts:139](https://github.com/verida/verida-js/blob/5040472/packages/account-web-vault/src/vault-account.ts#L139)
 
 ___
 
@@ -473,7 +473,7 @@ ___
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:264](https://github.com/verida/verida-js/blob/032961c/packages/account-web-vault/src/vault-account.ts#L264)
+[packages/account-web-vault/src/vault-account.ts:267](https://github.com/verida/verida-js/blob/5040472/packages/account-web-vault/src/vault-account.ts#L267)
 
 ___
 
@@ -499,7 +499,7 @@ Sign a string as the current user
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:256](https://github.com/verida/verida-js/blob/032961c/packages/account-web-vault/src/vault-account.ts#L256)
+[packages/account-web-vault/src/vault-account.ts:259](https://github.com/verida/verida-js/blob/5040472/packages/account-web-vault/src/vault-account.ts#L259)
 
 ___
 
@@ -524,7 +524,7 @@ ___
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:242](https://github.com/verida/verida-js/blob/032961c/packages/account-web-vault/src/vault-account.ts#L242)
+[packages/account-web-vault/src/vault-account.ts:245](https://github.com/verida/verida-js/blob/5040472/packages/account-web-vault/src/vault-account.ts#L245)
 
 ___
 
@@ -550,4 +550,4 @@ Unlink storage for this user
 
 #### Defined in
 
-[packages/account-web-vault/src/vault-account.ts:282](https://github.com/verida/verida-js/blob/032961c/packages/account-web-vault/src/vault-account.ts#L282)
+[packages/account-web-vault/src/vault-account.ts:285](https://github.com/verida/verida-js/blob/5040472/packages/account-web-vault/src/vault-account.ts#L285)
