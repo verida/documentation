@@ -6,6 +6,7 @@
  */
 
 import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
+import { EnvironmentType } from "@verida/types";
 import React, { useEffect, useState } from "react";
 import { store, useGlobalState } from "state-pool";
 
@@ -84,11 +85,12 @@ if (ExecutionEnvironment.canUseDOM) {
           "https://developers.verida.io/img/tutorial_login_request_logo_170x170.png",
         walletConnect,
       },
+      environment: EnvironmentType.TESTNET,
     });
 
     const context = await Network.connect({
       client: {
-        environment: "testnet",
+        environment: EnvironmentType.TESTNET,
       },
       account: globalAccount,
       context: {
@@ -114,7 +116,8 @@ const ReactLiveScope = {
   WalletConnect,
   globalAccount,
   globalLoginFunction,
-  getCircularReplacer
+  getCircularReplacer,
+  EnvironmentType
 };
 
 export default ReactLiveScope;

@@ -7,7 +7,7 @@ keywords: [Verida, Web3, Developers, Tutorial, Verida Connect, Wallet connect]
 
 import ReactPlayer from 'react-player';
 
-# Sign-in with Verida Connect SDK 
+# Sign-in with Verida Connect SDK
 
 ## See a walk through of the code
 
@@ -55,12 +55,13 @@ VeridaLoginExample = () => {
 		const account = new VaultAccount({
 			request: {
 				logoUrl: 'https://developers.verida.io/img/tutorial_login_request_logo_170x170.png',
-		    },
+		  },
+			environment: EnvironmentType.TESTNET,
 		});
 
 		const context = await Network.connect({
 			client: {
-				environment: 'testnet'
+				environment: EnvironmentType.TESTNET,
 			},
 			account: account,
 			context: {
@@ -71,7 +72,7 @@ VeridaLoginExample = () => {
 		if (context) {
 			// set the local state variable
 		   setVeridaContext(context);
-		} 
+		}
 	};
 
 	logout = async function () {
@@ -96,7 +97,7 @@ VeridaLoginExample = () => {
 				<button onClick={this.logout}>Logout</button>
 			</div>
 		);
-	} else { 
+	} else {
 		return (
 			<div>
 				<button onClick={this.login}>Login</button>

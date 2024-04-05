@@ -29,7 +29,8 @@ export const user = new WebUser({
     accountConfig: {
         request: {
             logoUrl: LOGO_URL
-        }
+        },
+        environment: VERIDA_ENVIRONMENT
     },
     clientConfig: {
         environment: VERIDA_ENVIRONMENT

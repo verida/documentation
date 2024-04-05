@@ -20,7 +20,7 @@ how to use the live code :
 :::caution
 
 You may get an error that display : "Session is disconnected"  this means you're currently logged in without a WalletConnect session.
-Steps to fix this error 
+Steps to fix this error
  - Please ensure the Verida Wallet is updated to the latest version
  - Login again to establish a WalletConnect session
 
@@ -90,7 +90,7 @@ VeridaLoginExample = () => {
     const account = new VaultAccount({
       request: {
         logoUrl: 'https://developers.verida.io/img/tutorial_login_request_logo_170x170.png',
-        // Pass the WalletConnect details required for the connection. 
+        // Pass the WalletConnect details required for the connection.
         // Please not that the wallet connect object is optional.
         walletConnect: {
           version: connector.version,
@@ -98,6 +98,7 @@ VeridaLoginExample = () => {
           chainId: CHAIN_ID
         }
       },
+      environment: 'testnet'
     });
     const context = await Network.connect({
       client: {
@@ -141,7 +142,7 @@ VeridaLoginExample = () => {
         message,
         address
       ];
-      // Learn more about WalletConnect personal_sign here 
+      // Learn more about WalletConnect personal_sign here
       // https://docs.walletconnect.com/1.0/quick-start/dapps/client#sign-personal-message-personal_sign
       const result = await walletConnector.signPersonalMessage(msgParams);
       if(result) {
@@ -192,8 +193,8 @@ VeridaLoginExample = () => {
             }
             <button onClick={this.logout} style={styles}>Logout</button>
             {
-            walletConnector 
-            && (processingWc ? 'Processing....' : 
+            walletConnector
+            && (processingWc ? 'Processing....' :
               <button onClick={this.signInPersonalMessage}>
                 Sign Personal Message
               </button>
