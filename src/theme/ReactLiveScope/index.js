@@ -88,7 +88,7 @@ if (ExecutionEnvironment.canUseDOM) {
 
     const context = await Network.connect({
       client: {
-        environment: "testnet",
+        environment: "mainnet",
       },
       account: globalAccount,
       context: {

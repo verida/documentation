@@ -29,7 +29,10 @@ VeridaLoginExample = () => {
 	const [veridaContext, setVeridaContext] = useState(undefined);
 	const [walletAddress, setWalletAddress] = useState(null);
 	const [message, setMessage] = useState(null);
-	this.CONTEXT_NAME = 'Verida Tutorial';
+	const contextName = 'Verida Tutorial';
+	const veridaNetwork = 'mainnet';
+	// It can be any Polygon mainnet public RPC
+	const rpcUrl = 'https://polygon-rpc.com';
 
 	React.useEffect(async () => {
 		// Runs after the first render() lifecycle
@@ -42,7 +45,7 @@ VeridaLoginExample = () => {
 			// Check if we have a stored session
 			//  hasSession is from the package "@verida/account-web-vault"
 			//  see below fod links to documentation
-			if (hasSession(this.CONTEXT_NAME)) {
+			if (hasSession(contextName)) {
 				// we know we have a session already
 				login(); // when logged in this will just setup a Verida Context
 			}
@@ -60,11 +63,15 @@ VeridaLoginExample = () => {
 
 		const context = await Network.connect({
 			client: {
-				environment: 'testnet'
+				environment: veridaNetwork,
+				didClientConfig: {
+					network: veridaNetwork,
+					rpcURL: rpcUrl,
+				}
 			},
 			account: account,
 			context: {
-				name: this.CONTEXT_NAME
+				name: contextName
 			}
 		});
 
@@ -76,7 +83,7 @@ VeridaLoginExample = () => {
 
 	logout = async function () {
 		// disconnect the Verida session
-		await veridaContext.account.disconnect(this.CONTEXT_NAME);
+		await veridaContext.account.disconnect(contextName);
 		// reset the internal state
 		setVeridaContext(undefined);
 	};
@@ -90,7 +97,7 @@ VeridaLoginExample = () => {
 		return (
 			<div>
 				<h3>
-					Logged in! Your <a href='/docs/concepts/accounts-and-identity'>DID</a>
+					Logged in! Your <a href='/docs/concepts/accounts-and-identity'>DID</a> 
 					is: <pre>{veridaContext.account.accountDid}</pre>
 				</h3>
 				<button onClick={this.logout}>Logout</button>
