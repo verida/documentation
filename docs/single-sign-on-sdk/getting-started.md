@@ -24,35 +24,21 @@ import { Network } from '@verida/client-ts';
 import { EnvironmentType } from '@verida/types';
 import { VaultAccount } from '@verida/account-web-vault';
 
-// (optional) Import WalletConnect if required
-import WalletConnect from "@walletconnect/client";
-
 const VERIDA_ENVIRONMENT = EnvironmentType.TESTNET;
 const CONTEXT_NAME = 'My Application: Context Name';
 
-// (optional) WalletConnect configuration
-// See the WalletConnect section of the documentation for details
-const DEFAULT_CHAIN_ID = "eip155:1"
-connector = new WalletConnect({
-    bridge: 'https://bridge.walletconnect.org',
-});
-
-// Logo for your application
-// The LOGO_URL should be a 170x170 PNG file
+// Logo for your application, should be a 170x170 PNG file
 const LOGO_URL = "https://assets.verida.io/verida_login_request_logo_170x170.png";
 
 const account = new VaultAccount({
   request: {
     logoUrl: LOGO_URL,
-    // An optional URL that will open a browser on the user's mobile device
+    // openURL: An optional URL that will open a browser on the user's mobile device
     // after accepting the login request in the Verida Wallet mobile app
     openURL: window.location.href,
   },
-  walletConnect: {
-    version: connector.version,
-    uri: connector.uri,
-    chainId: DEFAULT_CHAIN_ID,
-  },
+  // environment: Indicates to the Wallet which network the identity should be on.
+  environment: VERIDA_ENVIRONMENT,
 });
 
 const context = await Network.connect({
