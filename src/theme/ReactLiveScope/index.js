@@ -85,12 +85,12 @@ if (ExecutionEnvironment.canUseDOM) {
           "https://developers.verida.io/img/tutorial_login_request_logo_170x170.png",
         walletConnect,
       },
-      environment: EnvironmentType.TESTNET,
+      environment: EnvironmentType.MAINNET,
     });
 
     const context = await Network.connect({
       client: {
-        environment: EnvironmentType.TESTNET,
+        environment: EnvironmentType.MAINNET,
       },
       account: globalAccount,
       context: {
