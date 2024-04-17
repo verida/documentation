@@ -12,7 +12,6 @@ import PartnerShipCard from "../components/cards/PartnershipCard";
 import GithubCard from "../components/cards/GithubCard";
 import Footer from "../components/Footer";
 import ReadDocsIcon from "@site/static/img/read_docs.svg";
-import ExploreAPiICon from "@site/static/img/explore_api.svg";
 import IntTutorialIcon from "@site/static/img/interactive_tutorial.svg";
 import DemosIcon from "@site/static/img/demos.svg";
 import {
@@ -25,27 +24,27 @@ import {
 const CONTENT_CARD_LIST = [
 	{
 		title: "Read the Documentation",
-		icon: <ReadDocsIcon title='icon' />,
+		icon: <ReadDocsIcon title='Read the Documentation' />,
 		link: "/docs/intro",
 		externalLink: false,
 	},
-	{
-		title: "See API Documentation",
-		icon: <ExploreAPiICon title='icon' />,
-		link: "/docs/api/verida-js/",
-		externalLink: true,
-	},
+	// {
+	// 	title: "API Docs",
+	// 	icon: <ExploreAPiICon title='API Docs' />,
+	// 	link: "",
+	// 	externalLink: true,
+	// },
 	{
 		title: "Interactive Tutorial",
 		description: `Check out the interactive tutorials for an introduction to Verida's Web3 APIs`,
-		icon: <IntTutorialIcon title='icon' />,
+		icon: <IntTutorialIcon title='Interactive Tutorial' />,
 		link: "/docs/tutorial/introduction",
 		externalLink: false,
 	},
 	{
 		title: "Demos",
 		description: "Explore Verida technologies with demo applications",
-		icon: <DemosIcon title='icon' />,
+		icon: <DemosIcon title='Demos' />,
 		link: "/docs/extras/demos",
 		externalLink: false,
 	},
