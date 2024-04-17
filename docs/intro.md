@@ -41,8 +41,6 @@ Read more about the [concepts](/docs/concepts) behind Verida:
 * Implement [Verida Connect](/docs/single-sign-on-sdk) in your application.
 * Add additional capabilities including data storage and messaging using the [Client SDK](/docs/client-sdk)
 
-* See the [API Docs](/docs/api/verida-js)
-
 
 ### Join Verida
 
