@@ -29,7 +29,50 @@ Verifiers can also send you Reclaim proof requests. The Verida Wallet will autom
 
 ## Request Reclaim credential
 
-This part is the same as [zkPass protocol](/docs/extensions/credentials/zkpass#request-zkpass-credential)
+You can request credential which is generated from reclaim protocol for your purpose.
+
+### Example code
+
+```
+  const did = "..."; // Verida Did
+  // Get message object from verida context
+  const messaging = await context.getMessaging();
+
+  // setup a callback to show the response
+  await messaging.onMessage((data) => {
+    // This callback should be called once user shares credential
+    console.log('Received credentials: ', data);
+  });
+
+  const messageType = "inbox/type/dataRequest";
+  const config = {
+    did,
+    recipientContextName: "Verida: Vault",
+  };
+  const dataToSend = {
+    requestSchema: "https://common.schemas.verida.io/credential/base/v0.2.0/schema.json",
+    filter: {
+      $or: [
+        { credentialSchema: "https://common.schemas.verida.io/credential/reclaim/v0.1.0/schema.json" }
+      ]
+    },
+    userSelect: true,
+  };
+
+  // This is the DID the message will go to
+  const requestFromDID = did;
+  const messageSubject = "Please select your verifiable credential to verify",
+
+  const res = await messaging.send(
+    requestFromDID,
+    messageType,
+    dataToSend,
+    msg.messageSubject,
+    config
+  );
+
+  console.log("Request sent");
+```
 
 ## Issuing a Reclaim Protocol credential
 
