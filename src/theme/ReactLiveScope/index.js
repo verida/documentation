@@ -6,7 +6,7 @@
  */
 
 import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
-import { EnvironmentType } from "@verida/types";
+import { Network } from "@verida/types";
 import React, { useEffect, useState } from "react";
 import { store, useGlobalState } from "state-pool";
 
@@ -85,12 +85,12 @@ if (ExecutionEnvironment.canUseDOM) {
           "https://developers.verida.io/img/tutorial_login_request_logo_170x170.png",
         walletConnect,
       },
-      environment: EnvironmentType.MAINNET,
+      environment: Network.MYRTLE,
     });
 
     const context = await Network.connect({
       client: {
-        environment: EnvironmentType.MAINNET,
+        environment: Network.MYRTLE,
       },
       account: globalAccount,
       context: {

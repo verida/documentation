@@ -35,10 +35,10 @@ This approach is ideal for integrating the Verida protocol into a server side No
 
 ```tsx
 import { Network } from '@verida/client-ts'
-import { EnvironmentType } from '@verida/types';
+import { Network as VeridaNetwork } from '@verida/types';
 import { AutoAccount } from '@verida/account-node'
 
-const VERIDA_ENVIRONMENT = EnvironmentType.TESTNET
+const VERIDA_ENVIRONMENT = VeridaNetwork.MYRTLE // (MYRTLE = mainnet, BANKSIA = testnet)
 const CONTEXT_NAME = 'My Application: Context Name'
 
 // Configuration for the DID client
@@ -59,17 +59,15 @@ const context = await Network.connect({
         name: CONTEXT_NAME
     },
     client: {
-        environment: VERIDA_ENVIRONMENT
+        network: VERIDA_ENVIRONMENT
     },
     account: new AutoAccount({
         privateKey: '0x...' // or Verida mnemonic seed phrase
-        environment: VERIDA_ENVIRONMENT,
+        network: VERIDA_ENVIRONMENT,
         didClientConfig: DID_CLIENT_CONFIG
     })
 })
 ```
-
-Note: Change `EnvironmentType.TESTNET` to `EnvironmentType.MAINNET` if connecting to Verida Mainnet.
 
 See the [@verida/account-node package](https://github.com/verida/verida-js/tree/main/packages/account-node) for more details.
 
@@ -111,10 +109,10 @@ In your application, include the dependency and create a new client network inst
 
 ```tsx
 import { Client } from '@verida/client-ts'
-import { EnvironmentType } from '@verida/types'
+import { Network } from '@verida/types'
 import { AutoAccount } from '@verida/account-node'
 
-const VERIDA_ENVIRONMENT = EnvironmentType.TESTNET
+const VERIDA_ENVIRONMENT = Network.BANKSIA
 const CONTEXT_NAME = 'My Application: Context Name'
 
 const DID_CLIENT_CONFIG = {
@@ -126,14 +124,14 @@ const DID_CLIENT_CONFIG = {
 
 // establish a network connection
 const client = new Client({
-    environment: VERIDA_ENVIRONMENT
+    network: VERIDA_ENVIRONMENT
 })
 
 // create a Verida account instance that wraps the authorized Verida DID server connection
 // The `AutoAccount` instance will automatically sign any consent messages
 const account = new AutoAccount({
     privateKey: '0x...' // or Verida mnemonic seed phrase
-    environment: VERIDA_ENVIRONMENT,
+    network: VERIDA_ENVIRONMENT,
     didClientConfig: DID_CLIENT_CONFIG
 })
 
