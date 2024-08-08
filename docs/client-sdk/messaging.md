@@ -68,7 +68,7 @@ Your application can send messages to other accounts on the Verida network.
 This example sends a contact record to a user’s Verida Wallet:
 
 ```tsx
-const did = 'did:vda:0x6B2a1bE81ee770cbB4648801e343E135e8D2Aa6F'
+const did = 'did:vda:polamoy:0x6B2a1bE81ee770cbB4648801e343E135e8D2Aa6F'
 const type = 'inbox/type/dataSend'
 
 // Generate an inbox message containing an array of data
@@ -137,7 +137,7 @@ Data can be sent to an account (see Outbox example above)
 Data can be requested from an account:
 
 ```tsx
-const did = 'did:vda:0x6B2a1bE81ee770cbB4648801e343E135e8D2Aa6F'
+const did = 'did:vda:polamoy:0x6B2a1bE81ee770cbB4648801e343E135e8D2Aa6F'
 const type = 'inbox/type/dataRequest'
 
 // Generate an inbox message containing an array of data

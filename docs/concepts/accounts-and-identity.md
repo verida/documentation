@@ -17,7 +17,7 @@ Read the article below or watch the technical deep dive to learn about the key p
 
 ## Decentralized Identifiers (DIDs)
 
-Verida accounts are decentralized identities that implement the [decentralized identifier (DID) standard](https://w3c.github.io/did-core/). A DID has a unique addresses (ie: `did:vda:testnet:0x6B2a1bE81ee770cbB4648801e343E135e8D2Aa6F`) that is controlled by an end user with a private key or seed phrase.
+Verida accounts are decentralized identities that implement the [decentralized identifier (DID) standard](https://w3c.github.io/did-core/). A DID has a unique addresses (ie: `did:vda:polamoy:0x6B2a1bE81ee770cbB4648801e343E135e8D2Aa6F`) that is controlled by an end user with a private key or seed phrase.
 
 In this documentation we use the terms `account`, `identity`, `DID` interchangeable as they are effectively the same thing.
 

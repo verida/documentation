@@ -17,7 +17,7 @@ In the example above we have the account `Steve - Personal` from the application
 
 This architecture allows applications to develop their own message types for domain specific data sharing and messaging.
 
-In this case the message is being sent to a Verida account (`did:vda:0x6B2a1bE81...). In the future will support Verida accounts being linked to onchain addresses, providing a decentralized messaging system that works across multiple addresses and multiple chains.
+In this case the message is being sent to a Verida account (`did:vda:polamoy:0x6B2a1bE81...). In the future will support Verida accounts being linked to onchain addresses, providing a decentralized messaging system that works across multiple addresses and multiple chains.
 
 ## How it works
 

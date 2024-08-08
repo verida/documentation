@@ -42,7 +42,7 @@ Here’s example output for an encrypted database:
 {
   type: 'VeridaDatabase',
   privacy: 'encrypted',
-  did: 'did:vda:0x6B2a1bE81ee770cbB4648801e343E135e8D2Aa6F',
+  did: 'did:vda:polamoy:0x6B2a1bE81ee770cbB4648801e343E135e8D2Aa6F',
   dsn: 'https://<username>:<password>@db.testnet.verida.io:5984',
   storageContext: 'Verida Test: Test Application 1',
   databaseName: 'SyncTestDb',
