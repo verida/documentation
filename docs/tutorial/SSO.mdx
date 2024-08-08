@@ -22,13 +22,17 @@ import ReactPlayer from 'react-player';
 
 ## Try it out
 
-The code below shows how to login to the Verida network. It is live - you can press the "Login" button to login, and edit the code to see how it works.
+The code below shows how to login to the Verida Network. It is live - you can press the "Login" button to login, and edit the code to see how it works.
 
 ```jsx live
+// import { Network as NetworkClient } from "@verida/client-ts";
+// import { Network } from "@verida/types";
+
 VeridaLoginExample = () => {
 	const [veridaContext, setVeridaContext] = useState(undefined);
 	const [walletAddress, setWalletAddress] = useState(null);
 	const [message, setMessage] = useState(null);
+
 	this.CONTEXT_NAME = 'Verida Tutorial';
 
 	React.useEffect(async () => {
@@ -56,12 +60,12 @@ VeridaLoginExample = () => {
 			request: {
 				logoUrl: 'https://developers.verida.io/img/tutorial_login_request_logo_170x170.png',
 		  },
-			environment: EnvironmentType.MAINNET,
+			network: Network.MYRTLE, // BANKSIA (testnet) or MYRTLE (mainnet)
 		});
 
-		const context = await Network.connect({
+		const context = await NetworkClient.connect({
 			client: {
-				environment: EnvironmentType.MAINNET,
+				Network: Network.MYRTLE, // BANKSIA (testnet) or MYRTLE (mainnet)
 			},
 			account: account,
 			context: {
