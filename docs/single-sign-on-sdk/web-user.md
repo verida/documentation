@@ -12,12 +12,12 @@ keywords: [Verida, Web3, Developers]
 ```ts
 // Example simplified for brevity. Notably, async/await should be handled appropriately
 
-import { EnvironmentType } from '@verida/types'
+import { Network } from '@verida/types'
 import { WebUser } from '@verida/web-helpers'
 
 // Your application context name
 const CONTEXT_NAME = '<Company name>: <Application name>'
-const VERIDA_ENVIRONMENT = EnvironmentType.TESTNET
+const VERIDA_NETWORK = Network.BANKSIA // BANKSIA (testnet) or MYRTLE (mainnet)
 
 // Your logo URL (appears in the Wallet)
 const LOGO_URL = ''
@@ -30,10 +30,10 @@ export const user = new WebUser({
         request: {
             logoUrl: LOGO_URL
         },
-        environment: VERIDA_ENVIRONMENT
+        network: VERIDA_NETWORK
     },
     clientConfig: {
-        environment: VERIDA_ENVIRONMENT
+        network: VERIDA_NETWORK
     },
     contextConfig: {
         name: CONTEXT_NAME

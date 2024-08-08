@@ -96,14 +96,15 @@ For example, open a user’s public profile created in the `Verida: Vault` mobil
 
 ```tsx
 import { Client } from '@verida/client-ts';
-import { EnvironmentType } from '@verida/types';
-
-const userConfig = {
- environment: EnvironmentType.TESTNET,
-};
+import { Network } from '@verida/types';
 
 const did = 'did:vda:0x6B2a1bE81ee770cbB4648801e343E135e8D2Aa6F';
-const client = new Client(userConfig);
+
+const clientConfig = {
+ environment: Network.BANKSIA, // BANKSIA (testnet) or MYRTLE (mainnet)
+};
+
+const client = new Client(clientConfig);
 
 const profileInstance = await client.openPublicProfile(
  did,
@@ -112,8 +113,6 @@ const profileInstance = await client.openPublicProfile(
 );
 
 const profile  = await profileInstance.getMany({}, {});
-
-}
 ```
 
-Note: Change `EnvironmentType.TESTNET` to `EnvironmentType.MAINNET` if loading a mainnet profile.
+Note: Change `Network.BANKSIA` to `Network.MYRTLE` if loading a mainnet profile.

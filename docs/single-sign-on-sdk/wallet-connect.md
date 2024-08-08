@@ -34,7 +34,7 @@ Consider the following example code, which demonstrates the integration of Walle
 
 ```ts
 // Example simplified for brevity
-
+import { Network } from '@verida/client-ts';
 import AuthClient, { generateNonce } from "@walletconnect/auth-client";
 
 // Initialise the AuthClient

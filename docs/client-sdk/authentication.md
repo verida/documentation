@@ -34,11 +34,11 @@ This approach is ideal for integrating the Verida protocol into a server side No
 ### Example
 
 ```tsx
-import { Network } from '@verida/client-ts'
-import { Network as VeridaNetwork } from '@verida/types';
+import { Network as NetworkClient } from '@verida/client-ts'
+import { Network } from '@verida/types';
 import { AutoAccount } from '@verida/account-node'
 
-const VERIDA_ENVIRONMENT = VeridaNetwork.MYRTLE // (MYRTLE = mainnet, BANKSIA = testnet)
+const VERIDA_NETWORK = Network.BANKSIA // BANKSIA (testnet) or MYRTLE (mainnet)
 const CONTEXT_NAME = 'My Application: Context Name'
 
 // Configuration for the DID client
@@ -54,16 +54,16 @@ const DID_CLIENT_CONFIG = {
 }
 
 // Create a connection to the network and open your context
-const context = await Network.connect({
+const context = await NetworkClient.connect({
     context: {
         name: CONTEXT_NAME
     },
     client: {
-        network: VERIDA_ENVIRONMENT
+        network: VERIDA_NETWORK
     },
     account: new AutoAccount({
         privateKey: '0x...' // or Verida mnemonic seed phrase
-        network: VERIDA_ENVIRONMENT,
+        network: VERIDA_NETWORK,
         didClientConfig: DID_CLIENT_CONFIG
     })
 })
@@ -112,7 +112,7 @@ import { Client } from '@verida/client-ts'
 import { Network } from '@verida/types'
 import { AutoAccount } from '@verida/account-node'
 
-const VERIDA_ENVIRONMENT = Network.BANKSIA
+const VERIDA_NETWORK = Network.BANKSIA // BANKSIA (testnet) or MYRTLE (mainnet)
 const CONTEXT_NAME = 'My Application: Context Name'
 
 const DID_CLIENT_CONFIG = {
@@ -124,14 +124,14 @@ const DID_CLIENT_CONFIG = {
 
 // establish a network connection
 const client = new Client({
-    network: VERIDA_ENVIRONMENT
+    network: VERIDA_NETWORK
 })
 
 // create a Verida account instance that wraps the authorized Verida DID server connection
 // The `AutoAccount` instance will automatically sign any consent messages
 const account = new AutoAccount({
     privateKey: '0x...' // or Verida mnemonic seed phrase
-    network: VERIDA_ENVIRONMENT,
+    network: VERIDA_NETWORK,
     didClientConfig: DID_CLIENT_CONFIG
 })
 
@@ -152,7 +152,7 @@ The first parameter for `AutoAccount()` is an interface that meets the `AccountN
 ```ts
 export interface AccountNodeConfig {
     privateKey: string;
-    environment: EnvironmentType;
+    network: Network; // from '@verida/types'
     didClientConfig: AccountNodeDIDClientConfig;
     options?: any;
     countryCode?: string;
@@ -160,6 +160,6 @@ export interface AccountNodeConfig {
 ```
 
 - `privateKey` - Verida network private key for the account
-- `environment` - Verida environment (`EnvironmentType.TESTNET` or `EnvironmentType.MAINNET`)
+- `network` - Verida network (`Network.BANKSIA` or `Network.MYRTLE`)
 - `didClientConfig` - Instance of `AccountNodeDIDClientConfig`
 - `countryCode` - (optional) Country to use for selecting storage and DID nodes on the network. If not specified, will choose random global nodes. If specified, will use nodes in that country. If not enough nodes are available in that country, it will fallback to selecting nodes in the same region as that country, then fallback to global nodes.

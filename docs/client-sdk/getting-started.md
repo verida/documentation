@@ -28,11 +28,11 @@ npm install --dev @types/pouchdb-core
 Initialize a connection to the Verida network using a private key stored on the user’s mobile device using the Verida Wallet:
 
 ```tsx
-import { Network } from '@verida/client-ts';
-import { EnvironmentType } from '@verida/types';
+import { Network as NetworkClient } from '@verida/client-ts';
+import { Network } from '@verida/types';
 import { VaultAccount } from '@verida/account-web-vault';
 
-const VERIDA_ENVIRONMENT = EnvironmentType.TESTNET;
+const VERIDA_NETWORK = Network.BANKSIA; // BANKSIA (testnet) or MYRTLE (mainnet)
 const CONTEXT_NAME = 'My Application Context Name';
 
 // The LOGO_URL should be a 170x170 PNG file
@@ -42,9 +42,9 @@ const account = new VaultAccount({
 	logoUrl: LOGO_URL
 });
 
-const context = Network.connect({
+const context = NetworkClient.connect({
 	client: {
-		environment: VERIDA_ENVIRONMENT,
+		network: VERIDA_NETWORK,
 	},
 	account: account,
 	context: {
@@ -53,7 +53,7 @@ const context = Network.connect({
 });
 ```
 
-Note: Change `EnvironmentType.TESTNET` to `EnvironmentType.MAINNET` if connecting to Verida Mainnet.
+Note: `Network.BANKSIA` is a testnet network, use `Network.MYRTLE` to use a mainnet network.
 
 - `CONTEXT_NAME`: A string representing your decentralized application. By convention prefix it with your company name. ie: `Verida: My Application`.
 

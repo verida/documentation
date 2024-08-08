@@ -20,11 +20,11 @@ yarn add @verida/account-web-vault @verida/client-ts
 Here’s how you initialize an application context:
 
 ```jsx
-import { Network } from '@verida/client-ts';
-import { EnvironmentType } from '@verida/types';
+import { Network as NetworkClient } from '@verida/client-ts';
+import { Network } from '@verida/types';
 import { VaultAccount } from '@verida/account-web-vault';
 
-const VERIDA_ENVIRONMENT = EnvironmentType.TESTNET;
+const VERIDA_NETWORK = Network.BANKSIA; // BANKSIA (testnet) or MYRTLE (mainnet)
 const CONTEXT_NAME = 'My Application: Context Name';
 
 // Logo for your application, should be a 170x170 PNG file
@@ -38,12 +38,12 @@ const account = new VaultAccount({
     openURL: window.location.href,
   },
   // environment: Indicates to the Wallet which network the identity should be on.
-  environment: VERIDA_ENVIRONMENT,
+  network: VERIDA_NETWORK,
 });
 
-const context = await Network.connect({
+const context = await NetworkClient.connect({
 	client: {
-		environment: VERIDA_ENVIRONMENT,
+		network: VERIDA_NETWORK,
 	},
 	account: account,
 	context: {
@@ -68,7 +68,7 @@ These (all optional) config options include:
 - `request?.openUrl?` — An optional URL for the Wallet to open in the default browser on the user's mobile device after login is accepted. This will automatically authorize the user in local storage so future page loads of your application will be authenticated.
 - `request?.walletConnect?` — An optional configuration to automatically establish a wallet connection upon sign in. See [WalletConnect Support](./wallet-connect)
 - `callback?` — A callback function when the auth response is received.
-- `environment?` - (`testnet`, `mainnet`) The Verida Wallet will ensure the user account exists on this network. Defaults to `mainnet`.
+- `network?` - (`banksia`, `myrtle`) The Verida Wallet will ensure the user account exists on this network. Defaults to `myrtle`.
 - `deeplinkId?` — The HTML element ID of a link that should have the deeplink URI attached to the `href` property
 - `serverUri?` — An optional string representing the WSS URI of the authentication server. Leave this blank to use a server hosted by Verida or host your own (See [Authentication server](./sso-authentication-server))
 - `loginUri?` — The login URI or page where the user will be sent to login using the app; ie: vault.verida.io.

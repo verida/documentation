@@ -79,10 +79,10 @@ You can also open an external database  using the  `Client` class in the `@verid
 ```tsx
 
 import { Client } from '@verida/client-ts';
-import { EnvironmentType } from '@verida/types';
+import { Network } from '@verida/types';
 
 const clientConfig = {
-  environment: EnvironmentType.TESTNET,
+  network: Network.BANKSIA, // BANKSIA (testnet) or MYRTLE (mainnet)
 }
 
 const context = await new Client(clientConfig).openExternalContext(
