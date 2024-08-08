@@ -73,7 +73,7 @@ See the [@verida/account-node package](https://github.com/verida/verida-js/tree/
 
 ### Web3Config
 
-`DID_CLIENT_CONFIG.web3Config` supports additional options used when communicating with the blockchain. Here's the default configuration when using Verida Mainnet (Polygon PoS network):
+`DID_CLIENT_CONFIG.web3Config` supports additional options used when communicating with the blockchain. Here's the default configuration when using Verida Myrtle network (mainnet on the Polygon PoS blockchain):
 
 ```tsx
 const DID_CLIENT_CONFIG = {
