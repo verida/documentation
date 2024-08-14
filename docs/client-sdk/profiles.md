@@ -29,7 +29,7 @@ Open the public profile for any Verida Account and context combination using an 
 For example, open a user’s public profile created in the `Verida: Vault` mobile application:
 
 ```ts
-const did = 'did:vda:0x6B2a1bE81ee770cbB4648801e343E135e8D2Aa6F';
+const did = 'did:vda:polamoy:0x6B2a1bE81ee770cbB4648801e343E135e8D2Aa6F';
 const profileConnection = await client.openPublicProfile(did, 'Verida: Vault', 'basicProfile');
 const publicProfile = await profileConnection.getMany()
 
@@ -46,7 +46,7 @@ This can be tried out in your browser [here](../tutorial/public_profile.mdx).
 It’s also possible to open an external profile for the current context:
 
 ```ts
-const did = 'did:vda:0x6B2a1bE81ee770cbB4648801e343E135e8D2Aa6F';
+const did = 'did:vda:polamoy:0x6B2a1bE81ee770cbB4648801e343E135e8D2Aa6F';
 const externalProfile = await context.openProfile('public', did);
 ```
 
@@ -70,7 +70,7 @@ const profileData = await userProfile.getMany();
 console.log(profileData); // -> { name: 'Stevie', avatar: { uri: 'data:image/png;base64,iVBOR...' }, ...}
 
 // Delete a profile property
-await userProfile.delete('name'); 
+await userProfile.delete('name');
 
 // Listen for profile changes
 const listener = await userProfile.listen(function (row) {
@@ -96,14 +96,15 @@ For example, open a user’s public profile created in the `Verida: Vault` mobil
 
 ```tsx
 import { Client } from '@verida/client-ts';
-import { EnvironmentType } from '@verida/types';
+import { Network } from '@verida/types';
 
-const userConfig = {
- environment: EnvironmentType.TESTNET,
+const did = 'did:vda:polamoy:0x6B2a1bE81ee770cbB4648801e343E135e8D2Aa6F';
+
+const clientConfig = {
+ environment: Network.BANKSIA, // BANKSIA (testnet) or MYRTLE (mainnet)
 };
 
-const did = 'did:vda:0x6B2a1bE81ee770cbB4648801e343E135e8D2Aa6F';
-const client = new Client(userConfig);
+const client = new Client(clientConfig);
 
 const profileInstance = await client.openPublicProfile(
  did,
@@ -112,8 +113,6 @@ const profileInstance = await client.openPublicProfile(
 );
 
 const profile  = await profileInstance.getMany({}, {});
-
-}
 ```
 
-Note: Change `EnvironmentType.TESTNET` to `EnvironmentType.MAINNET` if loading a mainnet profile.
+Note: Change `Network.BANKSIA` to `Network.MYRTLE` if loading a mainnet profile.

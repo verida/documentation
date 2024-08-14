@@ -17,7 +17,7 @@ Verifiable Credentials can be issued by an account on the Verida Network. The cr
 
 [Learn more about Verifiable Credentials on Wikipedia](https://en.wikipedia.org/wiki/Verifiable_credentials)
 
-<!-- 
+<!--
 ## Credentials in the Verida Wallet
 
 @todo
@@ -28,7 +28,7 @@ Verifiable Credentials can be issued by an account on the Verida Network. The cr
 - Explain how they can display a QR code to verify in real life
 -->
 
-<!-- 
+<!--
 ## Credentials Management Platform
 
 @todo
@@ -62,7 +62,7 @@ import Credentials from "@verida/verifiable-credentials";
 const credentialSDK = new Credentials();
 
 // The Verida DID that is the subject of this credential (who is being verified with this credential?)
-const subjectDid = 'did:vda:0x....';
+const subjectDid = 'did:vda:polamoy:0x....';
 
 const credentialSchema = 'https://common.schemas.verida.io/identity/kyc/FinClusive/individual-basic/latest/schema.json'
 
@@ -137,19 +137,19 @@ Returned `decodedCredential` object:
   payload: {
     vc: {
       '@context': [Array],
-      sub: 'did:vda:0xC2629982A2585544FD72c99CF3773a9c6baBD55c',
+      sub: 'did:vda:polamoy:0xC2629982A2585544FD72c99CF3773a9c6baBD55c',
       type: [Array],
-      issuer: 'did:vda:0xB3729982A2585544FD72c99CF3773a9c6baBD55c',
+      issuer: 'did:vda:polamoy:0xB3729982A2585544FD72c99CF3773a9c6baBD55c',
       issuanceDate: '2022-03-08T23:25:31.097Z',
       credentialSubject: [Object],
       credentialSchema: [Object]
     },
-    iss: 'did:vda:0xB3729982A2585544FD72c99CF3773a9c6baBD55c'
+    iss: 'did:vda:polamoy:0xB3729982A2585544FD72c99CF3773a9c6baBD55c'
   },
   didResolutionResult: {
     didDocument: {
-      id: 'did:vda:0xb3729982a2585544fd72c99cf3773a9c6babd55c',
-      controller: 'did:vda:0xb3729982a2585544fd72c99cf3773a9c6babd55c',
+      id: 'did:vda:polamoy:0xb3729982a2585544fd72c99cf3773a9c6babd55c',
+      controller: 'did:vda:polamoy:0xb3729982a2585544fd72c99cf3773a9c6babd55c',
       assertionMethod: [Array],
       verificationMethod: [Array],
       service: [Array],
@@ -159,18 +159,18 @@ Returned `decodedCredential` object:
     didDocumentMetadata: {},
     didResolutionMetadata: { contentType: 'application/did+json' }
   },
-  issuer: 'did:vda:0xB3729982A2585544FD72c99CF3773a9c6baBD55c',
+  issuer: 'did:vda:polamoy:0xB3729982A2585544FD72c99CF3773a9c6baBD55c',
   signer: {
-    id: 'did:vda:0xb3729982a2585544fd72c99cf3773a9c6babd55c?context=0x046184d17aeff3bfc319b38e4fc38a922a4021c6a21fd478268d33a3a8fa2b01#sign',
+    id: 'did:vda:polamoy:0xb3729982a2585544fd72c99cf3773a9c6babd55c?context=0x046184d17aeff3bfc319b38e4fc38a922a4021c6a21fd478268d33a3a8fa2b01#sign',
     type: 'EcdsaSecp256k1VerificationKey2019',
-    controller: 'did:vda:0xb3729982a2585544fd72c99cf3773a9c6babd55c',
+    controller: 'did:vda:polamoy:0xb3729982a2585544fd72c99cf3773a9c6babd55c',
     publicKeyHex: '0x0219d9d875c4349ed4420ccd681e91defc796ca7c9a0ba39024c8743ccd4372442'
   },
   jwt: 'eyJhbGciOiJFUzI1NksiLCJ0eXAiOiJKV1QifQ.eyJ2YyI6eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvMjAxOC9jcmVkZW50aWFscy92MSIsImh0dHBzOi8vd3d3LnczLm9yZy8yMDE4L2NyZWRlbnRpYWxzL2V4YW1wbGVzL3YxIl0sInN1YiI6ImRpZDp2ZGE6MHhDMjYyOTk4MkEyNTg1NTQ0RkQ3MmM5OUNGMzc3M2E5YzZiYUJENTVjIiwidHlwZSI6WyJWZXJpZmlhYmxlQ3JlZGVudGlhbCJdLCJpc3N1ZXIiOiJkaWQ6dmRhOjB4QjM3Mjk5ODJBMjU4NTU0NEZENzJjOTlDRjM3NzNhOWM2YmFCRDU1YyIsImlzc3VhbmNlRGF0ZSI6IjIwMjItMDMtMDhUMjM6MjU6MzEuMDk3WiIsImNyZWRlbnRpYWxTdWJqZWN0Ijp7ImZ1bGxOYW1lIjoiSmFuZSBEb2UiLCJkYXRlT2ZCaXJ0aCI6IjE5OTItMDctMDMiLCJwYXRpZW50SWQiOiJBQkMxMjMiLCJ0ZXN0VGltZXN0YW1wIjoiMjAyMi0wMy0wMVQxMDozMDowNS40MzVaIiwicmVzdWx0IjoiTmVnYXRpdmUiLCJzY2hlbWEiOiJodHRwczovL2NvbW1vbi5zY2hlbWFzLnZlcmlkYS5pby9oZWFsdGgvcGF0aG9sb2d5L3Rlc3RzL2NvdmlkMTkvcGNyL3YwLjEuMC9zY2hlbWEuanNvbiJ9LCJjcmVkZW50aWFsU2NoZW1hIjp7ImlkIjoiaHR0cHM6Ly9jb21tb24uc2NoZW1hcy52ZXJpZGEuaW8vaGVhbHRoL3BhdGhvbG9neS90ZXN0cy9jb3ZpZDE5L3Bjci92MC4xLjAvc2NoZW1hLmpzb24iLCJ0eXBlIjoiSnNvblNjaGVtYVZhbGlkYXRvcjIwMTgifX0sImlzcyI6ImRpZDp2ZGE6MHhCMzcyOTk4MkEyNTg1NTQ0RkQ3MmM5OUNGMzc3M2E5YzZiYUJENTVjIn0.j8JpTTndAUGEGEx0BcnXBjCIOCDPBuY48H8nj_S_og80ainE7gYNLNBd-I7Xdz73P-yEjFO01kY6tgd5wc0p4w',
   verifiableCredential: {
     vc: {
-      sub: 'did:vda:0xC2629982A2585544FD72c99CF3773a9c6baBD55c',
-      issuer: 'did:vda:0xB3729982A2585544FD72c99CF3773a9c6baBD55c',
+      sub: 'did:vda:polamoy:0xC2629982A2585544FD72c99CF3773a9c6baBD55c',
+      issuer: 'did:vda:polamoy:0xB3729982A2585544FD72c99CF3773a9c6baBD55c',
       issuanceDate: '2022-03-08T23:25:31.097Z'
     },
     credentialSubject: {
@@ -184,7 +184,7 @@ Returned `decodedCredential` object:
       "postcode": "5000",
       "dateOfBirth": "2000-01-01"
     },
-    issuer: { id: 'did:vda:0xB3729982A2585544FD72c99CF3773a9c6baBD55c' },
+    issuer: { id: 'did:vda:polamoy:0xB3729982A2585544FD72c99CF3773a9c6baBD55c' },
     type: [ 'VerifiableCredential' ],
     credentialSchema: {
       id: 'https://common.schemas.verida.io/identity/kyc/FinClusive/individual-basic/latest/schema.json',
@@ -249,10 +249,10 @@ Returned `shareData` object:
     rev: '1-b1b26bc16dbac1ee0b1db2afffe7daaa'
   },
   // The DID of the Verida Account that is sharing the credential
-  did: 'did:vda:0xB3729982A2585544FD72c99CF3773a9c6baBD55c',
+  did: 'did:vda:polamoy:0xB3729982A2585544FD72c99CF3773a9c6baBD55c',
   // The Verida URI endpoint pointing to where the encrypted credential is stored
   // verida://<did>/base64(<contextName>)/<databaseName>/recordId?key=<encryptionKey>
-  veridaUri: 'verida://did:vda:0xB3729982A2585544FD72c99CF3773a9c6baBD55c/GpNDePvWU4RQud9jaZJiNwFyAS/credential_public_encrypted/876ec340-9f3c-11ec-a4d8-35d2dca04a1c?key=c8fd78a9baa44c8ade5e269e0310dcf1139d0374980110b4802b5db6e0820543',
+  veridaUri: 'verida://did:vda:polamoy:0xB3729982A2585544FD72c99CF3773a9c6baBD55c/GpNDePvWU4RQud9jaZJiNwFyAS/credential_public_encrypted/876ec340-9f3c-11ec-a4d8-35d2dca04a1c?key=c8fd78a9baa44c8ade5e269e0310dcf1139d0374980110b4802b5db6e0820543',
   // A public URI that can be opened in a web browser that can decode a base64 encoded veridaUri, fetch the data, decrypt it and display to the viewer
   publicUri: 'https://explorer.verida.network/credential?uri=dmVyaWRhOi8vZGlkOnZkYToweEIzNzI5OTgyQTI1ODU1NDRGRDcyYzk5Q0YzNzczYTljNmJhQkQ1NWMvR3BORGVQdldVNFJRdWQ5amFaSmlOd0Z5QVMvY3JlZGVudGlhbF9wdWJsaWNfZW5jcnlwdGVkLzg3NmVjMzQwLTlmM2MtMTFlYy1hNGQ4LTM1ZDJkY2EwNGExYz9rZXk9YzhmZDc4YTliYWE0NGM4YWRlNWUyNjllMDMxMGRjZjExMzlkMDM3NDk4MDExMGI0ODAyYjVkYjZlMDgyMDU0Mw=='
 }
@@ -274,7 +274,7 @@ See [Messaging](../../client-sdk/messaging#sending-messages-outbox)
 
 #### Make the Credential public
 
-@todo 
+@todo
 
 - Describe how to copy a credential into a Verida Account's public credential database
 - Update Verida Network explorer to show a user's public credentials
@@ -334,7 +334,7 @@ Schemas should be hosted on a publicly available web host that sets the `Access-
 
 Credentials stored with the [credential schema](https://common.schemas.verida.io/credential/base/v0.2.0/schema.json) will automatically be rendered in the Verida Wallet as a credential. This custom display includes:
 
-1. A scannable QR code 
+1. A scannable QR code
 2. The profile icon of the Verida DID that issued / signed the credential
 3. A tick of approval indicating the credential has been verified
 

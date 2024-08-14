@@ -61,7 +61,7 @@ Here we are opening a database with `PUBLIC` read and write permissions owned by
 ```tsx
 import { ContextInterfaces } from @verida/client-ts
 
-const otherAccountDid = 'did:vda:kjzl6cwe1jt148u1wjwyd532ho7r59n02jwn26y1z86cshwjq1j5dkvnil0zspr'
+const otherAccountDid = 'did:vda:polamoy:0x5e8fdBaAA46E4Bfa914e206e9415Aa05d4CC6722'
 const options = {
   permissions: {
     read: ContextInterfaces.PermissionOptionsEnum.PUBLIC,
@@ -79,15 +79,15 @@ You can also open an external database  using the  `Client` class in the `@verid
 ```tsx
 
 import { Client } from '@verida/client-ts';
-import { EnvironmentType } from '@verida/types';
+import { Network } from '@verida/types';
 
 const clientConfig = {
-  environment: EnvironmentType.TESTNET,
+  network: Network.BANKSIA, // BANKSIA (testnet) or MYRTLE (mainnet)
 }
 
 const context = await new Client(clientConfig).openExternalContext(
   'contextName',
-  'did:vda:0x4e8fdBaAA46E4Bfa914e206e9415Aa05d4CC6722'
+  'did:vda:polamoy:0x4e8fdBaAA46E4Bfa914e206e9415Aa05d4CC6722'
 );
 
 const db = await context.openExternalDatabase('test_external_db')
@@ -194,7 +194,7 @@ Just like databases, it’s also possible to open an external datastore:
 ```tsx
 import { ContextInterfaces } from @verida/client-ts
 
-const otherAccountDid = 'did:vda:kjzl6cwe1jt148u1wjwyd532ho7r59n02jwn26y1z86cshwjq1j5dkvnil0zspr'
+const otherAccountDid = 'did:vda:polamoy:0x5e8fdBaAA46E4Bfa914e206e9415Aa05d4CC6722'
 const options = {
   permissions: {
     read: ContextInterfaces.PermissionOptionsEnum.PUBLIC,

@@ -77,13 +77,13 @@ When specifying the `users` permission type, you must also specify the list of v
 ```tsx
 const permissions = {
   read: PERMISSIONS.USERS,
-  readList: ['did:vda:0xe613A46C48f3805B05500bF7dBff00A1dd3Ba0e6', 'did:vda:....'],
+  readList: ['did:vda:polamoy:0xe613A46C48f3805B05500bF7dBff00A1dd3Ba0e6', 'did:vda:....'],
   write: PERMISSIONS.USERS,
-  writeList: ['did:vda:0xe613A46C48f3805B05500bF7dBff00A1dd3Ba0e6', 'did:vda:....'],
+  writeList: ['did:vda:polamoy:0xe613A46C48f3805B05500bF7dBff00A1dd3Ba0e6', 'did:vda:....'],
 }
 
 // Open a database
-const restrictedDb = await const.openExternalDatabase('restricted_data', 'did:vda:0xe613A46C48f3805B05500bF7dBff00A1dd3Ba0e6', {
+const restrictedDb = await const.openExternalDatabase('restricted_data', 'did:vda:polamoy:0xe613A46C48f3805B05500bF7dBff00A1dd3Ba0e6', {
   permissions: permissions
 })
 ```

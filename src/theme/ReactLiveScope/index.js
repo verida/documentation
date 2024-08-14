@@ -1,19 +1,11 @@
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
 import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
-import { EnvironmentType } from "@verida/types";
+import { Network } from "@verida/types";
 import React, { useEffect, useState } from "react";
 import { store, useGlobalState } from "state-pool";
 
-
 // We do this weird importing thing because Docusaurus attempts to do ServerSide Rendering and
 // Verida components generalyl don't support that.
-let Network = null;
+let NetworkClient = null;
 let VaultAccount = null;
 let Credentials = null;
 let hasSession = null;
@@ -22,13 +14,12 @@ let globalLoginFunction = null;
 let getCircularReplacer = null;
 let WalletConnect = null
 
-
 if (ExecutionEnvironment.canUseDOM) {
   const WalletConnectClient = require("@walletconnect/client")
   WalletConnect = WalletConnectClient
 
   const veridaClient = require("@verida/client-ts");
-  Network = veridaClient.Network;
+  NetworkClient = veridaClient.Network;
 
   const veridaWebVault = require("@verida/account-web-vault");
   VaultAccount = veridaWebVault.VaultAccount;
@@ -85,12 +76,12 @@ if (ExecutionEnvironment.canUseDOM) {
           "https://developers.verida.io/img/tutorial_login_request_logo_170x170.png",
         walletConnect,
       },
-      environment: EnvironmentType.MAINNET,
+      environment: Network.MYRTLE, // BANKSIA (testnet) or MYRTLE (mainnet)
     });
 
-    const context = await Network.connect({
+    const context = await NetworkClient.connect({
       client: {
-        environment: EnvironmentType.MAINNET,
+        environment: Network.MYRTLE, // BANKSIA (testnet) or MYRTLE (mainnet)
       },
       account: globalAccount,
       context: {
@@ -109,7 +100,7 @@ const ReactLiveScope = {
   useEffect,
   store,
   useGlobalState,
-  Network,
+  NetworkClient,
   VaultAccount,
   Credentials,
   hasSession,
@@ -117,7 +108,7 @@ const ReactLiveScope = {
   globalAccount,
   globalLoginFunction,
   getCircularReplacer,
-  EnvironmentType
+  Network,
 };
 
 export default ReactLiveScope;

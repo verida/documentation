@@ -27,6 +27,9 @@ Steps to fix this error
 :::
 
 ```jsx live
+// import { Network as NetworkClient } from "@verida/client-ts";
+// import { Network } from "@verida/types";
+
 VeridaLoginExample = () => {
   const [veridaContext, setVeridaContext] = useState(undefined);
   const [successMessage, setSuccessMessage] = useState(null);
@@ -98,25 +101,29 @@ VeridaLoginExample = () => {
           chainId: CHAIN_ID
         }
       },
-      environment: 'testnet'
+      environment: Network.MYRTLE // BANKSIA (testnet) or MYRTLE (mainnet)
     });
-    const context = await Network.connect({
+
+    const context = await NetworkClient.connect({
       client: {
-        environment: 'testnet'
+        environment: Network.MYRTLE // BANKSIA (testnet) or MYRTLE (mainnet)
       },
       account: account,
       context: {
         name: this.CONTEXT_NAME
       }
     });
+
     if(context) {
       // set the local state variable
       setVeridaContext(context);
     }
+
     // check if WalletConnect is connected
     if(connector.connected) {
       setWalletConnector(connector);
     }
+
     setIsLoading(false)
   };
 
@@ -126,8 +133,10 @@ VeridaLoginExample = () => {
       walletConnector.killSession();
       setWalletConnector(undefined);
     }
+
     // disconnect the Verida session
     await veridaContext.account.disconnect(this.CONTEXT_NAME);
+
     // reset the internal state
     setVeridaContext(undefined);
   };
@@ -142,6 +151,7 @@ VeridaLoginExample = () => {
         message,
         address
       ];
+
       // Learn more about WalletConnect personal_sign here
       // https://docs.walletconnect.com/1.0/quick-start/dapps/client#sign-personal-message-personal_sign
       const result = await walletConnector.signPersonalMessage(msgParams);

@@ -24,7 +24,7 @@ yarn add @verida/helpers
 ```js
 import { buildVeridaUri } from '@verida/helpers'
 
-const did = 'did:vda:0x...'
+const did = 'did:vda:polamoy:0x...'
 const contextName: 'Verida: Vault'
 const databaseName: 'test_db'
 const rowId: '123456'
