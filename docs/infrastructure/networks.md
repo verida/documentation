@@ -15,7 +15,7 @@ keywords: [Verida, Web3, Developers]
 | Name Registry | Smart contract that maintains a mapping of Verida network usernames to DIDs | [Polygon PoS Mainnet](https://www.polygonscan.com/address/0xc9ce048b464034C53207Bf120bF85f317fdb38C8) | [Polygon PoS Amoy](https://amoy.polygonscan.com/address/0x91381c424485dc12650811601d9a8B0025e51afc) |
 | Verida Token | Smart contract for the Verida Token (VDA) | [Polygon PoS Mainnet](https://www.polygonscan.com/address/0x683565196C3EAb450003C964D4bad1fd3068D4cC) | [Polygon PoS Amoy](https://amoy.polygonscan.com/address/0xC3D1eB4E0241a4A2B859f91dd2a6aDA176cCB6F2) |
 | Verida Rewards | Smart contract that manages rewards for users who claim their data from centralized platforms | [Polygon PoS Mainnet](https://www.polygonscan.com/address/0xBAeEA910f6BBe29Ef33e0051e51dc60f9702B7b9) | [Polygon PoS Amoy](https://amoy.polygonscan.com/address/0x4BDf0193aF01dF6b6Ff14A97eECE42071575d706)
-| Network Explorer | Simple interface to view the activity on the Verida Network | [link](https://explorer.verida.network) | [link](https://banksia.explorer.verida.network)
+| Network Explorer | Simple interface to view the activity on the Verida Network | [link](https://explorer.verida.network) | [link](https://explorer.banksia.verida.network)
 
 The protocol also maintains a [registry of smart contract addresses](https://github.com/verida/verida-js/blob/main/packages/vda-common/src/contract.ts) in code.
 
